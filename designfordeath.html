@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>The Artificial</title>
+
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="superslides.css" rel="stylesheet" type="text/css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <!-- these should be smarter and from CDN -->
+    <script src="js/jquery.js"></script>
+<!--    <script src="js/jquery.animate-enhanced.js"></script> -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/hammer.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // use for an interstitial
+            //  $(document).on('init.slides', function() {
+            //    $('.loading-container').fadeOut(function() {
+            //      $(this).remove();
+            //    });
+            //  });
+
+            // basic slides behavior
+            $('#slides').superslides({
+                slide_easing: 'easeInOutCubic',
+                slide_speed: 800,
+                pagination: false,
+                hashchange: true,
+                inherit_height_from: '#carousel'
+            });
+
+            // use hammer to map touch swipes to prev/next
+            //  document.ontouchmove = function(e) {
+            //    e.preventDefault();
+            //  };
+            //    $('#slides').hammer().on('swipeleft', function() {
+            //    $(this).superslides('animate', 'next');
+            //  });
+            //
+            //  $('#slides').hammer().on('swiperight', function() {
+            //    $(this).superslides('animate', 'prev');
+            //  });
+
+        });
+    </script>
+
+
+    
+    <div id="header">
+        <div class="column">
+            <div class="logoBox">
+                <div class="logo"><a href="index.html">The Artificial</a></div>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a href="3dsystems.html" id="DDD"></a>
+                </li>
+                <li>
+                    <a href="humanlearning.html" id="learning"></a>
+                </li>
+                <li>
+                    <a href="designfordeath.html" class="current" id="death"></a>
+                </li>
+                <li>
+                    <a href="toicon.html" id ="icon"></a>
+                </li>
+                <li>
+                    <a href="pilogs.html" id ="pilogs"></a>
+                </li>
+                <div class="line"></div>
+                 <li>
+                    <a href="capabilities.html" id="capabilities"></a>
+                </li>
+                 <li>
+                    <a href="theteam.html" id="team"></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="content">
+
+    
+        <style>
+            #slides {
+                height: 600px;
+            }
+            #slide_title {
+                background:url('images/1x_death-Title.png') no-repeat center center;
+                background-size: 1600px 600px;
+            }
+            #slide_cave {
+                background:url('images/1x_death-Cave.png') no-repeat center center;
+                background-size: 1600px 600px;
+            }
+            #slide_cloud {
+                background:url('images/1x_death-Cloud.png') no-repeat center center;
+                background-size: 1600px 600px;
+            }
+            
+            /* Retina targeting per http://www.w3.org/blog/CSS/2012/06/14/unprefix-webkit-device-pixel-ratio/ */
+            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                #slide_title {
+                    background:url('images/2x_death-Title.png')    no-repeat center center;
+                    background-size: 1600px 600px;
+                }
+                #slide_cave {
+                    background:url('images/2x_death-Cave.png')    no-repeat center center;
+                    background-size: 1600px 600px;
+                }
+                #slide_cloud {
+                    background:url('images/2x_death-Cloud.png') no-repeat center center;
+                    background-size: 1600px 600px;
+                }
+            }
+        </style>
+
+        <!-- this div constrains the superslides carousel to its height. -->
+        <div id="carousel">
+        
+        <div id="slides"><ul class="slides-container">
+
+            <li class="slide" id="slide_title">
+                <div class="column">
+                    <div class="caption-bottom-left">
+                        <h5>The Future of Death</h5>
+                        <p>Prompted by Design Boom's Design for Death competition, we spent a week exploring ideas for how we might treat death in the future. With a focus on architecture, we created future designs accomodating for scarcity of land and the abundance of digital information left behind as remains.</p>
+                    </div>
+                </div>
+
+            </li>
+            
+            <li class="slide" id="slide_cave">
+
+                <div class="column">
+                    <div class="caption-bottom-left">
+                        <h5>The Crystal Cave</h5>
+                        <p>Cut from the bedrock beneath urban centers, Memorial Hubs are a global network of bereavement centres that provide mourners with uniquely personal commemorative experience.</p>
+                        <p>Unlike conventional burial sites, Memorial Hubs do not contain remains. Rather, each hub provides a memorial service that is personalised through the usage of remembrance crystals. Infused with ashes of the deceased and encoded with data relating to their life, these crystals are provide the griever with family albums, personal photographs, favourite albums/playlists, videos, emails, quotes, letters, and more.</p>
+                    </div>
+                </div>
+
+            </li>
+
+            <li class="slide" id="slide_cloud">
+
+                <div class="column">
+                    <div class="caption-bottom-left">
+                        <h5>The Cloud of Souls</h5>
+                        <p>The Cloud of Souls is comprised of rooftop gardens and parks devoted to connecting to the digital remains of loved ones passed. Upon entering the rooftop park, the living can summon the dead's avatar from a small kiosk. The deceased's avatar is rear-projected on a blimp that meets with the living to talk or sit quietly.</p>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+        <nav class="slides-navigation">
+            <a href="#" class="next">&gt;</a>
+            <a href="#" class="prev">&lt;</a>
+        </nav>
+        </div>
+
+        </div>
+
+        <div id="footer">
+            <div id="location">
+                <h3>Find us</h3>
+                <div id="map"></div>
+            </div>
+            
+            <div id="contact">
+                <h3>Clients</h3>
+                <p>Want to work with us? We want to work with you!</p>
+                <div class="button">
+                    <a href="mailto:info@theartificial.nl">get in touch</a>
+                </div>
+                <h3 style="margin-top: 40px;">Talent</h3>
+                <p>Join our neverending quest to leave everything better than we found it.</p>
+                <div class="button">
+                    <a href="mailto:info@theartificial.nl">say "hello"</a>
+                </div>
+            </div>
+                
+            <ul class="social">
+                <h3>Keep in touch</h3>
+                <p>A few links for our friends, followers, and stalkers.</p>
+                <li class="socialLink"><a href="https://twitter.com/veryartificial" id="twitter"></a></li>
+                <li class="socialLink"><a href="https://www.facebook.com/veryartificial" id="facebook"></a></li>
+                <li class="socialLink"><a href="http://veryartificial.tumblr.com" id="tumblr"></a></li>
+                <li class="socialLink"><a href="http://dribbble.com/VeryArtificial" id="dribbble"></a></li>                
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
