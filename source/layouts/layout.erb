@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "The Artificial" %></title>
+      
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+
+    <%= stylesheet_link_tag "normalize", "base", "superslides" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+  
+  <body class="<%= page_classes %>">
+
+<div id="header">
+    <div class="column">
+        <div class="logoBox">
+            <div class="logo"><%= nav_link "The Artificial", "/", id: "home" %></div>
+        </div>
+
+        <ul class="nav">
+            <li>
+                <%= nav_link "", "/3dsystems.html", id: "DDD" %>
+            </li>
+            <li>
+                <%= nav_link "", "/humanlearning.html", id: "learning" %>
+            </li>
+            <li>
+                <%= nav_link "", "/designfordeath.html", id: "death" %>
+            </li>
+            <li>
+                <%= nav_link "", "/toicon.html", id: "icon" %>
+            </li>
+            <li>
+                <%= nav_link "", "/pilogs.html", id: "pilogs" %>
+            </li>
+            <div class="line"></div>
+             <li>
+                <%= nav_link "", "/capabilities.html", id: "capabilities" %>
+            </li>
+             <li>
+                <%= nav_link "", "/theteam.html", id: "team" %>
+            </li>
+        </ul>
+    </div>
+
+</div>      
+    <script>
+        $(document).ready(function() {
+            // use for an interstitial
+            //  $(document).on('init.slides', function() {
+            //    $('.loading-container').fadeOut(function() {
+            //      $(this).remove();
+            //    });
+            //  });
+    
+            // basic slides behavior
+            $('#slides').superslides({
+                slide_easing: 'easeInOutCubic',
+                slide_speed: 800,
+                pagination: false,
+                hashchange: true,
+                inherit_height_from: '#carousel'
+            });
+    
+            // use hammer to map touch swipes to prev/next
+            //  document.ontouchmove = function(e) {
+            //    e.preventDefault();
+            //  };
+            //    $('#slides').hammer().on('swipeleft', function() {
+            //    $(this).superslides('animate', 'next');
+            //  });
+            //
+            //  $('#slides').hammer().on('swiperight', function() {
+            //    $(this).superslides('animate', 'prev');
+            //  });
+    
+        });
+    </script>      
+
+    <div class="content">
+        <%= yield %>
+    </div>
+
+    <div id="footer">
+        <div id="location">
+            <h3>Find us</h3>
+            <div id="map"></div>
+        </div>
+        
+        <div id="contact">
+            <h3>Clients</h3>
+            <p>Want to work with us? We want to work with you!</p>
+            <div class="button">
+                <a href="mailto:info@theartificial.nl">get in touch</a>
+            </div>
+            <h3 style="margin-top: 40px;">Talent</h3>
+            <p>Join our neverending quest to leave everything better than we found it.</p>
+            <div class="button">
+                <a href="mailto:info@theartificial.nl">say "hello"</a>
+            </div>
+        </div>
+            
+        <ul class="social">
+            <h3>Keep in touch</h3>
+            <p>A few links for our friends, followers, and stalkers.</p>
+            <li class="socialLink"><a href="https://twitter.com/veryartificial" id="twitter"></a></li>
+            <li class="socialLink"><a href="https://www.facebook.com/veryartificial" id="facebook"></a></li>
+            <li class="socialLink"><a href="http://veryartificial.tumblr.com" id="tumblr"></a></li>
+            <li class="socialLink"><a href="http://dribbble.com/VeryArtificial" id="dribbble"></a></li>                
+        </ul>
+    </div>      
+
+  </body>
+</html>

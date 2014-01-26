@@ -1,0 +1,85 @@
+---
+title: The Artificial
+---
+    
+<style>
+    #slides {
+        height: 600px;
+    }
+    
+    #slide_sketch {
+        background:url('images/1x_pilogs-sketch.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
+    #slide_screens {
+        background:url('images/1x_pilogs-home.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
+    #slide_code {
+        background:url('images/1x_pilogs-code.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
+    
+    /* Retina targeting per http://www.w3.org/blog/CSS/2012/06/14/unprefix-webkit-device-pixel-ratio/ */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        #slide_sketch {
+            background:url('images/2x_pilogs-sketch.png')    no-repeat center center;
+            background-size: 1600px 600px;
+        }
+        #slide_screens {
+            background:url('images/2x_pilogs-home.png') no-repeat center center;
+            background-size: 1600px 600px;
+        }
+        #slide_code {
+            background:url('images/2x_pilogs-code.png') no-repeat center center;
+            background-size: 1600px 600px;
+        }
+    }
+</style>
+
+<!-- this div constrains the superslides carousel to its height. -->
+<div id="carousel">
+
+<div id="slides"><ul class="slides-container">
+
+    <li class="slide" id="slide_sketch">
+
+        <div class="column">
+            <div class="caption-bottom-left">
+                <h5>Awful and Artificial</h5>
+                <p>During the construction of the Cathedral of St Paul in London, the King of England was taken on a tour by Sir Christopher Wren, the chief architect. Afterwards, the King told Wren that the Cathedral was awful and artificial.</p>
+            </div>
+        </div>
+
+    </li>
+
+    <li class="slide" id="slide_screens">
+
+        <div class="column">
+            <div class="caption-bottom-left">
+                <h5>What's in a name?</h5>
+                <p>"Artificial" has been unfairly burdened with connotations of cheap inauthenticy. There is nothing cheap in the original meaning of the word; rather, when Christopher Wren heard this phrase, he would have taken it as a compliment.</p>
+            </div>
+        </div>
+
+    </li>
+
+    <li class="slide" id="slide_code">
+
+        <div class="column">
+            <div class="caption-bottom-left">
+                <h5>Making our mark</h5>
+                <p>We each create our own mark for the company, with our unique logos representing our individual skills and contribution.</p>
+            </div>
+        </div>
+
+    </li>
+
+</ul>
+<nav class="slides-navigation">
+    <a href="#" class="next">&gt;</a>
+    <a href="#" class="prev">&lt;</a>
+</nav>
+</div>
+
+</div>
