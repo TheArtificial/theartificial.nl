@@ -1,3 +1,19 @@
+@mixin icon-sprite($position) {
+    $sheet: url(../images/1x_sprite.png);
+    $sheet-2: url(../images/2x_sprite.png);
+    $sheet-size: 320px 121px;
+
+    background: $sheet no-repeat $position;
+    background-size: $sheet-size;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dppx) {
+        & {
+            background-size: $sheet-size;
+            background-image: $sheet-2;
+        }
+    }
+}
+
 body {
 	background: #191516;
 	background-position: center;
@@ -141,7 +157,7 @@ p{
 }
 
 #DDD {
-    background: url(../images/1x_sprite.png) 0 0;
+    @include icon-sprite(0 0);
     display: block;
 }
 
@@ -150,7 +166,7 @@ p{
 }
 
 #learning {
-    background: url(../images/1x_sprite.png) -40px 0;
+    @include icon-sprite(-40px 0);
     display: block;
 }
 
@@ -159,7 +175,7 @@ p{
 }
 
 #death {
-    background: url(../images/1x_sprite.png) -120px 0;
+    @include icon-sprite(-120px 0);
     display: block;
 }
 
@@ -168,7 +184,7 @@ p{
 }
 
 #icon {
-    background: url(../images/1x_sprite.png) -160px 0;
+    @include icon-sprite(-160px 0);
     display: block;
 }
 
@@ -177,7 +193,7 @@ p{
 }
 
 #pilogs {
-    background: url(../images/1x_sprite.png) -80px 0;
+    @include icon-sprite(-80px 0);
     display: block;
 }
 
@@ -186,7 +202,7 @@ p{
 }
 
 #capabilities {
-    background: url(../images/1x_sprite.png) -200px 0;
+    @include icon-sprite(-200px 0);
     display: block;
 }
 
@@ -195,7 +211,7 @@ p{
 }
 
 #team {
-    background: url(../images/1x_sprite.png) -240px 0;
+    @include icon-sprite(-240px 0);
     display: block;
 }
 
@@ -346,17 +362,17 @@ li.socialLink a {
 }
 
 #twitter {
-    background: url(images/1x_sprite.png) 0px -80px;
+    @include icon-sprite(0 -80px);
 }
 
 #facebook {
-    background: url(images/1x_sprite.png) -40px -80px;
+    @include icon-sprite(-40px -80px);
 }
 
 #tumblr {
-    background: url(images/1x_sprite.png) -80px -80px;
+    @include icon-sprite(-80px -80px);
 }
 
 #dribbble {
-    background: url(images/1x_sprite.png) -160px -80px;
+    @include icon-sprite(-160px -80px);
 }
