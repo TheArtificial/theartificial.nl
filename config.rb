@@ -55,29 +55,29 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
-
-  # Minify Javascript on build
-  # activate :minify_javascript
-
-  # Enable cache buster
-  # activate :asset_hash
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  activate :imageoptim do |options|
+    options.verbose = true
+    # disable the ones that require X-Windows
+    options.advpng_options    = false
+    options.gifsicle_options  = false
+    options.pngout_options    = false
+#    options.pngcrush_options  = {:chunks => ['alla'], :fix => false, :brute => false}
+#    options.optipng_options   = {:level => 6, :interlace => false}
+#    options.jpegoptim_options = {:strip => ['all'], :max_quality => 100}
+#    options.jpegtran_options  = {:copy_chunks => false, :progressive => true, :jpegrescan => true}
+  end
+#  activate :minify_css
+#  activate :minify_javascript
+  activate :gzip
 end
 
 # sync to S3 with middleman-s3_sync
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 'theartificial.nl' # The name of the S3 bucket you are targetting. This is globally unique.
-  s3_sync.region                     = 'eu-west-1'     # The AWS region for your bucket.
+  s3_sync.bucket                     = 'theartificial.nl'
+  s3_sync.region                     = 'eu-west-1'
   # see .s3_sync for credentials
-  s3_sync.delete                     = false # We delete stray files by default.
-  s3_sync.after_build                = false # We do not chain after the build step by default. 
+  s3_sync.delete                     = false
+  s3_sync.after_build                = false
   s3_sync.prefer_gzip                = true
   s3_sync.path_style                 = true
   s3_sync.reduced_redundancy_storage = false
