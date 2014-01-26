@@ -4,6 +4,11 @@ Based on [Middleman](http://middlemanapp.com/).
 
 ---
 
-  $ gem install middleman
-  $ middleman bundle exec middleman server
+To install Middleman:
+
+    $ gem install middleman
+    
+To test your working copy:
+
+    $ middleman bundle exec middleman server
   
