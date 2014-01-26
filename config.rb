@@ -70,3 +70,17 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# sync to S3 with middleman-s3_sync
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'theartificial.nl' # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.region                     = 'eu-west-1'     # The AWS region for your bucket.
+  # see .s3_sync for credentials
+  s3_sync.delete                     = false # We delete stray files by default.
+  s3_sync.after_build                = false # We do not chain after the build step by default. 
+  s3_sync.prefer_gzip                = true
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.acl                        = 'public-read'
+  s3_sync.encryption                 = false
+end
