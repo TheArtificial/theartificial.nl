@@ -55,19 +55,8 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
-  activate :imageoptim do |options|
-    options.verbose = true
-    # disable the ones that require X-Windows
-    options.advpng_options    = false
-    options.gifsicle_options  = false
-    options.pngout_options    = false
-#    options.pngcrush_options  = {:chunks => ['alla'], :fix => false, :brute => false}
-#    options.optipng_options   = {:level => 6, :interlace => false}
-#    options.jpegoptim_options = {:strip => ['all'], :max_quality => 100}
-#    options.jpegtran_options  = {:copy_chunks => false, :progressive => true, :jpegrescan => true}
-  end
-#  activate :minify_css
-#  activate :minify_javascript
+  activate :minify_css
+  activate :minify_javascript
   activate :gzip
 end
 
