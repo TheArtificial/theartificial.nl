@@ -32,14 +32,13 @@ title: The Artificial verbs
         background-size: 1600px 600px;
     }
     
-    /* Retina targeting per http://www.w3.org/blog/CSS/2012/06/14/unprefix-webkit-device-pixel-ratio/ */
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
-        
+    /* Retina targeting */
+    @media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {        
     	#slide_intro {
         background:url('images/1x_icon-intro.png') no-repeat center center;
         background-size: 1600px 600px;
-	}
-	#slide_outlines {
+        }
+        #slide_outlines {
             background:url('images/2x_icon-LineIcons.png') no-repeat center center;
             background-size: 1600px 600px;
         }
