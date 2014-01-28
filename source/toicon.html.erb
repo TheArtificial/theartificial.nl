@@ -6,7 +6,11 @@ title: The Artificial verbs
     #slides {
         height: 600px;
     }
-    
+
+    #slide_intro {
+        background:url('images/1x_icon-intro.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
     #slide_outlines {
         background:url('images/1x_icon-LineIcons.png') no-repeat center center;
         background-size: 1600px 600px;
@@ -30,7 +34,12 @@ title: The Artificial verbs
     
     /* Retina targeting per http://www.w3.org/blog/CSS/2012/06/14/unprefix-webkit-device-pixel-ratio/ */
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
-        #slide_outlines {
+        
+    	#slide_intro {
+        background:url('images/1x_icon-intro.png') no-repeat center center;
+        background-size: 1600px 600px;
+	}
+	#slide_outlines {
             background:url('images/2x_icon-LineIcons.png') no-repeat center center;
             background-size: 1600px 600px;
         }
@@ -57,6 +66,17 @@ title: The Artificial verbs
 <div id="carousel">
 
 <div id="slides"><ul class="slides-container">
+
+    <li class="slide" id="slide_intro">
+
+        <div class="column">
+            <div class="caption-bottom-left">
+                <h5>Expressing Action</h5>
+                <p>Software UI often requires icons. Though they represent things, the goal is often to convey an action.</p>
+            </div>
+        </div>
+
+    </li>
 
     <li class="slide" id="slide_outlines">
 
