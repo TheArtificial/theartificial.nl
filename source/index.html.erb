@@ -16,8 +16,8 @@ title: The Artificial
             background-size: 1600px 600px;
         }
         
-        /* Retina targeting per http://www.w3.org/blog/CSS/2012/06/14/unprefix-webkit-device-pixel-ratio/ */
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
+    /* Retina targeting */
+    @media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {
             #slide_logo {
                 background:url('images/2x_brand-LogoShannon.png')    no-repeat center center;
                 background-size: 1600px 600px;
