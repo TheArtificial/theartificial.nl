@@ -10,5 +10,5 @@ To install Middleman:
     
 To test your working copy:
 
-    $ middleman bundle exec middleman server
+    $ bundle exec middleman server
   
