@@ -7,33 +7,51 @@ title: The Artificial measuring
         height: 600px;
     }
     
+    #slide_intro {
+        background:url('images/1x_pilogs-intro.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
     #slide_sketch {
         background:url('images/1x_pilogs-sketch.png') no-repeat center center;
         background-size: 1600px 600px;
     }
     #slide_screens {
-        background:url('images/1x_pilogs-home.png') no-repeat center center;
+        background:url('images/1x_pilogs-context.png') no-repeat center center;
         background-size: 1600px 600px;
     }
     #slide_code {
         background:url('images/1x_pilogs-code.png') no-repeat center center;
         background-size: 1600px 600px;
     }
+      }
+    #slide_ixd {
+        background:url('images/1x_pilogs-ixd.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
     
     /* Retina targeting per http://www.w3.org/blog/CSS/2012/06/14/unprefix-webkit-device-pixel-ratio/ */
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
+        
+        #slide_intro {
+        background:url('images/1x_pilogs-intro.png') no-repeat center center;
+        background-size: 1600px 600px;
+        }       
         #slide_sketch {
             background:url('images/2x_pilogs-sketch.png') no-repeat center center;
             background-size: 1600px 600px;
         }
         #slide_screens {
-            background:url('images/2x_pilogs-home.png') no-repeat center center;
+            background:url('images/2x_pilogs-context.png') no-repeat center center;
             background-size: 1600px 600px;
         }
         #slide_code {
             background:url('images/2x_pilogs-code.png') no-repeat center center;
             background-size: 1600px 600px;
         }
+         #slide_ixd {
+        background:url('images/2x_pilogs-ixd.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
     }
 </style>
 
@@ -42,6 +60,17 @@ title: The Artificial measuring
 
 <div id="slides"><ul class="slides-container">
 
+   <li class="slide" id="slide_intro">
+
+        <div class="column">
+            <div class="caption-bottom-left">
+                <h5>An Itch to Scratch</h5>
+                <p>We have activity trackers, connected scales, and travel loggers. It's frustrating to learn from data across services, so we've imagined an agnostic platform.</p>
+            </div>
+        </div>
+
+    </li> 
+    
     <li class="slide" id="slide_sketch">
 
         <div class="column">
@@ -70,6 +99,16 @@ title: The Artificial measuring
             <div class="caption-bottom-left">
                 <h5>DIY</h5>
                 <p>When the product you desire doesn't exist, you have to build it yourself. So we're sharpening our web skills by developing our own service.</p>
+            </div>
+        </div>
+
+    </li>
+       <li class="slide" id="slide_ixd">
+
+        <div class="column">
+            <div class="caption-bottom-left">
+                <h5>Big Picture</h5>
+                <p>A quick screen inventory to show what interactions will take place, one step away from becoming a user flow.</p>
             </div>
         </div>
 
