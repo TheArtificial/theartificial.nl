@@ -260,7 +260,7 @@ p{
     padding: 50px;
 }
 
-.caption-top-left, .caption-top-right, .caption-bottom-left, .caption-bottom-right {
+.caption-top-left, .caption-top-right, .caption-bottom-left, .caption-bottom-right, .caption-center-center {
     background-color: #191516;
     border-radius: 2px;
     position: absolute;
@@ -283,6 +283,11 @@ p{
 .caption-bottom-right {
 	bottom: 20px;
     right: 20px;
+}
+
+.caption-center-center {
+    bottom: 240px;
+    right: 400px;
 }
 
 .column {
