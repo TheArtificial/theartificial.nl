@@ -80,6 +80,12 @@
                 $(this).superslides('animate', 'prev');
             });
 
+            // classify the current pagination link
+            $('#slides').on('animated.slides', function() { 
+              var current_index = $(this).superslides('current');
+              $('.slides-pagination div a').removeClass('current');
+              $('.slides-pagination div a').eq(current_index).addClass('current');
+            });
         });
     </script>      
 
