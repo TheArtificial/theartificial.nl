@@ -1,0 +1,46 @@
+---
+title: The Artificial error
+---
+
+<style>
+    #slides {
+        height: 600px;
+    }
+    
+    #slide_404 {
+        background: url('images/1x_404.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
+    
+    /* Retina targeting per http://www.w3.org/blog/CSS/2012/06/14/unprefix-webkit-device-pixel-ratio/ */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        #slide_404 {
+            background: url('images/2x_404.png') no-repeat center center;
+            background-size: 1600px 600px;
+        }
+        
+    }
+</style>
+
+<!-- this div constrains the superslides carousel to its height. -->
+<div id="carousel">
+
+<div id="slides"><ul class="slides-container">
+
+    <li class="slide" id="slide_404">
+
+        <div class="column">
+            <div class="caption-center-center">
+                <h5>Oops</h5>
+                <p>We cannot find the page you are looking for. Here are some lucky animals to help you on your way.</p>
+            </div>
+        </div>
+
+    </li>
+
+
+</ul>
+
+</div>
+
+</div>
