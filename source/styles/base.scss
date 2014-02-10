@@ -345,6 +345,10 @@ p{
   @include icon-sprite(-40px -40px);
 }
 
+.slides-pagination a.current {
+    @include icon-sprite(-120 -40px);
+}
+
 /* footer */
 #footer {
     height: 360px;
