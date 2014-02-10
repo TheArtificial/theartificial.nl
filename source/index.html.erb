@@ -2,75 +2,73 @@
 title: The Artificial
 ---
 
-    <style>
-        #slides {
-            height: 600px;
-        }
-        
+<style>
+    #slides {
+        height: 600px;
+    }
+
+    #slide_logo {
+        background:url('images/1x_brand-LogoShannon.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
+    #slide_window {
+        background:url('images/1x_brand-OurWindow.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
+
+/* Retina targeting */
+@media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {
         #slide_logo {
-            background:url('images/1x_brand-LogoShannon.png') no-repeat center center;
+            background:url('images/2x_brand-LogoShannon.png')    no-repeat center center;
             background-size: 1600px 600px;
         }
         #slide_window {
-            background:url('images/1x_brand-OurWindow.png') no-repeat center center;
+            background:url('images/2x_brand-OurWindow.png') no-repeat center center;
             background-size: 1600px 600px;
         }
-        
-    /* Retina targeting */
-    @media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {
-            #slide_logo {
-                background:url('images/2x_brand-LogoShannon.png')    no-repeat center center;
-                background-size: 1600px 600px;
-            }
-            #slide_window {
-                background:url('images/2x_brand-OurWindow.png') no-repeat center center;
-                background-size: 1600px 600px;
-            }
-        }
-    </style>
+    }
+</style>
 
-    <!-- this div constrains the superslides carousel to its height. -->
-    <div id="carousel">
-    
-    <div id="slides"><ul class="slides-container">
+<!-- this div constrains the superslides carousel to its height. -->
+<div id="carousel">
 
-        <li class="slide" id="slide_logo">
+<div id="slides">
+  <ul class="slides-container">
 
-            <div class="column">
-                <div class="caption-bottom-left">
-                    <h5>Awful and Artificial</h5>
-                    <p>During the construction of the Cathedral of St Paul in London, the King of England was taken on a tour by Sir Christopher Wren, the chief architect. Afterwards, the King told Wren that the Cathedral was both "awful and artificial."</p>
-                    <p>"Artificial" has been unfairly burdened with connotations of cheap inauthenticy. There is nothing cheap in the original meaning of the word; rather, when Christopher Wren heard this phrase, he would have taken it as a compliment.</p>
-                </div>
+    <li class="slide" id="slide_logo">
+
+        <div class="column">
+            <div class="caption-bottom-left">
+                <h5>Awful and Artificial</h5>
+                <p>During the construction of the Cathedral of St Paul in London, the King of England was taken on a tour by Sir Christopher Wren, the chief architect. Afterwards, the King told Wren that the Cathedral was both "awful and artificial."</p>
+                <p>"Artificial" has been unfairly burdened with connotations of cheap inauthenticy. There is nothing cheap in the original meaning of the word; rather, when Christopher Wren heard this phrase, he would have taken it as a compliment.</p>
             </div>
-
-        </li>
-
-        <li class="slide" id="slide_window">
-            <div class="column">
-                <div class="caption-bottom-right">
-                    <h5>Come say <i>hello</i></h5>
-                    <p>If you're in Amsterdam, pay us a visit. You'll recognize us by our window.</p>
-                </div>
-            </div>
-        </li>
-    </ul>
-        
-    <nav class="slides-navigation">
-        <a href="#" class="next"></a>
-        <a href="#" class="prev"></a>
-    </nav> 
-
-    <nav class="slides-pagination">
-        <div>
-          <a href="#slide_logo" class=""> </a>
-          <a href="#slide_window" class=""> </a>
         </div>
-    </nav>
-      
-    </div>
 
-    </div>
+    </li>
 
+    <li class="slide" id="slide_window">
+        <div class="column">
+            <div class="caption-bottom-right">
+                <h5>Come say <i>hello</i></h5>
+                <p>If you're in Amsterdam, pay us a visit. You'll recognize us by our window.</p>
+            </div>
+        </div>
+    </li>
+  </ul>
+
+  <nav class="slides-navigation">
+      <a href="#" class="next"></a>
+      <a href="#" class="prev"></a>
+  </nav> 
+
+  <nav class="slides-pagination">
+      <div>
+        <a href="#slide_logo"> </a>
+        <a href="#slide_window"> </a>
+      </div>
+  </nav>
+
+</div>
 
 </div>
