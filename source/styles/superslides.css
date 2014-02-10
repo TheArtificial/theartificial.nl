@@ -1,27 +1,26 @@
 #slides {
-  position: relative;
+    position: relative;
 }
 #slides .slides-container {
-  display: none;
+    display: none;
 }
 
 .slides-navigation {
-  margin: 0 auto;
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  height: 100%;
-  width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
 .slides-navigation a {
-  position: absolute;
-  display: block;
-  height: 100%;
-  padding-top: 290px;
+    position: absolute;
+    display: block;
+    padding-top: 290px;
 }
 .slides-navigation a.prev {
-  left: 0;
+    left: 0;
 }
 .slides-navigation a.next {
-  right: 0;
+    right: 0;
 }
