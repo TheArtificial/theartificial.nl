@@ -1,0 +1,31 @@
+@mixin icon-sprite($position) {
+    $sheet: url(../images/1x_sprite.png);
+    $sheet-2: url(../images/2x_sprite.png);
+    $sheet-size: 320px 121px;
+
+    background: $sheet no-repeat $position;
+    background-size: $sheet-size;
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+        only screen and (min-resolution: 144dpi) {
+        & {
+            background-size: $sheet-size;
+            background: $sheet-2;
+        }
+    }
+}
+
+@mixin icon-sprite($position) {
+    $sheet: url(../images/1x_sprite.png);
+    $sheet-2: url(../images/2x_sprite.png);
+    $sheet-size: 320px 121px;
+
+    background: $sheet no-repeat $position;
+    background-size: $sheet-size;
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+        only screen and (min-resolution: 144dpi) {
+        & {
+            background-size: $sheet-size;
+            background-image: $sheet-2;
+        }
+    }
+}
