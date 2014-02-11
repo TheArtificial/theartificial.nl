@@ -177,79 +177,40 @@ p{
     -webkit-transition:.5s;
     transition:.5s;
 }
-
 #header .logoBox .logo a:hover, #header .nav li a:hover {
     background-color: #666062;
 }
-
-
-#header .logoBox .logo a.current {
-    background-color: #0C6666;
+#header .logoBox .logo a.current, #header .nav li .current {
+    background-color: #01a59d;
 }
-
 #DDD {
     @include icon-sprite(0 0);
     display: block;
 }
-
-#header .nav li #DDD.current {
-    background-color: #CC1E4B;
-}
-
 #learning {
     @include icon-sprite(-40px 0);
     display: block;
 }
-
-#header .nav li #learning.current {
-    background-color: #6BC5AC;
-}
-
 #death {
     @include icon-sprite(-120px 0);
     display: block;
 }
-
-#header .nav li #death.current {
-    background-color: #712D7F;
-}
-
 #icon {
     @include icon-sprite(-160px 0);
     display: block;
 }
-
-#header .nav li #icon.current {
-    background-color: #01A59D;
-}
-
 #pilogs {
     @include icon-sprite(-80px 0);
     display: block;
 }
-
-#header .nav li #pilogs.current {
-    background-color: #CC1E4B;
-}
-
 #capabilities {
     @include icon-sprite(-200px 0);
     display: block;
 }
-
-#header .nav li #capabilities.current {
-    background-color: #6BC5AC;
-}
-
 #team {
     @include icon-sprite(-240px 0);
     display: block;
 }
-
-#header .nav li #team.current {
-    background-color: #712D7F;
-}
-
 .line {
     background-color: #FFFFFF;
     border-radius:1px;
@@ -278,7 +239,7 @@ p{
     width: 100%;
 }
 
-.caption-top-left, .caption-top-right, .caption-bottom-left, .caption-bottom-right, .caption-center-center {
+.caption-top-left, .caption-top-right, .caption-bottom-left, .caption-bottom-right, .caption-error {
     background-color: #191516;
     border-radius: 2px;
     position: absolute;
@@ -303,9 +264,9 @@ p{
     right: 20px;
 }
 
-.caption-center-center {
+.caption-error {
     bottom: 240px;
-    right: 400px;
+    right: 39px;
 }
 
 .column {
