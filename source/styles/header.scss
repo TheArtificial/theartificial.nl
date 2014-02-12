@@ -1,0 +1,93 @@
+@import "_mixins";
+
+#header {
+    height: 60px;
+    width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+    background-color: #191617;
+}
+
+#header-spacer {
+    display: block;
+    top: 0;
+    height: 60px;
+    width: 100%;
+}
+
+#header .nav {
+	float: right;
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-size: 0.9em;
+	height: 50px;
+	margin: 10px;
+}
+
+#header .nav li {
+	float: left;
+	list-style-type: none;
+    margin-left: 10px;
+}
+
+#header .nav li a {
+    border-radius: 2px;
+    height: 40px;
+    width: 40px;
+}
+
+#header .logoBox .logo a {
+    border-radius: 2px;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+	font-weight: bold;
+    height: 28px;
+    margin: 10px;
+	padding-top: 12px;
+	text-align: center;
+    width: 120px;
+}
+
+#header .logoBox .logo a, #header .nav li a {
+    background-color: #352E30;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+#header .logoBox .logo a:hover, #header .nav li a:hover {
+    background-color: #666062;
+}
+#header .logoBox .logo a.current, #header .nav li .current {
+    background-color: #01a59d;
+}
+#DDD {
+    @include icon-sprite(0 0);
+    display: block;
+}
+#learning {
+    @include icon-sprite(-40px 0);
+    display: block;
+}
+#death {
+    @include icon-sprite(-120px 0);
+    display: block;
+}
+#icon {
+    @include icon-sprite(-160px 0);
+    display: block;
+}
+#pilogs {
+    @include icon-sprite(-80px 0);
+    display: block;
+}
+#capabilities {
+    @include icon-sprite(-200px 0);
+    display: block;
+}
+#team {
+    @include icon-sprite(-240px 0);
+    display: block;
+}
