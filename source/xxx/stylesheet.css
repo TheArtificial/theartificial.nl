@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+
+* { padding: 0; margin: 0; }
+body { background: #1abc9c; font-family: 'Lato', sans-serif; letter-spacing: 1px;}
+
+header {
+    text-align: justify;
+    height: 4.6em;
+    padding: 2em;
+    padding-bottom:3em;
+    background: #2c3e50;
+    color: #fff;
+}
+
+nav{line-height:160%;
+padding-bottom:1em;}
+
+teeny{font-family: 'Lato', sans-serif;
+font-size:.3em;}
+
+h1{
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    height: 80%; 
+    font-weight:400;
+ 
+}
+
+h2{
+    display: inline-block;
+    vertical-align: middle;
+    font-family:'Lato';
+    font-weight:200;
+    font-size:2em;
+    height: 110;  
+    padding-bottom:20px;
+
+}
+
+h3{
+    display: inline-block;
+    font-family:'Lato';
+    font-weight:300;
+    padding-bottom:20px;
+}
+h4{
+    display: inline-block;
+    font-family:'Lato';
+    font-weight:200;
+    padding-bottom:20px;
+}
+
+a:link
+{
+
+width:100%;
+padding: 0 10px 0 0px;
+font-family:'Lato';
+font-weight:300;
+color:#fff;
+text-align:left;
+text-decoration: none;
+}
+
+a:hover,a:active
+{
+font-style:normal;
+color:#28d1c5;
+opacity:0.7;
+    font-weight:400;
+}
+
+a:visited
+{ 
+color:#e1e1e1;
+font-style:italic;
+opacity:0.4;
+}
+
+
+#intro,
+#home {
+width:80%;
+font-family:'Lato';
+background-size:auto;
+font-weight:200;
+font-style:normal;
+color:#FFFFFF;
+opacity:50%;
+padding-top:2em;
+padding-left:2em;
+padding-bottom:1em;
+    
+}
+
+#pink {
+background-color:#ee4270;
+font-family:'Lato';
+background-size:auto;
+font-weight:100;
+color:#fff;
+opacity:50%;
+padding-top:2em;
+padding-left:2em;
+padding-bottom:1em;  
+padding-right:20%;
+}
+
+#light-mint {
+background-color:#b8e0d5;
+font-family:'Lato';
+background-size:auto;
+font-weight:200;
+color:#352f31;
+opacity:50%;
+padding-top:2em;
+padding-left:2em;
+padding-bottom:1em;  
+padding-right:20%;
+}
+
+#beige {
+background-color:#d9e377;
+font-family:'Lato';
+background-size:auto;
+font-weight:200;
+color:#352f31;
+opacity:50%;
+padding-top:2em;
+padding-left:2em;
+padding-bottom:1em;  
+padding-right:20%;
+}
+#column :first-of-type {font-weight:600;}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
+	}
+}
+footer {
+    text-align: justify;
+    height: 4.6em;
+    padding: 2em;
+    background: #2c3e50;
+    color: #fff;
+}
+
+.TextWrap{
+    float:right;
+    margin-left:2em;
+    margin-bottom:1em;
+}
+
+.TextWrapLeft{
+    float:left;
+    margin-right:2em;
+    margin-bottom:1em;
+    z-index:2;
+    
+    
+}
+
+a2:link
+{
+
+width:100%;
+padding: 0 10px 0 0px;
+font-family:'Lato';
+font-weight:300;
+color:#000;
+text-align:left;
+text-decoration: none;
+
+}
+
+a2:hover,a:active
+{
+font-style:normal;
+color:#0c6667;
+opacity:0.7;
+font-weight:400;
+}
+
+a2:visited
+{ 
+color:#0c6667;
+font-style:italic;
+opacity:0.4;
+}
