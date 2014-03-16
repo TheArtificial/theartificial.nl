@@ -21,7 +21,7 @@
 
 
 * { padding: 0; margin: 0; }
-body { background: #1abc9c; font-family: 'Lato', sans-serif; letter-spacing: 1px;}
+body { background: #1abc9c; font-family: 'Lato', sans-serif; letter-spacing: 1px; font-size:100%;}
 
 header {
     text-align: justify;
@@ -44,7 +44,6 @@ h1{
     text-transform: uppercase;
     height: 80%; 
     font-weight:400;
- 
 }
 
 h2{
