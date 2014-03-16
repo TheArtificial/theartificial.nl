@@ -12,7 +12,7 @@
 }
 
 .hero.toicon {
-  background-image: url(../images/pattern-toicon.png);
+  background-image: url(../images/pattern-icon.png);
 }
 
 .hero.pilogs {
@@ -36,7 +36,7 @@
   }
   
   .hero.toicon {
-    background:url('../images/pattern-toicon@2x.png') repeat center center;
+    background:url('../images/pattern-icon@2x.png') repeat center center;
     background-size: 42px 60px;
   }
   
@@ -124,12 +124,38 @@
   color: #FFFFFF;
 }
 
+.bg-grey {
+  background-color: #CCCACB;
+  color: #FFFFFF;
+}
+
+.bg-mint {
+  background-color: #6CC6AC;
+  color: #FFFFFF;
+}
+
+.bg-daffodil {
+  background-color: #FEDA25;
+  color: #FFFFFF;
+}
 .text-turquoise {
   color: #61C7C8;
 }
 
 .text-tulip {
   color: #CC1F4C;
+}
+
+.text-grey {
+  color: #CCCACB;
+}
+
+.text-mint {
+  color: #6CC6AC;
+}
+
+.text-daffodil {
+  color: #FEDA25;
 }
 
 .serif {

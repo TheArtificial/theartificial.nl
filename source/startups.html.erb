@@ -1,168 +1,120 @@
 ---
-title: The Artificial managing knowledge
+title: "The Artificial & Startups"
 ---
 
 <style>
-    #slides {
-        height: 600px;
+    #logo {
+        background:url('images/logo-lg-startups.png') no-repeat center center;
+        background-size: 600px 300px;
     }
-     #slide_intro {
-        background:url('images/1x_learning-intro.png') no-repeat center center;
-        background-size: 1600px 600px;
+    #sketch {
+        background:url('images/startups-sketch.png') no-repeat center center;
+        background-size: 600px 400px;
     }
-    #slide_sketch {
-        background:url('images/1x_learning-sketch.png') no-repeat center center;
-        background-size: 1600px 600px;
+    #workshop {
+        background:url('images/startups-workshop.png') no-repeat center center;
+        background-size: 600px 400px;
     }
-    #slide_workshop {
-        background:url('images/1x_learning-workshop.png') no-repeat center center;
-        background-size: 1600px 600px;
+    #flows {
+        background:url('images/startups-flows.png') no-repeat center center;
+        background-size: 600px 400px;
     }
-    #slide_flow {
-        background:url('images/1x_learning-flow.png') no-repeat center center;
-        background-size: 1600px 600px;
+    #design {
+        background:url('images/startups-design.png') no-repeat center center;
+        background-size: 600px 400px;
     }
-    #slide_layers {
-        background:url('images/1x_learning-layers.png') no-repeat center center;
-        background-size: 1600px 600px;
+    #icons {
+        background:url('images/startups-icons.png') no-repeat center center;
+        background-size: 600px 400px;
     }
-    #slide_styles {
-        background:url('images/1x_learning-styles.png') no-repeat center center;
-        background-size: 1600px 600px;
+    #use {
+        background:url('images/startups-use.png') no-repeat center center;
+        background-size: 600px 400px;
     }
-    #slide_context {
-        background:url('images/1x_learning-context.png') no-repeat center center;
-        background-size: 1600px 600px;
-    }
-
+    
     /* Retina targeting */
-    @media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {
-        #slide_intro {
-            background:url('images/2x_learning-intro.png')    no-repeat center center;
-            background-size: 1600px 600px;
+    @media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {                 
+        #logo {
+            background:url('images/logo-lg-startups@2x.png') no-repeat center center;
+            background-size: 600px 300px;
         }
-        #slide_sketch {
-            background:url('images/2x_learning-sketch.png')    no-repeat center center;
-            background-size: 1600px 600px;
+        #sketch {
+            background:url('images/startups-sketch@2x.png') no-repeat center center;
+            background-size: 600px 400px;
         }
-        #slide_workshop {
-            background:url('images/2x_learning-workshop.png') no-repeat center center;
-            background-size: 1600px 600px;
+        #workshop {
+            background:url('images/startups-workshop@2x.png') no-repeat center center;
+            background-size: 600px 400px;
         }
-        #slide_flow {
-            background:url('images/2x_learning-flow.png') no-repeat center center;
-            background-size: 1600px 600px;
+        #flows {
+            background:url('images/startups-flows@2x.png') no-repeat center center;
+            background-size: 600px 400px;
         }
-        #slide_styles {
-            background:url('images/2x_learning-styles.png') no-repeat center center;
-            background-size: 1600px 600px;
+        #design {
+            background:url('images/startups-design@2x.png') no-repeat center center;
+            background-size: 600px 400px;
         }
-        #slide_layers {
-            background:url('images/2x_learning-layers.png') no-repeat center center;
-            background-size: 1600px 600px;
+        #icons {
+            background:url('images/startups-icons@2x.png') no-repeat center center;
+            background-size: 600px 400px;
         }
-        #slide_context {
-            background:url('images/2x_learning-context.png') no-repeat center center;
-            background-size: 1600px 600px;
+        #use {
+            background:url('images/startups-use@2x.png') no-repeat center center;
+            background-size: 600px 400px;
         }
     }
 </style>
 
-<!-- this div constrains the superslides carousel to its height. -->
-<div id="carousel">
+<div class="hero startups">
+</div>
 
-<div id="slides">
-  <ul class="slides-container">
+<div class="sectionlogo" id="logo"></div>
 
-    <li class="slide" id="slide_intro">
+<div id="story">
+  <div class="pale">
 
-        <div class="column">
-            <div class="caption-bottom-left">
-                <h5>Going from Nothing to Something</h5>
-                <p>A London-based venture approached The Artificial with an idea for a knowledge-sharing application. We were all excited about the project, and agreed to an ambitious design approach to get that idea into a executable format for developers as quickly as possible.</p>
-            </div>
-        </div>
-
-    </li>
-
-    <li class="slide" id="slide_sketch">
-
-        <div class="column">
-            <div class="caption-bottom-left">
-                <h5>What is an Insight?</h5>
-                <p>Before we could build the product, we had to distill the essense of the product. We spent many long conversations and emails asking each other questions and discovering new answers.</p></p>
-            </div>
-        </div>
-
-    </li>
-
-    <li class="slide" id="slide_workshop">
-
-        <div class="column">
-            <div class="caption-bottom-right">
-                <h5>Creating a Common Language</h5>
-                <p>To kick off, we held a workshop where we related functionality to terminology, connecting the business case to the user experience.</p>
-            </div>
-        </div>
-
-    </li>
-
-    <li class="slide" id="slide_flow">
-
-        <div class="column">
-            <div class="caption-bottom-right">
-                <h5>Imagining Usage</h5>
-                <p>We documented the the system first through wireframes to help developers get started right away. We tested these wireframes through use cases to show how the many pieces of the application worked together to provide a cohesive experience.</p>
-            </div>
-        </div>
-
-    </li>
-    <li class="slide" id="slide_layers">
-        <div class="column">
-            <div class="caption-bottom-right">
-                <h5>iOS 7, Before iOS 7</h5>
-                <p>We began visual design just as iOS 7 was announced. Despite having only seen Apple's screenshots, we prepared an application with a look and feel appropriate for the new operating system.</p>
-            </div>
-        </div>
-
-    </li>
-    <li class="slide" id="slide_styles">
-        <div class="column">
-            <div class="caption-bottom-left">
-                <h5>Things Always Change</h5>
-                <p>We understand that every product has a life after its initial design. We documented our process to make building future versions of the application less intimidating.</p>
-            </div>
-        </div>
-
-    </li>
-    <li class="slide" id="slide_context">
-        <div class="column">
-            <div class="caption-bottom-left">
-                <h5>Beta Coming Soon</h5>
-                <p>We're always excited to see our ideas become a reality. In just six months, we've watched our application move from static screens to a working application full of shared insights and inspiration.</p>
-            </div>
-        </div>
-    </li>
-
-  </ul>
-
-  <nav class="slides-navigation">
-      <a href="#" class="next"></a>
-      <a href="#" class="prev"></a>
-  </nav>
-
-  <nav class="slides-pagination">
-    <div>
-      <a href="#slide_intro"></a>
-      <a href="#slide_sketch"></a>
-      <a href="#slide_workshop"></a>
-      <a href="#slide_flow"></a>
-      <a href="#slide_layers"></a>
-      <a href="#slide_styles"></a>
-      <a href="#slide_context"></a>
+    <div class="row">
+      <div class="image left" id="sketch"></div>
+      <div class="copy right">
+        <p class="gigantic condensed text-grey">Going from Nothing to Something</p>
+        <p class="small">A London-based venture approached The Artificial with an idea for a knowledge-sharing application. We were all excited about the project, and agreed to an ambitious design approach to get that idea into a executable format for developers as quickly as possible.</p>
+      </div>
+    </div>      
+    
+    <div class="row">
+      <div class="copy bg-grey left">
+        <p class="large serif">We started by relating functionality to terminology, connecting the business case to the user experience.</p>
+      </div>
+      <div class="image right" id="workshop"></div>
     </div>
-  </nav>
-
-</div>
-
-</div>
+  
+    <div class="row">
+      <div class="image left" id="flows"></div>
+      <div class="copy right">
+        <p class="small"><span class="dropcap">W</span>e documented the the system first through wireframes to help developers get started right away. We tested these wireframes through use cases to show how the many pieces of the application worked together to provide a cohesive experience.</p>
+      </div>
+    </div>    
+    
+    <div class="row">
+      <div class="copy left">
+        <p class="gigantic text-grey condensed">iOS 7, Before iOS 7</p>
+        <p class="small">We began visual design just as iOS 7 was announced. Despite having only seen Apple's screenshots, we prepared an application with a look and feel appropriate for the new operating system.</p>
+      </div>
+          <div class="image right" id="design"></div>
+    </div>        
+    
+    <div class="row">
+      <div class="image left" id="icons"></div>
+      <div class="copy right bg-grey">
+        <p class="large serif">Every product has a life after its initial design. We documented our process to make building future versions of the application less intimidating.</p>
+      </div>
+    </div>
+        
+    <div class="row">
+      <div class="copy left">
+        <p class="small"><span class="dropcap">W</span>e're always excited to see our ideas become a reality. In just six months, we've watched our application move from static screens to a working application full of shared insights and inspiration.</p>
+      </div>
+          <div class="image right" id="use"></div>
+    </div>  
+  </div>
+</div>  

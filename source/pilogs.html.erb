@@ -1,133 +1,92 @@
 ---
-title: The Artificial measuring
+title: "The Artificial & The Quantified Self"
 ---
     
 <style>
-    #slides {
-        height: 600px;
+    #logo {
+        background:url('images/logo-lg-pilogs.png') no-repeat center center;
+        background-size: 600px 300px;
     }
-    
-    #slide_intro {
-        background:url('images/1x_pilogs-intro.png') no-repeat center center;
-        background-size: 1600px 600px;
+    #postit {
+        background:url('images/pilogs-postit.png') no-repeat center center;
+        background-size: 600px 400px;
     }
-    #slide_sketch {
-        background:url('images/1x_pilogs-sketch.png') no-repeat center center;
-        background-size: 1600px 600px;
+    #inventory {
+        background:url('images/pilogs-inventory.png') no-repeat center center;
+        background-size: 600px 400px;
     }
-    #slide_screens {
-        background:url('images/1x_pilogs-context.png') no-repeat center center;
-        background-size: 1600px 600px;
+    #design {
+        background:url('images/pilogs-design.png') no-repeat center center;
+        background-size: 600px 400px;
     }
-    #slide_code {
-        background:url('images/1x_pilogs-code.png') no-repeat center center;
-        background-size: 1600px 600px;
-    }
-    #slide_ixd {
-        background:url('images/1x_pilogs-ixd.png') no-repeat center center;
-        background-size: 1600px 600px;
+    #code {
+        background:url('images/pilogs-code.png') no-repeat center center;
+        background-size: 600px 400px;
     }
     
     /* Retina targeting */
-    @media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {
-        #slide_intro {
-            background:url('images/2x_pilogs-intro.png') no-repeat center center;
-            background-size: 1600px 600px;
-        }       
-        #slide_sketch {
-            background:url('images/2x_pilogs-sketch.png') no-repeat center center;
-            background-size: 1600px 600px;
+    @media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {                 
+        #logo {
+            background:url('images/logo-lg-pilogs@2x.png') no-repeat center center;
+            background-size: 600px 300px;
         }
-        #slide_screens {
-            background:url('images/2x_pilogs-context.png') no-repeat center center;
-            background-size: 1600px 600px;
+        #postit {
+            background:url('images/pilogs-postit@2x.png') no-repeat center center;
+            background-size: 600px 400px;
         }
-        #slide_code {
-            background:url('images/2x_pilogs-code.png') no-repeat center center;
-            background-size: 1600px 600px;
+        #inventory {
+            background:url('images/pilogs-inventory@2x.png') no-repeat center center;
+            background-size: 600px 400px;
         }
-        #slide_ixd {
-            background:url('images/2x_pilogs-ixd.png') no-repeat center center;
-            background-size: 1600px 600px;
+        #design {
+            background:url('images/pilogs-design@2x.png') no-repeat center center;
+            background-size: 600px 400px;
+        }
+        #code {
+            background:url('images/pilogs-code@2x.png') no-repeat center center;
+            background-size: 600px 400px;
         }
     }
 </style>
 
-<!-- this div constrains the superslides carousel to its height. -->
-<div id="carousel">
+<div class="hero pilogs">
+</div>
 
-<div id="slides"><ul class="slides-container">
+<div class="sectionlogo" id="logo"></div>
 
-   <li class="slide" id="slide_intro">
+<div id="story">
+  <div class="pale">
 
-        <div class="column">
-            <div class="caption-bottom-right">
-                <h5>An Itch to Scratch</h5>
-                <p>We have activity trackers, connected scales, and travel loggers. It's frustrating to learn from data across services, so we've imagined an agnostic platform.</p>
-            </div>
-        </div>
-
-    </li> 
+    <div class="row">
+      <div class="image left" id="postit"></div>
+      <div class="copy right">
+        <p class="gigantic condensed text-daffodil">An itch to scratch</p>
+        <p class="small">We have activity trackers, connected scales, and travel loggers. It's frustrating to learn from data across services, so we've envisioned an agnostic platform.</p>
+        <p class="small">We looked through our data and tried to imagine both obvious and whimsical ways of visualizing it. It's easy to get lost in the possibilities, but we keep ourselves grounded by evaluating what will be helpful or inspiring to future users.</p>
+      </div>
+    </div>      
+      
+    <div class="row">
+      <div class="image right" id="inventory"></div>
+      <div class="copy left">
+        <p class="large serif">A service of this magnitude overwhelms quickly, so we documented an inventory of the screens to show which interactions will take place on what screens.</p>
+      </div>
+    </div>    
     
-    <li class="slide" id="slide_sketch">
-
-        <div class="column">
-            <div class="caption-bottom-left">
-                <h5>The Ideation Process</h5>
-                <p>We looked through our data and tried to imagine both obvious and whimsical ways of visualizing it. It's easy to get lost in the possibilities, but we keep ourselves grounded by evaluating what will be helpful or inspiring to future users.</p>
-            </div>
-        </div>
-
-    </li>
-
-    <li class="slide" id="slide_ixd">
-        <div class="column">
-            <div class="caption-top-right">
-                <h5>Making the Big Picture Small</h5>
-                <p>A service of this magnitude overwhelms quickly, so we documented an inventory of the screens to show which interactions will take place on what screens.</p>
-            </div>
-        </div>
-
-    </li>
-    
-    <li class="slide" id="slide_screens">
-
-        <div class="column">
-            <div class="caption-bottom-left">
-                <h5>Quanitified Needn't be Ugly</h5>
-                <p>Similar services today are complicated and ugly. We strive for an accessible and beautiful view into our own data.</p>
-            </div>
-        </div>
-
-    </li>
-
-    <li class="slide" id="slide_code">
-
-        <div class="column">
-            <div class="caption-bottom-left">
-                <h5>DIY</h5>
-                <p>When the product you desire doesn't exist, you have to build it yourself. So we're sharpening our web skills by developing our own service.</p>
-            </div>
-        </div>
-    </li>
-
-  </ul>
-
-  <nav class="slides-navigation">
-      <a href="#" class="next"></a>
-      <a href="#" class="prev"></a>
-  </nav>
-
-  <nav class="slides-pagination">
-    <div>
-      <a href="#slide_intro"></a>
-      <a href="#slide_sketch"></a>
-      <a href="#slide_ixd"></a>
-      <a href="#slide_screens"></a>
-      <a href="#slide_code"></a>
+    <div class="row">
+      <div class="image left" id="design"></div>
+      <div class="copy bg-daffodil right">
+        <p class="gigantic condensed">Quantified needn't be ugly</p>
+        <p class="medium">Similar services today are complicated and ugly. We strive for an accessible and beautiful view into our own data.</p>
+      </div>
     </div>
-  </nav>
-
-</div>
-
-</div>
+    
+    <div class="row">
+      <div class="image right" id="code"></div>
+      <div class="copy left">
+        <p class="medium"><span class="dropcap">W</span>hen the product you desire doesn't exist, you have to build it yourself. So we're sharpening our web skills by developing our own service.</p>
+      </div>
+    </div>       
+    
+  </div>
+</div>  
