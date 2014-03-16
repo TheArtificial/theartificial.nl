@@ -1,3 +1,4 @@
+@import "colors";
 @import "_mixins";
 
 #slides {
@@ -14,7 +15,7 @@
 }
 
 .caption-top-left, .caption-top-right, .caption-bottom-left, .caption-bottom-right, .caption-error {
-    background-color: #191516;
+    background-color: $darkestgrey;
     border-radius: 2px;
     position: absolute;
     width: 320px;
@@ -86,15 +87,15 @@
     z-index: 3;
 }
 .slides-pagination div {
-    background: #352f31;
-    border: 2px solid #352f31;
+    background: $darkgrey;
+    border: 2px solid $darkgrey;
     border-radius: 16px;
     left: -50%;
     position: relative;
 }
 .slides-pagination a {
-    background: #191617;
-    border: 2px solid #191617;
+    background: $darkestgrey;
+    border: 2px solid $darkestgrey;
     border-radius: 15px;
     width: 10px;
     height: 10px;
@@ -110,6 +111,6 @@
     text-indent: -999px;
 }
 .slides-pagination a.current {
-    background: #FFFFFF;
-    border: 2px solid #FFFFFF;
+    background: $white;
+    border: 2px solid $white;
 }

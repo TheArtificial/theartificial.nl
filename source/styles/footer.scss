@@ -1,3 +1,4 @@
+@import "colors";
 @import "_mixins";
 
 #footer {
@@ -24,7 +25,7 @@
 }
 
 #map {
-  background-color: #01A59D;
+  background-color: $turquoise;
   background-image: url(../images/map.svg);
   background-size: 360px 212px;
   border-radius: 2px;
@@ -62,7 +63,7 @@ li.socialLink a {
   height: 30px;
   display: block;
   
-  background-color: #01A59D;
+  background-color: $turquoise;
   border-radius: 2px;
   
   font-family: "Georgia", Times, Serif;
@@ -70,11 +71,11 @@ li.socialLink a {
   font-style: italic;
   font-weight: bold;
   text-align: center;
-  color: #FFFFFF;
+  color: $white;
 }
 
 .button a:hover {
-  background-color: #0c6666;
+  background-color: $lightturquoise;
 }
 
 #twitter {

@@ -1,3 +1,4 @@
+@import "colors";
 @import "_mixins";
 
 #header {
@@ -7,7 +8,7 @@
   height: 60px;
   width: 100%;
 
-  background-color: #191617;
+  background-color: $darkestgrey;
 
   z-index: 100;
 }
@@ -57,12 +58,12 @@
   display: block;
   
   text-align: center;  
-  color: #FFFFFF;
-  font-weight: bold;
+  color: $white;
+  font-weight: 500;
 }
 
 #header .logoBox .logo a, #header .casestudies li a {
-  background-color: #352E30;
+  background-color: $darkgrey;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -75,7 +76,7 @@
 }
 
 #header .logoBox .logo a.current, #header .casestudies li .current {
-  background-color: #01a59d;
+  background-color: $turquoise;
 }
 
 #DDD {

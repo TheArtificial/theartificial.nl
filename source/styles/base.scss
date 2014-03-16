@@ -1,9 +1,10 @@
+@import "colors";
 @import "_mixins";
 
 body {
-  background: #191516;
+  background: $darkestgrey;
   background-position: center;
-  color: #191617;
+  color: $darkestgrey;
   font-family: "Museo Sans", Helvetica, Arial, Sans-Serif;
   font-size: 1em;
   min-height: 100%;
@@ -15,12 +16,12 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: $turquoise;
 }
 
 a:hover {
   text-decoration: none;
-  color: #149873;
+  color: $lightturquoise;
 }
 
 h1 {
@@ -37,7 +38,7 @@ h2 {
 }
 
 h3 {
-  color: #FFFFFF;
+  color: $white;
   font-family: "Georgia", Times, Serif;
   font-size: 1.2em;
   font-weight: bold;
@@ -51,16 +52,15 @@ h4 {
 }
 
 h5{
-	color: #FFFFFF;
-	font-family: "Georgia", Times, Serif;
-	font-size: 1.6em;
-    font-style: italic;
-    line-height: 1.2em;
-	margin: 0px;
+  color: $white;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin: 0px;
 }
 
 h6, h6 a{
-	color: #352E30;
+	color: $darkestgrey;
 	font-size: 1.2em;
 }
 
@@ -84,7 +84,7 @@ p{
 }
 
 .line {
-    background-color: #FFFFFF;
+    background-color: $white;
     border-radius:1px;
     display: block;
     float: left;
@@ -106,7 +106,7 @@ p{
 }
 
 #carousel {
-  background-color: #B8E1D6;
+  background-color: $lightturquoise;
   height: 600px;
   width: 100%;
 }
@@ -121,7 +121,7 @@ p{
 
 #story {
   width: 100%;
-  background-color: #352F31;
+  background-color: $darkgrey;
   margin-bottom: 360px;
 }
 

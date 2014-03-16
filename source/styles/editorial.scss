@@ -1,3 +1,5 @@
+@import "colors";
+
 /* defining background patterns */
 .hero.threedee {
   background-image: url(../images/pattern-3DS.png);
@@ -82,7 +84,7 @@
   padding: 30px;
   height: 340px;
   
-  background-color: #FFFFFF;
+  background-color: $white;
 }
 
 .small {
@@ -103,47 +105,47 @@
 }
 
 .bg-turquoise {
-  background-color: #61C7C8;
-  color: #FFFFFF;
+  background-color: $turquoise;
+  color: $white;
 }
 
 .bg-tulip {
-  background-color: #CC1F4C;
-  color: #FFFFFF;
+  background-color: $tulip;
+  color: $white;
 }
 
 .bg-grey {
-  background-color: #CCCACB;
-  color: #FFFFFF;
+  background-color: $lightgrey;
+  color: $white;
 }
 
 .bg-mint {
-  background-color: #6CC6AC;
-  color: #FFFFFF;
+  background-color: $mint;
+  color: $white;
 }
 
 .bg-daffodil {
-  background-color: #FEDA25;
-  color: #FFFFFF;
+  background-color: $daffodil;
+  color: $white;
 }
 .text-turquoise {
-  color: #61C7C8;
+  color: $turquoise;
 }
 
 .text-tulip {
-  color: #CC1F4C;
+  color: $tulip;
 }
 
 .text-grey {
-  color: #CCCACB;
+  color: $lightgrey;
 }
 
 .text-mint {
-  color: #6CC6AC;
+  color: $mint;
 }
 
 .text-daffodil {
-  color: #FEDA25;
+  color: $daffodil;
 }
 
 .serif {
@@ -177,14 +179,3 @@
 .right {
   float: right;
 }
-
-
-
-
-
-
-
-
-
-
-
