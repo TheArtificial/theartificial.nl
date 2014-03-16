@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" viewBox="0 0 356.432 356.647" enable-background="new 0 0 356.432 356.647" xml:space="preserve">
+<g>
+	
+		<rect x="24.044" y="80.352" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -73.8195 178.2161)" fill="#E5E3E3" width="308.343" height="195.728"/>
+	<path fill="#009EE3" d="M356.074,138.758L138.186,356.647L30.183,248.644L230.057,48.771c9.949-9.949,26.081-9.949,36.03,0
+		L356.074,138.758z"/>
+	<path fill="#E5E3E3" d="M356.074,138.758L211.01,283.822l-0.182-0.182c-9.972-9.972-9.972-26.141,0-36.113l127.008-127.008
+		L356.074,138.758z"/>
+	
+		<rect x="5.673" y="181.769" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -117.8667 93.1434)" fill="#666163" width="95.655" height="14.161"/>
+	
+		<rect x="67.721" y="243.817" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -143.5677 155.1912)" fill="#666163" width="95.655" height="14.161"/>
+	
+		<rect x="91.265" y="279.162" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -170.0095 162.0454)" fill="#666163" width="38.673" height="14.161"/>
+	
+		<rect x="100.161" y="276.257" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -157.0048 187.6312)" fill="#E5E3E3" width="95.655" height="14.161"/>
+	
+		<rect x="16.032" y="195.226" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -122.1576 103.5027)" fill="#666163" width="95.655" height="7.966"/>
+	<path fill="#006DB9" d="M266.425,211.241l-33.81,33.81c-5.279,5.279-13.839,5.279-19.119,0l-0.193-0.193
+		c-5.279-5.279-5.279-13.839,0-19.119l33.81-33.81c5.279-5.279,13.839-5.279,19.119,0l0.193,0.193
+		C271.705,197.402,271.705,205.962,266.425,211.241z"/>
+	
+		<text transform="matrix(0.7071 0.7071 -0.7071 0.7071 241.3288 75.9181)" fill="#F2F2F2" font-family="'MuseoSlab-300'" font-size="33.38">24</text>
+</g>
+</svg>
