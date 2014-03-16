@@ -24,10 +24,10 @@
 body { background: #1abc9c; font-family: 'Lato', sans-serif; letter-spacing: 1px; font-size:100%;}
 
 header {
-    text-align: justify;
+    text-align: left;
     height: 4.6em;
     padding: 2em;
-    padding-bottom:3em;
+    padding-bottom:5em;
     background: #2c3e50;
     color: #fff;
 }
