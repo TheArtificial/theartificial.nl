@@ -1,0 +1,172 @@
+/* defining background patterns */
+.hero.threedee {
+  background-image: url(../images/pattern-3DS.png);
+}
+
+.hero.startups {
+  background-image: url(../images/pattern-startups.png);
+}
+
+.hero.designfordeath {
+  background-image: url(../images/pattern-death.png);
+}
+
+.hero.toicon {
+  background-image: url(../images/pattern-toicon.png);
+}
+
+.hero.pilogs {
+  background-image: url(../images/pattern-pilogs.png);
+}
+
+@media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {         
+  .hero.threedee {
+    background:url('../images/pattern-3DS@2x.png') repeat center center;
+    background-size: 40px 52px;
+  }
+  
+  .hero.startups {
+    background:url('../images/pattern-startups@2x.png') repeat center center;
+    background-size: 24px 44px;
+  }
+  
+  .hero.designfordeath {
+    background:url('../images/pattern-death@2x.png') repeat center center;
+    background-size: 80px 80px;
+  }
+  
+  .hero.toicon {
+    background:url('../images/pattern-toicon@2x.png') repeat center center;
+    background-size: 42px 60px;
+  }
+  
+  .hero.pilogs {
+    background:url('../images/pattern-pilogs@2x.png') repeat center center;
+    background-size: 58px 52px;
+  }
+}
+  
+.hero {  
+  position: fixed;
+  
+  width: 100%;
+  height: 180px;
+  padding-top: 80px;
+  padding-bottom: 160px;
+  
+  z-index: -1;
+}
+
+.sectionlogo {
+  margin: 0 auto;
+  width: 600px;
+  height: 300px;
+  display: block;
+  padding: 60px 0 60px 0;
+}
+
+#story {
+  width: 100%;
+  background-color: #352F31;
+  margin-bottom: 360px;
+}
+
+.row {
+  clear: both;
+  height: 400px;
+}
+
+
+/* all those type styles */
+.dropcap {
+  float: left;
+  display: inline;
+  
+  padding-right: 8px;
+
+  font-size: 3.4em;
+  font-weight: 700;
+  line-height: 1em;
+}
+  
+.copy {
+  width: 300px;
+  padding: 30px;
+  height: 340px;
+  
+  background-color: #FFFFFF;
+}
+
+.small {
+  font-size: .9em;
+  line-height: 1.4em;
+}
+
+.medium {
+  font-size: 1.2em;
+}
+
+.large {
+  font-size: 1.6em;
+}
+
+.gigantic {
+  font-size: 2.8em;
+}
+
+.bg-turquoise {
+  background-color: #61C7C8;
+  color: #FFFFFF;
+}
+
+.bg-tulip {
+  background-color: #CC1F4C;
+  color: #FFFFFF;
+}
+
+.text-turquoise {
+  color: #61C7C8;
+}
+
+.text-tulip {
+  color: #CC1F4C;
+}
+
+.serif {
+  font-family: Georgia, Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+
+.condensed {
+  font-family: "Nimbus Sans Cond", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.0em;
+}
+
+.image {
+  display: block;
+  width: 600px;
+  height: 400px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
