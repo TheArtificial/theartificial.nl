@@ -6,69 +6,193 @@ title: The Artificial
     #slides {
         height: 600px;
     }
-
-    #slide_logo {
-        background:url('images/1x_brand-LogoShannon.png') no-repeat center center;
+    #slide_3ds {
+        background:url('images/carousel-3ds.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
+    #slide_startups {
+        background:url('images/carousel-startups.png') no-repeat center center;
         background-size: 1600px 600px;
     }
     #slide_window {
-        background:url('images/1x_brand-OurWindow.png') no-repeat center center;
+        background:url('images/carousel-death.png') no-repeat center center;
         background-size: 1600px 600px;
+    }
+    #slide_window {
+        background:url('images/carousel-icon.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
+    #slide_window {
+        background:url('images/carousel-pilogs.png') no-repeat center center;
+        background-size: 1600px 600px;
+    }
+    #logo {
+        background:url('images/artificial-logo.png') no-repeat center center;
+        background-size: 600px 400px;
+    }
+    #point {
+        background:url('images/artificial-point.png') no-repeat center center;
+        background-size: 600px 400px;
+    }
+    #door {
+        background:url('images/artificial-door.png') no-repeat center center;
+        background-size: 600px 400px;
+    }
+    #cards {
+        background:url('images/artificial-cards.png') no-repeat center center;
+        background-size: 600px 400px;
+    }
+    #inside {
+        background:url('images/artificial-inside.png') no-repeat center center;
+        background-size: 600px 400px;
     }
 
 /* Retina targeting */
 @media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {
-        #slide_logo {
-            background:url('images/2x_brand-LogoShannon.png')    no-repeat center center;
+        #slide_3ds {
+            background:url('images/carousel-3ds@2x.png')    no-repeat center center;
             background-size: 1600px 600px;
         }
-        #slide_window {
-            background:url('images/2x_brand-OurWindow.png') no-repeat center center;
+        #slide_startups {
+            background:url('images/carousel-startups@2x.png') no-repeat center center;
             background-size: 1600px 600px;
+        }
+        #slide_death {
+            background:url('images/carousel-death@2x.png') no-repeat center center;
+            background-size: 1600px 600px;
+        }
+        #slide_icon {
+            background:url('images/carousel-icon@2x.png') no-repeat center center;
+            background-size: 1600px 600px;
+        }
+        #slide_pilogs {
+            background:url('images/carousel-pilogs@2x.png') no-repeat center center;
+            background-size: 1600px 600px;
+        }
+        #logo {
+            background:url('images/artificial-logo@2x.png') no-repeat center center;
+            background-size: 600px 400px;
+        }
+        #point {
+            background:url('images/artificial-point@2x.png') no-repeat center center;
+            background-size: 600px 400px;
+        }
+        #door {
+            background:url('images/artificial-door@2x.png') no-repeat center center;
+            background-size: 600px 400px;
+        }
+        #cards {
+            background:url('images/artificial-cards@2x.png') no-repeat center center;
+            background-size: 600px 400px;
+        }
+        #inside {
+            background:url('images/artificial-inside@2x.png') no-repeat center center;
+            background-size: 600px 400px;
         }
     }
 </style>
 
 <!-- this div constrains the superslides carousel to its height. -->
 <div id="carousel">
+  <div id="slides">
+    <ul class="slides-container">
 
-<div id="slides">
-  <ul class="slides-container">
+      <li class="slide" id="slide_3ds">
+          <div class="column">
+              <div class="caption-bottom-left">
+                  <h5>Awful and Artificial</h5>
+                  <p>During the construction of the Cathedral of St Paul in London, the King of England was taken on a tour by Sir Christopher Wren, the chief architect. Afterwards, the King told Wren that the Cathedral was both "awful and artificial."</p>
+                  <p>"Artificial" has been unfairly burdened with connotations of cheap inauthenticy. There is nothing cheap in the original meaning of the word; rather, when Christopher Wren heard this phrase, he would have taken it as a compliment.</p>
+              </div>
+          </div>
 
-    <li class="slide" id="slide_logo">
+      </li>
 
-        <div class="column">
-            <div class="caption-bottom-left">
-                <h5>Awful and Artificial</h5>
-                <p>During the construction of the Cathedral of St Paul in London, the King of England was taken on a tour by Sir Christopher Wren, the chief architect. Afterwards, the King told Wren that the Cathedral was both "awful and artificial."</p>
-                <p>"Artificial" has been unfairly burdened with connotations of cheap inauthenticy. There is nothing cheap in the original meaning of the word; rather, when Christopher Wren heard this phrase, he would have taken it as a compliment.</p>
-            </div>
-        </div>
+      <li class="slide" id="slide_startups">
+          <div class="column">
+              <div class="caption-bottom-right">
+                  <h5>Come say <i>hello</i></h5>
+                  <p>If you're in Amsterdam, pay us a visit. You'll recognize us by our window.</p>
+              </div>
+          </div>
+      </li>
 
-    </li>
+      <li class="slide" id="slide_death">
+          <div class="column">
+              <div class="caption-bottom-right">
+                  <h5>Come say <i>hello</i></h5>
+                  <p>If you're in Amsterdam, pay us a visit. You'll recognize us by our window.</p>
+              </div>
+          </div>
+      </li>
 
-    <li class="slide" id="slide_window">
-        <div class="column">
-            <div class="caption-bottom-right">
-                <h5>Come say <i>hello</i></h5>
-                <p>If you're in Amsterdam, pay us a visit. You'll recognize us by our window.</p>
-            </div>
-        </div>
-    </li>
-  </ul>
+      <li class="slide" id="slide_icon">
+          <div class="column">
+              <div class="caption-bottom-right">
+                  <h5>Come say <i>hello</i></h5>
+                  <p>If you're in Amsterdam, pay us a visit. You'll recognize us by our window.</p>
+              </div>
+          </div>
+      </li>
 
-  <nav class="slides-navigation">
-      <a href="#" class="next"></a>
-      <a href="#" class="prev"></a>
-  </nav> 
+      <li class="slide" id="slide_pilogs">
+          <div class="column">
+              <div class="caption-bottom-right">
+                  <h5>Come say <i>hello</i></h5>
+                  <p>If you're in Amsterdam, pay us a visit. You'll recognize us by our window.</p>
+              </div>
+          </div>
+      </li>    
+    </ul>
 
-  <nav class="slides-pagination">
-      <div>
-        <a href="#slide_logo"> </a>
-        <a href="#slide_window"> </a>
+    <nav class="slides-navigation">
+        <a href="#" class="next"></a>
+        <a href="#" class="prev"></a>
+    </nav> 
+  </div>
+</div>
+<div id="story">
+  <div class="pale">
+
+    <div class="row">
+      <div class="image left" id="logo"></div>
+      <div class="copy right">
+        <p class="gigantic condensed text-turquoise">We are The Artificial</p>
+        <p class="small">We are a digital product design agency comprised of an ambitious group of individuals with passions and expertise in aesthetics, behavior, and technology. We believe in making over talking and convey our ideas through sketches, pixels, and prototypes.
+</p>
       </div>
-  </nav>
-
-</div>
-
-</div>
+    </div>      
+      
+    <div class="row">
+      <div class="image right" id="point"></div>
+      <div class="copy left bg-tulip">
+        <p class="small">Collaboration is the core of what we do</p>
+        <p class="gigantic serif">We are better together than as individuals.</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="image left" id="door"></div>
+      <div class="copy right">
+        <p class="large serif">we believe in the uncompromising quality of our work, </p>
+        <p class="gigantic condensed text-tulip">and we seek every opportunity to improve our process.</p>
+      </div>
+    </div>    
+    
+    <div class="row">
+      <div class="image right" id="cards"></div>
+      <div class="copy bg-turquoise left">
+        <p class="gigantic condensed">Our work is based in logic but enlived by emotion.</p>
+        <p class="small">We are all generalists—artists who work in code and technologists with business strategy expertise. We approach problems from these many perspectives and find solutions in unexpected places.</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="image left" id="inside"></div>
+      <div class="copy right">
+        <p class="medium"><span class="dropcap">W</span>e are insatiably curious and fearless in the face of the new. We're always looking for like-minded explorers to share our adventures, so if you're feeling courageous, drop us a line. Anything could happen!</p>
+      </div>
+    </div>       
+    
+  </div>
+</div>  
