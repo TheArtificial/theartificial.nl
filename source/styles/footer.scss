@@ -9,6 +9,12 @@
   display: block;
   
   z-index: -1;
+  
+  p {
+    color: #FFFFFF;
+    font-size: .8em;
+    line-height: 1.2em;
+  }
 }
 
 #location {
@@ -51,20 +57,24 @@ li.socialLink a {
 }
 
 .button a{
+  padding-top: 8px;
+  width: 140px;
+  height: 30px;
+  display: block;
+  
   background-color: #01A59D;
   border-radius: 2px;
-  display: block;
+  
   font-family: "Georgia", Times, Serif;
-  font-size: 1.2em;
-  height: 28px;
-  padding-top: 12px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
   text-align: center;
-  width: 140px;
+  color: #FFFFFF;
 }
 
 .button a:hover {
   background-color: #0c6666;
-  color: #FFFFFF;
 }
 
 #twitter {

@@ -20,7 +20,7 @@
   width: 100%;
 }
 
-#header .nav {
+#header .casestudies {
   float: right;
 
   height: 50px;
@@ -30,7 +30,7 @@
   font-size: 0.9em;
 }
 
-#header .nav li {
+#header .casestudies li {
   float: left;
 
   margin-left: 10px;
@@ -38,7 +38,7 @@
   list-style-type: none;    
 }
 
-#header .nav li a {
+#header .casestudies li a {
   height: 40px;
   width: 40px;
   
@@ -61,7 +61,7 @@
   font-weight: bold;
 }
 
-#header .logoBox .logo a, #header .nav li a {
+#header .logoBox .logo a, #header .casestudies li a {
   background-color: #352E30;
   -o-transition:.5s;
   -ms-transition:.5s;
@@ -70,11 +70,11 @@
   transition:.5s;
 }
 
-#header .logoBox .logo a:hover, #header .nav li a:hover {
+#header .logoBox .logo a:hover, #header .casestudies li a:hover {
   background-color: #666062;
 }
 
-#header .logoBox .logo a.current, #header .nav li .current {
+#header .logoBox .logo a.current, #header .casestudies li .current {
   background-color: #01a59d;
 }
 

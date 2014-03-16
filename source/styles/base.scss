@@ -39,8 +39,9 @@ h2 {
 h3 {
   color: #FFFFFF;
   font-family: "Georgia", Times, Serif;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
+  font-style: italic;
   margin-bottom: 0px;
 }
 
@@ -114,4 +115,16 @@ p{
     width: 960px;
     height: 100%;
     margin: 0px auto;
+}
+
+
+#story {
+  width: 100%;
+  background-color: #352F31;
+  margin-bottom: 360px;
+}
+
+.row {
+  clear: both;
+  height: 400px;
 }
