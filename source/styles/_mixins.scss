@@ -15,8 +15,8 @@
 }
 
 @mixin icon-sprite($position) {
-    $sheet: url(../images/1x_sprite.png);
-    $sheet-2: url(../images/2x_sprite.png);
+    $sheet: url(../images/sprite.png);
+    $sheet-2: url(../images/sprite@2x.png);
     $sheet-size: 320px 121px;
 
     background: $sheet no-repeat $position;

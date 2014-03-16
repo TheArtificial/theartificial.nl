@@ -1,9 +1,14 @@
 @import "_mixins";
 
 #footer {
-    height: 360px;
-    margin: 0 auto;
-    width: 960px;
+  position: fixed;
+  bottom: 0;
+  
+  height: 360px;
+  width: 100%;
+  display: block;
+  
+  z-index: -1;
 }
 
 #location {

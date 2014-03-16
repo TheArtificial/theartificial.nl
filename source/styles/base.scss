@@ -1,46 +1,47 @@
 @import "_mixins";
 
 body {
-	background: #191516;
-	background-position: center;
-	color: #191617;
-	font-family: "Museo Sans", Helvetica, Arial, Sans-Serif;
-	font-size: 1em;
-    min-height: 100%;
-    padding: 0;
-    margin: 0;
-    line-height: 1.4em;
+  background: #191516;
+  background-position: center;
+  color: #191617;
+  font-family: "Museo Sans", Helvetica, Arial, Sans-Serif;
+  font-size: 1em;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4em;
 /*    padding-top: 60px;*/
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
-    text-decoration: none;
-	color: #149873;
+  text-decoration: none;
+  color: #149873;
 }
 
 h1 {
-	font-size: 4em;
-	font-weight: bold;
-	margin-bottom: 40px;
-	text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 h2 {
-	font-size: 3em;
-	font-weight: bold;
-	text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
 }
 
 h3 {
-	font-family: "Georgia", Times, Serif;
-	font-size: 1em;
-	font-weight: bold;
-    margin-bottom: 0px;
+  color: #FFFFFF;
+  font-family: "Georgia", Times, Serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 
 h4 {
@@ -96,6 +97,11 @@ p{
 .content {
 //	margin-top: 60px;
     width: 100%;
+}
+
+.pale {
+  width: 960px;
+  margin: 0 auto;
 }
 
 #carousel {
