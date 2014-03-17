@@ -22,7 +22,7 @@
   height: 320px;
   width: 100%;
   display: block;
-  
+
   h1 {
     padding-top: 120px;
     
@@ -32,9 +32,25 @@
   }
 }
 
-.masthead {
-  width: 100%;
-  z-index: -1;
+#masthead {
+  .about {
+    
+    width: 960px;
+    margin: 0 auto;
+    
+    text-align: left;
+    color: $white;
+    
+    h1, a {
+      text-align: left;
+      color: $white;
+    }
+  }
+}
+
+.overlay {
+  height: inherit;
+  background: -webkit-linear-gradient(rgba(0,0,0,0.0) 0%,rgba(0,0,0,0.6) 100%)
 }
 
 .imgpreview {
