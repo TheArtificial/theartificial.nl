@@ -1,12 +1,22 @@
 <% wrap_layout :layout do %>
 
+<style>
+  #masthead {
+    height: 320px;
+    width: 100%;
+    background: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/-masthead.png" %>');
+  }
+</style>
+
 <div id="blog-article">
   <div class="titlespace">
-    <img class="masthead" src="<%= "#{current_page.url[/.*(?=\..+$)/]}/-masthead.png" %>">
-    <div class="pale">
+    <div id="masthead">
       <h1><%= current_page.title %></h1>
-      <span>Posted <%= current_page.date.strftime('%B %e, 0%Y') %> by <%= link_to sitemap.find_resource_by_path("/people/#{current_page.data.author}.html").data.title,  "/people/#{current_page.data.author}.html" %></span>
-      </div>
+      <%= link_to sitemap.find_resource_by_path("/people/#{current_page.data.author}.html").data.title,  "/people/#{current_page.data.author}.html", class: 'author', rel: 'author' %>
+      <time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%B %e, 0%Y') %></time>
+    </div>
+    <div class="pale">
+    </div>
   </div>
   
   <div class="pale">
