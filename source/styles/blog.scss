@@ -5,26 +5,26 @@
   overflow: auto;
 }
 
-.titlespace {
+.allposts {
   background-image: url(../images/carousel-artificial.png);
 }
 
 @media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {         
-  .titlespace {
+  .allposts {
     background:url('../images/carousel-artificial@2x.png') no-repeat center center;
     background-size: 1600px 600px;
   }
 }
 
-.titlespace {
-  margin-top: -42px;
+.titlespace, {
+  overflow: hidden;
   
   height: 320px;
   width: 100%;
   display: block;
   
   h1 {
-    padding-top: 160px;
+    padding-top: 120px;
     
     color: $white;
     text-transform: uppercase;
@@ -32,9 +32,15 @@
   }
 }
 
+.masthead {
+  width: 100%;
+  z-index: -1;
+}
+
 .imgpreview {
   float: left;
 }
+
 
 .textpreview {
   float: left;
@@ -68,5 +74,15 @@
     margin-top: 20px;
     padding-top: 40px;
     border-top: 1px solid $darkestgrey;
+  }
+}
+
+#blog-article {
+  .pale {
+    width: 800px;
+    padding: 40px 80px 40px 80px;
+
+    background-color: $white;
+    overflow: auto;
   }
 }
