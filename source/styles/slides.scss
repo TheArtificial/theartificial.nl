@@ -17,8 +17,6 @@
 .caption, .caption-error {
     bottom: 20px;
     left: 0px;
-    background-color: $darkestgrey;
-    border-radius: 2px;
     position: absolute;
     width: 320px;
 	padding: 20px;
@@ -98,3 +96,10 @@
     background: $white;
     border: 2px solid $white;
 }
+
+.slidelogo {
+  width: 300px;
+  height: 100px;
+  display: block;
+}
+
