@@ -3,28 +3,46 @@ title: The Artificial
 ---
 
 <style>
-    #slides {
-        height: 600px;
-    }
-    #slide_3ds {
+    #slide-3ds {
         background:url('images/carousel-3ds.png') no-repeat center center;
-        background-size: 1600px 600px;
+        background-size: 1280px 480px;
     }
-    #slide_startups {
+    #slide-startups {
         background:url('images/carousel-startups.png') no-repeat center center;
-        background-size: 1600px 600px;
+        background-size: 1280px 480px;
     }
-    #slide_death {
+    #slide-death {
         background:url('images/carousel-death.png') no-repeat center center;
-        background-size: 1600px 600px;
+        background-size: 1280px 480px;
     }
-    #slide_icon {
+    #slide-icon {
         background:url('images/carousel-icon.png') no-repeat center center;
-        background-size: 1600px 600px;
+        background-size: 1280px 480px;
     }
-    #slide_pilogs {
+    #slide-pilogs {
         background:url('images/carousel-pilogs.png') no-repeat center center;
-        background-size: 1600px 600px;
+        background-size: 1280px 480px;
+    }
+  
+    #overlay-3ds {
+        background:url('images/logo-sm-3ds.png') no-repeat center center;
+        background-size: 300p 100px;
+    }  
+    #overlay-startups {
+        background:url('images/logo-sm-startups.png') no-repeat center center;
+        background-size: 300p 100px;
+    }  
+    #overlay-death {
+        background:url('images/logo-sm-death.png') no-repeat center center;
+        background-size: 300p 100px;
+    }  
+    #overlay-icon {
+        background:url('images/logo-sm-icon.png') no-repeat center center;
+        background-size: 300p 100px;
+    }  
+    #overlay-pilogs {
+        background:url('images/logo-sm-pilogs.png') no-repeat center center;
+        background-size: 300p 100px;
     }
   
     #logo {
@@ -47,49 +65,28 @@ title: The Artificial
         background:url('images/artificial-inside.png') no-repeat center center;
         background-size: 600px 400px;
     }
-  
-    #smlogo-3ds {
-        background:url('images/logo-sm-3ds.png') no-repeat center center;
-        background-size: 300p 100px;
-    }  
-    #smlogo-startups {
-        background:url('images/logo-sm-startups.png') no-repeat center center;
-        background-size: 300p 100px;
-    }  
-    #smlogo-death {
-        background:url('images/logo-sm-death.png') no-repeat center center;
-        background-size: 300p 100px;
-    }  
-    #smlogo-icon {
-        background:url('images/logo-sm-icon.png') no-repeat center center;
-        background-size: 300p 100px;
-    }  
-    #smlogo-pilogs {
-        background:url('images/logo-sm-pilogs.png') no-repeat center center;
-        background-size: 300p 100px;
-    }
 
 /* Retina targeting */
 @media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {
-        #slide_3ds {
+        #slide-3ds {
             background:url('images/carousel-3ds@2x.png')    no-repeat center center;
-            background-size: 1600px 600px;
+            background-size: 1280px 480px;
         }
-        #slide_startups {
+        #slide-startups {
             background:url('images/carousel-startups@2x.png') no-repeat center center;
-            background-size: 1600px 600px;
+            background-size: 1280px 480px;
         }
-        #slide_death {
+        #slide-death {
             background:url('images/carousel-death@2x.png') no-repeat center center;
-            background-size: 1600px 600px;
+            background-size: 1280px 480px;
         }
-        #slide_icon {
+        #slide-icon {
             background:url('images/carousel-icon@2x.png') no-repeat center center;
-            background-size: 1600px 600px;
+            background-size: 1280px 480px;
         }
-        #slide_pilogs {
+        #slide-pilogs {
             background:url('images/carousel-pilogs@2x.png') no-repeat center center;
-            background-size: 1600px 600px;
+            background-size: 1280px 480px;
         }
         
         #logo {
@@ -113,86 +110,231 @@ title: The Artificial
             background-size: 600px 400px;
         }
     
-        #smlogo-3ds {
+        #overlay-3ds {
             background:url('images/logo-sm-3ds@2x.png') no-repeat center center;
             background-size: 300p 100px;
         }  
-        #smlogo-startups {
+        #overlay-startups {
             background:url('images/logo-sm-startups@2x.png') no-repeat center center;
             background-size: 300p 100px;
         }  
-        #smlogo-death {
+        #overlay-death {
             background:url('images/logo-sm-death@2x.png') no-repeat center center;
             background-size: 300p 100px;
         }  
-        #smlogo-icon {
+        #overlay-icon {
             background:url('images/logo-sm-icon@2x.png') no-repeat center center;
             background-size: 300p 100px;
         }  
-        #smlogo-pilogs {
+        #overlay-pilogs {
             background:url('images/logo-sm-pilogs@2x.png') no-repeat center center;
             background-size: 300p 100px;
         }
     }
 </style>
 
-<!-- this div constrains the superslides carousel to its height. -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<%= javascript_include_tag"jquery.easing.min.js", "jquery.scrollstop.js", "jquery.scrollsnap.hacked.js" %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.scrolling').scrollsnap({
+        direction: 'x',
+        snaps: '.scrolling-wrapper li',
+        proximity: 1000,
+        latency: 200,
+        duration: 500,
+        easing: 'easeInOutCirc'
+    });
+    $('#next').on('click', function() {
+      $('.scrolling').trigger('next');
+    });
+    $('#prev').on('click', function() {
+      $('.scrolling').trigger('prev');
+    });
+    $('.scrolling').on('scrollstart', function() {
+      $('.casestudies a').removeClass('current');
+      $('.overlay').removeClass('current');
+    });
+    $('.scrolling-wrapper li').on('scrollstopped', function() {
+      console.log('stopped');
+      $('.casestudies a').removeClass('current');
+      menuSelector = this.dataset.menu;
+      $(menuSelector).addClass('current');
+      $('.overlay').removeClass('current');
+      overlaySelector = this.dataset.overlay;
+      $(overlaySelector).addClass('current');
+    });
+
+  });
+    
+</script>
+
+<style>  
+  #carousel {
+    width: 100%;
+    min-width: 960px;
+    height: 480px;
+    
+    position: relative;  
+  }
+
+  #carousel .scrolling {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+  
+  .scrolling-wrapper {
+    list-style-type: none;
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .slide {
+    position: inherit;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 480px;
+    
+    display: inline-block;
+    z-index: 0;
+  }
+    
+  #overlay-background {
+    height: 380px; /* + padding-top */
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 60%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    
+    pointer-events: none;
+    
+    /* thanks http://www.colorzilla.com/gradient-editor/ */
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0.6) 0%, rgba(4,4,4,0.6) 25%, rgba(5,5,5,0) 35%, rgba(14,14,14,0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.6)), color-stop(25%,rgba(4,4,4,0.6)), color-stop(35%,rgba(5,5,5,0)), color-stop(100%,rgba(14,14,14,0)));
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.6) 0%,rgba(4,4,4,0.6) 25%,rgba(5,5,5,0) 35%,rgba(14,14,14,0) 100%);
+    background: -o-linear-gradient(left,  rgba(0,0,0,0.6) 0%,rgba(4,4,4,0.6) 25%,rgba(5,5,5,0) 35%,rgba(14,14,14,0) 100%);
+    background: -ms-linear-gradient(left,  rgba(0,0,0,0.6) 0%,rgba(4,4,4,0.6) 25%,rgba(5,5,5,0) 35%,rgba(14,14,14,0) 100%);
+    background: linear-gradient(to right,  rgba(0,0,0,0.6) 0%,rgba(4,4,4,0.6) 25%,rgba(5,5,5,0) 35%,rgba(14,14,14,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#000e0e0e',GradientType=1 );
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .overlay.current {
+    opacity: 1;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+  }
+  
+  #prev, #next {
+    height: 480px;
+    width: 80px;
+
+    position: absolute;
+    top: 75px;
+    z-index: 10;
+
+    line-height: 240px;
+
+    text-align: center;
+    font-weight: bold;
+    
+    cursor: pointer;
+  }
+  #prev {
+    left: 0;
+  }
+  #prev:before {
+    display: block;
+    height: 40px;
+    width: 40px;
+    content: ' ';
+    @include icon-sprite(0 -40px);
+  }
+  #next {
+    right: 0;
+  }
+  #next:before {
+    display: block;
+    height: 40px;
+    width: 40px;
+    content: ' ';
+    @include icon-sprite(-40px -40px);
+  }
+
+</style>
+
 <div id="carousel">
-  <div id="slides">
-    <ul class="slides-container">
-
-      <li class="slide" id="slide_3ds">
-        <div class="column">
-            <div class="caption">
-              <h5>We helped a 3D printing company create touch interfaces for their consumer and production lines.</h5>
-              <div class="slidelogo" id="smlogo-3ds"></div>
-            </div>
-        </div>
-      </li>
-
-      <li class="slide" id="slide_startups">
-        <div class="column">
-          <div class="caption">
-            <h5>We helped a startup build a simple product from a complicated idea.</h5>
-            <div class="slidelogo" id="smlogo-startups"></div>
-          </div>
-        </div>
-      </li>
-
-      <li class="slide" id="slide_death">
-        <div class="column">
-          <div class="caption">
-            <h5>We imagined how our digital remains might live on after we pass.</h5>
-            <div class="slidelogo" id="smlogo-death"></div>
-          </div>
-        </div>
-      </li>
-
-      <li class="slide" id="slide_icon">
-        <div class="column">
-          <div class="caption">
-            <h5>We practice our craft and share with the community when we can.</h5>
-            <div class="slidelogo" id="smlogo-icon"></div>
-          </div>
-        </div>
-      </li>
-
-      <li class="slide" id="slide_pilogs">
-        <div class="column">
-          <div class="caption">
-            <h5>We're building a platform to make meaning of our data.</h5>
-            <div class="slidelogo" id="smlogo-pilogs"></div>
-          </div>
-        </div>
-      </li>    
-    </ul>
-
-    <nav class="slides-navigation">
-        <a href="#" class="next"></a>
-        <a href="#" class="prev"></a>
-    </nav> 
+  <div id="overlay-background">
+    <div class="pale">
+      <div class="overlay current" id="overlay-3ds">
+        We helped a 3D printing company create touch interfaces for their consumer and production lines.
+      </div>
+      <div class="overlay" id="overlay-startups">
+        We helped a startup build a simple product from a complicated idea.
+      </div>
+      <div class="overlay" id="overlay-death">
+        We imagined how our digital remains might live on after we pass.
+      </div>
+      <div class="overlay" id="overlay-icon">
+        We practice our craft and share with the community when we can.
+      </div>
+      <div class="overlay" id="overlay-pilogs">
+        We're building a platform to make meaning of our data.
+      </div>
+    </div>
   </div>
+  <a id="prev">&lt;</a>
+  <div class="scrolling">
+    <ol class="scrolling-wrapper">
+      <li class="slide" id="slide-3ds"
+          data-menu="#DDD" 
+          data-overlay="#overlay-3ds"
+          >&nbsp;</li>
+      <li class="slide" id="slide-startups" 
+          data-menu="#startups" 
+          data-overlay="#overlay-startups"
+          >&nbsp;</li>
+      <li class="slide" id="slide-death" 
+          data-menu="#death" 
+          data-overlay="#overlay-death"
+          >&nbsp;</li>
+      <li class="slide" id="slide-icon" 
+          data-menu="#icon" 
+          data-overlay="#overlay-icon"
+          >&nbsp;</li>
+      <li class="slide" id="slide-pilogs" 
+          data-menu="#pilogs" 
+          data-overlay="#overlay-pilogs"
+          >&nbsp;</li>
+    </ol>
+  </div>
+  <a id="next">&gt;</a>
 </div>
+
 <div id="story">
   <div class="pale">
 

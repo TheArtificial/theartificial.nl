@@ -105,12 +105,6 @@ p{
   margin: 0 auto;
 }
 
-#carousel {
-  background-color: $turquoise;
-  height: 600px;
-  width: 100%;
-}
-
 .column {
     position: relative;
     width: 960px;
@@ -129,4 +123,47 @@ p{
 .row {
   clear: both;
   height: 400px;
+}
+
+
+
+#carousel {
+  background-color: $turquoise;
+  height: 480px;
+  width: 100%;
+}
+
+.slides-navigation {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.slides-navigation a {
+    height: 100%;
+    position: absolute;
+    display: block;
+    padding: 290px 50px;
+}
+.slides-navigation a.prev {
+    left: 0;
+}
+.slides-navigation a.next {
+    right: 0;
+}
+.slides-navigation a.prev:before {
+    display: block;
+    height: 40px;
+    width: 40px;
+    content: ' ';
+    @include icon-sprite(0 -40px);
+}
+.slides-navigation a.next:before {
+    display: block;
+    height: 40px;
+    width: 40px;
+    content: ' ';
+    @include icon-sprite(-40px -40px);
 }
