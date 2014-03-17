@@ -1,0 +1,72 @@
+@import "colors";
+
+#blog {
+  margin-top: 0;
+  overflow: auto;
+}
+
+.titlespace {
+  background-image: url(../images/carousel-artificial.png);
+}
+
+@media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {         
+  .titlespace {
+    background:url('../images/carousel-artificial@2x.png') no-repeat center center;
+    background-size: 1600px 600px;
+  }
+}
+
+.titlespace {
+  margin-top: -42px;
+  
+  height: 320px;
+  width: 100%;
+  display: block;
+  
+  h1 {
+    padding-top: 160px;
+    
+    color: $white;
+    text-transform: uppercase;
+    font-family: "Nimbus Sans Cond", Helvetica, Arial, Sans-serif;
+  }
+}
+
+.imgpreview {
+  float: left;
+}
+
+.textpreview {
+  float: left;
+  width: 280px;
+  height: 320px;
+  padding: 40px;
+  background: $white;
+  
+  text-align: center;
+
+  
+  h2 {
+    text-transform: uppercase;
+    font-family: "Nimbus Sans Cond", Helvetica, Arial, Sans-serif;
+  }
+  
+  .summary {
+    font-size: .8em;
+    line-height: 1.2em;
+  }
+
+  .date, .author {
+    padding: 0;
+    font-size: .7em;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+  
+  .author {
+    margin-top: 20px;
+    padding-top: 40px;
+    border-top: 1px solid $darkestgrey;
+  }
+}
