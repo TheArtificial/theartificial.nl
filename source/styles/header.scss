@@ -10,6 +10,8 @@
 
   background-color: $darkestgrey;
 
+  font-size: 1.4em;
+  
   z-index: 100;
 }
 
@@ -22,20 +24,15 @@
 }
 
 #header .casestudies {
-  float: right;
+  float: left;
 
   height: 50px;
   margin: 10px;
-
-  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-  font-size: 0.9em;
 }
 
 #header .casestudies li {
   float: left;
-
   margin-left: 10px;
-  
   list-style-type: none;    
 }
 
@@ -46,23 +43,53 @@
   border-radius: 2px;
 }
 
-#header .logoBox .logo a {
+.logo {
   float: left;
 
   height: 28px;
-  width: 120px;
-  margin: 10px;
-  padding-top: 12px;
-
+  margin-right: 332px;
+  
   border-radius: 2px;
   display: block;
   
   text-align: center;  
   color: $white;
   font-weight: 500;
+  
+  a {
+    color: $lightestgrey;
+  }
+  
+  a:hover {
+    color: $white;
+  }
 }
 
-#header .logoBox .logo a, #header .casestudies li a {
+.textlink {
+  float: left;
+  margin-top: 20px;
+   
+  a {
+    color: $lightestgrey;
+  }
+  
+  a:hover {
+    color: $white;
+  }
+}
+
+.label {
+  float: left;
+  margin: 10px;
+  color: $white;
+}
+
+.blog {
+  float: left;
+  color: $white;
+}
+
+#header .casestudies li a {
   background-color: $darkgrey;
   -o-transition:.5s;
   -ms-transition:.5s;
@@ -71,11 +98,11 @@
   transition:.5s;
 }
 
-#header .logoBox .logo a:hover, #header .casestudies li a:hover {
+#header .casestudies li a:hover {
   background-color: #666062;
 }
 
-#header .logoBox .logo a.current, #header .casestudies li .current {
+#header .casestudies li .current {
   background-color: $turquoise;
 }
 
@@ -112,4 +139,12 @@
 #team {
   @include icon-sprite(-240px 0);
   display: block;
+}
+
+.line {
+  width: 2px;
+  height: 40px;
+  margin: 10px;
+  display: block;
+  background-color: $lightestgrey;
 }

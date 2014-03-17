@@ -17,11 +17,13 @@
 
     <div id="header">
         <div class="column">
-            <div class="logoBox">
-                <div class="logo"><%= nav_link "The Artificial", "/", id: "home" %></div>
+
+            <div class="textlink">
+              <div class="logo"><%= nav_link "The Artificial", "/", id: "home" %></div>
             </div>
-            
+
             <ul class="casestudies">
+                <div class="label">our work:</div>
                 <li>
                     <%= nav_link "", "/3dsystems.html", id: "DDD" %>
                 </li>
@@ -38,6 +40,10 @@
                     <%= nav_link "", "/pilogs.html", id: "pilogs" %>
                 </li>
             </ul>
+            <div class="line"></div>
+            <div class="textlink">
+              <div class="blog"><%= nav_link "blog", "/", id: "artblog" %></div>  
+            </div>
         </div>
     
     </div>
