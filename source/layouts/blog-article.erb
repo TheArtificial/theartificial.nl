@@ -1,6 +1,7 @@
 <% wrap_layout :layout do %>
 
 <div id="blog-article">
+  <img class="masthead" src="<%= "#{current_page.url[/.*(?=\..+$)/]}/-masthead.png" %>">
   <div class="pale">
     <article>
       <h1><%= current_page.title %></h1>
