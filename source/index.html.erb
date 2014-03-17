@@ -25,24 +25,24 @@ title: The Artificial
     }
   
     #overlay-3ds {
-        background:url('images/logo-sm-3ds.png') no-repeat center center;
-        background-size: 300p 100px;
+        background:url('images/logo-sm-3ds.png') no-repeat bottom left;
+        background-size: 300px 100px;
     }  
     #overlay-startups {
-        background:url('images/logo-sm-startups.png') no-repeat center center;
-        background-size: 300p 100px;
+        background:url('images/logo-sm-startups.png') no-repeat bottom left;
+        background-size: 300px 100px;
     }  
     #overlay-death {
-        background:url('images/logo-sm-death.png') no-repeat center center;
-        background-size: 300p 100px;
+        background:url('images/logo-sm-death.png') no-repeat bottom left;
+        background-size: 300px 100px;
     }  
     #overlay-icon {
-        background:url('images/logo-sm-icon.png') no-repeat center center;
-        background-size: 300p 100px;
+        background:url('images/logo-sm-icon.png') no-repeat bottom left;
+        background-size: 300px 100px;
     }  
     #overlay-pilogs {
-        background:url('images/logo-sm-pilogs.png') no-repeat center center;
-        background-size: 300p 100px;
+        background:url('images/logo-sm-pilogs.png') no-repeat bottom left;
+        background-size: 300px 100px;
     }
   
     #logo {
@@ -88,7 +88,28 @@ title: The Artificial
             background:url('images/carousel-pilogs@2x.png') no-repeat center center;
             background-size: 1280px 480px;
         }
-        
+
+        #overlay-3ds {
+            background:url('images/logo-sm-3ds@2x.png') no-repeat bottom left;
+            background-size: 300px 100px;
+        }  
+        #overlay-startups {
+            background:url('images/logo-sm-startups@2x.png') no-repeat bottom left;
+            background-size: 300px 100px;
+        }  
+        #overlay-death {
+            background:url('images/logo-sm-death@2x.png') no-repeat bottom left;
+            background-size: 300px 100px;
+        }  
+        #overlay-icon {
+            background:url('images/logo-sm-icon@2x.png') no-repeat bottom left;
+            background-size: 300px 100px;
+        }  
+        #overlay-pilogs {
+            background:url('images/logo-sm-pilogs@2x.png') no-repeat bottom left;
+            background-size: 300px 100px;
+        }
+  
         #logo {
             background:url('images/artificial-logo@2x.png') no-repeat center center;
             background-size: 600px 400px;
@@ -110,26 +131,6 @@ title: The Artificial
             background-size: 600px 400px;
         }
     
-        #overlay-3ds {
-            background:url('images/logo-sm-3ds@2x.png') no-repeat center center;
-            background-size: 300p 100px;
-        }  
-        #overlay-startups {
-            background:url('images/logo-sm-startups@2x.png') no-repeat center center;
-            background-size: 300p 100px;
-        }  
-        #overlay-death {
-            background:url('images/logo-sm-death@2x.png') no-repeat center center;
-            background-size: 300p 100px;
-        }  
-        #overlay-icon {
-            background:url('images/logo-sm-icon@2x.png') no-repeat center center;
-            background-size: 300p 100px;
-        }  
-        #overlay-pilogs {
-            background:url('images/logo-sm-pilogs@2x.png') no-repeat center center;
-            background-size: 300p 100px;
-        }
     }
 </style>
 
@@ -232,10 +233,14 @@ title: The Artificial
     background: linear-gradient(to right,  rgba(0,0,0,0.6) 0%,rgba(4,4,4,0.6) 25%,rgba(5,5,5,0) 35%,rgba(14,14,14,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#000e0e0e',GradientType=1 );
   }
+  .overlay-background .pale {
+    position: relative;
+  }
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
+    height: 300px;
     
     opacity: 0;
     -webkit-transition: opacity 0.5s ease-in-out;
