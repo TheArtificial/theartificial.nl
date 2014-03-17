@@ -1,0 +1,14 @@
+<% wrap_layout :layout do %>
+
+<div id="blog-article">
+  <div class="pale">
+    <article>
+      <h1><%= current_page.title %></h1>
+      <span>Posted <%= current_page.date.strftime('%B %e, 0%Y') %> by <%= link_to sitemap.find_resource_by_path("/people/#{current_page.data.author}.html").data.title,  "/people/#{current_page.data.author}.html" %></span>
+      
+      <%= yield %>
+    </article>
+  </div>
+</div>
+    
+<% end %>

@@ -53,6 +53,30 @@ set :js_dir, 'scripts'
 
 set :images_dir, 'images'
 
+activate :blog do |blog|
+  blog.prefix = ""
+  blog.sources = "/blog/{year}-{month}-{day}-{title}.html"
+  blog.permalink = "/blog/{year}/{month}/{day}/{title}.html"
+  blog.layout = "blog-article"
+  blog.default_extension = ".md"
+  blog.summary_separator = /READMORE/
+#  blog.custom_collections = {
+#    author: {
+#      link: '/people/{author}.html',
+#      template: '/people/template.html'
+#    }
+#  }
+end
+with_layout :person do
+  page "/people/*"
+end
+
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true,
+               :autolink => true, 
+               :smartypants => true
+
 # Build-specific configuration
 configure :build do
   activate :minify_css
