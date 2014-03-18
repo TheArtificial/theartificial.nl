@@ -62,8 +62,8 @@
   .overlay {
     height: 150px;
     width: 200px;
-    margin-right: 100px;
-    margin-top: 180px;
+    padding-right: 100px;
+    padding-top: 180px;
     
     position: absolute;
     top: 0;
@@ -87,6 +87,10 @@
   }
 
   .overlay a {
+    display: block;
+    width: 200px;
+    height: 150px;
+    
     text-decoration: none;
     color: $white;
   }
