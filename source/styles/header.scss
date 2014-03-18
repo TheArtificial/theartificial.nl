@@ -70,23 +70,22 @@
   margin-top: 20px;
    
   a {
-    color: $lightestgrey;
+    color: $white;
   }
   
   a:hover {
-    color: $white;
+    color: $lightestgrey;
   }
 }
 
 .label {
   float: left;
   margin: 10px;
-  color: $white;
+  color: $lightestgrey;
 }
 
 .nav-blog {
   float: left;
-  color: $white;
 }
 
 #header .casestudies li a {
