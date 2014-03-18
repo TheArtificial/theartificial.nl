@@ -15,7 +15,10 @@
     <div class="overlay">
       <div class="about">
         <h1><%= current_page.title %></h1>
-        <div class="author"><%= link_to sitemap.find_resource_by_path("/people/#{current_page.data.author}.html").data.title,  "/people/#{current_page.data.author}.html", class: 'author', rel: 'author' %></div>
+        <div class="author">
+          <%#= link_to sitemap.find_resource_by_path("/people/#{current_page.data.author}.html").data.title,  "/people/#{current_page.data.author}.html", class: 'author', rel: 'author' %>
+          <%= sitemap.find_resource_by_path("/people/#{current_page.data.author}.html").data.title %>
+        </div>
         <div class="date"><time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%B %e, 0%Y') %></time></div>
       </div>
     </div>
