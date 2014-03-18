@@ -59,7 +59,12 @@
 
         $scrollingEl.bind('scrollstop', {
           latency: settings.latency
-        }, function (e) {
+          }, function (e) { scrollsnap(e); }
+        ); 
+
+        $(window).on('resize', function(e) { scrollsnap(e); });
+
+        var scrollsnap = function (e) {
 
           var matchingEl = null,
             matchingDy = settings.proximity + 1;
@@ -97,7 +102,7 @@
               $(matchingEl).trigger(settings.onStopEvent);            
             }, settings.onSnapWait)();
           }
-        });
+        }
         
         // added for prev/next buttons        
         $scrollingEl.bind('next', function(e) {
