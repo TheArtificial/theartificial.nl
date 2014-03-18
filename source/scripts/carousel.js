@@ -1,9 +1,12 @@
 $(document).ready(function() {
   var carouselPrefix = '#carousel ';
   
+  console.log('binding');
+  console.log($(carouselPrefix+'.scrolling'));
+  
   $(carouselPrefix+'.scrolling').scrollsnap({
       direction: 'x',
-      snaps: carouselPrefix+'.scrolling-wrapper li',
+      snaps: '.scrolling-wrapper li',
       proximity: 1000,
       latency: 200,
       duration: 500,
