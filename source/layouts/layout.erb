@@ -53,45 +53,7 @@
     
     </div>
     
-    <div id="header-spacer"> </div>
-
-    <script>
-        $(document).ready(function() {
-            // use for an interstitial
-            //  $(document).on('init.slides', function() {
-            //    $('.loading-container').fadeOut(function() {
-            //      $(this).remove();
-            //    });
-            //  });
-    
-            // basic slides behavior
-            $('#slides').superslides({
-                slide_easing: 'easeInOutCubic',
-                slide_speed: 800,
-                pagination: false,
-                hashchange: true,
-                inherit_height_from: '#carousel'
-            });
-    
-            // use hammer to map touch swipes to prev/next
-            document.ontouchmove = function(e) {
-                e.preventDefault();
-            };
-            $('#slides').hammer().on('swipeleft', function() {
-                $(this).superslides('animate', 'next');
-            });            
-            $('#slides').hammer().on('swiperight', function() {
-                $(this).superslides('animate', 'prev');
-            });
-
-            // classify the current pagination link
-            $('#slides').on('animated.slides', function() { 
-              var current_index = $(this).superslides('current');
-              $('.slides-pagination div a').removeClass('current');
-              $('.slides-pagination div a').eq(current_index).addClass('current');
-            });
-        });
-    </script>      
+    <div id="header-spacer"> </div>    
 
     <div class="content">
         <%= yield %>

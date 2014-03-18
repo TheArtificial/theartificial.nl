@@ -62,7 +62,8 @@
           }, function (e) { scrollsnap(e); }
         ); 
 
-        $(window).on('resize', function(e) { scrollsnap(e); });
+        // nice to have, but resize fires too often on iOS
+        // $(window).on('resize', function(e) { scrollsnap(e); });
 
         var scrollsnap = function (e) {
 
