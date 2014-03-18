@@ -222,13 +222,13 @@ title: The Artificial
     pointer-events: none;
     
     /* thanks http://www.colorzilla.com/gradient-editor/ */
-    background: -moz-linear-gradient(left,  rgba(0,0,0,0.6) 0%, rgba(4,4,4,0.6) 25%, rgba(5,5,5,0) 35%, rgba(14,14,14,0) 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.6)), color-stop(25%,rgba(4,4,4,0.6)), color-stop(35%,rgba(5,5,5,0)), color-stop(100%,rgba(14,14,14,0)));
-    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.6) 0%,rgba(4,4,4,0.6) 25%,rgba(5,5,5,0) 35%,rgba(14,14,14,0) 100%);
-    background: -o-linear-gradient(left,  rgba(0,0,0,0.6) 0%,rgba(4,4,4,0.6) 25%,rgba(5,5,5,0) 35%,rgba(14,14,14,0) 100%);
-    background: -ms-linear-gradient(left,  rgba(0,0,0,0.6) 0%,rgba(4,4,4,0.6) 25%,rgba(5,5,5,0) 35%,rgba(14,14,14,0) 100%);
-    background: linear-gradient(to right,  rgba(0,0,0,0.6) 0%,rgba(4,4,4,0.6) 25%,rgba(5,5,5,0) 35%,rgba(14,14,14,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#000e0e0e',GradientType=1 );
+ background: -moz-linear-gradient(45deg,  rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 45%, rgba(0,0,0,0) 46%, rgba(0,0,0,0) 100%);
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,0,0,0.6)), color-stop(45%,rgba(0,0,0,0.6)), color-stop(46%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0)));
+background: -webkit-linear-gradient(45deg,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 45%,rgba(0,0,0,0) 46%,rgba(0,0,0,0) 100%);
+background: -o-linear-gradient(45deg,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 45%,rgba(0,0,0,0) 46%,rgba(0,0,0,0) 100%);
+background: -ms-linear-gradient(45deg,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 45%,rgba(0,0,0,0) 46%,rgba(0,0,0,0) 100%);
+background: linear-gradient(45deg,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 45%,rgba(0,0,0,0) 46%,rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#00000000',GradientType=1 );
   }
   #overlay-background .pale {
     position: relative;
@@ -238,6 +238,8 @@ title: The Artificial
     top: 0;
     left: 0;
     height: 300px;
+    width: 200px;
+    padding-right: 100px;
     
     color: #FFFFFF;
     
