@@ -101,5 +101,18 @@
 
     background-color: $white;
     overflow: auto;
+    
+    h1 {
+      margin-bottom: 6px;
+      margin-top: 40px;
+      text-align: left;
+      font-size: 1.4em;
+      font-weight: 900;
+    }
+    
+    p:first-child:first-letter {
+      font-size: 2em;
+      font-weight: 900;
+    }
   }
 }
