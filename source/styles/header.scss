@@ -78,12 +78,6 @@
   }
 }
 
-.label {
-  float: left;
-  margin: 10px;
-  color: $lightestgrey;
-}
-
 .nav-blog {
   float: left;
 }
@@ -102,7 +96,7 @@
 }
 
 #header .casestudies li .current {
-  background-color: $turquoise;
+  background-image: url("/images/preview.png");
 }
 
 #DDD {
