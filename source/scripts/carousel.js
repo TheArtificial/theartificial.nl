@@ -16,11 +16,11 @@ $(document).ready(function() {
     $(carouselPrefix+'.scrolling').trigger('prev');
   });
   $(carouselPrefix+'.scrolling').on('scrollstart', function() {
-    $('.casestudies a').removeClass('preview');
+    $('.carousel-menu').removeClass('preview');
     $('.overlay').removeClass('preview');
   });
   $(carouselPrefix+'.scrolling-wrapper li').on('scrollstopped', function() {
-    $('.casestudies a').removeClass('preview');
+    $('.carousel-menu').removeClass('preview');
     menuSelector = this.dataset.menu;
     $(menuSelector).addClass('preview');
     $('.overlay').removeClass('preview');
