@@ -71,7 +71,6 @@ with_layout :person do
   page "/people/*"
 end
 
-
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true,
                :autolink => true, 
@@ -82,14 +81,19 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :gzip
+  default_caching_policy public: true, must_revalidate: true
 end
+
+  # we need to enable asset hashing so we can set assets to cache for a long time
+  # google performance tools might want the Expires header, explicitly
+
 
 # sync to S3 with middleman-s3_sync
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'theartificial.nl'
   s3_sync.region                     = 'eu-west-1'
   # see .s3_sync for credentials
-  s3_sync.delete                     = false
+  s3_sync.delete                     = true
   s3_sync.after_build                = false
   s3_sync.prefer_gzip                = true
   s3_sync.path_style                 = true
