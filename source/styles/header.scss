@@ -83,7 +83,7 @@
 }
 
 #header .casestudies li a {
-  background-color: $darkgrey;
+  background-color: $darkestgrey;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -96,7 +96,7 @@
 }
 
 #header .casestudies li .current {
-  background-image: url("/images/preview.png");
+  background-color: $mint;
 }
 
 #DDD {
