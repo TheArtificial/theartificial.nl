@@ -86,10 +86,12 @@
       </div>
 
       <div class="quarter">
+        <% article = page_articles.first %>
         <h3>From the blog</h3>
-        <h4>Blog title</h4>
-        <p>blog content blog content blog content blog content.</p>
+        <h4><%= link_to article.title, article %></h4>
+        <%= article.summary(180, '…') %>
       </div>
+
     </div>
 
     <script>
