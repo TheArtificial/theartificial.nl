@@ -79,7 +79,7 @@
     -moz-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
   }
-  .overlay.current {
+  .overlay.preview {
     opacity: 1;
     -webkit-transition: opacity 0.25s ease-in-out;
     -moz-transition: opacity 0.25s ease-in-out;
@@ -94,10 +94,10 @@
     text-decoration: none;
     color: $white;
   }
-  .overlay.current a {
+  .overlay.preview a {
     pointer-events: auto;
   }
-  .overlay.current a:hover {
+  .overlay.preview a:hover {
     color: $lightestgrey;
   }
 

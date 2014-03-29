@@ -16,16 +16,16 @@ $(document).ready(function() {
     $(carouselPrefix+'.scrolling').trigger('prev');
   });
   $(carouselPrefix+'.scrolling').on('scrollstart', function() {
-    $('.casestudies a').removeClass('current');
-    $('.overlay').removeClass('current');
+    $('.casestudies a').removeClass('preview');
+    $('.overlay').removeClass('preview');
   });
   $(carouselPrefix+'.scrolling-wrapper li').on('scrollstopped', function() {
-    $('.casestudies a').removeClass('current');
+    $('.casestudies a').removeClass('preview');
     menuSelector = this.dataset.menu;
-    $(menuSelector).addClass('current');
-    $('.overlay').removeClass('current');
+    $(menuSelector).addClass('preview');
+    $('.overlay').removeClass('preview');
     overlaySelector = this.dataset.overlay;
-    $(overlaySelector).addClass('current');
+    $(overlaySelector).addClass('preview');
   });
 
 });
