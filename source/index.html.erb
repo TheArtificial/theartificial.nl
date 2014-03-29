@@ -135,13 +135,16 @@ title: The Artificial
 </style>
 
 <script type="text/javascript">
-
+  $(document).ready(function() {
+    $('#carousel-menu-DDD').addClass('preview');
+    $('#overlay-3ds').addClass('preview');
+  });
 </script>
 
 <div id="carousel">
   <div id="overlay-background">
     <div class="pale">
-      <div class="overlay preview" id="overlay-3ds">
+      <div class="overlay" id="overlay-3ds">
         <% link_to '/3dsystems.html' do %>
           We helped a 3D printing company create touch interfaces for consumer and production lines.
         <% end %>
