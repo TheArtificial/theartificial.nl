@@ -47,8 +47,11 @@ h3 {
 }
 
 h4 {
-    font-size: .8em;
-    text-transform: uppercase;
+  margin-bottom: 4px;
+  font-size: .8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
 }
 
 h5{

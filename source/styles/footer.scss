@@ -15,30 +15,27 @@
     color: #FFFFFF;
     font-size: .8em;
     line-height: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: $mint;
+    font-weight: 800;
+  }
+  a:hover {
+    color: $turquoise;
   }
 }
 
-#location {
-  float: left;
-  margin-top: 40px;
-  width: 400px;
+.emaillink {
+  font-size: .8em;
 }
 
-#map {
-  background-color: $turquoise;
-  background-image: url(../images/map.svg);
-  background-size: 360px 212px;
-  border-radius: 2px;
-  display: block;
-  height: 212px;
-  margin-top: 20px;
-  width: 360px;
-}
-
-#contact {
+.quarter {
   float: left;
-  margin-left: 60px;
   margin-top: 40px;
+  margin-right: 40px;
   width: 200px;
 }
 
