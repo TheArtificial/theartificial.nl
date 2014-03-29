@@ -5,10 +5,10 @@
   position: fixed;
   top: 0px;
   
-  height: 60px;
+  height: 70px;
   width: 100%;
 
-  background-color: $darkestgrey;
+  background-image: url("/images/header-bg.png");
 
   font-size: 1.4em;
   
@@ -27,13 +27,20 @@
   float: left;
 
   height: 50px;
-  margin: 10px;
+  margin: 10px 5px 10px 5px;
 }
 
 #header .casestudies li {
   float: left;
-  margin-left: 10px;
-  list-style-type: none;    
+  margin: 0 5px 0 5px;
+  height: 70px;
+  display: block;
+  list-style-type: none;   
+}
+
+.preview {
+  background-image: url("/images/preview.png");
+  background-repeat: no-repeat;
 }
 
 #header .casestudies li a {
@@ -43,18 +50,51 @@
   border-radius: 2px;
 }
 
+.nav-blog a {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 2px;
+  color: $white;
+  
+  font-family: "nimbus-sans-condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.nav-blog a:hover {
+  background-color: $grey;
+}
+  
+.nav-blog a.current {
+  background-color: $mint;
+}
+
 .logo {
   float: left;
 
-  height: 28px;
-  margin-right: 332px;
+  height: 20px;
+  margin-right: 372px;
+  margin-top: 20px;
   
   border-radius: 2px;
   display: block;
   
+  font-family: "Georgia", Times, Serif;
+  font-style: italic;
   text-align: center;  
   color: $white;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 1.4em;
   
   a {
     color: $lightestgrey;
@@ -63,23 +103,6 @@
   a:hover {
     color: $white;
   }
-}
-
-.textlink {
-  float: left;
-  margin-top: 20px;
-   
-  a {
-    color: $white;
-  }
-  
-  a:hover {
-    color: $lightestgrey;
-  }
-}
-
-.nav-blog {
-  float: left;
 }
 
 #header .casestudies li a {
