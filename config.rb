@@ -53,6 +53,8 @@ set :js_dir, 'scripts'
 
 set :images_dir, 'images'
 
+Time.zone = "Amsterdam"
+
 activate :blog do |blog|
   blog.prefix = ""
   blog.sources = "/blog/{year}-{month}-{day}-{title}.html"
@@ -67,6 +69,7 @@ activate :blog do |blog|
 #    }
 #  }
 end
+page "/blog/feed.xml", layout: false
 with_layout :person do
   page "/people/*"
 end
