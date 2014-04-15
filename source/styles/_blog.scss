@@ -1,17 +1,15 @@
-@import "colors";
-
 #blog {
   margin-top: 0;
   overflow: auto;
 }
 
 .allposts {
-  background-image: url(../images/carousel-artificial.png);
+  background-image: url(../images/carousel-artificial.jpg);
 }
 
 @media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {         
   .allposts {
-    background:url('../images/carousel-artificial@2x.png') no-repeat center center;
+    background:url('../images/carousel-artificial@2x.jpg') no-repeat center center;
     background-size: 1600px 600px;
   }
 }
