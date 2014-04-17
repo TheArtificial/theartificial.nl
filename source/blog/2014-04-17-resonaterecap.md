@@ -2,12 +2,10 @@
 title: "Resonate 2014 Recap"
 category: events
 tags: questions, resonate, conference
-author: Shannon
+author: shannon
 ---
 
-# Resonate 2014 Recap
-
-This year’s Resonate was no less full of inspiring projects than last year’s, with a refreshing amount of variety in the projects themselves. I attended the usual talks on data visualization and interactive installations. Popular were themes of play and curiosity, and many artists spoke about blurring lines between physical and digital.
+This year’s Resonate was no less full of inspiring projects than last year’s, with a refreshing amount of variety in the projects themselves. READMORE I attended the usual talks on data visualization and interactive installations. Popular were themes of play and curiosity, and many artists spoke about blurring lines between physical and digital.
 
 While I always find inspiration in hearing artists talk about their processes, this year I found myself more inspired by the questions that the speakers implicitly asked through their work. I’ve outlined a few below:
 
@@ -25,6 +23,6 @@ Does sharing a tool impart authorship?
 
 Is there an Instagram of programming? Can and should programming ever become as accessible as photography? What benefits and/or troubles would this introduce to the programming community?
 
-I’m off to wonder some more about these questions. If you have any thoughts, share with us on [twitter][http://www.twitter.com/veryartificial] or [facebook](http://facebook.com/veryartificial).
+I’m off to wonder some more about these questions. If you have any thoughts, share with us on [twitter](http://www.twitter.com/veryartificial) or [facebook](http://facebook.com/veryartificial).
 
 ![Resonate 2014 Sketchnotes](2014-04-17-resonaterecap/sketchnotes.jpg)
