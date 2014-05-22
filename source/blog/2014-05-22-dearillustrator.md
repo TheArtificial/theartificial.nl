@@ -1,5 +1,5 @@
 ---
-title: "Dear Adobe"
+title: "Dear Adobe Illustrator"
 category: meta
 tags: icons, design, adobe, illustrator, ranting
 author: jo
