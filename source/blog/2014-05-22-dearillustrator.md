@@ -6,7 +6,7 @@ author: jo
 ---
 
 Dear Adobe Illustrator,
-I am writing this open letter as a close friend. Over the last decade we have spent so much time together that I think I know you better than I know myself. I understand your strengths, your quirks, and perhaps brutally, I know your limitations. I feel your pain: especially while I'm trying to do a sexy blended drop shadow, gaussian blur in-one with a crazy clipping mask and a 20% opaque stroke. I just lost the attention of non-designers. In any event, that's not what we need to talk about today. I'm sorry that I have to say this, but I'm fairly sure if I don't, no one else will. 
+I am writing this open letter as a close friend. READMORE Over the last decade we have spent so much time together that I think I know you better than I know myself. I understand your strengths, your quirks, and perhaps brutally, I know your limitations. I feel your pain: especially while I'm trying to do a sexy blended drop shadow, gaussian blur in-one with a crazy clipping mask and a 20% opaque stroke. I just lost the attention of non-designers. In any event, that's not what we need to talk about today. I'm sorry that I have to say this, but I'm fairly sure if I don't, no one else will. 
 
 Here at The Artificial, you have been helping us to make pixel-precise, scalable icons for [to [icon]](http://toicon.com/). Sure we've had good times, but this isn't one of them. For those pixel perfect icons, you kinda suck. The worst part is that most of the suck seems to be glitches that fuel paranoia, and worse, waste my time.
 
