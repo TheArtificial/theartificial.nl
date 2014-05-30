@@ -108,9 +108,14 @@
       font-weight: 900;
     }
     
-    p:first-child:first-letter {
+    article>p:first-child:first-letter {
       font-size: 2.6em;
       font-weight: 900;
+    }
+    
+    img {
+      margin: 0 auto;
+      display: block;
     }
   }
 }
