@@ -1,11 +1,57 @@
 <% wrap_layout :layout do %>
+    
+<style>
 
-<div id="person">
-  <div class="pale">
-    <h1><%= current_page.data.title %></h1>
+	 .masthead {
+	   overflow: hidden;
+	   height: 320px;
+	   width: 100%;
+	   background: url('images/people-shannon-masthead.png') no-repeat center center;
+       background-size: cover;
+   }
 
-    <%= yield %>
-  </div>
+    #shannon {
+        background:url('images/people-shannon-1.png') no-repeat center center;
+        background-size: 600px 400px;
+    }
+
+    #shannon2 {
+        background:url('images/shannon2.png') no-repeat center center;
+        background-size: 600px 400px;
+    }
+
+</style>
+
+<div class="masthead">
 </div>
+
+<div id="story">
+  <div class="pale"> 
+
+    <div class="row">
+      <div class="image right" id="shannon"></div>
+      <div class="copy right">
+        <p class="gigantic condensed text-grey">Shannon E. Thomas</p>
+        <p class="small"><a href="..">linkedin</a>  |  <a href="..">twitter</a></p>
+        <p class="small">Artificial ipsum dolor sit. Amet unicorn prance cactus lover pointing at things tofu.</p>
+        <p class="small">Spatial swipe yarn embroidery like chickens on skis. Tea brewing upside-down wooden patterns exercitation blue rain bulbs. Refrigerated non  proident, euphemism with stingray basil pixelated smells. Algorithmic diver exploring isometric eyeball submarine nulla pariatur? </p>
+      </div>
+    </div>      
+    
+    <div class="row">
+      <div class="image left" id="shannon2"></div>
+      <div class="copy bg-grey left">
+        <p class="gigantic condensed">Recent posts</p>
+        <h4><a href="...">Mountain Muscle Organic Dye</a></h4> 
+		<p class="small">Vector chalk monsters white board scrub dance bee sequi throwback.</p>
+        <h4><a href="...">Dot grid icon-a-palooza </a></h4> 
+		<p class="small">Morning meeting beautiful flashback friday chai mocha electric insect tennis.  </p>
+        <h4><a href="...">Quantified Smeg Pour-over Flooding</a></h4> 
+		<p class="small">Climax chasing apple canal vodka freezer little printer pixel sewing machine inappropriate drill oh sketch.</p>
+      </div>  
+    </div>     
+    
+  </div>
+</div>  
     
 <% end %>

@@ -1,5 +1,5 @@
 ---
-title: "Shannon E Thomas"
+title: Shannon E Thomas
 ---
 
 Hello, world.
