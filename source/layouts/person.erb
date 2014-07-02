@@ -45,22 +45,29 @@
         <p class="links small"><a href="https://linkedin.com/in/<%= current_page.data.linkedin %>" target="blank">linkedin</a>  |  <a href="https://twitter.com/<%= current_page.data.linkedin %>" target="blank">twitter</a></p>
         <p class="small"><%= yield %></p>
       </div>
-    </div>      
-    
+    </div>
+
     <div class="row">
       <div class="image left" id="secondary"></div>
       <div class="copy bg-grey left">
-        <p class="gigantic condensed">Recent posts</p>
-        <h4><a href="...">Mountain Muscle Organic Dye</a></h4> 
-        		<p class="summary">Vector chalk monsters white board scrub dance bee sequi throwback.</p>
-        <h4><a href="...">Dot grid icon-a-palooza </a></h4> 
-        		<p class="summary">Morning meeting beautiful flashback friday chai mocha electric insect tennis.  </p>
-        <h4><a href="...">Quantified Smeg Pour-over Flooding</a></h4> 
-        		<p class="summary">Climax chasing apple canal vodka freezer little printer pixel sewing machine inappropriate drill oh sketch.</p>
+        <% articles = blog.articles.select {|a| (a.data.author == current_page.data.id) and (a.data.category != 'links') } %>
+        <% if articles.length > 0 %>
+          <p class="gigantic condensed">Recent posts</p>
+          <% articles.take(3).each do |article, i| %>
+            <h4>
+              <%= link_to article.title, article %>
+            </h4>
+            <p class="summary">
+              <%= article.summary(180, '…') %>
+            </p>
+          <% end %>
+        <% else %>
+          <%= current_page.data.id.titlecase %> hasn't posted to the blog yet.
+        <% end %>
       </div>  
-    </div>     
+    </div>
     
   </div>
-</div>  
+</div>
     
 <% end %>
