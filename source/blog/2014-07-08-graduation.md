@@ -5,7 +5,7 @@ tags: gerrit rietveld academie, sandberg institute, werkplaats typografie, gradu
 author: carol
 ---
 
-Last week, three of the Netherlands’ finest design institutions handed diplomas to a fresh batch of talent. READMOREThe newly graduated students of the Sandberg Instituut, The Gerrit Rietveld Academie, and Werkplaats Typografie showcased the results of their studies before moving to the next chapter of their careers. Unfortunately, my time at each show was limited to an hour–-not nearly enough time to delve deep into the exceptional work shown, but the exhibitions were an explicit summation of each school’s approach and specialties, and there was a lot to be inspired by.
+Last week, three of the Netherlands’ finest design institutions handed diplomas to a fresh batch of talent. READMOREThe newly graduated students of the Sandberg Instituut, The Gerrit Rietveld Academie, and Werkplaats Typografie showcased the results of their studies before moving to the next chapter of their careers. I found that the exhibitions were an explicit summation of each school’s approach and specialties, and there was a lot to be inspired by.
 
 # The Sandberg Instituut: Dialetheia
 The [Sandberg Instituut](http://sandberg.nl/) is the graduate program at the Gerrit Rietveld Academie, known for their use of media and dedication to experimental design. This year's "think tank for visual strategies" was comprised of nine graduates from around Europe. The show entitled “Dialetheia”, meaning something that is simultaneously true and not true, was exhibited in the back of Tolhuistuin at Framer Framed. 
@@ -27,3 +27,6 @@ Coming all the way from Arnhem, the [Werkplaats Typografie](http://www.werkplaat
 ![Werkplaats Typografie Graduation Program](2014-07-08-graduation/wt.png)
 
 This self-driven approach shapes the student work uniquely; each student’s style shows through their whole body of work, despite the fact that the exhibition stemmed from the same initial conversation and the same set of questions. (“How can a book become a work and how can a work become a book? When is music inscribed into language? What colours do letters have and how can invisible forces surface on our bodies?”)
+
+# The value of personal work
+Unfortunately, my time at each show was limited to an hour--not nearly enough time to delve deep into the exceptional work shown. My biggest takeway from them all was the reminder that experiment is good, and crazy can also be beautiful. As a student, you have much more time and freedom to try out absurd ideas and refine them into a polished style later. In the working world, obstacles like turn around times, client opinions, and "best practices" can sometimes stand in the way of discovery. The work I saw last week reaffirms my belief in the need for personal projects and a space to design judgement free. Most of the student's work is available online through their respective school's site. So if you haven't seen them yet, get in there, connect with your inner student, and start brainstorming your next personal project.
