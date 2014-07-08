@@ -1,6 +1,5 @@
 ---
-id: hans
-name: Hans Gerwitz
+title: Hans Gerwitz
 linkedin: gerwitz
 twitter: gerwitz
 ---

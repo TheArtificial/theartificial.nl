@@ -1,6 +1,5 @@
 ---
-id: petra
-name: Petra Benach
+title: Petra Benach
 linkedin: petrabenach
 twitter: petrabenach
 ---

@@ -1,6 +1,5 @@
 ---
-id: jo
-name: Jo Szczepanska
+title: Jo Szczepanska
 linkedin: joszczepanska
 twitter: szczpanks
 ---

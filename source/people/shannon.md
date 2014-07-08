@@ -1,6 +1,5 @@
 ---
-id: shannon
-name: Shannon E Thomas
+title: Shannon E Thomas
 linkedin: shannonethomas
 twitter: shannonethomas
 ---

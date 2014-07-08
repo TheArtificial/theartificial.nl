@@ -1,6 +1,5 @@
 ---
-id: carol
-name: Carol Liao
+title: Carol Liao
 linkedin: cliao90
 twitter: thecarolizer
 ---
