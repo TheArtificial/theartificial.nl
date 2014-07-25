@@ -1,29 +1,21 @@
 <% wrap_layout :layout do %>
     
 <style>
-
   #masthead {
-    overflow: hidden;
-    height: 320px;
-    width: 100%;
-    background: url('../images/people-<%= current_page.data.id %>-masthead.png') no-repeat center center;
-    background-size: cover;
+    background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/masthead.png" %>');
   }
 
-    #headshot {
-        background:url('../images/people-<%= current_page.data.id %>-1.png') no-repeat center center;
-        background-size: 600px 400px;
-    }
+  #headshot {
+    background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/headshot.png" %>');
+  }
 
-    #logo {
-        background:url('../images/people-<%= current_page.data.id %>-2.png') no-repeat center center;
-        background-size: 600px 400px;
-    }
-		
-    #blog {
-        background:url('../images/people-<%= current_page.data.id %>-2.png') no-repeat center center;
-        background-size: 600px 400px;
-    }
+  #logo {
+    background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/logo.png" %>');
+  }
+
+  #secondary {
+    background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/blog.png" %>');
+  }
 </style>
 
   <div id="masthead">
@@ -34,15 +26,21 @@
 
     <div class="row">
       <div class="image right" id="headshot"></div>
-      <div class="copy right">
+      <div class="copy left">
         <p class="gigantic condensed text-grey"><%= current_page.data.title %></p>
-        <p class="links small"><a href="https://linkedin.com/in/<%= current_page.data.linkedin %>" target="blank">linkedin</a>  |  <a href="https://twitter.com/<%= current_page.data.linkedin %>" target="blank">twitter</a></p>
+        <p class="links small"><a href="https://linkedin.com/in/<%= current_page.data.linkedin %>" target="blank">linkedin</a> | <a href="https://twitter.com/<%= current_page.data.linkedin %>" target="blank">twitter</a></p>
         <p class="small"><%= yield %></p>
       </div>
     </div>
 
     <div class="row">
-      <div class="image left" id="secondary"></div>
+      <div class="image left" id="headshot"></div>
+      <div class="copy right">
+        <p class="small"><%= Tilt['markdown'].new {current_page.data['logo-story']}.render %></p>
+      </div>
+    </div>
+
+    <div class="row">
       <div class="copy bg-grey left">
         <% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
         <% if articles.length > 0 %>
@@ -58,7 +56,8 @@
         <% else %>
           <%= current_page.data.title %> hasn't posted to the blog yet.
         <% end %>
-      </div>  
+      </div>
+      <div class="image right" id="secondary"></div>
     </div>
     
   </div>
