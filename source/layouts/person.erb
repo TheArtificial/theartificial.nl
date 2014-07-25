@@ -13,7 +13,7 @@
   #logo {
     background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/logo.png" %>');
   }
-  #secondar {
+  #secondary {
     background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/blog.png" %>');
   }
 </style>
@@ -35,13 +35,14 @@
 
     <div class="row">
       <div class="image left" id="quote"></div>
-      <div class="copy right">
+      <div class="copy right bg-turquoise quote">
         <p class="small"><%= Tilt['markdown'].new {current_page.data['quote-story']}.render %></p>
       </div>
     </div>
 
     <div class="row">
       <div class="copy left">
+          <p class="gigantic condensed">Logo story</p>
         <p class="small"><%= Tilt['markdown'].new {current_page.data['logo-story']}.render %></p>
       </div>
       <div class="image right" id="logo"></div>

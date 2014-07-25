@@ -8,6 +8,14 @@ body.people {
       line-height: 1.4em;
       margin-top: -3px;
   }
+	
+	.quote {
+	  font-family: Georgia, Times, serif;
+	  font-style: italic;
+	  font-weight: bold;
+		font-size: 2em;
+		line-height: 1em;
+	}
 
   #masthead {
     overflow: hidden;
@@ -23,4 +31,5 @@ body.people {
     background-repeat: no-repeat;
     background-position: center;
   }
+	
 }
