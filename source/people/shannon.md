@@ -4,6 +4,6 @@ linkedin: shannonethomas
 twitter: shannonethomas
 ---
 
-Artificial ipsum dolor sit. Amet unicorn prance cactus lover pointing at things tofu.
+“I take ideas the world isn’t quite ready for and turn them into products people can’t imagine living without.” 
 
-Spatial swipe yarn embroidery like chickens on skis. Tea brewing upside-down wooden patterns exercitation blue rain bulbs. Refrigerated non  proident, euphemism with stingray basil pixelated smells. Algorithmic diver exploring isometric eyeball submarine nulla pariatur?
+Shannon is a geeky who loves thinking about the various intersections of humanity, technology, and aesthetics. When she’s not designing products and experiences at The Artificial, she can be found in her studio, [telling stories though paint](http://www.shannonethomas.com).
