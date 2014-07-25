@@ -2,19 +2,19 @@
     
 <style>
   #masthead {
-    background-image: url('../people/<%= current_page.data.id %>/masthead.png');
+    background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/masthead.png" %>');
   }
 
   #headshot {
-    background-image: url('../people/<%= current_page.data.id %>/headshot.png');
+    background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/headshot.png" %>');
   }
 
   #logo {
-    background-image: url('../people/<%= current_page.data.id %>/logo.png');
+    background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/logo.png" %>');
   }
 
-  #blog {
-    background-image: url('../people/<%= current_page.data.id %>/blog.png');
+  #secondary {
+    background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/blog.png" %>');
   }
 </style>
 
