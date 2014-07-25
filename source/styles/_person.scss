@@ -1,9 +1,26 @@
-.links {
-  margin: -40px 0 35px;
-}
+body.people {
+  .links {
+    margin: -40px 0 35px;
+  }
 
-.summary{
-    font-size: .9em;
-    line-height: 1.4em;
-    margin-top: -3px;
+  .summary{
+      font-size: .9em;
+      line-height: 1.4em;
+      margin-top: -3px;
+  }
+
+  #masthead {
+    overflow: hidden;
+    height: 320px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #headshot, #logo, #blog {
+    background-size: 600px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

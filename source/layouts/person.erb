@@ -1,29 +1,21 @@
 <% wrap_layout :layout do %>
     
 <style>
-
   #masthead {
-    overflow: hidden;
-    height: 320px;
-    width: 100%;
-    background: url('../images/people-<%= current_page.data.id %>-masthead.png') no-repeat center center;
-    background-size: cover;
+    background-image: url('../people/<%= current_page.data.id %>/masthead.png');
   }
 
-    #headshot {
-        background:url('../images/people-<%= current_page.data.id %>-1.png') no-repeat center center;
-        background-size: 600px 400px;
-    }
+  #headshot {
+    background-image: url('../people/<%= current_page.data.id %>/headshot.png');
+  }
 
-    #logo {
-        background:url('../images/people-<%= current_page.data.id %>-2.png') no-repeat center center;
-        background-size: 600px 400px;
-    }
-		
-    #blog {
-        background:url('../images/people-<%= current_page.data.id %>-2.png') no-repeat center center;
-        background-size: 600px 400px;
-    }
+  #logo {
+    background-image: url('../people/<%= current_page.data.id %>/logo.png');
+  }
+
+  #blog {
+    background-image: url('../people/<%= current_page.data.id %>/blog.png');
+  }
 </style>
 
   <div id="masthead">
