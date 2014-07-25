@@ -2,6 +2,7 @@
 title: Shannon E Thomas
 linkedin: shannonethomas
 twitter: shannonethomas
+logo-story: "This the story of my logo. I can use *markdown* in it!"
 ---
 
 “I take ideas the world isn’t quite ready for and turn them into products people can’t imagine living without.”
