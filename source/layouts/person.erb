@@ -36,7 +36,7 @@
     <div class="row">
       <div class="image left" id="quote"></div>
       <div class="copy right bg-turquoise quote">
-        <p class="small"><%= Tilt['markdown'].new {current_page.data['quote-story']}.render %></p>
+        <p class="small">&ldquo;<%= Tilt['markdown'].new {current_page.data['quote']}.render %>&rdquo;</p>
       </div>
     </div>
 
