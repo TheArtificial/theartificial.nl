@@ -71,10 +71,6 @@ activate :blog do |blog|
 end
 page "/blog/feed.xml", layout: false
 
-with_layout :person do
-  page "/people/*"
-end
-
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true,
                :autolink => true, 

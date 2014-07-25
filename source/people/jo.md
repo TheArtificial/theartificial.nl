@@ -1,7 +1,10 @@
 ---
+layout: person
 title: Jo Szczepanska
 linkedin: joszczepanska
 twitter: szczpanks
+logo-story: "Herein I describe why my logo is."
+quote: "I say something pithy about design, here."
 ---
 
 Artificial ipsum dolor sit. Amet unicorn prance cactus lover pointing at things tofu.

@@ -28,22 +28,22 @@
       <div class="image right" id="headshot"></div>
       <div class="copy left">
         <p class="gigantic condensed text-grey"><%= current_page.data.title %></p>
-        <p class="links small"><a href="https://linkedin.com/in/<%= current_page.data.linkedin %>" target="blank">linkedin</a> | <a href="https://twitter.com/<%= current_page.data.linkedin %>" target="blank">twitter</a></p>
-        <p class="small"><%= yield %></p>
+        <p class="links small"><a href="https://linkedin.com/in/<%= current_page.data.linkedin %>">linkedin</a> | <a href="https://twitter.com/<%= current_page.data.twitter %>">twitter</a></p>
+        <span class="small"><%= yield %></span>
       </div>
     </div>
 
     <div class="row">
       <div class="image left" id="quote"></div>
       <div class="copy right bg-turquoise quote">
-        <p class="small">&ldquo;<%= Tilt['markdown'].new {current_page.data['quote']}.render %>&rdquo;</p>
+        <%= Tilt['markdown'].new { "&ldquo;#{current_page.data['quote']}&rdquo;" }.render %>
       </div>
     </div>
 
     <div class="row">
       <div class="copy left">
-          <p class="gigantic condensed">Logo story</p>
-        <p class="small"><%= Tilt['markdown'].new {current_page.data['logo-story']}.render %></p>
+        <p class="gigantic condensed">Logo story</p>
+        <%= Tilt['markdown'].new {current_page.data['logo-story']}.render %>
       </div>
       <div class="image right" id="logo"></div>
     </div>

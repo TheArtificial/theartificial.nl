@@ -1,4 +1,5 @@
 ---
+layout: person
 title: Shannon E Thomas
 linkedin: shannonethomas
 twitter: shannonethomas
