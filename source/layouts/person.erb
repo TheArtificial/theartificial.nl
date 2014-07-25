@@ -4,16 +4,16 @@
   #masthead {
     background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/masthead.png" %>');
   }
-
   #headshot {
     background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/headshot.png" %>');
   }
-
+  #quote {
+    background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/quote.png" %>');
+  }
   #logo {
     background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/logo.png" %>');
   }
-
-  #secondary {
+  #secondar {
     background-image: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/blog.png" %>');
   }
 </style>
@@ -34,14 +34,22 @@
     </div>
 
     <div class="row">
-      <div class="image left" id="headshot"></div>
+      <div class="image left" id="quote"></div>
       <div class="copy right">
-        <p class="small"><%= Tilt['markdown'].new {current_page.data['logo-story']}.render %></p>
+        <p class="small"><%= Tilt['markdown'].new {current_page.data['quote-story']}.render %></p>
       </div>
     </div>
 
     <div class="row">
-      <div class="copy bg-grey left">
+      <div class="copy left">
+        <p class="small"><%= Tilt['markdown'].new {current_page.data['logo-story']}.render %></p>
+      </div>
+      <div class="image right" id="logo"></div>
+    </div>
+
+    <div class="row">
+      <div class="image left" id="secondary"></div>
+      <div class="copy bg-grey right">
         <% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
         <% if articles.length > 0 %>
           <p class="gigantic condensed">Recent posts</p>
@@ -57,7 +65,6 @@
           <%= current_page.data.title %> hasn't posted to the blog yet.
         <% end %>
       </div>
-      <div class="image right" id="secondary"></div>
     </div>
     
   </div>
