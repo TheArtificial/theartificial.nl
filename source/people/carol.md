@@ -11,4 +11,4 @@ quote: "I say something pithy about design, here."
 
 I’m a graphic designer hailing from Los Angeles interested in creating memorable solutions. In a nutshell, typography, play, and experimentation define my work. 
 
-When I’m not at The Artificial, I’m thinking up [idiosyncratic side projects](http://www.carolliao.com) or exploring my new city. The most important thing to know about me is my deep-rooted passion for black forest cakes.
+When I’m not at The Artificial, I’m thinking up some idiosyncratic [side projects](http://www.carolliao.com) or exploring my new city. The most important thing to know about me is my deep-rooted passion for black forest cakes.
