@@ -54,7 +54,7 @@
         <% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
         <% if articles.length > 0 %>
           <p class="gigantic condensed">Recent posts</p>
-          <% articles.take(3).each do |article, i| %>
+          <% articles.take(2).each do |article, i| %>
             <h4>
               <%= link_to article.title, article %>
             </h4>
