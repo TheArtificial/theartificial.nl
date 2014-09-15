@@ -15,4 +15,4 @@ Bungie was a Mac development studio that had found success with Marathon, an inn
 
 Microsoft bought them, and Halo became an Xbox-exclusive franchise. (It was eventually ported elsewhere and Bungie spun off.)
 
-Hundreds, if not thousands, of years of creative effort have been spent building Minecraft worlds. It will be best for Microsoft's brand if they respect that beyond the opportunity to "engage" users with advertising or legitimize their own platforms.
+Hundreds if not thousands of years of creative effort have been spent building Minecraft worlds. It will be best for Microsoft's brand if they respect that beyond the opportunity to "engage" users with advertising or legitimize their own platforms.
