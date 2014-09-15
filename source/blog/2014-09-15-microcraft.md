@@ -5,7 +5,7 @@ tags: microsoft, minecraft
 author: hans
 ---
 
-Minecraft is a ridiculously popular game that blends exploration and creation. It would be difficult to overstate its cultural importance, particularly among young players.
+Minecraft is a ridiculously popular game that blends exploration and creation. READMORE It would be difficult to overstate its cultural importance, particularly among young players.
 
 Microsoft has purchased Mojang, the company that develops the game, for $2.5 billion dollars. That may sound like a lot, but it's probably well under $25 per (very) active user, which is a bargain compared to Skype or any number of famous acquisitions by Facebook or Google.
 
@@ -13,6 +13,6 @@ We must hope this is part of Satya Nadella's strategy of making Microsoft releva
 
 Bungie was a Mac development studio that had found success with Marathon, an innovative first person shooter (you could look up!), and Myth, a tactics game. They announced their next ambitious project, Halo, on stage with Steve Jobs during a Macworld keynote.
 
-Microsoft bought them, and Halo became an Xbox-exclusive franchise, though it was eventually ported elsewhere, and Bungie spun back out as a separate company.
+Microsoft bought them, and Halo became an Xbox-exclusive franchise. (It was eventually ported elsewhere and Bungie spun off.)
 
 Hundreds, if not thousands, of years of creative effort have been spent building Minecraft worlds. It will be best for Microsoft's brand if they respect that beyond the opportunity to "engage" users with advertising or legitimize their own platforms.
