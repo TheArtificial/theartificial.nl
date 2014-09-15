@@ -85,11 +85,20 @@
         </ul>
       </div>
 
-      <div class="quarter">
+<!--       <div class="quarter">
         <% article = page_articles.first %>
         <h3>From the blog</h3>
         <h4><%= link_to article.title, article %></h4>
         <%= article.summary(180, '…') %>
+      </div> -->
+
+      <div class="quarter">
+        <% article = page_articles.first %>
+        <h3>The latest news</h3>
+        <h4>to [icon]</h4>
+        <p>A place for the world's verb icons to live. Keep your eyes out for new icons and new styles at <a href="http://www.toicon.com">toicon.com</a>.</p>
+        <h4><%= article.title %></h4>
+        <%= article.summary(180, '…') %><%= link_to "read more", article %>
       </div>
 
     </div>
