@@ -93,7 +93,7 @@ activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'theartificial.nl'
   s3_sync.region                     = 'eu-west-1'
   # see .s3_sync for credentials
-  s3_sync.delete                     = true
+  s3_sync.delete                     = false
   s3_sync.after_build                = false
   s3_sync.prefer_gzip                = true
   s3_sync.path_style                 = true
