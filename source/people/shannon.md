@@ -1,5 +1,6 @@
 ---
 layout: person
+current: true
 title: Shannon E Thomas
 linkedin: shannonethomas
 twitter: shannonethomas

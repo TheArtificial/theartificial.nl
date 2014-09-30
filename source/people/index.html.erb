@@ -10,7 +10,7 @@ layout: layout
   
   <div class="pale">
 
-<% sitemap.resources.select{ |r| r.data.layout == 'person' }.shuffle.each_with_index do |person, i| %>
+<% sitemap.resources.select{ |r| (r.data.layout == 'person') && (r.data.current) }.shuffle.each_with_index do |person, i| %>
 <%# sitemap.where(:layout.equal => 'person').all.each_with_index do |person, i| %>
   <div class="person-preview">
     <% if (i.odd?) %>

@@ -1,5 +1,6 @@
 ---
 layout: person
+current: true
 title: Carol Liao
 linkedin: cliao90
 twitter: thecarolizer
