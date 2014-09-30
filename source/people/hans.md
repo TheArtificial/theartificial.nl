@@ -1,12 +1,13 @@
 ---
 layout: person
+current: true
 title: Hans Gerwitz
 linkedin: gerwitz
 twitter: gerwitz
-logo-story: "Herein I describe why my logo is."
-quote: "I say something pithy about design, here."
+logo-story: "My logo is handcrafted SVG."
+quote: "Design is what we call thoughtful building."
 ---
 
-Artificial ipsum dolor sit. Amet unicorn prance cactus lover pointing at things tofu.
+I spend my life struggling to understand everything about both people and technology. It is a privilege to live through this cybernetic era as we work together to build a sustainable global culture.
 
-Spatial swipe yarn embroidery like chickens on skis. Tea brewing upside-down wooden patterns exercitation blue rain bulbs. Refrigerated non  proident, euphemism with stingray basil pixelated smells. Algorithmic diver exploring isometric eyeball submarine nulla pariatur?
+Most of my passion energy goes into writing software, cycling, and [writing](http://hans.gerwitz.com/).
