@@ -1,11 +1,20 @@
 <% wrap_layout :layout do %>
 
+<%
+  current_path = current_page.path[/.*(?=\..+$)/]
+  if masthead = find_image(current_path + '/-masthead')
+    masthead_url = masthead.url
+  else
+    masthead_url = "/blog/2014/03/17/test/-masthead.png"
+  end
+%>
+
 <style>
   #masthead {
     overflow: hidden;
     height: 320px;
     width: 100%;
-    background: url('<%= "#{current_page.url[/.*(?=\..+$)/]}/-masthead.png" %>') no-repeat center center;
+    background: url('<%= masthead_url %>') no-repeat center center;
     background-size: cover;
   }
 </style>

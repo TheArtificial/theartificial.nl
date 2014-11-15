@@ -40,11 +40,21 @@
 
 # Methods defined in the helpers block are available in templates
 helpers do
-    def nav_link(link_text, url, options = {})  
-      options[:class] ||= ""
-      options[:class] << " current" if current_resource.url.start_with?(url)
-      link_to(link_text, url, options)
+  def nav_link(link_text, url, options = {})  
+    options[:class] ||= ""
+    options[:class] << " current" if current_resource.url.start_with?(url)
+    link_to(link_text, url, options)
+  end
+  
+  def find_image(base_path)
+    if found = sitemap.find_resource_by_path(base_path+'.png')
+      return found
+    elsif found = sitemap.find_resource_by_path(base_path+'.jpg')
+      return found
+    else
+      return nil
     end
+  end
 end
 
 set :css_dir, 'styles'
