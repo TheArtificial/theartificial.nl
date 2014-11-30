@@ -72,6 +72,7 @@ activate :blog do |blog|
   blog.layout = "blog-article"
   blog.default_extension = ".md"
   blog.summary_separator = /READMORE/
+  blog.paginate = true
 #  blog.custom_collections = {
 #    author: {
 #      link: '/people/{author}.html',
