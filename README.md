@@ -22,7 +22,7 @@ It will notify you and we can work through conflicts if the same file is edited 
 
 Open a shell (a window of the Terminal app). It will start in the context of your user folder, with a prompt like this:
 
-    macbook:~ user$
+    macbook:~ username$
 
 Change the current directory to your working repository with the "cd" commend, like so:
 
@@ -32,7 +32,7 @@ _Do not type the `$` in front, I use it only to denote this is a shell command._
 
 Your prompt (and the window title) will change to reflect the new context, to something like this:
 
-    macbook:theartificial.nl hans$
+    macbook:theartificial.nl username$
 
 The first time, you will need to use this command to set up your machine:
 
