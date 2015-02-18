@@ -72,7 +72,7 @@ The structure of the site should be pretty clear. There are a few filetypes to k
 - `.md`: a Markdown document that will be transformed into HTML
 
 ### Frontmatter
-Many files will start with a pair of '---' lines with some text between them. This is an increasingly common approach to adding metadata to a file. The test is formatted in YAML, but it should be pretty obvious how things work.
+Many files will start with a pair of '---' lines with some text between them. This is an increasingly common approach to adding metadata to a file. This text is formatted in YAML, but it should be pretty obvious how things work.
 
 ### Blog posts
 
