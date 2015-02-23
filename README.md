@@ -74,7 +74,7 @@ The structure of the site should be pretty clear. There are a few filetypes to k
 - `.md`: a Markdown document that will be transformed into HTML
 
 ### Frontmatter
-Many files will start with a pair of '---' lines with some text between them. This is an increasingly common approach to adding metadata to a file. This text is formatted in YAML, but it should be pretty obvious how things work.
+Many files will start with a pair of `---` lines with some text between them. This is an increasingly common approach to adding metadata to a file. This text is formatted in YAML, but it should be pretty obvious how things work.
 
 ### Blog posts
 
@@ -101,9 +101,7 @@ You may, of course, include other images there, preferably 800px wide. They can 
 (Inline images needn't be PNG.)
 
 ### Optimizing images
-PNGs are nice because they are "lossless" and don't get blurring compression artifacts like JPEG. But this also makes them less efficient.
-
-With photos it's very easy to end up wasting many MB of space and network traffic. Please do your best to optimize PNGs with a "lossy" PNG optimizer, such as [ImageAlpha](http://pngmini.com/) and all images with a more-efficient-than-Adobe compressor such as [ImageOptim](https://imageoptim.com).
+PNGs are nice because they are "lossless" and don't get blurring compression artifacts like JPEG. But this also makes them less efficient. With large visuals it's very easy to end up wasting many MB of space and network traffic. Please use JPEG (not PNG) for photos and optimize all images with [ImageOptim](https://imageoptim.com).
 
 ### Commit
 Use the GitHub app to commit your changes with a meaningful comment and be sure to push (synchronize). You can always double-check that your commit was pushed by visiting the [history page](https://github.com/gerwitz/theartificial.nl/commits/master).
