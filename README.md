@@ -40,6 +40,8 @@ The first time, you will need to use this command to set up your machine:
 
 _(Remember, don't type that `$`)_
 
+_(If this command doesn't work, you may need to [install Bundler](http://bundler.io/#getting-started) or just ask for help.)_
+
 When major code changes are made, you may have to do this again.
 
 ### Launching Middleman
