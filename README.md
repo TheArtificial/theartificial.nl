@@ -56,7 +56,7 @@ It should tell you this:
 
     == The Middleman is standing watch at http://0.0.0.0:4567
 
-You may then visit that URL and see a live (local) build. But because we're using TypeKit for web fonts, you'll need to instead use this URL: http://localhost:4567/
+You may then visit that URL and see a live (local) build. But because we're using TypeKit for web fonts, you'll need to instead use `localhost` instead of `0.0.0.0`. So point your browser to: [localhost:4567](http://localhost:4567/)
 
 Changes you make to the `source` folder should be reflected as soon as you refresh any page on that local site.
 
