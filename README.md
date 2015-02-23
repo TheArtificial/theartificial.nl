@@ -91,14 +91,14 @@ N.B. titles don't have to have quotes but it's more reliable to include them, an
 
 Also creat a folder named `YYYY-MM-DD-slug` for images,and include two standard images:
 
-- `-preview.png` 600x400px image used in lists
-- `-masthead.png` 1200x320px header image rendered int he post itself
+- `-preview.jpg` 600x400px image used in lists
+- `-masthead.jpg` 1200x320px header image rendered in the post itself
 
 You may, of course, include other images there, preferably 800px wide. They can be referenced within a post with the '!' Markdown syntax:
 
     ![alt text](YYYY-MM-DD/filename.jpg)
-
-(Inline images needn't be PNG.)
+    
+_(PNG files will also work, but read below.)_
 
 ### Optimizing images
 PNGs are nice because they are "lossless" and don't get blurring compression artifacts like JPEG. But this also makes them less efficient. With large visuals it's very easy to end up wasting many MB of space and network traffic. Please use JPEG (not PNG) for photos and optimize all images with [ImageOptim](https://imageoptim.com).
