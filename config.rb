@@ -90,7 +90,7 @@ set :markdown, :fenced_code_blocks => true,
 # Build-specific configuration
 configure :build do
   activate :minify_css
-  activate :minify_javascript
+  activate :minify_javascript, ignore: 'jquery.artificial.logo.js'
   activate :gzip
   default_caching_policy public: true, must_revalidate: true
 end
