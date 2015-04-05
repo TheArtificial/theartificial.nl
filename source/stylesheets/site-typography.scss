@@ -10,7 +10,13 @@ img + h1, img + h2, img + h3, img + h4, img + h5, img + p {
 h1, h2, h3, h4, h5, p {
 	margin: 0;
 	padding-bottom: 15px;
-	color: $cool-grey-90;
+	color: $white;
+}
+
+.card {
+		h1, h2, h3, h4, h5, p {
+			color: $cool-grey-90;
+	}
 }
 
 h1, h2, h4, h5, p, ul, li {
@@ -31,7 +37,6 @@ h5 {
 h2#logo {
 	padding-top: 4px;
 	height: 22px;
-	color: $white;
 	font-family: Georgia, Times, serif;
 	font-style: italic;
 	font-size: 1.8em;
@@ -86,7 +91,7 @@ h1, h2, h3, h4, h5, p {
 	}
 
 	p, li, ul, a {
-		font-size: 1em;
+		font-size: .9em;
 		line-height: 1.25em;
 	}
 }
@@ -114,8 +119,8 @@ h1, h2, h3, h4, h5, p {
 	}
 
 	p, li, ul, a {
-		font-size: 1em;
-		line-height: 1.375em;
+		font-size: .9em;
+		line-height: 1.25em;
 	}
 }
 
@@ -147,7 +152,7 @@ h1, h2, h3, h4, h5, p {
 	}
 
 	p, li, ul, a {
-		font-size: 1em;
+		font-size: .9em;
 		line-height: 1.25em;
 	}
 }

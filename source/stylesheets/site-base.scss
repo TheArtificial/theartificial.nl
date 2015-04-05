@@ -4,6 +4,10 @@
 	padding: 10px 16px 10px 16px;
 }
 
+body {
+	background-color: $cool-grey-90;
+}
+
 // top header
 // mobile
 @media only screen {
@@ -118,6 +122,14 @@
 	}
 }
 
+.white {
+	background-color: white;
+	
+	h1, h2, h3, h4, h5, p {
+		color: $cool-grey-90;
+	}
+}
+
 // footer
 
 // mobile, tablet, and desktop
@@ -151,7 +163,6 @@
 #threeDSystems {
 	height: 240px;
 	padding-top: 80px;
-	color: $white;
 	text-align: center;
 }
 
