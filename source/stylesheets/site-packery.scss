@@ -1,0 +1,113 @@
+// mixen to make perfect squares on desktop and tablets
+@mixin box($box-width, $tile-padding, $content-padding) {
+  width: $box-width - ($tile-padding * 2);
+  overflow: hidden;
+  margin: $tile-padding;
+	
+  .padded {
+    padding: 0;
+    margin: $content-padding;
+    width: $box-width - ($tile-padding * 2) - ($content-padding * 2);
+  }
+  &.square {
+    height: $box-width - ($tile-padding * 2);
+    
+		.padded {
+      height: $box-width - ($tile-padding * 2) - ($content-padding * 2);
+      overflow: hidden;
+			line-height: $box-width;
+    }
+  }
+}
+
+// for mobile (and bigger, unless overridden)
+@media only screen and (min-device-width: 320px) {
+  .tiled {
+		
+		padding: 8px;
+		
+    .box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7, .box-8, .box-9, .box-10, .box-11, .box-12 {
+      background-color: $warm-grey-10;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;	
+		}
+		
+	  .box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7, .box-8, .box-9, .box-10, .box-11, .box-12, &.square {					
+			width: calc(100% - 16px);
+			margin: 0 0 8px 0;
+			height: 360px;
+			overflow: hidden;
+			line-height: 360px;
+			
+			// vertical and horizontal centering of type
+			h1, h2, h3, h4, h5, p {
+				text-align: center;
+				display: inline-block;
+				vertical-align: middle;
+				line-height: normal;
+				width: 100%;
+			}
+		}
+		
+    .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11 {
+    	margin-left: 0;
+    }		
+  }
+}
+
+// for tablet
+@media only screen and (min-device-width: 768px) {
+  .tiled {
+    margin: 0 auto;
+
+    // 12 60px columns on tablets
+    $width: 720px;
+    $col-width: $width/12;
+    $tile-padding: 2px;
+		$content-padding: 14px;
+
+    width: $width;
+
+    .box-1  { @include box($col-width * 1, $tile-padding, $content-padding); }
+    .box-2  { @include box($col-width * 2, $tile-padding, $content-padding); }
+    .box-3  { @include box($col-width * 3, $tile-padding, $content-padding); }
+    .box-4  { @include box($col-width * 4, $tile-padding, $content-padding); }
+    .box-5  { @include box($col-width * 5, $tile-padding, $content-padding); }
+    .box-6  { @include box($col-width * 6, $tile-padding, $content-padding); }
+    .box-7  { @include box($col-width * 7, $tile-padding, $content-padding); }
+    .box-8  { @include box($col-width * 8, $tile-padding, $content-padding); }
+    .box-9  { @include box($col-width * 9, $tile-padding, $content-padding); }
+    .box-10 { @include box($col-width * 10, $tile-padding, $content-padding); }
+    .box-11 { @include box($col-width * 11, $tile-padding, $content-padding); }
+    .box-12 { @include box($width, $tile-padding, $content-padding); }
+  }
+}
+
+// for desktop
+@media (min-width: 960px) {
+  .tiled {
+    margin: 0 auto;
+
+    // 12 80px columns on tablets
+    $width: 960px;
+    $col-width: $width/12;
+    $tile-padding: 2px;
+		$content-padding: 14px;
+
+    width: $width;
+
+    .box-1  { @include box($col-width * 1, $tile-padding, $content-padding); }
+    .box-2  { @include box($col-width * 2, $tile-padding, $content-padding); }
+    .box-3  { @include box($col-width * 3, $tile-padding, $content-padding); }
+    .box-4  { @include box($col-width * 4, $tile-padding, $content-padding); }
+    .box-5  { @include box($col-width * 5, $tile-padding, $content-padding); }
+    .box-6  { @include box($col-width * 6, $tile-padding, $content-padding); }
+    .box-7  { @include box($col-width * 7, $tile-padding, $content-padding); }
+    .box-8  { @include box($col-width * 8, $tile-padding, $content-padding); }
+    .box-9  { @include box($col-width * 9, $tile-padding, $content-padding); }
+    .box-10 { @include box($col-width * 10, $tile-padding, $content-padding); }
+    .box-11 { @include box($col-width * 11, $tile-padding, $content-padding); }
+    .box-12 { @include box($width, $tile-padding, $content-padding); }
+  }
+}

@@ -1,0 +1,153 @@
+---
+layout: multiple_layout
+---
+
+<script type="text/javascript">
+  // when the DOM is ready...
+  $('document').ready(function(){
+    // carousel
+    $('#carousel').theArtificialCarousel({
+      scrollingSelector: '.scrolling',
+      overlaySelector: '.overlay',
+      ga: false
+    });
+  });
+</script>
+
+<!-- page content -->
+<div id="content">
+		
+	<!-- all of this for reference only -->
+	
+	<!-- sets the backgrounds for the carousel slides-->
+	<style>
+	    #slide-one, #f-slide-one {
+	        background:url('images/sample/img_rectangle01.jpg') no-repeat center center;
+	        background-size: cover;
+	    }
+	    #slide-two, #f-slide-two {
+	        background:url('images/sample/img_rectangle02.jpg') no-repeat center center;
+	        background-size: cover;
+	    }
+	    #slide-three, #f-slide-three {
+	        background:url('images/sample/img_rectangle03.jpg') no-repeat center center;
+	        background-size: cover;
+	    }==
+
+	/* Retina targeting */
+	@media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {
+	        #slide-3ds {
+	            background:url('images/sample/img_rectangle01.jpg') no-repeat center center;
+	            background-size: cover;
+	        }
+	        #slide-startups {
+	            background:url('images/sample/img_rectangle02.jpg') no-repeat center center;
+	            background-size: cover;
+	        }
+	        #slide-death {
+	            background:url('images/sample/img_rectangle03.jpg') no-repeat center center;
+	            background-size: cover;
+	        }    
+	    }
+	</style>
+	
+	<div id="carousel">
+		<div class="overlay-background">
+			<div class="container">
+				<div class="padded">
+					<div class="overlay" id="overlay-one">
+						<h4>01</h4>
+						<h3>This is a photo from our toilet, lovingly dubbed "the unicorn room".</h3>
+					</div>
+					<div class="overlay" id="overlay-two">
+						<h4>02</h4>
+						<h3>This is our table. It used to have cactuses, but they were too dangerous.</h3>
+					</div>
+					<div class="overlay" id="overlay-three">
+						<h4>03</h4>
+						<h3>We designed and built to [icon] and covered our walls with it.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	  <div class="scrolling">
+	    <ol class="scrolling-wrapper">
+	      <li class="slide" id="slide-one"
+	          data-overlay="#overlay-one"
+	          >&nbsp;</li>
+	      <li class="slide" id="slide-two"
+	          data-overlay="#overlay-two"
+	          >&nbsp;</li>
+	      <li class="slide" id="slide-three"
+	          data-overlay="#overlay-three"
+	          >&nbsp;</li>
+	    </ol>
+	  </div>
+	</div>
+
+	<div class="flexcontainer">
+		<div class="col-6">
+			<div class="padded">
+				<h2>Humidity snail deserunt mollit giraffe in Arduino rabbit washi tape.</h2>
+				<p>Dot grid icon-a-palooza morning meeting beautiful flashback friday chai mocha electric insect tennis. Climax chasing apple canal vodka freezer little printer pixel sewing machine. Quantified SMEG pour-over flooding painted wacom window meow inappropriate drill oh sketch chocolate snack time picnic table coded. Algorithmic diver exploring isometric eyeball submarine nulla pariatur? Nutella cream ice gazelle mask illum sweet cube glue fail. Spellchecker no! Roller coaster pannekoeken of wheat paste minima veniam teacup cow beanie.</p>
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="padded">
+				<img src="images/sample/img_square02.jpg">
+				<h2>Balls bounce meow aliquot whimsy sharpie. Future of Post-its un sticky.</h2>
+				<p>Ouch! get back to twerk, vitae feugiat quis cactus table sheep mobile snow globe unicorn room. Prototypical cheese. Mint, turqoise, tulip, steel, maybe copper. Peanut butter and jelly dinosaur sriracha stroopwafel. What does the fox say. Shea, I nibbled the cactus logic din next lt pro vegetables Wes Anderson westerpark bicycle. Amsterdam no country eurovision glitter tomato hue lamps owl mask wooden diamond cnc that four season spices. Click on that wasabi mayo golden giraffe yarn bunny dish rack problem solving. 3D print that reality. Chocolate go pills.</p>
+			</div>
+		</div>
+	</div>
+	<div class="flexcontainer">
+		<div class="col-3">
+			<div class="padded">
+				<h3>Amet unicorn prance cactus lover pointing at things tofu. Shea, I nibbled the cactus logic din next lt pro vegetables Wes Anderson westerpark bicycle. Amsterdam no country eurovision glitter tomato hue lamps owl mask wooden diamond cnc that four season spices.</h3>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="padded">
+				<img src="images/sample/img_square03.jpg">
+				<p>Algorithmic diver exploring isometric eyeball submarine nulla pariatur? Nutella cream ice gazelle mask illum sweet cube glue fail. Spellchecker no! Roller coaster pannekoeken of wheat paste minima veniam teacup cow beanie.</p>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="padded">
+				<img src="images/sample/img_rectangle01.jpg">
+				<img src="images/sample/img_rectangle02.jpg">
+				<img src="images/sample/img_rectangle03.jpg">
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="padded">
+				<img src="images/sample/img.jpg">
+				<h3>Lack of bikes and a heinous hangover. Dutch strawberries whoops binding pixels. Tiny kings and giant numbers.</h3>
+			</div>
+		</div>
+	</div>
+	
+	<!-- three equal columns -->
+	<div class="flexcontainer">
+		<div class="col-4">
+			<div class="padded">
+				<img src="images/sample/img_rectangle01.jpg">
+				<h3>Black forest chocolate cake on a sunny day. So lekker. Beaches and sun for days.</h3>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="padded">
+				<img src="images/sample/img_rectangle02.jpg">
+				<h3>Drinking games a la mode. Aesthetically proper, it’s so typically you. </h3>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="padded">
+				<img src="images/sample/img_rectangle03.jpg">
+				<h3>Lack of bikes and a heinous hangover. Dutch strawberries whoops binding pixels. Tiny kings and giant numbers.</h3>
+			</div>
+		</div>
+	</div>
+	<!-- end reference -->
+	
+</div>

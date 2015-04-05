@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html>
+	<head>		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title><%= current_page.data.title || 'The Artificial' %></title>
+
+		<!-- favicon and apple touch icon -->
+		<%= yield_content :favicon_element %>
+		
+		
+		<!-- basic SEO -->
+		<meta name="keywords" content="<%= yield_content :keywords %>" />
+		<meta name="description" content="<%= yield_content :description %>" />
+		
+		<!-- Twitter summary card -->
+		<meta property="twitter:creator:id" content="1382202606" /> <!-- this is @veryartificial -->
+		<meta property="twitter:title" content="<%=  yield_content :title %>" />
+		<meta property="twitter:description" content="<%=  yield_content :description %>" />
+
+		<!-- Facebook OpenGraph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="<%= yield_content :url %>" />
+		<meta property="og:title" content="<%=  yield_content :title %>" />
+		<meta property="og:description" content="<%=  yield_content :description %>" />
+		<meta property="og:image" content="<%= yield_content :image %>" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<%= stylesheet_link_tag 'normalize', 'site' %>
+		<%= yield_content :stylesheet_tags %>
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+    <%= javascript_include_tag 'jquery.artificial', 'imagesloaded.pkgd.min', 'packery.pkgd.min', 'jquery.scrollsnap.hacked', 'jquery.easing.min', 'imgLiquid-min', 'artificial' %>
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+	</head>
+  
+  <body class="<%= page_classes %>">
+
+		<script type="text/javascript">
+			// when the DOM is ready...
+            $('document').ready(function(){
+				// load the footer's logo
+                $('#artificial').artificialLogo();
+
+				// apply packery
+				var $packeryContainer = $('.packery');
+				$packeryContainer.packery({
+				  itemSelector: '.packed'
+				});
+				// and re-flow when images within are loaded
+				$packeryContainer.imagesLoaded(function(){
+					$packeryContainer.packery();
+				});
+				
+  			$(".square").imgLiquid({
+      		fill: true,
+      		horizontalAlign: "center",
+      		verticalAlign: "50%"
+ 				});
+			});
+						
+    </script>
+
+    <%= yield %>
+			
+		<!-- search -->
+		<div id="oncall">
+			<div class="flexcontainer">
+				<div class="col-8 left-2 right-2">		
+					<div class="search">
+						<input type="search" placeholder="search" class="searchbox"></input>
+						<input type="submit" value="search" class="button"></input>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- footer -->
+		<div id="footer">
+			<div class="flexcontainer">
+				<div class="col-4">
+					<div class="padded">
+						<div id="artificial">
+							<a href="http://theartificial.nl/"><svg width="300px" height="240px" viewBox="0 0 300 240" version="1.1" xmlns="http://www.w3.org/2000/svg"><g stroke="none" fill="#18140C"><circle cx="150" cy="120" r="8"></circle><circle cx="182" cy="120" r="8"></circle><circle cx="118" cy="120" r="8"></circle></g></svg></a>
+              <div>The Artificial</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="col-3 left-2">
+					<div id="about" class="padded">
+						<h3>About us</h3>
+						<p>The Artificial is a digital product design agency located in Amsterdam. We combine aesthetics, behavior, business, and technology to create meaningful products and experiences.</p>
+					</div>
+				</div>		
+		
+				<div class="col-3">
+					<div id="promo" class="padded">
+						<h3>Keep in touch</h3>
+						<p>Sign up for our email <a href="http://eepurl.com/QQppf">newsletter</a>, follow us on <a href="https://twitter.com/veryartificial">Twitter</a>, or like us on <a href="https://www.facebook.com/veryartificial">Facebook</a>.</p> 
+						<p>Keep up with our work-in-progress on <a href="http://dribbble.com/VeryArtificial">Dribbble</a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

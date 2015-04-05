@@ -1,0 +1,245 @@
+---
+title: The Artificial
+---
+
+<style>
+    #slide-3ds {
+        background:url('images/carousel-3ds.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    #slide-startups {
+        background:url('images/carousel-startups.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    #slide-death {
+        background:url('images/carousel-death.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    #slide-icon {
+        background:url('images/carousel-icon.png') no-repeat center center;
+        background-size: cover;
+    }
+    #slide-pilogs {
+        background:url('images/carousel-pilogs.jpg') no-repeat center center;
+        background-size: cover;
+    }
+  
+    #overlay-3ds {
+        background:url('images/logo-sm-3ds.png') no-repeat bottom left;
+        background-size: 300px 100px;
+    }  
+    #overlay-startups {
+        background:url('images/logo-sm-startups.png') no-repeat bottom left;
+        background-size: 300px 100px;
+    }  
+    #overlay-death {
+        background:url('images/logo-sm-death.png') no-repeat bottom left;
+        background-size: 300px 100px;
+    }  
+    #overlay-icon {
+        background:url('images/logo-sm-icon.png') no-repeat bottom left;
+        background-size: 300px 100px;
+    }  
+    #overlay-pilogs {
+        background:url('images/logo-sm-pilogs.png') no-repeat bottom left;
+        background-size: 300px 100px;
+    }
+  
+    #logo {
+        background:url('images/artificial-logo.png') no-repeat center center;
+        background-size: 600px 400px;
+    }
+    #point {
+        background:url('images/artificial-point.jpg') no-repeat center center;
+        background-size: 600px 400px;
+    }
+    #door {
+        background:url('images/artificial-door.jpg') no-repeat center center;
+        background-size: 600px 400px;
+    }
+    #cards {
+        background:url('images/artificial-cards.png') no-repeat center center;
+        background-size: 600px 400px;
+    }
+    #inside {
+        background:url('images/artificial-inside.jpg') no-repeat center center;
+        background-size: 600px 400px;
+    }
+
+/* Retina targeting */
+@media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {
+        #slide-3ds {
+            background:url('images/carousel-3ds@2x.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        #slide-startups {
+            background:url('images/carousel-startups@2x.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        #slide-death {
+            background:url('images/carousel-death@2x.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        #slide-icon {
+            background:url('images/carousel-icon@2x.png') no-repeat center center;
+            background-size: cover;
+        }
+        #slide-pilogs {
+            background:url('images/carousel-pilogs@2x.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        #overlay-3ds {
+            background:url('images/logo-sm-3ds@2x.png') no-repeat bottom left;
+            background-size: 300px 100px;
+        }  
+        #overlay-startups {
+            background:url('images/logo-sm-startups@2x.png') no-repeat bottom left;
+            background-size: 300px 100px;
+        }  
+        #overlay-death {
+            background:url('images/logo-sm-death@2x.png') no-repeat bottom left;
+            background-size: 300px 100px;
+        }  
+        #overlay-icon {
+            background:url('images/logo-sm-icon@2x.png') no-repeat bottom left;
+            background-size: 300px 100px;
+        }  
+        #overlay-pilogs {
+            background:url('images/logo-sm-pilogs@2x.png') no-repeat bottom left;
+            background-size: 300px 100px;
+        }
+  
+        #logo {
+            background:url('images/artificial-logo@2x.png') no-repeat center center;
+            background-size: 600px 400px;
+        }
+        #point {
+            background:url('images/artificial-point@2x.jpg') no-repeat center center;
+            background-size: 600px 400px;
+        }
+        #door {
+            background:url('images/artificial-door@2x.jpg') no-repeat center center;
+            background-size: 600px 400px;
+        }
+        #cards {
+            background:url('images/artificial-cards@2x.png') no-repeat center center;
+            background-size: 600px 400px;
+        }
+        #inside {
+            background:url('images/artificial-inside@2x.jpg') no-repeat center center;
+            background-size: 600px 400px;
+        }
+    
+    }
+</style>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#carousel-menu-DDD').addClass('preview');
+    $('#overlay-3ds').addClass('preview');
+  });
+</script>
+
+<div id="carousel">
+  <div id="overlay-background">
+    <div class="pale">
+      <div class="overlay" id="overlay-3ds">
+        <% link_to '/3dsystems.html' do %>
+          We helped a 3D printing company create touch interfaces for consumer and production lines.
+        <% end %>
+      </div>
+      <div class="overlay" id="overlay-startups">
+        <% link_to '/startups.html' do %>
+          We helped a startup build a simple product from a complicated idea.
+        <% end %>
+      </div>
+      <div class="overlay" id="overlay-death">
+        <% link_to '/designfordeath.html' do %>
+          We imagined how our digital remains might live on after we pass.
+        <% end %>
+      </div>
+      <div class="overlay" id="overlay-icon">
+        <% link_to '/toicon.html' do %>
+          We practice our craft and share with the community when we can.
+        <% end %>
+      </div>
+      <div class="overlay" id="overlay-pilogs">
+        <% link_to '/pilogs.html' do %>
+          We're building a platform to make meaning of our data.
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <a id="prev"></a>
+  <div class="scrolling">
+    <ol class="scrolling-wrapper">
+      <li class="slide" id="slide-3ds"
+          data-menu="#carousel-menu-DDD" 
+          data-overlay="#overlay-3ds"
+          >&nbsp;</li>
+      <li class="slide" id="slide-startups" 
+          data-menu="#carousel-menu-startups" 
+          data-overlay="#overlay-startups"
+          >&nbsp;</li>
+      <li class="slide" id="slide-death" 
+          data-menu="#carousel-menu-death" 
+          data-overlay="#overlay-death"
+          >&nbsp;</li>
+      <li class="slide" id="slide-icon" 
+          data-menu="#carousel-menu-icon" 
+          data-overlay="#overlay-icon"
+          >&nbsp;</li>
+      <li class="slide" id="slide-pilogs" 
+          data-menu="#carousel-menu-pilogs" 
+          data-overlay="#overlay-pilogs"
+          >&nbsp;</li>
+    </ol>
+  </div>
+  <a id="next"></a>
+</div>
+
+<div id="story">
+  <div class="pale">
+
+    <div class="row">
+      <div class="image left" id="logo"></div>
+      <div class="copy right">
+        <p class="gigantic condensed text-turquoise">We are The Artificial</p>
+        <p class="small">We are a digital product design agency comprised of an ambitious group of individuals with passions and expertise in aesthetics, behavior, and technology. We believe in making over talking and convey our ideas through sketches, pixels, and prototypes.</p>
+      </div>
+    </div>      
+      
+    <div class="row">
+      <div class="image right" id="point"></div>
+      <div class="copy left bg-tulip">
+        <p class="small">Collaboration is the core of what we do</p>
+        <p class="gigantic serif">We are better together than as individuals.</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="image left" id="door"></div>
+      <div class="copy right">
+        <p class="large serif">we believe in the uncompromising quality of our work, </p>
+        <p class="gigantic condensed text-tulip">and we seek every opportunity to improve our process.</p>
+      </div>
+    </div>    
+    
+    <div class="row">
+      <div class="image right" id="cards"></div>
+      <div class="copy bg-turquoise left">
+        <p class="gigantic condensed">Our work is based in logic but enlivened by emotion.</p>
+        <p class="small">We are all generalists—artists who work in code and technologists with business strategy expertise. We approach problems from these many perspectives and find solutions in unexpected places.</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="image left" id="inside"></div>
+      <div class="copy right">
+        <p class="medium"><span class="dropcap">W</span>e are insatiably curious and fearless in the face of the new. We're always looking for like-minded explorers to share our adventures, so if you're feeling courageous, drop us a line. Anything could happen!</p>
+      </div>
+    </div>       
+    
+  </div>
+</div>  

@@ -1,0 +1,68 @@
+<% wrap_layout :artificial_layout do %>
+
+<% content_for :favicon_element do %>
+	<link rel="icon" type="image/png" href="images/favicon_dafault.png" />
+	<link rel="shortcut icon" href="narwhale" type="image/x-icon" />
+
+	<link rel="apple-touch-icon" href="images/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/touch-icon-iphone@2x.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon-ipad-retina@2x.png">
+	
+	<meta name="theme-color" content="#CB2853">
+<% end %>
+
+<%# TODO add title %>
+<% content_for :title, "The Artificial" %>
+
+<%# TODO add description %>
+<% content_for :description, "Another site by The Artificial" %>
+
+<%# TODO add keywords %>
+<% content_for :keywords, "design" %>
+
+<%# TODO add URL for opengraph %>
+<% content_for :url, "http://www.theartificial.nl" %>
+
+<%# TODO add image for opengraph %>
+<% content_for :image, "http://www.theartificial.nl/images/img_default.png" %>
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+	  scrollspy("#nav-primary", 30);
+		eversearch();
+		listfilter();
+	});
+</script>
+	
+<%
+    def get_nav_svg(name)
+      path = "images/ic_#{name}.svg"
+      if resource = sitemap.find_resource_by_path(path)
+        file = File.open(resource.source_file, 'r')
+        return file.read
+      else
+        return '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 32 32" xml:space="preserve"><rect x="0" y="0" height="32" width="32" rx="6" ry="6" fill="#19150D"></rect></svg>'
+      end
+    end
+%>
+
+<!-- search -->
+<!-- TODO remove search for static sites -->
+<div id="oncall">
+	<div class="flexcontainer">
+		<div class="col-8 left-2 right-2">		
+			<div class="search">
+				<input type="search" placeholder="search" class="searchbox">
+				<label class="button primary">
+					<input type="submit" value="search" class="button">
+					<%= get_nav_svg('search') %>
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= yield %>
+
+<% end %>

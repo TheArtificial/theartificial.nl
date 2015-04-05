@@ -1,0 +1,27 @@
+<% wrap_layout :site_layout do %>
+
+	<nav id="header">
+		<div class="flexcontainer topbar">
+			<div id="logo" class="col-6">
+				<div class="padded-lr">
+					<a href="index.html"><h2 id="logo">The Artificial</h2></a>
+				</div>
+			</div>
+			<div id="nav-primary" class="col-6">
+				<div class="padded-lr">
+					<ul>
+						<li><a href="work.html">work</a></li>
+						<li><a href="mission.html">mission</a></li>
+						<li><a href="about.html">about us</a></li>
+						<li><a href="laboratory.html">laboratory</a></li>
+						<li><a href="blog.html">blog</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div id="underheader"></div>
+
+<%= yield %>
+<% end %>

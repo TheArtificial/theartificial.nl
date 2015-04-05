@@ -1,0 +1,157 @@
+
+$height: 480px;
+
+#carousel {
+  width: 100%;
+  height: $height;
+  position: relative;  
+
+  .scrolling {
+    position: relative;
+		z-index: 0;
+    width: 100%;
+    height: $height;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .scrolling-wrapper {
+    list-style-type: none;
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .slide {
+    position: inherit;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 480px;
+
+    display: inline-block;
+    z-index: 0;
+  }
+
+  .pagination {
+//    height: 16px;
+//    position: absolute;
+//    bottom: 8px;
+//    margin: auto;
+    svg {
+      fill: $white;
+    }
+    z-index: 10;
+    a {
+      opacity: 0.2;
+      &.active {
+        opacity: 1.0;
+      }
+    }
+  }
+
+  .overlay-background {
+    height: 200px;
+    width: 100%;
+    margin-top: 100px;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+
+    pointer-events: none;
+
+		background: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
+		
+		.container {
+			position: relative;
+		
+			.overlay {
+				height: 120px;
+				width: 66.667%;
+				margin-left: 16%;
+				
+				position: absolute;
+				top: 80px;
+				z-index: 15;
+				
+				h2, p {
+					text-align: center;
+					color: $white;
+				}
+				
+				opacity: 0;
+				-webkit-transition: opacity 0.5s ease-in-out;
+				-moz-transition: opacity 0.5s ease-in-out;
+				transition: opacity 0.5s ease-in-out;
+
+				&.active {
+					opacity: 1;
+					-webkit-transition: opacity 0.25s ease-in-out;
+					-moz-transition: opacity 0.25s ease-in-out;
+					transition: opacity 0.25s ease-in-out;
+					
+					h2 {
+						padding: 0;
+					}
+				}
+		  }
+		}
+	}
+
+  .prev, .next {
+    width: 80px;
+
+    padding-top: ($height / 2) - (40px);
+
+    text-align: center;
+    font-weight: bold;
+
+    cursor: pointer;
+		z-index: 10;
+  }
+	
+  .prev {
+    height: ($height / 2) + (40px);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+		
+    &:before {
+      display: block;
+      height: 40px;
+      width: 40px;
+
+      margin: 0 auto;
+
+      content: ' ';
+      background-image: url('/images/ic_previous.svg');
+    }
+  }
+
+  .next {
+    height: ($height / 2) + (40px);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+		
+    &:before {
+      display: block;
+      height: 40px;
+      width: 40px;
+
+      margin: 0 auto;
+
+      content: ' ';
+      background-image: url('/images/ic_next.svg');
+    }
+  }
+}

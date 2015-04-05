@@ -1,0 +1,35 @@
+<% wrap_layout :site_layout do %>
+
+<%
+    def get_nav_svg(name)
+      path = "images/img_nav-#{name}.svg"
+      if resource = sitemap.find_resource_by_path(path)
+        file = File.open(resource.source_file, 'r')
+        return file.read
+      else
+        return '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 32 32" xml:space="preserve"><rect x="0" y="0" height="32" width="32" rx="6" ry="6" fill="#19150D"></rect></svg>'
+      end
+    end
+%>
+
+	<section id="header-side">
+		<div class="flexcontainer topbar"></div>
+		<div class="flexcontainer">
+			<nav id="nav-primary" class="iconlist">
+				<div class="padded">
+					<ul>
+						<li data-anchor-target="#one"><a href="#one"><%= get_nav_svg('explore') %></a>
+						<li data-anchor-target="#two"><a href="#two"><%= get_nav_svg('generate') %></a></li>
+						<li data-anchor-target="#three"><a href="#three"><%= get_nav_svg('refine') %></a></li>
+						<li data-anchor-target="#four"><a href="#four"><%= get_nav_svg('reflect') %></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		</div>
+	</section>
+	
+	<%= yield %>
+	
+<% end %>
+

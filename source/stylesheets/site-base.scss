@@ -1,0 +1,263 @@
+// for header and footer elements
+
+.padded-lr {
+	padding: 10px 16px 10px 16px;
+}
+
+// top header
+// mobile
+@media only screen {
+	#header {
+		background-color: $cool-grey-90;
+
+		.topbar {
+			border-top-color: $white;
+		}
+		
+		.flexcontainer {
+			border-bottom-color: $cool-grey-70;
+		}
+		
+		#nav-primary {
+			ul {	
+				li {
+					a {
+						color: $white;
+					}
+		
+					a:hover {
+						color: $pale-turquoise;
+					}
+				}
+				li.active a {
+					color: $turquoise;
+				}
+			}
+		}
+	}
+	
+	#underheader {
+		background: URL("../images/balloon.png") center no-repeat;
+	}
+	
+	#nav-secondary {
+		border-bottom-color: $cool-grey-20;
+	
+		ul {		
+			li {
+				a {
+					color: $cool-grey-30;
+				}		
+				a:hover {
+					color: $cool-grey-40;
+				}
+			}
+		}	
+	}
+}
+
+// side header
+// mobile, tablet, and desktop
+@media only screen {
+	#header-side {
+		.topbar {
+			border-top-color: $turquoise;
+		}
+	}	
+}
+
+// content
+#content {
+	background-color: $cool-grey-90;
+}
+
+.card {
+	background-color: $white;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.container.packery {
+	margin-top: 20px;
+}
+
+.center {
+	text-align: center;
+}
+
+.grey {
+	background-color: $cool-grey-50;
+	h1, a {
+		color: $white;
+	}
+	
+}
+
+.card {
+	a {
+		font-size: .8em;
+		text-decoration: underline;
+	}
+}
+
+
+
+
+
+// footer
+
+// mobile, tablet, and desktop
+@media only screen {
+
+	#footer {
+		background-color: $cool-grey-90;
+		
+		.flexcontainer
+		{
+			border-top-color: $cool-grey-70;
+		}
+		h3, h4, p {
+			color: $cool-grey-10;
+		}
+			a {
+			color: $turquoise;
+		}
+		a:hover {
+			color: $dark-turquoise;
+		}
+		
+		#artificial svg path {
+			fill: $cool-grey-10;
+		}
+		
+	}
+}
+
+// case study headers
+#threeDSystems {
+	height: 240px;
+	padding-top: 80px;
+	color: $white;
+	text-align: center;
+}
+
+#threeDSystems {
+	background: URL("../images/pattern-3DS.png") repeat;
+}
+
+
+// eversearch
+#oncall {
+	background-color:rgba(255, 255, 255, 0.9);
+}
+
+
+// forms and fields
+.search {
+	background-color: $cool-grey-10;
+	border: none;
+	border-radius: 3px;
+	
+	.button {
+		background-color: $turquoise;
+		border: none;
+		border-radius: 0 3px 3px 0;
+		color: $white;
+		transition: background-color 0.4s ease;
+	}
+	.button:hover {
+		background-color: $dark-turquoise;
+	  transition: background-color 0.4s ease;
+	}
+}
+
+.field.signin {
+	background-color: $cool-grey-90;
+}
+
+.field {
+	background-color: $cool-grey-10;
+	border: none;
+	border-radius: 3px;
+}
+
+.button {
+	border: none;
+	border-radius: 3px;
+	color: $white;
+	transition: background-color 0.4s ease;
+}
+
+.button:hover {
+  transition: background-color 0.4s ease;
+}
+
+.button.primary {
+	background-color: $turquoise;
+}
+
+.button.primary:hover {
+	background-color: $dark-turquoise;	
+}
+
+.button.secondary {
+	background-color: $cool-grey-30;
+}
+
+.button.secondary:hover {
+	background-color: $cool-grey-50;
+}
+
+.selection {
+ border: none;
+ background-color: $cool-grey-10;
+}
+
+.dropdown-menu {
+
+	ul {
+		outline: none;
+		
+		li {
+			background-color: $cool-grey-10;
+			border-radius: 3px;
+			
+			a {
+				color: $cool-grey-90;
+			}
+			
+			ul {
+				border-radius: 3px;
+				
+				li {
+					border-radius: 0px;
+				}
+				
+				li:hover {
+					background-color: $turquoise;
+				}
+			}
+		}
+		
+		li:hover
+		{
+			ul {
+				display:block
+			}
+		}
+	}
+}	
+
+#animal-list {
+  .padded {
+		transition: opacity 0.8s ease;
+	}
+	.filter-off {
+		opacity: 0.1;
+	  transition: opacity 0.8s ease;
+	}
+}
+
+
+
