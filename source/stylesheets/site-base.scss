@@ -99,6 +99,17 @@ body {
 }
 
 .card {
+	.padded {
+		img {
+			margin-bottom: 20px;
+		}
+	}
+	
+	h2 a {
+		font-size: 1em;
+		text-decoration: none;
+	}
+	
 	a {
 		font-size: .8em;
 		text-decoration: underline;

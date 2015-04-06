@@ -1,0 +1,43 @@
+---
+layout: multiple_layout
+---
+
+<section id="content"> 
+	<div class="flexcontainer">
+		<div class="col-8">
+			<div class="padded center">
+				<h1>Our Blog</h1>
+				<p>stories from an Artificial life</p>
+			</div>
+		</div>
+	</div>
+  
+  <div class="container packery">
+		<% page_articles.each_with_index do |article, i| %>
+		<%
+		  article_path = article.path[/.*(?=\..+$)/]
+		  if preview = find_image(article_path + '/-preview')
+		    preview_url = preview.url
+		  else
+		    preview_url = "/blog/2014/03/17/test/-preview.png"
+		  end
+		%>
+				
+    <% link_to article do %>
+		<div class="col-6 packed">
+			<div class="card">
+				<div class="padded center">
+      		<img class="imgpreview" src="<%= preview_url %>">
+    <% end %>
+   				<h2><%= link_to article.title, article %></h2>
+    			<p><%= article.summary(180, '…') %></p>
+   			 	<p><%= sitemap.find_resource_by_path("/people/#{article.data.author}.html").data.title %></p>
+    		 	<h5><%= article.date.strftime('%B %e, 0%Y') %></h5>
+				</div>
+			</div>
+		</div>
+					
+		<% end %>
+	</div>
+
+</section>

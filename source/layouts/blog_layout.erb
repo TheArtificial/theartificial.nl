@@ -1,0 +1,45 @@
+<% wrap_layout :multiple_layout do %>
+
+<%
+  current_path = current_page.path[/.*(?=\..+$)/]
+  if masthead = find_image(current_path + '/-masthead')
+    masthead_url = masthead.url
+  else
+    masthead_url = "/blog/2014/03/17/test/-masthead.png"
+  end
+%>
+
+<style>
+  #masthead {
+    overflow: hidden;
+		height: 320px;
+    width: 100%;
+    background: url('<%= masthead_url %>') no-repeat center center;
+    background-size: cover;
+  }
+</style>
+<section id="content">
+  <div class="bleed" id="masthead">
+    <div class="flexcontainer">
+      <div class="col-8 left-2 right-2">
+				<div class="padded center">
+        	<h1><%= current_page.title %></h1>
+        	<p><%= sitemap.find_resource_by_path("/people/#{current_page.data.author}.html").data.title %> | <time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%B %e, 0%Y') %></time></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<div class="bleed white">
+		<div class="flexcontainer">
+			<div class="col-12">
+				<div class="padded">
+					<article>      
+		      	<%= yield %>
+		    	</article>
+				</div>
+		  </div>
+		</div>
+	</div>
+</section>    
+<% end %>
