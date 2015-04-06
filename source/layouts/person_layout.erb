@@ -2,22 +2,26 @@
     
 
 <section class="content">
-	<div class="bleed turquoise">
+	<div id="person" class="bleed turquoise">
 		<div class="flexcontainer">
 			<div class="col-4">
 				<div class="padded">
-					<h1>LOGO</h1>
+					<h1><%= get_logo_svg(current_page.path.split('/').last.gsub(/.html$/, '')) %></h1>
 				</div>
 			</div>
 			
-			<div class="col-8">
+			<div class="col-7 left-1">
 				<div class="padded">
 					<h1><%= current_page.data.title %></h1>
 					<h5><a href="https://linkedin.com/in/<%= current_page.data.linkedin %>">linkedin</a> | <a href="https://twitter.com/<%= current_page.data.twitter %>">twitter</a></h5>
+				</div>
+				<div class="padded">
 					<h3><%= "&ldquo;#{current_page.data['quote']}&rdquo;" %></h3>
 					<%= yield %>
+				</div>
+				<div class="padded">
 					<h4>Logo Story</h4>
-					<p><%= Tilt['markdown'].new {current_page.data['logo-story']}.render %></p>
+					<%= Tilt['markdown'].new {current_page.data['logo-story']}.render %>
 				</div>
 			</div>
 		</div>
@@ -27,9 +31,18 @@
 		<% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
 			<% if articles.length > 0 %>
 	    	<% articles.take(3).each do |article, i| %>
+				<%
+				  article_path = article.path[/.*(?=\..+$)/]
+				  if preview = find_image(article_path + '/-preview')
+				    preview_url = preview.url
+				  else
+				    preview_url = "/blog/2014/03/17/test/-preview.png"
+				  end
+				%>
 		<div class="col-4 packed">
 			<div class="card center">
 				<div class="padded">
+					<img class="imgpreview" src="<%= preview_url %>">
 					<h2><%= link_to article.title, article %></h2>
 					<%= article.summary(180, '…') %>
 				</div>

@@ -63,6 +63,17 @@ helpers do
       return nil
     end
   end
+  
+  def get_logo_svg(name)
+    path = "images/logo-#{name}.svg"
+    if resource = sitemap.find_resource_by_path(path)
+      file = File.open(resource.source_file, 'r')
+      return file.read
+    else
+      return ''
+    end
+  end
+  
 end
 
 set :css_dir, 'stylesheets'

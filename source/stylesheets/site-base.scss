@@ -140,8 +140,8 @@ body {
 	}	
 }
 
-.dandelion {
-	background-color: $dandelion;
+.tulip {
+	background-color: $tulip;
 }
 
 .turquoise {
@@ -163,7 +163,11 @@ body {
 	padding: 60px 0 40px 0;
 }
 
-#casesummary {
+.blog-title {
+	margin-top: 180px;
+}
+
+#casesummary, #person {
 	padding: 40px 0 40px 0;
 }
 

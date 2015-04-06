@@ -22,7 +22,7 @@
   <div class="bleed" id="masthead">
     <div class="flexcontainer">
       <div class="col-8 left-2 right-2">
-				<div class="padded center">
+				<div class="padded center blog-title">
         	<h1><%= current_page.title %></h1>
         	<p><%= sitemap.find_resource_by_path("/people/#{current_page.data.author}.html").data.title %> | <time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%B %e, 0%Y') %></time></p>
         </div>
