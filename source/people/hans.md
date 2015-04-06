@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: person_layout
 current: true
 title: Hans Gerwitz
 linkedin: gerwitz

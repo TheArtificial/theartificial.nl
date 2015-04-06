@@ -40,10 +40,6 @@ body {
 		}
 	}
 	
-	#underheader {
-		background: URL("../images/balloon.png") center no-repeat;
-	}
-	
 	#nav-secondary {
 		border-bottom-color: $cool-grey-20;
 	
@@ -86,18 +82,6 @@ body {
 	margin-top: 20px;
 }
 
-.center {
-	text-align: center;
-}
-
-.grey {
-	background-color: $cool-grey-50;
-	h1, a {
-		color: $white;
-	}
-	
-}
-
 .card {
 	.padded {
 		img {
@@ -116,33 +100,7 @@ body {
 	}
 }
 
-
-// mission statement
-#mission {
-	h1, h2, h3, h4, h5, p {
-		text-align: center;
-	}
-	h1, h2, h3, h4, h5 {
-		color: $white;
-	}
-	h5 {
-		color: $turquoise;
-	}
-	p {
-		color: $cool-grey-10;
-	}
-}
-
-.white {
-	background-color: white;
-	
-	h1, h2, h3, h4, h5, p {
-		color: $cool-grey-90;
-	}
-}
-
 // footer
-
 // mobile, tablet, and desktop
 @media only screen {
 
@@ -170,17 +128,44 @@ body {
 	}
 }
 
-// case study headers
-#threeDSystems {
-	height: 240px;
-	padding-top: 80px;
+// special styles
+.center {
 	text-align: center;
 }
 
-#threeDSystems {
-	background: URL("../images/pattern-3DS.png") repeat;
+.grey {
+	background-color: $cool-grey-50;
+	h1, a {
+		color: $white;
+	}	
 }
 
+.dandelion {
+	background-color: $dandelion;
+}
+
+.turquoise {
+	background-color: $turquoise;
+	a {
+		color: white;
+	}
+}
+
+.white {
+	background-color: white;
+	
+	h1, h2, h3, h4, h5, p {
+		color: $cool-grey-90;
+	}
+}
+
+.title {
+	padding: 60px 0 40px 0;
+}
+
+#casesummary {
+	padding: 40px 0 40px 0;
+}
 
 // eversearch
 #oncall {
