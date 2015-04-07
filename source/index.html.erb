@@ -125,77 +125,64 @@ layout: multiple_layout
 		
 		<div class="col-4 packed">
 			<div class="card center">
-				<img src="/laboratory/images/cake_overview.jpg">
+				<img src="laboratory/images/cake_overview.jpg">
 				<div class="padded">
 					<h1>The Future of Cake</h1>
 					<p>The future is almost here, and it's delicious!</p>
-					<a href="futureofcake.html">Taste the future</a>
+					<a href="http://www.futureofcake.com">Taste the future</a>
 				</div>
 			</div>
 		</div>
 		
 		<div class="col-4 packed">
 			<div class="card center">
-				<img src="work/images/3DS_consumer_layers.jpg">
+				<img src="work/images/3DS_professional_range.jpg">
 				<div class="padded">
-					<h4>Cube and Sense</h4>
-					<p>We designed a series of tools for scanning and printing in three dimensions.</p>
-					<a href="3dsystems.html">Learn more about this project</a>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-4 packed">
-			<div class="card center grey">
-				<div class="padded">
-					<h1>What's on our minds?</h1>
-					<a href="/blog/">Read the latest from our blog</a>
+					<h4>3D Systems Professional Tools</h4>
+					<p>We worked with 3D Systems to create a design language for their professional product line.</p>
+					<a href="work/3DSystems-professional.html">Learn more about this project</a>
 				</div>
 			</div>
 		</div>
 		
 		<div class="col-4 packed">
 			<div class="card center">
-				<img src="work/images/knowledgesharing_inuse.jpg">
+				<img src="work/images/monolith_workshop.jpg">
 				<div class="padded">
-					<h4>Working with startups</h4>
-					<p>Combining tried-and-true approaches with new ideas can lead to exciting results. We've worked with a handful of startups to form these unique ideas into designs that users can use without having to learn an entirely new set of interactions.</p>
-					<a href="startups.html">Learn more about this project</a>
-				</div>
-			</div>
-		</div>	
-			
-		<div class="col-4 packed">
-			<div class="card center">
-				<img src="laboratory/images/death_rooftops-01.jpg" alt="The future of death: buried on rooftops">
-				<div class="padded">
-					<h4>The Future of Death</h4>
-					<p>Prompted by Design Boom's Design for Death competition, we spent a week exploring ideas for how we might treat death in the future.</p>
-					<a href="startups.html">See what we came up with</a>
+					<h4>Monolith</h4>
+					<p>We did a series of short workshops with Monolith to evolve and refine their product.</p>
+					<a href="work/monolith.html">Learn more</a>
 				</div>
 			</div>
 		</div>
-
+		<% page_articles.take(1).each_with_index do |article, i| %>
+		<%
+		  article_path = article.path[/.*(?=\..+$)/]
+		  if preview = find_image(article_path + '/-preview')
+		    preview_url = preview.url
+		  else
+		    preview_url = "/blog/2014/03/17/test/-preview.png"
+		  end
+		%>
+				
+    <% link_to article do %>
 		<div class="col-4 packed">
-			<div class="card center">
+			<div class="card">
 				<div class="padded">
-					<h1>to [icon]</h1>
-					<p>Kata (方) is a honing exercise. Through repetition, the practice refines the basic skills necessary for mastery of a craft. We sought to better ourselves by creating sets of icons, not simply drawing things, but also exploring metaphors for visual communication.</p>
-					<a href="startups.html">Learn more about this project</a>
+      		<img class="imgpreview" src="<%= preview_url %>">
+    <% end %>
 				</div>
-			</div>
-		</div>		
-			
-		<div class="col-4 packed">
-			<div class="card center">
-				<img src="work/images/pilogs_interface.jpg">
-				<div class="padded">
-					<h2>PIlogs</h2>
-					<p>When the product you desire doesn't exist, you have to build it yourself. So we're sharpening our web skills by developing our own service.</p>
-					<a href="pilogs.html">Read about our progress</a>
+				<div class="padded center">
+   				<h2><%= link_to article.title, article %></h2>
+    			<%= article.summary(180, '…') %>
+				</div>
+				<div class="padded center">
+   			 	<h5><%= sitemap.find_resource_by_path("/people/#{article.data.author}.html").data.title %> | <%= article.date.strftime('%B %e, 0%Y') %></h5>
 				</div>
 			</div>
 		</div>
+					
+		<% end %>	
 			
 		<div class="col-4 packed">
 			<div class="card center">
@@ -205,6 +192,35 @@ layout: multiple_layout
 				</div>
 			</div>
 		</div>
+	
+		<div class="col-4 packed">
+			<div class="card center">
+					<a href="http://www.toicon.com/series/flat-shadows"><img src="laboratory/images/toicon_flatshadows.png"></a>
+			</div>
+		</div>
+	
+		<div class="col-4 packed">
+			<div class="card center">
+				<img src="work/images/knowledgesharing_guidelines.jpg">
+				<div class="padded">
+					<h4>Knowledge Sharing</h4>
+					<p>Combining tried-and-true approaches with new ideas can lead to exciting results. We've worked with a handful of startups to form these unique ideas into designs that users can use without having to learn an entirely new set of interactions.</p>
+					<a href="work/knowledgesharing.html">Learn more about this project</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-4 packed">
+			<div class="card center">
+				<img src="laboratory/images/death_faceblimp.jpg">
+				<div class="padded">
+					<h4>The Future of Death</h4>
+					<p>Prompted by Design Boom's Design for Death competition, we spent a week exploring ideas for how we might treat death in the future.</p>
+					<a href="laboratory/futureofdeath.html">See what we came up with</a>
+				</div>
+			</div>
+		</div>
+	
 	</div>
 		
 </section>
