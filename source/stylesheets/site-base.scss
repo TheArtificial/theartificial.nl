@@ -26,6 +26,7 @@ body {
 			ul {	
 				li {
 					a {
+						font-weight: bold;
 						color: $white;
 					}
 		
@@ -54,16 +55,6 @@ body {
 			}
 		}	
 	}
-}
-
-// side header
-// mobile, tablet, and desktop
-@media only screen {
-	#header-side {
-		.topbar {
-			border-top-color: $turquoise;
-		}
-	}	
 }
 
 // content

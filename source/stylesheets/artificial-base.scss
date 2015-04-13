@@ -29,6 +29,8 @@
 		}
 			
 		#logo {
+			text-align: center;
+			
 			img {
 				display: block;
 				margin: 0 auto;
@@ -56,7 +58,7 @@
 	
 	#underheader {
 		width: 100%;
-		height: 110px;
+		height: 106px;
 		display: block;
 	}
 	
@@ -90,6 +92,8 @@
 		height: inherit;
 
 		#logo {
+			text-align: left;
+			
 			img {
 				margin-left: 0;
 			}
