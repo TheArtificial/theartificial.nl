@@ -30,7 +30,7 @@
 <script type="text/javascript">
 	$( document ).ready(function() {
 	  // scrollspy("#nav-primary", 30);
-		eversearch();
+		// eversearch();
 		listfilter();
 	});
 </script>
@@ -47,21 +47,6 @@
     end
 %>
 
-<!-- search -->
-<!-- TODO remove search for static sites -->
-<div id="oncall">
-	<div class="flexcontainer">
-		<div class="col-8 left-2 right-2">		
-			<div class="search">
-				<input type="search" placeholder="search" class="searchbox">
-				<label class="button primary">
-					<input type="submit" value="search" class="button">
-					<%= get_nav_svg('search') %>
-				</label>
-			</div>
-		</div>
-	</div>
-</div>
 
 <%= yield %>
 
