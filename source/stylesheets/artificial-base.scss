@@ -208,19 +208,18 @@
 		
 		#artificial {
 			text-align: center;
-		
-			#artlogo {	
-				img {
-					width: 300px;
+			a {
+				font-size: .9em;
+				
+				svg#Layer_1 {
+					width: 100%;
 				}
-			}	
-			p {
-				display: none;
 			}
 		}	
 		
 		#about, #promo {
-			display: none;
+			border-top-width: 1px;
+			border-top-style: solid;
 		}	
 	}
 }
@@ -245,7 +244,7 @@
 		
 		#about, #promo {
 			padding-top: 60px;
-			display: block;
+			border: none;
 		}	
 	}
 }
