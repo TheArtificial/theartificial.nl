@@ -48,12 +48,12 @@
 # end
 
 helpers do
-  def nav_link(link_text, url, options = {})  
+  def nav_link(link_text, url, options = {})
     options[:class] ||= ""
     options[:class] << " current" if current_resource.url.start_with?(url)
     link_to(link_text, url, options)
   end
-  
+
   def find_image(base_path)
     if found = sitemap.find_resource_by_path(base_path+'.png')
       return found
@@ -63,7 +63,7 @@ helpers do
       return nil
     end
   end
-  
+
   def get_logo_svg(name)
     path = "images/logo-#{name}.svg"
     if resource = sitemap.find_resource_by_path(path)
@@ -73,7 +73,22 @@ helpers do
       return ''
     end
   end
-  
+
+    # this overrides the built-in helper
+    # see https://github.com/middleman/middleman/issues/145
+    def extra_page_classes
+      path_classes = page_classes.split(' ')
+
+      blog_classes = []
+      blog_classes = current_page.data.tags.split(',').map{|t| "tag-#{t.strip.gsub(/\s+/, '-')}"}
+      if current_page.data.category
+        blog_classes << "category-#{current_page.data.category.strip.gsub(/\s+/, '-')}"
+    end
+      classes = path_classes + blog_classes
+
+      return classes.join(' ')
+    end
+
 end
 
 set :css_dir, 'stylesheets'
@@ -103,7 +118,7 @@ page "/blog/feed.xml", layout: false
 
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true,
-               :autolink => true, 
+               :autolink => true,
                :smartypants => true
 
 # Build-specific configuration
