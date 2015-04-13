@@ -16,7 +16,7 @@ layout: multiple_layout
 
 <!-- page content -->
 <section id="content">
-	
+
 	<!-- carousel -->
 	<!-- sets the backgrounds for the carousel slides-->
 	<style>
@@ -62,10 +62,10 @@ layout: multiple_layout
 					#slide-pilogs {
 			        background:url('images/carousel-pilogs@2x.jpg') no-repeat center center;
 			        background-size: cover;
-			    }    
+			    }
 	    }
 	</style>
-	
+
 	<div id="carousel">
 		<div class="overlay-background">
 			<div class="container">
@@ -113,7 +113,7 @@ layout: multiple_layout
 	    </ol>
 	  </div>
 	</div>
-	
+
 	<!-- cards -->
 	<div class="container packery">
 
@@ -126,13 +126,13 @@ layout: multiple_layout
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="col-4 packed">
 			<div class="card center">
 					<a href="http://www.toicon.com/series/fandom"><img src="laboratory/images/toicon_fandom.png"></a>
 			</div>
 		</div>
-		
+
 		<div class="col-4 packed">
 			<div class="card center">
 				<a href="http://www.futureofcake.com"><img src="laboratory/images/cake_overview.jpg"></a>
@@ -142,7 +142,7 @@ layout: multiple_layout
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="col-4 packed">
 			<div class="card center">
 				<a href="work/3DSystems-professional.html"><img src="work/images/3DS_professional_range.jpg"></a>
@@ -152,7 +152,7 @@ layout: multiple_layout
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="col-4 packed">
 			<div class="card center">
 				<a href="work/monolith.html"><img src="work/images/monolith_workshop.jpg"></a>
@@ -162,33 +162,10 @@ layout: multiple_layout
 				</div>
 			</div>
 		</div>
-		
-		<% page_articles.take(1).each_with_index do |article, i| %>
-		<%
-		  article_path = article.path[/.*(?=\..+$)/]
-		  if preview = find_image(article_path + '/-preview')
-		    preview_url = preview.url
-		  else
-		    preview_url = "/blog/2014/03/17/test/-preview.png"
-		  end
-		%>
-				
-    <% link_to article do %>
-		<div class="col-4 packed">
-			<div class="card blog-preview <%= article.data.category %>">
-				<div class="double-padded">
-      		
-    <% end %>
 
-					<h5><%= link_to article.data.category, article %></h5>
-   				<h3><%= link_to article.title, article %></h3>
-   			 	<p><%= sitemap.find_resource_by_path("/people/#{article.data.author}.html").data.title %></p>
-					<p><%= article.date.strftime('%B %e, 0%Y') %></p>
-				</div>
-			</div>
-		</div>
-		<% end %>	
-			
+    <!-- first post from blog -->
+    <%= partial(:article_card, locals: { article: page_articles[0] }) %>
+
 		<div class="col-4 packed">
 			<div class="card center">
 				<img src="images/img_dribbble.png">
@@ -197,13 +174,13 @@ layout: multiple_layout
 				</div>
 			</div>
 		</div>
-	
+
 		<div class="col-4 packed">
 			<div class="card center">
 					<a href="http://www.toicon.com/series/flat-shadows"><img src="laboratory/images/toicon_flatshadows.png"></a>
 			</div>
 		</div>
-	
+
 		<div class="col-4 packed">
 			<div class="card center">
 				<a href="work/knowledgesharing.html"><img src="work/images/knowledgesharing_layers.jpg"></a>
@@ -213,7 +190,7 @@ layout: multiple_layout
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="col-4 packed">
 			<div class="card center">
 				<a href="laboratory/futureofdeath.html"><img src="laboratory/images/death_faceblimp.jpg"></a>
@@ -223,7 +200,10 @@ layout: multiple_layout
 				</div>
 			</div>
 		</div>
-	
+
+    <!-- second post from blog -->
+    <%= partial(:article_card, locals: { article: page_articles[1] }) %>
+
 	</div>
-		
+
 </section>
