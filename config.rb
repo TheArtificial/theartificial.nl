@@ -80,7 +80,9 @@ helpers do
       path_classes = page_classes.split(' ')
 
       blog_classes = []
-      blog_classes = current_page.data.tags.split(',').map{|t| "tag-#{t.strip.gsub(/\s+/, '-')}"}
+      if current_page.data.tags
+        blog_classes << current_page.data.tags.split(',').map{|t| "tag-#{t.strip.gsub(/\s+/, '-')}"}
+      end
       if current_page.data.category
         blog_classes << "category-#{current_page.data.category.strip.gsub(/\s+/, '-')}"
     end
