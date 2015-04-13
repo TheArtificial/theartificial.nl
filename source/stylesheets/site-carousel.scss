@@ -4,7 +4,7 @@ $height: 480px;
 	#carousel {
 	  width: 100%;
 	  height: $height;
-	  position: relative;  
+	  position: relative;
 
 	  .scrolling {
 	    position: relative;
@@ -65,29 +65,32 @@ $height: 480px;
 	    z-index: 5;
 
 	    pointer-events: none;
+			a {
+				pointer-events: auto;
+			}
 
 			background: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
-		
+
 			.container {
 				position: relative;
-		
+
 				.overlay {
 					height: 120px;
 					width: 90%;
-				
+
 					position: absolute;
 					top: 80px;
 					z-index: 15;
-					
+
 					h2 {
 						text-align: center;
 						color: $white;
 					}
-					
+
 					p {
 						display: none;
 					}
-				
+
 					opacity: 0;
 					-webkit-transition: opacity 0.5s ease-in-out;
 					-moz-transition: opacity 0.5s ease-in-out;
@@ -98,7 +101,7 @@ $height: 480px;
 						-webkit-transition: opacity 0.25s ease-in-out;
 						-moz-transition: opacity 0.25s ease-in-out;
 						transition: opacity 0.25s ease-in-out;
-					
+
 						h2 {
 							padding: 0;
 						}
@@ -118,14 +121,14 @@ $height: 480px;
 	    cursor: pointer;
 			z-index: 10;
 	  }
-	
+
 	  .prev {
 	    height: ($height / 2) + (40px);
 
 	    position: absolute;
 	    top: 0;
 	    left: 0;
-		
+
 	    &:before {
 	      display: block;
 	      height: 40px;
@@ -144,7 +147,7 @@ $height: 480px;
 	    position: absolute;
 	    top: 0;
 	    right: 0;
-		
+
 	    &:before {
 	      display: block;
 	      height: 40px;
@@ -163,15 +166,15 @@ $height: 480px;
 	#carousel {
 	  .overlay-background {
 			z-index: 500;
-			
+
 			.container {
 				position: relative;
-		
+
 				.overlay {
 					width: 70%;
 					margin-left: 15%;
-				
-					
+
+
 					p {
 						display: block;
 						text-align: center;
@@ -181,4 +184,3 @@ $height: 480px;
 		}
 	}
 }
-	
