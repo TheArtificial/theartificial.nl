@@ -119,11 +119,10 @@ layout: multiple_layout
 
 		<div class="col-4 packed">
 			<div class="card center">
-				<img src="work/images/sonicare_sims_max.jpg">
+				<a href="work/sonicare-sims.html"><img src="work/images/sonicare_sims_max.jpg"></a>
 				<div class="padded">
-					<h4>Philips Sonicare in The Sims FreePlay</h4>
+					<a href="work/sonicare-sims.html"><h4>Philips Sonicare in The Sims FreePlay</h4></a>
 					<p>We worked with Philips Sonicare to capture new audiences through gaming.</p>
-					<a href="work/sonicare-sims.html">Learn more about this project</a>
 				</div>
 			</div>
 		</div>
@@ -136,36 +135,34 @@ layout: multiple_layout
 		
 		<div class="col-4 packed">
 			<div class="card center">
-				<img src="laboratory/images/cake_overview.jpg">
+				<a href="http://www.futureofcake.com"><img src="laboratory/images/cake_overview.jpg"></a>
 				<div class="padded">
-					<h1>The Future of Cake</h1>
+					<a href="http://www.futureofcake.com"><h4>The Future of Cake</h4></a>
 					<p>The future is almost here, and it's delicious!</p>
-					<a href="http://www.futureofcake.com">Taste the future</a>
 				</div>
 			</div>
 		</div>
 		
 		<div class="col-4 packed">
 			<div class="card center">
-				<img src="work/images/3DS_professional_range.jpg">
+				<a href="work/3DSystems-professional.html"><img src="work/images/3DS_professional_range.jpg"></a>
 				<div class="padded">
-					<h4>3D Systems Professional Tools</h4>
+					<a href="work/3DSystems-professional.html"><h4>3D Systems Professional Tools</h4></a>
 					<p>We worked with 3D Systems to create a design language for their professional product line.</p>
-					<a href="work/3DSystems-professional.html">Learn more about this project</a>
 				</div>
 			</div>
 		</div>
 		
 		<div class="col-4 packed">
 			<div class="card center">
-				<img src="work/images/monolith_workshop.jpg">
+				<a href="work/monolith.html"><img src="work/images/monolith_workshop.jpg"></a>
 				<div class="padded">
-					<h4>Monolith</h4>
+					<a href="work/monolith.html"><h4>Monolith</h4></a>
 					<p>We did a series of short workshops with Monolith to evolve and refine their product.</p>
-					<a href="work/monolith.html">Learn more</a>
 				</div>
 			</div>
 		</div>
+		
 		<% page_articles.take(1).each_with_index do |article, i| %>
 		<%
 		  article_path = article.path[/.*(?=\..+$)/]
@@ -178,28 +175,25 @@ layout: multiple_layout
 				
     <% link_to article do %>
 		<div class="col-4 packed">
-			<div class="card">
-				<div class="padded">
-      		<img class="imgpreview" src="<%= preview_url %>">
+			<div class="card blog-preview <%= article.data.category %>">
+				<div class="double-padded">
+      		
     <% end %>
-				</div>
-				<div class="padded center">
-   				<h2><%= link_to article.title, article %></h2>
-    			<%= article.summary(180, '…') %>
-				</div>
-				<div class="padded center">
-   			 	<h5><%= sitemap.find_resource_by_path("/people/#{article.data.author}.html").data.title %> | <%= article.date.strftime('%B %e, 0%Y') %></h5>
+
+					<h5><%= link_to article.data.category, article %></h5>
+   				<h3><%= link_to article.title, article %></h3>
+   			 	<p><%= sitemap.find_resource_by_path("/people/#{article.data.author}.html").data.title %></p>
+					<p><%= article.date.strftime('%B %e, 0%Y') %></p>
 				</div>
 			</div>
 		</div>
-					
 		<% end %>	
 			
 		<div class="col-4 packed">
 			<div class="card center">
 				<img src="images/img_dribbble.png">
 				<div class="padded">
-					<a href="https://dribbble.com/VeryArtificial">Catch our latest shots on dribbble</a>
+					<a href="https://dribbble.com/VeryArtificial"><h4>Catch our latest shots on dribbble</h4></a>
 				</div>
 			</div>
 		</div>
@@ -212,22 +206,20 @@ layout: multiple_layout
 	
 		<div class="col-4 packed">
 			<div class="card center">
-				<img src="work/images/knowledgesharing_guidelines.jpg">
+				<a href="work/knowledgesharing.html"><img src="work/images/knowledgesharing_layers.jpg"></a>
 				<div class="padded">
-					<h4>Knowledge Sharing</h4>
+					<a href="work/knowledgesharing.html"><h4>Knowledge Sharing</h4></a>
 					<p>Combining tried-and-true approaches with new ideas can lead to exciting results. We've worked with a handful of startups to form these unique ideas into designs that users can use without having to learn an entirely new set of interactions.</p>
-					<a href="work/knowledgesharing.html">Learn more about this project</a>
 				</div>
 			</div>
 		</div>
 		
 		<div class="col-4 packed">
 			<div class="card center">
-				<img src="laboratory/images/death_faceblimp.jpg">
+				<a href="laboratory/futureofdeath.html"><img src="laboratory/images/death_faceblimp.jpg"></a>
 				<div class="padded">
-					<h4>The Future of Death</h4>
+					<a href="laboratory/futureofdeath.html"><h4>The Future of Death</h4></a>
 					<p>Prompted by Design Boom's Design for Death competition, we spent a week exploring ideas for how we might treat death in the future.</p>
-					<a href="laboratory/futureofdeath.html">See what we came up with</a>
 				</div>
 			</div>
 		</div>

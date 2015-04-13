@@ -24,18 +24,15 @@ layout: multiple_layout
 		%>
 				
     <% link_to article do %>
-		<div class="col-6 packed">
-			<div class="card">
-				<div class="padded">
-      		<img class="imgpreview" src="<%= preview_url %>">
+		<div class="col-4 packed">
+			<div class="card blog-preview <%= article.data.category %>">
+				<div class="double-padded">
     <% end %>
-				</div>
-				<div class="padded center">
-   				<h2><%= link_to article.title, article %></h2>
-    			<%= article.summary(180, '…') %>
-				</div>
-				<div class="padded center">
-   			 	<h5><%= sitemap.find_resource_by_path("/people/#{article.data.author}.html").data.title %> | <%= article.date.strftime('%B %e, 0%Y') %></h5>
+					<h5><%= link_to article.data.category, article %>
+   				<h3><%= link_to article.title, article %></h3>
+    			<!-- <%= article.summary(180, '…') %> -->
+   			 	<p><%= sitemap.find_resource_by_path("/people/#{article.data.author}.html").data.title %></p>
+						<p><%= article.date.strftime('%B %e, 0%Y') %></h5>
 				</div>
 			</div>
 		</div>

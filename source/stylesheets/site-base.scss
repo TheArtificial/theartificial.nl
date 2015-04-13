@@ -93,12 +93,32 @@ body {
 		font-size: 1em;
 		text-decoration: none;
 	}
-	
-	a {
-		font-size: .8em;
-		text-decoration: underline;
-	}
 }
+
+// blog preview tile style
+.blog-preview {
+	color: $white;
+	background-color: $tulip;
+	
+	.double-padded {
+		padding: 28px;
+		
+		h3 {
+			font-size: 1.6em;
+			min-height: 160px;
+		}
+	
+		a, p {
+			color: $white;
+			padding-bottom: 2px;
+		}
+	}	
+}
+
+.blog-preview.links {
+	background-color: $turquoise;
+}
+
 
 // footer
 // mobile, tablet, and desktop
