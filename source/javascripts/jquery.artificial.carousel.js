@@ -119,11 +119,4 @@
 
   };
 
-  $.fn.theArtificialCarousel.defaults = {
-    scrollingSelector: '.scrolling',
-    overlaySelector: '.overlay',
-    menu: '',
-    ga: false
-  };
-
 }( jQuery ));
