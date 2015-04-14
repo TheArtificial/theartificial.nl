@@ -7,7 +7,7 @@
 	.blog-title{
 		margin: 80px 0 0 20px;
 	}
-/*side image left*/	
+/*side image left*/
 /*	img{
 		width:46%;
 		padding:15px 40px 20px;
@@ -15,16 +15,22 @@
 		float: left;
 	}
 */
-/*side image left not pushed*/	
+/*side image left not pushed*/
 /*	img{
 		width:46%;
 		padding:10px 20px 10px 0;
 		float: left;
 	}*/
 
-/*regular image*/	
-	img{
+/*regular image*/
+	img {
 		padding-top: 40px;
+	}
+
+	img.float-left {
+		float: left;
+		margin-left: -20px;
+		padding: 10px;
 	}
 
 	h1 {
@@ -56,6 +62,3 @@
 		line-height: 1.8em;
 	}
 }
-
-
-
