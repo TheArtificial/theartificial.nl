@@ -8,7 +8,7 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="images/touch-icon-ipad.png">
 	<link rel="apple-touch-icon" sizes="120x120" href="images/touch-icon-iphone@2x.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon-ipad-retina@2x.png">
-	
+
 	<meta name="theme-color" content="#CB2853">
 <% end %>
 
@@ -16,7 +16,7 @@
 <% content_for :title, "The Artificial" %>
 
 <%# TODO add description %>
-<% content_for :description, "Another site by The Artificial" %>
+<% content_for :description, "The Artificial" %>
 
 <%# TODO add keywords %>
 <% content_for :keywords, "design" %>
@@ -27,6 +27,9 @@
 <%# TODO add image for opengraph %>
 <% content_for :image, "http://www.theartificial.nl/images/img_default.png" %>
 
+<%# TODO add Google tracking ID %>
+<% content_for :google_tracking_id, "UA-41851947-1" %>
+
 <script type="text/javascript">
 	$( document ).ready(function() {
 	  // scrollspy("#nav-primary", 30);
@@ -34,7 +37,7 @@
 		listfilter();
 	});
 </script>
-	
+
 <%
     def get_nav_svg(name)
       path = "images/ic_#{name}.svg"

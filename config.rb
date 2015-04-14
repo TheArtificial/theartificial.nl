@@ -124,11 +124,16 @@ set :markdown, :fenced_code_blocks => true,
                :smartypants => true
 
 # Build-specific configuration
+configure :development do
+  require "better_errors"
+  use BetterErrors::Middleware
+  BetterErrors.application_root = __dir__
+end
 configure :build do
   activate :minify_css
   activate :minify_javascript, ignore: 'jquery.artificial.logo.js'
   activate :gzip
-  default_caching_policy public: true, must_revalidate: true
+  # default_caching_policy public: true, must_revalidate: true
 
   # For example, change the Compass output style for deployment
   # activate :minify_css
