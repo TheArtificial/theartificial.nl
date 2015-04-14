@@ -40,7 +40,7 @@
 				  end
 				%>
 		<div class="col-4 packed">
-			<div class="card blog-preview">
+			<div class="card blog-preview <%= article.data.category %>">
 				<div class="double-padded">
 					<h5><%= link_to article.data.category, article %></h5>
 					<h3><%= link_to article.title, article %></h3>

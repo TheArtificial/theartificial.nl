@@ -1,49 +1,55 @@
 .blog:not(.blog_index) {
+	#content {
+		.padded {
+			margin-bottom: 60px;
+		}
 
-	.padded {
-		margin: 0 0 60px 0;
-	}
+		.blog-title {
+			margin-top: 80px;
+		}
 
-	.blog-title {
-		margin: 80px 0 0 20px;
-	}
+		img {
+			padding-top: 40px;
+		}
 
-	img {
-		padding-top: 40px;
-	}
+		img.float-left {
+			width:48%;
+			padding:20px 20px 10px 0;
+			float: left;
+		}
 
-	img.float-left {
-		width:48%;
-		padding:20px 20px 10px 0;
-		float: left;
-	}
+		h1 {
+			font-size: 1.1em;
+			line-height: 1.5em;
+			text-align: center;
+			margin-top: 20px;
+			padding:0;
 
-	h1 {
-		font-size: 1.1em;
-		line-height: 1.5em;
-		text-align: center;
-		margin-top: 20px;
-		padding:0;
+		}
 
-	}
+		h2 {
+			font-size: 2.5em;
+			line-height: 1.3em;
+			font-family: Georgia, Times, serif;
+			font-style: italic;
+		}
 
-	h2 {
-		font-size: 2.5em;
-		line-height: 1.3em;
-		font-family: Georgia, Times, serif;
-		font-style: italic;
-	}
+		h3 {
+			font-size: .9em;
+			line-height: .8em;
+			font-family: "Open Sans", Helvetica, sans-serif;
+			font-style: normal;
+			font-weight: 700;
+		}
 
-	h3 {
-		font-size: .9em;
-		line-height: .8em;
-		font-family: "Open Sans", Helvetica, sans-serif;
-		font-style: normal;
-		font-weight: 700;
-	}
-
-	p, li, ul, a {
-		font-size: .9em;
-		line-height: 1.8em;
+		p, li, ul, a {
+			font-size: .9em;
+			line-height: 1.8em;
+		}
+		
+		li, ul {
+			list-style-type: circle;
+		}
+		
 	}
 }

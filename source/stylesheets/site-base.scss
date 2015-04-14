@@ -94,7 +94,7 @@ body {
 // blog preview tile style
 .blog-preview {
 	color: $white;
-	background-color: $tulip;
+	background-color: $cool-grey-60;
 	
 	.double-padded {
 		padding: 28px;
@@ -112,14 +112,21 @@ body {
 	}	
 }
 
-.blog-preview.links {
+.blog-preview.inspiration {
 	background-color: $turquoise;
 }
 
-.blog-preview.meta {
-	background-color: $dandelion;
+.blog-preview.process {
+	background-color: $tulip;
 }
 
+.blog-preview.news {
+	background-color: $pumpkin;
+}
+
+.blog-preview.thoughts {
+	background-color: $grass;
+}
 
 // footer
 // mobile, tablet, and desktop
