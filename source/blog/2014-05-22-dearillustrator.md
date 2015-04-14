@@ -1,6 +1,6 @@
 ---
 title: "Dear Adobe Illustrator"
-category: meta
+category: thoughts
 tags: icons, design, adobe, illustrator, ranting
 author: jo
 ---
