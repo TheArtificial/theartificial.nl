@@ -27,7 +27,7 @@
 		</div>
 	</div>
 	
-	<div class="container packery">
+	<div class="container packery padded-bottom">
 		<% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
 			<% if articles.length > 0 %>
 	    	<% articles.take(3).each do |article, i| %>
@@ -40,11 +40,13 @@
 				  end
 				%>
 		<div class="col-4 packed">
-			<div class="card center">
-				<div class="padded">
-					<img class="imgpreview" src="<%= preview_url %>">
-					<h2><%= link_to article.title, article %></h2>
-					<%= article.summary(180, '…') %>
+			<div class="card blog-preview">
+				<div class="double-padded">
+					<h5><%= link_to article.data.category, article %></h5>
+					<h3><%= link_to article.title, article %></h3>
+					<!-- <%= article.summary(180, '…') %> -->
+					<p><%= sitemap.find_resource_by_path("/people/#{article.data.author}.html").data.title %></p>
+					<p><%= article.date.strftime('%B %e, 0%Y') %></p>
 				</div>
       </div>
     </div>

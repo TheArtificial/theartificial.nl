@@ -28,11 +28,11 @@ layout: multiple_layout
 			<div class="card blog-preview <%= article.data.category %>">
 				<div class="double-padded">
     <% end %>
-					<h5><%= link_to article.data.category, article %>
+					<h5><%= link_to article.data.category, article %></h5>
    				<h3><%= link_to article.title, article %></h3>
     			<!-- <%= article.summary(180, '…') %> -->
    			 	<p><%= sitemap.find_resource_by_path("/people/#{article.data.author}.html").data.title %></p>
-						<p><%= article.date.strftime('%B %e, 0%Y') %></h5>
+					<p><%= article.date.strftime('%B %e, 0%Y') %></p>
 				</div>
 			</div>
 		</div>
