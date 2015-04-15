@@ -5,7 +5,7 @@ tags: ui
 author: carol
 ---
 
-During the past year, I’ve learned an incredible amount from working at The Artificial, a digital product design agency based in Amsterdam. New processes, terms, and techniques have transformed me into a more user-focused designer, but the pivotal moment in my career was when I learned to embrace existing interactions.
+During the past year, I’ve learned an incredible amount from working at The Artificial. New processes, terms, and techniques have transformed me into a more user-focused designer, but the pivotal moment in my career was when I learned to embrace existing interactions.
 
 My background is in print design, and I had graduated from a program that valued idiosyncrasy and the idea of embracing the unfamiliar. I loved this so much I designed my thesis project with intentional ambiguity to force the audience to make their own connections. Needless to say, my brain was wired to design against the grain.
 
