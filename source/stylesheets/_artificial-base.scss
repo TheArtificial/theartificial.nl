@@ -1,5 +1,5 @@
 // Artificial base css
-// March 2015
+// May 2015
 // This document should not be edited
 
 
@@ -160,23 +160,9 @@
 	    justify-content: flex-start;
 			height: 0;
 			
-			.iconlist {
-				width: 60px;
-				
+			.iconlist {				
 				ul {
 					padding-left: 0;
-				}
-				
-				li {
-					margin: 40px 0 0 0;
-					
-					a {
-						opacity: 0.4;
-					}
-					
-					a:hover {
-						opacity: 1.0;
-					}
 				}
 			}			
 		}
