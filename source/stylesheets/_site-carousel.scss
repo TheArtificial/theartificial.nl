@@ -40,10 +40,7 @@ $height: 450px;
 	  }
 
 	  .pagination {
-	//    height: 16px;
-	//    position: absolute;
-	//    bottom: 8px;
-	//    margin: auto;
+
 	    svg {
 	      fill: $white;
 	    }
@@ -57,7 +54,7 @@ $height: 450px;
 	  }
 
 	  .overlay-background {
-	    height: 240px;
+	    height: 320px;
 	    width: 100%;
 
 	    position: absolute;
@@ -70,9 +67,8 @@ $height: 450px;
 				position: relative;
 
 				.overlay {
-					height: 240px;
-					width: 80%;
-					margin: 0 10% 0 10%;
+					height: 320px;
+					margin: 0 20px 0 10px;
 
 					position: absolute;
 					z-index: 15;
@@ -171,16 +167,19 @@ $height: 450px;
 
 @media only screen and (min-device-width: 768px) {
 	#carousel {
+		
 	  .overlay-background {
 			z-index: 5;
+			height: 240px;
 
 			.container {
 				position: relative;
-				height: 240px;
 
 				.overlay {
 					height: 240px;
 					float: left;
+					width: 80%;
+					margin: 0 10% 0 10%;
 
 					overflow: hidden;
 					
