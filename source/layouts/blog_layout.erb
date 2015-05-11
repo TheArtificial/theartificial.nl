@@ -2,11 +2,13 @@
 
 <%
   current_path = current_page.path[/.*(?=\..+$)/]
-  if masthead = find_image(current_path + '/-masthead')
-    masthead_url = masthead.url
-  else
-    masthead_url = "/blog/2014/03/17/test/-masthead.png"
-  end
+  # if masthead = find_image(current_path + '/-masthead')
+  #   masthead_url = masthead.url
+  # else
+  #   masthead_url = "/blog/2014/03/17/test/-masthead.png"
+  # end
+
+  author = sitemap.find_resource_by_path("/people/#{current_page.data.author}.html")
 %>
 
 <section id="content">
@@ -17,7 +19,7 @@
 				<div class="padded">
 					<div class="blog-title">
 						<h2 class="center"><%= current_page.title %></h2>
-						<h3 class="center"><time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%B %e, %Y') %></time> | <%= sitemap.find_resource_by_path("/people/#{current_page.data.author}.html").data.title %> </h3>
+						<h3 class="center"><time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%B %e, %Y') %></time> | <%= link_to author.data.title, author %></h3>
 					</div>
     		</div>
 			</div>
