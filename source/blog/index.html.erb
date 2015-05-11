@@ -13,30 +13,8 @@ layout: multiple_layout
 	</div>
 
   <div class="container packery padded-bottom">
-		<% page_articles.each_with_index do |article, i| %>
-		<%
-		  article_path = article.path[/.*(?=\..+$)/]
-		  if preview = find_image(article_path + '/-preview')
-		    preview_url = preview.url
-		  else
-		    preview_url = "/blog/2014/03/17/test/-preview.png"
-		  end
-		%>
-
-    <% link_to article do %>
-		<div class="col-4 packed">
-			<div class="card blog-preview <%= article.data.category %>">
-				<div class="double-padded">
-    <% end %>
-					<h5><%= link_to article.data.category, article %></h5>
-   				<h3><%= link_to article.title, article %></h3>
-    			<!-- <%= article.summary(180, '…') %> -->
-   			 	<p><%= sitemap.find_resource_by_path("/people/#{article.data.author}.html").data.title %></p>
-					<p><%= article.date.strftime('%B %e, %Y') %></p>
-				</div>
-			</div>
-		</div>
-
+		<% page_articles.each do |article| %>
+			<%= partial(:article_card, locals: { article: article }) %>
 		<% end %>
 	</div>
 
