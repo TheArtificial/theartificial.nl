@@ -2,7 +2,7 @@
 layout: multiple_layout
 ---
 
-<section id="content"> 
+<section id="content">
 	<div class="flexcontainer">
 			<div class="col-8 title">
 			<div class="padded center">
@@ -11,7 +11,7 @@ layout: multiple_layout
 			</div>
 		</div>
 	</div>
-  
+
   <div class="container packery padded-bottom">
 		<% page_articles.each_with_index do |article, i| %>
 		<%
@@ -22,7 +22,7 @@ layout: multiple_layout
 		    preview_url = "/blog/2014/03/17/test/-preview.png"
 		  end
 		%>
-				
+
     <% link_to article do %>
 		<div class="col-4 packed">
 			<div class="card blog-preview <%= article.data.category %>">
@@ -32,11 +32,11 @@ layout: multiple_layout
    				<h3><%= link_to article.title, article %></h3>
     			<!-- <%= article.summary(180, '…') %> -->
    			 	<p><%= sitemap.find_resource_by_path("/people/#{article.data.author}.html").data.title %></p>
-					<p><%= article.date.strftime('%B %e, 0%Y') %></p>
+					<p><%= article.date.strftime('%B %e, %Y') %></p>
 				</div>
 			</div>
 		</div>
-					
+
 		<% end %>
 	</div>
 

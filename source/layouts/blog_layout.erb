@@ -12,25 +12,25 @@
 <section id="content">
 	<div class="bleed white">
 		<div class="flexcontainer">
-			
+
 			<div class="col-8 left-2 right-2">
 				<div class="padded">
 					<div class="blog-title">
 						<h2 class="center"><%= current_page.title %></h2>
-						<h3 class="center"><time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%B %e, 0%Y') %></time> | <%= sitemap.find_resource_by_path("/people/#{current_page.data.author}.html").data.title %> </h3>
+						<h3 class="center"><time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%B %e, %Y') %></time> | <%= sitemap.find_resource_by_path("/people/#{current_page.data.author}.html").data.title %> </h3>
 					</div>
     		</div>
 			</div>
-		
+
 			<div class="col-10 left-1 right-1">
 				<div class="padded">
-					<article>      
+					<article>
 		      	<%= yield %>
 		    	</article>
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
-</section>    
+</section>
 <% end %>
