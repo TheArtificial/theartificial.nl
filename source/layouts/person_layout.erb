@@ -1,5 +1,5 @@
 <% wrap_layout :multiple_layout do %>
-    
+
 
 <section class="content">
 	<div id="person" class="bleed turquoise">
@@ -9,7 +9,7 @@
 					<h1><%= get_logo_svg(current_page.path.split('/').last.gsub(/.html$/, '')) %></h1>
 				</div>
 			</div>
-			
+
 			<div class="col-7 left-1">
 				<div class="padded">
 					<h1><%= current_page.data.title %></h1>
@@ -26,35 +26,17 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="container packery padded-bottom">
 		<% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
 			<% if articles.length > 0 %>
 	    	<% articles.take(3).each do |article, i| %>
-				<%
-				  article_path = article.path[/.*(?=\..+$)/]
-				  if preview = find_image(article_path + '/-preview')
-				    preview_url = preview.url
-				  else
-				    preview_url = "/blog/2014/03/17/test/-preview.png"
-				  end
-				%>
-		<div class="col-4 packed">
-			<div class="card blog-preview <%= article.data.category %>">
-				<div class="double-padded">
-					<h5><%= link_to article.data.category, article %></h5>
-					<h3><%= link_to article.title, article %></h3>
-					<!-- <%= article.summary(180, '…') %> -->
-					<p><%= sitemap.find_resource_by_path("/people/#{article.data.author}.html").data.title %></p>
-					<p><%= article.date.strftime('%B %e, 0%Y') %></p>
-				</div>
-      </div>
-    </div>
+          <%= partial(:article_card, locals: { article: article }) %>
     		<% end %>
     	<% else %>
-    		
+    		<!-- no blog posts -->
       <% end %>
 </div>
 
-</section>    
+</section>
 <% end %>
