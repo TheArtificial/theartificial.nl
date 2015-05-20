@@ -1,5 +1,9 @@
 <% wrap_layout :multiple_layout do %>
 
+<% content_for :feedlink_element do %>
+<link rel="alternate" type="application/atom+xml" title="The Artificial blog" href="/blog/feed.xml" />
+<% end %>
+
 <%
   current_path = current_page.path[/.*(?=\..+$)/]
   # if masthead = find_image(current_path + '/-masthead')
