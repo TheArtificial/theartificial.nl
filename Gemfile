@@ -10,3 +10,4 @@ gem "better_errors"
 gem 'middleman-blog'
 gem 'kramdown'
 gem 'nokogiri'
+gem 'builder'
