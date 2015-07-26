@@ -1,0 +1,21 @@
+<%
+  project_name = current_page.path.match(/projects\/([^\/]*)\/.*/)[1]
+  project_path = "projects/#{project_name}/"
+  stylesheet_resources = sitemap.resources.select{ |r| r.path.start_with?("#{project_path}stylesheets/") }
+  javascript_resources = sitemap.resources.select{ |r| r.path.start_with?("#{project_path}javascripts/") }
+  stylesheet_urls = stylesheet_resources.map{ |r| r.url }
+  javascript_urls = javascript_resources.map{ |r| r.url }
+%>
+<% wrap_layout :multiple_layout do %>
+  <% content_for :stylesheet_tags do %>
+    <%= stylesheet_link_tag stylesheet_urls %>
+  <% end %>
+  <% content_for :javascript_tags do %>
+    <%= javascript_include_tag javascript_urls %>
+  <% end %>
+  <section id="content">
+    <div class="bleed white">
+      <%= yield %>
+    </div>
+  </section>
+<% end %>

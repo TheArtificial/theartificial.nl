@@ -101,6 +101,7 @@ set :images_dir, 'images'
 
 Time.zone = "Amsterdam"
 
+# Blog
 activate :blog do |blog|
   blog.prefix = ""
   blog.sources = "/blog/{year}-{month}-{day}-{title}.html"
@@ -117,6 +118,31 @@ activate :blog do |blog|
 #  }
 end
 page "/blog/feed.xml", layout: false
+
+# Projects
+page "/projects/*", layout: "project_layout"
+# ready do
+#   sitemap.resources.group_by {|p| p.data["category"] }.each do |category, pages|
+#     proxy "/categories/#{category}.html", "category.html",
+#       :locals => { :category => category, :pages => pages }
+#   end
+# end
+# project_stylesheets_paths = sitemap.resources.map{ |r| r.path[/projects\/[^\/]*\/stylesheets\//] }.compact.uniq
+# project_stylesheets_paths.each do |p|
+#   page "/#{p}*", layout: false
+#   sprockets.append_path "/#{p}"
+#   puts p
+# end
+# page "/projects/twisted/stylesheets/*", layout: false
+# sprockets.append_path "/projects/twisted/stylesheets/"
+page "/projects/*/stylesheets/*", layout: false
+
+
+%w(path1 longer/path2 longer/path3).each do |path|
+  next if sprockets.appended_paths.include? path
+
+  sprockets.append_path path
+end
 
 set :markdown_engine, :kramdown
 set :markdown, :fenced_code_blocks => true,
