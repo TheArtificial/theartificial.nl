@@ -156,7 +156,7 @@ class Projects < Middleman::Extension
   option :directory, 'projects', "Which directory to promote"
 
   def initialize(app, options_hash={}, &block)
-    puts "hi."
+    puts "Initializing projects..."
     super
   end
 
@@ -164,24 +164,21 @@ class Projects < Middleman::Extension
     # projects = resources.select{ |r| r.path =~ /^#{options.directory}\// }
     projects = resources.select{ |r| r.path =~ /^projects\// }
     projects.each do |r|
-      puts r.path
+      project_name = r.path.match(/projects\/([^\/]*)\/.*/)[1]
+      puts "Moving #{project_name}: #{r.path}"
       r.destination_path.gsub!(/^projects\//, "")
+      if r.ext == '.html'
+        r.add_metadata project: project_name
+        r.add_metadata options: { layout: 'project_layout' }
+      end
     end
+    return resources
   end
-  #
-  # def render(opts={}, locs={}, &block)
-  #   unless opts.has_key?(:layout)
-  #     opts[:layout] = metadata[:options][:layout]
-  #     opts[:layout] = blog_options.layout if opts[:layout].nil?
-  #     # Convert to a string unless it's a boolean
-  #     opts[:layout] = opts[:layout].to_s if opts[:layout].is_a? Symbol
-  #   end
-  #   super(opts, locs, &block)
-  # end
+
 end
 ::Middleman::Extensions.register(:projects, Projects)
 
 # Projects
-page "/projects/*", layout: "project_layout"
-page "/projects/*/stylesheets/*", layout: false
+# page "/projects/*", layout: "project_layout"
+# page "/projects/*/stylesheets/*", layout: false
 activate :projects

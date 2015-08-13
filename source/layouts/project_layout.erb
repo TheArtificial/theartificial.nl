@@ -1,5 +1,5 @@
 <%
-  project_name = current_page.path.match(/projects\/([^\/]*)\/.*/)[1]
+  project_name = current_page.metadata[:project]
   project_path = "projects/#{project_name}/"
   stylesheet_resources = sitemap.resources.select{ |r| r.path.start_with?("#{project_path}stylesheets/") }
   javascript_resources = sitemap.resources.select{ |r| r.path.start_with?("#{project_path}javascripts/") }
