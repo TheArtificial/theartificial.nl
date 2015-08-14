@@ -1,8 +1,7 @@
 <%
   project_name = current_page.metadata[:project]
-  project_path = "projects/#{project_name}/"
-  stylesheet_resources = sitemap.resources.select{ |r| r.path.start_with?("#{project_path}stylesheets/") }
-  javascript_resources = sitemap.resources.select{ |r| r.path.start_with?("#{project_path}javascripts/") }
+  stylesheet_resources = sitemap.resources.select{ |r| r.path.start_with?("#{project_name}/stylesheets/") }
+  javascript_resources = sitemap.resources.select{ |r| r.path.start_with?("#{project_name}/javascripts/") }
   stylesheet_urls = stylesheet_resources.map{ |r| r.url }
   javascript_urls = javascript_resources.map{ |r| r.url }
 %>
