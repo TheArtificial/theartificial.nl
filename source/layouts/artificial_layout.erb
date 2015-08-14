@@ -10,7 +10,7 @@
 
 		<!-- feeds -->
 		<%= yield_content :feedlink_element %>
-			
+
 		<!-- basic SEO -->
 		<meta name="keywords" content="<%= yield_content :keywords %>" />
 		<meta name="description" content="<%= yield_content :description %>" />
@@ -34,6 +34,7 @@
 
 		<script src="http://code.jquery.com/jquery.js"></script>
     <%= javascript_include_tag 'jquery.artificial', 'imagesloaded.pkgd.min', 'packery.pkgd.min', 'jquery.scrollsnap.hacked', 'jquery.easing.min', 'imgLiquid-min', 'artificial' %>
+		<%= yield_content :javascript_tags %>
 
 		<link href='https://www.google.com/fonts/#UsePlace:use/Collection:Droid+Serif:700italic|Open+Sans:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
 	</head>

@@ -101,6 +101,7 @@ set :images_dir, 'images'
 
 Time.zone = "Amsterdam"
 
+# Blog
 activate :blog do |blog|
   blog.prefix = ""
   blog.sources = "/blog/{year}-{month}-{day}-{title}.html"
@@ -150,3 +151,34 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+class Projects < Middleman::Extension
+  option :directory, 'projects', "Which directory to promote"
+
+  def initialize(app, options_hash={}, &block)
+    puts "Initializing projects..."
+    super
+  end
+
+  def manipulate_resource_list(resources)
+    # projects = resources.select{ |r| r.path =~ /^#{options.directory}\// }
+    projects = resources.select{ |r| r.path =~ /^projects\// }
+    projects.each do |r|
+      project_name = r.path.match(/projects\/([^\/]*)\/.*/)[1]
+      puts "Moving #{project_name}: #{r.path}"
+      r.destination_path.gsub!(/^projects\//, "")
+      if r.ext == '.html'
+        r.add_metadata project: project_name
+        r.add_metadata options: { layout: 'project_layout' }
+      end
+    end
+    return resources
+  end
+
+end
+::Middleman::Extensions.register(:projects, Projects)
+
+# Projects
+# page "/projects/*", layout: "project_layout"
+# page "/projects/*/stylesheets/*", layout: false
+activate :projects
