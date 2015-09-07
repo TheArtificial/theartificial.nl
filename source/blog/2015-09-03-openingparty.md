@@ -19,6 +19,6 @@ The project allowed us to play with media that we don’t typically use for our 
 To tie the whole theme together, we used a strict color and type scheme throughout all our materials. Playful line drawings were used as icons, backgrounds, and images in collateral materials.
 
 [![Photo booth](2015-09-03-openingparty/party-04.png)](2015-09-03-openingparty/party-04.png)
-We have literally [thousands of photos](https://www.facebook.com/veryartificial/videos/895219510552978/) from our photo booth! If you dropped by our photo booth, [shoot us an email](mailto:carol@theartificial.nl) and we'll send you your most fabulous shots! 
+We have [hundreds of photos](https://www.facebook.com/veryartificial/videos/895219510552978/) from our photo booth! If you dropped by our photo booth, [let us know](https://twitter.com/veryartificial) and we'll send you your most fabulous shots! 
 
 Thanks to all who attended and helped us make this both a Classy and Fabulous night!
