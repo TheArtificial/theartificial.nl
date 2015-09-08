@@ -1,5 +1,5 @@
 ---
-title: "St. Nicholas Day <br>Traditions in Europe"
+title: "St. Nicholas Day Traditions in Europe"
 category: process
 tags: holiday, winter, sinterklaas, nicholas, visualization 
 author: carol
