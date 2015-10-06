@@ -5,24 +5,24 @@
 }
 
 body {
-	background-color: $cool-grey-80;
+	background-color: $cool-grey-90;
 }
 
 // top header
 // mobile
 @media only screen {
 	#header {
-		background-color: $cool-grey-80;
+		background-color: $cool-grey-90;
 
 		.topbar {
-			border-top-color: $cool-grey-10;
+			border-top-color: $white;
 		}
 
 		.flexcontainer {
 			border-bottom-color: $cool-grey-70;
 		}
 		#logo {
-			color: $cool-grey-10;
+			color: $white;
 		}
 
 		#nav-primary {
@@ -30,7 +30,7 @@ body {
 				li {
 					a {
 						font-weight: bold;
-						color: $cool-grey-10;
+						color: $white;
 					}
 					a:hover {
 						color: $pale-turquoise;
@@ -61,7 +61,7 @@ body {
 
 // content
 #content {
-	background-color: $cool-grey-80;
+	background-color: $cool-grey-90;
 }
 
 
@@ -100,7 +100,7 @@ body {
 		padding: 28px;
 
 		* {
-			color: $cool-grey-10;
+			color: $white;
 		}
 
 		h3 {
@@ -136,7 +136,7 @@ body {
 @media only screen {
 
 	#footer {
-		background-color: $cool-grey-80;
+		background-color: $cool-grey-90;
 
 		.flexcontainer, #about, #promo
 		{

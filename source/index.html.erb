@@ -102,6 +102,32 @@ layout: multiple_layout
 	<!-- cards -->
 	<div class="container packery padded-bottom">
 
+    <div class="col-4 packed">
+      <div class="card center">
+        <a href="work/travelbird-site.html"><img src="work/images/travelbird_overviewsm.jpg"></a>
+        <div class="padded">
+          <a href="work/travelbird-site.html"><h4>TravelBird Website</h4></a>
+          <p>We worked with TravelBird to envision a future website that could showcase new types of content without losing focus on the travel package deals.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 packed">
+      <div class="card center">
+          <a href="http://www.toicon.com/series/avocado"><img src="laboratory/images/toicon_avocado.png"></a>
+      </div>
+    </div>
+
+    <div class="col-4 packed">
+      <div class="card center">
+        <a href="work/avent-babymonitor.html"><img src="work/images/avent_compass_overviewsm.jpg"></a>
+        <div class="padded">
+          <a href="work/avent-babymonitor.html"><h4>uGrow Smart Baby Monitor from Philips Avent</h4></a>
+          <p>We worked with Philips Avent to design an app experience for the uGrow Smart Baby Monitor.</p>
+        </div>
+      </div>
+    </div>
+
 		<div class="col-4 packed">
 			<div class="card center">
 				<a href="work/sonicare-sims.html"><img src="work/images/sonicare_sims_max.jpg"></a>
@@ -112,21 +138,8 @@ layout: multiple_layout
 			</div>
 		</div>
 
-		<div class="col-4 packed">
-			<div class="card center">
-					<a href="http://www.toicon.com/series/fandom"><img src="laboratory/images/toicon_fandom.png"></a>
-			</div>
-		</div>
-
-		<div class="col-4 packed">
-			<div class="card center">
-				<a href="work/pilogs.html"><img src="work/images/pilogs_interface.jpg"></a>
-				<div class="padded">
-					<a href="work/pilogs.html"><h4>PI.logs</h4></a>
-					<p>When the product you desire doesn't exist, you have to build it yourself. So we're sharpening our web skills by developing our own service.</p>
-				</div>
-			</div>
-		</div>
+    <!-- first post from blog -->
+    <%= partial(:article_card, locals: { article: page_articles[0] }) %>
 
 		<div class="col-4 packed">
 			<div class="card center">
@@ -148,6 +161,12 @@ layout: multiple_layout
 			</div>
 		</div>
 
+    <div class="col-4 packed">
+      <div class="card center">
+          <a href="http://www.toicon.com/series/afiado"><img src="laboratory/images/toicon_afiado.png"></a>
+      </div>
+    </div>
+
 		<div class="col-4 packed">
 			<div class="card center">
 				<a href="work/monolith.html"><img src="work/images/monolith_workshop.jpg"></a>
@@ -158,9 +177,6 @@ layout: multiple_layout
 			</div>
 		</div>
 
-    <!-- first post from blog -->
-    <%= partial(:article_card, locals: { article: page_articles[0] }) %>
-
 		<div class="col-4 packed">
 			<div class="card center">
         <a href="https://dribbble.com/VeryArtificial"><img src="images/img_dribbble.png"></a>
@@ -170,34 +186,44 @@ layout: multiple_layout
 			</div>
 		</div>
 
-		<div class="col-4 packed">
-			<div class="card center">
-					<a href="http://www.toicon.com/series/flat-shadows"><img src="laboratory/images/toicon_flatshadows.png"></a>
-			</div>
-		</div>
-
-		<div class="col-4 packed">
-			<div class="card center">
-				<a href="work/knowledgesharing.html"><img src="work/images/knowledgesharing_layers.jpg"></a>
-				<div class="padded">
-					<a href="work/knowledgesharing.html"><h4>Knowledge Sharing</h4></a>
-					<p>Combining tried-and-true approaches with new ideas can lead to exciting results. We've worked with a handful of startups to form these unique ideas into designs that users can use without having to learn an entirely new set of interactions.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-4 packed">
-			<div class="card center">
-				<a href="laboratory/futureofdeath.html"><img src="laboratory/images/death_faceblimp.jpg"></a>
-				<div class="padded">
-					<a href="laboratory/futureofdeath.html"><h4>The Future of Death</h4></a>
-					<p>Prompted by designboom's Design for Death competition, we spent a week exploring ideas for how we might treat death in the future.</p>
-				</div>
-			</div>
-		</div>
-
     <!-- second post from blog -->
     <%= partial(:article_card, locals: { article: page_articles[1] }) %>
+
+    <div class="col-4 packed">
+      <div class="card center">
+          <a href="http://www.toicon.com/series/fandom"><img src="laboratory/images/toicon_fandom.png"></a>
+      </div>
+    </div>
+
+    <div class="col-4 packed">
+			<div class="card center">
+				<a href="work/pilogs.html"><img src="work/images/pilogs_interface.jpg"></a>
+				<div class="padded">
+					<a href="work/pilogs.html"><h4>PI.logs</h4></a>
+					<p>When the product you desire doesn't exist, you have to build it yourself. So we're sharpening our web skills by developing our own service.</p>
+				</div>
+			</div>
+		</div>
+
+    <div class="col-4 packed">
+      <div class="card center">
+        <a href="work/toicon.html"><img src="work/images/toicon_sharpcorners.jpg"></a>
+        <div class="padded">
+          <a href="work/toicon.html"><h4>to [icon]</h4></a>
+          <p>Kata (方) is a honing exercise. Through repetition, the practice refines the basic skills necessary for mastery of a craft. We sought to better ourselves by creating sets of icons, not simply drawing things, but also exploring metaphors for visual communication.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 packed">
+      <div class="card center">
+        <a href="work/knowledgesharing.html"><img src="work/images/knowledgesharing_layers.jpg"></a>
+        <div class="padded">
+          <a href="work/knowledgesharing.html"><h4>Knowledge Sharing</h4></a>
+          <p>Combining tried-and-true approaches with new ideas can lead to exciting results. We've worked with a handful of startups to form these unique ideas into designs that users can use without having to learn an entirely new set of interactions.</p>
+        </div>
+      </div>
+    </div>
 
 	</div>
 
