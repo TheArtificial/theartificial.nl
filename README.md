@@ -1,5 +1,11 @@
 # The Artificial site
 
+     _____ _               _         _   _  __ _      _       _
+    |_   _| |__   ___     / \   _ __| |_(_)/ _(_) ___(_) __ _| |
+      | | | '_ \ / _ \   / _ \ | '__| __| | |_| |/ __| |/ _` | |
+      | | | | | |  __/  / ___ \| |  | |_| |  _| | (__| | (_| | |
+      |_| |_| |_|\___| /_/   \_\_|   \__|_|_| |_|\___|_|\__,_|_|
+
 As seen at http://theartificial.nl/
 
 ## Setup
@@ -65,15 +71,19 @@ You may stop Middleman by closing that Terminal window or pressing control-C.
 ## Making Changes
 
 ### Pull from git
+
 Don't forget to regularly visit the GitHub app and pull (synchronize) to make sure you're working with the latest files!
 
 ### Files
+
 The structure of the site should be pretty clear. There are a few filetypes to know:
+
 - `.scss`: a Sass sheet that will be compiled into .css
 - `.erb`: a file (usually HTML) that includes some <% Ruby code %>
 - `.md`: a Markdown document that will be transformed into HTML
 
 ### Frontmatter
+
 Many files will start with a pair of `---` lines with some text between them. This is an increasingly common approach to adding metadata to a file. This text is formatted in YAML, but it should be pretty obvious how things work.
 
 ### Blog posts
@@ -97,11 +107,13 @@ Also creat a folder named `YYYY-MM-DD-slug` for images,and include two standard 
 You may, of course, include other images there, preferably 800px wide. They can be referenced within a post with the '!' Markdown syntax:
 
     ![alt text](YYYY-MM-DD/filename.jpg)
-    
+
 _(PNG files will also work, but read below.)_
 
 ### Optimizing images
+
 PNGs are nice because they are "lossless" and don't get blurring compression artifacts like JPEG. But this also makes them less efficient. With large visuals it's very easy to end up wasting many MB of space and network traffic. Please use JPEG (not PNG) for photos and optimize all images with [ImageOptim](https://imageoptim.com).
 
 ### Commit
+
 Use the GitHub app to commit your changes with a meaningful comment and be sure to push (synchronize). You can always double-check that your commit was pushed by visiting the [history page](https://github.com/gerwitz/theartificial.nl/commits/master).
