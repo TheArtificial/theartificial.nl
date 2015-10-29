@@ -7,7 +7,6 @@
     font-family: "Droid Sans", Georgia, Times, serif;
     font-style: italic;
   }
-
 }
 
 h2 {
@@ -38,7 +37,7 @@ h2 {
   }
 }
 
-.dark-grape {
+.darkgrape {
   background-color: $dark-grape;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -50,6 +49,27 @@ h2 {
 
   h1 {
     color: $white;
+  }
+}
+
+.warm-grey-10 {
+  background-color: $warm-grey-10;
+}
+
+.tulip {
+  background-color: $tulip;
+  h1 {
+    font-size: 2.4em;
+    text-align: center;
+    padding: 60px 0 60px 0;
+    color: $white;
+  }
+}
+
+.dark-tulip {
+  background-color: $dark-tulip;
+  h2, p {
+    color: white;
   }
 }
 
@@ -138,4 +158,31 @@ h2 {
 	.contentbox {
 		height: 320px;
 	}
+}
+
+.extra-top {
+  padding-top: 40px;
+}
+
+.extra-bottom {
+  padding-bottom: 40px;
+}
+
+.app-logo {
+  width: 40%;
+  margin-top: 40%;
+}
+
+.description {
+  margin-top: 80px;
+}
+
+.times {
+  a {
+    font-weight: 600;
+    color: $tulip;
+  }
+  a:hover {
+    color: $dark-tulip;
+  }
 }
