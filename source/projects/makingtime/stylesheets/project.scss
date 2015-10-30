@@ -42,6 +42,12 @@ h2 {
   }
 }
 
+.turquoise {
+  h1, h2, h3, h4, h5, p {
+    color: $white;
+  }
+}
+
 .dark-grape {
   background-color: $dark-grape;
   padding-top: 80px;
@@ -82,6 +88,13 @@ h2 {
   background-color: $warm-grey-10;
 }
 
+.cool-grey-70 {
+  background-color: $cool-grey-70;
+  h1, h2, h3, h4, h5, p {
+    color: $white;
+  }
+}
+
 .cool-grey-90 {
   background-color: $cool-grey-90;
   h1, h2, h3, h4, h5, p {
@@ -89,20 +102,25 @@ h2 {
   }
 }
 
+a.turquoise-link {
+  color: $turquoise;
+}
+a.turquoise-link:hover {
+  color: $pale-turquoise;
+}
+
 a.tulip-link {
   font-weight: 600;
   color: $tulip;
 }
-
 a.tulip-link:hover {
-    color: $dark-tulip;
+  color: $dark-tulip;
 }
 
 
 a.pale-grass-link {
   color: $pale-grass
 }
-
 a.pale-grass-link:hover {
   color: $pale-lime;
 }
@@ -222,5 +240,11 @@ a.pale-grass-link:hover {
   }
   h2 {
     font-weight: 400;
+  }
+}
+
+.twimmer {
+  h1 {
+    font-size: 2.0em;
   }
 }
