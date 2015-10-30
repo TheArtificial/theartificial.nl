@@ -3,6 +3,15 @@
 .makingtime {
   color: white;
 
+  .hero {
+    background-image: url("../images/makingtime_hero-home.png");
+
+    h1 {
+      padding-top: 220px;
+      padding-bottom: 120px;
+    }
+  }
+
   h1 {
     font-family: "Droid Sans", Georgia, Times, serif;
     font-style: italic;
@@ -13,16 +22,12 @@ h2 {
   font-size: 1.6em;
 }
 
-.hero {
-  background-image: url("../images/makingtime_hero-home.png");
-
-  h1 {
-    padding-top: 220px;
-    padding-bottom: 120px;
-  }
+.large {
+  font-size: 1.0em;
+  line-height: 1.3em;
 }
 
-.paleturquoise {
+.pale-turquoise {
   background-color: $pale-turquoise;
   padding-top: 40px;
   padding-bottom: 60px;
@@ -37,7 +42,7 @@ h2 {
   }
 }
 
-.darkgrape {
+.dark-grape {
   background-color: $dark-grape;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -50,10 +55,6 @@ h2 {
   h1 {
     color: $white;
   }
-}
-
-.warm-grey-10 {
-  background-color: $warm-grey-10;
 }
 
 .tulip {
@@ -71,6 +72,39 @@ h2 {
   h2, p {
     color: white;
   }
+}
+
+.pale-grass {
+  background-color: $pale-grass;
+}
+
+.warm-grey-10 {
+  background-color: $warm-grey-10;
+}
+
+.cool-grey-90 {
+  background-color: $cool-grey-90;
+  h1, h2, h3, h4, h5, p {
+    color: $white;
+  }
+}
+
+a.tulip-link {
+  font-weight: 600;
+  color: $tulip;
+}
+
+a.tulip-link:hover {
+    color: $dark-tulip;
+}
+
+
+a.pale-grass-link {
+  color: $pale-grass
+}
+
+a.pale-grass-link:hover {
+  color: $pale-lime;
 }
 
 .introduction {
@@ -168,6 +202,10 @@ h2 {
   padding-bottom: 40px;
 }
 
+.top-rule {
+  border-top: 1px solid $cool-grey-20;
+}
+
 .app-logo {
   width: 40%;
   margin-top: 40%;
@@ -177,12 +215,12 @@ h2 {
   margin-top: 80px;
 }
 
-.times {
-  a {
-    font-weight: 600;
-    color: $tulip;
+.intention {
+  h1 {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
   }
-  a:hover {
-    color: $dark-tulip;
+  h2 {
+    font-weight: 400;
   }
 }
