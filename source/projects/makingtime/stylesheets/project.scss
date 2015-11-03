@@ -84,8 +84,25 @@ h2 {
   background-color: $pale-grass;
 }
 
+.dandelion {
+  background-color: $dandelion;
+  h1, h2, h3, h4, h5, p {
+    color: $white;
+  }
+}
+
 .warm-grey-10 {
   background-color: $warm-grey-10;
+}
+
+.warm-grey-70 {
+  background-color: $warm-grey-70;
+  h1, h2, h3, h4, h5, p {
+    color: $white;
+  }
+}
+.warm-grey-80 {
+  background-color: $warm-grey-80;
 }
 
 .cool-grey-70 {
@@ -246,5 +263,20 @@ a.pale-grass-link:hover {
 .twimmer {
   h1 {
     font-size: 2.0em;
+  }
+}
+
+.artificialtimercc {
+  h1 {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 2.4em;
+  }
+  h2 {
+    font-family: "Droid Serif", Georgia, Times, serif;
+    font-style: italic;
+  }
+  h4 {
+    font-size: 1.6em;
   }
 }
