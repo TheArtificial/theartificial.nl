@@ -1,5 +1,5 @@
 ---
-title: "Prototyping – Determining which tool best caters to your needs"
+title: "Determining which prototyping tool best caters to your needs"
 category: process
 tags: prototype, tool, ux, comparison, review, program
 author: carol
@@ -7,7 +7,7 @@ author: carol
 
 It's important to know your goals with prototyping in order to determine which tool best caters to your needs. Prototypes can be used for rapidly iterating on information structures, demonstrating concepts and functionalities, or conveying the product's animations. Some tools may handle one requisite brilliantly, but lack the functionality to accomplish your targeted goal efficiently.
 
-We compared eight prototyping tools to help guide you to the appropriate tool for your specific challenge.
+We compared seven prototyping tools to help guide you to the appropriate tool for your specific challenge.
 
 ## Prototyping tools
 We chose these seven tools because they show a range of qualities and methods.   
