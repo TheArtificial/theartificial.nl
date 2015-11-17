@@ -21,41 +21,41 @@ We selected these seven tools because of their diverse range of qualities and me
 [**Xcode**](https://developer.apple.com/xcode/)||||   Development tool by Apple Developer / iOS
 
 
-There are four types of prototyping tools: Visual layer-based, Visual page-based, Patch-based, and Code-based. Some tools use more than one of these construction concepts, but it's important to make a distinction between these categories. 
+There are four types of prototyping tools: Visual layer-based, Visual page-based, Patch-based, and Code-based. Some tools use more than one of these construction concepts, but it's helpful to know generally what to expect in the interfaces. 
 
-Visual layer-based tools layer multiple assets and screens on one canvas. The user can drag elements around and interactions and animations are tied to each layer. Visual page-based tools are very similar, but have separate screens rather than one layered canvas. In patch-based tools, patches contain assets, interactions, and more. These are configured and then connected to each other with nodes. Lastly, there are code-based tools. These can range from code that emulates your final product, to code that can be turned into your final product.
+Visual layer-based tools layer multiple assets and screens on one canvas. The user can drag elements around and interactions and animations are tied to each layer. Visual page-based tools are very similar, but have separate screens rather than one densly layered canvas. In patch-based tools, webs of patches contain assets, interactions, and more. These are configured and then connected to each other with nodes. Lastly, there are code-based tools. These can range from code that emulates your final product, to code that can be turned into your final product.
 
 ## Quick and dirty
 
-When clarifying interaction modes, quick and dirty iterations are often necessary to solidify decisions. For this, you'll need an interface that has common interactions readily available. Your assets will likely be updated frequently through the early stages of your project, so how efficintly your tool handles assets can save a lot of time. 
+When clarifying interaction models, quick and dirty iterations are often necessary to solidify decisions. For this, you'll need an interface that has common interactions readily available. Your assets will likely be updated frequently through the early stages of your project, so how efficintly your tool handles assets can save a lot of time. 
 ![Workflow and Interface](2015-11-17-prototyping/test1.png)
 
 ##### Linking screens
-In visual page-based tools such as **InVision** and **Principle**, screens can be linked with hotspots that allow you to tell the tool what should come when an action is performed. **InVision** allows for time saving hotspot templates, so you won't need to reformat fequently used interactions. There is no limit on the number of screens you wish to include, though **InVision** has an upload limit of 10GB for an account. 
+In visual page-based tools such as **InVision**, screens can be linked with hotspots that allow you to tell the tool what should come when an action is performed. **InVision** allows for time saving hotspot templates, so you won't need to reformat frequently used interactions. There is no limit on the number of screens you wish to include, though it has an upload limit of 10GB for an account. **Principle** is another visual page-based tool. We found the visualization of arrows pointing to subsequent screens helpful for at-a-glance edits. 
 
-**Xcode** uses storyboards to help you visualize and manage your screens and their segues in a flow diagram. View controllers are your visual screen content areas, and can be managed through it's related code sheet.
+**Xcode** uses storyboards to help you visualize and manage your screens and their segues in a flow diagram. View controllers are your visual screen content areas, and can be managed directly in the storyboard via the editor, or through its corresponding code sheet.
 
-**Pixate** is a visual layer-based tool that ties interactions to each asset which can become time consuming to set up. If quick iteractions is your goal, you can use clar shape layers to emulate hotspots. However, the layering makes managing multiple screens a pain. Think of it as trying to orchestrate a play; elements are stacked on top of each other, both on and off the stage, and the designer's job is to tell each piece what to do and when to do it. If you have a long flow or want your user to be able to freely explore in your prototype, stay away from this one. 
+**Pixate** is a visual layer-based tool that ties interactions to each asset, which can be time-consuming to set up. If quick iterations are your goal, you can use transparent shape layers to emulate hotspots. However, the layering makes managing multiple screens difficult . Think of it as trying to orchestrate a play; elements are stacked on top of each other, both on and off the stage, and the designer's job is to direct each piece at the appropriate time. If you have a long flow or want your user to be able to freely explore in your prototype, you'll appreciate a more manageable interface. 
 
-Tools such as **Form**, **Framer** and **Origami** are better for for handling long flows. These will lead to a plethora of patches or code, so your biggest obstacle is your patience level. 
+Tools such as **Form**, **Framer** and **Origami** are slightly better suited for handling long flows. You have more control over how things are organized, though it will still lead to a plethora of patches or code. Your biggest obstacle is your patience level. 
 
 ##### Asset handling
 Since **InVision** works with hotspots, you can upload complete screens and save a lot of time cutting tappable assets. 
 
-**Pixate**, **Form**, and **Principle** require assets to be cut individually, and asset linking is not possible. **Pixate** will update all instances of the same asset if it detects an asset being imported with the same name. 
+**Pixate**, **Form**, and **Principle** require assets to be cut individually, and reimported if changed. **Pixate** will ask if you want to update all instances of the same asset if it detects an a file being imported under the same name. While the setup of cutting unlinkable assets may be arduous, these tools yield more fruitful results than **InVision** if you wish to refine your prototyle.
 
-**Framer** is optimized for Sketch and Photoshop users. A handy import function contains all the properties of your working file in one line of code. If you use a different tool to design your apps, prepare to spend a decent chunk of time setting up your asset properties. 
+**Framer** is nicely optimized for Sketch and Photoshop users. A handy import function contains all the properties of your working file in one line of code. If you use a different tool to design your apps, prepare to spend a decent chunk of time setting up your asset properties. 
 
-With **Origami**, Sketch users can create links to the working file so that updating to latest assets is a breeze. 
+With **Origami**, Sketch users can create links to the working file, so updating to latest assets is a breeze. 
 
-**Xcode** also links assets and their visual editing interface helps makes the process more approachable. Assets can be dragged and dropped into the appropriate screens, and you can also have native assets that can be customized within the tool. 
+**Xcode** also links assets, and their visual editing interface helps makes the process more approachable. Assets can be dragged and dropped into the appropriate screens, and you can also use native assets that can be customized within the editor. 
 
 ##### Assisting with collaboration
 **Xcode** has an export option that is useful for sending useful code to developers. 
 
-**InVision** and **Pixate** include management and feedback features for collaboration within the tool. Your colleagues can comment or edit your prototype directly and it will update in real-time. While this can streamline communications during early explorations, it may create confusion when it’s time to move beyond what the tools can express but feedback is still needed.
+**InVision** and **Pixate** include management, commenting, and feedback features for collaboration within the tool. While this can streamline communications during early explorations, it may create confusion when it’s time to move beyond what the tools can express, but feedback is still needed. **InVision** also works with a tool called [Lookback](https://lookback.io/), which allows you to record user testing sessions. It captures taps, interactions, and your user's reactions.
 
-[Download all Quick and dirty GIFs for comparison.](https://www.theartificial.nl)
+[Download all GIFs in Quick and Dirty for comparison.](https://www.theartificial.nl)
 
 ###The Artificial's pick for a quick and dirty prototype: Principle
 
@@ -71,12 +71,12 @@ A lot of the prototypes you'll see showcased online demonstrate unique animation
 
 **Xcode** has a few native effects and transitions that can be used without writing any code, but unique animations not included in their presets requires you to code from scratch.
 
-**InVision** curelly lacks effects. While transition animations are available, nothing custom can be made. If your app has unique animations, you'll want to try something more robust, at least until they launch [Motion](http://blog.invisionapp.com/motion-prototype-animation/).
+**InVision** cruelly lacks effects. While transition animations are available, nothing custom can be made. If your app has unique animations, you'll want to try something more robust, at least until they launch [Motion](http://blog.invisionapp.com/motion-prototype-animation/).
 
 ##### Adjusting the feel
 In the very likely case that you'll want to tweak your animations, you'll want a tool that doesn't require you tearing apart half your work. Luckily, all the tools we tried that handled animations provided easy ways to do so. 
 
-In **Xcode**, a transition's durations and effect intensities can be adjusted precisely through code sheets. In the some cases (such as imported libraries of animations), you can also tweak parameters thanks to the editor. 
+In **Xcode**, a transition's durations and effect intensities can be adjusted precisely through code sheets. In some cases (such as imported libraries of animations), you can also tweak parameters thanks to the editor. 
 
 **Pixate** uses numeric value inputs, and **Principle** uses sliders to adjust the timeline. 
 
@@ -84,13 +84,13 @@ In **Xcode**, a transition's durations and effect intensities can be adjusted pr
 
 With **Form** and **Origami**, effects are tied to patches, so they can be adjusted individually.
 
-In **InVision**, there are limited, but easy to adjust options for transitions between screenss.
+In **InVision**, there are limited, but easy to adjust options for transitions between screens.
 
 ##### Handling different screen sizes and gestures
-A polished and thorough prototype should be able to support all the gestures and screen sizes you need. Unfortunately, **Xcode** is the only tool that handles both. **Xcode** helps with designing for different screen sizes by managing elements alignments and positions relatively to their containers. Auto-layout does not work like WYSIWYG in the interface. To position elements, you specify constraints so the tool knows where the object should be placed despite your screen size. 
+A polished and thorough prototype should be able to support all the gestures and screen sizes you need. Unfortunately, **Xcode** is the only tool that handles both. **Xcode** helps with designing for different screen sizes by using Auto Layout to manage your alignments and positions relative to their containers. To position elements, you specify constraints so the tool knows where the object should be placed despite your screen size. 
 
 **Form** and **Origami** also support multi-touch gestures, and provide options for responsive conditions.
 
-[Download all Polished and thorough GIFs for comparison.](https://www.theartificial.nl)
+[Download all GIFs in Polished and thorough for comparison.](https://www.theartificial.nl)
 
 ###The Artificial's pick for a polished and thorough prototype: Pixate and Xcode
