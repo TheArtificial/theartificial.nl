@@ -22,14 +22,14 @@ We selected these seven tools because of their diverse range of qualities and me
 
 Adobe is also working on their own prototyping tool called Comet. A preview will be released in 2016, and we're looking forward to seeing how it will benefit Illustrator and Photoshop users.
 
-From our seven tools, we've discerned four types of tools: Visual layer-based, Visual page-based, Patch-based, and Code-based. Some tools use more than one of these construction concepts, but it's helpful to know generally what to expect in the interfaces. 
+From our seven tools, we've discerned four types of tools: Visual layer-based, Visual page-based, Patch-based, and Code-based. Some tools are a hybrid of two or more of these construction concepts, but it's helpful to know generally what to expect in the interfaces. 
 
 Visual layer-based tools layer multiple assets and screens on one canvas. The user can drag elements around and interactions and animations are tied to each layer. Visual page-based tools are very similar, but have separate screens rather than one densely layered canvas. In patch-based tools, webs of patches contain assets, interactions, and more. These are configured and then connected to each other with nodes. Lastly, there are code-based tools. These can range from code that emulates your final product, to code that can be turned into your final product.
 
 ## Interaction overview
 
 When clarifying interaction models, quick iterations are often necessary to solidify decisions. For this, you'll need an interface that has common interactions readily available. Your assets will likely be updated frequently through the early stages of your project, so how efficiently your tool handles assets can save a lot of time. 
-![Workflow and Interface](2015-11-17-prototyping/test1.png)
+![Workflow and Interface](2015-11-17-prototyping/interaction.gif)
 
 ##### Linking screens
 In visual page-based tools such as **InVision**, screens can be linked with hotspots that allow you to tell the tool what should come when an action is performed. **InVision** allows for time saving hotspot templates, so you won't need to reformat frequently used interactions. There is no limit on the number of screens you wish to include, though it has an upload limit of 10GB for an account. **Principle** is another visual page-based tool. We found the visualization of arrows pointing to subsequent screens helpful for at-a-glance edits. 
@@ -49,13 +49,13 @@ Since **InVision** works with hotspots, you can upload complete screens and save
 
 With **Origami**, Sketch users can create links to the working file, so updating to latest assets is a breeze. 
 
-**Xcode** also links assets, and their visual editing interface helps makes the process more approachable. Assets can be dragged and dropped into the appropriate screens, and you can also use native assets that can be customized within the editor. Using native assets is beneficial because you can use Auto Layout to specify scaling behavior across multiple screens, rather than using simple scale-up options from the other tools. The downside is the difficulty in doing truly custom controls, as Xcode's default options are very limited.
+**Xcode** also links assets, and their visual editing interface helps makes the process more approachable. Assets can be dragged and dropped into the appropriate screens, and you can also use native assets that can be customized within the editor. Using native assets is beneficial because you can use Auto Layout to specify scaling behavior across multiple screens, rather than using simple scale-up options from the other tools. The downside is the difficulty in doing truly custom controls, as Xcode's default options are limited.
 
 
 ##### Assisting with collaboration
-**Xcode** and **Origami** have export options that allow you to send code to your developers. With **Xcode**, your developer can work directly with your file itself. Using version control, you can always recall your original prototype incase instructions were interpreted differently.
+**Origami** has export options that allow you to send code snippets to your developers. With **Xcode**, your developer can work directly with your file itself. Using version control, you can always recall your original prototype incase instructions were interpreted differently.
 
-**InVision** and **Pixate** include management, commenting, and feedback features for collaboration within the tool. While this can streamline communications during early explorations, it may create confusion when it’s time to move beyond what the tools can express, but feedback is still needed. One frustrating downside is that **InVision** does not have its own viewing app. This means an updated version needs to be downloaded every time you want to test it on a phone.
+**InVision** and **Pixate** include management, commenting, and feedback features for collaboration within the tool. While this can streamline communications during early explorations, it may create confusion when it’s time to move beyond what the tools can express, but feedback is still needed. 
 
 [Download all GIFs in the Interaction overview for comparison.](https://www.theartificial.nl)
 
@@ -63,7 +63,7 @@ With **Origami**, Sketch users can create links to the working file, so updating
 
 ## Aesthetic detail
 A lot of the prototypes you'll see showcased online demonstrate unique animations to show the app's personality through motion. When you are at this stage of your project, you'll want a tool that gives you high fidelity and native-feeling effects. If your aim is for a prototype ready to show a developer, then it should also be able to accommodate all necessary gestures and screen sizes. It's important to be able to tweak animations with ease, and for your developer to discern their final values.
-![Transitions and Animations](2015-11-17-prototyping/test3.png)
+![Transitions and Animations](2015-11-17-prototyping/aesthetic.gif)
 
 
 ##### Animating
