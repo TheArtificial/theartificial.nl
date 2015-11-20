@@ -89,7 +89,11 @@ With **Form** and **Origami**, effects are tied to patches, so they can be adjus
 In **InVision**, there are limited, but easy to adjust options for transitions between screens.
 
 ##### Handling different screen sizes and gestures
-A polished and thorough prototype should be able to support all the gestures and screen sizes you need. **Xcode** helps with designing for different screen sizes by using Auto Layout to manage your alignments and positions relative to their containers or other elements. The effect is that elements reformat optimally based on the screen size, rather than simply scaling up.
+A polished and thorough prototype should be able to support all the gestures and screen sizes you need. 
+
+**InVision**, **Pixate**, **Principle**, and **Framer** do not support multi-touch gestures and you'll need to create a new prototype to show how your product handles different screen sizes.
+
+**Xcode** helps with designing for different screen sizes by using Auto Layout to manage your alignments and positions relative to their containers or other elements. The effect is that elements reformat optimally based on the screen size, rather than simply scaling up.
 
 **Form** and **Origami** also support multi-touch gestures, and you can set properties by attaching mathematical and conditional patches instead of assigning fixed values to your layer patch. While this requires different patching strategies, it eliminates the need to build separate prototypes.
 
