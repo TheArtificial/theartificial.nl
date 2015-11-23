@@ -4,7 +4,7 @@ category: process
 tags: prototype, tool, ux, comparison, review, program
 author: carol
 ---
-![](2015-11-17-prototyping/introduction.png)
+![](2015-11-23-prototyping/introduction.png)
 It's important to know your goals with prototyping in order to determine which tool best caters to your needs. Prototypes can be used for clarifying interaction models, demonstrating concepts and functionalities, or presenting the product's animations. Some tools may handle one requisite brilliantly, but lack the functionality to accomplish your targeted goal efficiently.
 
 We compared seven prototyping tools to help guide you to the appropriate tool for your specific challenge.
@@ -14,13 +14,13 @@ We compared seven prototyping tools to help guide you to the appropriate tool fo
 ## Prototyping tools
 We selected these seven tools because of their diverse range of qualities and methods.     
 
-[![InVision](2015-11-17-prototyping/icon-invision.png)](http://www.invisionapp.com) | [**InVision**](http://www.invisionapp.com)| A web-based collaborative program  
-[![Pixate](2015-11-17-prototyping/icon-pixate.png)](http://www.pixate.com/) | [**Pixate**](http://www.pixate.com/)| Google's native mobile prototyping tool
-[![Principle](2015-11-17-prototyping/icon-principle.png)](www.principleformac.com) | [**Principle**](www.principleformac.com)| Created by a former Apple engineer  
-[![Form](2015-11-17-prototyping/icon-form.png)](http://www.relativewave.com/form/) | [**Form**](http://www.relativewave.com/form/)| Google's patch-based prototyping tool  
-[![Origami](2015-11-17-prototyping/icon-origami.png)](https://facebook.github.io/origami/) | [**Origami**](https://facebook.github.io/origami/)| Facebook's Quartz Composer plugin
-[![Framer](2015-11-17-prototyping/icon-framer.png)](http://www.framerjs.com) | [**Framer**](http://www.framerjs.com)| JavaScript based prototyping   
-[![Xcode](2015-11-17-prototyping/icon-xcode.png)](https://developer.apple.com/xcode/) | [**Xcode**](https://developer.apple.com/xcode/)| Development tool by Apple Developer
+[![InVision](2015-11-23-prototyping/icon-invision.png)](http://www.invisionapp.com) | [**InVision**](http://www.invisionapp.com)| A web-based collaborative program  
+[![Pixate](2015-11-23-prototyping/icon-pixate.png)](http://www.pixate.com/) | [**Pixate**](http://www.pixate.com/)| Google's native mobile prototyping tool
+[![Principle](2015-11-23-prototyping/icon-principle.png)](www.principleformac.com) | [**Principle**](www.principleformac.com)| Created by a former Apple engineer  
+[![Form](2015-11-23-prototyping/icon-form.png)](http://www.relativewave.com/form/) | [**Form**](http://www.relativewave.com/form/)| Google's patch-based prototyping tool  
+[![Origami](2015-11-23-prototyping/icon-origami.png)](https://facebook.github.io/origami/) | [**Origami**](https://facebook.github.io/origami/)| Facebook's Quartz Composer plugin
+[![Framer](2015-11-23-prototyping/icon-framer.png)](http://www.framerjs.com) | [**Framer**](http://www.framerjs.com)| JavaScript based prototyping   
+[![Xcode](2015-11-23-prototyping/icon-xcode.png)](https://developer.apple.com/xcode/) | [**Xcode**](https://developer.apple.com/xcode/)| Development tool by Apple Developer
 
 Adobe is also working on their own prototyping tool called [Comet](http://landing.adobe.com/en/na/products/creative-cloud/comet/229818-notifyme.html). A preview will be released in 2016, and we're looking forward to seeing how it will benefit Illustrator and Photoshop users.
 
@@ -29,12 +29,12 @@ From our seven tools, we've discerned four types of tools: Visual layer-based, V
 
 Visual layer-based tools layer multiple assets and screens on one canvas. The user can drag elements around and interactions and animations are tied to each layer. Visual page-based tools are very similar, but have separate screens rather than one densely layered canvas. In patch-based tools, webs of patches contain assets, interactions, and more. These are configured and then connected to each other with nodes. Lastly, there are code-based tools. These can range from code that emulates your final product, to code that can be turned into your final product.
 
-![Continuum review](2015-11-17-prototyping/2x2.png)
+![Continuum review](2015-11-23-prototyping/2x2.png)
 
 ## Interaction overview
 
 When clarifying interaction models, quick iterations are often necessary to solidify decisions. For this, you'll need an interface that has common interactions readily available. Your assets will likely be updated frequently through the early stages of your project, so how efficiently your tool handles assets can save a lot of time.
-![Workflow and Interface](2015-11-17-prototyping/interaction.gif)
+![Workflow and Interface](2015-11-23-prototyping/interaction.gif)
 
 ##### Linking screens
 In visual page-based tools such as **InVision**, screens can be linked with hotspots that allow you to tell the tool what should come when an action is performed. **InVision** allows for time saving hotspot templates, so you won't need to reformat frequently used interactions. There is no limit on the number of screens you wish to include, though it has an upload limit of 10GB for an account. **Principle** is another visual page-based tool. We found the visualization of arrows pointing to subsequent screens helpful for at-a-glance edits.
@@ -62,14 +62,14 @@ With **Origami**, Sketch users can create links to the working file, so updating
 
 **InVision** and **Pixate** include management, commenting, and feedback features for collaboration within the tool. While this can streamline communications during early explorations, it may create confusion when it’s time to move beyond what the tools can express, but feedback is still needed.
 
-[Download all GIFs in the Interaction overview for comparison.](2015-11-17-prototyping/InteractionOverview.zip)
+[Download all GIFs in the Interaction overview for comparison.](2015-11-23-prototyping/InteractionOverview.zip)
 
 ###The Artificial's pick for a Interaction overview prototypes: Principle
 
 
 ## Aesthetic detail
 A lot of the prototypes you'll see showcased online demonstrate unique animations to show the app's personality through motion. When you are at this stage of your project, you'll want a tool that gives you high fidelity and native-feeling effects. If your aim is for a prototype ready to show a developer, then it should also be able to accommodate all necessary gestures and screen sizes. It's important to be able to tweak animations with ease, and for your developer to discern their final values.
-![Transitions and Animations](2015-11-17-prototyping/aesthetic.gif)
+![Transitions and Animations](2015-11-23-prototyping/aesthetic.gif)
 
 
 ##### Animating
@@ -103,7 +103,7 @@ A polished and thorough prototype should be able to support all the gestures and
 
 **Form** and **Origami** also support multi-touch gestures, and you can set properties by attaching mathematical and conditional patches instead of assigning fixed values to your layer patch. While this requires different patching strategies, it eliminates the need to build separate prototypes.
 
-[Download all GIFs in Aesthetic detail for comparison.](2015-11-17-prototyping/AestheticDetails.zip)
+[Download all GIFs in Aesthetic detail for comparison.](2015-11-23-prototyping/AestheticDetails.zip)
 
 ###The Artificial's pick for an Aesthetic detail prototype: Pixate and Xcode
 
