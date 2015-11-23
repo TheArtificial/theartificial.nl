@@ -106,3 +106,6 @@ A polished and thorough prototype should be able to support all the gestures and
 [Download all GIFs in Aesthetic detail for comparison.](https://www.theartificial.nl)
 
 ###The Artificial's pick for an Aesthetic detail prototype: Pixate and Xcode
+
+## Making a decision
+A big reason why we avoided categorizing these tools into "good vs. bad" or "easy vs. difficult" is because they all have strengths and each person has their unique needs. This comparison was intended to give you a better idea of capabilities, but nothing replaces hands-on experience. All of these tools are either free or have a free trial period, so try a handful out yourself. For our workflow, we have decided to use a combination of Principle and Pixate, at least until we can test out Adobe Comet. If you've found another prototyping tool to commit to, we would love to hear your thoughts on it.
