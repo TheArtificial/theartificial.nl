@@ -22,7 +22,7 @@ We selected these seven tools because of their diverse range of qualities and me
 [![Framer](2015-11-17-prototyping/icon-framer.png)](http://www.framerjs.com) | [**Framer**](http://www.framerjs.com)| JavaScript based prototyping   
 [![Xcode](2015-11-17-prototyping/icon-xcode.png)](https://developer.apple.com/xcode/) | [**Xcode**](https://developer.apple.com/xcode/)| Development tool by Apple Developer
 
-Adobe is also working on their own prototyping tool called Comet. A preview will be released in 2016, and we're looking forward to seeing how it will benefit Illustrator and Photoshop users.
+Adobe is also working on their own prototyping tool called [Comet](http://landing.adobe.com/en/na/products/creative-cloud/comet/229818-notifyme.html). A preview will be released in 2016, and we're looking forward to seeing how it will benefit Illustrator and Photoshop users.
 
 
 From our seven tools, we've discerned four types of tools: Visual layer-based, Visual page-based, Patch-based, and Code-based. Some tools are a hybrid of two or more of these construction concepts, but it's helpful to know generally what to expect in the interfaces.
@@ -108,4 +108,4 @@ A polished and thorough prototype should be able to support all the gestures and
 ###The Artificial's pick for an Aesthetic detail prototype: Pixate and Xcode
 
 ## Making a decision
-A big reason why we avoided categorizing these tools into "good vs. bad" or "easy vs. difficult" is because they all have strengths and each person has their unique needs. This comparison was intended to give you a better idea of capabilities, but nothing replaces hands-on experience. All of these tools are either free or have a free trial period, so try a handful out yourself. For our workflow, we have decided to use a combination of Principle and Pixate, at least until we can test out Adobe Comet. If you've found another prototyping tool to commit to, we would love to hear your thoughts on it.
+We avoided categorizing these tools into "good vs. bad" or "easy vs. difficult" because they all have strengths and we all have different goals with our prototypes. This comparison was intended to give you a better idea of capabilities, but nothing replaces hands-on experience. All of these tools are either free or have a free trial period, so try a handful out yourself. For our workflow, we have decided to use a combination of Principle and Pixate, at least until we can test out Adobe Comet. If you've found another prototyping tool to love, please share your thoughts with us on [Twitter](https://twitter.com/veryartificial).
