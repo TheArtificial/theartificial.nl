@@ -62,7 +62,7 @@ With **Origami**, Sketch users can create links to the working file, so updating
 
 **InVision** and **Pixate** include management, commenting, and feedback features for collaboration within the tool. While this can streamline communications during early explorations, it may create confusion when it’s time to move beyond what the tools can express, but feedback is still needed.
 
-[Download all GIFs in the Interaction overview for comparison.](https://www.theartificial.nl)
+[Download all GIFs in the Interaction overview for comparison.](2015-11-17-prototyping/InteractionOverview.zip)
 
 ###The Artificial's pick for a Interaction overview prototypes: Principle
 
@@ -103,7 +103,7 @@ A polished and thorough prototype should be able to support all the gestures and
 
 **Form** and **Origami** also support multi-touch gestures, and you can set properties by attaching mathematical and conditional patches instead of assigning fixed values to your layer patch. While this requires different patching strategies, it eliminates the need to build separate prototypes.
 
-[Download all GIFs in Aesthetic detail for comparison.](https://www.theartificial.nl)
+[Download all GIFs in Aesthetic detail for comparison.](2015-11-17-prototyping/AestheticDetails.zip)
 
 ###The Artificial's pick for an Aesthetic detail prototype: Pixate and Xcode
 
