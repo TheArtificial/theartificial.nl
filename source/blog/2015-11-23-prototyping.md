@@ -5,11 +5,11 @@ tags: prototype, tool, ux, comparison, review, program
 author: carol
 ---
 ![](2015-11-23-prototyping/introduction.png)
+
+
 It's important to know your goals with prototyping in order to determine which tool best caters to your needs. Prototypes can be used for clarifying interaction models, demonstrating concepts and functionalities, or presenting the product's animations. Some tools may handle one requisite brilliantly, but lack the functionality to accomplish your targeted goal efficiently.
 
 We compared seven prototyping tools to help guide you to the appropriate tool for your specific challenge.
-
-
 
 ## Prototyping tools
 We selected these seven tools because of their diverse range of qualities and methods.     
