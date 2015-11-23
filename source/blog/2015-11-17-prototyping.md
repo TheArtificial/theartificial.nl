@@ -9,6 +9,8 @@ It's important to know your goals with prototyping in order to determine which t
 
 We compared seven prototyping tools to help guide you to the appropriate tool for your specific challenge.
 
+![Continuum review](2015-11-17-prototyping/continuum.png)
+
 ## Prototyping tools
 We selected these seven tools because of their diverse range of qualities and methods.     
 
@@ -22,7 +24,6 @@ We selected these seven tools because of their diverse range of qualities and me
 
 Adobe is also working on their own prototyping tool called Comet. A preview will be released in 2016, and we're looking forward to seeing how it will benefit Illustrator and Photoshop users.
 
-![Continuum review](2015-11-17-prototyping/continuum.png)
 
 From our seven tools, we've discerned four types of tools: Visual layer-based, Visual page-based, Patch-based, and Code-based. Some tools are a hybrid of two or more of these construction concepts, but it's helpful to know generally what to expect in the interfaces.
 
