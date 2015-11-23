@@ -4,23 +4,23 @@ category: process
 tags: prototype, tool, ux, comparison, review, program
 author: carol
 ---
-
+![](2015-11-17-prototyping/introduction.png)
 It's important to know your goals with prototyping in order to determine which tool best caters to your needs. Prototypes can be used for clarifying interaction models, demonstrating concepts and functionalities, or presenting the product's animations. Some tools may handle one requisite brilliantly, but lack the functionality to accomplish your targeted goal efficiently.
 
 We compared seven prototyping tools to help guide you to the appropriate tool for your specific challenge.
 
-![Continuum review](2015-11-17-prototyping/continuum.png)
+
 
 ## Prototyping tools
 We selected these seven tools because of their diverse range of qualities and methods.     
 
-[**InVision**](www.invisionapp.com)|||| A web-based collaborative program  
-[**Pixate**](http://www.pixate.com/)||||  Google's native mobile prototyping tool
-[**Principle**](www.principleformac.com)||||  Created by a former Apple engineer  
-[**Form**](www.relativewave.com/form/)||||  Google's patch-based prototyping tool  
-[**Origami**](https://facebook.github.io/origami/)||||  Facebook's Quartz Composer plugin
-[**Framer**](framerjs.com)||||  JavaScript based prototyping   
-[**Xcode**](https://developer.apple.com/xcode/)||||   Development tool by Apple Developer
+![](2015-11-17-prototyping/icon-invision.png){: class="inline-image"}[**InVision**](www.invisionapp.com)|||| A web-based collaborative program  
+![](2015-11-17-prototyping/icon-pixate.png){: class="inline-image"}[**Pixate**](http://www.pixate.com/)||||  Google's native mobile prototyping tool
+![](2015-11-17-prototyping/icon-principle.png){: class="inline-image"}[**Principle**](www.principleformac.com)||||  Created by a former Apple engineer  
+![](2015-11-17-prototyping/icon-form.png){: class="inline-image"}[**Form**](www.relativewave.com/form/)||||  Google's patch-based prototyping tool  
+![](2015-11-17-prototyping/icon-origami.png){: class="inline-image"}[**Origami**](https://facebook.github.io/origami/)||||  Facebook's Quartz Composer plugin
+![](2015-11-17-prototyping/icon-framer.png){: class="inline-image"}[**Framer**](framerjs.com)||||  JavaScript based prototyping   
+![](2015-11-17-prototyping/icon-xcode.png){: class="inline-image"}[**Xcode**](https://developer.apple.com/xcode/)||||   Development tool by Apple Developer
 
 Adobe is also working on their own prototyping tool called Comet. A preview will be released in 2016, and we're looking forward to seeing how it will benefit Illustrator and Photoshop users.
 
@@ -28,6 +28,8 @@ Adobe is also working on their own prototyping tool called Comet. A preview will
 From our seven tools, we've discerned four types of tools: Visual layer-based, Visual page-based, Patch-based, and Code-based. Some tools are a hybrid of two or more of these construction concepts, but it's helpful to know generally what to expect in the interfaces.
 
 Visual layer-based tools layer multiple assets and screens on one canvas. The user can drag elements around and interactions and animations are tied to each layer. Visual page-based tools are very similar, but have separate screens rather than one densely layered canvas. In patch-based tools, webs of patches contain assets, interactions, and more. These are configured and then connected to each other with nodes. Lastly, there are code-based tools. These can range from code that emulates your final product, to code that can be turned into your final product.
+
+![Continuum review](2015-11-17-prototyping/2x2.png)
 
 ## Interaction overview
 
