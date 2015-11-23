@@ -14,13 +14,13 @@ We compared seven prototyping tools to help guide you to the appropriate tool fo
 ## Prototyping tools
 We selected these seven tools because of their diverse range of qualities and methods.     
 
-![](2015-11-17-prototyping/icon-invision.png){: class="inline-image"}[**InVision**](www.invisionapp.com)|||| A web-based collaborative program  
-![](2015-11-17-prototyping/icon-pixate.png){: class="inline-image"}[**Pixate**](http://www.pixate.com/)||||  Google's native mobile prototyping tool
-![](2015-11-17-prototyping/icon-principle.png){: class="inline-image"}[**Principle**](www.principleformac.com)||||  Created by a former Apple engineer  
-![](2015-11-17-prototyping/icon-form.png){: class="inline-image"}[**Form**](www.relativewave.com/form/)||||  Google's patch-based prototyping tool  
-![](2015-11-17-prototyping/icon-origami.png){: class="inline-image"}[**Origami**](https://facebook.github.io/origami/)||||  Facebook's Quartz Composer plugin
-![](2015-11-17-prototyping/icon-framer.png){: class="inline-image"}[**Framer**](framerjs.com)||||  JavaScript based prototyping   
-![](2015-11-17-prototyping/icon-xcode.png){: class="inline-image"}[**Xcode**](https://developer.apple.com/xcode/)||||   Development tool by Apple Developer
+[![InVision](2015-11-17-prototyping/icon-invision.png)](http://www.invisionapp.com) | [**InVision**](http://www.invisionapp.com)| A web-based collaborative program  
+[![Pixate](2015-11-17-prototyping/icon-pixate.png)](http://www.pixate.com/) | [**Pixate**](http://www.pixate.com/)| Google's native mobile prototyping tool
+[![Principle](2015-11-17-prototyping/icon-principle.png)](www.principleformac.com) | [**Principle**](www.principleformac.com)| Created by a former Apple engineer  
+[![Form](2015-11-17-prototyping/icon-form.png)](http://www.relativewave.com/form/) | [**Form**](http://www.relativewave.com/form/)| Google's patch-based prototyping tool  
+[![Origami](2015-11-17-prototyping/icon-origami.png)](https://facebook.github.io/origami/) | [**Origami**](https://facebook.github.io/origami/)| Facebook's Quartz Composer plugin
+[![Framer](2015-11-17-prototyping/icon-framer.png)](http://www.framerjs.com) | [**Framer**](http://www.framerjs.com)| JavaScript based prototyping   
+[![Xcode](2015-11-17-prototyping/icon-xcode.png)](https://developer.apple.com/xcode/) | [**Xcode**](https://developer.apple.com/xcode/)| Development tool by Apple Developer
 
 Adobe is also working on their own prototyping tool called Comet. A preview will be released in 2016, and we're looking forward to seeing how it will benefit Illustrator and Photoshop users.
 
