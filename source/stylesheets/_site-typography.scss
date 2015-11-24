@@ -17,13 +17,13 @@ h1, h2, h3, h4, h5, p {
 		h1, h2, h3, h4, h5, p {
 			color: $cool-grey-90;
 	}
-	
+
 	a {
 		text-decoration: none;
 	}
 }
 
-h1, h2, h4, h5, p, ul, li {
+h1, h2, h4, h5, p, ul, li, td {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
@@ -88,10 +88,10 @@ h1, h2, h3, h4, h5, p {
 		font-size: 1.225em;
 		line-height: 1.11em;
 	}
-	
+
 	h5 {
 		font-size: .8em;
-		line-height: 1.2em;	
+		line-height: 1.2em;
 	}
 
 	p, li, ul {
