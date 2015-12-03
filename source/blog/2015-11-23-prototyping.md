@@ -15,12 +15,12 @@ We compared seven prototyping tools to help guide you to the appropriate tool fo
 
 We selected these seven tools because of their diverse range of qualities and methods.     
 
-[![InVision](2015-11-23-prototyping/icon-invision.png)](http://www.invisionapp.com) | [**InVision**](http://www.invisionapp.com)| A web-based collaborative program  
+[![InVision](2015-11-23-prototyping/icon-invision.png)](http://www.invisionapp.com) | [**InVision**](http://www.invisionapp.com/)| A web-based collaborative program  
 [![Pixate](2015-11-23-prototyping/icon-pixate.png)](http://www.pixate.com/) | [**Pixate**](http://www.pixate.com/)| Google's native mobile prototyping tool
-[![Principle](2015-11-23-prototyping/icon-principle.png)](www.principleformac.com) | [**Principle**](www.principleformac.com)| Created by a former Apple engineer  
+[![Principle](2015-11-23-prototyping/icon-principle.png)](www.principleformac.com) | [**Principle**](http://www.principleformac.com/)| Created by a former Apple engineer  
 [![Form](2015-11-23-prototyping/icon-form.png)](http://www.relativewave.com/form/) | [**Form**](http://www.relativewave.com/form/)| Google's patch-based prototyping tool  
 [![Origami](2015-11-23-prototyping/icon-origami.png)](https://facebook.github.io/origami/) | [**Origami**](https://facebook.github.io/origami/)| Facebook's Quartz Composer plugin
-[![Framer](2015-11-23-prototyping/icon-framer.png)](http://www.framerjs.com) | [**Framer**](http://www.framerjs.com)| JavaScript based prototyping
+[![Framer](2015-11-23-prototyping/icon-framer.png)](http://www.framerjs.com) | [**Framer**](http://www.framerjs.com/)| JavaScript based prototyping
 [![Xcode](2015-11-23-prototyping/icon-xcode.png)](https://developer.apple.com/xcode/) | [**Xcode**](https://developer.apple.com/xcode/)| Development tool by Apple Developer
 
 Adobe is also working on their own prototyping tool called [Comet](http://landing.adobe.com/en/na/products/creative-cloud/comet/229818-notifyme.html). A preview will be released in 2016, and we're looking forward to seeing how it will benefit Illustrator and Photoshop users.
