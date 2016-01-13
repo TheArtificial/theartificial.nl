@@ -27,6 +27,16 @@ h2 {
   line-height: 1.3em;
 }
 
+// background colors
+
+.white {
+  background-color: $white;
+}
+
+.cool-grey-10 {
+  background-color: $cool-grey-10;
+}
+
 .pale-turquoise {
   background-color: $pale-turquoise;
   padding-top: 40px;
@@ -43,6 +53,8 @@ h2 {
 }
 
 .turquoise {
+  background-color: $turquoise;
+
   h1, h2, h3, h4, h5, p {
     color: $white;
   }
@@ -95,6 +107,13 @@ h2 {
   background-color: $warm-grey-10;
 }
 
+.warm-grey-30 {
+  background-color: $warm-grey-30;
+  h1, h2, h3, h4, h5, p {
+    color: $white;
+  }
+}
+
 .warm-grey-70 {
   background-color: $warm-grey-70;
   h1, h2, h3, h4, h5, p {
@@ -103,6 +122,9 @@ h2 {
 }
 .warm-grey-80 {
   background-color: $warm-grey-80;
+  h1, h2, h3, h4, h5, p {
+    color: $white;
+  }
 }
 
 .cool-grey-70 {
@@ -119,11 +141,20 @@ h2 {
   }
 }
 
+// link colors
+
 a.turquoise-link {
   color: $turquoise;
 }
 a.turquoise-link:hover {
   color: $pale-turquoise;
+}
+
+a.darkturquoise-link {
+  color: $turquoise;
+}
+a.darkturquoise-link:hover {
+  color: $dark-turquoise;
 }
 
 a.tulip-link {
@@ -134,13 +165,21 @@ a.tulip-link:hover {
   color: $dark-tulip;
 }
 
-
 a.pale-grass-link {
   color: $pale-grass
 }
 a.pale-grass-link:hover {
   color: $pale-lime;
 }
+
+a.grey-link {
+  color: $warm-grey-40;
+}
+a.grey-link:hover {
+  color: $warm-grey-50;
+}
+
+// main page
 
 .introduction {
 	margin: 60px 0 60px 0;
@@ -250,6 +289,8 @@ a.pale-grass-link:hover {
   margin-top: 80px;
 }
 
+// specific to each page
+
 .intention {
   h1 {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -278,5 +319,52 @@ a.pale-grass-link:hover {
   }
   h4 {
     font-size: 1.6em;
+  }
+}
+
+.keytime {
+  h1, h2 {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 4.0em;
+    text-align: center;
+  }
+
+  h2 {
+    color: $cool-grey-50;
+  }
+
+  h3, h4 {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 2.0em;
+  }
+
+  h3 {
+      text-align: center;
+  }
+
+  p {
+      font-size: 1.0em;
+  }
+}
+
+.timebot {
+  h1 {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4em;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.0em;
+  }
+
+  p {
+      font-size: 1.0em;
   }
 }
