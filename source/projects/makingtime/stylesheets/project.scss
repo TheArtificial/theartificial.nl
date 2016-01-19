@@ -157,16 +157,26 @@ a.grey-link:hover { color: $warm-grey-50; }
 	background-size: 100% 100%;
 }
 
+@media only screen and (min-device-width: 320px) {
+  .contentbox {
+      width: 320px;
+      height: 320px;
+      margin: 0 auto;
+  }
+}
+
 @media only screen and (min-device-width: 768px) {
-	.contentbox {
-		height: 256px;
-	}
+  .contentbox {
+      width: 240px;
+      height: 240px;
+  }
 }
 
 @media (min-width: 960px) {
 	.contentbox {
-		height: 320px;
-	}
+      width: 320px;
+      height: 320px;
+  }
 }
 
 // specific to each page
@@ -190,9 +200,18 @@ a.grey-link:hover { color: $warm-grey-50; }
     text-align: left;
   }
 
-  .app-logo {
-    width: 40%;
-    margin-top: 40%;
+  @media only screen and (min-device-width: 320px) {
+    .app-logo {
+      width: 40%;
+      margin-top: 0;
+    }
+  }
+
+  @media only screen and (min-device-width: 768px) {
+    .app-logo {
+      width: 40%;
+      margin-top: 40%;
+    }
   }
 
   .description {
