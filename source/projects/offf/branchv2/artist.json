@@ -1,0 +1,1828 @@
+{
+
+  "nodes":
+[
+  {
+    "name":"digital",
+    "id": 0
+  },
+  {
+    "name":"motion",
+    "id": 1
+  },
+  {
+    "name":"print",
+    "id": 2
+  },
+  {
+    "name":"product",
+    "id": 3
+  },
+  {
+    "name":"sound design",
+    "id": 4
+  },
+  {
+    "name": "3-10 studio",
+    "id": 5,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "aardman animations",
+    "id": 6,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "achos!",
+    "id": 7,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "akqa",
+    "id": 8,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": "3-4-4-1"
+  },
+  {
+    "name": "andoni beristain",
+    "id": 9,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "anton & irene",
+    "id": 10,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "atelier",
+    "id": 11,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "bakea",
+    "id": 12,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "ben fry",
+    "id": 13,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "brand nu",
+    "id": 14,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "córdova canillas",
+    "id": 15,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "carl sprague",
+    "id": 16,
+    "groupyear": 4,
+    "groupstatus": 4,
+    "groupcontinent": 4
+  },
+  {
+    "name": "carla cascales",
+    "id": 17,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "casey neistat",
+    "id": 18,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "casey reas",
+    "id": 19,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "chris milk",
+    "id": 20,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "chuck anderson",
+    "id": 21,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "cocolia",
+    "id": 22,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "creativeapplications.net",
+    "id": 23,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "daniel aristizábal",
+    "id": 24,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "danny sangra",
+    "id": 25,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "david navarro &  claudio guglieri",
+    "id": 26,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": "4-3"
+  },
+  {
+    "name": "digital kitchen",
+    "id": 27,
+    "groupyear": 5,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "dog studio",
+    "id": 28,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "dvein",
+    "id": 29,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": "3-4"
+  },
+  {
+    "name": "erik natzke",
+    "id": 30,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "erik spiekermann",
+    "id": 31,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "filipe carvalho",
+    "id": 32,
+    "groupyear": 3,
+    "groupstatus": 4,
+    "groupcontinent": 3
+  },
+  {
+    "name": "foreign policy",
+    "id": 33,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 1
+  },
+  {
+    "name": "framed",
+    "id": 34,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "futuredekuxe",
+    "id": 35,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "gemma o’brien",
+    "id": 36,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 2
+  },
+  {
+    "name": "gmunk",
+    "id": 37,
+    "groupyear": 3,
+    "groupstatus": 4,
+    "groupcontinent": 4
+  },
+  {
+    "name": "golan levin",
+    "id": 38,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "hey",
+    "id": 39,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "hiro murai",
+    "id": 40,
+    "groupyear": 4,
+    "groupstatus": 4,
+    "groupcontinent": 4
+  },
+  {
+    "name": "holo",
+    "id": 41,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "hush",
+    "id": 42,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "ideo",
+    "id": 43,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": "4-3-1"
+  },
+  {
+    "name": "james victore",
+    "id": 44,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "jan de coster",
+    "id": 45,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "javier jaen",
+    "id": 46,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "jean-paul frenay",
+    "id": 47,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "john maeda",
+    "id": 48,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "johnny cupcakes",
+    "id": 49,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "jon burgerman",
+    "id": 50,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "josep maría mir",
+    "id": 51,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "joshua davis",
+    "id": 52,
+    "groupyear": 5,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "joylabz",
+    "id": 53,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "julien vallée",
+    "id": 54,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "kiran gandhi",
+    "id": 55,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "kyle cooper",
+    "id": 56,
+    "groupyear": 5,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "laika",
+    "id": 57,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "letters are my friends",
+    "id": 58,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "lil'ol'lady",
+    "id": 59,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "linda liukas",
+    "id": 60,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "lizzie mary cullen",
+    "id": 61,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "lullatone + jono brandel",
+    "id": 62,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": "1-4"
+  },
+  {
+    "name": "made thought",
+    "id": 63,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "matt lambert",
+    "id": 64,
+    "groupyear": 4,
+    "groupstatus": 4,
+    "groupcontinent": 3
+  },
+  {
+    "name": "mau morgo",
+    "id": 65,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "michael cina",
+    "id": 66,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "mirko borsche",
+    "id": 67,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "momoco",
+    "id": 68,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "monika mogi",
+    "id": 69,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 1
+  },
+  {
+    "name": "morphika",
+    "id": 70,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "mpc",
+    "id": 71,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": "3-4-3-1-4"
+  },
+  {
+    "name": "mr bingo",
+    "id": 72,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "mucho",
+    "id": 73,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "musketon",
+    "id": 74,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "neville brody",
+    "id": 75,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "noelia lozano",
+    "id": 76,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "non-format",
+    "id": 77,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": "3-4"
+  },
+  {
+    "name": "onesize",
+    "id": 78,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": "3-4"
+  },
+  {
+    "name": "outro studio",
+    "id": 79,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "pablo garcia",
+    "id": 80,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "pat perry",
+    "id": 81,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "paula scher (pentagram)",
+    "id": 82,
+    "groupyear": 5,
+    "groupstatus": 5,
+    "groupcontinent": "4-3"
+  },
+  {
+    "name": "postpanic",
+    "id": 83,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "random studio",
+    "id": 84,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "renascent",
+    "id": 85,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "rick banks",
+    "id": 86,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "rick poynor",
+    "id": 87,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "rik oostenbroek",
+    "id": 88,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "rob chiu",
+    "id": 89,
+    "groupyear": 5,
+    "groupstatus": 4,
+    "groupcontinent": 3
+  },
+  {
+    "name": "robert hodgin",
+    "id": 90,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "rozon parein",
+    "id": 91,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "saad moosajee",
+    "id": 92,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "saman kesh",
+    "id": 93,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "sawdust",
+    "id": 94,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "sid lee",
+    "id": 95,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": "3-4"
+  },
+  {
+    "name": "signalnoise",
+    "id": 96,
+    "groupyear": 5,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "snask",
+    "id": 97,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "somerset + mills",
+    "id": 98,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "stefan sagmeister",
+    "id": 99,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "steven wilson",
+    "id": 100,
+    "groupyear": 3,
+    "groupstatus": 3,
+    "groupcontinent": 3
+  },
+  {
+    "name": "studio blue",
+    "id": 101,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "territory",
+    "id": 102,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "the mill",
+    "id": 103,
+    "groupyear": 5,
+    "groupstatus": 5,
+    "groupcontinent": "4-3"
+  },
+  {
+    "name": "the six and five studio",
+    "id": 104,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": 4
+  },
+  {
+    "name": "timothy goodman",
+    "id": 105,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "tobias van schneider",
+    "id": 106,
+    "groupyear": 4,
+    "groupstatus": 3,
+    "groupcontinent": 4
+  },
+  {
+    "name": "unit9",
+    "id": 107,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": "4-3"
+  },
+  {
+    "name": "ustwo",
+    "id": 108,
+    "groupyear": 4,
+    "groupstatus": 5,
+    "groupcontinent": "3-4-2"
+  },
+  {
+    "name": "vasava",
+    "id": 109,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "we are seventeen",
+    "id": 110,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  },
+  {
+    "name": "yukiko",
+    "id": 111,
+    "groupyear": 3,
+    "groupstatus": 5,
+    "groupcontinent": 3
+  }
+],
+
+
+
+
+
+"links":
+[
+  {
+    "source": 5,
+    "target": 0,
+    "stroke": 2.5,
+    "name": "3-10 studio"
+  },
+  {
+    "source": 5,
+    "target": 1,
+    "stroke": 1.5,
+    "name": "3-10 studio"
+  },
+  {
+    "source": 5,
+    "target": 2,
+    "stroke": 1,
+    "name": "3-10 studio"
+  },
+  {
+    "source": 6,
+    "target": 0,
+    "stroke": 3,
+    "name": "aardman animations"
+  },
+  {
+    "source": 6,
+    "target": 1,
+    "stroke": 1.5,
+    "name": "aardman animations"
+  },
+  {
+    "source": 6,
+    "target": 2,
+    "stroke": 0.5,
+    "name": "aardman animations"
+  },
+  {
+    "source": 7,
+    "target": 0,
+    "stroke": 2,
+    "name": "achos!"
+  },
+  {
+    "source": 7,
+    "target": 1,
+    "stroke": 1,
+    "name": "achos!"
+  },
+  {
+    "source": 7,
+    "target": 2,
+    "stroke": 2,
+    "name": "achos!"
+  },
+  {
+    "source": 8,
+    "target": 0,
+    "stroke": 3,
+    "name": "akqa"
+  },
+  {
+    "source": 8,
+    "target": 1,
+    "stroke": 1.5,
+    "name": "akqa"
+  },
+  {
+    "source": 8,
+    "target": 2,
+    "stroke": 0.5,
+    "name": "akqa"
+  },
+  {
+    "source": 9,
+    "target": 2,
+    "stroke": 5,
+    "name": "andoni beristain"
+  },
+  {
+    "source": 10,
+    "target": 0,
+    "stroke": 3,
+    "name": "anton & irene"
+  },
+  {
+    "source": 10,
+    "target": 1,
+    "stroke": 1.5,
+    "name": "anton & irene"
+  },
+  {
+    "source": 10,
+    "target": 2,
+    "stroke": 0.5,
+    "name": "anton & irene"
+  },
+  {
+    "source": 11,
+    "target": 0,
+    "stroke": 1,
+    "name": "atelier"
+  },
+  {
+    "source": 11,
+    "target": 1,
+    "stroke": 2,
+    "name": "atelier"
+  },
+  {
+    "source": 11,
+    "target": 2,
+    "stroke": 2,
+    "name": "atelier"
+  },
+  {
+    "source": 12,
+    "target": 0,
+    "stroke": 2,
+    "name": "bakea"
+  },
+  {
+    "source": 12,
+    "target": 1,
+    "stroke": 1.5,
+    "name": "bakea"
+  },
+  {
+    "source": 12,
+    "target": 2,
+    "stroke": 1.5,
+    "name": "bakea"
+  },
+  {
+    "source": 13,
+    "target": 0,
+    "stroke": 5,
+    "name": "ben fry"
+  },
+  {
+    "source": 14,
+    "target": 0,
+    "stroke": 4,
+    "name": "brand nu"
+  },
+  {
+    "source": 14,
+    "target": 1,
+    "stroke": 0.5,
+    "name": "brand nu"
+  },
+  {
+    "source": 14,
+    "target": 2,
+    "stroke": 0.5,
+    "name": "brand nu"
+  },
+  {
+    "source": 15,
+    "target": 0,
+    "stroke": 1,
+    "name": "córdova canillas"
+  },
+  {
+    "source": 15,
+    "target": 2,
+    "stroke": 4,
+    "name": "córdova canillas"
+  },
+  {
+    "source": 16,
+    "target": 1,
+    "stroke": 5,
+    "name": "carl sprague"
+  },
+  {
+    "source": 17,
+    "target": 2,
+    "stroke": 5,
+    "name": "carla cascales"
+  },
+  {
+    "source": 18,
+    "target": 1,
+    "stroke": 5,
+    "name": "casey neistat"
+  },
+  {
+    "source": 19,
+    "target": 0,
+    "stroke": 2.5,
+    "name": "casey reas"
+  },
+  {
+    "source": 19,
+    "target": 1,
+    "stroke": 2.5,
+    "name": "casey reas"
+  },
+  {
+    "source": 19,
+    "target": 2,
+    "stroke": 0.5,
+    "name": "casey reas"
+  },
+  {
+    "source": 20,
+    "target": 0,
+    "stroke": 5,
+    "name": "chris milk"
+  },
+  {
+    "source": 21,
+    "target": 0,
+    "stroke": 3,
+    "name": "chuck anderson"
+  },
+  {
+    "source": 21,
+    "target": 1,
+    "stroke": 0.5,
+    "name": "chuck anderson"
+  },
+  {
+    "source": 21,
+    "target": 2,
+    "stroke": 1.5,
+    "name": "chuck anderson"
+  },
+  {
+    "source": 22,
+    "target": 2,
+    "stroke": 5,
+    "name": "cocolia"
+  },
+  {
+    "source": 23,
+    "target": 1,
+    "stroke": 2.5,
+    "name": "creativeapplications.net"
+  },
+  {
+    "source": 23,
+    "target": 2,
+    "stroke": 2.5,
+    "name": "creativeapplications.net"
+  },
+  {
+    "source": 24,
+    "target": 2,
+    "stroke": 5,
+    "name": "daniel aristizábal"
+  },
+  {
+    "source": 25,
+    "target": 1,
+    "stroke": 5,
+    "name": "danny sangra"
+  },
+  {
+    "source": 26,
+    "target": 0,
+    "stroke": 2.5,
+    "name": "david navarro &  claudio guglieri"
+  },
+  {
+    "source": 26,
+    "target": 1,
+    "stroke": 2.5,
+    "name": "david navarro &  claudio guglieri"
+  },
+  {
+    "source": 27,
+    "target": 0,
+    "stroke": 1,
+    "name": "digital kitchen"
+  },
+  {
+    "source": 27,
+    "target": 1,
+    "stroke": 4,
+    "name": "digital kitchen"
+  },
+  {
+    "source": 28,
+    "target": 0,
+    "stroke": 4,
+    "name": "dog studio"
+  },
+  {
+    "source": 28,
+    "target": 1,
+    "stroke": 1,
+    "name": "dog studio"
+  },
+  {
+    "source": 29,
+    "target": 1,
+    "stroke": 4,
+    "name": "dvein"
+  },
+  {
+    "source": 29,
+    "target": 2,
+    "stroke": 1,
+    "name": "dvein"
+  },
+  {
+    "source": 30,
+    "target": 0,
+    "stroke": 5,
+    "name": "erik natzke"
+  },
+  {
+    "source": 31,
+    "target": 0,
+    "stroke": 5,
+    "name": "erik spiekermann"
+  },
+  {
+    "source": 32,
+    "target": 0,
+    "stroke": 1.5,
+    "name": "filipe carvalho"
+  },
+  {
+    "source": 32,
+    "target": 1,
+    "stroke": 3.5,
+    "name": "filipe carvalho"
+  },
+  {
+    "source": 33,
+    "target": 2,
+    "stroke": 5,
+    "name": "foreign policy"
+  },
+  {
+    "source": 34,
+    "target": 3,
+    "stroke": 5,
+    "name": "framed"
+  },
+  {
+    "source": 35,
+    "target": 0,
+    "stroke": 1.5,
+    "name": "futuredekuxe"
+  },
+  {
+    "source": 35,
+    "target": 1,
+    "stroke": 3.5,
+    "name": "futuredekuxe"
+  },
+  {
+    "source": 36,
+    "target": 2,
+    "stroke": 5,
+    "name": "gemma o’brien"
+  },
+  {
+    "source": 37,
+    "target": 1,
+    "stroke": 5,
+    "name": "gmunk"
+  },
+  {
+    "source": 38,
+    "target": 0,
+    "stroke": 5,
+    "name": "golan levin"
+  },
+  {
+    "source": 39,
+    "target": 2,
+    "stroke": 5,
+    "name": "hey"
+  },
+  {
+    "source": 40,
+    "target": 1,
+    "stroke": 5,
+    "name": "hiro murai"
+  },
+  {
+    "source": 41,
+    "target": 2,
+    "stroke": 5,
+    "name": "holo"
+  },
+  {
+    "source": 42,
+    "target": 0,
+    "stroke": 3.5,
+    "name": "hush"
+  },
+  {
+    "source": 42,
+    "target": 1,
+    "stroke": 1.5,
+    "name": "hush"
+  },
+  {
+    "source": 43,
+    "target": 0,
+    "stroke": 2,
+    "name": "ideo"
+  },
+  {
+    "source": 43,
+    "target": 2,
+    "stroke": 2,
+    "name": "ideo"
+  },
+  {
+    "source": 43,
+    "target": 3,
+    "stroke": 1,
+    "name": "ideo"
+  },
+  {
+    "source": 44,
+    "target": 2,
+    "stroke": 5,
+    "name": "james victore"
+  },
+  {
+    "source": 45,
+    "target": 0,
+    "stroke": 2.5,
+    "name": "jan de coster"
+  },
+  {
+    "source": 45,
+    "target": 1,
+    "stroke": 2.5,
+    "name": "jan de coster"
+  },
+  {
+    "source": 46,
+    "target": 2,
+    "stroke": 5,
+    "name": "javier jaen"
+  },
+  {
+    "source": 47,
+    "target": 1,
+    "stroke": 5,
+    "name": "jean-paul frenay"
+  },
+  {
+    "source": 48,
+    "target": 0,
+    "stroke": 5,
+    "name": "john maeda"
+  },
+  {
+    "source": 49,
+    "target": 2,
+    "stroke": 5,
+    "name": "johnny cupcakes"
+  },
+  {
+    "source": 50,
+    "target": 2,
+    "stroke": 5,
+    "name": "jon burgerman"
+  },
+  {
+    "source": 51,
+    "target": 0,
+    "stroke": 2,
+    "name": "josep maría mir"
+  },
+  {
+    "source": 51,
+    "target": 2,
+    "stroke": 3,
+    "name": "josep maría mir"
+  },
+  {
+    "source": 52,
+    "target": 1,
+    "stroke": 5,
+    "name": "joshua davis"
+  },
+  {
+    "source": 53,
+    "target": 0,
+    "stroke": 5,
+    "name": "joylabz"
+  },
+  {
+    "source": 54,
+    "target": 1,
+    "stroke": 2.5,
+    "name": "julien vallée"
+  },
+  {
+    "source": 54,
+    "target": 2,
+    "stroke": 2.5,
+    "name": "julien vallée"
+  },
+  {
+    "source": 55,
+    "target": 4,
+    "stroke": 5,
+    "name": "kiran gandhi"
+  },
+  {
+    "source": 56,
+    "target": 1,
+    "stroke": 5,
+    "name": "kyle cooper"
+  },
+  {
+    "source": 57,
+    "target": 1,
+    "stroke": 5,
+    "name": "laika"
+  },
+  {
+    "source": 58,
+    "target": 0,
+    "stroke": 1.5,
+    "name": "letters are my friends"
+  },
+  {
+    "source": 58,
+    "target": 1,
+    "stroke": 2,
+    "name": "letters are my friends"
+  },
+  {
+    "source": 58,
+    "target": 2,
+    "stroke": 1.5,
+    "name": "letters are my friends"
+  },
+  {
+    "source": 59,
+    "target": 2,
+    "stroke": 5,
+    "name": "lil'ol'lady"
+  },
+  {
+    "source": 60,
+    "target": 2,
+    "stroke": 5,
+    "name": "linda liukas"
+  },
+  {
+    "source": 61,
+    "target": 2,
+    "stroke": 5,
+    "name": "lizzie mary cullen"
+  },
+  {
+    "source": 62,
+    "target": 4,
+    "stroke": 5,
+    "name": "lullatone + jono brandel"
+  },
+  {
+    "source": 63,
+    "target": 2,
+    "stroke": 5,
+    "name": "made thought"
+  },
+  {
+    "source": 64,
+    "target": 1,
+    "stroke": 4,
+    "name": "matt lambert"
+  },
+  {
+    "source": 64,
+    "target": 2,
+    "stroke": 1,
+    "name": "matt lambert"
+  },
+  {
+    "source": 65,
+    "target": 0,
+    "stroke": 3,
+    "name": "mau morgo"
+  },
+  {
+    "source": 65,
+    "target": 1,
+    "stroke": 2,
+    "name": "mau morgo"
+  },
+  {
+    "source": 66,
+    "target": 2,
+    "stroke": 5,
+    "name": "michael cina"
+  },
+  {
+    "source": 67,
+    "target": 2,
+    "stroke": 5,
+    "name": "mirko borsche"
+  },
+  {
+    "source": 68,
+    "target": 1,
+    "stroke": 5,
+    "name": "momoco"
+  },
+  {
+    "source": 69,
+    "target": 2,
+    "stroke": 5,
+    "name": "monika mogi"
+  },
+  {
+    "source": 70,
+    "target": 1,
+    "stroke": 5,
+    "name": "morphika"
+  },
+  {
+    "source": 71,
+    "target": 1,
+    "stroke": 5,
+    "name": "mpc"
+  },
+  {
+    "source": 72,
+    "target": 2,
+    "stroke": 5,
+    "name": "mr bingo"
+  },
+  {
+    "source": 73,
+    "target": 0,
+    "stroke": 1.5,
+    "name": "mucho"
+  },
+  {
+    "source": 73,
+    "target": 1,
+    "stroke": 2,
+    "name": "mucho"
+  },
+  {
+    "source": 74,
+    "target": 2,
+    "stroke": 5,
+    "name": "musketon"
+  },
+  {
+    "source": 75,
+    "target": 0,
+    "stroke": 5,
+    "name": "neville brody"
+  },
+  {
+    "source": 76,
+    "target": 0,
+    "stroke": 1.5,
+    "name": "noelia lozano"
+  },
+  {
+    "source": 76,
+    "target": 1,
+    "stroke": 3,
+    "name": "noelia lozano"
+  },
+  {
+    "source": 76,
+    "target": 2,
+    "stroke": 0.5,
+    "name": "noelia lozano"
+  },
+  {
+    "source": 77,
+    "target": 1,
+    "stroke": 2.5,
+    "name": "non-format"
+  },
+  {
+    "source": 77,
+    "target": 2,
+    "stroke": 2.5,
+    "name": "non-format"
+  },
+  {
+    "source": 78,
+    "target": 1,
+    "stroke": 5,
+    "name": "onesize"
+  },
+  {
+    "source": 79,
+    "target": 0,
+    "stroke": 1,
+    "name": "outro studio"
+  },
+  {
+    "source": 79,
+    "target": 1,
+    "stroke": 2,
+    "name": "outro studio"
+  },
+  {
+    "source": 79,
+    "target": 2,
+    "stroke": 2,
+    "name": "outro studio"
+  },
+  {
+    "source": 80,
+    "target": 0,
+    "stroke": 5,
+    "name": "pablo garcia"
+  },
+  {
+    "source": 81,
+    "target": 2,
+    "stroke": 5,
+    "name": "pat perry"
+  },
+  {
+    "source": 82,
+    "target": 2,
+    "stroke": 5,
+    "name": "paula scher (pentagram)"
+  },
+  {
+    "source": 83,
+    "target": 1,
+    "stroke": 5,
+    "name": "postpanic"
+  },
+  {
+    "source": 84,
+    "target": 0,
+    "stroke": 2,
+    "name": "random studio"
+  },
+  {
+    "source": 84,
+    "target": 1,
+    "stroke": 2,
+    "name": "random studio"
+  },
+  {
+    "source": 84,
+    "target": 2,
+    "stroke": 1,
+    "name": "random studio"
+  },
+  {
+    "source": 85,
+    "target": 0,
+    "stroke": 1.5,
+    "name": "renascent"
+  },
+  {
+    "source": 85,
+    "target": 1,
+    "stroke": 3.5,
+    "name": "renascent"
+  },
+  {
+    "source": 86,
+    "target": 0,
+    "stroke": 1,
+    "name": "rick banks"
+  },
+  {
+    "source": 86,
+    "target": 2,
+    "stroke": 4,
+    "name": "rick banks"
+  },
+  {
+    "source": 87,
+    "target": 2,
+    "stroke": 5,
+    "name": "rick poynor"
+  },
+  {
+    "source": 88,
+    "target": 1,
+    "stroke": 4,
+    "name": "rik oostenbroek"
+  },
+  {
+    "source": 88,
+    "target": 2,
+    "stroke": 4,
+    "name": "rik oostenbroek"
+  },
+  {
+    "source": 89,
+    "target": 1,
+    "stroke": 5,
+    "name": "rob chiu"
+  },
+  {
+    "source": 90,
+    "target": 0,
+    "stroke": 3,
+    "name": "robert hodgin"
+  },
+  {
+    "source": 90,
+    "target": 1,
+    "stroke": 2,
+    "name": "robert hodgin"
+  },
+  {
+    "source": 91,
+    "target": 1,
+    "stroke": 0.5,
+    "name": "rozon parein"
+  },
+  {
+    "source": 91,
+    "target": 2,
+    "stroke": 4,
+    "name": "rozon parein"
+  },
+  {
+    "source": 92,
+    "target": 0,
+    "stroke": 2.5,
+    "name": "saad moosajee"
+  },
+  {
+    "source": 92,
+    "target": 1,
+    "stroke": 2.5,
+    "name": "saad moosajee"
+  },
+  {
+    "source": 93,
+    "target": 1,
+    "stroke": 5,
+    "name": "saman kesh"
+  },
+  {
+    "source": 94,
+    "target": 2,
+    "stroke": 5,
+    "name": "sawdust"
+  },
+  {
+    "source": 95,
+    "target": 0,
+    "stroke": 4,
+    "name": "sid lee"
+  },
+  {
+    "source": 95,
+    "target": 1,
+    "stroke": 1,
+    "name": "sid lee"
+  },
+  {
+    "source": 96,
+    "target": 2,
+    "stroke": 5,
+    "name": "signalnoise"
+  },
+  {
+    "source": 97,
+    "target": 0,
+    "stroke": 1.5,
+    "name": "snask"
+  },
+  {
+    "source": 97,
+    "target": 1,
+    "stroke": 1,
+    "name": "snask"
+  },
+  {
+    "source": 97,
+    "target": 2,
+    "stroke": 2.5,
+    "name": "snask"
+  },
+  {
+    "source": 98,
+    "target": 1,
+    "stroke": 3,
+    "name": "somerset + mills"
+  },
+  {
+    "source": 98,
+    "target": 2,
+    "stroke": 2,
+    "name": "somerset + mills"
+  },
+  {
+    "source": 99,
+    "target": 0,
+    "stroke": 1.5,
+    "name": "stefan sagmeister"
+  },
+  {
+    "source": 99,
+    "target": 1,
+    "stroke": 1,
+    "name": "stefan sagmeister"
+  },
+  {
+    "source": 99,
+    "target": 2,
+    "stroke": 2.5,
+    "name": "stefan sagmeister"
+  },
+  {
+    "source": 100,
+    "target": 2,
+    "stroke": 5,
+    "name": "steven wilson"
+  },
+  {
+    "source": 101,
+    "target": 1,
+    "stroke": 3.5,
+    "name": "studio blue"
+  },
+  {
+    "source": 101,
+    "target": 2,
+    "stroke": 1.5,
+    "name": "studio blue"
+  },
+  {
+    "source": 102,
+    "target": 0,
+    "stroke": 1,
+    "name": "territory"
+  },
+  {
+    "source": 102,
+    "target": 1,
+    "stroke": 4,
+    "name": "territory"
+  },
+  {
+    "source": 103,
+    "target": 1,
+    "stroke": 5,
+    "name": "the mill"
+  },
+  {
+    "source": 104,
+    "target": 0,
+    "stroke": 0.5,
+    "name": "the six and five studio"
+  },
+  {
+    "source": 104,
+    "target": 2,
+    "stroke": 4,
+    "name": "the six and five studio"
+  },
+  {
+    "source": 105,
+    "target": 2,
+    "stroke": 5,
+    "name": "timothy goodman"
+  },
+  {
+    "source": 106,
+    "target": 0,
+    "stroke": 2.5,
+    "name": "tobias van schneider"
+  },
+  {
+    "source": 106,
+    "target": 2,
+    "stroke": 2.5,
+    "name": "tobias van schneider"
+  },
+  {
+    "source": 107,
+    "target": 0,
+    "stroke": 2.5,
+    "name": "unit9"
+  },
+  {
+    "source": 107,
+    "target": 1,
+    "stroke": 2.5,
+    "name": "unit9"
+  },
+  {
+    "source": 108,
+    "target": 0,
+    "stroke": 5,
+    "name": "ustwo"
+  },
+  {
+    "source": 109,
+    "target": 0,
+    "stroke": 1,
+    "name": "vasava"
+  },
+  {
+    "source": 109,
+    "target": 1,
+    "stroke": 2,
+    "name": "vasava"
+  },
+  {
+    "source": 109,
+    "target": 2,
+    "stroke": 2,
+    "name": "vasava"
+  },
+  {
+    "source": 110,
+    "target": 0,
+    "stroke": 1,
+    "name": "we are seventeen"
+  },
+  {
+    "source": 110,
+    "target": 1,
+    "stroke": 4,
+    "name": "we are seventeen"
+  },
+  {
+    "source": 111,
+    "target": 1,
+    "stroke": 1.5,
+    "name": "yukiko"
+  },
+  {
+    "source": 111,
+    "target": 2,
+    "stroke": 3.5,
+    "name": "yukiko"
+  }
+]
+
+}
