@@ -102,6 +102,17 @@ layout: multiple_layout
 	<!-- cards -->
 	<div class="container packery padded-bottom">
 
+    <div class="col-4 packed">
+			<div class="card center">
+				<a href="/makingtime/"><img src="laboratory/images/makingtime_thumb.png"></a>
+				<div class="padded">
+					<a href="/makingtime/"><h4>Making Time</h4></a>
+					<p>We spent two weeks mashing up time management with our favorite apps and applications.</p>
+				</div>
+			</div>
+		</div>
+
+
 <%#
     <div class="col-4 packed">
       <div class="card center">
@@ -113,24 +124,21 @@ layout: multiple_layout
       </div>
     </div>
 %>
+	<div class="col-4 packed">
+		<div class="card center">
+			<a href="/huddle/"><img src="laboratory/images/huddle_overview.png"></a>
+			<div class="padded">
+				<a href="/huddle/"><h4>Huddle</h4></a>
+				<p>A conference app for the creative community.</p>
+			</div>
+		</div>
+	</div>
 
     <div class="col-4 packed">
       <div class="card center">
           <a href="http://www.toicon.com/series/avocado"><img src="laboratory/images/toicon_avocado.png"></a>
       </div>
     </div>
-
-<%#
-    <div class="col-4 packed">
-      <div class="card center">
-        <a href="work/avent-babymonitor.html"><img src="work/images/avent_compass_overviewsm.jpg"></a>
-        <div class="padded">
-          <a href="work/avent-babymonitor.html"><h4>uGrow Smart Baby Monitor from Philips Avent</h4></a>
-          <p>We worked with Philips Avent to design an app experience for the uGrow Smart Baby Monitor.</p>
-        </div>
-      </div>
-    </div>
-%>
 
 		<div class="col-4 packed">
 			<div class="card center">
@@ -141,19 +149,29 @@ layout: multiple_layout
 				</div>
 			</div>
 		</div>
+    
+    <div class="col-4 packed">
+      <div class="card center">
+        <a href="http://www.futureofcake.com"><img src="laboratory/images/cake_overview.jpg"></a>
+        <div class="padded">
+          <a href="http://www.futureofcake.com"><h4>The Future of Cake</h4></a>
+          <p>The future is almost here, and it's delicious!</p>
+        </div>
+      </div>
+    </div>
 
     <!-- first post from blog -->
     <%= partial(:article_card, locals: { article: page_articles[0] }) %>
 
-		<div class="col-4 packed">
-			<div class="card center">
-				<a href="http://www.futureofcake.com"><img src="laboratory/images/cake_overview.jpg"></a>
-				<div class="padded">
-					<a href="http://www.futureofcake.com"><h4>The Future of Cake</h4></a>
-					<p>The future is almost here, and it's delicious!</p>
-				</div>
-			</div>
-		</div>
+    <div class="col-4 packed">
+      <div class="card center">
+        <a href="work/avent-babymonitor.html"><img src="work/images/avent_compass_overviewsm.jpg"></a>
+        <div class="padded">
+          <a href="work/avent-babymonitor.html"><h4>uGrow Smart Baby Monitor from Philips Avent</h4></a>
+          <p>We worked with Philips Avent to design an app experience for the uGrow Smart Baby Monitor.</p>
+        </div>
+      </div>
+    </div>
 
 		<div class="col-4 packed">
 			<div class="card center">
