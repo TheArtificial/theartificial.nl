@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>OFFF artists by industry</title>
-        <script type="text/javascript" src="library/d3.js"></script>
-        <link rel="stylesheet" type="text/css" href="stylesheets/mainstyle.css">
+        <script type="text/javascript" src="/offf/library/d3.js"></script>
+        <link rel="stylesheet" type="text/css" href="/offf/stylesheets/mainstyle.css">
         <script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript" > </script>
 
       	<script type="text/javascript">
@@ -38,7 +38,7 @@
       <div id="leftpanel">
 
         <div class="event">
-            <a href="http://www.offf.ws/artists/"><img src="images/offf-logo.png" alt="offf-logo"/></a>
+            <a href="http://www.offf.ws/artists/"><img src="/offf/images/offf-logo.png" alt="offf-logo"/></a>
             <h2>WHO ARE OFFF ARTISTS ?</h2>
             <p>OFFF is a three-day festival annually hosting innovative, creative and international speakers for conferences, workshops, activities and performances in Barcelona.</p>
         </div>
@@ -296,7 +296,7 @@
       }
 
       // fetch data and (in the callback) load into the arrays
-      d3.json("data/artist.json", function(error, json) {
+      d3.json("/offf/data/artist.json", function(error, json) {
         graph = json;
         console.log('Fetched', graph);
         draw();
