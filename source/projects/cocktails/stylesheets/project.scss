@@ -1,0 +1,123 @@
+@import "_artificial-colors.scss";
+
+
+/*THEME CHANGES*/
+
+body {
+	background-color: #fddbd1;
+}
+
+.cocktails {
+  #content {
+		background-color: #fddbd1;
+		margin-bottom: 40px;
+
+		.container.packery {
+			margin-top: 0;
+		}
+	}
+
+#header {
+	background-color: #fddbd1;
+	.topbar {
+		border-top-color: #f14a23;
+	}
+
+	.flexcontainer {
+		border-bottom-color: transparent;
+	}
+	#logo {
+		color: #f14a23;
+	}
+
+	#nav-primary {
+		ul {
+			li {
+				a {
+					font-weight: bold;
+					color: #f14a23;
+				}
+				a:hover {
+					color: $white;
+				}
+			}
+			li.active a {
+				color: #f14a23;
+			}
+		}
+	}
+}
+
+#footer {
+		background-color: #f14a23;
+
+		.flexcontainer, #about, #promo
+		{
+			border-top-color: transparent;
+		}
+		h3, h4, p {
+			color: $white;
+		}
+			a {
+			color: #fddbd1;
+		}
+		a:hover {
+			color: #fddbd1;
+		}
+
+	}
+
+.card {
+	background-color: transparent;
+	margin: 0 25px 80px 25px;
+}
+	h1 {
+		color: #f14a23;
+		font-size: 1.4em;
+		line-height: 1.8em;
+	}
+
+	h2 {
+		color: #f14a23;
+		font-size: 1.4em;
+		line-height: .4em;
+	}
+
+	h3 {
+		color: #f14a23;
+		font-size: .9em;
+		margin-top: 15px;
+	}
+
+}
+
+
+.introduction {
+	margin: 120px 0 120px 0;
+	
+}
+
+.card {
+	
+	a.overlaybox {
+		display: block;
+		position: absolute;
+		top: 0px;
+		opacity: 0;
+		transition: opacity .2s linear;
+		margin: 0px 25px 80px 5px;
+
+	}
+	
+	&:hover a.overlaybox {
+		opacity: 1;
+		transition: opacity .2s linear;
+	}
+}
+
+
+@media only screen and (min-device-width: 768px) {
+}
+
+@media (min-width: 960px) {
+}
