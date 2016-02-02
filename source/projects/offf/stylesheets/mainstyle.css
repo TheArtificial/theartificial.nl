@@ -79,6 +79,11 @@ border-right: white 1px solid;
 height:100%;
 }
 
+#container svg {
+height: auto;
+max-width: 100%;
+}
+
 .event{
 margin:10px;
 }
@@ -125,6 +130,7 @@ border: 2px solid white;
 margin: 5px;
 color: white;
 }
+
 .tree a:hover{
 opacity: 0.5;
 }

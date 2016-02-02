@@ -62,7 +62,7 @@
               	<ul>
               			<li><a>COUNTRY</a>
               				<ul> <li>
-                        <h3> In which countries do OFFF artists work from?</h3>
+                        <h3> In which countries OFFF artists are working from?</h3>
                         <h4> interpretation goes here </h4>
                       </li> </ul>
                 </ul>
@@ -70,7 +70,7 @@
             <div class="tree">
               	<ul>
               			<li><a>RECURRENCE</a>
-              				<ul> <li> <h3> Which artists come twice year in row?</h3>
+              				<ul> <li> <h3> Which artists came twice year in row?</h3>
                       <h4> interpretation goes here </h4>
                       </li> </ul>
                 </ul>
@@ -181,13 +181,20 @@
     </script>
 
     <script>
-      var width = 950,
-          height = 750;
+      var
+          width = window.innerWidth,
+          height = window.innerHeight;
+
 
       // SVG selection that holds the visualization
       var svg = d3.select("body").append("svg")
-          .attr("width", width)
-          .attr("height", height);
+          // .attr("width", width)
+          // .attr("height", height)
+          .attr("id", "container")
+          .attr("viewBox", "0 0 " + width + " " + height) //viewbox
+          .append("g")
+          .attr("preserveAspectRatio", "xMidYMid meet");
+
 
       // force layout, used to calculate positions
       var force = d3.layout.force()
@@ -259,7 +266,6 @@
           .style("r", function(d, i) {return d.groupyear ? radius[d.groupyear] : 7;}) // if no groupyear, then it's a category, so 7
           .attr("id","mdr")
           .attr("fill","white")
-          .attr() // why does this seem to be necessary?
           .call(force.drag);
 
         // remove old nodes
@@ -319,7 +325,7 @@
          lol.active = active;
        });
 
-
+      // Nodes labels
       // node.append("text")
       //   .attr("id","lol")
       //   // .attr("dx", 12)
