@@ -214,9 +214,12 @@
       // lookup arrays for styling
       var color = ["blue", "white", "blue","#f3aa84", "#e66964", "#f6c831"];
       var radius = ["100","100","100","4","4","4"]; // the first three shouldn't happen
+      var transparency = ["0","0","0","0.8","0.8","0.8"];
 
       // filter values
       var includeGroupyears = [3,4,5];
+      var includeGroupstatus = [3,4,5];
+      var includeGroupcontinent = [3,4,5,6,7,8];
 
       // load and tick the layout, then draw all the things
       function draw() {
@@ -261,12 +264,24 @@
         nodeSelection = nodeSelection.data(filteredNodes, function(d) { return d.id; });
 
         // draw new nodes
-        nodeSelection.enter().append("circle")
+        var node = nodeSelection.enter()
+          .append("g")
+          .call(force.drag);
+
+        node.append("circle")
           .attr("class", "node") // you have to do this or you can't re-select it!
           .style("r", function(d, i) {return d.groupyear ? radius[d.groupyear] : 7;}) // if no groupyear, then it's a category, so 7
-          .attr("id","mdr")
-          .attr("fill","white")
-          .call(force.drag);
+          .attr("fill","white");
+
+        node.append("text")
+          .attr("id","abc")
+          .attr("dx", 12)
+          .attr("dy", 12)
+          .attr("spacing", 16)
+          .attr("opacity", 0)
+          .attr("opacity", function(d, i) {return d.groupyear ? transparency[d.groupyear] : 1;}) // if no groupyear, then it's a category, so 7
+          .attr("fill", "white")
+          .text(function(d) {return d.name});
 
         // remove old nodes
         nodeSelection.exit().remove();
@@ -275,7 +290,8 @@
       // called by force layout during iteration
       function tick() {
         linkSelection.attr("d", arcPath);
-        nodeSelection.attr("transform", function(d) {
+        nodeSelection
+        .attr("transform", function(d) {
           return "translate(" + d.x + "," + d.y + ")";
         });
       }
@@ -314,28 +330,17 @@
       d3.select("#year3").on("click", function() { includeGroupyears = [1,5]; draw(); });
       d3.select("#year4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });
 
-      d3.select("#label0").on("click", function() {
+
+      d3.select("#label0").on("click", function(d,i) {
         // Determine if current label is visible
-         var active   = lol.active ? false : true,
-           newOpacity = active ? 1 : 0;
+         var active   = abc.active ? false : true,
+           newOpacity = active ? 0.8 : 0;
          // Hide or show the labels
          d3.selectAll("text").attr("opacity", newOpacity);
-         d3.select("body").select("id", "lol");
+         d3.select("body").select("id", "abc");
          // Update whether or not the elements are active
-         lol.active = active;
+         abc.active = active;
        });
 
-      // Nodes labels
-      // node.append("text")
-      //   .attr("id","lol")
-      //   // .attr("dx", 12)
-      //   // .attr("dy", "1em")
-      //   .attr("opacity", "0")
-      //   .attr("alpha", 1.5)
-      //   .attr("spacing", 12)
-      //   .attr("fill", "white")
-      //   // .style("fill", function(d, i) {return color[d.groupyear]; })
-      //   .text(function(d) {return d.name});
-      //
 
     </script>

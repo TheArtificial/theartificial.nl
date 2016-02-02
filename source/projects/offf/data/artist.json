@@ -3,23 +3,23 @@
   "nodes":
 [
   {
-    "name":"digital",
+    "name":"DIGITAL",
     "id": 0
   },
   {
-    "name":"motion",
+    "name":"MOTION",
     "id": 1
   },
   {
-    "name":"print",
+    "name":"PRINT",
     "id": 2
   },
   {
-    "name":"product",
+    "name":"PRODUCT",
     "id": 3
   },
   {
-    "name":"sound design",
+    "name":"SOUND DESIGN",
     "id": 4
   },
   {
