@@ -185,7 +185,6 @@
           width = window.innerWidth,
           height = window.innerHeight;
 
-
       // SVG selection that holds the visualization
       var svg = d3.select("body").append("svg")
           // .attr("width", width)
@@ -321,7 +320,7 @@
       }
 
       // fetch data and (in the callback) load into the arrays
-      d3.json("/offf/data/artist.json", function(error, json) {
+      d3.json("/offf/data/industry.json", function(error, json) {
         graph = json;
         console.log('Fetched', graph);
         draw();
@@ -344,7 +343,5 @@
          // Update whether or not the elements are active
          abc.active = active;
        });
-
-
 
     </script>
