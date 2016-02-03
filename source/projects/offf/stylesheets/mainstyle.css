@@ -58,6 +58,12 @@ body {
     background-color: #090c30;
 }
 
+text {
+font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif;
+text-anchor: left;
+pointer-events: none;
+}
+
 #rightpanel{
 position:fixed;
 float:right;

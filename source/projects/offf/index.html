@@ -212,9 +212,9 @@
           linkSelection = svg.selectAll('.link');
 
       // lookup arrays for styling
-      var color = ["blue", "white", "blue","#f3aa84", "#e66964", "#f6c831"];
+      var color = ["blue", "white", "red","#f3aa84", "#e66964", "#f6c831"];
       var radius = ["100","100","100","4","4","4"]; // the first three shouldn't happen
-      var transparency = ["0","0","0","0.8","0.8","0.8"];
+      var transparency = ["0","0","0","0","0","0"];
 
       // filter values
       var includeGroupyears = [3,4,5];
@@ -270,18 +270,21 @@
 
         node.append("circle")
           .attr("class", "node") // you have to do this or you can't re-select it!
-          .style("r", function(d, i) {return d.groupyear ? radius[d.groupyear] : 7;}) // if no groupyear, then it's a category, so 7
-          .attr("fill","white");
+          .attr("fill", function(d, i) {return d.groupyear ? color[d.groupyear] : "white";}) // if no groupyear, then it's a category, so color white
+          .style("r", function(d, i) {return d.groupyear ? radius[d.groupyear] : 7;}) // if no groupyear, then it's a category, so size 7
+          .style("fill", function(d, i) {return color[d.groupyear]});
+
 
         node.append("text")
-          .attr("id","abc")
-          .attr("dx", 12)
-          .attr("dy", 12)
+          .attr("dx", 8)
+          .attr("dy", 4)
           .attr("spacing", 16)
-          .attr("opacity", 0)
-          .attr("opacity", function(d, i) {return d.groupyear ? transparency[d.groupyear] : 1;}) // if no groupyear, then it's a category, so 7
-          .attr("fill", "white")
+          .attr("id", "abc")
+          .attr("fill", function(d, i) {return d.groupyear ? color[d.groupyear] : "white";}) // if no groupyear, then it's a category, so color white
+          .attr("opacity", function(d, i) {return d.groupyear ? transparency[d.groupyear] : 1;}) // if no groupyear, then it's a category, so opacity 1
+          .attr("opacity", function(d, i) {return transparency[d.groupyear]})
           .text(function(d) {return d.name});
+
 
         // remove old nodes
         nodeSelection.exit().remove();
@@ -334,13 +337,14 @@
       d3.select("#label0").on("click", function(d,i) {
         // Determine if current label is visible
          var active   = abc.active ? false : true,
-           newOpacity = active ? 0.8 : 0;
+           newOpacity = active ? 1 : 0;
          // Hide or show the labels
          d3.selectAll("text").attr("opacity", newOpacity);
-         d3.select("body").select("id", "abc");
+         d3.selectAll("text").select("id", "abc").attr("opacity", newOpacity);
          // Update whether or not the elements are active
          abc.active = active;
        });
+
 
 
     </script>
