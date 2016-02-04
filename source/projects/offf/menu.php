@@ -19,18 +19,12 @@
       						$( this ).parent().children( 'ul' ).slideToggle( 'fast' );
       				});
       				$( '#all' ).click( function() {
-
       					$( '.tree li' ).each( function() {
       						$( this ).toggleClass( 'active' );
       						$( this ).children( 'ul' ).slideToggle( 'fast' );
       					});
       				});
-      				$( '.tree li' ).each( function() {
-      						$( this ).toggleClass( 'active' );
-      						$( this ).children( 'ul' ).slideToggle( 'fast' );
-      				});
       		});
-          
       	</script>
     </head>
 
@@ -44,14 +38,14 @@
             <p>OFFF is a three-day festival annually hosting innovative, creative and international speakers for conferences, workshops, activities and performances in Barcelona.</p>
         </div>
 
-            <div class="tree">
+            <div class="lefttree">
               	<ul>
               			<li><a>INDUSTRY</a>
               				<ul> <li> <h3>Which industries are the most represented at OFFF?</h3>
 <h4> Multi-discipinary studios are the most common artists at OFFF. Isolated, on the edges of the data-viz, we notice that product designers and sound design artists are not so represented. Most artists are pluridisciplinaries, however, the most represented one-industry artist are print artists.</li> </ul>
 </h4></ul>
             </div>
-            <div class="tree">
+            <div class="lefttree">
               	<ul>
               			<li><a>LOCATION</a>
               				<ul> <li><h3> Where are OFFF artists working from? </h3>
@@ -59,7 +53,7 @@
                     </li> </ul>
                 </ul>
             </div>
-            <div class="tree">
+            <div class="lefttree">
               	<ul>
               			<li><a href="/offf/recurrence.html">RECURRENCE</a>
               				<ul> <li>
@@ -68,7 +62,7 @@
                       </li> </ul>
                 </ul>
             </div>
-            <div class="tree">
+            <div class="lefttree">
               	<ul>
               			<li><a>STRUCTURE</a>
               				<ul> <li> <h3> What is OFFF's artists status? </h3>
