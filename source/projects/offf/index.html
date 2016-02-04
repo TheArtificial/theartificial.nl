@@ -225,13 +225,22 @@
 
         // get them from the loaded graph
         var allNodes = graph.nodes.slice(); // slice forces a copy
-            allLinks = graph.links.slice();
+            rawLinks = graph.links.slice();
+
+        // we have to find nodes ourself, because d3.force.links expects objects or indexes.
+        var allLinks = rawLinks.map(function(link) {
+          var source = allNodes.find(function(node){ return node.id === link.source; });
+          var target = allNodes.find(function(node){ return node.id === link.target; });
+          return {source: source, target: target, stroke: link.stroke};
+        });
+
+console.log("allLinks", allLinks);
 
         // pre-start to force allLinks to reference nodes
-        force
-          .nodes(allNodes)
-          .links(allLinks)
-          .start();
+        // force
+        //   .nodes(allNodes)
+        //   .links(allLinks)
+        //   .start();
 
         var filteredNodes = allNodes.filter(filterNode),
             nodeIds = filteredNodes.map(function(node){return node.id}),
