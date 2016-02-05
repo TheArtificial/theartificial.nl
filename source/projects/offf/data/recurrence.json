@@ -39,7 +39,7 @@
     "name": "akqa",
     "id": 8,
     "groupexpertise": [0,1,2],
-    "groupcontinent": [1,3,4],
+    "groupcontinent": [1,3,4,5],
     "groupstatus": 5
   },
   {
@@ -151,7 +151,7 @@
     "name": "daniel aristizábal",
     "id": 24,
     "groupexpertise": [2],
-    "groupcontinent": [4],
+    "groupcontinent": [5],
     "groupstatus": 3
   },
   {
@@ -480,7 +480,7 @@
     "name": "mpc",
     "id": 71,
     "groupexpertise": [1],
-    "groupcontinent": [1,3,4],
+    "groupcontinent": [1,3,4,5],
     "groupstatus": 5
   },
   {
@@ -711,7 +711,7 @@
     "name": "the six and five studio",
     "id": 104,
     "groupexpertise": [0,2],
-    "groupcontinent": [4],
+    "groupcontinent": [5],
     "groupstatus": 5
   },
   {

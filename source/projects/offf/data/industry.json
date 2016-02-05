@@ -23,756 +23,754 @@
     "id": "industry-4"
   },
 
-
-
   {
     "name": "3-10 studio",
     "id": 5,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "aardman animations",
     "id": 6,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "achos!",
     "id": 7,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "akqa",
     "id": 8,
     "groupcontinent": [1,3,4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "andoni beristain",
     "id": 9,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "anton & irene",
     "id": 10,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "atelier",
     "id": 11,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "bakea",
     "id": 12,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
-    "name": "ben fry",
+    "name": "ben fry (fathom)",
     "id": 13,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "brand nu",
     "id": 14,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "córdova canillas",
     "id": 15,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "carl sprague",
     "id": 16,
     "groupcontinent": [4],
     "groupyear": 4,
-    "groupstatus": 4
+    "groupstatus": 2
   },
   {
     "name": "carla cascales",
     "id": 17,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "casey neistat",
     "id": 18,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "casey reas",
     "id": 19,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "chris milk",
     "id": 20,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "chuck anderson",
     "id": 21,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "cocolia",
     "id": 22,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "creativeapplications.net",
     "id": 23,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "daniel aristizábal",
     "id": 24,
     "groupcontinent": [4],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "danny sangra",
     "id": 25,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "david navarro &  claudio guglieri",
     "id": 26,
     "groupcontinent": [3,4],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 5
   },
   {
     "name": "digital kitchen",
     "id": 27,
     "groupcontinent": [4],
     "groupyear": 5,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "dog studio",
     "id": 28,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "dvein",
     "id": 29,
     "groupcontinent": [3,4],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 5
   },
   {
-    "name": "erik natzke",
+    "name": "erik natzke (adobe)",
     "id": 30,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "erik spiekermann",
     "id": 31,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "filipe carvalho",
     "id": 32,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 4
+    "groupstatus": 2
   },
   {
     "name": "foreign policy",
     "id": 33,
     "groupcontinent": [1],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "framed",
     "id": 34,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "futuredekuxe",
     "id": 35,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "gemma o’brien",
     "id": 36,
     "groupcontinent": [2],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "gmunk",
     "id": 37,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 4
+    "groupstatus": 2
   },
   {
     "name": "golan levin",
     "id": 38,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 5
   },
   {
     "name": "hey",
     "id": 39,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "hiro murai",
     "id": 40,
     "groupcontinent": [4],
     "groupyear": 4,
-    "groupstatus": 4
+    "groupstatus": 2
   },
   {
     "name": "holo",
     "id": 41,
     "groupcontinent": [4],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "hush",
     "id": 42,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "ideo",
     "id": 43,
     "groupcontinent": [1,3,4],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "james victore",
     "id": 44,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
-    "name": "jan de coster",
+    "name": "jan de coster (slightly overdone)",
     "id": 45,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "javier jaen",
     "id": 46,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "jean-paul frenay",
     "id": 47,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "john maeda",
     "id": 48,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "johnny cupcakes",
     "id": 49,
     "groupcontinent": [4],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "jon burgerman",
     "id": 50,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
-    "name": "josep maría mir",
+    "name": "josep maría mir (summa)",
     "id": 51,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "joshua davis",
     "id": 52,
     "groupcontinent": [4],
     "groupyear": 5,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "joylabz",
     "id": 53,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "julien vallée",
     "id": 54,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "kiran gandhi",
     "id": 55,
     "groupcontinent": [4],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
-    "name": "kyle cooper",
+    "name": "kyle cooper (prologue)",
     "id": 56,
     "groupcontinent": [4],
     "groupyear": 5,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "laika",
     "id": 57,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "letters are my friends",
     "id": 58,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "lil'ol'lady",
     "id": 59,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "linda liukas",
     "id": 60,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "lizzie mary cullen",
     "id": 61,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "lullatone + jono brandel",
     "id": 62,
     "groupcontinent": [1,4],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 5
   },
   {
     "name": "made thought",
     "id": 63,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "matt lambert",
     "id": 64,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 4
+    "groupstatus": 2
   },
   {
     "name": "mau morgo",
     "id": 65,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "michael cina",
     "id": 66,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "mirko borsche",
     "id": 67,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "momoco",
     "id": 68,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "monika mogi",
     "id": 69,
     "groupcontinent": [1],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "morphika",
     "id": 70,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "mpc",
     "id": 71,
     "groupcontinent": [1,3,4],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "mr bingo",
     "id": 72,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "mucho",
     "id": 73,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "musketon",
     "id": 74,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "neville brody",
     "id": 75,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "noelia lozano",
     "id": 76,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "non-format",
     "id": 77,
     "groupcontinent": [3,4],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "onesize",
     "id": 78,
     "groupcontinent": [3,4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "outro studio",
     "id": 79,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "pablo garcia",
     "id": 80,
     "groupcontinent": [4],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "pat perry",
     "id": 81,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "paula scher (pentagram)",
     "id": 82,
     "groupcontinent": [4,3],
     "groupyear": 5,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "postpanic",
     "id": 83,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "random studio",
     "id": 84,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "renascent",
     "id": 85,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "rick banks",
     "id": 86,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "rick poynor",
     "id": 87,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "rik oostenbroek",
     "id": 88,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "rob chiu",
     "id": 89,
     "groupcontinent": [3],
     "groupyear": 5,
-    "groupstatus": 4
+    "groupstatus": 2
   },
   {
     "name": "robert hodgin",
     "id": 90,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "rozon parein",
     "id": 91,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "saad moosajee",
     "id": 92,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "saman kesh",
     "id": 93,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "sawdust",
     "id": 94,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "sid lee",
     "id": 95,
     "groupcontinent": [3,4],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "signalnoise",
     "id": 96,
     "groupcontinent": [4],
     "groupyear": 5,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "snask",
     "id": 97,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "somerset + mills",
     "id": 98,
     "groupcontinent": [3],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "stefan sagmeister",
     "id": 99,
     "groupcontinent": [4],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 4
   },
   {
     "name": "steven wilson",
     "id": 100,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "studio blue",
     "id": 101,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "territory",
     "id": 102,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "the mill",
     "id": 103,
     "groupcontinent": [3,4],
     "groupyear": 5,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "the six and five studio",
     "id": 104,
     "groupcontinent": [4],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "timothy goodman",
     "id": 105,
     "groupcontinent": [4],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "tobias van schneider",
     "id": 106,
     "groupcontinent": [4],
     "groupyear": 4,
-    "groupstatus": 3
+    "groupstatus": 1
   },
   {
     "name": "unit9",
     "id": 107,
     "groupcontinent": [3,4],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "ustwo",
     "id": 108,
     "groupcontinent": [2,3,4],
     "groupyear": 4,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "vasava",
     "id": 109,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "we are seventeen",
     "id": 110,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   },
   {
     "name": "yukiko",
     "id": 111,
     "groupcontinent": [3],
     "groupyear": 3,
-    "groupstatus": 5
+    "groupstatus": 3
   }
 ],
 
