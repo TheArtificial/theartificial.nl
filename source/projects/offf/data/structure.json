@@ -15,8 +15,12 @@
     "id": "structure-2"
   },
   {
-    "name":"EPONYMAGENCY",
+    "name":"EPONYM AGENCY",
     "id": "structure-3"
+  },
+  {
+    "name":"COLLECTIVE",
+    "id": "structure-4"
   },
 
 
@@ -775,6 +779,10 @@
 "links":
 [
   {
+    "source": "structure-3",
+    "target": "structure-2"
+  },
+  {
     "source": 5,
     "target": "structure-2"
   },
@@ -860,7 +868,7 @@
   },
   {
     "source": 26,
-    "target": "collective"
+    "target": "structure-4"
   },
   {
     "source": 27,
@@ -872,7 +880,7 @@
   },
   {
     "source": 29,
-    "target": "collective"
+    "target": "structure-4"
   },
   {
     "source": 30,
@@ -908,7 +916,7 @@
   },
   {
     "source": 38,
-    "target": "collective"
+    "target": "structure-4"
   },
   {
     "source": 39,
@@ -1004,7 +1012,7 @@
   },
   {
     "source": 62,
-    "target": "collective"
+    "target": "structure-4"
   },
   {
     "source": 63,
