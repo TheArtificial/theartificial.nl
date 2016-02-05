@@ -80,37 +80,40 @@
 <div id="rightpanel">
           <div class="tree">
              <ul>
-                 <li id="continent0"><a>CONTINENT</a>
+                 <li id="continent0"><a>Continent</a>
                    <ul>
-                     <li id="continent1"><a>Africa</a></li>
-                     <li id="continent2"><a>Asia</a></li>
-                     <li id="continent3"><a>Australia</a></li>
-                     <li id="continent4"><a>Europe</a></li>
-                     <li id="continent5"><a>North America</a></li>
-                     <li id="continent6"><a>South America</a></li>
+                     <li id="continent1"><a>Asia</a></li>
+                     <li id="continent2"><a>Australia</a></li>
+                     <li id="continent3"><a>Europe</a></li>
+                     <li id="continent4"><a>North America</a></li>
+                     <li id="continent5"><a>South America</a></li>
+                     <li id="continent6"><a>Any</a></li>
                    </ul>
                  </li>
              </ul>
          </div>
         <div class="tree">
           	<ul>
-          			<li id="year0"><a>YEAR</a>
+          			<li id="year0"><a>Year</a>
           				<ul>
-          					<li id="year1" input type="button"><a>2015</a></li>
+          					<li id="year1"><a>2015</a></li>
           					<li id="year2"><a>2016</a></li>
           					<li id="year3"><a>2015 and 2016</a></li>
-                    <li id="year4"><a>any</a></li>
+                    <li id="year4"><a>Any</a></li>
           				</ul>
           			</li>
           	</ul>
        </div>
         <div class="tree">
              <ul>
-                 <li id="status0"><a>STATUS</a>
+                 <li id="status0"><a>Status</a>
                    <ul>
                      <li id="status1"><a>Independant</a></li>
                      <li id="status2"><a>Represented</a></li>
                      <li id="status3"><a>Agency</a></li>
+                     <li id="status4"><a>Eponym agency</a></li>
+                     <li id="status5"><a>Collective</a></li>
+                     <li id="status6"><a>Any</a></li>
                    </ul>
                  </li>
              </ul>
@@ -169,7 +172,7 @@
         $('.tree li').removeClass('selected');
         $(this).addClass('selected');
     });
-    $('#structure0 li').click(function() {
+    $('#status0 li').click(function() {
         $('.tree li').removeClass('selected');
         $(this).addClass('selected');
     });
