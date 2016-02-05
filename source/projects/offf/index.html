@@ -220,7 +220,7 @@
 
       // filter values
       var includeGroupyears = [3,4,5];
-      var includeGroupstatuss = [1,2,3,4,5];
+      var includeGroupstatus = [1,2,3,4,5];
       var includeGroupcontinents = [1,2,3,4,5];
 
       // load and tick the layout, then draw all the things
@@ -319,11 +319,24 @@ console.log("allLinks", allLinks);
         return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
       }
 
+
+
+      // //  `.some` and `.includes` to evaluate "if some of node.groupcontinents exists in includeGroupcontinents
+      // function filterNode(node) {
+      //   // var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || includeGroupcontinents.includes(node.groupcontinent);
+      //   var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || includeGroupcontinents.includes(node.groupcontinent);
+      //   return (matchesGroupcontinents);
+      // }
+
+
       // apply filters
       function filterNode(node) {
-        return ((typeof node.groupcontinent == "undefined") || includeGroupcontinents.includes(node.groupcontinent));
-
+        var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
+        var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
+        return (matchesGroupyear && matchesGroupstatus);
       }
+
+
 
       function trimLinks(links, nodeIds) {
         results = [];
@@ -351,12 +364,12 @@ console.log("allLinks", allLinks);
       d3.select("#continent4").on("click", function() { includeGroupcontinents = [4]; draw(); });
       d3.select("#continent5").on("click", function() { includeGroupcontinents = [5]; draw(); });
       d3.select("#continent6").on("click", function() { includeGroupcontinents = [1,2,3,4,5]; draw(); });
-      d3.select("#status1").on("click", function() { includeGroupstatuss = [1]; draw(); });  // Groupstatus filter
-      d3.select("#status2").on("click", function() { includeGroupstatuss = [2]; draw(); });
-      d3.select("#status3").on("click", function() { includeGroupstatuss = [3]; draw(); });
-      d3.select("#status4").on("click", function() { includeGroupstatuss = [4]; draw(); });
-      d3.select("#status5").on("click", function() { includeGroupstatuss = [5]; draw(); });
-      d3.select("#status6").on("click", function() { includeGroupstatuss = [1,2,3,4,5]; draw(); });
+      d3.select("#status1").on("click", function() { includeGroupstatus = [1]; draw(); });  // Groupstatus filter
+      d3.select("#status2").on("click", function() { includeGroupstatus = [2]; draw(); });
+      d3.select("#status3").on("click", function() { includeGroupstatus = [3]; draw(); });
+      d3.select("#status4").on("click", function() { includeGroupstatus = [4]; draw(); });
+      d3.select("#status5").on("click", function() { includeGroupstatus = [5]; draw(); });
+      d3.select("#status6").on("click", function() { includeGroupstatus = [1,2,3,4,5]; draw(); });
 
 
       d3.select("#label0").on("click", function(d,i) {
