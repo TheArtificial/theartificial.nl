@@ -10,10 +10,7 @@
     "name":"2016",
     "id": "recurrence-1"
   },
-  {
-    "name":"2015 & 2016",
-    "id": "recurrence-2"
-  },
+
 
 
 
@@ -861,7 +858,11 @@
   },
   {
     "source": 27,
-    "target": "recurrence-2"
+    "target": "recurrence-0"
+  },
+  {
+    "source": 27,
+    "target": "recurrence-1"
   },
   {
     "source": 28,
@@ -961,7 +962,11 @@
   },
   {
     "source": 52,
-    "target": "recurrence-2"
+    "target": "recurrence-0"
+  },
+  {
+    "source": 52,
+    "target": "recurrence-1"
   },
   {
     "source": 53,
@@ -977,7 +982,11 @@
   },
   {
     "source": 56,
-    "target": "recurrence-2"
+    "target": "recurrence-0"
+  },
+  {
+    "source": 56,
+    "target": "recurrence-1"
   },
   {
     "source": 57,
@@ -1081,7 +1090,11 @@
   },
   {
     "source": 82,
-    "target": "recurrence-2"
+    "target": "recurrence-0"
+  },
+  {
+    "source": 82,
+    "target": "recurrence-1"
   },
   {
     "source": 83,
@@ -1109,7 +1122,11 @@
   },
   {
     "source": 89,
-    "target": "recurrence-2"
+    "target": "recurrence-0"
+  },
+  {
+    "source": 89,
+    "target": "recurrence-1"
   },
   {
     "source": 90,
@@ -1137,7 +1154,11 @@
   },
   {
     "source": 96,
-    "target": "recurrence-2"
+    "target": "recurrence-0"
+  },
+  {
+    "source": 96,
+    "target": "recurrence-1"
   },
   {
     "source": 97,
@@ -1165,7 +1186,11 @@
   },
   {
     "source": 103,
-    "target": "recurrence-2"
+    "target": "recurrence-0"
+  },
+  {
+    "source": 103,
+    "target": "recurrence-1"
   },
   {
     "source": 104,

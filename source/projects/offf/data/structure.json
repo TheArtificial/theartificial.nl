@@ -14,6 +14,10 @@
     "name":"AGENCY",
     "id": "structure-2"
   },
+  {
+    "name":"EPONYMAGENCY",
+    "id": "structure-3"
+  },
 
 
   {
@@ -766,3 +770,438 @@
     "groupyear": 3
   }
 ],
+
+
+"links":
+[
+  {
+    "source": 5,
+    "target": "structure-2"
+  },
+  {
+    "source": 6,
+    "target": "structure-2"
+  },
+  {
+    "source": 7,
+    "target": "structure-2"
+  },
+  {
+    "source": 8,
+    "target": "structure-2"
+  },
+  {
+    "source": 9,
+    "target": "structure-0"
+  },
+  {
+    "source": 10,
+    "target": "structure-3"
+  },
+  {
+    "source": 11,
+    "target": "structure-2"
+  },
+  {
+    "source": 12,
+    "target": "structure-0"
+  },
+  {
+    "source": 13,
+    "target": "structure-2"
+  },
+  {
+    "source": 14,
+    "target": "structure-2"
+  },
+  {
+    "source": 15,
+    "target": "structure-2"
+  },
+  {
+    "source": 16,
+    "target": "structure-1"
+  },
+  {
+    "source": 17,
+    "target": "structure-0"
+  },
+  {
+    "source": 18,
+    "target": "structure-0"
+  },
+  {
+    "source": 19,
+    "target": "structure-0"
+  },
+  {
+    "source": 20,
+    "target": "structure-3"
+  },
+  {
+    "source": 21,
+    "target": "structure-3"
+  },
+  {
+    "source": 22,
+    "target": "structure-2"
+  },
+  {
+    "source": 23,
+    "target": "structure-2"
+  },
+  {
+    "source": 24,
+    "target": "structure-0"
+  },
+  {
+    "source": 25,
+    "target": "structure-0"
+  },
+  {
+    "source": 26,
+    "target": "collective"
+  },
+  {
+    "source": 27,
+    "target": "structure-2"
+  },
+  {
+    "source": 28,
+    "target": "structure-2"
+  },
+  {
+    "source": 29,
+    "target": "collective"
+  },
+  {
+    "source": 30,
+    "target": "structure-2"
+  },
+  {
+    "source": 31,
+    "target": "structure-3"
+  },
+  {
+    "source": 32,
+    "target": "structure-1"
+  },
+  {
+    "source": 33,
+    "target": "structure-2"
+  },
+  {
+    "source": 34,
+    "target": "structure-2"
+  },
+  {
+    "source": 35,
+    "target": "structure-2"
+  },
+  {
+    "source": 36,
+    "target": "structure-0"
+  },
+  {
+    "source": 37,
+    "target": "structure-1"
+  },
+  {
+    "source": 38,
+    "target": "collective"
+  },
+  {
+    "source": 39,
+    "target": "structure-2"
+  },
+  {
+    "source": 40,
+    "target": "structure-1"
+  },
+  {
+    "source": 41,
+    "target": "structure-2"
+  },
+  {
+    "source": 42,
+    "target": "structure-2"
+  },
+  {
+    "source": 43,
+    "target": "structure-2"
+  },
+  {
+    "source": 44,
+    "target": "structure-3"
+  },
+  {
+    "source": 45,
+    "target": "structure-2"
+  },
+  {
+    "source": 46,
+    "target": "structure-0"
+  },
+  {
+    "source": 47,
+    "target": "structure-3"
+  },
+  {
+    "source": 48,
+    "target": "structure-3"
+  },
+  {
+    "source": 49,
+    "target": "structure-2"
+  },
+  {
+    "source": 50,
+    "target": "structure-0"
+  },
+  {
+    "source": 51,
+    "target": "structure-2"
+  },
+  {
+    "source": 52,
+    "target": "structure-3"
+  },
+  {
+    "source": 53,
+    "target": "structure-0"
+  },
+  {
+    "source": 54,
+    "target": "structure-3"
+  },
+  {
+    "source": 55,
+    "target": "structure-0"
+  },
+  {
+    "source": 56,
+    "target": "structure-2"
+  },
+  {
+    "source": 57,
+    "target": "structure-2"
+  },
+  {
+    "source": 58,
+    "target": "structure-2"
+  },
+  {
+    "source": 59,
+    "target": "structure-0"
+  },
+  {
+    "source": 60,
+    "target": "structure-0"
+  },
+  {
+    "source": 61,
+    "target": "structure-0"
+  },
+  {
+    "source": 62,
+    "target": "collective"
+  },
+  {
+    "source": 63,
+    "target": "structure-2"
+  },
+  {
+    "source": 64,
+    "target": "structure-1"
+  },
+  {
+    "source": 65,
+    "target": "structure-0"
+  },
+  {
+    "source": 66,
+    "target": "structure-0"
+  },
+  {
+    "source": 67,
+    "target": "structure-3"
+  },
+  {
+    "source": 68,
+    "target": "structure-2"
+  },
+  {
+    "source": 69,
+    "target": "structure-0"
+  },
+  {
+    "source": 70,
+    "target": "structure-2"
+  },
+  {
+    "source": 71,
+    "target": "structure-2"
+  },
+  {
+    "source": 72,
+    "target": "structure-0"
+  },
+  {
+    "source": 73,
+    "target": "structure-2"
+  },
+  {
+    "source": 74,
+    "target": "structure-0"
+  },
+  {
+    "source": 75,
+    "target": "structure-2"
+  },
+  {
+    "source": 76,
+    "target": "structure-0"
+  },
+  {
+    "source": 77,
+    "target": "structure-2"
+  },
+  {
+    "source": 78,
+    "target": "structure-2"
+  },
+  {
+    "source": 79,
+    "target": "structure-2"
+  },
+  {
+    "source": 80,
+    "target": "structure-0"
+  },
+  {
+    "source": 81,
+    "target": "structure-0"
+  },
+  {
+    "source": 82,
+    "target": "structure-2"
+  },
+  {
+    "source": 83,
+    "target": "structure-2"
+  },
+  {
+    "source": 84,
+    "target": "structure-2"
+  },
+  {
+    "source": 85,
+    "target": "structure-2"
+  },
+  {
+    "source": 86,
+    "target": "structure-2"
+  },
+  {
+    "source": 87,
+    "target": "structure-0"
+  },
+  {
+    "source": 88,
+    "target": "structure-0"
+  },
+  {
+    "source": 89,
+    "target": "structure-1"
+  },
+  {
+    "source": 90,
+    "target": "structure-0"
+  },
+  {
+    "source": 91,
+    "target": "structure-0"
+  },
+  {
+    "source": 92,
+    "target": "structure-0"
+  },
+  {
+    "source": 93,
+    "target": "structure-0"
+  },
+  {
+    "source": 94,
+    "target": "structure-3"
+  },
+  {
+    "source": 95,
+    "target": "structure-2"
+  },
+  {
+    "source": 96,
+    "target": "structure-0"
+  },
+  {
+    "source": 97,
+    "target": "structure-2"
+  },
+  {
+    "source": 98,
+    "target": "structure-2"
+  },
+  {
+    "source": 99,
+    "target": "structure-3"
+  },
+  {
+    "source": 100,
+    "target": "structure-0"
+  },
+  {
+    "source": 101,
+    "target": "structure-2"
+  },
+  {
+    "source": 102,
+    "target": "structure-2"
+  },
+  {
+    "source": 103,
+    "target": "structure-2"
+  },
+  {
+    "source": 104,
+    "target": "structure-2"
+  },
+  {
+    "source": 105,
+    "target": "structure-0"
+  },
+  {
+    "source": 106,
+    "target": "structure-0"
+  },
+  {
+    "source": 107,
+    "target": "structure-2"
+  },
+  {
+    "source": 108,
+    "target": "structure-2"
+  },
+  {
+    "source": 109,
+    "target": "structure-2"
+  },
+  {
+    "source": 110,
+    "target": "structure-2"
+  },
+  {
+    "source": 111,
+    "target": "structure-2"
+  }
+]
+
+}
