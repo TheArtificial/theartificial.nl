@@ -310,7 +310,6 @@ body {
 }
 
 // gradient colors
-
 .turquoise-palegrass {
 	background-color: $turquoise;
 	background: linear-gradient(to bottom, $pale-grass, $turquoise);
@@ -389,6 +388,15 @@ body {
 		color: $pale-lime;
 	}
 }
+
+// card gradient colors
+.card.turquoise-palegrass, .card.sapphire-palegrape, .card.grape-paletulip, .card.grass-palelime, .card.dandelion-paledandelion, .card.pumpkin-paledandelion, .card.tulip-palepumpkin, .card.grape-palesapphire, .card.sapphire-paleturquoise {
+	color: $white;
+	a {
+		color: $white;
+	}
+}
+
 
 // text colors
 .turquoise-text {	color: $turquoise; }
