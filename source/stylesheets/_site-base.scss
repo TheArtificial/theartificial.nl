@@ -5,6 +5,10 @@
 }
 
 body {
+	background-color: $white;
+}
+
+.work_index, .laboratory_index, .about_index, .blog_index {
 	background-color: $cool-grey-90;
 }
 
@@ -60,14 +64,8 @@ body {
 }
 
 // content
-#content {
-	background-color: $cool-grey-90;
-}
-
-
 .card {
 	background-color: $white;
-
 }
 
 .container.packery {
@@ -115,20 +113,28 @@ body {
 	}
 }
 
+// blog tile colors
+
 .blog-preview.inspiration {
 	background-color: $turquoise;
+	background: linear-gradient(to bottom left, $pale-grass, $turquoise);
 }
 
 .blog-preview.process {
 	background-color: $tulip;
+	background: linear-gradient(to bottom left, $pale-pumpkin, $tulip);
+
 }
 
 .blog-preview.news {
 	background-color: $pumpkin;
+	background: linear-gradient(to bottom left, $pale-dandelion, $pumpkin);
 }
 
 .blog-preview.thoughts {
-	background-color: $grass;
+	background-color: $grape;
+	background: linear-gradient(to bottom, $pale-tulip, $grape);
+;
 }
 
 // footer
@@ -190,16 +196,9 @@ body {
 	}
 }
 
-.white {
-	background-color: white;
-
-	h1, h2, h3, h4, h5, p {
-		color: $cool-grey-90;
-	}
-}
-
-.title {
+.section-title {
 	padding: 60px 0 40px 0;
+	color: white;
 }
 
 .blog-title {
@@ -312,17 +311,9 @@ body {
 	}
 }
 
-#animal-list {
-  .padded {
-		transition: opacity 0.8s ease;
-	}
-	.filter-off {
-		opacity: 0.1;
-	  transition: opacity 0.8s ease;
-	}
-}
+// gradient colors
 
-.bleed.turquoise-palegrass {
+.turquoise-palegrass {
 	background-color: $turquoise;
 	background: linear-gradient(to bottom, $pale-grass, $turquoise);
 	.caption {
@@ -330,7 +321,7 @@ body {
 	}
 }
 
-.bleed.sapphire-palegrape {
+.sapphire-palegrape {
 	background-color: $sapphire;
 	background: linear-gradient(to bottom, $pale-grape, $sapphire);
 	.caption {
@@ -338,7 +329,7 @@ body {
 	}
 }
 
-.bleed.grape-paletulip {
+.grape-paletulip {
 	background-color: $grape;
 	background: linear-gradient(to bottom, $pale-tulip, $grape);
 	.caption {
@@ -346,7 +337,7 @@ body {
 	}
 }
 
-.bleed.tulip-palepumpkin {
+.tulip-palepumpkin {
 	background-color: $tulip;
 	background: linear-gradient(to bottom, $pale-pumpkin, $tulip);
 	.caption {
@@ -354,7 +345,7 @@ body {
 	}
 }
 
-.bleed.pumpkin-paledandelion {
+.pumpkin-paledandelion {
 	background-color: $pumpkin;
 	background: linear-gradient(to bottom, $pale-dandelion, $pumpkin);
 	.caption {
@@ -362,7 +353,7 @@ body {
 	}
 }
 
-.bleed.dandelion-paledandelion {
+.dandelion-paledandelion {
 	background-color: $dandelion;
 	background: linear-gradient(to bottom, $pale-dandelion, $dandelion);
 	.caption {
@@ -370,10 +361,16 @@ body {
 	}
 }
 
-.bleed.grass-paleturquoise {
+.grass-paleturquoise {
 	background-color: $grass;
 	background: linear-gradient(to bottom, $pale-turquoise, $grass);
 	.caption {
 		color: $darkest-turquoise;
 	}
+}
+
+// text colors
+
+.pumpkin-text {
+	color: $pumpkin;
 }

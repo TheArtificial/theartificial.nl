@@ -10,24 +10,19 @@ img + h1, img + h2, img + h3, img + h4, img + h5, img + p {
 h1, h2, h3, h4, h5, p {
 	margin: 0;
 	padding-bottom: 15px;
-	color: $white;
 }
 
 .card {
-		h1, h2, h3, h4, h5, p {
-			color: $cool-grey-90;
-	}
-
 	a {
 		text-decoration: none;
 	}
 }
 
-h1, h2, h4, h5, p, ul, li, td {
+h1, h2, h3, h5, p, ul, li, td {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-h3 {
+h4 {
 	font-family: "Droid Serif", Georgia, Times, serif;
 	font-style: italic;
 }
@@ -70,18 +65,19 @@ h1, h2, h3, h4, h5, p {
 // for mobile
 @media only screen and (min-device-width: 320px) {
 	h1 {
-		font-size: 2em;
-		line-height: 1.25em;
+		font-size: 24px;
+		line-height: 28px;
 	}
 
 	h2 {
-		font-size: 1.625em;
-		line-height: 1.154em;
+		font-size: 18px;
+		line-height: 22px;
 	}
 
 	h3 {
-		font-size: 1.125em;
-		line-height: 1.25em;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: lighter;
 	}
 
 	h4 {
@@ -126,18 +122,18 @@ h1, h2, h3, h4, h5, p {
 // for desktop
 @media only screen and (min-width: 960px) {
 	h1 {
-		font-size: 3em;
-		line-height: 1.05em;
+		font-size: 42px;
+		line-height: 48px;
 	}
 
 	h2 {
-		font-size: 2.25em;
-		line-height: 1.25em;
+		font-size: 20px;
+		line-height: 24px;
 	}
 
 	h3 {
-		font-size: 1.125em;
-		line-height: 1.25em;
+		font-size: 24px;
+		line-height: 28px;
 	}
 
 	h4 {
@@ -159,18 +155,4 @@ h1, h2, h3, h4, h5, p {
 .caption {
 	font-weight: lighter;
 	text-align: center;
-}
-
-@media only screen and (min-device-width: 320px) {
-	.caption {
-		font-size: 24px;
-		line-height: 28px;
-	}
-}
-
-@media only screen and (min-device-width: 768px) {
-	.caption {
-		font-size: 42px;
-		line-height: 48px;
-	}
 }
