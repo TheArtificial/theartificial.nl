@@ -75,47 +75,42 @@ h1, h2, h3, h4, h5, p {
 	}
 
 	h3 {
-		font-size: 20px;
-		line-height: 24px;
+		font-size: 16px;
+		line-height: 20px;
 		font-weight: lighter;
 	}
 
 	h4 {
-		font-size: 1.225em;
-		line-height: 1.11em;
-	}
-
-	h5 {
-		font-size: .8em;
-		line-height: 1.2em;
+		font-size: 20px;
+		line-height: 26px;
 	}
 
 	p, li, ul {
-		font-size: .9em;
-		line-height: 1.25em;
+		font-size: 14px;
+		line-height: 18px;
 	}
 }
 
 // for tablet
 @media only screen and (min-device-width: 768px) {
 	h1 {
-		font-size: 2.5em;
-		line-height: 1.125em;
+		font-size: 32px;
+		line-height: 38px;
 	}
 
 	h2 {
-		font-size: 2em;
-		line-height: 1.25em;
+		font-size: 20px;
+		line-height: 24px;
 	}
 
 	h3 {
-		font-size: 1.125em;
-		line-height: 1.25em;
+		font-size: 18px;
+		line-height: 22px;
 	}
 
 	h4 {
-		font-size: .8em;
-		line-height: 1.2em;
+		font-size: 26px;
+		line-height: 30px;
 	}
 }
 
@@ -137,18 +132,13 @@ h1, h2, h3, h4, h5, p {
 	}
 
 	h4 {
-		font-size: 1.225em;
-		line-height: 1.25em;
-	}
-
-	h5 {
-		font-size: .8em;
-		line-height: 1.2em;
+		font-size: 26px;
+		line-height: 30px;
 	}
 
 	p, li, ul {
-		font-size: .9em;
-		line-height: 1.25em;
+		font-size: 14px;
+		line-height: 18px;
 	}
 }
 

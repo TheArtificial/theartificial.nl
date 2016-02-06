@@ -101,9 +101,7 @@ body {
 			color: $white;
 		}
 
-		h3 {
-			font-size: 1.6em;
-			line-height: 1.2em;
+		h4 {
 			min-height: 160px;
 		}
 
@@ -329,11 +327,26 @@ body {
 	}
 }
 
+.sapphire-paleturquoise {
+	background-color: $sapphire;
+	background: linear-gradient(to bottom, $pale-turquoise, $sapphire);
+	.caption {
+		color: $pale-turquoise;
+	}
+}
+
 .grape-paletulip {
 	background-color: $grape;
 	background: linear-gradient(to bottom, $pale-tulip, $grape);
 	.caption {
 		color: $pale-tulip;
+	}
+}
+.grape-palesapphire {
+	background-color: $grape;
+	background: linear-gradient(to bottom, $pale-sapphire, $grape);
+	.caption {
+		color: $pale-sapphire;
 	}
 }
 
@@ -369,8 +382,19 @@ body {
 	}
 }
 
-// text colors
-
-.pumpkin-text {
-	color: $pumpkin;
+.grass-palelime {
+	background-color: $grass;
+	background: linear-gradient(to bottom, $pale-lime, $grass);
+	.caption {
+		color: $pale-lime;
+	}
 }
+
+// text colors
+.turquoise-text {	color: $turquoise; }
+.grass-text {	color: $grass; }
+.dandelion-text {	color: $dandelion; }
+.pumpkin-text {	color: $pumpkin; }
+.tulip-text {	color: $tulip; }
+.grape-text {	color: $grape; }
+.sapphire-text { color: $sapphire; }
