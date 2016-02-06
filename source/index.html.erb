@@ -2,251 +2,110 @@
 layout: multiple_layout
 ---
 
-<script type="text/javascript">
-  // when the DOM is ready...
-  $('document').ready(function(){
-    // carousel
-    $('#carousel').theArtificialCarousel({
-      scrollingSelector: '.scrolling',
-      overlaySelector: '.overlay',
-      ga: true
-    });
-  });
-</script>
-
-<!-- page content -->
-<section id="content">
-
-	<!-- carousel -->
-	<!-- sets the backgrounds for the carousel slides-->
-	<style>
-	    #slide-one, #f-slide-one {
-	        background:url('images/intro_one.jpg') no-repeat center center;
-	        background-size: cover;
-	    }
-	    #slide-two, #f-slide-two {
-	        background:url('images/intro_two.jpg') no-repeat center center;
-	        background-size: cover;
-	    }
-	    #slide-three, #f-slide-three {
-	        background:url('images/intro_three.jpg') no-repeat center center;
-	        background-size: cover;
-	    }
-			#slide-four, #f-slide-four {
-	        background:url('images/intro_four.jpg') no-repeat center center;
-	        background-size: cover;
-	    }==
-
-	/* Retina targeting */
-	@media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {
-	        #slide-3ds {
-	            background:url('images/intro_one@2x.jpg') no-repeat center center;
-	            background-size: cover;
-	        }
-	        #slide-startups {
-	            background:url('images/intro_two@2x.jpg') no-repeat center center;
-	            background-size: cover;
-	        }
-	        #slide-death {
-	            background:url('images/intro_three@2x.jpg') no-repeat center center;
-	            background-size: cover;
-	        }
-					#slide-icon {
-			        background:url('images/intro_four@2x.jpg') no-repeat center center;
-			        background-size: cover;
-			    }
-	    }
-	</style>
-
-	<div id="carousel">
-		<div class="overlay-background">
-			<div class="container">
-				<div class="padded">
-					<div class="overlay" id="overlay-one">
-						<h2><span class="static">The Artificial</span> <span class="italic">is a boutique UX agency.</span></h2>
-						<p>We are international designers working in the heart of Amsterdam. We've worked in the United States, Portugal, France, China, England, India, Germany, and the Netherlands.</p>
-					</div>
-					<div class="overlay" id="overlay-two">
-						<h2><span class="static">The Artificial</span> <span class="italic">designs beautiful and rational experiences for new products and services.</span></h2>
-						<p>We approach problems with an inquisitive mindset, and create solutions that beautifully address business, technological, and behavioral needs.</p>
-					</div>
-					<div class="overlay" id="overlay-three">
-						<h2><span class="static">The Artificial</span> <span class="italic">has experience with all stages of business and software development.</span></h2>
-						<p>We can integrate design throughout the product lifecycle, from strategy through implementation.</p>
-					</div>
-					<div class="overlay" id="overlay-four">
-						<h2><span class="static">The Artificial</span> <span class="italic">works with clients of all sizes.</span></h2>
-						<p>We’ve worked with tiny startups to realize their big ideas, and we’ve helped large corporations be more nimble.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	  <div class="scrolling">
-	    <ol class="scrolling-wrapper">
-	      <li class="slide" id="slide-one"
-	          data-overlay="#overlay-one"
-	          >&nbsp;</li>
-	      <li class="slide" id="slide-two"
-	          data-overlay="#overlay-two"
-	          >&nbsp;</li>
-	      <li class="slide" id="slide-three"
-	          data-overlay="#overlay-three"
-	          >&nbsp;</li>
-	      <li class="slide" id="slide-four"
-	          data-overlay="#overlay-four"
-	          >&nbsp;</li>
-	    </ol>
-	  </div>
-	</div>
-
-	<!-- cards -->
-	<div class="container packery padded-bottom">
-
-    <div class="col-4 packed">
-			<div class="card center">
-				<a href="/makingtime/"><img src="laboratory/images/makingtime_thumb.png"></a>
-				<div class="padded">
-					<a href="/makingtime/"><h4>Making Time</h4></a>
-					<p>We spent two weeks mashing up time management with our favorite apps and applications.</p>
-				</div>
-			</div>
-		</div>
-
-
-<%#
-    <div class="col-4 packed">
-      <div class="card center">
-        <a href="work/travelbird-site.html"><img src="work/images/travelbird_overviewsm.jpg"></a>
-        <div class="padded">
-          <a href="work/travelbird-site.html"><h4>TravelBird Website</h4></a>
-          <p>We worked with TravelBird to envision a future website that could showcase new types of content without losing focus on the travel package deals.</p>
-        </div>
+<div class="bleed turquoise-palegrass">
+  <div class="flexcontainer">
+    <div class="col-6 left-3 right-3">
+      <div class="padded">
+        <img src="images/cover_beautifulrational.png">
       </div>
     </div>
-%>
-	<div class="col-4 packed">
-		<div class="card center">
-			<a href="/huddle/"><img src="laboratory/images/huddle_overview.png"></a>
-			<div class="padded">
-				<a href="/huddle/"><h4>Huddle</h4></a>
-				<p>A conference app for the creative community.</p>
-			</div>
-		</div>
-	</div>
-
-    <div class="col-4 packed">
-      <div class="card center">
-          <a href="http://www.toicon.com/series/avocado"><img src="laboratory/images/toicon_avocado.png"></a>
+    <div class="col-10 right-1 left-1">
+      <div class="padded">
+        <h1 class="caption">We design beautiful and rational experiences.</h1>
       </div>
     </div>
+  </div>
+</div>
 
-		<div class="col-4 packed">
-			<div class="card center">
-				<a href="work/sonicare-sims.html"><img src="work/images/sonicare_sims_max.jpg"></a>
-				<div class="padded">
-					<a href="work/sonicare-sims.html"><h4>Philips Sonicare in The Sims FreePlay</h4></a>
-					<p>We worked with Philips Sonicare to capture new audiences through gaming.</p>
-				</div>
-			</div>
-		</div>
-    
-    <div class="col-4 packed">
-      <div class="card center">
-        <a href="http://www.futureofcake.com"><img src="laboratory/images/cake_overview.jpg"></a>
-        <div class="padded">
-          <a href="http://www.futureofcake.com"><h4>The Future of Cake</h4></a>
-          <p>The future is almost here, and it's delicious!</p>
-        </div>
+<div class="bleed sapphire-palegrape">
+  <div class="flexcontainer">
+    <div class="col-6 left-3 right-3">
+      <div class="padded">
+        <img src="images/cover_integration.png">
       </div>
     </div>
-
-    <!-- first post from blog -->
-    <%= partial(:article_card, locals: { article: page_articles[0] }) %>
-
-    <div class="col-4 packed">
-      <div class="card center">
-        <a href="work/avent-babymonitor.html"><img src="work/images/avent_compass_overviewsm.jpg"></a>
-        <div class="padded">
-          <a href="work/avent-babymonitor.html"><h4>uGrow Smart Baby Monitor from Philips Avent</h4></a>
-          <p>We worked with Philips Avent to design an app experience for the uGrow Smart Baby Monitor.</p>
-        </div>
+    <div class="col-10 right-1 left-1">
+      <div class="padded">
+        <h1 class="caption">We design integrated product and service ecosystems.</h1>
       </div>
     </div>
+  </div>
+</div>
 
-		<div class="col-4 packed">
-			<div class="card center">
-				<a href="work/3DSystems-professional.html"><img src="work/images/3DS_professional_range.jpg"></a>
-				<div class="padded">
-					<a href="work/3DSystems-professional.html"><h4>3D Systems Professional Tools</h4></a>
-					<p>We worked with 3D Systems to create a design language for their professional product line.</p>
-				</div>
-			</div>
-		</div>
-
-    <div class="col-4 packed">
-      <div class="card center">
-          <a href="http://www.toicon.com/series/afiado"><img src="laboratory/images/toicon_afiado.png"></a>
+<div class="bleed grape-paletulip">
+  <div class="flexcontainer">
+    <div class="col-6 left-3 right-3">
+      <div class="padded">
+        <img src="images/cover_diversity.png">
       </div>
     </div>
-
-		<div class="col-4 packed">
-			<div class="card center">
-				<a href="work/monolith.html"><img src="work/images/monolith_workshop.jpg"></a>
-				<div class="padded">
-					<a href="work/monolith.html"><h4>Monolith</h4></a>
-					<p>We did a series of short workshops with Monolith to evolve and refine their product.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-4 packed">
-			<div class="card center">
-        <a href="https://dribbble.com/VeryArtificial"><img src="images/img_dribbble.png"></a>
-				<div class="padded">
-					<a href="https://dribbble.com/VeryArtificial"><h4>Catch our latest shots on dribbble</h4></a>
-				</div>
-			</div>
-		</div>
-
-    <!-- second post from blog -->
-    <%= partial(:article_card, locals: { article: page_articles[1] }) %>
-
-    <div class="col-4 packed">
-      <div class="card center">
-          <a href="http://www.toicon.com/series/fandom"><img src="laboratory/images/toicon_fandom.png"></a>
+    <div class="col-10 right-1 left-1">
+      <div class="padded">
+        <h1 class="caption">We enjoy creating experiences for multiple markets with diverse partners.</h1>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="col-4 packed">
-			<div class="card center">
-				<a href="work/pilogs.html"><img src="work/images/pilogs_interface.jpg"></a>
-				<div class="padded">
-					<a href="work/pilogs.html"><h4>PI.logs</h4></a>
-					<p>When the product you desire doesn't exist, you have to build it yourself. So we're sharpening our web skills by developing our own service.</p>
-				</div>
-			</div>
-		</div>
-
-    <div class="col-4 packed">
-      <div class="card center">
-        <a href="work/toicon.html"><img src="work/images/toicon_sharpcorners.jpg"></a>
-        <div class="padded">
-          <a href="work/toicon.html"><h4>to [icon]</h4></a>
-          <p>Kata (方) is a honing exercise. Through repetition, the practice refines the basic skills necessary for mastery of a craft. We sought to better ourselves by creating sets of icons, not simply drawing things, but also exploring metaphors for visual communication.</p>
-        </div>
+<div class="bleed tulip-palepumpkin">
+  <div class="flexcontainer">
+    <div class="col-6 left-3 right-3">
+      <div class="padded">
+        <img src="images/cover_details.png">
       </div>
     </div>
-
-    <div class="col-4 packed">
-      <div class="card center">
-        <a href="work/knowledgesharing.html"><img src="work/images/knowledgesharing_layers.jpg"></a>
-        <div class="padded">
-          <a href="work/knowledgesharing.html"><h4>Knowledge Sharing</h4></a>
-          <p>Combining tried-and-true approaches with new ideas can lead to exciting results. We've worked with a handful of startups to form these unique ideas into designs that users can use without having to learn an entirely new set of interactions.</p>
-        </div>
+    <div class="col-10 right-1 left-1">
+      <div class="padded">
+        <h1 class="caption">We believe in getting the details absolutely perfect.</h1>
       </div>
     </div>
+  </div>
+</div>
 
-	</div>
+<div class="bleed pumpkin-paledandelion">
+  <div class="flexcontainer">
+    <div class="col-6 left-3 right-3">
+      <div class="padded">
+        <img src="images/cover_allstages.png">
+      </div>
+    </div>
+    <div class="col-10 right-1 left-1">
+      <div class="padded">
+        <h1 class="caption">We have experience in all stages of business and software development.</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bleed dandelion-paledandelion">
+  <div class="flexcontainer">
+    <div class="col-6 left-3 right-3">
+      <div class="padded">
+        <img src="images/cover_allsizes.png">
+      </div>
+    </div>
+    <div class="col-10 right-1 left-1">
+      <div class="padded">
+        <h1 class="caption">We work with clients of all sizes to create solutions that scale.</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bleed grass-paleturquoise">
+  <div class="flexcontainer">
+    <div class="col-6 left-3 right-3">
+      <div class="padded">
+        <img src="images/cover_toughfun.png">
+      </div>
+    </div>
+    <div class="col-10 right-1 left-1">
+      <div class="padded">
+        <h1 class="caption">We enjoy solving tough problems, but not taking ourselves too seriously.</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </section>

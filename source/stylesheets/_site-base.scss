@@ -321,3 +321,59 @@ body {
 	  transition: opacity 0.8s ease;
 	}
 }
+
+.bleed.turquoise-palegrass {
+	background-color: $turquoise;
+	background: linear-gradient(to bottom, $pale-grass, $turquoise);
+	.caption {
+		color: $darkest-turquoise;
+	}
+}
+
+.bleed.sapphire-palegrape {
+	background-color: $sapphire;
+	background: linear-gradient(to bottom, $pale-grape, $sapphire);
+	.caption {
+		color: $pale-grape;
+	}
+}
+
+.bleed.grape-paletulip {
+	background-color: $grape;
+	background: linear-gradient(to bottom, $pale-tulip, $grape);
+	.caption {
+		color: $pale-tulip;
+	}
+}
+
+.bleed.tulip-palepumpkin {
+	background-color: $tulip;
+	background: linear-gradient(to bottom, $pale-pumpkin, $tulip);
+	.caption {
+		color: $pale-pumpkin;
+	}
+}
+
+.bleed.pumpkin-paledandelion {
+	background-color: $pumpkin;
+	background: linear-gradient(to bottom, $pale-dandelion, $pumpkin);
+	.caption {
+		color: $dark-tulip;
+	}
+}
+
+.bleed.dandelion-paledandelion {
+	background-color: $dandelion;
+	background: linear-gradient(to bottom, $pale-dandelion, $dandelion);
+	.caption {
+		color: $dark-pumpkin;
+	}
+}
+
+.bleed.grass-paleturquoise {
+	background-color: $grass;
+	background: linear-gradient(to bottom, $pale-turquoise, $grass);
+	.caption {
+		color: $darkest-turquoise;
+	}
+}

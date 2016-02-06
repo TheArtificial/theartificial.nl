@@ -155,3 +155,22 @@ h1, h2, h3, h4, h5, p {
 		line-height: 1.25em;
 	}
 }
+
+.caption {
+	font-weight: lighter;
+	text-align: center;
+}
+
+@media only screen and (min-device-width: 320px) {
+	.caption {
+		font-size: 24px;
+		line-height: 28px;
+	}
+}
+
+@media only screen and (min-device-width: 768px) {
+	.caption {
+		font-size: 42px;
+		line-height: 48px;
+	}
+}
