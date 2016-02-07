@@ -22,7 +22,7 @@ body {
 			border-top-color: $white;
 		}
 
-		.flexcontainer {
+		.flex.container {
 			border-bottom-color: $cool-grey-70;
 		}
 		#logo {
@@ -155,7 +155,7 @@ svg *.content{ fill: $cool-grey-40; }
 	#footer {
 		background-color: $cool-grey-90;
 
-		.flexcontainer, #about, #promo
+		.flex.container, #about, #promo
 		{
 			border-top-color: $cool-grey-70;
 		}
