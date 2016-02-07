@@ -85,9 +85,24 @@ body {
 	}
 }
 
+.extra-padded {
+	padding: 48px 16px 24px 16px;
+}
+
 .padded-bottom {
 	padding-bottom: 80px;
 }
+
+// case studies artifacts list
+.bleed.artifacts {
+	padding: 24px 0 24px 0;
+	background-color: $cool-grey-10;
+	color: $cool-grey-90;
+	text-align: center;
+}
+
+svg *.frame { fill: $cool-grey-90; }
+svg *.content{ fill: $cool-grey-40; }
 
 // blog preview tile style
 .blog-preview {
@@ -112,7 +127,6 @@ body {
 }
 
 // blog tile colors
-
 .blog-preview.inspiration {
 	background-color: $turquoise;
 	background: linear-gradient(to bottom left, $pale-grass, $turquoise);
@@ -132,7 +146,6 @@ body {
 .blog-preview.thoughts {
 	background-color: $grape;
 	background: linear-gradient(to bottom, $pale-tulip, $grape);
-;
 }
 
 // footer
@@ -201,10 +214,6 @@ body {
 
 .blog-title {
 	margin-top: 180px;
-}
-
-#casesummary, #person {
-	padding: 40px 0 40px 0;
 }
 
 // eversearch
