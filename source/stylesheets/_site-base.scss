@@ -68,7 +68,6 @@ body {
 
 // content
 .experiment {
-	height: 300px;
 	background-color: $cool-grey-90;
 	color: $white;
 	a {
@@ -82,12 +81,15 @@ body {
 
 @media only screen and (min-device-width: 320px) {
 	.case-study { min-height: 360px; }
+	.experiment { height: 280px; }
 }
 @media only screen and (min-device-width: 768px) {
 	.case-study { height: 400px; }
+	.experiment { height: 240px; }
 }
 @media only screen and (min-width: 960px) {
 	.case-study { height: 480px; }
+	.experiment { height: 300px; }
 }
 
 .card-rule {
