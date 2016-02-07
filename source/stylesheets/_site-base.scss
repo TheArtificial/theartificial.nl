@@ -374,7 +374,7 @@ body.index #header .flex.container {
 // homepage panels
 .slide-panel>.container {
 	height: calc(100vh - 68px); // allowing for fixed header
-	-webkit-scroll-snap-coordinate: 50% calc(50% - 33px); // 1px shy for scrollspy
+	-webkit-scroll-snap-coordinate: 50% calc(50% - 32px); // 2px shy for scrollspy
 
 	.slide-panel-image {
 		height: 80%;

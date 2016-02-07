@@ -2,7 +2,7 @@
   $( document ).ready(function() {
     scrollspy('#nav-panels', $('#header').height(), tweenGradient);
     tweenGradient($('#systems'),0);
-    // $('#header').css('opacity', 0.85);
+    $('#header').css('opacity', 0.85);
     $('.slide-panel').css('background','none');
   });
 
@@ -15,9 +15,9 @@
     if (nextElement.length > 0) {
       var nextTopColor = nextElement.data('gradient-top'),
           nextBottomColor = nextElement.data('gradient-bottom');
-      
+
     }
-    $('#header').css('background-color',topColor);
+    $('#header').css('background-color',bottomColor);
     $('body').css('background-image','linear-gradient('+topColor+', '+bottomColor+')');
   }
 
@@ -48,7 +48,7 @@
 
 <div class="bleed">
 
-  <div class="slide-panel bleed turquoise-palegrass" data-gradient-top="#35B199" data-gradient-bottom="#C2F1A9" id="systems">
+  <div class="slide-panel bleed turquoise-palegrass" data-gradient-bottom="#35B199" data-gradient-top="#C2F1A9" id="systems">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/sonicare-breath_cover.png');">
         &nbsp;
@@ -61,7 +61,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed sapphire-palegrape" data-gradient-top="#2A3F98" data-gradient-bottom="#DCB6E4" id="integrated">
+  <div class="slide-panel bleed sapphire-palegrape" data-gradient-bottom="#2A3F98" data-gradient-top="#DCB6E4" id="integrated">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/avent-ugrow_cover.png');">
         &nbsp;
@@ -74,7 +74,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed grape-paletulip" data-gradient-top="#77278B" data-gradient-bottom="#F1A9BC" id="global">
+  <div class="slide-panel bleed grape-paletulip" data-gradient-bottom="#77278B" data-gradient-top="#F1A9BC" id="global">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/sonicare-sims_cover.png');">
         &nbsp;
@@ -87,7 +87,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed tulip-palepumpkin" data-gradient-top="#CB2853" data-gradient-bottom="#FFD4BF" id="details">
+  <div class="slide-panel bleed tulip-palepumpkin" data-gradient-bottom="#CB2853" data-gradient-top="#FFD4BF" id="details">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/toicon_cover.png');">
         &nbsp;
@@ -100,7 +100,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed pumpkin-paledandelion" data-gradient-top="#FF7632" data-gradient-bottom="#FFE5B2" id="possible">
+  <div class="slide-panel bleed pumpkin-paledandelion" data-gradient-bottom="#FF7632" data-gradient-top="#FFE5B2" id="possible">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/3DS-consumer_cover.png');">
         &nbsp;
@@ -113,7 +113,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed dandelion-paledandelion" data-gradient-top="#FFB626" data-gradient-bottom="#FFE5B2" id="scale">
+  <div class="slide-panel bleed dandelion-paledandelion" data-gradient-bottom="#FFB626" data-gradient-top="#FFE5B2" id="scale">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/knowledgesharing_cover.png');">
         &nbsp;
@@ -126,7 +126,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed grass-paleturquoise" data-gradient-top="#75CB49" data-gradient-bottom="#B6E4DC" id="fun">
+  <div class="slide-panel bleed grass-paleturquoise" data-gradient-bottom="#75CB49" data-gradient-top="#B6E4DC" id="fun">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('laboratory/images/futureofcake_cover.png');">
         &nbsp;
