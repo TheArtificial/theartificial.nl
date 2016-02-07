@@ -1,7 +1,26 @@
 <script>
   $( document ).ready(function() {
-    scrollspy("#nav-panels", $('#header').height());
+    scrollspy('#nav-panels', $('#header').height(), tweenGradient);
+    tweenGradient($('#systems'),0);
+    // $('#header').css('opacity', 0.85);
+    $('.slide-panel').css('background','none');
   });
+
+  function tweenGradient(currentElement, offset) {
+    var topColor = currentElement.data('gradient-top'),
+        bottomColor = currentElement.data('gradient-bottom'),
+        nextElement = currentElement.next('.slide-panel');
+// console.log(currentElement.attr('id'), nextElement.attr('id'));
+// console.log(currentElement.attr('id'), topColor, bottomColor);
+    if (nextElement.length > 0) {
+      var nextTopColor = nextElement.data('gradient-top'),
+          nextBottomColor = nextElement.data('gradient-bottom');
+      
+    }
+    $('#header').css('background-color',topColor);
+    $('body').css('background-image','linear-gradient('+topColor+', '+bottomColor+')');
+  }
+
 </script>
 
 <section id="header-side">
@@ -29,8 +48,8 @@
 
 <div class="bleed">
 
-  <div class="bleed turquoise-palegrass" id="systems">
-    <div class="flex container bleed slide-panel">
+  <div class="slide-panel bleed turquoise-palegrass" data-gradient-top="#35B199" data-gradient-bottom="#C2F1A9" id="systems">
+    <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/sonicare-breath_cover.png');">
         &nbsp;
       </div>
@@ -42,8 +61,8 @@
     </div>
   </div>
 
-  <div class="bleed sapphire-palegrape" id="integrated">
-    <div class="flex container slide-panel">
+  <div class="slide-panel bleed sapphire-palegrape" data-gradient-top="#2A3F98" data-gradient-bottom="#DCB6E4" id="integrated">
+    <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/avent-ugrow_cover.png');">
         &nbsp;
       </div>
@@ -55,8 +74,8 @@
     </div>
   </div>
 
-  <div class="bleed grape-paletulip" id="global">
-    <div class="flex container slide-panel">
+  <div class="slide-panel bleed grape-paletulip" data-gradient-top="#77278B" data-gradient-bottom="#F1A9BC" id="global">
+    <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/sonicare-sims_cover.png');">
         &nbsp;
       </div>
@@ -68,8 +87,8 @@
     </div>
   </div>
 
-  <div class="bleed tulip-palepumpkin" id="details">
-    <div class="flex container slide-panel">
+  <div class="slide-panel bleed tulip-palepumpkin" data-gradient-top="#CB2853" data-gradient-bottom="#FFD4BF" id="details">
+    <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/toicon_cover.png');">
         &nbsp;
       </div>
@@ -81,8 +100,8 @@
     </div>
   </div>
 
-  <div class="bleed pumpkin-paledandelion" id="possible">
-    <div class="flex container slide-panel">
+  <div class="slide-panel bleed pumpkin-paledandelion" data-gradient-top="#FF7632" data-gradient-bottom="#FFE5B2" id="possible">
+    <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/3DS-consumer_cover.png');">
         &nbsp;
       </div>
@@ -94,8 +113,8 @@
     </div>
   </div>
 
-  <div class="bleed dandelion-paledandelion" id="scale">
-    <div class="flex container slide-panel">
+  <div class="slide-panel bleed dandelion-paledandelion" data-gradient-top="#FFB626" data-gradient-bottom="#FFE5B2" id="scale">
+    <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/knowledgesharing_cover.png');">
         &nbsp;
       </div>
@@ -107,8 +126,8 @@
     </div>
   </div>
 
-  <div class="bleed grass-paleturquoise" id="fun">
-    <div class="flex container slide-panel">
+  <div class="slide-panel bleed grass-paleturquoise" data-gradient-top="#75CB49" data-gradient-bottom="#B6E4DC" id="fun">
+    <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('laboratory/images/futureofcake_cover.png');">
         &nbsp;
       </div>

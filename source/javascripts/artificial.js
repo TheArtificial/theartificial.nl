@@ -1,6 +1,6 @@
 // this binds navigation items to items within the body
 // thanks https://jsfiddle.net/mekwall/up4nu/
-function scrollspy(selector, heightOffset) {
+function scrollspy(selector, heightOffset, callback) {
 	var lastId,
 	    menu = $(selector),
 	    menuItems = menu.find("a"),
@@ -12,11 +12,14 @@ function scrollspy(selector, heightOffset) {
 	// Bind click handler to menu items so we can get a fancy scroll animation
 	menuItems.click(function(e){
 	  var href = $(this).attr("href"),
-	      offsetTop = href === "#" ? 0 : $(href).offset().top+1;
+				target = $(href),
+	      offsetTop = href === "#" ? 0 : target.offset().top+1;
     $("html, body").stop().animate({
       scrollTop: (offsetTop - heightOffset)
     }, 300);
     e.preventDefault();
+
+		if (callback != 'undefined') callback(target, 0);
 	});
 
 	// Bind to scroll
@@ -26,13 +29,22 @@ function scrollspy(selector, heightOffset) {
 
 	  // Get id of current scroll item
 	  var cur = scrollItems.map(function(){
-	    if ($(this).offset().top < fromTop)
+	    if ($(this).offset().top < (fromTop + heightOffset))
 	      return this;
 	  });
-	  // Get the id of the current element
 	  cur = cur[cur.length-1];
 	  var id = cur && cur.length ? cur[0].id : "";
 
+		if (id && (callback != 'undefined')) {
+			var	currentElement = $('#'+id),
+					offset = 0;
+			if (currentElement.offset()) {
+				offset = Math.min((fromTop + heightOffset - currentElement.offset().top) / (currentElement.height()),1.0);
+			}
+			callback(currentElement, offset);
+		}
+
+		// update menu
 	  if (lastId !== id) {
       lastId = id;
       menuItems

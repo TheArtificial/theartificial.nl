@@ -15,7 +15,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
-		height: inherit;
+		height: 106px;
 		z-index: 100;
 
 		.topbar {
@@ -89,7 +89,7 @@
 // tablet and desktop
 @media (min-device-width: 768px) {
 	#header {
-		height: inherit;
+		height: 68px;
 
 		#logo {
 			text-align: left;

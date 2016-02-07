@@ -357,9 +357,24 @@ svg *.content{ fill: $cool-grey-40; }
 	}
 }
 
+// for a fixed background
+html {
+	min-height: 100%;
+}
+body {
+	height: 100%;
+	background-attachment: fixed !important;
+	-webkit-scroll-snap-type: mandatory;
+	-webkit-scroll-snap-destination: 50% 50%;
+}
+body.index #header .flex.container {
+	border-bottom-color: $white;
+}
+
 // homepage panels
-.slide-panel {
-	height: calc(100vh - 70px);
+.slide-panel>.container {
+	height: calc(100vh - 68px); // allowing for fixed header
+	-webkit-scroll-snap-coordinate: 50% calc(50% - 33px); // 1px shy for scrollspy
 
 	.slide-panel-image {
 		height: 80%;
@@ -370,6 +385,19 @@ svg *.content{ fill: $cool-grey-40; }
 
 	.slide-panel-caption {
 		height: 20%;
+	}
+}
+
+#nav-panels li {
+	a {
+		text-align: center;
+		color: $white;
+		opacity: 0.75;
+	}
+
+	&.active a {
+		font-size: 200%;
+		opacity: 1;
 	}
 }
 
