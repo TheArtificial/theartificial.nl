@@ -8,7 +8,7 @@ body {
 	background-color: $white;
 }
 
-.laboratory_index, .about_index, .blog_index {
+.about_index, .blog_index {
 	background-color: $cool-grey-90;
 	.section-title {
 		color: $white;
@@ -67,8 +67,13 @@ body {
 }
 
 // content
-.card {
-	background-color: $white;
+.experiment {
+	height: 300px;
+	background-color: $cool-grey-90;
+	color: $white;
+	a {
+		color: $white;
+	}
 }
 
 .container.packery {
@@ -231,10 +236,6 @@ svg *.content{ fill: $cool-grey-40; }
 
 .darkest-grey {
 	background-color: $cool-grey-90;
-}
-
-.dark-grey {
-	background-color: $cool-grey-80;
 }
 
 .grey {
