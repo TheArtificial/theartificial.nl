@@ -215,6 +215,14 @@ svg *.content{ fill: $cool-grey-40; }
 	text-align: center;
 }
 
+.light-text {
+	color: $white;
+}
+
+.dark-text {
+	color: $cool-grey-90;
+}
+
 .darkest-grey {
 	background-color: $cool-grey-90;
 }
@@ -224,6 +232,14 @@ svg *.content{ fill: $cool-grey-40; }
 	h1, a {
 		color: $white;
 	}
+}
+
+.hiring-button {
+	border: 1px solid $white;
+	border-radius: 5px;
+	text-align: center;
+	padding: 12px;
+	color: $white;
 }
 
 .tulip {
@@ -243,6 +259,15 @@ svg *.content{ fill: $cool-grey-40; }
 	a {
 		color: white;
 	}
+}
+
+svg *.about-logo {
+	fill: $cool-grey-90;
+}
+
+.section {
+	padding-top: 64px;
+	padding-bottom: 64px;
 }
 
 .section-title {
