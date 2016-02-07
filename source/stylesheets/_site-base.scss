@@ -8,7 +8,7 @@ body {
 	background-color: $white;
 }
 
-.work_index, .laboratory_index, .about_index, .blog_index {
+.laboratory_index, .about_index, .blog_index {
 	background-color: $cool-grey-90;
 }
 
@@ -92,6 +92,28 @@ body {
 .padded-bottom {
 	padding-bottom: 80px;
 }
+
+@media only screen and (min-device-width: 320px) {
+	.page-description {
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-device-width: 768px) {
+	.page-description {
+		margin-top: 60px;
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.page-description {
+		margin-top: 120px;
+	}
+}
+
+
 
 // case studies artifacts list
 .bleed.artifacts {
@@ -396,6 +418,11 @@ svg *.content{ fill: $cool-grey-40; }
 	.caption {
 		color: $pale-lime;
 	}
+}
+
+.cool-grey-light {
+	background-color: $white;
+	background: linear-gradient(to bottom, $cool-grey-30, $white);
 }
 
 // card gradient colors

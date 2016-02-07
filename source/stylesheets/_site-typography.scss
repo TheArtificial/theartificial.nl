@@ -22,6 +22,10 @@ h1, h2, h3, h5, p, ul, li, td {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+	font-weight: lighter;
+}
+
 h4 {
 	font-family: "Droid Serif", Georgia, Times, serif;
 	font-style: italic;
@@ -144,9 +148,4 @@ h1, h2, h3, h4, h5, p {
 		font-size: 14px;
 		line-height: 18px;
 	}
-}
-
-.caption {
-	font-weight: lighter;
-	text-align: center;
 }
