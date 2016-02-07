@@ -31,8 +31,8 @@ function scrollspy(selector, heightOffset, callback) {
 	      return this;
 	  });
 	  var current = onScreen[onScreen.length-1];
-	  // var id = cur && cur.length ? cur[0].id : "";
-		var id = current[0].id;
+	  var id = current && current.length ? current[0].id : "";
+		// var id = current[0].id;
 
 		if (id && (callback != 'undefined')) {
 			var	currentElement = $('#'+id),
@@ -45,10 +45,25 @@ function scrollspy(selector, heightOffset, callback) {
 
 		// update menu
 	  if (lastId !== id) {
+			menuItems.parent().removeClass("active");
       lastId = id;
-      menuItems
-        .parent().removeClass("active")
-        .end().filter("[href=#"+id+"]").parent().addClass("active");
+			// find the item that is not .prev or .next and has the right href target
+			var currentMenuItem = menuItems.filter('a:not(.next,.prev)[href=#'+id+']');
+			currentMenuItem.parent().addClass('active');
+			var prevMenuItem = currentMenuItem.parent().prev().find('a:not(.prev)');
+			if (prevMenuItem.length > 0) {
+				menuItems.filter('.prev').attr('href',prevMenuItem.attr('href')).parent().removeClass('disabled');
+			} else {
+				console.log("nothing prev", id);
+				menuItems.filter('.prev').parent().addClass('disabled');
+			}
+			var nextMenuItem = currentMenuItem.parent().next().find('a:not(.next)');
+			if (nextMenuItem.length > 0) {
+				menuItems.filter('.next').attr('href',nextMenuItem.attr('href')).parent().removeClass('disabled');
+			} else {
+				console.log("nothing next", id);
+				menuItems.filter('.next').parent().addClass('disabled');
+			}
 	  }
 	});
 }

@@ -471,6 +471,10 @@ html, body {
 			font-size: 200%;
 			opacity: 1;
 		}
+
+		&.disabled {
+			visibility: hidden;
+		}
 	}
 }
 
