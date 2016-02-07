@@ -1,107 +1,133 @@
+<<<<<<< HEAD
 <div class="bleed turquoise-palegrass">
   <div class="flex container">
     <div class="col-6 left-3 right-3">
       <div class="padded">
         <img src="work/images/sonicare-breath_cover.png">
       </div>
-    </div>
-    <div class="col-10 right-1 left-1">
-      <div class="padded">
-        <h1 class="caption">We design beautiful and rational experiences.</h1>
-      </div>
+=======
+<script>
+  $( document ).ready(function() {
+    console.log("setting scrollspy offset", $('#header').height());
+    scrollspy("#nav-panels", $('#header').height());
+  });
+</script>
+
+<section id="header-side">
+
+  <div class="flexcontainer underheader"></div>
+
+  <div class="flexcontainer">
+    <div class="col-1 left-11">
+      <nav id="nav-panels" class="iconlist">
+        <div class="padded">
+          <ul>
+            <li><a href="#systems">&#9632;</a></li>
+            <li><a href="#integrated">&#9632;</a></li>
+            <li><a href="#global">&#9632;</a></li>
+            <li><a href="#details">&#9632;</a></li>
+            <li><a href="#possible">&#9632;</a></li>
+            <li><a href="#scale">&#9632;</a></li>
+            <li><a href="#fun">&#9632;</a></li>
+          </ul>
+        </div>
+      </nav>
+>>>>>>> origin/home-redesign
     </div>
   </div>
-</div>
-
-<div class="bleed sapphire-palegrape">
-  <div class="flex container">
-    <div class="col-6 left-3 right-3">
-      <div class="padded">
-        <img src="work/images/avent-ugrow_cover.png">
-      </div>
-    </div>
-    <div class="col-10 right-1 left-1">
-      <div class="padded">
-        <h1 class="caption">We design integrated product and service ecosystems.</h1>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bleed grape-paletulip">
-  <div class="flex container">
-    <div class="col-6 left-3 right-3">
-      <div class="padded">
-        <img src="work/images/sonicare-sims_cover.png">
-      </div>
-    </div>
-    <div class="col-10 right-1 left-1">
-      <div class="padded">
-        <h1 class="caption">We enjoy creating experiences for multiple markets with diverse partners.</h1>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bleed tulip-palepumpkin">
-  <div class="flex container">
-    <div class="col-6 left-3 right-3">
-      <div class="padded">
-        <img src="work/images/toicon_cover.png">
-      </div>
-    </div>
-    <div class="col-10 right-1 left-1">
-      <div class="padded">
-        <h1 class="caption">We believe in getting the details absolutely perfect.</h1>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bleed pumpkin-paledandelion">
-  <div class="flex container">
-    <div class="col-6 left-3 right-3">
-      <div class="padded">
-        <img src="work/images/3DS-consumer_cover.png">
-      </div>
-    </div>
-    <div class="col-10 right-1 left-1">
-      <div class="padded">
-        <h1 class="caption">We have experience in all stages of business and software development.</h1>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bleed dandelion-paledandelion">
-  <div class="flex container">
-    <div class="col-6 left-3 right-3">
-      <div class="padded">
-        <img src="work/images/knowledgesharing_cover.png">
-      </div>
-    </div>
-    <div class="col-10 right-1 left-1">
-      <div class="padded">
-        <h1 class="caption">We work with clients of all sizes to create solutions that scale.</h1>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bleed grass-paleturquoise">
-  <div class="flex container">
-    <div class="col-6 left-3 right-3">
-      <div class="padded">
-        <img src="laboratory/images/futureofcake_cover.png">
-      </div>
-    </div>
-    <div class="col-10 right-1 left-1">
-      <div class="padded">
-        <h1 class="caption">We enjoy solving tough problems, but not taking ourselves too seriously.</h1>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 </section>
+
+<div class="bleed">
+
+  <div class="bleed turquoise-palegrass" id="systems">
+    <div class="flex container bleed slide-panel">
+      <div class="col-10 slide-panel-image" style="background-image: url('work/images/sonicare-breath_cover.png');">
+        &nbsp;
+      </div>
+      <div class="col-10 right-1 left-1 slide-panel-caption">
+        <div class="padded">
+          <h2>We design beautiful and rational experiences.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bleed sapphire-palegrape" id="integrated">
+    <div class="flex container slide-panel">
+      <div class="col-10 slide-panel-image" style="background-image: url('work/images/avent-ugrow_cover.png');">
+        &nbsp;
+      </div>
+      <div class="col-10 right-1 left-1 slide-panel-caption">
+        <div class="padded">
+          <h2>We design integrated product and service ecosystems.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bleed grape-paletulip" id="global">
+    <div class="flex container slide-panel">
+      <div class="col-10 slide-panel-image" style="background-image: url('work/images/sonicare-sims_cover.png');">
+        &nbsp;
+      </div>
+      <div class="col-10 right-1 left-1 slide-panel-caption">
+        <div class="padded">
+          <h2>We enjoy creating experiences for multiple markets with diverse partners.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bleed tulip-palepumpkin" id="details">
+    <div class="flex container slide-panel">
+      <div class="col-10 slide-panel-image" style="background-image: url('work/images/toicon_cover.png');">
+        &nbsp;
+      </div>
+      <div class="col-10 right-1 left-1 slide-panel-caption">
+        <div class="padded">
+          <h2>We believe in getting the details absolutely perfect.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bleed pumpkin-paledandelion" id="possible">
+    <div class="flex container slide-panel">
+      <div class="col-10 slide-panel-image" style="background-image: url('work/images/3DS-consumer_cover.png');">
+        &nbsp;
+      </div>
+      <div class="col-10 right-1 left-1 slide-panel-caption">
+        <div class="padded">
+          <h2>We have experience in all stages of business and software development.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bleed dandelion-paledandelion" id="scale">
+    <div class="flex container slide-panel">
+      <div class="col-10 slide-panel-image" style="background-image: url('work/images/knowledgesharing_cover.png');">
+        &nbsp;
+      </div>
+      <div class="col-10 right-1 left-1 slide-panel-caption">
+        <div class="padded">
+          <h2>We work with clients of all sizes to create solutions that scale.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bleed grass-paleturquoise" id="fun">
+    <div class="flex container slide-panel">
+      <div class="col-10 slide-panel-image" style="background-image: url('laboratory/images/futureofcake_cover.png');">
+        &nbsp;
+      </div>
+      <div class="col-10 right-1 left-1 slide-panel-caption">
+        <div class="padded">
+          <h2>We enjoy solving tough problems, but not taking ourselves too seriously.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

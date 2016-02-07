@@ -367,84 +367,80 @@ svg *.content{ fill: $cool-grey-40; }
 	}
 }
 
+// homepage panels
+.slide-panel {
+	height: calc(100vh - 70px);
+
+	.slide-panel-image {
+		height: 80%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.slide-panel-caption {
+		height: 20%;
+	}
+}
+
 // gradient colors
 .turquoise-palegrass {
 	background-color: $turquoise;
 	background: linear-gradient(to bottom, $pale-grass, $turquoise);
-	.caption {
-		color: $darkest-turquoise;
-	}
+	color: $darkest-turquoise;
 }
 
 .sapphire-palegrape {
 	background-color: $sapphire;
 	background: linear-gradient(to bottom, $pale-grape, $sapphire);
-	.caption {
-		color: $pale-grape;
-	}
+	color: $pale-grape;
 }
 
 .sapphire-paleturquoise {
 	background-color: $sapphire;
 	background: linear-gradient(to bottom, $pale-turquoise, $sapphire);
-	.caption {
-		color: $pale-turquoise;
-	}
+	color: $pale-turquoise;
 }
 
 .grape-paletulip {
 	background-color: $grape;
 	background: linear-gradient(to bottom, $pale-tulip, $grape);
-	.caption {
-		color: $pale-tulip;
-	}
+	color: $pale-tulip;
 }
 .grape-palesapphire {
 	background-color: $grape;
 	background: linear-gradient(to bottom, $pale-sapphire, $grape);
-	.caption {
-		color: $pale-sapphire;
-	}
+	color: $pale-sapphire;
 }
 
 .tulip-palepumpkin {
 	background-color: $tulip;
 	background: linear-gradient(to bottom, $pale-pumpkin, $tulip);
-	.caption {
-		color: $pale-pumpkin;
-	}
+	color: $pale-pumpkin;
 }
 
 .pumpkin-paledandelion {
 	background-color: $pumpkin;
 	background: linear-gradient(to bottom, $pale-dandelion, $pumpkin);
-	.caption {
-		color: $dark-tulip;
-	}
+	color: $dark-tulip;
 }
 
 .dandelion-paledandelion {
 	background-color: $dandelion;
 	background: linear-gradient(to bottom, $pale-dandelion, $dandelion);
-	.caption {
-		color: $dark-pumpkin;
-	}
+	color: $dark-pumpkin;
 }
 
 .grass-paleturquoise {
 	background-color: $grass;
 	background: linear-gradient(to bottom, $pale-turquoise, $grass);
-	.caption {
-		color: $darkest-turquoise;
-	}
+	color: $darkest-turquoise;
 }
 
 .grass-palelime {
 	background-color: $grass;
 	background: linear-gradient(to bottom, $pale-lime, $grass);
-	.caption {
-		color: $pale-lime;
-	}
+	color: $pale-lime;
 }
 
 // card gradient colors
