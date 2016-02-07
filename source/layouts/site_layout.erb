@@ -62,7 +62,9 @@
 	</div>
 </nav>
 
-<div class="underheader"></div>
+<% if current_resource.url != '/' %>
+	<div class="underheader"></div>
+<% end %>
 
 <%= yield %>
 

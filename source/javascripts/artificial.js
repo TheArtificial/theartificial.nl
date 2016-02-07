@@ -18,8 +18,6 @@ function scrollspy(selector, heightOffset, callback) {
       scrollTop: (offsetTop - heightOffset)
     }, 300);
     e.preventDefault();
-
-		if (callback != 'undefined') callback(target, 0);
 	});
 
 	// Bind to scroll
@@ -28,12 +26,13 @@ function scrollspy(selector, heightOffset, callback) {
 	  var fromTop = $(this).scrollTop();
 
 	  // Get id of current scroll item
-	  var cur = scrollItems.map(function(){
-	    if ($(this).offset().top < (fromTop + heightOffset))
+	  var onScreen = scrollItems.map(function(){
+	    if ($(this).offset().top <= (fromTop + heightOffset))
 	      return this;
 	  });
-	  cur = cur[cur.length-1];
-	  var id = cur && cur.length ? cur[0].id : "";
+	  var current = onScreen[onScreen.length-1];
+	  // var id = cur && cur.length ? cur[0].id : "";
+		var id = current[0].id;
 
 		if (id && (callback != 'undefined')) {
 			var	currentElement = $('#'+id),

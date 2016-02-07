@@ -2,44 +2,47 @@
   $( document ).ready(function() {
     scrollspy('#nav-panels', $('#header').height(), tweenGradient);
     tweenGradient($('#systems'),0);
-    $('#header').css('opacity', 0.85);
     $('.slide-panel').css('background','none');
   });
 
   function tweenGradient(currentElement, offset) {
     var topColor = jQuery.Color(currentElement.data('gradient-top')),
         bottomColor = jQuery.Color(currentElement.data('gradient-bottom')),
+        overlayColor = jQuery.Color(currentElement.data('overlay')),
         nextElement = currentElement.next('.slide-panel');
 // console.log(currentElement.attr('id'), nextElement.attr('id'));
 // console.log(currentElement.attr('id'), topColor, bottomColor);
     if (nextElement.length > 0) {
       var nextTopColor = jQuery.Color(nextElement.data('gradient-top')),
-          nextBottomColor = jQuery.Color(nextElement.data('gradient-bottom'));
+          nextBottomColor = jQuery.Color(nextElement.data('gradient-bottom')),
+          nextOverlayColor = jQuery.Color(nextElement.data('overlay'));
       topColor = topColor.transition(nextTopColor, offset);
       bottomColor = bottomColor.transition(nextBottomColor, offset);
+      overlayColor = overlayColor.transition(nextOverlayColor, offset);
     }
-    $('#header').css('background-color',bottomColor.toHexString());
     $('body').css('background-image','linear-gradient('+topColor.toRgbaString()+', '+bottomColor.toRgbaString()+')');
+    $('#header').css('background-color',overlayColor.alpha(0.25).toRgbaString());
+    $('#nav-panels li').css('background-color',overlayColor.toHexString());
   }
 
 </script>
 
-<section id="header-side">
+<section id="side-nav">
 
-  <div class="flexcontainer underheader"></div>
-
-  <div class="flexcontainer">
+  <div class="flex container">
     <div class="col-1 left-11">
       <nav id="nav-panels" class="iconlist">
         <div class="padded">
           <ul>
-            <li><a href="#systems">&#9632;</a></li>
-            <li><a href="#integrated">&#9632;</a></li>
-            <li><a href="#global">&#9632;</a></li>
-            <li><a href="#details">&#9632;</a></li>
-            <li><a href="#possible">&#9632;</a></li>
-            <li><a href="#scale">&#9632;</a></li>
-            <li><a href="#fun">&#9632;</a></li>
+            <li><a class="prev">&nbsp;</a></li>
+            <li><a href="#systems">&nbsp;</a></li>
+            <li><a href="#integrated">&nbsp;</a></li>
+            <li><a href="#global">&nbsp;</a></li>
+            <li><a href="#details">&nbsp;</a></li>
+            <li><a href="#possible">&nbsp;</a></li>
+            <li><a href="#scale">&nbsp;</a></li>
+            <li><a href="#fun">&nbsp;</a></li>
+            <li><a class="next">&nbsp;</a></li>
           </ul>
         </div>
       </nav>
@@ -49,7 +52,7 @@
 
 <div class="bleed">
 
-  <div class="slide-panel bleed turquoise-palegrass" data-gradient-bottom="#35B199" data-gradient-top="#C2F1A9" id="systems">
+  <div class="slide-panel bleed turquoise-palegrass" data-gradient-bottom="#35B199" data-gradient-top="#C2F1A9" data-overlay="#0A6656" id="systems">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/sonicare-breath_cover.png');">
         &nbsp;
@@ -62,8 +65,9 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed sapphire-palegrape" data-gradient-bottom="#2A3F98" data-gradient-top="#DCB6E4" id="integrated">
+  <div class="slide-panel bleed sapphire-palegrape" data-gradient-bottom="#2A3F98" data-gradient-top="#DCB6E4" data-overlay="#172872" id="integrated">
     <div class="flex container">
+      <!-- <div class="underheader"></div> -->
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/avent-ugrow_cover.png');">
         &nbsp;
       </div>
@@ -75,7 +79,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed grape-paletulip" data-gradient-bottom="#77278B" data-gradient-top="#F1A9BC" id="global">
+  <div class="slide-panel bleed grape-paletulip" data-gradient-bottom="#77278B" data-gradient-top="#F1A9BC" data-overlay="#78288C" id="global">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/sonicare-sims_cover.png');">
         &nbsp;
@@ -88,7 +92,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed tulip-palepumpkin" data-gradient-bottom="#CB2853" data-gradient-top="#FFD4BF" id="details">
+  <div class="slide-panel bleed tulip-palepumpkin" data-gradient-bottom="#CB2853" data-gradient-top="#FFD4BF" data-overlay="#A51138" id="details">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/toicon_cover.png');">
         &nbsp;
@@ -101,7 +105,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed pumpkin-paledandelion" data-gradient-bottom="#FF7632" data-gradient-top="#FFE5B2" id="possible">
+  <div class="slide-panel bleed pumpkin-paledandelion" data-gradient-bottom="#FF7632" data-gradient-top="#FFE5B2" data-overlay="#CC5215" id="possible">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/3DS-consumer_cover.png');">
         &nbsp;
@@ -114,7 +118,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed dandelion-paledandelion" data-gradient-bottom="#FFB626" data-gradient-top="#FFE5B2" id="scale">
+  <div class="slide-panel bleed dandelion-paledandelion" data-gradient-bottom="#FFB626" data-gradient-top="#FFE5B2" data-overlay="#B27200" id="scale">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/knowledgesharing_cover.png');">
         &nbsp;
@@ -127,7 +131,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed grass-paleturquoise" data-gradient-bottom="#75CB49" data-gradient-top="#B6E4DC" id="fun">
+  <div class="slide-panel bleed grass-paleturquoise" data-gradient-bottom="#75CB49" data-gradient-top="#B6E4DC" data-overlay="#0A6656" id="fun">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('laboratory/images/futureofcake_cover.png');">
         &nbsp;
