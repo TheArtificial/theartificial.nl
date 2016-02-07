@@ -8,7 +8,7 @@ body {
 	background-color: $white;
 }
 
-.work_index, .about_index, .blog_index {
+.work_index, .about, .blog_index {
 	background-color: $cool-grey-90;
 	.section-title {
 		color: $white;
@@ -130,7 +130,6 @@ body {
 }
 
 
-
 // case studies artifacts list
 .bleed.artifacts {
 	padding: 24px 0 24px 0;
@@ -141,6 +140,22 @@ body {
 
 svg *.frame { fill: $cool-grey-90; }
 svg *.content{ fill: $cool-grey-40; }
+
+// people styles
+#person {
+	svg {
+		fill: $cool-grey-90;
+	}
+	h1 {
+		font-family: "Open Sans", Helvetica, Arial, sans-serif;
+		font-weight: lighter;
+		font-style: normal;
+	}
+	a {
+		color: $cool-grey-90;
+		text-decoration: underline;
+	}
+}
 
 // blog preview tile style
 .blog-preview {
