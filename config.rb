@@ -121,6 +121,11 @@ activate :blog do |blog|
 end
 page "/blog/feed.xml", layout: false
 
+# WTF, Middleman?
+page 'blog/*', layout: 'blog_layout'
+page 'blog', layout: 'site_layout'
+
+
 set :markdown_engine, :kramdown
 set :markdown, :fenced_code_blocks => true,
                :autolink => true,
