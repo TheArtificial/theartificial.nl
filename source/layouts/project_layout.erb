@@ -5,7 +5,7 @@
   stylesheet_urls = stylesheet_resources.map{ |r| r.url }
   javascript_urls = javascript_resources.map{ |r| r.url }
 %>
-<% wrap_layout :multiple_layout do %>
+<% wrap_layout 'site_layout' do %>
   <% content_for :stylesheet_tags do %>
     <%= stylesheet_link_tag stylesheet_urls %>
   <% end %>
