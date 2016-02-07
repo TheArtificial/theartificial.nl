@@ -8,8 +8,11 @@ body {
 	background-color: $white;
 }
 
-.work_index, .laboratory_index, .about_index, .blog_index {
+.laboratory_index, .about_index, .blog_index {
 	background-color: $cool-grey-90;
+	.section-title {
+		color: $white;
+	}
 }
 
 // top header
@@ -72,26 +75,22 @@ body {
 	margin-top: 20px;
 }
 
-@media only screen and (min-device-width: 320px) {
-	.work_index {
-		.card {
-			min-height: 360px;
-		}
+.case-study {
+	margin: 4px;
+	padding: 20px;
+	img {
+		margin-bottom: 20px;
 	}
+}
+
+@media only screen and (min-device-width: 320px) {
+	.case-study { min-height: 360px; }
 }
 @media only screen and (min-device-width: 768px) {
-	.work_index {
-		.card {
-			height: 400px;
-		}
-	}
+	.case-study { height: 360px; }
 }
 @media only screen and (min-width: 960px) {
-	.work_index {
-		.card{
-			height: 480px;
-		}
-	}
+	.case-study { height: 420px; }
 }
 
 .card {
@@ -234,6 +233,10 @@ svg *.content{ fill: $cool-grey-40; }
 	background-color: $cool-grey-90;
 }
 
+.dark-grey {
+	background-color: $cool-grey-80;
+}
+
 .grey {
 	background-color: $cool-grey-50;
 	h1, a {
@@ -263,7 +266,6 @@ svg *.content{ fill: $cool-grey-40; }
 .section-title {
 	margin-top: 64px;
 	margin-bottom: 32px;
-	color: white;
 	text-align: center;
 }
 
@@ -450,7 +452,7 @@ svg *.content{ fill: $cool-grey-40; }
 }
 
 // card gradient colors
-.card.turquoise-palegrass, .card.sapphire-palegrape, .card.grape-paletulip, .card.grass-palelime, .card.dandelion-paledandelion, .card.pumpkin-paledandelion, .card.tulip-palepumpkin, .card.grape-palesapphire, .card.sapphire-paleturquoise {
+.case-study {
 	color: $white;
 	a {
 		color: $white;
