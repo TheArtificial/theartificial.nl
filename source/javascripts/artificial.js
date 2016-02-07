@@ -16,7 +16,7 @@ function scrollspy(selector, heightOffset, callback) {
 	      offsetTop = href === "#" ? 0 : target.offset().top+1;
     $("html, body").stop().animate({
       scrollTop: (offsetTop - heightOffset)
-    }, 300);
+    }, 600);
     e.preventDefault();
 	});
 
