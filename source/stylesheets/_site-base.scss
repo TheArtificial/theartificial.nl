@@ -73,18 +73,24 @@ body {
 }
 
 @media only screen and (min-device-width: 320px) {
-	.card {
-		min-height: 360px;
+	.work_index {
+		.card {
+			min-height: 360px;
+		}
 	}
 }
 @media only screen and (min-device-width: 768px) {
-	.card {
-		height: 400px;
+	.work_index {
+		.card {
+			height: 400px;
+		}
 	}
 }
 @media only screen and (min-width: 960px) {
-	.card{
-		height: 480px;
+	.work_index {
+		.card{
+			height: 480px;
+		}
 	}
 }
 
