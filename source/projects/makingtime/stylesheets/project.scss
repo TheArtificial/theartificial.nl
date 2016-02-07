@@ -1,5 +1,9 @@
 @import "_artificial-colors.scss";
 
+.makingtime {
+  background-color: $cool-grey-90;
+}
+
 .extra-top {
   padding-top: 40px;
 }
@@ -87,12 +91,12 @@ a.grey-link:hover { color: $warm-grey-50; }
 
   h1 {
     font-family: "Droid Serif", Georgia, Times, serif;
-    font-size: 2.4em;
+    font-size: 42px;
     font-style: italic;
 	}
 
 	h2 {
-		font-size: 1.8em;
+		font-size: 24px;
 		font-weight: normal;
 	}
 
@@ -124,7 +128,7 @@ a.grey-link:hover { color: $warm-grey-50; }
 .contentbox {
 	h3 {
 		font-family: "Open Sans", Helvetica, Arial, sans-serif;
-		font-size: 1em;
+		font-size: 24px;
 		font-style: normal;
 		text-align: center;
 		color: $white;
@@ -184,7 +188,8 @@ a.grey-link:hover { color: $warm-grey-50; }
 .times {
   h1 {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 2.0em;
+    font-size: 32px;
+    line-height: 38px;
     font-style: normal;
   }
 
@@ -234,24 +239,26 @@ a.grey-link:hover { color: $warm-grey-50; }
 .twimmer {
   h1 {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 2.0em;
+    font-size: 26px;
     font-style: normal;
     text-align: center;
   }
 
   h2 {
-    font-size: 1.6em;
+    font-size: 24px;
+    line-height: 28px;
     font-weight: lighter;
     text-align: center;
   }
 
   h3 {
-    font-size: 2.0em;
+    font-size: 30px;
+    line-height: 36px;
     text-align: center;
   }
 
   h4 {
-    font-size: 1.6em;
+    font-size: 24px;
     font-weight: normal;
     text-align: left;
   }
@@ -267,18 +274,22 @@ a.grey-link:hover { color: $warm-grey-50; }
   h1 {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-size: 2.4em;
+    font-size: 32px;
+    line-height: 36px;
     text-align: center;
   }
 
   h2 {
     font-family: "Droid Serif", Georgia, Times, serif;
+    font-size: 24px;
+    line-height: 32px;
     font-style: italic;
     text-align: center;
   }
 
   h4 {
-    font-size: 1.6em;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
@@ -287,7 +298,7 @@ a.grey-link:hover { color: $warm-grey-50; }
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: lighter;
-    font-size: 4.0em;
+    font-size: 54px;
     text-align: center;
   }
 
@@ -299,7 +310,8 @@ a.grey-link:hover { color: $warm-grey-50; }
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: lighter;
-    font-size: 2.0em;
+    font-size: 32px;
+    line-height: 36px;
   }
 
   h3 {
@@ -307,7 +319,7 @@ a.grey-link:hover { color: $warm-grey-50; }
   }
 
   p {
-      font-size: 1.0em;
+      font-size: 16px;
       text-align: left;
   }
 }
@@ -317,17 +329,18 @@ a.grey-link:hover { color: $warm-grey-50; }
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.4em;
+    font-size: 36px;
+    line-height: 40px;
     text-align: center;
   }
 
   h2 {
-    font-size: 1.0em;
+    font-size: 16px;
     text-align: left;
   }
 
   p {
-    font-size: 1.0em;
+    font-size: 14px;
     text-align: left;
   }
 }
@@ -341,11 +354,17 @@ a.grey-link:hover { color: $warm-grey-50; }
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.4em;
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
   }
 
   p {
-    font-size: 1.0em;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -354,13 +373,15 @@ a.grey-link:hover { color: $warm-grey-50; }
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.0em;
+    font-size: 36px;
+    line-height: 38px;
     text-align: center;
   }
 
   h2 {
     font-weight: lighter;
-    font-size: 2.0em;
+    font-size: 32px;
+    line-height: 38px;
     text-align: center;
   }
 
@@ -371,7 +392,6 @@ a.grey-link:hover { color: $warm-grey-50; }
   }
 
   p {
-    font-size: 1.0em;
     text-align: left;
   }
 }
@@ -382,17 +402,19 @@ a.grey-link:hover { color: $warm-grey-50; }
   }
 
   h1 {
-    font-size: 2.0em;
+    font-size: 36px;
+    line-height: 42px;
     font-style: normal;
     text-align: center;
   }
   h2 {
-    font-size: 2.8em;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: lighter;
     text-align: center;
   }
   h3 {
-    font-size: 2.0em;
+    font-size: 24px;
     font-style: normal;
     font-weight: lighter;
   }
@@ -404,7 +426,7 @@ a.grey-link:hover { color: $warm-grey-50; }
   h3 {
     font-family: "Droid Serif", Georgia, Times, serif;
     font-style: italic;
-    font-size: 1.4em;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
     text-transform: none;
