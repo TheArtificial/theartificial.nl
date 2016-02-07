@@ -18,15 +18,11 @@ h1, h2, h3, h4, h5, p {
 	}
 }
 
-h1, h2, h3, h5, p, ul, li, td {
+h2, h4, h5, p, ul, li, td {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-h1 {
-	font-weight: lighter;
-}
-
-h4 {
+h1, h3, p.card-detail {
 	font-family: "Droid Serif", Georgia, Times, serif;
 	font-style: italic;
 }
@@ -68,8 +64,8 @@ h1, h2, h3, h4, h5, p {
 // for mobile
 @media only screen and (min-device-width: 320px) {
 	h1 {
-		font-size: 24px;
-		line-height: 28px;
+		font-size: 32px;
+		line-height: 36px;
 	}
 
 	h2 {
@@ -97,13 +93,13 @@ h1, h2, h3, h4, h5, p {
 // for tablet
 @media only screen and (min-device-width: 768px) {
 	h1 {
-		font-size: 32px;
-		line-height: 38px;
+		font-size: 42px;
+		line-height: 48px;
 	}
 
 	h2 {
-		font-size: 20px;
-		line-height: 24px;
+		font-size: 18px;
+		line-height: 22px;
 	}
 
 	h3 {
@@ -120,8 +116,8 @@ h1, h2, h3, h4, h5, p {
 // for desktop
 @media only screen and (min-width: 960px) {
 	h1 {
-		font-size: 42px;
-		line-height: 48px;
+		font-size: 54px;
+		line-height: 60px;
 	}
 
 	h2 {
@@ -142,10 +138,5 @@ h1, h2, h3, h4, h5, p {
 	h5 {
 		font-size: 12px;
 		line-height: 16px;
-	}
-
-	p, li, ul {
-		font-size: 14px;
-		line-height: 18px;
 	}
 }

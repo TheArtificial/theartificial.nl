@@ -8,7 +8,7 @@ body {
 	background-color: $white;
 }
 
-.laboratory_index, .about_index, .blog_index {
+.work_index, .laboratory_index, .about_index, .blog_index {
 	background-color: $cool-grey-90;
 }
 
@@ -72,6 +72,22 @@ body {
 	margin-top: 20px;
 }
 
+@media only screen and (min-device-width: 320px) {
+	.card {
+		min-height: 360px;
+	}
+}
+@media only screen and (min-device-width: 768px) {
+	.card {
+		height: 400px;
+	}
+}
+@media only screen and (min-width: 960px) {
+	.card{
+		height: 480px;
+	}
+}
+
 .card {
 	.padded {
 		img {
@@ -83,6 +99,15 @@ body {
 		font-size: 1em;
 		text-decoration: none;
 	}
+}
+
+.card-rule {
+	margin: auto;
+	margin-bottom: 16px;
+	width: 40px;
+	height: 1px;
+	display: block;
+	background-color: $white;
 }
 
 .extra-padded {
@@ -230,8 +255,10 @@ svg *.content{ fill: $cool-grey-40; }
 }
 
 .section-title {
-	padding: 60px 0 40px 0;
+	margin-top: 64px;
+	margin-bottom: 32px;
 	color: white;
+	text-align: center;
 }
 
 .blog-title {
@@ -418,11 +445,6 @@ svg *.content{ fill: $cool-grey-40; }
 	.caption {
 		color: $pale-lime;
 	}
-}
-
-.cool-grey-light {
-	background-color: $white;
-	background: linear-gradient(to bottom, $cool-grey-30, $white);
 }
 
 // card gradient colors
