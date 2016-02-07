@@ -1,5 +1,9 @@
 <% wrap_layout :artificial_layout do %>
 
+<% content_for :javascript_tags do %>
+	<%= javascript_include_tag 'jquery.color-2.1.2' %>
+<% end %>
+
 <% content_for :favicon_element do %>
 	<link rel="icon" type="image/png" href="images/favicon_dafault.png" />
 	<link rel="shortcut icon" href="narwhale" type="image/x-icon" />

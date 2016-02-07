@@ -7,18 +7,19 @@
   });
 
   function tweenGradient(currentElement, offset) {
-    var topColor = currentElement.data('gradient-top'),
-        bottomColor = currentElement.data('gradient-bottom'),
+    var topColor = jQuery.Color(currentElement.data('gradient-top')),
+        bottomColor = jQuery.Color(currentElement.data('gradient-bottom')),
         nextElement = currentElement.next('.slide-panel');
 // console.log(currentElement.attr('id'), nextElement.attr('id'));
 // console.log(currentElement.attr('id'), topColor, bottomColor);
     if (nextElement.length > 0) {
-      var nextTopColor = nextElement.data('gradient-top'),
-          nextBottomColor = nextElement.data('gradient-bottom');
-
+      var nextTopColor = jQuery.Color(nextElement.data('gradient-top')),
+          nextBottomColor = jQuery.Color(nextElement.data('gradient-bottom'));
+      topColor = topColor.transition(nextTopColor, offset);
+      bottomColor = bottomColor.transition(nextBottomColor, offset);
     }
-    $('#header').css('background-color',bottomColor);
-    $('body').css('background-image','linear-gradient('+topColor+', '+bottomColor+')');
+    $('#header').css('background-color',bottomColor.toHexString());
+    $('body').css('background-image','linear-gradient('+topColor.toRgbaString()+', '+bottomColor.toRgbaString()+')');
   }
 
 </script>
