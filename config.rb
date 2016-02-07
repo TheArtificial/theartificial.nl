@@ -99,6 +99,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+page '*', layout: 'site_layout'
+
 Time.zone = "Amsterdam"
 
 # Blog

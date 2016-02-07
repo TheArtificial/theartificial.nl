@@ -22,7 +22,7 @@
 <% content_for :keywords, "design" %>
 
 <%# TODO add URL for opengraph %>
-<% content_for :url, "http://www.theartificial.nl" %>
+<% content_for :url, "http://www.theartificial.nl/" %>
 
 <%# TODO add image for opengraph %>
 <% content_for :image, "http://www.theartificial.nl/images/img_default.png" %>
@@ -32,24 +32,33 @@
 
 <script type="text/javascript">
 	$( document ).ready(function() {
-	  // scrollspy("#nav-primary", 30);
+	  scrollspy("#nav-primary", 30);
 		// eversearch();
 		listfilter();
 	});
 </script>
 
-<%
-    def get_nav_svg(name)
-      path = "images/ic_#{name}.svg"
-      if resource = sitemap.find_resource_by_path(path)
-        file = File.open(resource.source_file, 'r')
-        return file.read
-      else
-        return '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 32 32" xml:space="preserve"><rect x="0" y="0" height="32" width="32" rx="6" ry="6" fill="#19150D"></rect></svg>'
-      end
-    end
-%>
+<nav id="header">
+	<div class="flex container topbar">
+		<div class="col-4">
+			<div class="padded-lr">
+				<a href="/index.html"><h2 id="logo">The Artificial</h2></a>
+			</div>
+		</div>
+		<div id="nav-primary" class="col-8">
+			<div class="padded-lr">
+				<ul>
+					<li><a href="/work/">work</a></li>
+					<li><a href="/laboratory/">laboratory</a></li>
+					<li><a href="/about/">about us</a></li>
+					<li><a href="/blog/">blog</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
 
+<div class="underheader"></div>
 
 <%= yield %>
 
