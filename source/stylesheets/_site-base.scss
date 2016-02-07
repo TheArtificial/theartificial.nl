@@ -8,7 +8,7 @@ body {
 	background-color: $white;
 }
 
-.about_index, .blog_index {
+.work_index, .about_index, .blog_index {
 	background-color: $cool-grey-90;
 	.section-title {
 		color: $white;
@@ -80,35 +80,14 @@ body {
 	margin-top: 20px;
 }
 
-.case-study {
-	margin: 4px;
-	padding: 20px;
-	img {
-		margin-bottom: 20px;
-	}
-}
-
 @media only screen and (min-device-width: 320px) {
 	.case-study { min-height: 360px; }
 }
 @media only screen and (min-device-width: 768px) {
-	.case-study { height: 360px; }
+	.case-study { height: 400px; }
 }
 @media only screen and (min-width: 960px) {
-	.case-study { height: 420px; }
-}
-
-.card {
-	.padded {
-		img {
-			margin-bottom: 20px;
-		}
-	}
-
-	h2 a {
-		font-size: 1em;
-		text-decoration: none;
-	}
+	.case-study { height: 480px; }
 }
 
 .card-rule {
