@@ -14,10 +14,12 @@
 		}
 
 		.flex.container {
-			border-bottom-color: $cool-grey-70;
+			border-bottom-color: $cool-grey-90;
 		}
 		#logo {
 			color: $white;
+			padding-top: 6px;
+			padding-bottom: 11px;
 		}
 
 		#nav-primary {
@@ -163,6 +165,12 @@ svg *.content{ fill: $cool-grey-40; }
 	}
 }
 
+.map {
+	.mapboxgl-popup-content {
+		padding: 10px;
+	}
+}
+
 .hiring-button {
 	border: 1px solid $white;
 	border-radius: 5px;
@@ -215,6 +223,12 @@ svg *.content{ fill: $cool-grey-40; }
 	svg path, svg rect, svg polygon {
 		fill: $cool-grey-90;
 	}
+
+	.person-logo {
+		padding-top: 40px;
+		text-align: center;
+	}
+
 	h1 {
 		font-family: "Open Sans", Helvetica, Arial, sans-serif;
 		font-weight: lighter;
