@@ -163,17 +163,22 @@ svg *.content{ fill: $cool-grey-40; }
 	}
 }
 
-.address-card {
-	margin-top: 40%;
-	background-color: $white;
+.hiring-button {
+	border: 1px solid $white;
+	border-radius: 5px;
+	text-align: center;
+	padding: 12px;
+	color: $white;
 }
 
 .job-description {
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 30px;
 	color: $cool-grey-40;
+	font-weight: lighter;
 	strong {
-		color: $white;
+		color: $cool-grey-10;
+		font-weight: normal;
 	}
 }
 
@@ -314,14 +319,6 @@ svg *.content{ fill: $cool-grey-40; }
 	}
 }
 
-.hiring-button {
-	border: 1px solid $white;
-	border-radius: 5px;
-	text-align: center;
-	padding: 12px;
-	color: $white;
-}
-
 .tulip {
 	background-color: $tulip;
 
@@ -364,7 +361,6 @@ svg *.about-logo {
 #oncall {
 	background-color:rgba(255, 255, 255, 0.9);
 }
-
 
 // forms and fields
 .search {
@@ -466,6 +462,7 @@ svg *.about-logo {
 html {
 	min-height: 100%;
 }
+
 body {
 	height: 100%;
 	background-attachment: fixed !important;
