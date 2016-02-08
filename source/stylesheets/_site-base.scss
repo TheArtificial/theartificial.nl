@@ -282,16 +282,21 @@ svg *.content{ fill: $cool-grey-40; }
 		{
 			border-top-color: $cool-grey-70;
 		}
-		h3, h4, p {
+		h4, p {
 			color: $cool-grey-10;
+			line-height: 20px;
 		}
 			a {
-			color: $turquoise;
+			color: $cool-grey-10;
+			text-decoration: underline;
 		}
 		a:hover {
-			color: $dark-turquoise;
+			color: $cool-grey-30;
 		}
-
+		h3 {
+			font-size: 20px;
+			color: $cool-grey-10;
+		}
 	}
 }
 
