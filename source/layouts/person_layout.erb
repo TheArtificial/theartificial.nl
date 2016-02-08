@@ -9,7 +9,7 @@
 				</div>
 			</div>
 
-			<div class="col-7 left-1 dark-text">
+			<div class="col-7 left-1 dark-text section">
 				<div class="padded">
 					<h1 class="name"><%= current_page.data.title %></h1>
 					<h5><a href="https://linkedin.com/in/<%= current_page.data.linkedin %>">linkedin</a> | <a href="https://twitter.com/<%= current_page.data.twitter %>">twitter</a></h5>
@@ -25,7 +25,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container packery padded-bottom">
+	<div class="container packery padded-bottom section">
 		<% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
 			<% if articles.length > 0 %>
 	    	<% articles.take(3).each do |article, i| %>

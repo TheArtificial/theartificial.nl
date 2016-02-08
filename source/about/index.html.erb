@@ -31,17 +31,13 @@
 		</div>
 	</div>
 
-	<div class="bleed" style="background-image: url('images/map.png'); background-size: cover; background-repeat: no-repeat; min-height: 540px;">
-		<div class="flex container">
-			<div class="col-4 left-8">
-				<div class="address-card">
-					<div class="padded">
-						<h2>We're located at</h2>
-						<p class="card-detail"> Herengracht 266 <br/> 1016 BV Amsterdam</p>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div class="bleed">
+		<map></map>
+		<script>
+		L.mapbox.accessToken = '<your access token here>';
+		var map = L.mapbox.map('map', 'mapbox.streets')
+		    .setView([40, -74.50], 9);
+		</script>
 	</div>
 
 	<div class="bleed turquoise-palegrass">
