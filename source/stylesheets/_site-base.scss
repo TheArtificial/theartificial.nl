@@ -55,7 +55,6 @@
 }
 
 // content
-
 .work_index, .about, .blog_index {
 	background-color: $cool-grey-90;
 	.section-title {
@@ -101,6 +100,7 @@
 
 .experiment {
 	background-color: $cool-grey-90;
+	opacity: 0.9;
 	color: $white;
 	a {
 		color: $white;
@@ -117,6 +117,42 @@
 
 svg *.frame { fill: $cool-grey-90; }
 svg *.content{ fill: $cool-grey-40; }
+
+// laboratory styles
+.bleed.animal-party {
+	background-image: url('/laboratory/images/index_background.jpg');
+	background-repeat: no-repeat;
+	height: 100%;
+	position: fixed;
+	z-index: -100;
+	display: block;
+	background-size: 100%;
+}
+
+@media only screen and (min-device-width: 320px) {
+	.laboratory {
+		.section-title {
+			margin-top: 192px;
+			margin-bottom: 0;
+		}
+	}
+}
+@media only screen and (min-device-width: 768px) {
+	.laboratory {
+		.section-title {
+			margin-top: 64px;
+			margin-bottom: 32px;
+		}
+	}
+}
+@media only screen and (min-width: 960px) {
+	.laboratory {
+		.section-title {
+			margin-top: 64px;
+			margin-bottom: 32px;
+		}
+	}
+}
 
 // about styles
 .about {
@@ -167,7 +203,6 @@ svg *.content{ fill: $cool-grey-40; }
 .map {
 	height: 400px;
 }
-
 
 // people styles
 #person {

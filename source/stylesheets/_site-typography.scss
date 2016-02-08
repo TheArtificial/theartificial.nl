@@ -49,10 +49,6 @@ ul, li {
 	list-style-type: none;
 }
 
-p {
-	font-weight: 300;
-}
-
 a {
 	text-decoration: none;
 	color: $turquoise;
@@ -69,18 +65,18 @@ h1, h2, h3, h4, h5, p {
 // for mobile
 @media only screen and (min-device-width: 320px) {
 	h1 {
-		font-size: 32px;
-		line-height: 36px;
+		font-size: 36px;
+		line-height: 40px;
 	}
 
 	h2 {
-		font-size: 18px;
-		line-height: 22px;
+		font-size: 20px;
+		line-height: 24px;
 	}
 
 	h3 {
-		font-size: 16px;
-		line-height: 20px;
+		font-size: 24px;
+		line-height: 30px;
 		font-weight: lighter;
 	}
 
@@ -93,6 +89,7 @@ h1, h2, h3, h4, h5, p {
 		font-size: 14px;
 		line-height: 18px;
 	}
+
 	.periodic {
 		font-size: 120px;
 		padding-bottom: 20px;
