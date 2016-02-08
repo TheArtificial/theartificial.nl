@@ -33,12 +33,34 @@
 	</div>
 
 	<div class="bleed">
-		<map></map>
+		<div id="map" class="map"></div>
 		<script>
-		L.mapbox.accessToken = '<your access token here>';
-		var map = L.mapbox.map('map', 'mapbox.streets')
-		    .setView([40, -74.50], 9);
+		mapboxgl.accessToken = 'pk.eyJ1IjoidmVyeWFydGlmaWNpYWwiLCJhIjoiY2lrZWUwbGJiMDAzcnYybTJ4eno2NHV4dCJ9.puo-HH5dh9QqhZ3XaqHIuw';
+
+		var map = new mapboxgl.Map({
+		    container: 'map', // container id
+		    style: 'mapbox://styles/veryartificial/cikee8wah00eocekq7zxpw3gc',
+		    center: [4.886719, 52.371355],
+		    zoom: 13,
+				interactive: false
+		});
+
+		var tooltip = new mapboxgl.Popup({closeButton: false, closeOnClick: false, anchor: "right"})
+    .setLngLat([4.886719, 52.371355])
+    .setHTML('Herengracht 266')
+    .addTo(map);
+
 		</script>
+		<style>
+    .mapboxgl-popup {
+        max-width: 400px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    .marker-title {
+        font-weight: 700;
+    }
+</style>
 	</div>
 
 	<div class="bleed turquoise-palegrass">

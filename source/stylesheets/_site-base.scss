@@ -471,8 +471,10 @@ html {
 body {
 	height: 100%;
 	background-attachment: fixed !important;
+	scroll-snap-type: mandatory;
+	scroll-snap-destination: 50% 0px;
 	-webkit-scroll-snap-type: mandatory;
-	-webkit-scroll-snap-destination: 50% 0;
+	-webkit-scroll-snap-destination: 50% 0px;
 }
 
 // the comp lacks this line!
@@ -495,7 +497,8 @@ html, body {
 	// -webkit-scroll-snap-coordinate: 50% calc(50% - 32px); // 2px shy for scrollspy
 	padding-top: 68px;
 	height: calc(100vh - 68px);
-	-webkit-scroll-snap-coordinate: 50% 0; // 2px shy for scrollspy
+	scroll-snap-coordinate: 50% 0px; // 2px shy for scrollspy
+	-webkit-scroll-snap-coordinate: 50% 0px;
 
 	.slide-panel-image {
 		height: 80%;
