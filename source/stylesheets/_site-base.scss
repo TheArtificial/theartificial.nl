@@ -1,18 +1,6 @@
 // for header and footer elements
-
 .padded-lr {
 	padding: 10px 16px 10px 16px;
-}
-
-body {
-	background-color: $white;
-}
-
-.work_index, .about, .blog_index {
-	background-color: $cool-grey-90;
-	.section-title {
-		color: $white;
-	}
 }
 
 // top header
@@ -67,10 +55,10 @@ body {
 }
 
 // content
-.experiment {
+
+.work_index, .about, .blog_index {
 	background-color: $cool-grey-90;
-	color: $white;
-	a {
+	.section-title {
 		color: $white;
 	}
 }
@@ -79,6 +67,16 @@ body {
 	margin-top: 20px;
 }
 
+
+.extra-padded {
+	padding: 48px 16px 24px 16px;
+}
+
+.padded-bottom {
+	padding-bottom: 80px;
+}
+
+// card sizing for case studies and experiments
 @media only screen and (min-device-width: 320px) {
 	.case-study { min-height: 360px; }
 	.experiment { height: 280px; }
@@ -101,34 +99,13 @@ body {
 	background-color: $white;
 }
 
-.extra-padded {
-	padding: 48px 16px 24px 16px;
-}
-
-.padded-bottom {
-	padding-bottom: 80px;
-}
-
-@media only screen and (min-device-width: 320px) {
-	.page-description {
-		margin-top: 20px;
-		text-align: center;
+.experiment {
+	background-color: $cool-grey-90;
+	color: $white;
+	a {
+		color: $white;
 	}
 }
-
-@media only screen and (min-device-width: 768px) {
-	.page-description {
-		margin-top: 60px;
-		text-align: left;
-	}
-}
-
-@media only screen and (min-width: 960px) {
-	.page-description {
-		margin-top: 120px;
-	}
-}
-
 
 // case studies artifacts list
 .bleed.artifacts {
@@ -141,9 +118,33 @@ body {
 svg *.frame { fill: $cool-grey-90; }
 svg *.content{ fill: $cool-grey-40; }
 
+// about styles
+.about {
+	h3 {
+		font-size: 32px;
+		line-height: 38px;
+		font-weight: bold;
+	}
+}
+
+.address-card {
+	margin-top: 40%;
+	background-color: $white;
+}
+
+.job-description {
+	font-size: 24px;
+	line-height: 30px;
+	color: $cool-grey-30;
+	strong {
+		color: $white;
+	}
+}
+
 // people styles
 #person {
-	svg {
+	// TODO update these SVGs with proper CSS classes
+	svg path, svg rect, svg polygon {
 		fill: $cool-grey-90;
 	}
 	h1 {
