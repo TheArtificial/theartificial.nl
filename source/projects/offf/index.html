@@ -321,30 +321,20 @@ console.log("allLinks", allLinks);
         return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
       }
 
-      // function isSmallerThan(element, index, array) {
-      //   return element < 10;
-      // }
-      // // node.groupcontinents.some(isSmallerThan5) // true
-      // // [1,2,3,4,5].some(isSmallerThan6);  // false
-      // // [12, 5, 8, 1, 4].some(isBiggerThan10); // true
-
-
-
+      //  function using includes to evaluate if some of node.groupcontinents exists in includeGroupcontinents
       function isInGpc(element, index, array) {
         return includeGroupcontinents.includes(element);
       }
 
 
-        //  `.some` and `.includes` to evaluate "if some of node.groupcontinents exists in includeGroupcontinents
         function filterNode(node) {
-        // var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || includeGroupcontinents.includes(node.groupcontinent);
-        // var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") ||   includeGroupcontinents.includes(node.groupcontinent.some(isSmallerThan));
-        // var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || node.groupcontinent.some(isSmallerThan5) && includeGroupcontinents.includes(node.groupcontinent) ;
         var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || node.groupcontinent.some(isInGpc)
-        console.log('includeGroupcontinents', includeGroupcontinents);
-        console.log('node.groupcontinent', node.groupcontinent);
-        console.log('matchesGroupcontinents', matchesGroupcontinents);
-        return (matchesGroupcontinents);
+        var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
+        var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
+        // console.log('includeGroupcontinents', includeGroupcontinents);
+        // console.log('node.groupcontinent', node.groupcontinent);
+        // console.log('matchesGroupcontinents', matchesGroupcontinents);
+        return (matchesGroupcontinents && matchesGroupyear && matchesGroupstatus);
       }
 
 
