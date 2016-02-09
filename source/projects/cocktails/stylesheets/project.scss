@@ -90,7 +90,7 @@ p {
 h2 {
 	color: #f14a23;
 	font-size: 1.4em;
-	line-height: .4em;
+	line-height: 1.4em;
 }
 
 	h3 {
@@ -142,6 +142,24 @@ h3 {
 }
 
 .topsm{
+	margin-top: 0;
+}
+
+.topmd{
+	margin-top: 0;
+}
+
+.toplg{
+	margin-top: 20px;
+}
+
+
+@media only screen and (min-device-width: 768px) {
+
+}
+
+@media (min-width: 960px) {
+	.topsm{
 	margin-top: 30px;
 }
 
@@ -152,10 +170,4 @@ h3 {
 .toplg{
 	margin-top: 100px;
 }
-
-@media only screen and (min-device-width: 768px) {
-
-}
-
-@media (min-width: 960px) {
 }
