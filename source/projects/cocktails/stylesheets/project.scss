@@ -70,24 +70,46 @@ body {
 .card {
 	background-color: transparent;
 	margin: 0 25px 80px 25px;
+}
+.rating {
+	width: 100px;
+	margin: 10px 0 10px;
+}
+p {
+	color: #f14a23;
+	font-weight: 500;
+}
 
-		h2 {
-		color: #f14a23;
-		font-size: 1.4em;
-		line-height: .4em;
+.recipe{
+	a {
+		color:#f14a23;
+		text-decoration: underline;
 	}
 }
-	h1 {
-		color: #f14a23;
-		font-size: 1.4em;
-		line-height: 1.8em;
-	}
+
+h2 {
+	color: #f14a23;
+	font-size: 1.4em;
+	line-height: .4em;
+}
 
 	h3 {
-		color: #f14a23;
-		font-size: .9em;
-		margin-top: 15px;
-	}
+	color: #f14a23;
+	font-size: .9em;
+	margin-top: 15px;
+}
+
+h1 {
+	color: #f14a23;
+	font-size: 1.4em;
+	line-height: 1.8em;
+	padding-bottom: 0px;
+}
+
+h3 {
+	color: #f14a23;
+	font-size: .9em;
+}
 
 }
 
@@ -115,8 +137,24 @@ body {
 	}
 }
 
+.recipe {
+	margin: 80px 0 80px 0;
+}
+
+.topsm{
+	margin-top: 30px;
+}
+
+.topmd{
+	margin-top: 60px;
+}
+
+.toplg{
+	margin-top: 100px;
+}
 
 @media only screen and (min-device-width: 768px) {
+
 }
 
 @media (min-width: 960px) {
