@@ -3,23 +3,25 @@
 body {
     background-color: #fddbd1;
 }
-
-
+img {
+    width: 70%;
+    max-width: 500px;
+}
 .cocktails {
-
+    img {
+        max-height: 500px;
+    }
     #content {
         background-color: #fddbd1;
         margin-bottom: 40px;
         .container.packery {
             margin-top: 0;
         }
-            a {
+        a {
             color: #f14a23;
             text-decoration: underline;
         }
-        
     }
-
     #header {
         background-color: #fddbd1;
         .topbar {
@@ -53,7 +55,6 @@ body {
         .flexcontainer, #about, #promo {
             border-top-color: transparent;
         }
-
         p {
             color: $white;
         }
@@ -79,10 +80,9 @@ body {
     h1 {
         font-family: "Open Sans", Helvetica, Arial, sans-serif;
         color: #f14a23;
-        font-size: 4em;
-        line-height: 1.4em;
+        font-size: 3em;
+        line-height: 1em;
     }
-
     h2 {
         font-family: "Open Sans", Helvetica, Arial, sans-serif;
         color: #f14a23;
@@ -99,17 +99,15 @@ body {
         margin-top: 15px;
         padding: 0;
     }
-
     h4 {
         font-family: "Open Sans", Helvetica, Arial, sans-serif;
         color: #f14a23;
         font-size: .9em;
     }
-
 }
 .introduction {
-    margin: 100px 0 100px 0;
-        p {
+    margin: 40px 0 40px 0;
+    p {
         font-size: 1.2em;
     }
 }
@@ -121,37 +119,58 @@ body {
         top: 0px;
         margin: 0px 25px 80px 0px;
     }
-
 }
 .recipe {
     margin: 20px 0 80px 0;
-
-
-        h3 {
-            font-weight: 700;
-            margin-top: 0;
-        }
+    h3 {
+        font-weight: 700;
+        margin-top: 0;
+    }
+    img {
+        margin-left: 10%;
+    }
 }
 
 .name {
     margin-top: 40px;
 }
 @media only screen and (min-device-width: 768px) {
-.card {
-    a.overlaybox {
-        display: block;
-        position: absolute;
-        top: 0px;
-        opacity: 0;
-        transition: opacity .2s linear;
-        margin: 0px 25px 80px 0px;
+    .card {
+        a.overlaybox {
+            display: block;
+            position: absolute;
+            top: 0px;
+            opacity: 0;
+            transition: opacity .2s linear;
+            margin: 0px 25px 80px 0px;
+        }
+        &:hover a.overlaybox {
+            opacity: 1;
+            transition: opacity .2s linear;
+        }
     }
-    &:hover a.overlaybox {
-        opacity: 1;
-        transition: opacity .2s linear;
+    .introduction {
+        margin: 100px 0 100px 0;
+        p {
+            font-size: 1.2em;
+        }
+    }
+    .right {
+        text-align: right;
+    }
+    .center {
+        text-align: center;
+    }
+    .cocktails {
+        h1 {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            color: #f14a23;
+            font-size: 4em;
+            line-height: 1.2em;
+        }
+        img {
+            width: 100%;
+        }
     }
 }
-} 
-@media (min-width: 960px) {
-
-}
+@media (min-width: 960px) {}
