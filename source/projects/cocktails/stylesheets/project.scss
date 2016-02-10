@@ -1,173 +1,157 @@
 @import "_artificial-colors.scss";
 
-
-/*THEME CHANGES*/
-
 body {
-	background-color: #fddbd1;
+    background-color: #fddbd1;
 }
+
 
 .cocktails {
-  #content {
-		background-color: #fddbd1;
-		margin-bottom: 40px;
 
-		.container.packery {
-			margin-top: 0;
-		}
-	}
+    #content {
+        background-color: #fddbd1;
+        margin-bottom: 40px;
+        .container.packery {
+            margin-top: 0;
+        }
+            a {
+            color: #f14a23;
+            text-decoration: underline;
+        }
+        
+    }
 
-#header {
-	background-color: #fddbd1;
-	.topbar {
-		border-top-color: #f14a23;
-	}
+    #header {
+        background-color: #fddbd1;
+        .topbar {
+            border-top-color: #f14a23;
+        }
+        .flexcontainer {
+            border-bottom-color: transparent;
+        }
+        #logo {
+            color: #f14a23;
+        }
+        #nav-primary {
+            ul {
+                li {
+                    a {
+                        font-weight: bold;
+                        color: #f14a23;
+                    }
+                    a:hover {
+                        color: $white;
+                    }
+                }
+                li.active a {
+                    color: #f14a23;
+                }
+            }
+        }
+    }
+    #footer {
+        background-color: #f14a23;
+        .flexcontainer, #about, #promo {
+            border-top-color: transparent;
+        }
 
-	.flexcontainer {
-		border-bottom-color: transparent;
-	}
-	#logo {
-		color: #f14a23;
-	}
+        p {
+            color: $white;
+        }
+        a {
+            color: #fddbd1;
+        }
+        a:hover {
+            color: #fddbd1;
+        }
+    }
+    .card {
+        background-color: transparent;
+        margin: 0 25px 80px 25px;
+    }
+    .rating {
+        width: 100px;
+        margin: 10px 0 10px;
+    }
+    p {
+        font-family: "Droid Serif", Georgia, Times, serif;
+        color: #f14a23;
+    }
+    h1 {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        color: #f14a23;
+        font-size: 4em;
+        line-height: 1.4em;
+    }
 
-	#nav-primary {
-		ul {
-			li {
-				a {
-					font-weight: bold;
-					color: #f14a23;
-				}
-				a:hover {
-					color: $white;
-				}
-			}
-			li.active a {
-				color: #f14a23;
-			}
-		}
-	}
-}
+    h2 {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        color: #f14a23;
+        font-size: 1.8em;
+        line-height: 1.2em;
+        margin-top: 15px;
+    }
+    h3 {
+        color: #f14a23;
+        font-size: .9em;
+        font-family: "Droid Serif", Georgia, Times, serif;
+        font-style: normal;
+        font-weight: 300;
+        margin-top: 15px;
+        padding: 0;
+    }
 
-#footer {
-		background-color: #f14a23;
-
-		.flexcontainer, #about, #promo
-		{
-			border-top-color: transparent;
-		}
-		h3, h4, p {
-			color: $white;
-		}
-			a {
-			color: #fddbd1;
-		}
-		a:hover {
-			color: #fddbd1;
-		}
-
-	}
-
-.card {
-	background-color: transparent;
-	margin: 0 25px 80px 25px;
-}
-.rating {
-	width: 100px;
-	margin: 10px 0 10px;
-}
-p {
-	color: #f14a23;
-	font-weight: 500;
-}
-
-.recipe{
-	a {
-		color:#f14a23;
-		text-decoration: underline;
-	}
-}
-
-h2 {
-	color: #f14a23;
-	font-size: 1.4em;
-	line-height: 1.4em;
-}
-
-	h3 {
-	color: #f14a23;
-	font-size: .9em;
-	margin-top: 15px;
-}
-
-h1 {
-	color: #f14a23;
-	font-size: 1.4em;
-	line-height: 1.8em;
-	padding-bottom: 0px;
-}
-
-h3 {
-	color: #f14a23;
-	font-size: .9em;
-}
+    h4 {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        color: #f14a23;
+        font-size: .9em;
+    }
 
 }
-
-
 .introduction {
-	margin: 120px 0 120px 0;
-	
+    margin: 100px 0 100px 0;
+        p {
+        font-size: 1.2em;
+    }
 }
-
 .card {
-	
-	a.overlaybox {
-		display: block;
-		position: absolute;
-		top: 0px;
-		opacity: 0;
-		transition: opacity .2s linear;
-		margin: 0px 25px 80px 0px;
+    a.overlaybox {
+        opacity: 1;
+        display: block;
+        position: absolute;
+        top: 0px;
+        margin: 0px 25px 80px 0px;
+    }
 
-	}
-	
-	&:hover a.overlaybox {
-		opacity: 1;
-		transition: opacity .2s linear;
-	}
 }
-
 .recipe {
-	margin: 80px 0 80px 0;
+    margin: 20px 0 80px 0;
+
+
+        h3 {
+            font-weight: 700;
+            margin-top: 0;
+        }
 }
 
-.topsm{
-	margin-top: 0;
+.name {
+    margin-top: 40px;
 }
-
-.topmd{
-	margin-top: 0;
-}
-
-.toplg{
-	margin-top: 20px;
-}
-
-
 @media only screen and (min-device-width: 768px) {
-
+.card {
+    a.overlaybox {
+        display: block;
+        position: absolute;
+        top: 0px;
+        opacity: 0;
+        transition: opacity .2s linear;
+        margin: 0px 25px 80px 0px;
+    }
+    &:hover a.overlaybox {
+        opacity: 1;
+        transition: opacity .2s linear;
+    }
 }
-
+} 
 @media (min-width: 960px) {
-	.topsm{
-	margin-top: 30px;
-}
 
-.topmd{
-	margin-top: 60px;
-}
-
-.toplg{
-	margin-top: 100px;
-}
 }
