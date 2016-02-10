@@ -38,7 +38,7 @@
 
         <div class="event">
             <a href="http://www.offf.ws/artists/"><img src="/offf/images/offf-logo.png" alt="offf-logo"/></a>
-            <h2>WHO ARE OFFF ARTISTS ?</h2>
+            <h1>WHO ARE OFFF ARTISTS ?</h1>
             <p>OFFF is a three-day festival annually hosting innovative, creative and international speakers for conferences, workshops, activities and performances in Barcelona.</p>
         </div>
 
@@ -81,12 +81,12 @@
              <ul>
                  <li id="continent0"><a>Continent</a>
                    <ul>
-                     <li id="continent1"><a>Asia</a></li>
-                     <li id="continent2"><a>Australia</a></li>
-                     <li id="continent3"><a>Europe</a></li>
-                     <li id="continent4"><a>North America</a></li>
-                     <li id="continent5"><a>South America</a></li>
-                     <li id="continent6"><a>Any</a></li>
+                     <li id="continent1"> <img src="/offf/images/legend-pink.svg"> <a>Asia</a></li>
+                     <li id="continent2"> <img src="/offf/images/legend-peach.svg"> <a>Australia</a></li>
+                     <li id="continent3"> <img src="/offf/images/legend-yellow.svg"> <a>Europe</a></li>
+                     <li id="continent4"> <img src="/offf/images/legend-aqua.svg"> <a>North America</a></li>
+                     <li id="continent5"> <img src="/offf/images/legend-blue.svg"> <a>South America</a></li>
+                     <li id="continent6"> <img src="/offf/images/legend-pink.svg"> <img src="/offf/images/legend-peach.svg"> <img src="/offf/images/legend-yellow.svg"> <img src="/offf/images/legend-blue.svg"> <img src="/offf/images/legend-aqua.svg"><a> Any</a></li>
                    </ul>
                  </li>
              </ul>
@@ -95,10 +95,10 @@
           	<ul>
           			<li id="year0"><a>Year</a>
           				<ul>
-          					<li id="year1"><a>2015</a></li>
-          					<li id="year2"><a>2016</a></li>
-          					<li id="year3"><a>2015 and 2016</a></li>
-                    <li id="year4"><a>Any</a></li>
+          					<li id="year1"> <img src="/offf/images/legend-pink.svg"> <a>2015</a></li>
+          					<li id="year2"> <img src="/offf/images/legend-peach.svg"> <a>2016</a></li>
+          					<li id="year3"> <img src="/offf/images/legend-yellow.svg"> <a>2015 and 2016</a></li>
+                    <li id="year4"> <img src="/offf/images/legend-pink.svg"> <img src="/offf/images/legend-peach.svg"> <img src="/offf/images/legend-yellow.svg"> <a> Any</a></li>
           				</ul>
           			</li>
           	</ul>
@@ -107,12 +107,12 @@
              <ul>
                  <li id="status0"><a>Status</a>
                    <ul>
-                     <li id="status1"><a>Independant</a></li>
-                     <li id="status2"><a>Represented</a></li>
-                     <li id="status3"><a>Agency</a></li>
-                     <li id="status4"><a>Eponym agency</a></li>
-                     <li id="status5"><a>Collective</a></li>
-                     <li id="status6"><a>Any</a></li>
+                     <li id="status1"> <img src="/offf/images/legend-pink.svg"> <a>Independant</a></li>
+                     <li id="status2"> <img src="/offf/images/legend-peach.svg"> <a>Represented</a></li>
+                     <li id="status3"> <img src="/offf/images/legend-yellow.svg"> <a>Agency</a></li>
+                     <li id="status4"> <img src="/offf/images/legend-aqua.svg"> <a>Eponym agency</a></li>
+                     <li id="status5"> <img src="/offf/images/legend-blue.svg"> <a>Collective</a></li>
+                     <li id="status6"> <img src="/offf/images/legend-pink.svg"> <img src="/offf/images/legend-peach.svg"> <img src="/offf/images/legend-yellow.svg"> <img src="/offf/images/legend-blue.svg"> <img src="/offf/images/legend-aqua.svg"><a> Any</a></li>
                    </ul>
                  </li>
              </ul>
@@ -166,7 +166,6 @@
     $('#year0 li').click(function() {
         $('.tree li').removeClass('selected');
         $(this).addClass('selected');
-
     });
     $('#continent0 li').click(function() {
         $('.tree li').removeClass('selected');
@@ -198,6 +197,8 @@
           .attr("preserveAspectRatio", "xMidYMid meet");
 
 
+
+
       // force layout, used to calculate positions
       var force = d3.layout.force()
         .linkDistance(50)
@@ -214,7 +215,7 @@
           linkSelection = svg.selectAll('.link');
 
       // lookup arrays for styling
-      var color = ["blue", "white", "red","#f3aa84", "#e66964", "#f6c831"];
+      var color = ["blue", "white", "red","#f3aa84", "#e66964", "#f6c831","yellow", "lightblue" ];
       var radius = ["100","100","100","4","4","4"]; // the first three shouldn't happen
       var transparency = ["0","0","0","0","0","0"];
 
@@ -239,6 +240,7 @@
           return {source: source, target: target, stroke: link.stroke};
         });
 
+
         // console.log("allLinks", allLinks);
 
         // pre-start to force allLinks to reference nodes
@@ -249,9 +251,11 @@
 
         var filteredNodes = allNodes.filter(filterNode),
             nodeIds = filteredNodes.map(function(node){return node.id}),
-            filteredLinks = trimLinks(allLinks, nodeIds);
+            filteredLinks = trimLinks(allLinks, nodeIds)
+            nodeColor = filteredNodes.map(function(d){return color[d.groupyear], color[d.groupstatus]})
+            console.log("nodeColor", nodeColor);
+            // console.log("Filtered links", allLinks, filteredLinks, graph);
 
-        // console.log("Filtered links", allLinks, filteredLinks, graph);
 
         // start the layout ticking
         force
@@ -273,6 +277,7 @@
         // remove old links
         linkSelection.exit().remove();
 
+
         // bind the data array to the svg selection, with a key function
         nodeSelection = nodeSelection.data(filteredNodes, function(d) { return d.id; });
 
@@ -285,15 +290,15 @@
           .attr("class", "node") // you have to do this or you can't re-select it!
           .attr("fill", function(d, i) {return d.groupyear ? color[d.groupyear] : "white";}) // if no groupyear, then it's a category, so color white
           .style("r", function(d, i) {return d.groupyear ? radius[d.groupyear] : 7;}) // if no groupyear, then it's a category, so size 7
-          .style("fill", function(d, i) {return color[d.groupyear]});
+          .attr("fill", "pink");
 
+// .style("fill", function(d, i) { return color(d.color = d3.max(neighbors[i], function(n) { return countries[n].color; }) + 1 | 0); });
 
         node.append("text")
           .attr("dx", 8)
           .attr("dy", 4)
           .attr("spacing", 16)
           .attr("id", "abc")
-          .attr("fill","red")
           .attr("fill", function(d, i) {return d.groupyear ? color[d.groupyear] : "white";}) // if no groupyear, then it's a category, so color white
           .attr("opacity", function(d, i) {return d.groupyear ? transparency[d.groupyear] : 1;}) // if no groupyear, then it's a category, so opacity 1
           .attr("opacity", function(d, i) {return transparency[d.groupyear]})
@@ -302,16 +307,21 @@
 
         // remove old nodes
         nodeSelection.exit().remove();
+        console.log("nodeSelection", nodeSelection);
       }
+
+
+
 
       // called by force layout during iteration
       function tick() {
         linkSelection.attr("d", arcPath);
-        nodeSelection
-        .attr("transform", function(d) {
-          return "translate(" + d.x + "," + d.y + ")";
-        });
-      }
+        nodeSelection .attr("transform", function(d) {
+            return "translate("
+            + d.x + ","
+            + d.y + ")";
+            });
+        }
 
       // draw SVG arc for link _d_, per http://bl.ocks.org/mbostock/1153292
       function arcPath(d) {
@@ -326,16 +336,15 @@
         return includeGroupcontinents.includes(element);
       }
 
-
       function filterNode(node) {
-      var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || node.groupcontinent.some(isInGpc)
-      var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
-      var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
-      // console.log('includeGroupcontinents', includeGroupcontinents);
-      // console.log('node.groupcontinent', node.groupcontinent);
-      // console.log('matchesGroupcontinents', matchesGroupcontinents);
-      return (matchesGroupcontinents && matchesGroupyear && matchesGroupstatus);
-    }
+        var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || node.groupcontinent.some(isInGpc);
+        var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
+        var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
+        console.log('includeGroupcontinents', includeGroupcontinents);
+        console.log('node.groupcontinent', node.groupcontinent);
+        console.log('matchesGroupcontinents', matchesGroupcontinents);
+        return (matchesGroupcontinents && matchesGroupyear && matchesGroupstatus);
+      }
 
 
 
@@ -350,26 +359,26 @@
       // fetch data and (in the callback) load into the arrays
       d3.json("/offf/data/industry.json", function(error, json) {
         graph = json;
-        console.log('Fetched', graph);
+        // console.log('Fetched', graph);
         draw();
       });
 
       // wire up the filters the hard way
-      d3.select("#year1").on("click", function() { includeGroupyears = [1,3]; draw(); });            // Groupyear filter
+      d3.select("#year1").on("click", function() { includeGroupyears = [1,3]; draw(); });                                  // Groupyear filter
       d3.select("#year2").on("click", function() { includeGroupyears = [1,4]; draw(); });
       d3.select("#year3").on("click", function() { includeGroupyears = [1,5]; draw(); });
-      d3.select("#year4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });       // Groupcontinent filter
-      d3.select("#continent1").on("click", function() { includeGroupcontinents = [1]; draw(); });
-      d3.select("#continent2").on("click", function() { includeGroupcontinents = [2]; draw(); });
-      d3.select("#continent3").on("click", function() { includeGroupcontinents = [3]; draw(); });
-      d3.select("#continent4").on("click", function() { includeGroupcontinents = [4]; draw(); });
-      d3.select("#continent5").on("click", function() { includeGroupcontinents = [5]; draw(); });
+      d3.select("#year4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });                             // Groupcontinent filter
+      d3.select("#continent1").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
+      d3.select("#continent2").on("click", function() { includeGroupcontinents = [1,2]; draw(); });
+      d3.select("#continent3").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
+      d3.select("#continent4").on("click", function() { includeGroupcontinents = [1,4]; draw(); });
+      d3.select("#continent5").on("click", function() { includeGroupcontinents = [1,5]; draw(); });
       d3.select("#continent6").on("click", function() { includeGroupcontinents = [1,2,3,4,5]; draw(); });
-      d3.select("#status1").on("click", function() { includeGroupstatus = [1]; draw(); });  // Groupstatus filter
-      d3.select("#status2").on("click", function() { includeGroupstatus = [2]; draw(); });
-      d3.select("#status3").on("click", function() { includeGroupstatus = [3]; draw(); });
-      d3.select("#status4").on("click", function() { includeGroupstatus = [4]; draw(); });
-      d3.select("#status5").on("click", function() { includeGroupstatus = [5]; draw(); });
+      d3.select("#status1").on("click", function() { includeGroupstatus = [1,1]; draw(); });                                 // Groupstatus filter
+      d3.select("#status2").on("click", function() { includeGroupstatus = [1,2]; draw(); });
+      d3.select("#status3").on("click", function() { includeGroupstatus = [1,3]; draw(); });
+      d3.select("#status4").on("click", function() { includeGroupstatus = [1,4]; draw(); });
+      d3.select("#status5").on("click", function() { includeGroupstatus = [1,5]; draw(); });
       d3.select("#status6").on("click", function() { includeGroupstatus = [1,2,3,4,5]; draw(); });
 
 
