@@ -288,9 +288,10 @@
 
         node.append("circle")
           .attr("class", "node") // you have to do this or you can't re-select it!
+          .attr("fill", function(d,i) {return color[d.groupyear]}) 
           .attr("fill", function(d, i) {return d.groupyear ? color[d.groupyear] : "white";}) // if no groupyear, then it's a category, so color white
-          .style("r", function(d, i) {return d.groupyear ? radius[d.groupyear] : 7;}) // if no groupyear, then it's a category, so size 7
-          .attr("fill", "pink");
+          .style("r", function(d, i) {return d.groupyear ? radius[d.groupyear] : 7;}); // if no groupyear, then it's a category, so size 7
+
 
 // .style("fill", function(d, i) { return color(d.color = d3.max(neighbors[i], function(n) { return countries[n].color; }) + 1 | 0); });
 
@@ -305,6 +306,8 @@
           .text(function(d) {return d.name});
 
 
+        nodeIds.exit().remove();
+        console.log("nodeIds", nodeIds);
         // remove old nodes
         nodeSelection.exit().remove();
         console.log("nodeSelection", nodeSelection);
@@ -340,9 +343,9 @@
         var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || node.groupcontinent.some(isInGpc);
         var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
         var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
-        console.log('includeGroupcontinents', includeGroupcontinents);
-        console.log('node.groupcontinent', node.groupcontinent);
-        console.log('matchesGroupcontinents', matchesGroupcontinents);
+        // console.log('includeGroupcontinents', includeGroupcontinents);
+        // console.log('node.groupcontinent', node.groupcontinent);
+        // console.log('matchesGroupcontinents', matchesGroupcontinents);
         return (matchesGroupcontinents && matchesGroupyear && matchesGroupstatus);
       }
 
