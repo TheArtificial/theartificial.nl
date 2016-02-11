@@ -288,7 +288,7 @@
 
         node.append("circle")
           .attr("class", "node") // you have to do this or you can't re-select it!
-          .attr("fill", function(d,i) {return color[d.groupyear]}) 
+          .attr("fill", function(d,i) {return color[d.groupyear]})
           .attr("fill", function(d, i) {return d.groupyear ? color[d.groupyear] : "white";}) // if no groupyear, then it's a category, so color white
           .style("r", function(d, i) {return d.groupyear ? radius[d.groupyear] : 7;}); // if no groupyear, then it's a category, so size 7
 
@@ -306,8 +306,7 @@
           .text(function(d) {return d.name});
 
 
-        nodeIds.exit().remove();
-        console.log("nodeIds", nodeIds);
+    
         // remove old nodes
         nodeSelection.exit().remove();
         console.log("nodeSelection", nodeSelection);
