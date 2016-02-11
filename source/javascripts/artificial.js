@@ -1,6 +1,7 @@
 // this binds navigation items to items within the body
 // thanks https://jsfiddle.net/mekwall/up4nu/
 function scrollspy(selector, heightOffset, callback) {
+	var	scrollTicking = false;
 	var lastId,
 	    menu = $(selector),
 	    menuItems = menu.find("a"),
@@ -20,8 +21,10 @@ function scrollspy(selector, heightOffset, callback) {
     e.preventDefault();
 	});
 
-	// Bind to scroll
-	$(window).scroll(function(){
+	// Do all the things
+	function scrollUpdate() {
+		scrollTicking = false;
+
 	  // Get container scroll position
 	  var fromTop = $(this).scrollTop();
 
@@ -65,7 +68,18 @@ function scrollspy(selector, heightOffset, callback) {
 				menuItems.filter('.next').parent().addClass('disabled');
 			}
 	  }
-	});
+	}
+
+	// For a good explanation of this, see http://www.html5rocks.com/en/tutorials/speed/animations/
+	function debounceScroll() {
+		if(!scrollTicking) {
+			requestAnimationFrame(scrollUpdate);
+		}
+		scrollTicking = true;
+	}
+
+	$(window).scroll(debounceScroll);
+
 }
 
 // this brings up search by typing
