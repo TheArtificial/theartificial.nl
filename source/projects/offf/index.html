@@ -12,6 +12,10 @@
 					$(this).addClass('parent');
 					}
 		});
+		$('.tree li').each(function() {
+			$(this).toggleClass('active');
+			$(this).children('ul').slideToggle('fast');
+		});
 		$('#rightpanel .tree li.parent > a').click(function() {
 			$(this).parent().toggleClass('active');
 			$(this).parent().children('ul').slideToggle('fast');
@@ -21,12 +25,11 @@
 			$(this).parent().toggleClass('active');
 			$(this).parent().children('ul').slideToggle('fast');
       $('#leftpanel .tree li.parent > a').not(this).parent().children('#leftpanel .tree ul').hide(); // closes all filters that are not selected from the left panel categories
-		});
-		$('.tree li').each(function() {
-			$(this).toggleClass('active');
-			$(this).children('ul').slideToggle('fast');
+			$('#rightpanel .tree li.parent > a').not(this).parent().children('#rightpanel .tree ul').hide(); // closes all filters that are not selected from the right panel filters
 		});
 	});
+
+
 </script>
 
 <div id="content" class="offf">
