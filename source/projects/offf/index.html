@@ -5,6 +5,7 @@
 <script src="/offf/library/jquery-2.2.0.min.js" type="text/javascript" > </script>
 
 <script type="text/javascript">
+
 	$(document).ready(function() {
 		$( '.tree li' ).each(function() {
 			if( $(this).children('ul').length > 0) {
@@ -42,7 +43,7 @@
           <ul>
             <li>
                 <h3>Which industries are the most represented at OFFF?</h3>
-                <h4> Multi-discipinary studios are the most common artists at OFFF. Isolated, on the edges of the data-viz, we notice that product designers and sound design artists are not so represented. Most artists are pluridisciplinaries, however, the most represented one-industry artist are print artists.</h4>
+                <h4>Artists working in multi-discipinary industries are the most represented at OFFF. Among the single-industry artists, the print industry is the most common. Isolated, on the edges of the data-viz, product designers and sound design artists are not so numerous.</h4>
             </li>
           </ul>
         </li>
@@ -53,8 +54,8 @@
         <li id="catLocation"><a>LOCATION</a>
   				<ul>
             <li>
-                <h3>Where are OFFF artists working from?</h3>
-                <h4>interpretation goes here</h4>
+                <h3>Where are OFFF artists working?</h3>
+                <h4>Most lecturers are working in Europe and North America. African artists were not represented in 2015 and 2016 editions</h4>
             </li>
           </ul>
         </li>
@@ -65,8 +66,8 @@
         <li id="catRecurrence"><a>RECURRENCE</a>
   				<ul>
             <li>
-                <h3> Which artists came two years in a row?</h3>
-                <h4> interpretation goes here </h4>
+                <h3>Which artists came two years in a row?</h3>
+                <h4>Seven artists had the privilege to come twice to OFFF, in 2015 and 2016</h4>
             </li>
           </ul>
         </li>
@@ -77,8 +78,8 @@
         <li id="catStructure"><a>STRUCTURE</a>
       		<ul>
             <li>
-                <h3> What is OFFF's artists status?</h3>
-                <h4>interpretation goes here</h4>
+                <h3>What is OFFF's artists status?</h3>
+                <h4>Most artists coming at OFFF are working in agencies or are freelancers. It is common practice in the production industry that artists are represented by agencies</h4>
             </li>
           </ul>
         </li>
@@ -358,22 +359,11 @@
     draw();
   });
 
-	d3.select("#catIndustry").on("click", function() { d3.json("/offf/data/industry.json", function(error, json) { graph = json;
-    draw();
-	  });
-	});
-	d3.select("#catLocation").on("click", function() { d3.json("/offf/data/location.json", function(error, json) { graph = json;
-    draw();
-	  });
-	});
-	d3.select("#catRecurrence").on("click", function() { d3.json("/offf/data/recurrence.json", function(error, json) { graph = json;
-		draw();
-		});
-	});
-	d3.select("#catStructure").on("click", function() { d3.json("/offf/data/structure.json", function(error, json) { graph = json;
-		draw();
-		});
-	});
+	// wire up the categories the hard way
+	d3.select("#catIndustry").on("click", function() { d3.json("/offf/data/industry.json", function(error, json) { graph = json; draw(); }); });
+	d3.select("#catLocation").on("click", function() { d3.json("/offf/data/location.json", function(error, json) { graph = json; draw(); }); });
+	d3.select("#catRecurrence").on("click", function() { d3.json("/offf/data/recurrence.json", function(error, json) { graph = json; draw(); }); });
+	d3.select("#catStructure").on("click", function() { d3.json("/offf/data/structure.json", function(error, json) { graph = json; draw(); }); });
 
   // wire up the filters the hard way
   d3.select("#year1").on("click", function() { includeGroupyears = [1,3]; draw(); });                                 // Groupyear filter
