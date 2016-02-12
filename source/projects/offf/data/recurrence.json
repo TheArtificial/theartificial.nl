@@ -770,460 +770,573 @@
 [
   {
     "source": 5,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 6,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 7,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 8,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 9,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 10,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 11,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 12,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 13,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 14,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 15,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 16,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 17,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 18,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 19,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 20,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 21,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 22,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 23,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 24,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 25,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 26,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 27,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 2.5
   },
   {
     "source": 27,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 2.5
   },
   {
     "source": 28,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 29,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 30,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 31,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 32,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 33,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 34,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 35,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 36,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 37,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 38,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 39,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 40,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 41,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 42,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 43,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 44,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 45,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 46,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 47,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 48,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 49,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 50,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 51,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 52,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 2.5
   },
   {
     "source": 52,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 2.5
   },
   {
     "source": 53,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 54,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 55,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 56,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 2.5
   },
   {
     "source": 56,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 2.5
   },
   {
     "source": 57,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 58,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 59,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 60,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 61,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 62,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 63,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 64,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 65,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 66,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 67,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 68,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 69,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 70,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 71,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 72,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 73,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 74,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 75,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 76,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 77,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 78,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 79,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 80,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 81,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 82,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 2.5
   },
   {
     "source": 82,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 2.5
   },
   {
     "source": 83,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 84,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 85,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 86,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 87,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 88,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 89,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 2.5
   },
   {
     "source": 89,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 2.5
   },
   {
     "source": 90,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 91,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 92,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 93,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 94,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 95,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 96,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 2.5
   },
   {
     "source": 96,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 2.5
   },
   {
     "source": 97,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 98,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 99,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 100,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 101,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 102,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 103,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 2.5
   },
   {
     "source": 103,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 2.5
   },
   {
     "source": 104,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 105,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 106,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 107,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 108,
-    "target": "recurrence-1"
+    "target": "recurrence-1",
+    "stroke": 5
   },
   {
     "source": 109,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 110,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   },
   {
     "source": 111,
-    "target": "recurrence-0"
+    "target": "recurrence-0",
+    "stroke": 5
   }
 ]
-
 }
