@@ -75,7 +75,7 @@
         <li id="catRecurrence"><a>RECURRENCE</a>
   				<ul>
             <li>
-                <h3>Which artists came two years in a row?</h3>
+                <h3>When are artists speaking at OFFF?</h3>
                 <h4>Seven artists had the privilege to come twice to OFFF, in 2015 and 2016</h4>
             </li>
           </ul>
@@ -87,7 +87,7 @@
         <li id="catStructure"><a>STRUCTURE</a>
       		<ul>
             <li>
-                <h3>What is OFFF's artists status?</h3>
+                <h3>In which structure are OFFF artists working?</h3>
                 <h4>Most artists coming at OFFF are working in agencies or are freelancers. It is common practice in the production industry that artists are represented by agencies</h4>
             </li>
           </ul>
@@ -310,6 +310,7 @@
       .attr("fill", function(d, i) {return d.groupyear ? color[d.groupyear] : "white";}) // if no groupyear, then it's a category, so color white
       .attr("opacity", function(d, i) {return d.groupyear ? transparency[d.groupyear] : 1;}) // if no groupyear, then it's a category, so opacity 1
       .attr("opacity", function(d, i) {return transparency[d.groupyear]})
+			.attr("fill","white")
       .text(function(d) {return d.name});
 
     // remove old selected nodes ?? to do...
