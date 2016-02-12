@@ -7,6 +7,9 @@
 <script type="text/javascript">
 
 	$(document).ready(function() {
+		$('#catIndustry').children('ul').addClass('fast'); // keep the first category Industry open on page load
+		$('#catIndustry').children('ul').slideToggle('fast');
+
 		$( '.tree li' ).each(function() {
 			if( $(this).children('ul').length > 0) {
 					$(this).addClass('parent');
@@ -28,6 +31,9 @@
 			$('#rightpanel .tree li.parent > a').not(this).parent().children('#rightpanel .tree ul').hide(); // closes all filters that are not selected from the right panel filters
 		});
 	});
+
+
+
 
 
 </script>
