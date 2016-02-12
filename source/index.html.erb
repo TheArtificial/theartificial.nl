@@ -20,7 +20,7 @@
       bottomColor = bottomColor.transition(nextBottomColor, offset);
       overlayColor = overlayColor.transition(nextOverlayColor, offset);
     }
-    $('body').css('background-image','linear-gradient('+topColor.toRgbaString()+', '+bottomColor.toRgbaString()+')');
+    $('#background').css('background-image','linear-gradient('+topColor.toRgbaString()+', '+bottomColor.toRgbaString()+')');
     $('#header').css('background-color',overlayColor.alpha(0.25).toRgbaString());
     $('#nav-panels li').css('background-color',overlayColor.toHexString());
   }
@@ -28,7 +28,6 @@
 </script>
 
 <section id="side-nav">
-
   <div class="flex container">
     <div class="col-1 left-11">
       <nav id="nav-panels" class="iconlist">
@@ -49,6 +48,8 @@
     </div>
   </div>
 </section>
+
+<div id="background"> </div>
 
 <div class="bleed slide-container">
 

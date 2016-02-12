@@ -479,16 +479,16 @@ svg *.about-logo {
 
 // for a fixed background
 html {
-	min-height: 100%;
+	// min-height: 100%;
 }
 
 body {
-	height: 100%;
+	// height: 100%;
 	background-attachment: fixed !important;
 	scroll-snap-type: mandatory;
-	scroll-snap-destination: 50% 0px;
+	scroll-snap-destination: 0px 0px;
 	-webkit-scroll-snap-type: mandatory;
-	-webkit-scroll-snap-destination: 50% 0px;
+	-webkit-scroll-snap-destination: 0px 0px;
 }
 
 // the comp lacks this line!
@@ -496,13 +496,23 @@ body.index #header .flex.container {
 	border-bottom: none;
 }
 
-body {
-	-webkit-transition: background-image 0.2s ease-in-out;
-	transition: background-image 0.2s ease-in-out;
-}
-
 html, body {
   height: 100%;
+}
+
+#background {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	min-width: 100%;
+	min-height: 112%;
+
+	background-color: $turquoise;
+	background: linear-gradient(to bottom, $pale-grass, $turquoise);
+	-webkit-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+	z-index: -1;
 }
 
 // homepage panels
@@ -511,8 +521,8 @@ html, body {
 	// -webkit-scroll-snap-coordinate: 50% calc(50% - 32px); // 2px shy for scrollspy
 	padding-top: 68px;
 	height: calc(100vh - 68px);
-	scroll-snap-coordinate: 50% 0px; // 2px shy for scrollspy
-	-webkit-scroll-snap-coordinate: 50% 0px;
+	scroll-snap-coordinate: 0px 0px;
+	-webkit-scroll-snap-coordinate: 0px 0px;
 
 	.slide-panel-image {
 		height: 80%;
@@ -528,36 +538,42 @@ html, body {
 }
 
 #side-nav {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	.flex {
-		height: 100%;
-		align-items: center;
-		justify-content: center;
-	}
+	display: none;
 }
 
-#nav-panels {
-	li {
-		height: 4px;
-		width: 4px;
-		margin: 8px;
-		background-color: $cool-grey-90;
-		opacity: 0.50;
-
-		&.active {
-			height: 8px;
-			width: 8px;
-			margin:6px;
-			background-color: $white !important;
-			font-size: 200%;
-			opacity: 1;
+@media only screen and (min-device-width: 768px) {
+	#side-nav {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		.flex {
+			height: 100%;
+			align-items: center;
+			justify-content: center;
 		}
+	}
 
-		&.disabled {
-			visibility: hidden;
+	#nav-panels {
+		li {
+			height: 4px;
+			width: 4px;
+			margin: 8px;
+			background-color: $cool-grey-90;
+			opacity: 0.50;
+
+			&.active {
+				height: 8px;
+				width: 8px;
+				margin:6px;
+				background-color: $white !important;
+				font-size: 200%;
+				opacity: 1;
+			}
+
+			&.disabled {
+				visibility: hidden;
+			}
 		}
 	}
 }
