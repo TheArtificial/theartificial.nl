@@ -1,11 +1,12 @@
 <script>
   $( document ).ready(function() {
-    scrollspy('#nav-panels', $('#header').height()*2, tweenGradient);
+    scrollspy('#nav-panels', $(window).height()/2, tweenGradient);
     tweenGradient($('#systems'),0);
     $('.slide-panel').css('background','none');
   });
 
   function tweenGradient(currentElement, offset) {
+
     var topColor = jQuery.Color(currentElement.data('gradient-top')),
         bottomColor = jQuery.Color(currentElement.data('gradient-bottom')),
         overlayColor = jQuery.Color(currentElement.data('overlay')),
@@ -22,6 +23,8 @@
     $('body').css('background-color',currentElement.data('glitch'));
     $('#header').css('background-color',overlayColor.alpha(0.25).toRgbaString());
     $('#nav-panels li svg *').css('fill',overlayColor.toHexString());
+
+    // $('#logo').text(currentElement.attr('id') + ': ' + currentElement.data('gradient-top') + '-' + currentElement.data('gradient-bottom') + ': ' + $('#background').css('background-image'));
   }
 
 </script>
@@ -32,9 +35,9 @@
       <nav id="nav-panels" class="iconlist">
         <div class="padded">
           <ul>
-            <li><a class="prev"><svg version="1.1"
+            <li class="disabled"><a class="prev"><svg class="arrow" version="1.1"
             	 width="24px" height="24px" viewBox="0 0 24 24"><polygon class="arrows" points="12,1.586 1.293,12.293 2.707,13.707 11,5.414 11,23 13,23 13,5.414 21.293,13.707 22.707,12.293 "/></svg></a></li>
-            <li><a href="#systems"><svg class="dot" version="1.1"
+            <li class="active"><a href="#systems"><svg class="dot" version="1.1"
             	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
             <li><a href="#integrated"><svg class="dot" version="1.1"
             	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
@@ -48,7 +51,7 @@
             	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
             <li><a href="#fun"><svg class="dot" version="1.1"
             	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a class="next"><svg version="1.1"
+            <li><a class="next"><svg class="arrow" version="1.1"
             	 width="24px" height="24px" viewBox="0 0 24 24"><polygon points="21.293,10.293 13,18.586 13,1 11,1 11,18.586 2.707,10.293 1.293,11.707 12,22.414 22.707,11.707"/></svg></a></li>
           </ul>
         </div>

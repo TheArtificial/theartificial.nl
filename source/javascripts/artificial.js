@@ -11,15 +11,15 @@ function scrollspy(selector, heightOffset, callback) {
 	    });
 
 	// Bind click handler to menu items so we can get a fancy scroll animation
-	menuItems.click(function(e){
-	  var href = $(this).attr("href"),
-				target = $(href),
-	      offsetTop = href === "#" ? 0 : target.offset().top+1;
-    $("html, body").stop().animate({
-      scrollTop: (offsetTop - heightOffset)
-    }, 600);
-    e.preventDefault();
-	});
+	// menuItems.click(function(e){
+	//   var href = $(this).attr("href"),
+	// 			target = $(href),
+	//       offsetTop = href === "#" ? 0 : target.offset().top+1;
+  //   $("html, body").stop().animate({
+  //     scrollTop: (offsetTop - heightOffset)
+  //   }, 600);
+  //   e.preventDefault();
+	// });
 
 	// Do all the things
 	function scrollUpdate() {
@@ -56,14 +56,14 @@ function scrollspy(selector, heightOffset, callback) {
 			if (prevMenuItem.length > 0) {
 				menuItems.filter('.prev').attr('href',prevMenuItem.attr('href')).parent().removeClass('disabled');
 			} else {
-				console.log("nothing prev", id);
-				menuItems.filter('.prev').parent().addClass('disabled');
+				// console.log("nothing prev", id);
+				menuItems.filter('.prev').removeAttr('href').parent().addClass('disabled');
 			}
 			var nextMenuItem = currentMenuItem.parent().next().find('a:not(.next)');
 			if (nextMenuItem.length > 0) {
 				menuItems.filter('.next').attr('href',nextMenuItem.attr('href')).parent().removeClass('disabled');
 			} else {
-				console.log("nothing next", id);
+				// console.log("nothing next", id);
 				menuItems.filter('.next').parent().addClass('disabled');
 			}
 	  }
