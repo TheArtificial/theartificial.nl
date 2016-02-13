@@ -506,12 +506,12 @@ html, body {
 	left: 0;
 
 	min-width: 100%;
-	min-height: 112%;
+	min-height: 100%;
 
 	background-color: $turquoise;
-	background: linear-gradient(to bottom, $pale-grass, $turquoise);
-	-webkit-transition: background-image 0.2s ease-in-out;
-	transition: background-image 0.2s ease-in-out;
+	// background: linear-gradient(to bottom, $pale-grass, $turquoise);
+	-webkit-transition: background-image 0.5s linear;
+	transition: background-image 0.5s linear;
 	z-index: -1;
 }
 
@@ -543,6 +543,7 @@ html, body {
 
 @media only screen and (min-device-width: 768px) {
 	#side-nav {
+		display: block;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -556,23 +557,33 @@ html, body {
 
 	#nav-panels {
 		li {
-			height: 4px;
-			width: 4px;
-			margin: 8px;
-			background-color: $cool-grey-90;
-			opacity: 0.50;
+			width: 32px;
+			text-align: center;
 
-			&.active {
-				height: 8px;
-				width: 8px;
-				margin:6px;
-				background-color: $white !important;
-				font-size: 200%;
-				opacity: 1;
+			a {
+				display: block;
+				height: 24px;
+				width: 24px;
+				margin: 4px;
 			}
 
+			svg.dot {
+				height: 2px;
+				width: 2px;
+			}
+
+			&.active svg.dot {
+				height: 4px;
+				width: 4px;
+				* {
+					fill: $white !important;
+				}
+			}
+
+			transition: opacity 1.0s linear;
+
 			&.disabled {
-				visibility: hidden;
+				opacity: 0;
 			}
 		}
 	}

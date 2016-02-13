@@ -23,16 +23,15 @@ function scrollspy(selector, heightOffset, callback) {
 
 	// Do all the things
 	function scrollUpdate() {
-		scrollTicking = false;
-
 	  // Get container scroll position
 	  var fromTop = $(this).scrollTop();
 
-	  // Get id of current scroll item
+		// Test every scroll item to see if it's in view
 	  var onScreen = scrollItems.map(function(){
 	    if ($(this).offset().top <= (fromTop + heightOffset))
 	      return this;
 	  });
+		// Treat the last one as current
 	  var current = onScreen[onScreen.length-1];
 	  var id = current && current.length ? current[0].id : "";
 		// var id = current[0].id;
@@ -68,6 +67,8 @@ function scrollspy(selector, heightOffset, callback) {
 				menuItems.filter('.next').parent().addClass('disabled');
 			}
 	  }
+
+		scrollTicking = false;
 	}
 
 	// For a good explanation of this, see http://www.html5rocks.com/en/tutorials/speed/animations/

@@ -1,6 +1,6 @@
 <script>
   $( document ).ready(function() {
-    scrollspy('#nav-panels', $('#header').height(), tweenGradient);
+    scrollspy('#nav-panels', $('#header').height()*2, tweenGradient);
     tweenGradient($('#systems'),0);
     $('.slide-panel').css('background','none');
   });
@@ -10,8 +10,6 @@
         bottomColor = jQuery.Color(currentElement.data('gradient-bottom')),
         overlayColor = jQuery.Color(currentElement.data('overlay')),
         nextElement = currentElement.next('.slide-panel');
-// console.log(currentElement.attr('id'), nextElement.attr('id'));
-// console.log(currentElement.attr('id'), topColor, bottomColor);
     if (nextElement.length > 0) {
       var nextTopColor = jQuery.Color(nextElement.data('gradient-top')),
           nextBottomColor = jQuery.Color(nextElement.data('gradient-bottom')),
@@ -21,8 +19,9 @@
       overlayColor = overlayColor.transition(nextOverlayColor, offset);
     }
     $('#background').css('background-image','linear-gradient('+topColor.toRgbaString()+', '+bottomColor.toRgbaString()+')');
+    $('body').css('background-color',currentElement.data('glitch'));
     $('#header').css('background-color',overlayColor.alpha(0.25).toRgbaString());
-    $('#nav-panels li').css('background-color',overlayColor.toHexString());
+    $('#nav-panels li svg *').css('fill',overlayColor.toHexString());
   }
 
 </script>
@@ -33,15 +32,24 @@
       <nav id="nav-panels" class="iconlist">
         <div class="padded">
           <ul>
-            <li><a class="prev">&nbsp;</a></li>
-            <li><a href="#systems">&nbsp;</a></li>
-            <li><a href="#integrated">&nbsp;</a></li>
-            <li><a href="#global">&nbsp;</a></li>
-            <li><a href="#details">&nbsp;</a></li>
-            <li><a href="#possible">&nbsp;</a></li>
-            <li><a href="#scale">&nbsp;</a></li>
-            <li><a href="#fun">&nbsp;</a></li>
-            <li><a class="next">&nbsp;</a></li>
+            <li><a class="prev"><svg version="1.1"
+            	 width="24px" height="24px" viewBox="0 0 24 24"><polygon class="arrows" points="12,1.586 1.293,12.293 2.707,13.707 11,5.414 11,23 13,23 13,5.414 21.293,13.707 22.707,12.293 "/></svg></a></li>
+            <li><a href="#systems"><svg class="dot" version="1.1"
+            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
+            <li><a href="#integrated"><svg class="dot" version="1.1"
+            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
+            <li><a href="#global"><svg class="dot" version="1.1"
+            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
+            <li><a href="#details"><svg class="dot" version="1.1"
+            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
+            <li><a href="#possible"><svg class="dot" version="1.1"
+            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
+            <li><a href="#scale"><svg class="dot" version="1.1"
+            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
+            <li><a href="#fun"><svg class="dot" version="1.1"
+            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
+            <li><a class="next"><svg version="1.1"
+            	 width="24px" height="24px" viewBox="0 0 24 24"><polygon points="21.293,10.293 13,18.586 13,1 11,1 11,18.586 2.707,10.293 1.293,11.707 12,22.414 22.707,11.707"/></svg></a></li>
           </ul>
         </div>
       </nav>
@@ -53,7 +61,7 @@
 
 <div class="bleed slide-container">
 
-  <div class="slide-panel bleed turquoise-palegrass" data-gradient-bottom="#35B199" data-gradient-top="#C2F1A9" data-overlay="#0A6656" id="systems">
+  <div class="slide-panel bleed turquoise-palegrass" data-gradient-bottom="#35B199" data-gradient-top="#C2F1A9" data-overlay="#0A6656" data-glitch="#35B199" id="systems">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/sonicare-breath_cover.png');">
         &nbsp;
@@ -66,7 +74,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed sapphire-palegrape" data-gradient-bottom="#2A3F98" data-gradient-top="#DCB6E4" data-overlay="#172872" id="integrated">
+  <div class="slide-panel bleed sapphire-palegrape" data-gradient-bottom="#2A3F98" data-gradient-top="#DCB6E4" data-overlay="#172872" data-glitch="#2A3F98" id="integrated">
     <div class="flex container">
       <!-- <div class="underheader"></div> -->
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/avent-ugrow_cover.png');">
@@ -80,7 +88,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed grape-paletulip" data-gradient-bottom="#77278B" data-gradient-top="#F1A9BC" data-overlay="#78288C" id="global">
+  <div class="slide-panel bleed grape-paletulip" data-gradient-bottom="#77278B" data-gradient-top="#F1A9BC" data-overlay="#78288C" data-glitch="#77278B" id="global">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/sonicare-sims_cover.png');">
         &nbsp;
@@ -93,7 +101,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed tulip-palepumpkin" data-gradient-bottom="#CB2853" data-gradient-top="#FFD4BF" data-overlay="#A51138" id="details">
+  <div class="slide-panel bleed tulip-palepumpkin" data-gradient-bottom="#CB2853" data-gradient-top="#FFD4BF" data-overlay="#A51138" data-glitch="#CB2853" id="details">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/toicon_cover.png');">
         &nbsp;
@@ -106,7 +114,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed pumpkin-paledandelion" data-gradient-bottom="#FF7632" data-gradient-top="#FFE5B2" data-overlay="#CC5215" id="possible">
+  <div class="slide-panel bleed pumpkin-paledandelion" data-gradient-bottom="#FF7632" data-gradient-top="#FFE5B2" data-overlay="#CC5215" data-glitch="#FF7632" id="possible">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/3DS-consumer_cover.png');">
         &nbsp;
@@ -119,7 +127,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed dandelion-paledandelion" data-gradient-bottom="#FFB626" data-gradient-top="#FFE5B2" data-overlay="#B27200" id="scale">
+  <div class="slide-panel bleed dandelion-paledandelion" data-gradient-bottom="#FFB626" data-gradient-top="#FFE5B2" data-overlay="#B27200" data-glitch="#FFB626" id="scale">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('work/images/knowledgesharing_cover.png');">
         &nbsp;
@@ -132,7 +140,7 @@
     </div>
   </div>
 
-  <div class="slide-panel bleed grass-paleturquoise" data-gradient-bottom="#75CB49" data-gradient-top="#B6E4DC" data-overlay="#0A6656" id="fun">
+  <div class="slide-panel bleed grass-paleturquoise" data-gradient-bottom="#75CB49" data-gradient-top="#B6E4DC" data-overlay="#0A6656" data-glitch="#101817" id="fun">
     <div class="flex container">
       <div class="col-10 slide-panel-image" style="background-image: url('laboratory/images/futureofcake_cover.png');">
         &nbsp;
