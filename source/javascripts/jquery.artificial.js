@@ -9,5 +9,4 @@
 //= require_self
 //= require jquery.artificial.utils
 //= require jquery.artificial.logo
-//= require jquery.artificial.carousel
 //= require jquery.artificial.parallax
