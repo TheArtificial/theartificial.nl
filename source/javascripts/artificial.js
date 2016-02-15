@@ -40,7 +40,7 @@ function scrollspy(selector, heightOffset, callback) {
 			var	currentElement = $('#'+id),
 					offset = 0;
 			if (currentElement.offset()) {
-				offset = Math.min((fromTop + heightOffset - currentElement.offset().top) / (currentElement.height()),1.0);
+				offset = Math.min((fromTop - currentElement.offset().top) / (currentElement.height()),1.0);
 			}
 			callback(currentElement, offset);
 		}

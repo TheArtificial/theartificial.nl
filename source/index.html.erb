@@ -6,7 +6,6 @@
   });
 
   function tweenGradient(currentElement, offset) {
-
     var topColor = jQuery.Color(currentElement.data('gradient-top')),
         bottomColor = jQuery.Color(currentElement.data('gradient-bottom')),
         overlayColor = jQuery.Color(currentElement.data('overlay')),
@@ -20,10 +19,11 @@
       overlayColor = overlayColor.transition(nextOverlayColor, offset);
     }
     $('#background').css('background-image','linear-gradient('+topColor.toRgbaString()+', '+bottomColor.toRgbaString()+')');
-    $('body').css('background-color',currentElement.data('glitch'));
+    // $('body').css('background-color',currentElement.data('glitch'));
     $('#header').css('background-color',overlayColor.alpha(0.25).toRgbaString());
     $('#nav-panels li svg *').css('fill',overlayColor.toHexString());
 
+    // $('#logo').text(offset);
     // $('#logo').text(currentElement.attr('id') + ': ' + currentElement.data('gradient-top') + '-' + currentElement.data('gradient-bottom') + ': ' + $('#background').css('background-image'));
   }
 

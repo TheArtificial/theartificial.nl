@@ -482,7 +482,7 @@ html {
 	// min-height: 100%;
 }
 
-body {
+body.index {
 	scroll-behavior: smooth;
 	scroll-snap-type: mandatory;
 	scroll-snap-points-y: repeat(100%);
