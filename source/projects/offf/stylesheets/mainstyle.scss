@@ -1,0 +1,72 @@
+@import "_artificial-colors.scss";
+
+.offf{
+
+	.bleed .intro{
+		background-color: $white;
+	}
+
+	#container svg {
+		height: auto;
+		max-width: 100%;
+	}
+
+	#content {
+		color: white;
+		margin-bottom: 0px;
+	}
+
+	.introduction {
+		margin: 60px 0 60px 0;
+
+		h1,h2,h3,h4,h5 {
+			font-family: "Open Sans", Helvetica, Arial, sans-serif;
+			color: $darkest-sapphire;
+		}
+
+		h1 {
+			font-size:2.3em;
+			font-family: "Droid Serif", Georgia, Times, serif;
+		}
+
+		h2 {
+			font-size: 0.8em;
+			line-height: 1.4em;
+			font-weight: normal;
+
+			a {
+				color: $darkest-sapphire;
+			}
+			a:hover {
+				color: $sapphire;
+			}
+		}
+
+		h5 {
+			font-size: 0.7em;
+			margin-bottom: 30px;
+			text-transform: none;
+			font-family: "Droid Serif", Georgia, Times, serif;
+			font-style: italic;
+
+			a {
+				text-decoration: underline;
+				color: $darkest-sapphire;
+			}
+		}
+	}
+
+	.visualization {
+		background-color: $tulip;
+		height: 50px;
+	}
+
+	.choices {
+		background-color: $lime;
+
+		ul {
+			color: $tulip;
+		}
+	}
+
+}
