@@ -2,18 +2,20 @@
 
 .offf{
 
+	margin:0px;
+	padding:0px;
+
 	.bleed .intro{
 		background-color: $white;
+	}
+
+	.bleed .viz{
+		background-color: $pale-sapphire;
 	}
 
 	#container svg {
 		height: auto;
 		max-width: 100%;
-	}
-
-	#content {
-		color: white;
-		margin-bottom: 0px;
 	}
 
 	.introduction {
@@ -57,15 +59,37 @@
 	}
 
 	.visualization {
-		background-color: $tulip;
-		height: 50px;
+		background-color: $grass;
 	}
 
 	.choices {
-		background-color: $lime;
+		color: $white;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		background-color: $tulip;
 
+		h6{
+		font-size: 0.8em;
+		font-style: normal;
+		}
+
+		.choicer {
+			margin-top: 0px;
+			padding-top: 0px;
+			background-color: $lime;
+		}
+		.choicel {
+			margin-top: 0px;
+			padding-top: 0px;
+			background-color: $turquoise;
+		}
 		ul {
-			color: $tulip;
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+		li {
+			font-size: 0.8em;
+			line-height: 1.4em;
 		}
 	}
 
