@@ -9,7 +9,7 @@
 		background-color: $white;
 	}
 
-	.bleed .viz{
+	.bleed .saphire{
 		background-color: $pale-sapphire;
 	}
 
@@ -40,7 +40,7 @@
 				color: $darkest-sapphire;
 			}
 			a:hover {
-				color: $sapphire;
+				color: $pale-sapphire;
 			}
 		}
 
@@ -64,28 +64,22 @@
 
 	.choices {
 		color: $white;
-		margin-top: 0px;
-		margin-bottom: 0px;
-		background-color: $tulip;
+		margin: 0px;
+		background-color: $sapphire;
+		width:800px;
 
-		p{
+		p {
 		font-size: 0.8em;
 		font-style: normal;
 		color: $white;
 		font-family: "Open Sans", Helvetica, Arial, sans-serif;
-		padding-right: 3px;
+		padding-right: 1px;
 		}
 
-		.choicel, .choicer {
-			margin-top: 0px;
-			padding-top: 0px;
-			background-color: $sapphire;
+		.choicel, .choicer, .pickl, .pickr {
+			background-color: $darkest-sapphire;
 			text-align: right;
-		}
-		.pickl, .pickr{
-			margin-top: 0px;
-			padding-top: 0px;
-			background-color: $pale-sapphire;
+			width:160px;
 		}
 	}
 
