@@ -46,12 +46,11 @@ div.cs-select:focus {
 
 .cs-select .cs-selected span::after {
 	content: '\2713';
-	// margin-left: 5px;
 }
 
 .cs-select.cs-active > span::after {
-	-webkit-transform: translateY(-50%) rotate(180deg);
-	transform: translateY(-50%) rotate(180deg);
+	-webkit-transform: translateY(-50%) rotate(90deg);
+	transform: translateY(-50%) rotate(90deg);
 }
 
 div.cs-active {
@@ -87,9 +86,13 @@ div.cs-active {
 
 /* Optgroup and optgroup label */
 .cs-select li.cs-optgroup ul {
-	// padding-left: 1em;
+	padding-left: 1em;
 }
 
 .cs-select li.cs-optgroup > span {
 	cursor: default;
+}
+
+.cs-select > span:hover {
+color:#f6c831;
 }

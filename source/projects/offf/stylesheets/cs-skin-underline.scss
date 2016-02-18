@@ -27,8 +27,8 @@ li {
 }
 
 .cs-skin-underline.cs-active > span::after {
-	-webkit-transform: translate3d(0,-50%,0) rotate3d(0,0,1,270deg);
-	transform: translate3d(0,-50%,0) rotate3d(0,0,1,270deg);
+	-webkit-transform: translate3d(0,-50%,0) rotate3d(0,0,1,225deg);
+	transform: translate3d(0,-50%,0) rotate3d(0,0,1,225deg);
 }
 
 .cs-skin-underline .cs-options {
@@ -117,6 +117,6 @@ li {
 .cs-skin-underline .cs-options li span:hover,
 .cs-skin-underline .cs-options li.cs-focus span,
 .cs-skin-underline li.cs-selected span {
-	color: #566473;
+	color:#f6c831;
 	background: transparent;
 }
