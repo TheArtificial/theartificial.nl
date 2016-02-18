@@ -40,6 +40,9 @@ div.cs-select:focus {
 }
 
 .cs-select > span::after {
+	// background-image: url ("offf/images/triangle.svg");
+	// background-size: 10px 10px;
+	// background-color: red;
 	content: '\25BE';
 	right: 1em;
 }

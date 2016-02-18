@@ -58,8 +58,6 @@ li {
 }
 
 .cs-select .cs-selected span::after {
-
-	content: '\e010';
 	opacity: 1;
 	-webkit-transition: opacity 0.3s 0.7s;
 	transition: opacity 0.3s 0.7s;
