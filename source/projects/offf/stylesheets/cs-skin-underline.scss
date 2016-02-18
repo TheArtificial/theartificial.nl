@@ -1,0 +1,123 @@
+div.cs-skin-underline {
+	background: transparent;
+	max-width: 160px;
+	font-size: 0.8em;
+	font-weight: normal;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+li {
+	font-size: 0.8em;
+	font-style: normal;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+ }
+
+.cs-skin-underline > span {
+	border-bottom: 1px solid #000;
+	border-color: inherit;
+}
+
+.cs-skin-underline > span::after {
+	// right: 0.25em;
+	-webkit-transform: translate3d(0,-50%,0) rotate3d(0,0,1,45deg);
+	transform: translate3d(0,-50%,0) rotate3d(0,0,1,45deg);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.cs-skin-underline.cs-active > span::after {
+	-webkit-transform: translate3d(0,-50%,0) rotate3d(0,0,1,270deg);
+	transform: translate3d(0,-50%,0) rotate3d(0,0,1,270deg);
+}
+
+.cs-skin-underline .cs-options {
+	background: #081758;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.4s, visibility 0s 0.7s;
+	transition: opacity 0.3s 0.4s, visibility 0s 0.7s;
+}
+
+.cs-skin-underline.cs-active .cs-options {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.cs-skin-underline ul span {
+	position: relative;
+	opacity: 0;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.cs-select ul span::after {
+	content: '';
+	opacity: 0;
+}
+
+.cs-select .cs-selected span::after {
+
+	content: '\e010';
+	opacity: 1;
+	-webkit-transition: opacity 0.3s 0.7s;
+	transition: opacity 0.3s 0.7s;
+}
+
+.cs-skin-underline ul span::before {
+	content: '';
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	height: 1px;
+	width: 100%;
+	background-color: #FFFFFF;
+	-webkit-transform: translate3d(200%,0,0);
+	transform: translate3d(200%,0,0);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.cs-skin-underline.cs-active ul span,
+.cs-skin-underline.cs-active ul span::before {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/* transition for each list */
+.cs-skin-underline li:nth-child(5) span,
+.cs-skin-underline li:nth-child(5) span::before,
+.cs-skin-underline.cs-active li:first-child span,
+.cs-skin-underline.cs-active li:first-child span::before {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+.cs-skin-underline li:nth-child(4) span,
+.cs-skin-underline li:nth-child(4) span::before,
+.cs-skin-underline.cs-active li:nth-child(2) span,
+.cs-skin-underline.cs-active li:nth-child(2) span::before {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+.cs-skin-underline li:nth-child(3) span,
+.cs-skin-underline li:nth-child(3) span::before {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+.cs-skin-underline li:nth-child(2) span,
+.cs-skin-underline li:nth-child(2) span::before,
+.cs-skin-underline.cs-active li:nth-child(4) span,
+.cs-skin-underline.cs-active li:nth-child(4) span::before {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+/* more items require more delay declarations */
+
+.cs-skin-underline .cs-options li span:hover,
+.cs-skin-underline .cs-options li.cs-focus span,
+.cs-skin-underline li.cs-selected span {
+	color: #566473;
+	background: transparent;
+}

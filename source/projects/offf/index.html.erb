@@ -1,6 +1,8 @@
 
 <script type="text/javascript" src="/offf/library/d3.js"></script>
 <link rel="stylesheet" type="text/css" href="/offf/stylesheets/mainstyle.scss">
+<link rel="stylesheet" type="text/css" href="/offf/stylesheets/cs-select.scss" />
+<link rel="stylesheet" type="text/css" href="/offf/stylesheets/cs-skin-underline.scss" />
 <script src="/offf/library/jquery-2.2.0.min.js" type="text/javascript" > </script>
 
 
@@ -230,44 +232,49 @@
 	</div>
 
 	<div class="flexcontainer">
-		<div class="choices">
-			<div class="col-4 right-7 padded choicel">
+		<div class="col-10 left-1 right-1 center choices">
 
+			<div class="col-2 choicel left-0">
+				<p>Organise artists by</p>
+			</div>
+			<div class="col-2 pickl left-2">
 				<script type="text/javascript"> </script>
-				<select name="filterpicker" id="filterpicker" onChange="printStateMenu(this.value);">'.
-						 '<option>select filter</option>'.
-						 '<option value="IND">industry</option>'.
-						 '<option value="LOC">location</option>'.
-						 '<option value="STA">Working status</option>'.
-						 '<option value="YRS">Year(s) of talk</option>'.
-				</select>
-
-				<h6>Organise artists by</h6>
-					<ul>
-						<li>L1</li>
-						<li>Digital</li>
-						<li>Motion</li>
-						<li>Music</li>
-						<li>Product</li>
-					</ul>
-
+					<select class="cs-select cs-skin-underline">
+						<option value="" disabled selected>choose a filter</option>
+						<option value="industry">industry</option>
+						<option value="location">location</option>
+						<option value="status">Working status</option>
+						<option value="year">Year(s) of talk</option>
+					</select>
+			</div>
+			<div class="col-2 choicer left-6">
+				<p>Colour artists by</p>
+			</div>
+			<div class="col-2 pickr left-8">
+				<script type="text/javascript"> </script>
+					<select class="cs-select cs-skin-underline">
+						<option value="" disabled selected>choose a filter</option>
+						<option value="industry">industry</option>
+						<option value="location">location</option>
+						<option value="status">Working status</option>
+						<option value="year">Year(s) of talk</option>
+					</select>
 			</div>
 
-
-			<div class="col-4 left-7 padded choicer">
-				<h6>Colour artists by</h6>
-					<ul>
-						<li>R1</li>
-						<li>Digital</li>
-						<li>Motion</li>
-						<li>Music</li>
-						<li>Product</li>
-					</ul>
-			</div>
 		</div>
 	</div>
-	</div>
 
+
+ 	<!-- js for the picker to work -->
+	<script src="offf/library/classie.js"></script>
+	<script src="offf/library/selectFx.js"></script>
+	<script>
+		(function() {
+			[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+				new SelectFx(el);
+			} );
+		})();
+	</script>
 
 	<div class="bleed intro">
 		<div class="flexcontainer">

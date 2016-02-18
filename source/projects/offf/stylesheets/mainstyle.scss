@@ -68,28 +68,24 @@
 		margin-bottom: 0px;
 		background-color: $tulip;
 
-		h6{
+		p{
 		font-size: 0.8em;
 		font-style: normal;
+		color: $white;
+		font-family: "Open Sans", Helvetica, Arial, sans-serif;
+		padding-right: 3px;
 		}
 
-		.choicer {
+		.choicel, .choicer {
 			margin-top: 0px;
 			padding-top: 0px;
-			background-color: $lime;
+			background-color: $sapphire;
+			text-align: right;
 		}
-		.choicel {
+		.pickl, .pickr{
 			margin-top: 0px;
 			padding-top: 0px;
-			background-color: $turquoise;
-		}
-		ul {
-			padding-top: 0px;
-			padding-bottom: 0px;
-		}
-		li {
-			font-size: 0.8em;
-			line-height: 1.4em;
+			background-color: $pale-sapphire;
 		}
 	}
 
