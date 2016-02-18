@@ -1,12 +1,12 @@
 /* Default custom select styles */
 div.cs-select {
-	display: inline-block;
+	// display: inline-block;
 	vertical-align: middle;
 	position: relative;
 	text-align: left;
 	z-index: 100;
 	width: 100%;
-	max-width: 160px;
+	max-width: 140px;
 }
 
 /* For better accessibility add a style for this in skin */
@@ -22,7 +22,7 @@ div.cs-select:focus {
 	display: block;
 	position: relative;
 	cursor: pointer;
-	padding: 8px 0px 5px 2px;
+	padding: 8px 3px 3px 2px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -40,16 +40,13 @@ div.cs-select:focus {
 }
 
 .cs-select > span::after {
-	// background-image: url ("offf/images/triangle.svg");
-	// background-size: 10px 10px;
-	// background-color: red;
 	content: '\25BE';
 	right: 1em;
 }
 
 .cs-select .cs-selected span::after {
 	content: '\2713';
-	margin-left: 1em;
+	// margin-left: 5px;
 }
 
 .cs-select.cs-active > span::after {
@@ -82,7 +79,7 @@ div.cs-active {
 }
 
 .cs-select ul span {
-	padding: 8px 0px 12px 0px;
+	padding: 0px 3px 10px 0px;
 	font-size: 1.3em;
 	font-style: normal;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -90,7 +87,7 @@ div.cs-active {
 
 /* Optgroup and optgroup label */
 .cs-select li.cs-optgroup ul {
-	padding-left: 1em;
+	// padding-left: 1em;
 }
 
 .cs-select li.cs-optgroup > span {

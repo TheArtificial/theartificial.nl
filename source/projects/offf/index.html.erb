@@ -18,248 +18,252 @@
 		</div>
 	</div>
 
-	<div class="col-12 center visualization">
-		<script>
-		  var
-		    width = window.innerWidth,
-		    height = window.innerHeight;
-				// w = $('.col-12 center visualization').width();
+	<div class="bleed blue">
+		<div class="flexcontainer">
+			<div class="col-12 center visualization">
+				<script>
+				  var
+				    width = window.innerWidth,
+				    height = window.innerHeight;
+						// w = $('.col-12 center visualization').width();
 
-		  // SVG selection that holds the visualization
-		  var svg = d3.select(".visualization").append("svg")
-		    .attr("id", "container")
-		    .attr("viewBox", "0 0 " + width + " " + height) //viewbox
-		    .append("g")
-		    .attr("preserveAspectRatio", "xMidYMid meet");
+				  // SVG selection that holds the visualization
+				  var svg = d3.select(".visualization").append("svg")
+				    .attr("id", "container")
+				    .attr("viewBox", "0 0 " + width + " " + height) //viewbox
+				    .append("g")
+				    .attr("preserveAspectRatio", "xMidYMid meet");
 
-			// rectangle for background color
-			svg.append("rect")
-	    .attr("width", "100%")
-	    .attr("height", "100%")
-	    .attr("fill", "#081758");
+					// rectangle for background color
+					svg.append("rect")
+			    .attr("width", "100%")
+			    .attr("height", "100%")
+			    .attr("fill", "#081758");
 
-		  // force layout, used to calculate positions
-		  var force = d3.layout.force()
-		    .linkDistance(50)
-		    .linkStrength(0.25)
-		    .charge(-125)
-		    .size([width, height])
-		    .on("tick", tick);
+				  // force layout, used to calculate positions
+				  var force = d3.layout.force()
+				    .linkDistance(50)
+				    .linkStrength(0.25)
+				    .charge(-125)
+				    .size([width, height])
+				    .on("tick", tick);
 
-		  // this global will hold the loaded data
-		  var graph;
+				  // this global will hold the loaded data
+				  var graph;
 
-		  // and these will hold the SVG elements
-		  var nodeSelection = svg.selectAll('.node');
-		      linkSelection = svg.selectAll('.link');
+				  // and these will hold the SVG elements
+				  var nodeSelection = svg.selectAll('.node');
+				      linkSelection = svg.selectAll('.link');
 
-		  // lookup arrays for styling
-		  var color = ["blue", "white", "red","#e66964","#f3aa84", "#f6c831","yellow", "lightblue"];
-		  // 10 Custom DDV colors
-		  // var colorScale = d3.scale.ordinal().range(["fff2bc", "00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"]);
-		  var radius = ["100","100","100","4","4","4"]; // the first three shouldn't happen
-		  var transparency = ["0","0","0","0","0","0"];
+				  // lookup arrays for styling
+				  var color = ["blue", "white", "red","#e66964","#f3aa84", "#f6c831","yellow", "lightblue"];
+				  // 10 Custom DDV colors
+				  // var colorScale = d3.scale.ordinal().range(["fff2bc", "00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"]);
+				  var radius = ["100","100","100","4","4","4"]; // the first three shouldn't happen
+				  var transparency = ["0","0","0","0","0","0"];
 
-		  // filter values
-		  var includeGroupyears = [3,4,5];
-		  var includeGroupstatus = [1,2,3,4,5];
-		  var includeGroupcontinents = [1,2,3,4,5];
-
-
-		  // load and tick the layout, then draw all the things
-		  function draw() {
-
-		    // get them from the loaded graph
-		    var allNodes = graph.nodes.slice(); // slice forces a copy
-		        rawLinks = graph.links.slice();
-
-		    // we have to find nodes ourself, because d3.force.links expects objects or indexes.
-		    var allLinks = rawLinks.map(function(link) {
-		      var source = allNodes.find(function(node) { return node.id === link.source; });
-		      var target = allNodes.find(function(node) { return node.id === link.target; });
-		      return {source: source, target: target, stroke: link.stroke}; });
-		    // console.log("allLinks", allLinks);
-
-		    // pre-start to force allLinks to reference nodes
-		    // force
-		    //   .nodes(allNodes)
-		    //   .links(allLinks)
-		    //   .start();
-
-		    var filteredNodes = allNodes.filter(filterNode),
-		        nodeIds = filteredNodes.map(function(node){ return node.id }),
-		        filteredLinks = trimLinks(allLinks, nodeIds)
-		        // nodeColor = filteredNodes.map(function(d){return color[d.groupyear], color[d.groupstatus]})
-		        // console.log("nodeColor", nodeColor);
-		        // console.log("Filtered links", allLinks, filteredLinks, graph);
-
-		    // start the layout ticking
-		    force
-		      .nodes(filteredNodes)
-		      .links(filteredLinks)
-		      .start();
-
-		    // bind the data array to the svg selection
-		    linkSelection = linkSelection.data(filteredLinks);
-
-		    // draw new links
-		    linkSelection.enter().append("path")
-		      .attr("class", "link") // you have to do this or you can't re-select it!
-		      .style("opacity", "0.2")
-		      .style("stroke-width", function(d,s) { return d.stroke; })
-		      .style("stroke", "#FFFFFF")
-		      .style("fill", "none");
-
-		    // remove old links
-		    linkSelection.exit().remove();
-
-		    // bind the data array to the svg selection, with a key function
-		    nodeSelection = nodeSelection.data(filteredNodes, function(d) { return d.id; });
-		    nodeSelected = nodeSelection.data(filteredNodes);
-		    // draw new nodes
-		    var node = nodeSelection.enter()
-		      .append("g")
-		      .call(force.drag);
-
-		    node.append("circle")
-		      .attr("class", "node") // you have to do this or you can't re-select it!
-					.attr("fill", function(d, i) { return color[d.groupyear] })
-		      .attr("fill", function(d, i) { return d.groupyear ? color[d.groupyear] : "white"; }) // if no groupyear, then it's a category, so color white
-		      .style("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 7; }); // if no groupyear, then it's a category, so size 7
-					// .attr("fill", "white");
-
-		    node.append("text")
-		      .attr("dx", 8)
-		      .attr("dy", 4)
-		      .attr("spacing", 16)
-		      .attr("id", "abc")
-		      .attr("fill", function(d, i) {return d.groupyear ? color[d.groupyear] : "white";}) // if no groupyear, then it's a category, so color white
-		      .attr("opacity", function(d, i) {return d.groupyear ? transparency[d.groupyear] : 1;}) // if no groupyear, then it's a category, so opacity 1
-		      .attr("opacity", function(d, i) {return transparency[d.groupyear]})
-					.attr("fill","white")
-		      .text(function(d) {return d.name});
-
-		    // remove old nodes
-		    nodeSelection.exit().remove();
-		    console.log("nodeSelection", nodeSelection);
-		  }
-
-		  // called by force layout during iteration
-		  function tick() {
-		    linkSelection.attr("d", arcPath);
-		    nodeSelection .attr("transform", function(d) {
-		        return "translate("
-		        + d.x + ","
-		        + d.y + ")";
-		    });
-		  }
-
-		  // draw SVG arc for link _d_, per http://bl.ocks.org/mbostock/1153292
-		  function arcPath(d) {
-		    var dx = d.target.x - d.source.x,
-		        dy = d.target.y - d.source.y,
-		        dr = Math.sqrt(dx * dx + dy * dy);
-		    return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
-		  }
-
-		  //  function using includes to evaluate if some of node.groupcontinents exists in includeGroupcontinents
-		  function isInGpc(element, index, array) {
-		    return includeGroupcontinents.includes(element);
-		  }
-
-		  function filterNode(node) {
-		    var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || node.groupcontinent.some(isInGpc);
-		    var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
-		    var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
-		    // console.log('includeGroupcontinents', includeGroupcontinents);
-		    // console.log('node.groupcontinent', node.groupcontinent);
-		    // console.log('matchesGroupcontinents', matchesGroupcontinents);
-		    return (matchesGroupcontinents && matchesGroupyear && matchesGroupstatus);
-		  }
-
-		  function trimLinks(links, nodeIds) {
-		    results = [];
-		    var results = links.filter(function(link) {
-		      return (nodeIds.includes(link.source.id) && nodeIds.includes(link.target.id));
-		    });
-		    return results;
-		  }
-
-		  // fetch data and (in the callback) load into the arrays
-		  d3.json("/offf/data/industry.json", function(error, json) {
-		    graph = json;
-		    // console.log('Fetched', graph);
-		    draw();
-		  });
-
-			// wire up the categories the hard way
-			d3.select("#catIndustry").on("click", function() { d3.json("/offf/data/industry.json", function(error, json) { graph = json; draw(); }); });
-			d3.select("#catLocation").on("click", function() { d3.json("/offf/data/location.json", function(error, json) { graph = json; draw(); }); });
-			d3.select("#catRecurrence").on("click", function() { d3.json("/offf/data/recurrence.json", function(error, json) { graph = json; draw(); }); });
-			d3.select("#catStructure").on("click", function() { d3.json("/offf/data/structure.json", function(error, json) { graph = json; draw(); }); });
-
-		  // wire up the filters the hard way
-		  d3.select("#year1").on("click", function(d,i) { includeGroupyears = [1,3]; draw(); });                                 // Groupyear filter
-		  d3.select("#year2").on("click", function() { includeGroupyears = [1,4]; draw(); });
-		  d3.select("#year3").on("click", function() { includeGroupyears = [1,5]; draw(); });
-		  d3.select("#year4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });                             // Groupcontinent filter
-		  d3.select("#continent1").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
-		  d3.select("#continent2").on("click", function() { includeGroupcontinents = [1,2]; draw(); });
-		  d3.select("#continent3").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
-		  d3.select("#continent4").on("click", function() { includeGroupcontinents = [1,4]; draw(); });
-		  d3.select("#continent5").on("click", function() { includeGroupcontinents = [1,5]; draw(); });
-		  d3.select("#continent6").on("click", function() { includeGroupcontinents = [1,2,3,4,5]; draw(); });
-		  d3.select("#status1").on("click", function() { includeGroupstatus = [1,1]; draw(); });                              // Groupstatus filter
-		  d3.select("#status2").on("click", function() { includeGroupstatus = [1,2]; draw(); });
-		  d3.select("#status3").on("click", function() { includeGroupstatus = [1,3]; draw(); });
-		  d3.select("#status4").on("click", function() { includeGroupstatus = [1,4]; draw(); });
-		  d3.select("#status5").on("click", function() { includeGroupstatus = [1,5]; draw(); });
-		  d3.select("#status6").on("click", function() { includeGroupstatus = [1,2,3,4,5]; draw(); });
+				  // filter values
+				  var includeGroupyears = [3,4,5];
+				  var includeGroupstatus = [1,2,3,4,5];
+				  var includeGroupcontinents = [1,2,3,4,5];
 
 
-			// Togle the label button between show and hide
-		  d3.select("#label0").on("click", function(d,i) {
-		    // Determine if current label is visible
-		     var active   = abc.active ? false : true,
-		       newOpacity = active ? 1 : 0;
-		     // Hide or show the labels
-		     d3.selectAll("text").attr("opacity", newOpacity);
-		     d3.selectAll("text").select("id", "abc").attr("opacity", newOpacity);
-		     // Update whether or not the elements are active
-		     abc.active = active;
-		   });
-		 </script>
+				  // load and tick the layout, then draw all the things
+				  function draw() {
+
+				    // get them from the loaded graph
+				    var allNodes = graph.nodes.slice(); // slice forces a copy
+				        rawLinks = graph.links.slice();
+
+				    // we have to find nodes ourself, because d3.force.links expects objects or indexes.
+				    var allLinks = rawLinks.map(function(link) {
+				      var source = allNodes.find(function(node) { return node.id === link.source; });
+				      var target = allNodes.find(function(node) { return node.id === link.target; });
+				      return {source: source, target: target, stroke: link.stroke}; });
+				    // console.log("allLinks", allLinks);
+
+				    // pre-start to force allLinks to reference nodes
+				    // force
+				    //   .nodes(allNodes)
+				    //   .links(allLinks)
+				    //   .start();
+
+				    var filteredNodes = allNodes.filter(filterNode),
+				        nodeIds = filteredNodes.map(function(node){ return node.id }),
+				        filteredLinks = trimLinks(allLinks, nodeIds)
+				        // nodeColor = filteredNodes.map(function(d){return color[d.groupyear], color[d.groupstatus]})
+				        // console.log("nodeColor", nodeColor);
+				        // console.log("Filtered links", allLinks, filteredLinks, graph);
+
+				    // start the layout ticking
+				    force
+				      .nodes(filteredNodes)
+				      .links(filteredLinks)
+				      .start();
+
+				    // bind the data array to the svg selection
+				    linkSelection = linkSelection.data(filteredLinks);
+
+				    // draw new links
+				    linkSelection.enter().append("path")
+				      .attr("class", "link") // you have to do this or you can't re-select it!
+				      .style("opacity", "0.2")
+				      .style("stroke-width", function(d,s) { return d.stroke; })
+				      .style("stroke", "#FFFFFF")
+				      .style("fill", "none");
+
+				    // remove old links
+				    linkSelection.exit().remove();
+
+				    // bind the data array to the svg selection, with a key function
+				    nodeSelection = nodeSelection.data(filteredNodes, function(d) { return d.id; });
+				    nodeSelected = nodeSelection.data(filteredNodes);
+				    // draw new nodes
+				    var node = nodeSelection.enter()
+				      .append("g")
+				      .call(force.drag);
+
+				    node.append("circle")
+				      .attr("class", "node") // you have to do this or you can't re-select it!
+							.attr("fill", function(d, i) { return color[d.groupyear] })
+				      .attr("fill", function(d, i) { return d.groupyear ? color[d.groupyear] : "white"; }) // if no groupyear, then it's a category, so color white
+				      .style("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 7; }); // if no groupyear, then it's a category, so size 7
+							// .attr("fill", "white");
+
+				    node.append("text")
+				      .attr("dx", 8)
+				      .attr("dy", 4)
+				      .attr("spacing", 16)
+				      .attr("id", "abc")
+				      .attr("fill", function(d, i) {return d.groupyear ? color[d.groupyear] : "white";}) // if no groupyear, then it's a category, so color white
+				      .attr("opacity", function(d, i) {return d.groupyear ? transparency[d.groupyear] : 1;}) // if no groupyear, then it's a category, so opacity 1
+				      .attr("opacity", function(d, i) {return transparency[d.groupyear]})
+							.attr("fill","white")
+				      .text(function(d) {return d.name});
+
+				    // remove old nodes
+				    nodeSelection.exit().remove();
+				    console.log("nodeSelection", nodeSelection);
+				  }
+
+				  // called by force layout during iteration
+				  function tick() {
+				    linkSelection.attr("d", arcPath);
+				    nodeSelection .attr("transform", function(d) {
+				        return "translate("
+				        + d.x + ","
+				        + d.y + ")";
+				    });
+				  }
+
+				  // draw SVG arc for link _d_, per http://bl.ocks.org/mbostock/1153292
+				  function arcPath(d) {
+				    var dx = d.target.x - d.source.x,
+				        dy = d.target.y - d.source.y,
+				        dr = Math.sqrt(dx * dx + dy * dy);
+				    return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
+				  }
+
+				  //  function using includes to evaluate if some of node.groupcontinents exists in includeGroupcontinents
+				  function isInGpc(element, index, array) {
+				    return includeGroupcontinents.includes(element);
+				  }
+
+				  function filterNode(node) {
+				    var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || node.groupcontinent.some(isInGpc);
+				    var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
+				    var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
+				    // console.log('includeGroupcontinents', includeGroupcontinents);
+				    // console.log('node.groupcontinent', node.groupcontinent);
+				    // console.log('matchesGroupcontinents', matchesGroupcontinents);
+				    return (matchesGroupcontinents && matchesGroupyear && matchesGroupstatus);
+				  }
+
+				  function trimLinks(links, nodeIds) {
+				    results = [];
+				    var results = links.filter(function(link) {
+				      return (nodeIds.includes(link.source.id) && nodeIds.includes(link.target.id));
+				    });
+				    return results;
+				  }
+
+				  // fetch data and (in the callback) load into the arrays
+				  d3.json("/offf/data/industry.json", function(error, json) {
+				    graph = json;
+				    // console.log('Fetched', graph);
+				    draw();
+				  });
+
+					// wire up the categories the hard way
+					d3.select("#catIndustry").on("click", function() { d3.json("/offf/data/industry.json", function(error, json) { graph = json; draw(); }); });
+					d3.select("#catLocation").on("click", function() { d3.json("/offf/data/location.json", function(error, json) { graph = json; draw(); }); });
+					d3.select("#catRecurrence").on("click", function() { d3.json("/offf/data/recurrence.json", function(error, json) { graph = json; draw(); }); });
+					d3.select("#catStructure").on("click", function() { d3.json("/offf/data/structure.json", function(error, json) { graph = json; draw(); }); });
+
+				  // wire up the filters the hard way
+				  d3.select("#year1").on("click", function(d,i) { includeGroupyears = [1,3]; draw(); });                                 // Groupyear filter
+				  d3.select("#year2").on("click", function() { includeGroupyears = [1,4]; draw(); });
+				  d3.select("#year3").on("click", function() { includeGroupyears = [1,5]; draw(); });
+				  d3.select("#year4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });                             // Groupcontinent filter
+				  d3.select("#continent1").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
+				  d3.select("#continent2").on("click", function() { includeGroupcontinents = [1,2]; draw(); });
+				  d3.select("#continent3").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
+				  d3.select("#continent4").on("click", function() { includeGroupcontinents = [1,4]; draw(); });
+				  d3.select("#continent5").on("click", function() { includeGroupcontinents = [1,5]; draw(); });
+				  d3.select("#continent6").on("click", function() { includeGroupcontinents = [1,2,3,4,5]; draw(); });
+				  d3.select("#status1").on("click", function() { includeGroupstatus = [1,1]; draw(); });                              // Groupstatus filter
+				  d3.select("#status2").on("click", function() { includeGroupstatus = [1,2]; draw(); });
+				  d3.select("#status3").on("click", function() { includeGroupstatus = [1,3]; draw(); });
+				  d3.select("#status4").on("click", function() { includeGroupstatus = [1,4]; draw(); });
+				  d3.select("#status5").on("click", function() { includeGroupstatus = [1,5]; draw(); });
+				  d3.select("#status6").on("click", function() { includeGroupstatus = [1,2,3,4,5]; draw(); });
+
+
+					// Togle the label button between show and hide
+				  d3.select("#label0").on("click", function(d,i) {
+				    // Determine if current label is visible
+				     var active   = abc.active ? false : true,
+				       newOpacity = active ? 1 : 0;
+				     // Hide or show the labels
+				     d3.selectAll("text").attr("opacity", newOpacity);
+				     d3.selectAll("text").select("id", "abc").attr("opacity", newOpacity);
+				     // Update whether or not the elements are active
+				     abc.active = active;
+				   });
+				 </script>
+			</div>
+		</div>
 	</div>
 
 
 <div class="bleed blue">
 	<div class="flexcontainer">
-		<div class="col-10 choices">
+		<div class="choices">
 
-			<div class="col-2 choicel left-0">
-				<p>Organise artists by</p>
+			<div class="col-2 left-1 choicel">
+				<li>Organise artists by</li>
 			</div>
-			<div class="col-2 pickl left-2">
+			<div class="col-2 left-3 pickl">
 				<script type="text/javascript"> </script>
 					<select class="cs-select cs-skin-underline">
 						<option value="" disabled selected>choose a filter</option>
 						<option value="industry">industry</option>
 						<option value="location">location</option>
-						<option value="status">Working status</option>
-						<option value="year">Year(s) of talk</option>
+						<option value="status">working status</option>
+						<option value="year">year(s) of talk</option>
 					</select>
 			</div>
-			<div class="col-2 choicer left-6">
-				<p>Colour artists by</p>
+			<div class="col-2 left-7 choicer">
+				<li>Colour artists by</li>
 			</div>
-			<div class="col-2 pickr left-8">
+			<div class="col-2 left-9 pickr">
 				<script type="text/javascript"> </script>
 					<select class="cs-select cs-skin-underline">
 						<option value="" disabled selected>choose a filter</option>
 						<option value="industry">industry</option>
 						<option value="location">location</option>
-						<option value="status">Working status</option>
-						<option value="year">Year(s) of talk</option>
+						<option value="status">working status</option>
+						<option value="year">year(s) of talk</option>
 					</select>
 			</div>
 
