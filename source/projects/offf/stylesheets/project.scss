@@ -64,8 +64,8 @@
 
 	.choicescontainer {
 		color: $white;
-		background-color: $sapphire;
-		height:180px;
+		background-color: $darkest-sapphire;
+		height: 200px;
 		width:100%;
 		position: relative;
 
@@ -78,22 +78,9 @@
 		// background-color: $pale-lime;
 		}
 
-		.choicel, .choicer, .selectl, .selectr {
+		.choicel, .choicer, .selectl, .selectr, .legendl, .legendr {
 			position: absolute;
-			background-color: $lime;
-			text-align: right;
-		}
-	}
-
-	.legendcontainer{
-		color: $white;
-		height:180px;
-		width:100%;
-		position: relative;
-
-		.legendl, .legendr {
-			position: absolute;
-			background-color: $lime;
+			// background-color: $lime;
 			text-align: right;
 		}
 
@@ -101,22 +88,32 @@
 			text-align: left;
 		}
 
-		.legend {
-			// margin: 40px 0px 0px 0px;
-			// position:absolute;
+		#pickl, #pickr {
+			margin: 7px 20px 0px 0;
+		}
+
+		.legendl, .legendr {
 			font-family: "Open Sans", Helvetica, Arial, sans-serif;
-			background-color: $tulip;
+			// background-color: $tulip;
 			text-align: left;
-			margin-left:80px;
 			ul {
-			margin:0px;
-			padding: 0;
+				margin-left:10px;
 			}
 			li {
-			margin:0px;
-			padding: 0;
+			display:block;
+			padding: 5px 0px 5px  10px ;
+			}
+			li:hover{
+			opacity:0.5;
+			}
+			img {
+			width:12px;
+			height: 12px;
+			vertical-align: top;
+			}
+			a {
+				color:$white;
 			}
 		}
 	}
-
 }
