@@ -1,8 +1,6 @@
 
 <script type="text/javascript" src="/offf/library/d3.js"></script>
 <link rel="stylesheet" type="text/css" href="/offf/stylesheets/project.scss">
-<link rel="stylesheet" type="text/css" href="/offf/stylesheets/cs-select.scss" />
-<link rel="stylesheet" type="text/css" href="/offf/stylesheets/cs-skin-underline.scss" />
 <script src="/offf/library/jquery-2.2.0.min.js" type="text/javascript" > </script>
 
 
@@ -17,6 +15,15 @@
 			</div>
 		</div>
 	</div>
+
+
+	<select id="jsonsources" name="jsonsources">
+			<option value ="offf/data/industry.json" selected> source 1</option>
+			<option value ="offf/data/recurrence.json" >source 2</option>
+			<option value ="offf/data/status.json" >source 3</option>
+			<option value ="offf/data/location.json" >source 4</option>
+	</select>​
+
 
 	<div class="bleed blue">
 		<div class="flexcontainer">
@@ -54,6 +61,7 @@
 				  var nodeSelection = svg.selectAll('.node');
 				      linkSelection = svg.selectAll('.link');
 
+					// var jsonsources = ["offf/data/industry.json","offf/data/recurrence.json","offf/data/status.json","offf/data/location.json"];
 
 				  // lookup arrays for styling
 				  var color = ["blue", "white", "red","#e66964","#f3aa84", "#f6c831","#fff2bc", "#00a1a3, #97d9eb"];
@@ -104,6 +112,7 @@
 				    // bind the data array to the svg selection
 				    linkSelection = linkSelection.data(filteredLinks);
 
+
 				    // draw new links
 				    linkSelection.enter().append("path")
 				      .attr("class", "link") // you have to do this or you can't re-select it!
@@ -143,7 +152,7 @@
 
 				    // remove old nodes
 				    nodeSelection.exit().remove();
-				    console.log("nodeSelection", nodeSelection);
+				    // console.log("nodeSelection", nodeSelection);
 				  }
 
 				  // called by force layout during iteration
@@ -194,34 +203,75 @@
 				    draw();
 				  });
 
-					// $(function() {
-					// 	$('#pickl').change(function() {
-					// 			$('.legendl').hide();
-					// 			$('#' + $(this).val()).show();
-					// 	});
-					// });
-					d3.select("#pickl").on("change", function() {
-						d3.json("/offf/data/recurrence.json", function(error, json) { graph = json; draw(); });
-				  });
+
+
+
+					var dropdown = d3.select("#jsonsources")
+					var change = function() {
+						var source = dropdown.node().options[dropdown.node().selectedIndex].value;
+						d3.json(source, function(error, json) {
+							graph = json; draw();
+							console.log(dropdown);
+						})
+					}			
 
 					// wire up the categories the hard way
-					d3.select("#pickl").change(function() { d3.json("/offf/data/industry.json", function(error, json) { graph = json; draw(); }); });
-					d3.select("#locationl").on("click", function() { d3.json("/offf/data/location.json", function(error, json) { graph = json; draw(); }); });
-					d3.select("#yearl").on("click", function() { d3.json("/offf/data/recurrence.json", function(error, json) { graph = json; draw(); }); });
-					d3.select("#structurel").on("click", function() { d3.json("/offf/data/structure.json", function(error, json) { graph = json; draw(); }); });
+					$(function() {
+						$('#pickl').change(function() {
+								$('.legendl').hide();
+								$('#' + $(this).val()).show();
+								dropdown.on("change", change)
+								change(); //trigger json on load
+						});
+					});
+					$(function() {
+						$('#pickr').change(function() {
+								$('.legendr').hide();
+								$('#' + $(this).val()).show();
+						});
+					});
+
+
+
+
+
+					// // Precompute the orders.
+					// var datajson = {
+					// 	datacatindustry: d3.select("#pickl").change(function() { d3.json("/offf/data/industry.json", function(error, json) { graph = json; draw(); }); });
+					// 	datacatyear: d3.select("#pickl").change(function() { d3.json("/offf/data/recurrence.json", function(error, json) { graph = json; draw(); }); });
+					// 	datacatstatus: d3.select("#pickl").change(function() { d3.json("/offf/data/structure.json", function(error, json) { graph = json; draw(); }); });
+					// 	datalocation: d3.select("#pickl").change(function() { d3.json("/offf/data/location.json", function(error, json) { graph = json; draw(); }); });
+					// };
+
+					// var loadjson = function() {
+					// 	if ($('#pickl'.value) == '#industryl')
+					// 	return ("/offf/data/industry.json");
+					// 	else if ($('#pickl'.value) == '#locationl') {
+					// 	return ("/offf/data/location.json");
+					// 	else if ($('#pickl'.value) == '#statusl') {
+					// 	return ("/offf/data/location.json");
+					// 	else if ($('#pickl'.value) == '#yearl') {
+					// 	return ("/offf/data/recurrence.json");
+					// 	}
+					// }
+					// // wire up the categories the hard way
+					// d3.select("#pickl").change(function() { d3.json("/offf/data/industry.json", function(error, json) { graph = json; draw(); }); });
+					// d3.select("#locationl").on("click", function() { d3.json("/offf/data/location.json", function(error, json) { graph = json; draw(); }); });
+					// d3.select("#yearl").on("click", function() { d3.json("/offf/data/recurrence.json", function(error, json) { graph = json; draw(); }); });
+					// d3.select("#structurel").on("click", function() { d3.json("/offf/data/structure.json", function(error, json) { graph = json; draw(); }); });
 
 				  // wire up the filters the hard way
 				  d3.select("#year1").on("click", function(d,i) { includeGroupyears = [1,3]; draw(); });                                 // Groupyear filter
 				  d3.select("#year2").on("click", function() { includeGroupyears = [1,4]; draw(); });
 				  d3.select("#year3").on("click", function() { includeGroupyears = [1,5]; draw(); });
-				  d3.select("#year4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });                             // Groupcontinent filter
+				  d3.select("#year4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });                       	      // Groupcontinent filter
 				  d3.select("#continent1").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
 				  d3.select("#continent2").on("click", function() { includeGroupcontinents = [1,2]; draw(); });
 				  d3.select("#continent3").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
 				  d3.select("#continent4").on("click", function() { includeGroupcontinents = [1,4]; draw(); });
 				  d3.select("#continent5").on("click", function() { includeGroupcontinents = [1,5]; draw(); });
 				  d3.select("#continent6").on("click", function() { includeGroupcontinents = [1,2,3,4,5]; draw(); });
-				  d3.select("#status1").on("click", function() { includeGroupstatus = [1,1]; draw(); });                              // Groupstatus filter
+				  d3.select("#status1").on("click", function() { includeGroupstatus = [1,1]; draw(); });                          	    // Groupstatus filter
 				  d3.select("#status2").on("click", function() { includeGroupstatus = [1,2]; draw(); });
 				  d3.select("#status3").on("click", function() { includeGroupstatus = [1,3]; draw(); });
 				  d3.select("#status4").on("click", function() { includeGroupstatus = [1,4]; draw(); });
@@ -295,7 +345,7 @@
 			</div>
 			<div class="col-2 left-3 selectl">
 				<script type="text/javascript"> </script>
-					<select id="pickl">
+					<select id="pickl" data-bind="event: { change: selectionChanged }">
 						<option value ="" selected value= "selected" disabled="disabled">choose filter</option>
 						<option value="industryl">industry</option>
 						<option value="locationl">location</option>
@@ -364,35 +414,33 @@
 
 
 	<script>
+
+
+
+
+
+
+
+	// var viewModel = {
+	// 		choices: ["one", "two", "three"],
+	// 		selectedChoice: ko.observable("two") ,
+	// 		selectionChanged: function(event) {
+	// 				 alert("the other selection changed");
+	// 		}
+	// };
+	//
+	// viewModel.selectedChoice.subscribe(function(newValue) {
+	// 	 alert("the new value is " + newValue);
+	// });
+	//
+	// ko.applyBindings(viewModel);
+
 	// $(document).ready {
 	// 	$(function() {
 	// 		$("#pickl").val('yearl').;
 	// 		$("#pickr").val('industryr');
 	// 	}
 	// }
-	$(function() {
-		$('#pickl').change(function() {
-				$('.legendl').hide();
-				$('#' + $(this).val()).show();
-		});
-	});
-	$(function() {
-		$('#pickr').change(function() {
-				$('.legendr').hide();
-				$('#' + $(this).val()).show();
-		});
-	});
-	</script>
-
-	<!-- js for the picker to work -->
-	<script src="offf/library/classie.js"></script>
-	<script src="offf/library/selectFx.js"></script>
-	<script>
-		(function() {
-			[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
-				new SelectFx(el);
-			} );
-		})();
 	</script>
 
 	<div class="bleed intro">

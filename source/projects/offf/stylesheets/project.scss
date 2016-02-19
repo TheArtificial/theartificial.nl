@@ -65,7 +65,7 @@
 	.choicescontainer {
 		color: $white;
 		background-color: $darkest-sapphire;
-		height: 200px;
+		height: 210px;
 		width:100%;
 		position: relative;
 
@@ -96,6 +96,7 @@
 			img{
 				width:18px;
 				height: 18px;
+				vertical-align: center;
 			}
 			ul{
 				margin-left: 0px;
@@ -106,6 +107,7 @@
 			img{
 				width:12px;
 				height: 12px;
+				vertical-align: top;
 			}
 			ul {
 				margin-left:10px;
@@ -122,9 +124,6 @@
 			}
 			li:hover{
 			opacity:0.5;
-			}
-			img {
-			vertical-align: top;
 			}
 			a {
 				color:$white;
