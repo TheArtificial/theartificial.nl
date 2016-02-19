@@ -92,13 +92,30 @@
 			margin: 7px 20px 0px 0;
 		}
 
+		.legendl {
+			img{
+				width:18px;
+				height: 18px;
+			}
+			ul{
+				margin-left: 0px;
+			}
+		}
+
+		.legendr {
+			img{
+				width:12px;
+				height: 12px;
+			}
+			ul {
+				margin-left:10px;
+			}
+		}
+
 		.legendl, .legendr {
 			font-family: "Open Sans", Helvetica, Arial, sans-serif;
 			// background-color: $tulip;
 			text-align: left;
-			ul {
-				margin-left:10px;
-			}
 			li {
 			display:block;
 			padding: 5px 0px 5px  10px ;
@@ -107,8 +124,6 @@
 			opacity:0.5;
 			}
 			img {
-			width:12px;
-			height: 12px;
 			vertical-align: top;
 			}
 			a {

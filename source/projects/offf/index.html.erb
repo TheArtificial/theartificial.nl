@@ -54,6 +54,7 @@
 				  var nodeSelection = svg.selectAll('.node');
 				      linkSelection = svg.selectAll('.link');
 
+
 				  // lookup arrays for styling
 				  var color = ["blue", "white", "red","#e66964","#f3aa84", "#f6c831","#fff2bc", "#00a1a3, #97d9eb"];
 				  // 10 Custom DDV colors
@@ -193,11 +194,21 @@
 				    draw();
 				  });
 
+					// $(function() {
+					// 	$('#pickl').change(function() {
+					// 			$('.legendl').hide();
+					// 			$('#' + $(this).val()).show();
+					// 	});
+					// });
+					d3.select("#pickl").on("change", function() {
+						d3.json("/offf/data/recurrence.json", function(error, json) { graph = json; draw(); });
+				  });
+
 					// wire up the categories the hard way
-					d3.select("#catIndustry").on("click", function() { d3.json("/offf/data/industry.json", function(error, json) { graph = json; draw(); }); });
-					d3.select("#catLocation").on("click", function() { d3.json("/offf/data/location.json", function(error, json) { graph = json; draw(); }); });
-					d3.select("#catRecurrence").on("click", function() { d3.json("/offf/data/recurrence.json", function(error, json) { graph = json; draw(); }); });
-					d3.select("#catStructure").on("click", function() { d3.json("/offf/data/structure.json", function(error, json) { graph = json; draw(); }); });
+					d3.select("#pickl").change(function() { d3.json("/offf/data/industry.json", function(error, json) { graph = json; draw(); }); });
+					d3.select("#locationl").on("click", function() { d3.json("/offf/data/location.json", function(error, json) { graph = json; draw(); }); });
+					d3.select("#yearl").on("click", function() { d3.json("/offf/data/recurrence.json", function(error, json) { graph = json; draw(); }); });
+					d3.select("#structurel").on("click", function() { d3.json("/offf/data/structure.json", function(error, json) { graph = json; draw(); }); });
 
 				  // wire up the filters the hard way
 				  d3.select("#year1").on("click", function(d,i) { includeGroupyears = [1,3]; draw(); });                                 // Groupyear filter
@@ -243,41 +254,41 @@
 				<li>Organise artists by</li>
 				<div id= "industryl" class="legendl" style="display:none">
 					<ul>
-						<li id="industryl1"> <img src="/offf/images/legend-pink.svg"> <a>print</a></li>
-						<li id="industryl2"> <img src="/offf/images/legend-peach.svg"> <a>motion</a></li>
-						<li id="industryl3"> <img src="/offf/images/legend-yellow.svg"> <a>digital</a></li>
-						<li id="industryl4"> <img src="/offf/images/legend-aqua.svg"> <a>sound design</a></li>
-						<li id="industryl5"> <img src="/offf/images/legend-blue.svg"> <a>product design</a></li>
-						<li id="industryl6"> <img src="/offf/images/legend-pink.svg"> <img src="/offf/images/legend-peach.svg"> <img src="/offf/images/legend-yellow.svg"> <img src="/offf/images/legend-blue.svg"> <img src="/offf/images/legend-aqua.svg"><a> Any</a></li>
+						<li id="industryl1"> <img src="/offf/images/dot-category.svg"> <a>print</a></li>
+						<li id="industryl2"> <img src="/offf/images/dot-category.svg"> <a>motion</a></li>
+						<li id="industryl3"> <img src="/offf/images/dot-category.svg"> <a>digital</a></li>
+						<li id="industryl4"> <img src="/offf/images/dot-category.svg"> <a>sound design</a></li>
+						<li id="industryl5"> <img src="/offf/images/dot-category.svg"> <a>product design</a></li>
+						<li id="industryl6"> <img src="/offf/images/dot-category.svg"> <a>all industries</a></li>
 					</ul>
 				</div>
 				<div id="locationl" class="legendl" style="display:none">
 					<ul>
-						<li id="locationl1"> <img src="/offf/images/legend-pink.svg"> <a>Asia</a></li>
-						<li id="locationl2"> <img src="/offf/images/legend-peach.svg"> <a>Australia</a></li>
-						<li id="locationl3"> <img src="/offf/images/legend-yellow.svg"> <a>Europe</a></li>
-						<li id="locationl4"> <img src="/offf/images/legend-aqua.svg"> <a>North America</a></li>
-						<li id="locationl5"> <img src="/offf/images/legend-blue.svg"> <a>South America</a></li>
-						<li id="locationl6"> <img src="/offf/images/legend-pink.svg"> <img src="/offf/images/legend-peach.svg"> <img src="/offf/images/legend-yellow.svg"> <img src="/offf/images/legend-blue.svg"> <img src="/offf/images/legend-aqua.svg"><a> Any</a></li>
+						<li id="locationl1"> <img src="/offf/images/dot-category.svg"> <a>Asia</a></li>
+						<li id="locationl2"> <img src="/offf/images/dot-category.svg"> <a>Australia</a></li>
+						<li id="locationl3"> <img src="/offf/images/dot-category.svg"> <a>Europe</a></li>
+						<li id="locationl4"> <img src="/offf/images/dot-category.svg"> <a>North America</a></li>
+						<li id="locationl5"> <img src="/offf/images/dot-category.svg"> <a>South America</a></li>
+						<li id="locationl6"> <img src="/offf/images/dot-category.svg"> <a>all continents</a></li>
 					</ul>
 				</div>
 				<div id="statusl" class="legendl" style="display:none">
 					<ul>
-						<li id="statusl1"> <img src="/offf/images/legend-pink.svg"> <a>independant</a></li>
-						<li id="statusl2"> <img src="/offf/images/legend-peach.svg"> <a>represented</a></li>
-						<li id="statusl3"> <img src="/offf/images/legend-yellow.svg"> <a>agency</a></li>
-						<li id="statusl4"> <img src="/offf/images/legend-aqua.svg"> <a>eponym agency</a></li>
-						<li id="statusl5"> <img src="/offf/images/legend-blue.svg"> <a>collective</a></li>
-						<li id="statusl6"> <img src="/offf/images/legend-pink.svg"> <img src="/offf/images/legend-peach.svg"> <img src="/offf/images/legend-yellow.svg"> <img src="/offf/images/legend-blue.svg"> <img src="/offf/images/legend-aqua.svg"><a> Any</a></li>
+						<li id="statusl1"> <img src="/offf/images/dot-category.svg"> <a>independant</a></li>
+						<li id="statusl2"> <img src="/offf/images/dot-category.svg"> <a>represented</a></li>
+						<li id="statusl3"> <img src="/offf/images/dot-category.svg"> <a>agency</a></li>
+						<li id="statusl4"> <img src="/offf/images/dot-category.svg"> <a>eponym agency</a></li>
+						<li id="statusl5"> <img src="/offf/images/dot-category.svg"> <a>collective</a></li>
+						<li id="statusl6"> <img src="/offf/images/dot-category.svg"> <a>all status</a></li>
 
 					</ul>
 				</div>
 				<div id="yearl" class="legendl" style="display:none">
 					<ul>
-						<li id="yearl2"> <img src="/offf/images/legend-pink.svg"> <a>2015</a></li>
-						<li id="yearl2"> <img src="/offf/images/legend-peach.svg"> <a>2016</a></li>
-						<li id="yearl3"> <img src="/offf/images/legend-yellow.svg"> <a>2015 and 2016</a></li>
-						<li id="yearl4"> <img src="/offf/images/legend-pink.svg"> <img src="/offf/images/legend-peach.svg"> <img src="/offf/images/legend-yellow.svg"> <a> Any</a></li>
+						<li id="yearl2"> <img src="/offf/images/dot-category.svg"> <a>2015</a></li>
+						<li id="yearl2"> <img src="/offf/images/dot-category.svg"> <a>2016</a></li>
+						<li id="yearl3"> <img src="/offf/images/dot-category.svg"> <a>2015 and 2016</a></li>
+						<li id="yearl4"> <img src="/offf/images/dot-category.svg"> <a>all year</a></li>
 					</ul>
 				</div>
 
@@ -285,10 +296,11 @@
 			<div class="col-2 left-3 selectl">
 				<script type="text/javascript"> </script>
 					<select id="pickl">
+						<option value ="" selected value= "selected" disabled="disabled">choose filter</option>
 						<option value="industryl">industry</option>
 						<option value="locationl">location</option>
 						<option value="statusl">working status</option>
-						<option value="yearl" selected value= "selected">year(s) of talk</option>
+						<option value="yearl">year(s) of talk</option>
 					</select>
 			</div>
 
@@ -338,7 +350,8 @@
 				<script type="text/javascript"> </script>
 					<select id="pickr">
 						<!-- <option value="">choose a filter</option> -->
-						<option value ="industryr" selected value= "selected">industry</option>
+						<option value ="" selected value= "selected" disabled="disabled">choose filter</option>
+						<option value ="industryr">industry</option>
 						<option value="locationr">location</option>
 						<option value="statusr">working status</option>
 						<option value="yearr">year(s) of talk</option>
@@ -351,18 +364,24 @@
 
 
 	<script>
-		$(function() {
-			$('#pickl').change(function() {
-					$('.legendl').hide();
-					$('#' + $(this).val()).show();
-			});
+	// $(document).ready {
+	// 	$(function() {
+	// 		$("#pickl").val('yearl').;
+	// 		$("#pickr").val('industryr');
+	// 	}
+	// }
+	$(function() {
+		$('#pickl').change(function() {
+				$('.legendl').hide();
+				$('#' + $(this).val()).show();
 		});
-		$(function() {
-			$('#pickr').change(function() {
-					$('.legendr').hide();
-					$('#' + $(this).val()).show();
-			});
+	});
+	$(function() {
+		$('#pickr').change(function() {
+				$('.legendr').hide();
+				$('#' + $(this).val()).show();
 		});
+	});
 	</script>
 
 	<!-- js for the picker to work -->
