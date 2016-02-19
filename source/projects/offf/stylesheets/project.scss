@@ -62,9 +62,9 @@
 		border-bottom: solid 1px rgba(255,255,255,0.5);
 	}
 
-	.choices {
+	.choicescontainer {
 		color: $white;
-		background-color: $darkest-sapphire;
+		background-color: $sapphire;
 		height:180px;
 		width:100%;
 		position: relative;
@@ -78,25 +78,45 @@
 		// background-color: $pale-lime;
 		}
 
-		.choicel, .choicer, .pickl, .pickr {
+		.choicel, .choicer, .selectl, .selectr {
 			position: absolute;
-			background-color: $darkest-sapphire;
+			background-color: $lime;
+			text-align: right;
+		}
+	}
+
+	.legendcontainer{
+		color: $white;
+		height:180px;
+		width:100%;
+		position: relative;
+
+		.legendl, .legendr {
+			position: absolute;
+			background-color: $lime;
 			text-align: right;
 		}
 
-		.legendholder {
-			position:relative;
+		.legendl, .legendr{
+			text-align: left;
 		}
 
-		.legendfilters {
-			margin: 40px 0px 0px 0px;
-			position:absolute;
-			color: $white;
+		.legend {
+			// margin: 40px 0px 0px 0px;
+			// position:absolute;
 			font-family: "Open Sans", Helvetica, Arial, sans-serif;
 			background-color: $tulip;
-
+			text-align: left;
+			margin-left:80px;
+			ul {
+			margin:0px;
+			padding: 0;
+			}
+			li {
+			margin:0px;
+			padding: 0;
+			}
 		}
-
 	}
 
 }

@@ -1,4 +1,4 @@
-/* Default custom select styles */
+.choicescontainer{
 div.cs-select {
 	// display: inline-block;
 	vertical-align: middle;
@@ -14,9 +14,9 @@ div.cs-select:focus {
 	outline: none;
 }
 
-.cs-select select {
-	display: none;
-}
+// .cs-select select {
+// display :none;
+// }
 
 .cs-select span {
 	display: block;
@@ -57,7 +57,6 @@ div.cs-active {
 	z-index: 200;
 }
 
-/* Options */
 .cs-select .cs-options {
 	position: absolute;
 	overflow: hidden;
@@ -69,6 +68,7 @@ div.cs-active {
 .cs-select.cs-active .cs-options {
 	visibility: visible;
 }
+
 
 .cs-select ul {
 	list-style: none;
@@ -95,4 +95,5 @@ div.cs-active {
 
 .cs-select > span:hover {
 color:#f6c831;
+}
 }

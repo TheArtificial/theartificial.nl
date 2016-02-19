@@ -238,36 +238,37 @@
 <div class="bleed blue">
 	<div class="flexcontainer">
 
-		<div class="choices">
+		<div class="choicescontainer">
 			<div class="col-2 left-1 choicel">
 				<li>Organise artists by</li>
 			</div>
-			<div class="col-2 left-3 pickl">
+			<div class="col-2 left-3 selectl">
 				<script type="text/javascript"> </script>
-					<select id="pickerl" >
+					<select id="pickl" class="cs-select cs-skin-underline">
 						<option value="industryl">industry</option>
 						<option value="locationl">location</option>
 						<option value="statusl">working status</option>
 						<option value="yearl" selected value= "selected">year(s) of talk</option>
 					</select>
 			</div>
-
 			<div class="col-2 left-7 choicer">
 				<li>Colour artists by</li>
 			</div>
-			<div class="col-2 left-9 pickr">
+			<div class="col-2 left-9 selectr">
 				<script type="text/javascript"> </script>
-					<select class="cs-select cs-skin-underline">
+					<select id="pickr" class="cs-select cs-skin-underline" >
 						<!-- <option value="">choose a filter</option> -->
-						<option value ="industry" selected value= "selected">industry</option>
-						<option value="location">location</option>
-						<option value="status">working status</option>
-						<option value="year">year(s) of talk</option>
+						<option value ="industryr" selected value= "selected">industry</option>
+						<option value="locationr">location</option>
+						<option value="statusr">working status</option>
+						<option value="yearr">year(s) of talk</option>
 					</select>
 			</div>
+		</div>
 
-			<div class= "col-12 legendholder">
-				<div id="industryl" class="col-2 left-1 legendfilters" style="display:none">
+		<div class="legendcontainer">
+			<div class="col-2 left-1 legendl">
+				<div id= "industryl" class="legend" style="display:none">
 					<ul>
 						<li>Print</li>
 						<li>Motion</li>
@@ -276,7 +277,7 @@
 						<li>Product</li>
 					</ul>
 				</div>
-				<div id="locationl" class="col-2 left-1 legendfilters" style="display:none">
+				<div id="locationl" class="legend" style="display:none">
 					<ul>
 						<li>Asia</li>
 						<li>Australia</li>
@@ -285,7 +286,7 @@
 						<li>South America</li>
 					</ul>
 				</div>
-				<div id="statusl" class="col-2 left-1 legendfilters" style="display:none">
+				<div id="statusl" class="legend" style="display:none">
 					<ul>
 						<li>Independant</li>
 						<li>Agency</li>
@@ -294,7 +295,7 @@
 						<li>Collective</li>
 					</ul>
 				</div>
-				<div id="yearl" class=" col-2 left-1 legendfilters" style="display:none">
+				<div id="yearl" class="legend" style="display:none">
 					<ul>
 						<li>2015</li>
 						<li>2016</li>
@@ -303,15 +304,63 @@
 					</ul>
 				</div>
 			</div>
-
+			<div class="col-2 left-7 legendr">
+				<div id= "industryr" class="legend" style="display:none">
+					<ul>
+						<li>Print</li>
+						<li>Motion</li>
+						<li>Digital</li>
+						<li>Sound design</li>
+						<li>Product</li>
+					</ul>
+				</div>
+				<div id="locationr" class="legend" style="display:none">
+					<ul>
+						<li>Asia</li>
+						<li>Australia</li>
+						<li>Europe</li>
+						<li>North America</li>
+						<li>South America</li>
+					</ul>
+				</div>
+				<div id="statusr" class="legend" style="display:none">
+					<ul>
+						<li>Independant</li>
+						<li>Agency</li>
+						<li>Eponym agency</li>
+						<li>Represented</li>
+						<li>Collective</li>
+					</ul>
+				</div>
+				<div id="yearr" class="legend" style="display:none">
+					<ul>
+						<li>2015</li>
+						<li>2016</li>
+						<li>Both year</li>
+						<li>Any year</li>
+					</ul>
+				</div>
+			</div>
 		</div>
+
+
 	</div>
 </div>
 
+
 	<script>
+	console.log('value placeholder :',$('span.csplaceholder').val());
+
 		$(function() {
-			$('#pickerl').change(function() {
-					$('.legendfilters').hide();
+			$('#pickl').change(function() {
+					$('.legend').hide();
+					$('#' + $(this).val()).show();
+
+			});
+		});
+		$(function() {
+			$('#pickr').change(function() {
+					$('.legend').hide();
 					$('#' + $(this).val()).show();
 			});
 		});
