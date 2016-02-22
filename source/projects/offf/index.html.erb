@@ -52,11 +52,8 @@
 				  var nodeSelection = svg.selectAll('.node');
 				      linkSelection = svg.selectAll('.link');
 
-					// var jsonsources = ["offf/data/industry.json","offf/data/recurrence.json","offf/data/status.json","offf/data/location.json"];
-
 				  // lookup arrays for styling
 				  var color = ["blue", "white", "red","#e66964","#f3aa84", "#f6c831","#fff2bc", "#00a1a3, #97d9eb"];
-				  // 10 Custom DDV colors
 				  // var colorScale = d3.scale.ordinal().range(["fff2bc", "00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"]);
 				  var radius = ["100","100","100","4","4","4"]; // the first three shouldn't happen
 				  var transparency = ["0","0","0","0","0","0"];
@@ -127,8 +124,8 @@
 				      .attr("class", "node") // you have to do this or you can't re-select it!
 							// .attr("fill", function(d, i) { return color[d.groupyear] })
 				      .attr("fill", function(d, i) { return d.groupyear ? color[d.groupyear] : "white"; }) // if no groupyear, then it's a category, so color white
-				      .style("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 7; }) // if no groupyear, then it's a category, so size 7
-							.attr("fill", "white");
+				      .style("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 7; }); // if no groupyear, then it's a category, so size 7
+							// .attr("fill", function(d,i) {return color(i)} );
 
 				    node.append("text")
 				      .attr("dx", 8)
@@ -286,7 +283,6 @@
 							<option value="/offf/data/status.json" data-legend="#statusl"> status</option>
 							<option value="/offf/data/year.json" data-legend="#yearl"> year(s) of talk</option>
 					</select>​
-
 			</div>
 
 			<div class="col-2 left-7 choicer">
@@ -319,7 +315,6 @@
 						<li id="statusr4"> <img src="/offf/images/legend-aqua.svg"> <a>eponym agency</a></li>
 						<li id="statusr5"> <img src="/offf/images/legend-blue.svg"> <a>collective</a></li>
 						<li id="statusr6"> <img src="/offf/images/legend-pink.svg"> <img src="/offf/images/legend-peach.svg"> <img src="/offf/images/legend-yellow.svg"> <img src="/offf/images/legend-blue.svg"> <img src="/offf/images/legend-aqua.svg"><a> Any</a></li>
-
 					</ul>
 				</div>
 				<div id="yearr" class="legendr" style="display:none">
@@ -334,7 +329,6 @@
 			<div class="col-2 left-9 selectr">
 				<script type="text/javascript"> </script>
 					<select id="pickr">
-						<!-- <option value="">choose a filter</option> -->
 						<option value ="" selected value= "selected" disabled="disabled">choose filter</option>
 						<option value ="industryr">industry</option>
 						<option value="locationr">location</option>
