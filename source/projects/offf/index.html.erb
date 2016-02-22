@@ -16,16 +16,6 @@
 		</div>
 	</div>
 
-
-	<!-- <select id="jsonsources" name="jsonsources">
-			<option value ="/offf/data/industry.json" selected> industry</option>
-			<option value ="/offf/data/industry.json"> industry</option>
-			<option value ="/offf/data/location.json"> location</option>
-			<option value ="/offf/data/status.json"> status</option>
-			<option value ="/offf/data/year.json"> year(s) of talk</option>
-	</select>​ -->
-
-
 	<div class="bleed blue">
 		<div class="flexcontainer">
 			<div class="col-12 center visualization">
@@ -204,15 +194,6 @@
 				    draw();
 				  });
 
-
-
-
-					// // wire up the categories the hard way
-					// d3.select("#pickl").change(function() { d3.json("/offf/data/industry.json", function(error, json) { graph = json; draw(); }); });
-					// d3.select("#locationl").on("click", function() { d3.json("/offf/data/location.json", function(error, json) { graph = json; draw(); }); });
-					// d3.select("#yearl").on("click", function() { d3.json("/offf/data/recurrence.json", function(error, json) { graph = json; draw(); }); });
-					// d3.select("#structurel").on("click", function() { d3.json("/offf/data/structure.json", function(error, json) { graph = json; draw(); }); });
-
 				  // wire up the filters the hard way
 				  d3.select("#year1").on("click", function(d,i) { includeGroupyears = [1,3]; draw(); });                                 // Groupyear filter
 				  d3.select("#year2").on("click", function() { includeGroupyears = [1,4]; draw(); });
@@ -298,14 +279,7 @@
 			</div>
 			<div class="col-2 left-3 selectl">
 				<script type="text/javascript"> </script>
-					<!-- <select id="pickl">
-						<option value ="" selected value= "selected" disabled="disabled">choose filter</option>
-						<option value="industryl">industry</option>
-						<option value="locationl">location</option>
-						<option value="statusl">working status</option>
-						<option value="yearl">year(s) of talk</option>
-					</select> -->
-					<select id="jsonsources" name="jsonsources">
+					<select id="pickl" name="pickl">
 						<option value ="" selected value= "selected" disabled="disabled">choose filter</option>
 							<option value="/offf/data/industry.json" data-legend="#industryl"> industry</option>
 							<option value="/offf/data/location.json" data-legend="#locationl"> location</option>
@@ -373,51 +347,29 @@
 	</div>
 </div>
 
-
 	<script>
-
-
-
-		var dropdown = d3.select("#jsonsources")
-
+		var dropdown = d3.select("#pickl")
 		var changesrc = function() {
 			var source = dropdown.node().options[dropdown.node().selectedIndex].value;
-			var legend = dropdown.node().options[dropdown.node().selectedIndex].dataset;
+			var legend = dropdown.node().options[dropdown.node().selectedIndex].dataset.legend;
+
+			$(".legendl").hide();
+			$(legend).show();
 
 			d3.json(source, function(error, json) {
 				graph = json; draw();
-				// console.log("deuxieme option", legendsource);
-				console.log("this is my option", dropdown.node().options[dropdown.node().selectedIndex]);
-				console.log("this is my first option", dropdown.node().options[dropdown.node().selectedIndex].value);
-				console.log("this is my second option only", dropdown.node().options[dropdown.node().selectedIndex].dataset);
+				// console.log("this is my option", dropdown.node().options[dropdown.node().selectedIndex]);
+				// console.log("this is my first option", dropdown.node().options[dropdown.node().selectedIndex].value);
+				// console.log("this is my second option only", dropdown.node().options[dropdown.node().selectedIndex].dataset.legend);
 			})
-
-			$('.legendr').hide();
-			$('legend').show();
 		}
 
-
-
 	$(function() {
-		$('#jsonsources').change(function() {
+		$('#pickl').change(function() {
 			dropdown.on("changesrc", changesrc)
 			changesrc();
 			});
 	});
-
-	// $(function() {
-	// 	$('#jsonsources').change(function() {
-	// 			$('.legendl').hide();
-	// 			$('#' + $(this).val()).show();
-	// 	});
-	// });
-
-	// $(function() {
-	// 	$('#jsonsources').change(function() {
-	// 			$('.legendl').hide();
-	// 			$('#' + $(this).val()).show();
-	// 	});
-	// });
 
 	$(function() {
 		$('#pickr').change(function() {
@@ -425,9 +377,6 @@
 				$('#' + $(this).val()).show();
 		});
 	});
-
-
-
 	</script>
 
 	<div class="bleed intro">
