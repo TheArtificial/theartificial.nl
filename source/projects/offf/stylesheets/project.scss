@@ -5,8 +5,11 @@
 	margin:0px;
 	padding:0px;
 
-	.bleed .intro{
+	.bleed .intro {
 		background-color: $white;
+		img:hover {
+			opacity: 0.5;
+		}
 	}
 
 	.bleed .blue{
@@ -39,8 +42,9 @@
 			a {
 				color: $darkest-sapphire;
 			}
+
 			a:hover {
-				color: #f6c831;
+				opacity: 0.5;
 			}
 		}
 
@@ -54,6 +58,10 @@
 			a {
 				text-decoration: underline;
 				color: $darkest-sapphire;
+			}
+
+			a:hover {
+				opacity: 0.5;
 			}
 		}
 	}
@@ -88,7 +96,7 @@
 			text-align: left;
 		}
 
-		#pickl, #pickr {
+		#pickl, #pickr, #jsonsources {
 			margin: 7px 20px 0px 0;
 		}
 

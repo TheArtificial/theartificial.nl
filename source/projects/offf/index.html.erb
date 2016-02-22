@@ -17,12 +17,13 @@
 	</div>
 
 
-	<select id="jsonsources" name="jsonsources">
-			<option value ="offf/data/industry.json" selected> source 1</option>
-			<option value ="offf/data/recurrence.json" >source 2</option>
-			<option value ="offf/data/status.json" >source 3</option>
-			<option value ="offf/data/location.json" >source 4</option>
-	</select>​
+	<!-- <select id="jsonsources" name="jsonsources">
+			<option value ="/offf/data/industry.json" selected> industry</option>
+			<option value ="/offf/data/industry.json"> industry</option>
+			<option value ="/offf/data/location.json"> location</option>
+			<option value ="/offf/data/status.json"> status</option>
+			<option value ="/offf/data/year.json"> year(s) of talk</option>
+	</select>​ -->
 
 
 	<div class="bleed blue">
@@ -205,55 +206,6 @@
 
 
 
-
-					var dropdown = d3.select("#jsonsources")
-					var change = function() {
-						var source = dropdown.node().options[dropdown.node().selectedIndex].value;
-						d3.json(source, function(error, json) {
-							graph = json; draw();
-							console.log(dropdown);
-						})
-					}			
-
-					// wire up the categories the hard way
-					$(function() {
-						$('#pickl').change(function() {
-								$('.legendl').hide();
-								$('#' + $(this).val()).show();
-								dropdown.on("change", change)
-								change(); //trigger json on load
-						});
-					});
-					$(function() {
-						$('#pickr').change(function() {
-								$('.legendr').hide();
-								$('#' + $(this).val()).show();
-						});
-					});
-
-
-
-
-
-					// // Precompute the orders.
-					// var datajson = {
-					// 	datacatindustry: d3.select("#pickl").change(function() { d3.json("/offf/data/industry.json", function(error, json) { graph = json; draw(); }); });
-					// 	datacatyear: d3.select("#pickl").change(function() { d3.json("/offf/data/recurrence.json", function(error, json) { graph = json; draw(); }); });
-					// 	datacatstatus: d3.select("#pickl").change(function() { d3.json("/offf/data/structure.json", function(error, json) { graph = json; draw(); }); });
-					// 	datalocation: d3.select("#pickl").change(function() { d3.json("/offf/data/location.json", function(error, json) { graph = json; draw(); }); });
-					// };
-
-					// var loadjson = function() {
-					// 	if ($('#pickl'.value) == '#industryl')
-					// 	return ("/offf/data/industry.json");
-					// 	else if ($('#pickl'.value) == '#locationl') {
-					// 	return ("/offf/data/location.json");
-					// 	else if ($('#pickl'.value) == '#statusl') {
-					// 	return ("/offf/data/location.json");
-					// 	else if ($('#pickl'.value) == '#yearl') {
-					// 	return ("/offf/data/recurrence.json");
-					// 	}
-					// }
 					// // wire up the categories the hard way
 					// d3.select("#pickl").change(function() { d3.json("/offf/data/industry.json", function(error, json) { graph = json; draw(); }); });
 					// d3.select("#locationl").on("click", function() { d3.json("/offf/data/location.json", function(error, json) { graph = json; draw(); }); });
@@ -345,13 +297,21 @@
 			</div>
 			<div class="col-2 left-3 selectl">
 				<script type="text/javascript"> </script>
-					<select id="pickl" data-bind="event: { change: selectionChanged }">
+					<!-- <select id="pickl">
 						<option value ="" selected value= "selected" disabled="disabled">choose filter</option>
 						<option value="industryl">industry</option>
 						<option value="locationl">location</option>
 						<option value="statusl">working status</option>
 						<option value="yearl">year(s) of talk</option>
-					</select>
+					</select> -->
+					<select id="jsonsources" name="jsonsources">
+						<option value ="" selected value= "selected" disabled="disabled">choose filter</option>
+							<option value ="/offf/data/industry.json", "industryl"> industry</option>
+							<option value ="/offf/data/location.json" , "locationl"> location</option>
+							<option value ="/offf/data/status.json", "statusl"> status</option>
+							<option value ="/offf/data/year.json", "yearl"> year(s) of talk</option>
+					</select>​
+
 			</div>
 
 			<div class="col-2 left-7 choicer">
@@ -416,31 +376,42 @@
 	<script>
 
 
+	// wire up the categories the hard way
 
 
+		var dropdown = d3.select("#jsonsources")
 
+		var changesrc = function() {
+			var source = dropdown.node().options[dropdown.node().selectedIndex].value;
+			d3.json(source, function(error, json) {
+				graph = json; draw();
+			})
+		}
 
+	$(function() {
+		$('#jsonsources').change(function() {
+			dropdown.on("changesrc", changesrc)
+			changesrc();
+			});
+	});
 
-	// var viewModel = {
-	// 		choices: ["one", "two", "three"],
-	// 		selectedChoice: ko.observable("two") ,
-	// 		selectionChanged: function(event) {
-	// 				 alert("the other selection changed");
-	// 		}
-	// };
-	//
-	// viewModel.selectedChoice.subscribe(function(newValue) {
-	// 	 alert("the new value is " + newValue);
+	// $(function() {
+	// 	$('#jsonsources').change(function() {
+	// 			$('.legendl').hide();
+	// 			$('#' + $(this).val(.options:eq(1).val).show();
+	// 			console.log("changelegend",legendsource);
+	// 	});
 	// });
-	//
-	// ko.applyBindings(viewModel);
 
-	// $(document).ready {
-	// 	$(function() {
-	// 		$("#pickl").val('yearl').;
-	// 		$("#pickr").val('industryr');
-	// 	}
-	// }
+	$(function() {
+		$('#pickr').change(function() {
+				$('.legendr').hide();
+				$('#' + $(this).val()).show();
+		});
+	});
+
+
+
 	</script>
 
 	<div class="bleed intro">
