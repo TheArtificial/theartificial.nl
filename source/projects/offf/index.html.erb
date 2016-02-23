@@ -53,9 +53,19 @@
 				      linkSelection = svg.selectAll('.link');
 
 				  // lookup arrays for styling
-				  var color = ["blue", "white", "red","#e66964","#f3aa84", "#f6c831","#fff2bc", "#00a1a3, #97d9eb"];
-				  // var colorScale = d3.scale.ordinal().range(["fff2bc", "00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"]);
-				  var radius = ["100","100","100","4","4","4"]; // the first three shouldn't happen
+				  // var color = ["blue", "white", "red","#e66964","#f3aa84", "#f6c831","#fff2bc", "#00a1a3, #97d9eb"];
+				  // var colorScale = d3.scale.linear().range(["fff2bc", "00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"]).domain([0,1,2,3,4,5]);
+
+
+					// var dropdownr = d3.select("#pickr")
+					// var changecolor = function() {
+					// 	var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
+					// 	var colornumber = dropdownr.node().selectedIndex;
+					// 	console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
+					// 	console.log("this is my colornumber", colornumber);
+					// };
+
+					var radius = ["100","100","100","4","4","4"]; // the first three shouldn't happen
 				  var transparency = ["0","0","0","0","0","0"];
 
 				  // filter values
@@ -123,9 +133,9 @@
 				    node.append("circle")
 				      .attr("class", "node") // you have to do this or you can't re-select it!
 							// .attr("fill", function(d, i) { return color[d.groupyear] })
-				      .attr("fill", function(d, i) { return d.groupyear ? color[d.groupyear] : "white"; }) // if no groupyear, then it's a category, so color white
-				      .style("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 7; }); // if no groupyear, then it's a category, so size 7
-							// .attr("fill", function(d,i) {return color(i)} );
+				      // .attr("fill", function(d, i) { return d.groupyear ? color[d.groupyear] : "white"; }) // if no groupyear, then it's a category, so color white
+				      .style("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 7; }) // if no groupyear, then it's a category, so size 7
+							.attr("fill", "white");
 
 				    node.append("text")
 				      .attr("dx", 8)
@@ -192,22 +202,26 @@
 				  });
 
 				  // wire up the filters the hard way
-				  d3.select("#year1").on("click", function(d,i) { includeGroupyears = [1,3]; draw(); });                                 // Groupyear filter
-				  d3.select("#year2").on("click", function() { includeGroupyears = [1,4]; draw(); });
-				  d3.select("#year3").on("click", function() { includeGroupyears = [1,5]; draw(); });
-				  d3.select("#year4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });                       	      // Groupcontinent filter
-				  d3.select("#continent1").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
-				  d3.select("#continent2").on("click", function() { includeGroupcontinents = [1,2]; draw(); });
-				  d3.select("#continent3").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
-				  d3.select("#continent4").on("click", function() { includeGroupcontinents = [1,4]; draw(); });
-				  d3.select("#continent5").on("click", function() { includeGroupcontinents = [1,5]; draw(); });
-				  d3.select("#continent6").on("click", function() { includeGroupcontinents = [1,2,3,4,5]; draw(); });
-				  d3.select("#status1").on("click", function() { includeGroupstatus = [1,1]; draw(); });                          	    // Groupstatus filter
-				  d3.select("#status2").on("click", function() { includeGroupstatus = [1,2]; draw(); });
-				  d3.select("#status3").on("click", function() { includeGroupstatus = [1,3]; draw(); });
-				  d3.select("#status4").on("click", function() { includeGroupstatus = [1,4]; draw(); });
-				  d3.select("#status5").on("click", function() { includeGroupstatus = [1,5]; draw(); });
-				  d3.select("#status6").on("click", function() { includeGroupstatus = [1,2,3,4,5]; draw(); });
+					d3.select("#industryr1").on("click", function() { includeGroupyears = [1,3]; draw(); });                                 // Groupyear filter
+					d3.select("#industryr2").on("click", function() { includeGroupyears = [1,4]; draw(); });
+					d3.select("#industryr3").on("click", function() { includeGroupyears = [1,5]; draw(); });
+					d3.select("#industryr4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });
+				  d3.select("#yearr1").on("click", function(d,i) { includeGroupyears = [1,3]; draw(); });                                 // Groupyear filter
+				  d3.select("#yearr2").on("click", function() { includeGroupyears = [1,4]; draw(); });
+				  d3.select("#yearr3").on("click", function() { includeGroupyears = [1,5]; draw(); });
+				  d3.select("#yearr4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });                       	      // Groupcontinent filter
+				  d3.select("#locationr1").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
+				  d3.select("#locationr2").on("click", function() { includeGroupcontinents = [1,2]; draw(); });
+				  d3.select("#locationr3").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
+				  d3.select("#locationr4").on("click", function() { includeGroupcontinents = [1,4]; draw(); });
+				  d3.select("#locationr5").on("click", function() { includeGroupcontinents = [1,5]; draw(); });
+				  d3.select("#locationr6").on("click", function() { includeGroupcontinents = [1,2,3,4,5]; draw(); });
+				  d3.select("#statusr1").on("click", function() { includeGroupstatus = [1,1]; draw(); });                          	    // Groupstatus filter
+				  d3.select("#statusr2").on("click", function() { includeGroupstatus = [1,2]; draw(); });
+				  d3.select("#statusr3").on("click", function() { includeGroupstatus = [1,3]; draw(); });
+				  d3.select("#statusr4").on("click", function() { includeGroupstatus = [1,4]; draw(); });
+				  d3.select("#statusr5").on("click", function() { includeGroupstatus = [1,5]; draw(); });
+				  d3.select("#statusr6").on("click", function() { includeGroupstatus = [1,2,3,4,5]; draw(); });
 
 
 					// Togle the label button between show and hide
@@ -221,6 +235,7 @@
 				     // Update whether or not the elements are active
 				     abc.active = active;
 				   });
+
 				 </script>
 			</div>
 		</div>
@@ -278,10 +293,10 @@
 				<script type="text/javascript"> </script>
 					<select id="pickl" name="pickl">
 						<option value ="" selected value= "selected" disabled="disabled">choose filter</option>
-							<option value="/offf/data/industry.json" data-legend="#industryl"> industry</option>
-							<option value="/offf/data/location.json" data-legend="#locationl"> location</option>
-							<option value="/offf/data/status.json" data-legend="#statusl"> status</option>
-							<option value="/offf/data/year.json" data-legend="#yearl"> year(s) of talk</option>
+							<option value="/offf/data/industry.json" data-legendcat="#industryl"> industry</option>
+							<option value="/offf/data/location.json" data-legendcat="#locationl"> location</option>
+							<option value="/offf/data/status.json" data-legendcat="#statusl"> status</option>
+							<option value="/offf/data/year.json" data-legendcat="#yearl"> year(s) of talk</option>
 					</select>​
 			</div>
 
@@ -330,53 +345,71 @@
 				<script type="text/javascript"> </script>
 					<select id="pickr">
 						<option value ="" selected value= "selected" disabled="disabled">choose filter</option>
-						<option value ="industryr">industry</option>
-						<option value="locationr">location</option>
-						<option value="statusr">working status</option>
-						<option value="yearr">year(s) of talk</option>
+						<option value ="industryr" data-legendcol="#industryr">industry</option>
+						<option value="locationr" data-legendcol="#locationr">location</option>
+						<option value="statusr" data-legendcol="#statusr">working status</option>
+						<option value="yearr" data-legendcol="#yearr"> year(s) of talk</option>
 					</select>
 			</div>
 
+			</div>
 		</div>
 	</div>
-</div>
 
 	<script>
-		var dropdown = d3.select("#pickl")
+		var dropdownl = d3.select("#pickl")
 		var changesrc = function() {
-			var source = dropdown.node().options[dropdown.node().selectedIndex].value;
-			var legend = dropdown.node().options[dropdown.node().selectedIndex].dataset.legend;
+			var source = dropdownl.node().options[dropdownl.node().selectedIndex].value;
+			var legendcat = dropdownl.node().options[dropdownl.node().selectedIndex].dataset.legendcat;
 
 			$(".legendl").hide();
-			$(legend).show();
+			$(legendcat).show();
 
 			d3.json(source, function(error, json) {
 				graph = json; draw();
-				// console.log("this is my option", dropdown.node().options[dropdown.node().selectedIndex]);
-				// console.log("this is my first option", dropdown.node().options[dropdown.node().selectedIndex].value);
-				// console.log("this is my second option only", dropdown.node().options[dropdown.node().selectedIndex].dataset.legend);
+				// console.log("this is my option", dropdownl.node().options[dropdownl.node().selectedIndex]);
+				// console.log("this is my first option", dropdownl.node().options[dropdownl.node().selectedIndex].value);
+				// console.log("this is my second option only", dropdownl.node().options[dropdownl.node().selectedIndex].dataset.legendcat);
 			})
 		}
 
-	$(function() {
-		$('#pickl').change(function() {
-			dropdown.on("changesrc", changesrc)
-			changesrc();
-			});
-	});
+		var dropdownr = d3.select("#pickr")
+		var changecolor = function() {
+			var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
+			var colornumber = dropdownr.node().selectedIndex;
+			var legendcol = dropdownr.node().options[dropdownr.node().selectedIndex].dataset.legendcol;
 
-	$(function() {
-		$('#pickr').change(function() {
-				$('.legendr').hide();
-				$('#' + $(this).val()).show();
+			console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
+			console.log("this is my colornumber", colornumber);
+			console.log("this is my legendcol", legendcol);
+
+			var color = ["blue", "white", "red","#e66964","#f3aa84", "#f6c831","#fff2bc", "#00a1a3, #97d9eb"];
+			d3.selectAll("circle").attr("fill", function(d,i) { return color[colornumber] } );
+			draw();
+
+			$(".legendr").hide();
+			$(legendcol).show();
+		};
+
+		$(function() {
+			$('#pickr').change(function() {
+				dropdownr.on("changecolor", changecolor)
+				changecolor();
+				});
 		});
-	});
-	</script>
+
+		$(function() {
+			$('#pickl').change(function() {
+				dropdownl.on("changesrc", changesrc)
+				changesrc();
+				});
+		});
+		</script>
 
 	<div class="bleed intro">
 		<div class="flexcontainer">
 			<div class="col-8 left-2 right-2 center introduction">
-				<img src="offf/images/offf-logo-darkest-saphire.svg" alt="offf-logo" style="width:150px" src="http://www.offf.ws/" target="_blank">
+				<img src="/offf/images/offf-logo-darkest-saphire.svg" alt="offf-logo" style="width:150px" src="http://www.offf.ws/" target="_blank">
 				<h2>OFFF is a three-day festival annually hosting innovative, creative and nternational speakers in Barcelona.</h2>
 			</div>
 		</div>
