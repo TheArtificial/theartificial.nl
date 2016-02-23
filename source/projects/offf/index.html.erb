@@ -224,17 +224,17 @@
 				  d3.select("#statusr6").on("click", function() { includeGroupstatus = [1,2,3,4,5]; draw(); });
 
 
-					// Togle the label button between show and hide
-				  d3.select("#label0").on("click", function(d,i) {
-				    // Determine if current label is visible
-				     var active   = abc.active ? false : true,
-				       newOpacity = active ? 1 : 0;
-				     // Hide or show the labels
-				     d3.selectAll("text").attr("opacity", newOpacity);
-				     d3.selectAll("text").select("id", "abc").attr("opacity", newOpacity);
-				     // Update whether or not the elements are active
-				     abc.active = active;
-				   });
+					// // Togle the label button between show and hide
+				  // d3.select("#label0").on("click", function(d,i) {
+				  //   // Determine if current label is visible
+				  //    var active   = abc.active ? false : true,
+				  //      newOpacity = active ? 1 : 0;
+				  //    // Hide or show the labels
+				  //    d3.selectAll("text").attr("opacity", newOpacity);
+				  //    d3.selectAll("text").select("id", "abc").attr("opacity", newOpacity);
+				  //    // Update whether or not the elements are active
+				  //    abc.active = active;
+				  //  });
 
 				 </script>
 			</div>
@@ -304,7 +304,7 @@
 				<li>Colour artists by</li>
 				<div id= "industryr" class="legendr" style="display:none">
 					<ul>
-						<li id="industryr1"> <img src="/offf/images/legend-pink.svg"> <a>print</a></li>
+						<li id="industryr1"> <img src="/offf/images/legend-pink.svg"> <a> print</li> </a>
 						<li id="industryr2"> <img src="/offf/images/legend-peach.svg"> <a>motion</a></li>
 						<li id="industryr3"> <img src="/offf/images/legend-yellow.svg"> <a>digital</a></li>
 						<li id="industryr4"> <img src="/offf/images/legend-aqua.svg"> <a>sound design</a></li>
@@ -345,10 +345,10 @@
 				<script type="text/javascript"> </script>
 					<select id="pickr">
 						<option value ="" selected value= "selected" disabled="disabled">choose filter</option>
-						<option value ="industryr" data-legendcol="#industryr">industry</option>
-						<option value="locationr" data-legendcol="#locationr">location</option>
-						<option value="statusr" data-legendcol="#statusr">working status</option>
-						<option value="yearr" data-legendcol="#yearr"> year(s) of talk</option>
+						<option value ="" data-legendcol="#industryr">industry</option>
+						<option value="" data-legendcol="#locationr">location</option>
+						<option value="" data-legendcol="#statusr">working status</option>
+						<option value="" data-legendcol="#yearr"> year(s) of talk</option>
 					</select>
 			</div>
 
@@ -379,16 +379,35 @@
 			var colornumber = dropdownr.node().selectedIndex;
 			var legendcol = dropdownr.node().options[dropdownr.node().selectedIndex].dataset.legendcol;
 
-			console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
-			console.log("this is my colornumber", colornumber);
-			console.log("this is my legendcol", legendcol);
+			$(".legendr").removeClass("nbr");
+			$(legendcol).addClass("nbr");
 
-			var color = ["blue", "white", "red","#e66964","#f3aa84", "#f6c831","#fff2bc", "#00a1a3, #97d9eb"];
-			d3.selectAll("circle").attr("fill", function(d,i) { return color[colornumber] } );
+			var licolornumber = $(".nbr li").length;
+			var liid = $('.nbr li').map(function(i,n) {
+    		return $(n).attr('id');
+				}).get().join(',');
+
+			var liindex = $('.nbr li').map(function(i,n){
+				return $(this).index();
+				}).get().join(',');
+
+
+			var color = ["red","#fff2bc", "#00a1a3", "#97d9eb","#e66964","#f3aa84", "#f6c831"];
+			// var colorScale = d3.scale.ordinal().range(["#fff2bc", "#00a1a3", "#97d9eb","#e66964","#f3aa84", "#f6c831"]).domain(["#industryr", "#locationr", "#yearr", "#statusr" ]);
+			// var colorScale = d3.scale.ordinal().range(["red","#fff2bc", "#00a1a3", "#97d9eb","#e66964","#f3aa84", "#f6c831"]).domain([0, 1, 2, 3, 4, 5, 6]);
+			d3.selectAll("circle").attr("fill", function(d,i) { return color[licolornumber] } );
+
 			draw();
 
 			$(".legendr").hide();
 			$(legendcol).show();
+
+			// console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
+			// console.log("this is my colornumber", colornumber);
+			// console.log("this is my legendcol", legendcol);
+			// console.log("this is my licolornumber", licolornumber);
+			console.log("this is my liid", liid);
+			console.log("this is my liindex", liindex);
 		};
 
 		$(function() {
