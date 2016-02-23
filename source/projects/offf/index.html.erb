@@ -223,32 +223,9 @@
 				  //  });
 
 
-					// wire up the filters the hard way
-					d3.select("#industryr1").on("click", function() { includeGroupindustries = [0]; draw(); });
-					d3.select("#industryr2").on("click", function() { includeGroupindustries = [1]; draw(); });
-					d3.select("#industryr3").on("click", function() { includeGroupindustries = [2]; draw(); });
-					d3.select("#industryr4").on("click", function() { includeGroupindustries = [3]; draw(); });
-					d3.select("#industryr5").on("click", function() { includeGroupindustries = [4]; draw(); });
-					d3.select("#industryr6").on("click", function() { includeGroupindustries = [0,1,3,4]; draw(); });
-					d3.select("#yearr1").on("click", function(d,i) { includeGroupyears = [1,3]; draw(); });
-					d3.select("#yearr2").on("click", function() { includeGroupyears = [1,4]; draw(); });
-					d3.select("#yearr3").on("click", function() { includeGroupyears = [1,5]; draw(); });
-					d3.select("#yearr4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });
-					d3.select("#locationr1").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
-					d3.select("#locationr2").on("click", function() { includeGroupcontinents = [1,2]; draw(); });
-					d3.select("#locationr3").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
-					d3.select("#locationr4").on("click", function() { includeGroupcontinents = [1,4]; draw(); });
-					d3.select("#locationr5").on("click", function() { includeGroupcontinents = [1,5]; draw(); });
-					d3.select("#locationr6").on("click", function() { includeGroupcontinents = [1,2,3,4,5]; draw(); });
-					d3.select("#statusr1").on("click", function() { includeGroupstatus = [1,1]; draw(); });
-					d3.select("#statusr2").on("click", function() { includeGroupstatus = [1,2]; draw(); });
-					d3.select("#statusr3").on("click", function() { includeGroupstatus = [1,3]; draw(); });
-					d3.select("#statusr4").on("click", function() { includeGroupstatus = [1,4]; draw(); });
-					d3.select("#statusr5").on("click", function() { includeGroupstatus = [1,5]; draw(); });
-					d3.select("#statusr6").on("click", function() { includeGroupstatus = [1,2,3,4,5]; draw(); });
 
 
-					
+
 				 </script>
 			</div>
 		</div>
@@ -430,23 +407,44 @@
 			// console.log("this is my liindex", liindex);
 		};
 
-		$(function() {
-			$('#pickr').change(function() {
-				dropdownr.on("changecolor", changecolor)
-				changecolor();
-				});
-		});
+			$(function() {
+				$('#pickr').change(function() {
+					dropdownr.on("changecolor", changecolor)
+					changecolor();
+					});
+			});
 
-		$(function() {
-			$('#pickl').change(function() {
-				dropdownl.on("changesrc", changesrc)
-				changesrc();
-				});
-		});
+			$(function() {
+				$('#pickl').change(function() {
+					dropdownl.on("changesrc", changesrc)
+					changesrc();
+					});
+			});
 
-
-
-		</script>
+			// wire up the filters the hard way
+			d3.select("#industryr1").on("click", function() { includeGroupindustries = [0]; draw(); });
+			d3.select("#industryr2").on("click", function() { includeGroupindustries = [1]; draw(); });
+			d3.select("#industryr3").on("click", function() { includeGroupindustries = [2]; draw(); });
+			d3.select("#industryr4").on("click", function() { includeGroupindustries = [3]; draw(); });
+			d3.select("#industryr5").on("click", function() { includeGroupindustries = [4]; draw(); });
+			d3.select("#industryr6").on("click", function() { includeGroupindustries = [0,1,3,4]; draw(); });
+			d3.select("#yearr1").on("click", function(d,i) { includeGroupyears = [1,3]; draw(); });
+			d3.select("#yearr2").on("click", function() { includeGroupyears = [1,4]; draw(); });
+			d3.select("#yearr3").on("click", function() { includeGroupyears = [1,5]; draw(); });
+			d3.select("#yearr4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });
+			d3.select("#locationr1").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
+			d3.select("#locationr2").on("click", function() { includeGroupcontinents = [1,2]; draw(); });
+			d3.select("#locationr3").on("click", function() { includeGroupcontinents = [1,3]; draw(); });
+			d3.select("#locationr4").on("click", function() { includeGroupcontinents = [1,4]; draw(); });
+			d3.select("#locationr5").on("click", function() { includeGroupcontinents = [1,5]; draw(); });
+			d3.select("#locationr6").on("click", function() { includeGroupcontinents = [1,2,3,4,5]; draw(); });
+			d3.select("#statusr1").on("click", function() { includeGroupstatus = [1,1]; draw(); });
+			d3.select("#statusr2").on("click", function() { includeGroupstatus = [1,2]; draw(); });
+			d3.select("#statusr3").on("click", function() { includeGroupstatus = [1,3]; draw(); });
+			d3.select("#statusr4").on("click", function() { includeGroupstatus = [1,4]; draw(); });
+			d3.select("#statusr5").on("click", function() { includeGroupstatus = [1,5]; draw(); });
+			d3.select("#statusr6").on("click", function() { includeGroupstatus = [1,2,3,4,5]; draw(); });
+	</script>
 
 	<div class="bleed intro">
 		<div class="flexcontainer">
