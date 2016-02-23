@@ -28,749 +28,749 @@
   {
     "name": "3-10 studio",
     "id": 5,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "aardman animations",
     "id": 6,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "achos!",
     "id": 7,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "akqa",
     "id": 8,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "andoni beristain",
     "id": 9,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "anton & irene",
     "id": 10,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "atelier",
     "id": 11,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "bakea",
     "id": 12,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "ben fry",
     "id": 13,
-    "groupexpertise": [0],
+    "groupindustry": [0],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "brand nu",
     "id": 14,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "córdova canillas",
     "id": 15,
-    "groupexpertise": [0,2],
+    "groupindustry": [0,2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "carl sprague",
     "id": 16,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 4,
     "groupstatus": 4
   },
   {
     "name": "carla cascales",
     "id": 17,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "casey neistat",
     "id": 18,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "casey reas",
     "id": 19,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "chris milk",
     "id": 20,
-    "groupexpertise": [0],
+    "groupindustry": [0],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "chuck anderson",
     "id": 21,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "cocolia",
     "id": 22,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "creativeapplications.net",
     "id": 23,
-    "groupexpertise": [1,2],
+    "groupindustry": [1,2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "daniel aristizábal",
     "id": 24,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "danny sangra",
     "id": 25,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "david navarro &  claudio guglieri",
     "id": 26,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "digital kitchen",
     "id": 27,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 5,
     "groupstatus": 5
   },
   {
     "name": "dog studio",
     "id": 28,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "dvein",
     "id": 29,
-    "groupexpertise": [1,2],
+    "groupindustry": [1,2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "erik natzke",
     "id": 30,
-    "groupexpertise": [0],
+    "groupindustry": [0],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "erik spiekermann",
     "id": 31,
-    "groupexpertise": [0],
+    "groupindustry": [0],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "filipe carvalho",
     "id": 32,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 3,
     "groupstatus": 4
   },
   {
     "name": "foreign policy",
     "id": 33,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "framed",
     "id": 34,
-    "groupexpertise": [3],
+    "groupindustry": [3],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "futuredekuxe",
     "id": 35,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "gemma o’brien",
     "id": 36,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "gmunk",
     "id": 37,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 3,
     "groupstatus": 4
   },
   {
     "name": "golan levin",
     "id": 38,
-    "groupexpertise": [0],
+    "groupindustry": [0],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "hey",
     "id": 39,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "hiro murai",
     "id": 40,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 4,
     "groupstatus": 4
   },
   {
     "name": "holo",
     "id": 41,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "hush",
     "id": 42,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "ideo",
     "id": 43,
-    "groupexpertise": [0,2,3],
+    "groupindustry": [0,2,3],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "james victore",
     "id": 44,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "jan de coster",
     "id": 45,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "javier jaen",
     "id": 46,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "jean-paul frenay",
     "id": 47,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "john maeda",
     "id": 48,
-    "groupexpertise": [0],
+    "groupindustry": [0],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "johnny cupcakes",
     "id": 49,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "jon burgerman",
     "id": 50,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "josep maría mir",
     "id": 51,
-    "groupexpertise": [0,2],
+    "groupindustry": [0,2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "joshua davis",
     "id": 52,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 5,
     "groupstatus": 5
   },
   {
     "name": "joylabz",
     "id": 53,
-    "groupexpertise": [0],
+    "groupindustry": [0],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "julien vallée",
     "id": 54,
-    "groupexpertise": [1,2],
+    "groupindustry": [1,2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "kiran gandhi",
     "id": 55,
-    "groupexpertise": [4],
+    "groupindustry": [4],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "kyle cooper",
     "id": 56,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 5,
     "groupstatus": 5
   },
   {
     "name": "laika",
     "id": 57,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "letters are my friends",
     "id": 58,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "lil'ol'lady",
     "id": 59,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "linda liukas",
     "id": 60,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "lizzie mary cullen",
     "id": 61,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "lullatone + jono brandel",
     "id": 62,
-    "groupexpertise": [4],
+    "groupindustry": [4],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "made thought",
     "id": 63,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "matt lambert",
     "id": 64,
-    "groupexpertise": [1,2],
+    "groupindustry": [1,2],
     "groupyear": 4,
     "groupstatus": 4
   },
   {
     "name": "mau morgo",
     "id": 65,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "michael cina",
     "id": 66,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "mirko borsche",
     "id": 67,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "momoco",
     "id": 68,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "monika mogi",
     "id": 69,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "morphika",
     "id": 70,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "mpc",
     "id": 71,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "mr bingo",
     "id": 72,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "mucho",
     "id": 73,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "musketon",
     "id": 74,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "neville brody",
     "id": 75,
-    "groupexpertise": [0],
+    "groupindustry": [0],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "noelia lozano",
     "id": 76,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "non-format",
     "id": 77,
-    "groupexpertise": [1,2],
+    "groupindustry": [1,2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "onesize",
     "id": 78,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "outro studio",
     "id": 79,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "pablo garcia",
     "id": 80,
-    "groupexpertise": [0],
+    "groupindustry": [0],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "pat perry",
     "id": 81,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "paula scher (pentagram)",
     "id": 82,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 5,
     "groupstatus": 5
   },
   {
     "name": "postpanic",
     "id": 83,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "random studio",
     "id": 84,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "renascent",
     "id": 85,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "rick banks",
     "id": 86,
-    "groupexpertise": [0,2],
+    "groupindustry": [0,2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "rick poynor",
     "id": 87,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "rik oostenbroek",
     "id": 88,
-    "groupexpertise": [1,2],
+    "groupindustry": [1,2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "rob chiu",
     "id": 89,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 5,
     "groupstatus": 4
   },
   {
     "name": "robert hodgin",
     "id": 90,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "rozon parein",
     "id": 91,
-    "groupexpertise": [1,2],
+    "groupindustry": [1,2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "saad moosajee",
     "id": 92,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "saman kesh",
     "id": 93,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "sawdust",
     "id": 94,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "sid lee",
     "id": 95,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "signalnoise",
     "id": 96,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 5,
     "groupstatus": 3
   },
   {
     "name": "snask",
     "id": 97,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "somerset + mills",
     "id": 98,
-    "groupexpertise": [1,2],
+    "groupindustry": [1,2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "stefan sagmeister",
     "id": 99,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "steven wilson",
     "id": 100,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 3,
     "groupstatus": 3
   },
   {
     "name": "studio blue",
     "id": 101,
-    "groupexpertise": [1,2],
+    "groupindustry": [1,2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "territory",
     "id": 102,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "the mill",
     "id": 103,
-    "groupexpertise": [1],
+    "groupindustry": [1],
     "groupyear": 5,
     "groupstatus": 5
   },
   {
     "name": "the six and five studio",
     "id": 104,
-    "groupexpertise": [0,2],
+    "groupindustry": [0,2],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "timothy goodman",
     "id": 105,
-    "groupexpertise": [2],
+    "groupindustry": [2],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "tobias van schneider",
     "id": 106,
-    "groupexpertise": [0,2],
+    "groupindustry": [0,2],
     "groupyear": 4,
     "groupstatus": 3
   },
   {
     "name": "unit9",
     "id": 107,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "ustwo",
     "id": 108,
-    "groupexpertise": [0],
+    "groupindustry": [0],
     "groupyear": 4,
     "groupstatus": 5
   },
   {
     "name": "vasava",
     "id": 109,
-    "groupexpertise": [0,1,2],
+    "groupindustry": [0,1,2],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "we are seventeen",
     "id": 110,
-    "groupexpertise": [0,1],
+    "groupindustry": [0,1],
     "groupyear": 3,
     "groupstatus": 5
   },
   {
     "name": "yukiko",
     "id": 111,
-    "groupexpertise": [1,2],
+    "groupindustry": [1,2],
     "groupyear": 3,
     "groupstatus": 5
   }
