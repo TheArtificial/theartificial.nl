@@ -201,11 +201,11 @@
 				    draw();
 				  });
 
-				  // wire up the filters the hard way
-					d3.select("#industryr1").on("click", function() { includeGroupyears = [1,3]; draw(); });                                 // Groupyear filter
-					d3.select("#industryr2").on("click", function() { includeGroupyears = [1,4]; draw(); });
-					d3.select("#industryr3").on("click", function() { includeGroupyears = [1,5]; draw(); });
-					d3.select("#industryr4").on("click", function() { includeGroupyears = [1,3,4,5]; draw(); });
+				  // // wire up the filters the hard way
+					// d3.select("#industryr1").on("click", function() { includeGroupyindustry = [1,3]; draw(); });                                 // Groupyear filter
+					// d3.select("#industryr2").on("click", function() { includeGroupindustry = [1,4]; draw(); });
+					// d3.select("#industryr3").on("click", function() { includeGroupindustry = [1,5]; draw(); });
+					// d3.select("#industryr4").on("click", function() { includeGroupindustry = [1,3,4,5]; draw(); });
 				  d3.select("#yearr1").on("click", function(d,i) { includeGroupyears = [1,3]; draw(); });                                 // Groupyear filter
 				  d3.select("#yearr2").on("click", function() { includeGroupyears = [1,4]; draw(); });
 				  d3.select("#yearr3").on("click", function() { includeGroupyears = [1,5]; draw(); });
