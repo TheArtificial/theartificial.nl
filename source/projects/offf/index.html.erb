@@ -55,7 +55,7 @@
 				  // lookup arrays for styling
 				  var color = ["fff2bc","00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"];
 				  // var colorScale = d3.scale.linear().range(["fff2bc", "00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"]).domain([0,1,2,3,4,5]);
-					var colorindustry = ["#28b67a", "#7bc580", "#bfd857", "#53b59f", "#bedea8"];
+					var colorindustry = ["#28b67a", "#7bc580", "#bfd857", "#53b59f", "#bedea8", "white"];
 					var colorcontinent = ["white", "#bf8ec0", "#fbc4aa", "#de4f76", "#f494be", "#edb9d0"];
 					var colorstatus = ["#00b3c5", "#91d3ce", "#007bc1", "#00b7a3", "#a0cae7"];
 					var coloryear = ["white","white","white", "#e66964", "#f3aa84", "#f6c831"];
@@ -136,11 +136,13 @@
 							// get the
 							var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
 							var colornumber = dropdownr.node().selectedIndex;
+							var multicolorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
 							console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
 							console.log("this is my colornumber", colornumber);
 
 							if (colornumber == 1) {
-								d3.selectAll("circle").attr("fill", function(d,i) { return colorindustry[d.groupindustry] } );
+								d3.selectAll("circle").attr("fill", function(d,i) { return colorindustry[d.groupindustry] } )
+								d.groupindustry
 							}
 							else if (colornumber == 2) {
 								d3.selectAll("circle").attr("fill", function(d,i) { return colorcontinent[d.groupcontinent] } );
@@ -372,6 +374,7 @@
 			var source = dropdownl.node().options[dropdownl.node().selectedIndex].value;
 			var legendcat = dropdownl.node().options[dropdownl.node().selectedIndex].dataset.legendcat;
 
+
 			$(".legendl").hide();
 			$(legendcat).show();
 
@@ -386,13 +389,11 @@
 		var dropdownr = d3.select("#pickr")
 		var changecolor = function() {
 
+			var countarray = dropdownr.node().options.value;
+
 			var legendcol = dropdownr.node().options[dropdownr.node().selectedIndex].dataset.legendcol;
 			$(".legendr").hide();
 			$(legendcol).show();
-
-
-			// var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
-			// var colornumber = dropdownr.node().selectedIndex;
 
 			$(".legendr").removeClass("nbr");
 			$(legendcol).addClass("nbr");
@@ -406,22 +407,13 @@
 				return $(this).index();
 				}).get().join(',');
 
-
-			// var color = ["red","#fff2bc", "#00a1a3", "#97d9eb","#e66964","#f3aa84", "#f6c831"];
-			// // var colorScale = d3.scale.ordinal().range(["#fff2bc", "#00a1a3", "#97d9eb","#e66964","#f3aa84", "#f6c831"]).domain(["#industryr", "#locationr", "#yearr", "#statusr" ]);
-			// // var colorScale = d3.scale.ordinal().range(["red","#fff2bc", "#00a1a3", "#97d9eb","#e66964","#f3aa84", "#f6c831"]).domain([0, 1, 2, 3, 4, 5, 6]);
-			// d3.selectAll("circle").attr("fill", function(d,i) { return color[licolornumber] } );
-
-			draw();
-
-
-
-			// console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
-			// console.log("this is my colornumber", colornumber);
+			console.log("this is my countarray", countarray);
 			console.log("this is my legendcol", legendcol);
 			console.log("this is my licolornumber", licolornumber);
 			console.log("this is my liid", liid);
 			console.log("this is my liindex", liindex);
+
+			draw();
 		};
 
 			$(function() {
