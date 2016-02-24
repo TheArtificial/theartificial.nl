@@ -53,24 +53,18 @@
 				      linkSelection = svg.selectAll('.link');
 
 				  // lookup arrays for styling
-				  // var color = ["blue", "white", "red","#e66964","#f3aa84", "#f6c831","#fff2bc", "#00a1a3, #97d9eb"];
+				  var color = ["fff2bc","00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"];
 				  // var colorScale = d3.scale.linear().range(["fff2bc", "00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"]).domain([0,1,2,3,4,5]);
-
-
-					// var dropdownr = d3.select("#pickr")
-					// var changecolor = function() {
-					// 	var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
-					// 	var colornumber = dropdownr.node().selectedIndex;
-					// 	console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
-					// 	console.log("this is my colornumber", colornumber);
-					// };
-
-					var radius = ["100","100","100","4","4","4"]; // the first three shouldn't happen
+					var colorindustry = ["#28b67a", "#7bc580", "#bfd857", "#53b59f", "#bedea8"];
+					var colorcontinent = ["white", "#bf8ec0", "#fbc4aa", "#de4f76", "#f494be", "#edb9d0"];
+					var colorstatus = ["#00b3c5", "#91d3ce", "#007bc1", "#00b7a3", "#a0cae7"];
+					var coloryear = ["white","white","white", "#e66964", "#f3aa84", "#f6c831"];
+					var radius = ["100","100","100","5","5","5"]; // the first three shouldn't happen
 				  var transparency = ["0","0","0","0","0","0"];
 
 				  // filter values
 				  var includeGroupyears = [3,4,5];
-				  var includeGroupstatus = [1,2,3,4,5];
+				  var includeGroupstatus = [0,1,2,3,4];
 				  var includeGroupcontinents = [1,2,3,4,5];
 					var includeGroupindustries = [0,1,2,3,4];
 
@@ -136,8 +130,31 @@
 				      .attr("class", "node") // you have to do this or you can't re-select it!
 							// .attr("fill", function(d, i) { return color[d.groupyear] })
 				      // .attr("fill", function(d, i) { return d.groupyear ? color[d.groupyear] : "white"; }) // if no groupyear, then it's a category, so color white
-				      .style("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 7; }) // if no groupyear, then it's a category, so size 7
-							.attr("fill", "white");
+				      .style("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 10; }); // if no groupyear, then it's a category, so size 7
+							// .attr("fill", "white");
+
+							// get the
+							var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
+							var colornumber = dropdownr.node().selectedIndex;
+							console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
+							console.log("this is my colornumber", colornumber);
+
+							if (colornumber == 1) {
+								d3.selectAll("circle").attr("fill", function(d,i) { return colorindustry[d.groupindustry] } );
+							}
+							else if (colornumber == 2) {
+								d3.selectAll("circle").attr("fill", function(d,i) { return colorcontinent[d.groupcontinent] } );
+							}
+							else if (colornumber == 3) {
+								d3.selectAll("circle").attr("fill", function(d,i) { return colorstatus[d.groupstatus] } );
+							}
+							else if (colornumber == 4) {
+								d3.selectAll("circle").attr("fill", function(d,i) { return coloryear[d.groupyear] } );
+							}
+							else {
+								d3.selectAll("circle").attr("fill", "white") };
+
+
 
 				    node.append("text")
 				      .attr("dx", 8)
@@ -304,12 +321,12 @@
 				</div>
 				<div id="locationr" class="legendr" style="display:none">
 					<ul>
-						<li id="locationr1"> <img src="/offf/images/legend-pink.svg"> <a>Asia</a></li>
-						<li id="locationr2"> <img src="/offf/images/legend-peach.svg"> <a>Australia</a></li>
-						<li id="locationr3"> <img src="/offf/images/legend-yellow.svg"> <a>Europe</a></li>
-						<li id="locationr4"> <img src="/offf/images/legend-aqua.svg"> <a>North America</a></li>
-						<li id="locationr5"> <img src="/offf/images/legend-blue.svg"> <a>South America</a></li>
-						<li id="locationr6"> <img src="/offf/images/legend-pink.svg"> <img src="/offf/images/legend-peach.svg"> <img src="/offf/images/legend-yellow.svg"> <img src="/offf/images/legend-blue.svg"> <img src="/offf/images/legend-aqua.svg"><a> Any</a></li>
+						<li id="locationr1"> <img src="/offf/images/legend-soya.svg"> <a>Asia</a></li>
+						<li id="locationr2"> <img src="/offf/images/legend-aqua.svg"> <a>Australia</a></li>
+						<li id="locationr3"> <img src="/offf/images/legend-pink.svg"> <a>Europe</a></li>
+						<li id="locationr4"> <img src="/offf/images/legend-peach.svg"> <a>North America</a></li>
+						<li id="locationr5"> <img src="/offf/images/legend-yellow.svg"> <a>South America</a></li>
+						<li id="locationr6"> <img src="/offf/images/legend-soya.svg"> <img src="/offf/images/legend-peach.svg"> <img src="/offf/images/legend-yellow.svg"> <img src="/offf/images/legend-blue.svg"> <img src="/offf/images/legend-aqua.svg"><a> Any</a></li>
 					</ul>
 				</div>
 				<div id="statusr" class="legendr" style="display:none">
@@ -374,37 +391,38 @@
 			$(legendcol).show();
 
 
-		// 	var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
-		// 	var colornumber = dropdownr.node().selectedIndex;
+			// var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
+			// var colornumber = dropdownr.node().selectedIndex;
 
-		// 	$(".legendr").removeClass("nbr");
-		// 	$(legendcol).addClass("nbr");
-		//
-		// 	var licolornumber = $(".nbr li").length;
-		// 	var liid = $('.nbr li').map(function(i,n) {
-    // 		return $(n).attr('id');
-		// 		}).get().join(',');
-		//
-		// 	var liindex = $('.nbr li').map(function(i,n){
-		// 		return $(this).index();
-		// 		}).get().join(',');
-		//
-		//
-		// 	var color = ["red","#fff2bc", "#00a1a3", "#97d9eb","#e66964","#f3aa84", "#f6c831"];
-		// 	// var colorScale = d3.scale.ordinal().range(["#fff2bc", "#00a1a3", "#97d9eb","#e66964","#f3aa84", "#f6c831"]).domain(["#industryr", "#locationr", "#yearr", "#statusr" ]);
-		// 	// var colorScale = d3.scale.ordinal().range(["red","#fff2bc", "#00a1a3", "#97d9eb","#e66964","#f3aa84", "#f6c831"]).domain([0, 1, 2, 3, 4, 5, 6]);
-		// 	d3.selectAll("circle").attr("fill", function(d,i) { return color[licolornumber] } );
-		//
-			// draw();
+			$(".legendr").removeClass("nbr");
+			$(legendcol).addClass("nbr");
+
+			var licolornumber = $(".nbr li").length;
+			var liid = $('.nbr li').map(function(i,n) {
+    		return $(n).attr('id');
+				}).get().join(',');
+
+			var liindex = $('.nbr li').map(function(i,n){
+				return $(this).index();
+				}).get().join(',');
+
+
+
+			// var color = ["red","#fff2bc", "#00a1a3", "#97d9eb","#e66964","#f3aa84", "#f6c831"];
+			// // var colorScale = d3.scale.ordinal().range(["#fff2bc", "#00a1a3", "#97d9eb","#e66964","#f3aa84", "#f6c831"]).domain(["#industryr", "#locationr", "#yearr", "#statusr" ]);
+			// // var colorScale = d3.scale.ordinal().range(["red","#fff2bc", "#00a1a3", "#97d9eb","#e66964","#f3aa84", "#f6c831"]).domain([0, 1, 2, 3, 4, 5, 6]);
+			// d3.selectAll("circle").attr("fill", function(d,i) { return color[licolornumber] } );
+
+			draw();
 
 
 
 			// console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
 			// console.log("this is my colornumber", colornumber);
-			// console.log("this is my legendcol", legendcol);
-			// console.log("this is my licolornumber", licolornumber);
-			// console.log("this is my liid", liid);
-			// console.log("this is my liindex", liindex);
+			console.log("this is my legendcol", legendcol);
+			console.log("this is my licolornumber", licolornumber);
+			console.log("this is my liid", liid);
+			console.log("this is my liindex", liindex);
 		};
 
 			$(function() {
