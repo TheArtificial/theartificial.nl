@@ -136,13 +136,19 @@
 							// get the
 							var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
 							var colornumber = dropdownr.node().selectedIndex;
-							var multicolorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
+							// var colorclickid = clicklegendr.node().options[dropdownr.node().selectedIndex].value;
+							// var colornumberobj = groupindustry.keys(jsonArray).length;
+
+
+
 							console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
 							console.log("this is my colornumber", colornumber);
+							// console.log("colorclickid", clicklegendr.node().options[dropdownr.node().selectedIndex].value);
+							// console.log("colornumberobj", colornumberobj);
 
 							if (colornumber == 1) {
 								d3.selectAll("circle").attr("fill", function(d,i) { return colorindustry[d.groupindustry] } )
-								d.groupindustry
+								keys(jsonArray).length;
 							}
 							else if (colornumber == 2) {
 								d3.selectAll("circle").attr("fill", function(d,i) { return colorcontinent[d.groupcontinent] } );
@@ -207,6 +213,7 @@
 				    var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || node.groupcontinent.some(isInGpc);
 				    var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
 				    var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
+						// console.log('includeGroupstatus', includeGroupstatus);
 				    // console.log('includeGroupcontinents', includeGroupcontinents);
 				    // console.log('node.groupcontinent', node.groupcontinent);
 				    // console.log('matchesGroupcontinents', matchesGroupcontinents);
@@ -240,10 +247,6 @@
 				  //    // Update whether or not the elements are active
 				  //    abc.active = active;
 				  //  });
-
-
-
-
 
 				 </script>
 			</div>
@@ -387,6 +390,7 @@
 		}
 
 		var dropdownr = d3.select("#pickr")
+		// var clicklegendr = d3.selection.call(function [])
 		var changecolor = function() {
 
 			var countarray = dropdownr.node().options.value;
@@ -407,11 +411,12 @@
 				return $(this).index();
 				}).get().join(',');
 
-			console.log("this is my countarray", countarray);
-			console.log("this is my legendcol", legendcol);
-			console.log("this is my licolornumber", licolornumber);
-			console.log("this is my liid", liid);
-			console.log("this is my liindex", liindex);
+			// console.log("this is my countarray", countarray);
+			// console.log("this is my legendcol", legendcol);
+			// console.log("this is my licolornumber", licolornumber);
+			// console.log("this is my liid", liid);
+			// console.log("this is my liindex", liindex);
+			// console.log("clicklegendr", clicklegendr);
 
 			draw();
 		};
