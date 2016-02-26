@@ -133,36 +133,6 @@
 				      .style("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 10; }); // if no groupyear, then it's a category, so size 7
 							// .attr("fill", "white");
 
-							// get the
-							var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
-							var colornumber = dropdownr.node().selectedIndex;
-							// var colorclickid = clicklegendr.node().options[dropdownr.node().selectedIndex].value;
-							// var colornumberobj = groupindustry.keys(jsonArray).length;
-
-
-
-							console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
-							console.log("this is my colornumber", colornumber);
-							// console.log("colorclickid", clicklegendr.node().options[dropdownr.node().selectedIndex].value);
-							// console.log("colornumberobj", colornumberobj);
-
-							if (colornumber == 1) {
-								d3.selectAll("circle").attr("fill", function(d,i) { return colorindustry[d.groupindustry] } )
-								keys(jsonArray).length;
-							}
-							else if (colornumber == 2) {
-								d3.selectAll("circle").attr("fill", function(d,i) { return colorcontinent[d.groupcontinent] } );
-							}
-							else if (colornumber == 3) {
-								d3.selectAll("circle").attr("fill", function(d,i) { return colorstatus[d.groupstatus] } );
-							}
-							else if (colornumber == 4) {
-								d3.selectAll("circle").attr("fill", function(d,i) { return coloryear[d.groupyear] } );
-							}
-							else {
-								d3.selectAll("circle").attr("fill", "white") };
-
-
 
 				    node.append("text")
 				      .attr("dx", 8)
@@ -178,6 +148,37 @@
 				    // remove old nodes
 				    nodeSelection.exit().remove();
 				    // console.log("nodeSelection", nodeSelection);
+
+
+
+						// get the id name and number of the selected link to color accordingly the selected dots
+						var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
+						var colornumber = dropdownr.node().selectedIndex;
+						// var colorclickid = clicklegendr.node().options[dropdownr.node().selectedIndex].value;
+						// var colornumberobj = groupindustry.keys(jsonArray).length;
+						console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
+						console.log("this is my colornumber", colornumber);
+						// console.log("colorclickid", clicklegendr.node().options[dropdownr.node().selectedIndex].value);
+						// console.log("colornumberobj", colornumberobj);
+
+						// set the condition to color each dots
+						if (colornumber == 1) {
+							d3.selectAll("circle").attr("fill", function(d,i) { return colorindustry[d.groupindustry] } );
+							// function multiarray (d.groupindustry {a:[0,1,2],  b:[0], c:[2]}, 2) {
+							// 	returns [a,b,c]
+							// };
+						}
+						else if (colornumber == 2) {
+							d3.selectAll("circle").attr("fill", function(d,i) { return colorcontinent[d.groupcontinent] } );
+						}
+						else if (colornumber == 3) {
+							d3.selectAll("circle").attr("fill", function(d,i) { return colorstatus[d.groupstatus] } );
+						}
+						else if (colornumber == 4) {
+							d3.selectAll("circle").attr("fill", function(d,i) { return coloryear[d.groupyear] } );
+						}
+						else {
+							d3.selectAll("circle").attr("fill", "white") };
 				  }
 
 				  // called by force layout during iteration
@@ -219,6 +220,13 @@
 				    // console.log('matchesGroupcontinents', matchesGroupcontinents);
 				    return (matchesGroupindustries && matchesGroupcontinents && matchesGroupyear && matchesGroupstatus);
 				  }
+
+
+
+
+
+
+
 
 				  function trimLinks(links, nodeIds) {
 				    results = [];
@@ -390,10 +398,7 @@
 		}
 
 		var dropdownr = d3.select("#pickr")
-		// var clicklegendr = d3.selection.call(function [])
 		var changecolor = function() {
-
-			var countarray = dropdownr.node().options.value;
 
 			var legendcol = dropdownr.node().options[dropdownr.node().selectedIndex].dataset.legendcol;
 			$(".legendr").hide();
@@ -411,8 +416,8 @@
 				return $(this).index();
 				}).get().join(',');
 
-			// console.log("this is my countarray", countarray);
-			// console.log("this is my legendcol", legendcol);
+
+			console.log("this is my legendcol", legendcol);
 			// console.log("this is my licolornumber", licolornumber);
 			// console.log("this is my liid", liid);
 			// console.log("this is my liindex", liindex);
