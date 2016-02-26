@@ -56,8 +56,8 @@
 				  var color = ["fff2bc","00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"];
 				  // var colorScale = d3.scale.linear().range(["fff2bc", "00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"]).domain([0,1,2,3,4,5]);
 					var colorindustry = ["#28b67a", "#7bc580", "#bfd857", "#53b59f", "#bedea8", "white"];
-					var colorcontinent = ["white", "#bf8ec0", "#fbc4aa", "#de4f76", "#f494be", "#edb9d0"];
-					var colorstatus = ["#00b3c5", "#91d3ce", "#007bc1", "#00b7a3", "#a0cae7"];
+					var colorcontinent = ["white", "#bf8ec0", "#fbc4aa", "#de4f76", "#f494be", "#edb9d0", "white"];
+					var colorstatus = ["#00b3c5", "#91d3ce", "#007bc1", "#00b7a3", "#a0cae7", "white"];
 					var coloryear = ["white","white","white", "#e66964", "#f3aa84", "#f6c831"];
 					var radius = ["100","100","100","5","5","5"]; // the first three shouldn't happen
 				  var transparency = ["0","0","0","0","0","0"];
@@ -106,7 +106,6 @@
 				    // bind the data array to the svg selection
 				    linkSelection = linkSelection.data(filteredLinks);
 
-
 				    // draw new links
 				    linkSelection.enter().append("path")
 				      .attr("class", "link") // you have to do this or you can't re-select it!
@@ -128,15 +127,13 @@
 
 				    node.append("circle")
 				      .attr("class", "node") // you have to do this or you can't re-select it!
-							// .attr("fill", function(d, i) { return color[d.groupyear] })
-				      // .attr("fill", function(d, i) { return d.groupyear ? color[d.groupyear] : "white"; }) // if no groupyear, then it's a category, so color white
+				      // .style("fill", function(d, i) { return d.groupindustry? colorindustry[d.groupindustry] : "white"; }) // if no groupyear, then it's a category, so color white
+							.attr("fill", "white")
 				      .style("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 10; }); // if no groupyear, then it's a category, so size 7
-							// .attr("fill", "white");
-
 
 				    node.append("text")
-				      .attr("dx", 8)
-				      .attr("dy", 4)
+				      .attr("dx", 15)
+				      .attr("dy", 8)
 				      .attr("spacing", 16)
 				      .attr("id", "abc")
 				      .attr("fill", function(d, i) {return d.groupyear ? color[d.groupyear] : "white";}) // if no groupyear, then it's a category, so color white
@@ -163,19 +160,28 @@
 
 						// set the condition to color each dots
 						if (colornumber == 1) {
-							d3.selectAll("circle").attr("fill", function(d,i) { return colorindustry[d.groupindustry] } );
+							d3.selectAll("circle")
+							.style("fill", function(d, i) { return d.groupindustry? colorindustry[d.groupindustry] : "white"; })
+							.attr("fill", function(d,i) { return colorindustry[d.groupindustry] } );
+
 							// function multiarray (d.groupindustry {a:[0,1,2],  b:[0], c:[2]}, 2) {
 							// 	returns [a,b,c]
 							// };
 						}
 						else if (colornumber == 2) {
-							d3.selectAll("circle").attr("fill", function(d,i) { return colorcontinent[d.groupcontinent] } );
+							d3.selectAll("circle")
+							.style("fill", function(d, i) { return d.groupcontinent? colorcontinent[d.groupcontinent] : "white"; })
+							.attr("fill", function(d,i) { return colorcontinent[d.groupcontinent] } );
 						}
 						else if (colornumber == 3) {
-							d3.selectAll("circle").attr("fill", function(d,i) { return colorstatus[d.groupstatus] } );
+							d3.selectAll("circle")
+							.style("fill", function(d, i) { return d.groupstatus? colorstatus[d.groupstatus] : "white"; })
+							.attr("fill", function(d,i) { return colorstatus[d.groupstatus] } );
 						}
 						else if (colornumber == 4) {
-							d3.selectAll("circle").attr("fill", function(d,i) { return coloryear[d.groupyear] } );
+							d3.selectAll("circle")
+							.style("fill", function(d, i) { return d.groupyear? coloryear[d.groupyear] : "white"; })
+							.attr("fill", function(d,i) { return coloryear[d.groupyear] } );
 						}
 						else {
 							d3.selectAll("circle").attr("fill", "white") };
@@ -220,12 +226,6 @@
 				    // console.log('matchesGroupcontinents', matchesGroupcontinents);
 				    return (matchesGroupindustries && matchesGroupcontinents && matchesGroupyear && matchesGroupstatus);
 				  }
-
-
-
-
-
-
 
 
 				  function trimLinks(links, nodeIds) {
@@ -399,7 +399,6 @@
 
 		var dropdownr = d3.select("#pickr")
 		var changecolor = function() {
-
 			var legendcol = dropdownr.node().options[dropdownr.node().selectedIndex].dataset.legendcol;
 			$(".legendr").hide();
 			$(legendcol).show();
@@ -416,32 +415,29 @@
 				return $(this).index();
 				}).get().join(',');
 
-
 			console.log("this is my legendcol", legendcol);
 			// console.log("this is my licolornumber", licolornumber);
 			// console.log("this is my liid", liid);
 			// console.log("this is my liindex", liindex);
 			// console.log("clicklegendr", clicklegendr);
-
 			draw();
 		};
-
+			// Jquery function. When the dropdown pickr (right) is changed, the function changecolor starts
 			$(function() {
 				$('#pickr').change(function() {
 					dropdownr.on("changecolor", changecolor)
 					changecolor();
 					});
 			});
-
+			// Jquery function. When the dropdown pickl (left) is changed, the function changesrc starts
 			$(function() {
 				$('#pickl').change(function() {
 					dropdownl.on("changesrc", changesrc)
 					changesrc();
 					});
 			});
-
 			// wire up the filters the hard way
-			d3.select("#industryr1").on("click", function() { includeGroupindustries = [0]; draw(); });
+			d3.select("#industryr1").on("click", function() { includeGroupindustries = [0]; draw();  });
 			d3.select("#industryr2").on("click", function() { includeGroupindustries = [1]; draw(); });
 			d3.select("#industryr3").on("click", function() { includeGroupindustries = [2]; draw(); });
 			d3.select("#industryr4").on("click", function() { includeGroupindustries = [3]; draw(); });
