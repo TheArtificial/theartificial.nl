@@ -329,6 +329,7 @@
 						<li id="industryr1"> <img src="/offf/images/legend-indu-digital.svg"> <a>digital</a></li>
 						<li id="industryr5"> <img src="/offf/images/legend-indu-sound.svg"> <a>sound design</a></li>
 						<li id="industryr4"> <img src="/offf/images/legend-indu-product.svg"> <a>product design</a></li>
+						<li id="industryr7"> <img src="/offf/images/legend-multi.svg"> <a>multi disciplinary</a></li>
 						<li id="industryr6"> <img src="/offf/images/legend-indu-print.svg"><img src="/offf/images/legend-indu-motion.svg"><img src="/offf/images/legend-indu-digital.svg"><img src="/offf/images/legend-indu-sound.svg"><img src="/offf/images/legend-indu-product.svg">  <a> All industries </a></li>
 					</ul>
 				</div>
@@ -339,6 +340,7 @@
 						<li id="locationr1"> <img src="/offf/images/legend-loc-asia.svg"> <a>Asia</a></li>
 						<li id="locationr5"> <img src="/offf/images/legend-loc-southamerica.svg"> <a>South America</a></li>
 						<li id="locationr2"> <img src="/offf/images/legend-loc-australia.svg"> <a>Australia</a></li>
+						<li id="industryr7"> <img src="/offf/images/legend-multi.svg"> <a>multi location</a></li>
 						<li id="locationr6"> <img src="/offf/images/legend-loc-europe.svg"><img src="/offf/images/legend-loc-northamerica.svg"> <img src="/offf/images/legend-loc-asia.svg"> <img src="/offf/images/legend-loc-southamerica.svg"> <img src="/offf/images/legend-loc-australia.svg"><a> all continents</a></li>
 					</ul>
 				</div>
@@ -443,6 +445,7 @@
 			d3.select("#industryr4").on("click", function() { includeGroupindustries = [3]; draw(); });
 			d3.select("#industryr5").on("click", function() { includeGroupindustries = [4]; draw(); });
 			d3.select("#industryr6").on("click", function() { includeGroupindustries = [0,1,3,4]; draw(); });
+			d3.select("#industryr7").on("click", function() { includeGroupindustries = [0,1,3,4]; draw(); });
 			d3.select("#yearr1").on("click", function(d,i) { includeGroupyears = [3]; draw(); });
 			d3.select("#yearr2").on("click", function() { includeGroupyears = [4]; draw(); });
 			d3.select("#yearr3").on("click", function() { includeGroupyears = [5]; draw(); });
@@ -453,6 +456,7 @@
 			d3.select("#locationr4").on("click", function() { includeGroupcontinents = [4]; draw(); });
 			d3.select("#locationr5").on("click", function() { includeGroupcontinents = [5]; draw(); });
 			d3.select("#locationr6").on("click", function() { includeGroupcontinents = [1,2,3,4,5]; draw(); });
+			d3.select("#locationr7").on("click", function() { includeGroupcontinents = [1,2,3,4,5]; draw(); });
 			d3.select("#statusr1").on("click", function() { includeGroupstatus = [0]; draw(); });
 			d3.select("#statusr2").on("click", function() { includeGroupstatus = [1]; draw(); });
 			d3.select("#statusr3").on("click", function() { includeGroupstatus = [2]; draw(); });
