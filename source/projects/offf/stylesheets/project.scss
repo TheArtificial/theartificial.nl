@@ -76,6 +76,7 @@
 		height: 250px;
 		width:100%;
 		position: relative;
+		// background-color: $darkest-lime;
 
 		li {
 		font-size: 0.8em;
@@ -83,7 +84,7 @@
 		color: $white;
 		font-family: "Open Sans", Helvetica, Arial, sans-serif;
 		padding: 9px 3px 5px 0;
-		// background-color: $pale-lime;
+		// background-color: $dark-lime;
 		}
 
 		.choicel, .choicer, .selectl, .selectr, .legendl, .legendr {
@@ -91,13 +92,18 @@
 			// background-color: $lime;
 			text-align: right;
 		}
+		.selectl, .selectr {
+			position: absolute;
+			// background-color: $pale-tulip;
+			text-align: left;
+		}
 
 		.legendl, .legendr{
 			text-align: left;
 		}
 
 		#pickl, #pickr, #jsonsources {
-			margin: 7px 20px 0px 0;
+			margin: 7px 20px
 		}
 
 		.legendl {
@@ -118,7 +124,8 @@
 				vertical-align: top;
 			}
 			ul {
-				margin-left:10px;
+				margin-left:0px;
+				padding-left:0px;
 			}
 		}
 
@@ -128,7 +135,7 @@
 			text-align: left;
 			li {
 			display:block;
-			padding: 5px 0px 5px  10px ;
+			padding: 5px 0px 5px 10px ;
 			}
 			li:hover{
 			opacity:0.5;
