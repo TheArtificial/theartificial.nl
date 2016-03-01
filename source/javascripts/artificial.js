@@ -75,14 +75,14 @@ function updatePagination(menuItems, currentId) {
 		menuItems.filter('.prev').attr('href',prevMenuItem.attr('href')).parent().removeClass('disabled');
 	} else {
 		// console.log("nothing prev", currentId);
-		menuItems.filter('.prev').removeAttr('href').parent().addClass('disabled');
+		menuItems.filter('.prev').removeAttr('href').removeAttr('href').parent().addClass('disabled');
 	}
 	var nextMenuItem = currentMenuItem.parent().next().find('a:not(.next)');
 	if (nextMenuItem.length > 0) {
 		menuItems.filter('.next').attr('href',nextMenuItem.attr('href')).parent().removeClass('disabled');
 	} else {
 		// console.log("nothing next", currentId);
-		menuItems.filter('.next').parent().addClass('disabled');
+		menuItems.filter('.next').removeAttr('href').parent().addClass('disabled');
 	}
 }
 
