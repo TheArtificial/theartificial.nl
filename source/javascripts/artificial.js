@@ -45,27 +45,9 @@ function scrollspy(selector, heightOffset, callback) {
 			callback(currentElement, offset);
 		}
 
-		// update menu
 	  if (lastId !== id) {
-			menuItems.parent().removeClass("active");
-      lastId = id;
-			// find the item that is not .prev or .next and has the right href target
-			var currentMenuItem = menuItems.filter('a:not(.next,.prev)[href=#'+id+']');
-			currentMenuItem.parent().addClass('active');
-			var prevMenuItem = currentMenuItem.parent().prev().find('a:not(.prev)');
-			if (prevMenuItem.length > 0) {
-				menuItems.filter('.prev').attr('href',prevMenuItem.attr('href')).parent().removeClass('disabled');
-			} else {
-				// console.log("nothing prev", id);
-				menuItems.filter('.prev').removeAttr('href').parent().addClass('disabled');
-			}
-			var nextMenuItem = currentMenuItem.parent().next().find('a:not(.next)');
-			if (nextMenuItem.length > 0) {
-				menuItems.filter('.next').attr('href',nextMenuItem.attr('href')).parent().removeClass('disabled');
-			} else {
-				// console.log("nothing next", id);
-				menuItems.filter('.next').parent().addClass('disabled');
-			}
+			updatePagination(menuItems, id);
+			lastId = id;
 	  }
 
 		scrollTicking = false;
@@ -81,6 +63,27 @@ function scrollspy(selector, heightOffset, callback) {
 
 	$(window).scroll(debounceScroll);
 
+}
+
+function updatePagination(menuItems, currentId) {
+	menuItems.parent().removeClass("active");
+	// find the item that is not .prev or .next and has the right href target
+	var currentMenuItem = menuItems.filter('a:not(.next,.prev)[href=#'+currentId+']');
+	currentMenuItem.parent().addClass('active');
+	var prevMenuItem = currentMenuItem.parent().prev().find('a:not(.prev)');
+	if (prevMenuItem.length > 0) {
+		menuItems.filter('.prev').attr('href',prevMenuItem.attr('href')).parent().removeClass('disabled');
+	} else {
+		// console.log("nothing prev", currentId);
+		menuItems.filter('.prev').removeAttr('href').parent().addClass('disabled');
+	}
+	var nextMenuItem = currentMenuItem.parent().next().find('a:not(.next)');
+	if (nextMenuItem.length > 0) {
+		menuItems.filter('.next').attr('href',nextMenuItem.attr('href')).parent().removeClass('disabled');
+	} else {
+		// console.log("nothing next", currentId);
+		menuItems.filter('.next').parent().addClass('disabled');
+	}
 }
 
 // this brings up search by typing

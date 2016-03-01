@@ -2,6 +2,7 @@
   $( document ).ready(function() {
     scrollspy('#nav-panels', $(window).height()/2, tweenGradient);
     tweenGradient($('#systems'),0);
+    updatePagination($('#nav-panels a'), 'systems');
     $('.slide-panel').css('background','none');
   });
 
