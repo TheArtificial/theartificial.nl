@@ -47,6 +47,11 @@
 #   end
 # end
 
+ANSI_COLOR_RED = "\e[31m"
+ANSI_COLOR_RESET = "\e[0m"
+ANSI_BOLD_ON = "\e[1m"
+ANSI_BOLD_OFF = "\e[22m"
+
 helpers do
   def nav_link(link_text, url, options = {})
     options[:class] ||= ""
@@ -97,6 +102,7 @@ helpers do
       file = File.open(resource.source_file, 'r')
       return file.read
     else
+      puts "#{ANSI_COLOR_RED}Unknown artifact icon #{artifact_name} in #{current_resource.path}#{ANSI_COLOR_RESET}"
       # empty roundrect
       return '<svg title="unknown artifact" version="1.1" xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 64 64">
       <path  d="M60,4c1.103,0,2,0.897,2,2v51.9c0,1.103-0.897,2-2,2H4c-1.103,0-2-0.897-2-2V6c0-1.103,0.897-2,2-2H60 M60,3	H4C2.343,3,1,4.343,1,6v51.9c0,1.657,1.343,3,3,3h56c1.657,0,3-1.343,3-3V6C63,4.343,61.657,3,60,3L60,3z"/>'
