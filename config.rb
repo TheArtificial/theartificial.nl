@@ -74,22 +74,22 @@ helpers do
     end
   end
 
-    # this overrides the built-in helper
-    # see https://github.com/middleman/middleman/issues/145
-    def extra_page_classes
-      path_classes = page_classes.split(' ')
+  # this overrides the built-in helper
+  # see https://github.com/middleman/middleman/issues/145
+  def extra_page_classes
+    path_classes = page_classes.split(' ')
 
-      blog_classes = []
-      if current_page.data.tags
-        blog_classes << current_page.data.tags.split(',').map{|t| "tag-#{t.strip.gsub(/\s+/, '-')}"}
-      end
-      if current_page.data.category
-        blog_classes << "category-#{current_page.data.category.strip.gsub(/\s+/, '-')}"
+    blog_classes = []
+    if current_page.data.tags
+      blog_classes << current_page.data.tags.split(',').map{|t| "tag-#{t.strip.gsub(/\s+/, '-')}"}
     end
-      classes = path_classes + blog_classes
+    if current_page.data.category
+      blog_classes << "category-#{current_page.data.category.strip.gsub(/\s+/, '-')}"
+    end
+    classes = path_classes + blog_classes
 
-      return classes.join(' ')
-    end
+    return classes.join(' ')
+  end
 
 end
 
