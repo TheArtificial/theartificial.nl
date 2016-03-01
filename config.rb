@@ -91,6 +91,18 @@ helpers do
     return classes.join(' ')
   end
 
+  def artifact_icon(artifact_name)
+    path = "work/images/artifact_#{artifact_name}.svg"
+    if resource = sitemap.find_resource_by_path(path)
+      file = File.open(resource.source_file, 'r')
+      return file.read
+    else
+      # empty roundrect
+      return '<svg title="unknown artifact" version="1.1" xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 64 64">
+      <path  d="M60,4c1.103,0,2,0.897,2,2v51.9c0,1.103-0.897,2-2,2H4c-1.103,0-2-0.897-2-2V6c0-1.103,0.897-2,2-2H60 M60,3	H4C2.343,3,1,4.343,1,6v51.9c0,1.657,1.343,3,3,3h56c1.657,0,3-1.343,3-3V6C63,4.343,61.657,3,60,3L60,3z"/>'
+    end
+  end
+
 end
 
 set :css_dir, 'stylesheets'
