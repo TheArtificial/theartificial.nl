@@ -10,6 +10,7 @@ function scrollspy(selector, heightOffset, callback) {
 	      if (item.length) { return item; }
 	    });
 
+	// disabled becuase it got janky
 	// Bind click handler to menu items so we can get a fancy scroll animation
 	// menuItems.click(function(e){
 	//   var href = $(this).attr("href"),
