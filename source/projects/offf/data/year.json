@@ -3,11 +3,11 @@
   "nodes":
 [
   {
-    "name":"2015",
+    "category":"2015",
     "id": "recurrence-0"
   },
   {
-    "name":"2016",
+    "category":"2016",
     "id": "recurrence-1"
   },
 

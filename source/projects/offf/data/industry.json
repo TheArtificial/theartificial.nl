@@ -3,23 +3,23 @@
   "nodes":
 [
   {
-    "name":"DIGITAL",
+    "category":"DIGITAL",
     "id": "industry-0"
   },
   {
-    "name":"MOTION",
+    "category":"MOTION",
     "id": "industry-1"
   },
   {
-    "name":"PRINT",
+    "category":"PRINT",
     "id": "industry-2"
   },
   {
-    "name":"PRODUCT",
+    "category":"PRODUCT",
     "id": "industry-3"
   },
   {
-    "name":"SOUND DESIGN",
+    "category":"SOUND DESIGN",
     "id": "industry-4"
   },
 

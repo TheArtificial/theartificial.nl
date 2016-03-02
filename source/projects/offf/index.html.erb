@@ -126,40 +126,23 @@
 							.attr("class","node")
 				      .call(force.drag);
 
-				    var circle = node.append("circle")
+				    node.append("circle")
 				      .attr("class", "dot") // you have to do this or you can't re-select it!
 				      .attr("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 10; }) // if no groupyear, then it's a category, so size 7
-							// .on("mouseover", function() {	return legend.style("visibility", "visible");	})
-							// .on("mouseout", function() { return legend.style("visibility", "hidden");	});
-							// .on("mouseover", mouseover)
-    					// .on("mouseout", mouseout);
 
-				    var label = node.append("text")
+				    node.append("text")
 				      .attr("dx", 15)
 				      .attr("dy",5)
 				      .attr("spacing", 15)
-				      // .attr("fill", function(d, i) {return d.groupyear ? color[d.groupyear] : "white";}) // if no groupyear, then it's a category, so color white
-				      .style("opacity", function(d, i) {return d.groupyear ? transparency [d.groupyear] : 1;}) // if no groupyear, then it's a category, so opacity 1
 				      .text(function(d) {return d.name});
 
-							// dots.on("mouseover", function (d) {
-							// 		d3.select(this).text (function(d){
-							// 		 return label.style("opacity", "1");
-							// 	})
-							// });
-							// dots.on("mouseout", function (d) {
-							// 		d3.select(this).text(function(d){
-							// 		 return label.style("opacity", "0");
-							// 	})
-							// });
+						node.append("text")
+								.attr("class","textcategory")
+					      .attr("dx", 15)
+					      .attr("dy",5)
+					      .attr("spacing", 15)
+					      .text(function(d) {return d.category});
 
-							// dots.on("mouseover", function (d) { return legend.style("visibility", "visible"); });
-							// dots.on("mouseout", function (d) { return legend.style("visibility", "hidden"); });
-
-							// function legend() {
-							// 	d3.select(this).select("text")
-							// 	 .style("opacity", 1);
-							// };
 
 				    // remove old nodes
 				    nodeSelection.exit().remove();

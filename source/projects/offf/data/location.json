@@ -3,23 +3,23 @@
   "nodes":
 [
   {
-    "name":"ASIA",
+    "category":"ASIA",
     "id": "location-0"
   },
   {
-    "name":"AUSTRALIA",
+    "category":"AUSTRALIA",
     "id": "location-1"
   },
   {
-    "name":"EUROPE",
+    "category":"EUROPE",
     "id": "location-2"
   },
   {
-    "name":"NORTH AMERICA",
+    "category":"NORTH AMERICA",
     "id": "location-3"
   },
   {
-    "name":"SOUTH AMERICA",
+    "category":"SOUTH AMERICA",
     "id": "location-4"
   },
 

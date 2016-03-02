@@ -3,23 +3,23 @@
   "nodes":
 [
   {
-    "name":"INDEPENDANT",
+    "category":"INDEPENDANT",
     "id": "structure-0"
   },
   {
-    "name":"REPRESENTED",
+    "category":"REPRESENTED",
     "id": "structure-1"
   },
   {
-    "name":"AGENCY",
+    "category":"AGENCY",
     "id": "structure-2"
   },
   {
-    "name":"EPONYM AGENCY",
+    "category":"EPONYM AGENCY",
     "id": "structure-3"
   },
   {
-    "name":"COLLECTIVE",
+    "category":"COLLECTIVE",
     "id": "structure-4"
   },
 
