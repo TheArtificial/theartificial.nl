@@ -21,8 +21,8 @@
 			<div class="col-12 center visualization">
 				<script>
 				  var
-				    width = window.innerWidth*0.8,
-				    height = window.innerHeight*0.8;
+				    width = window.innerWidth*0.9,
+				    height = window.innerHeight*0.9;
 
 				  // SVG selection that holds the visualization
 				  var svg = d3.select(".visualization").append("svg")
@@ -54,7 +54,6 @@
 
 				  // lookup arrays for styling
 				  var color = ["white", "fff2bc","00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"];
-				  // var colorScale = d3.scale.linear().range(["fff2bc", "00a1a3", "97d9eb","#e66964","#f3aa84", "#f6c831"]).domain([0,1,2,3,4,5]);
 					var colorindustry = ["#28b67a", "#7bc580", "#bfd857", "#53b59f", "#bedea8", "white"];
 					var colorcontinent = ["white", "#bf8ec0", "#fbc4aa", "#de4f76", "#f494be", "#edb9d0", "white"];
 					var colorstatus = ["#00b3c5", "#91d3ce", "#007bc1", "#00b7a3", "#a0cae7", "white"];
@@ -128,7 +127,7 @@
 
 				    node.append("circle")
 				      .attr("class", "dot") // you have to do this or you can't re-select it!
-				      .attr("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 10; }) // if no groupyear, then it's a category, so size 7
+				      .attr("r", function(d, i) { return d.groupyear ? radius[d.groupyear] : 10; }); // if no groupyear, then it's a category, so size 7
 
 				    node.append("text")
 				      .attr("dx", 15)
@@ -146,7 +145,7 @@
 
 				    // remove old nodes
 				    nodeSelection.exit().remove();
-				    console.log("nodeSelection", nodeSelection);
+						console.log("nodeSelected", nodeSelected);
 
 						// get the id name and number of the selected link to color accordingly the selected dots
 						var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
@@ -300,7 +299,7 @@
 			<div class="col-2 left-3 selectl">
 				<script type="text/javascript"> </script>
 					<select id="pickl" name="pickl">
-						<option value ="" disabled="disabled">choose filter</option>
+						<option value ="" disabled="disabled">select filter</option>
 							<option value="/offf/data/industry.json" selected value= "selected" data-legendcat="#industryl"> industry</option>
 							<option value="/offf/data/location.json" data-legendcat="#locationl"> location</option>
 							<option value="/offf/data/status.json" data-legendcat="#statusl"> working status</option>
@@ -354,11 +353,11 @@
 			<div class="col-2 left-9 selectr">
 				<script type="text/javascript"> </script>
 					<select id="pickr">
-						<option value ="" selected value= "selected" disabled="disabled">choose filter</option>
-						<option value ="" data-legendcol="#industryr">industry</option>
-						<option value="" data-legendcol="#locationr">location</option>
-						<option value="" data-legendcol="#statusr">working status</option>
-						<option value="" data-legendcol="#yearr"> year(s) of talk</option>
+						<option value ="" selected value= "selected" disabled="disabled">select filter</option>
+						<option value ="allIndustries" data-legendcol="#industryr">industry</option>
+						<option value="allLocations" data-legendcol="#locationr">location</option>
+						<option value="allStatus" data-legendcol="#statusr">working status</option>
+						<option value="allYears" data-legendcol="#yearr"> year(s) of talk</option>
 					</select>
 			</div>
 
@@ -375,8 +374,8 @@
 			var source = dropdownl.node().options[dropdownl.node().selectedIndex].value;
 			var legendcat = dropdownl.node().options[dropdownl.node().selectedIndex].dataset.legendcat;
 
-			$(".legendl").hide();
-			$(legendcat).show();
+			// $(".legendl").hide();
+			// $(legendcat).show();
 
 			d3.json(source, function(error, json) {
 				graph = json; draw();
@@ -395,34 +394,52 @@
 			$(".legendr").removeClass("nbr");
 			$(legendcol).addClass("nbr");
 
-			var licolornumber = $(".nbr li").length;
-			var liid = $('.nbr li').map(function(i,n) {
-    		return $(n).attr('id');
-				}).get().join(',');
+			// var licolornumber = $(".nbr li").length;
+			// var liid = $('.nbr li').map(function(i,n) {
+    	// 	return $(n).attr('id');
+			// 	}).get().join(',');
+			//
+			// var liindex = $('.nbr li').map(function(i,n){
+			// 	return $(this).index();
+			// 	}).get().join(',');
 
-			var liindex = $('.nbr li').map(function(i,n){
-				return $(this).index();
-				}).get().join(',');
+			// console.log("this is my legendcol", legendcol);
+			// draw();
+		};
 
-			console.log("this is my legendcol", legendcol);
-			// console.log("this is my licolornumber", licolornumber);
-			// console.log("this is my liid", liid);
-			// console.log("this is my liindex", liindex);
-			// console.log("clicklegendr", clicklegendr);
+		function selectColor ()
+		{
+			var pickrVal = $("#pickr").val();
+			console.log("this is my pickrVal", pickrVal);
+
+			if (pickrVal == "allIndustries") {
+				includeGroupindustries = [0,1,2,3,4];
+				console.log("nodeSelected", nodeSelected);
+			}
+			if (pickrVal == "allLocations") {
+				includeGroupcontinents = [1,2,3,4,5];
+			}
+			if (pickrVal == "allStatus") {
+				includeGroupstatus = [0,1,2,3,4];
+			}
+			if (pickrVal == "allYears") {
+				includeGroupyears = [3,4,5];
+			}
 			draw();
 		};
 
 			// Jquery function. When the dropdown pickr (right) is changed, the function changecolor starts
 			$(function() {
 				$('#pickr').change(function() {
-					dropdownr.on("changecolor", changecolor)
+					// dropdownr.on("changecolor", changecolor)
 					changecolor();
+					selectColor();
 					});
 			});
 			// Jquery function. When the dropdown pickl (left) is changed, the function changesrc starts
 			$(function() {
 				$('#pickl').change(function() {
-					dropdownl.on("changesrc", changesrc)
+					// dropdownl.on("changesrc", changesrc)
 					changesrc();
 					});
 			});
@@ -523,9 +540,6 @@
 				includeGroupstatus = [0,1,2,3,4];
 				draw();
 			});
-
-
-
 
 
 	</script>
