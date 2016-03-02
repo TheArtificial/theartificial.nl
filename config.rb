@@ -137,11 +137,11 @@ activate :blog do |blog|
 #    }
 #  }
 end
-page "/blog/feed.xml", layout: false
 
 # WTF, Middleman?
 page 'blog/*', layout: 'blog_layout'
 page 'blog', layout: 'site_layout'
+page "blog/feed.xml", layout: false
 
 
 set :markdown_engine, :kramdown
