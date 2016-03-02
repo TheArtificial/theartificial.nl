@@ -1,18 +1,15 @@
-<% wrap_layout :multiple_layout do %>
-
+<% wrap_layout 'site_layout' do %>
 
 <section class="content">
-	<div id="person" class="bleed turquoise">
-		<div class="flexcontainer">
+	<div id="person" class="bleed turquoise-palegrass">
+		<div class="flex container">
 			<div class="col-4">
-				<div class="padded">
-					<h1><%= get_logo_svg(current_page.path.split('/').last.gsub(/.html$/, '')) %></h1>
-				</div>
+				<div class="person-logo"><%= get_logo_svg(current_page.path.split('/').last.gsub(/.html$/, '')) %></div>
 			</div>
 
-			<div class="col-7 left-1">
+			<div class="col-7 left-1 dark-text section">
 				<div class="padded">
-					<h1><%= current_page.data.title %></h1>
+					<h1 class="name"><%= current_page.data.title %></h1>
 					<h5><a href="https://linkedin.com/in/<%= current_page.data.linkedin %>">linkedin</a> | <a href="https://twitter.com/<%= current_page.data.twitter %>">twitter</a></h5>
 				</div>
 				<div class="padded">
@@ -20,22 +17,34 @@
 					<%= yield %>
 				</div>
 				<div class="padded">
-					<h4>Logo Story</h4>
+					<h2>Logo Story</h2>
 					<%= Tilt['markdown'].new {current_page.data['logo-story']}.render %>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	<div class="section">
+	<% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
+	<div class="flex container">
+		<div class="col-12">
+			<div class="padded light-text center">
+				<% if articles.length > 0 %>
+					<h3>blog posts by <%= current_page.data.title %></h3>
+				<% else %>
+					<!-- no blog posts -->
+				<% end %>
+			</div>
+		</div>
+	</div>
 	<div class="container packery padded-bottom">
-		<% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
 			<% if articles.length > 0 %>
-	    	<% articles.take(3).each do |article, i| %>
+	    	<% articles.each do |article, i| %>
           <%= partial(:article_card, locals: { article: article }) %>
     		<% end %>
     	<% else %>
     		<!-- no blog posts -->
       <% end %>
+	</div>
 </div>
 
 </section>

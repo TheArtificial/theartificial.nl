@@ -1,6 +1,7 @@
-// this binds navigation items to items within the body 
+// this binds navigation items to items within the body
 // thanks https://jsfiddle.net/mekwall/up4nu/
-function scrollspy(selector, heightOffset) {
+function scrollspy(selector, heightOffset, callback) {
+	var	scrollTicking = false;
 	var lastId,
 	    menu = $(selector),
 	    menuItems = menu.find("a"),
@@ -9,76 +10,120 @@ function scrollspy(selector, heightOffset) {
 	      if (item.length) { return item; }
 	    });
 
+	// disabled becuase it got janky
 	// Bind click handler to menu items so we can get a fancy scroll animation
-	menuItems.click(function(e){
-	  var href = $(this).attr("href"),
-	      offsetTop = href === "#" ? 0 : $(href).offset().top+1;
-    $("html, body").stop().animate({
-      scrollTop: offsetTop
-    }, 300);
-    e.preventDefault();
-	});
+	// menuItems.click(function(e){
+	//   var href = $(this).attr("href"),
+	// 			target = $(href),
+	//       offsetTop = href === "#" ? 0 : target.offset().top+1;
+  //   $("html, body").stop().animate({
+  //     scrollTop: (offsetTop - heightOffset)
+  //   }, 600);
+  //   e.preventDefault();
+	// });
 
-	// Bind to scroll
-	$(window).scroll(function(){
+	// Do all the things
+	function scrollUpdate() {
 	  // Get container scroll position
 	  var fromTop = $(this).scrollTop();
-   
-	  // Get id of current scroll item
-	  var cur = scrollItems.map(function(){
-	    if ($(this).offset().top < fromTop)
+
+		// Test every scroll item to see if it's in view
+	  var onScreen = scrollItems.map(function(){
+	    if ($(this).offset().top <= (fromTop + heightOffset))
 	      return this;
 	  });
-	  // Get the id of the current element
-	  cur = cur[cur.length-1];
-	  var id = cur && cur.length ? cur[0].id : "";
-   
+		// Treat the last one as current
+	  var current = onScreen[onScreen.length-1];
+	  var id = current && current.length ? current[0].id : "";
+		// var id = current[0].id;
+
+		if (id && (callback != 'undefined')) {
+			var	currentElement = $('#'+id),
+					offset = 0;
+			if (currentElement.offset()) {
+				offset = Math.min((fromTop - currentElement.offset().top) / (currentElement.height()),1.0);
+			}
+			callback(currentElement, offset);
+		}
+
 	  if (lastId !== id) {
-      lastId = id;
-      menuItems
-        .parent().removeClass("active")
-        .end().filter("[href=#"+id+"]").parent().addClass("active");
+			updatePagination(menuItems, id);
+			lastId = id;
 	  }
-	});	
+
+		scrollTicking = false;
+	}
+
+	// For a good explanation of this, see http://www.html5rocks.com/en/tutorials/speed/animations/
+	function debounceScroll() {
+		if(!scrollTicking) {
+			requestAnimationFrame(scrollUpdate);
+		}
+		scrollTicking = true;
+	}
+
+	$(window).scroll(debounceScroll);
+
+}
+
+function updatePagination(menuItems, currentId) {
+	menuItems.parent().removeClass("active");
+	// find the item that is not .prev or .next and has the right href target
+	var currentMenuItem = menuItems.filter('a:not(.next,.prev)[href=#'+currentId+']');
+	currentMenuItem.parent().addClass('active');
+	var prevMenuItem = currentMenuItem.parent().prev().find('a:not(.prev)');
+	if (prevMenuItem.length > 0) {
+		menuItems.filter('.prev').attr('href',prevMenuItem.attr('href')).parent().removeClass('disabled');
+	} else {
+		// console.log("nothing prev", currentId);
+		menuItems.filter('.prev').removeAttr('href').removeAttr('href').parent().addClass('disabled');
+	}
+	var nextMenuItem = currentMenuItem.parent().next().find('a:not(.next)');
+	if (nextMenuItem.length > 0) {
+		menuItems.filter('.next').attr('href',nextMenuItem.attr('href')).parent().removeClass('disabled');
+	} else {
+		// console.log("nothing next", currentId);
+		menuItems.filter('.next').removeAttr('href').parent().addClass('disabled');
+	}
 }
 
 // this brings up search by typing
 function eversearch() {
 	// Detect keystroke and present search
 	var $searchField = $("#oncall .search .searchbox");
-	
-	function hideSearch(skipblur) { 
+
+	function hideSearch(skipblur) {
 		$("#oncall").css("display","none");
 		if (!skipblur) {
 			$searchField.blur();
 		}
 	}
-	
+
 	function showSearch() {
 		$("#oncall").css("display","block");
-		$searchField.focus();	
+		$searchField.focus();
 	}
-	
+
 	$(window).keypress(function(e) {
 		if ($(e.target).is('input, textarea')) {
 			return;
 		}
-		
+
 		var code = e.charCode || e.which;
-		
+
 		switch (code) {
 			case 8:
 			case 27:
 				// do nothing
 				break;
 			default:
-				showSearch();	
+				showSearch();
 		}
 	});
-	
+
 	$searchField.keydown(function(e) {
 		var code = e.charCode || e.which;
-		
+
 		// exit upon esc
 		if (code == 27) {
 	 		hideSearch();
@@ -88,7 +133,7 @@ function eversearch() {
 			hideSearch();
 		}
 	});
-	
+
 	$searchField.blur(function(e) {
 		$searchField.val("");
 		hideSearch(true);
@@ -105,13 +150,13 @@ function listfilter() {
     	if (filterItem == "all") {
 				return false;
 			}
-			else { 
+			else {
 				return true;
 			}
     });
 		filteredFilters.unshift("div");
 		var filterSelector = filteredFilters.join(".");
-    
+
 		$("div#animal-list .col-3").find("div").addClass("filter-off");
     $("div#animal-list .col-3").find(filterSelector).removeClass("filter-off");
 	});

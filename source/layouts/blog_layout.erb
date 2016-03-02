@@ -1,4 +1,4 @@
-<% wrap_layout :multiple_layout do %>
+<% wrap_layout 'site_layout' do %>
 
 <% content_for :feedlink_element do %>
 <link rel="alternate" type="application/atom+xml" title="The Artificial blog" href="/blog/feed.xml" />
@@ -17,18 +17,18 @@
 
 <section id="content">
 	<div class="bleed white">
-		<div class="flexcontainer">
+		<div class="flex container">
 
 			<div class="col-8 left-2 right-2">
 				<div class="padded">
 					<div class="blog-title">
-						<h2 class="center"><%= current_page.title %></h2>
-						<h3 class="center"><time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%B %e, %Y') %></time> | <%= link_to author.data.title, author %></h3>
+						<h1 class="center"><%= current_page.title %></h1>
+						<h5 class="center"><time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%B %e, %Y') %></time> | <%= link_to author.data.title, author %></h5>
 					</div>
     		</div>
 			</div>
 
-			<div class="col-10 left-1 right-1">
+			<div class="col-10 left-1 right-1 padded-bottom">
 				<div class="padded">
 					<article>
 		      	<%= yield %>
