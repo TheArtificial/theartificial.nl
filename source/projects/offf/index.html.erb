@@ -199,10 +199,8 @@
 					// var colorclickid = clicklegendr.node().options[dropdownr.node().selectedIndex].value;
 					// var colornumberobj = groupindustry.keys(jsonArray).length;
 					// console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
-					// console.log("this is my colornumber", colornumber);
-					// console.log("this is my lenghtgroupindustry", lenghtgroupindustry);
-					// console.log("colorclickid", clicklegendr.node().options[dropdownr.node().selectedIndex].value);
-					// console.log("colornumberobj", colornumberobj);
+					console.log("this is my colornumber", colornumber);
+
 
 					// the colouring code throws error because it is looking for .groupsomething data in the category nodes?
 					if (colornumber == 1) {
@@ -390,7 +388,7 @@
 			<div class="col-2 left-9 selectr">
 				<script type="text/javascript"> </script>
 					<select id="pickr">
-						<option value ="" selected value= "selected" disabled="disabled">select filter</option>
+						<option value ="allwhite" selected value= "selected" disabled="disabled">select filter</option>
 						<option value ="allIndustries" data-legendcol="#industryr">industry</option>
 						<option value="allLocations" data-legendcol="#locationr">location</option>
 						<option value="allStatus" data-legendcol="#statusr">working status</option>
@@ -451,24 +449,18 @@
 
 			if (pickrVal == "allIndustries") {
 				includeGroupindustries = [0,1,2,3,4];
-				console.log("nodeSelected", nodeSelected);
-				console.log("success industry");
 				draw();
 			}
 			else if (pickrVal == "allLocations") {
 				includeGroupcontinents = [1,2,3,4,5];
-				console.log("nodeSelected", nodeSelected);
-				console.log("success location");
 				draw();
 			}
 			else if (pickrVal == "allStatus") {
 				includeGroupstatus = [0,1,2,3,4];
-				console.log("success location");
 				draw();
 			}
 			else if (pickrVal == "allYears") {
 				includeGroupyears = [3,4,5];
-				console.log("success location");
 				draw();
 			}
 
