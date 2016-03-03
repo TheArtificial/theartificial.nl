@@ -11,7 +11,7 @@
 			<div class="col-8 left-2 right-2 center introduction">
 				<h1>What is OFFF conference about?</h1>
 				<h5>an experiment by <a href="/people/ariane.html">Ariane Garoff</a></h5>
-				<h2>Artists giving talks at <a href="http://www.offf.ws/" target="_blank">OFFF conference</a> are represented in this interactive data-visualisation. Dynamic filters help users understanding the conference tendancies. New comers may want to find out if the lecturers are really matching their interests or expectations, whereas frequent visitors may compare several editions to see if the coming venue is as exciting as the previous. Organizer may use the website as a tool to analyze their spearkers flow when competitor may use it to position themselves on the market.</h2>
+				<h2>Artists giving talks at <a href="http://www.offf.ws/" target="_blank">OFFF conference</a> are represented in this interactive data-visualisation. Dynamic filters help users understanding the conference tendancies. New comers may want to find out if the lecturers are really matching their interests. Frequent visitors may compare several editions to see if the coming venue is as exciting as the previous. Organizer may use the website as a tool to analyze their spearkers flow when competitor may use it to position themselves on the market.</h2>
 			</div>
 		</div>
 	</div>
@@ -81,8 +81,8 @@
 				      var target = allNodes.find(function(node) { return node.id === link.target; });
 				      return {source: source, target: target, stroke: link.stroke}; });
 				    // console.log("allLinks", allLinks);
-						console.log("rawLinks", rawLinks);
-						console.log("linkSelection", linkSelection);
+						// console.log("rawLinks", rawLinks);
+						// console.log("linkSelection", linkSelection);
 
 				    // pre-start to force allLinks to reference nodes
 				    // force
@@ -107,16 +107,18 @@
 				    linkSelection = linkSelection.data(filteredLinks);
 
 				    // draw new links
-				    linkSelection.enter().append("path")
-				      .attr("class", "link") // you have to do this or you can't re-select it!
-				      .style("opacity", "0.2")
-				      .style("stroke-width", function(d,s) { return d.stroke; })
-							// .style("stroke-width", "3px")
-				      .style("stroke", "#FFF")
-				      .style("fill", "none");
+				    var link = linkSelection.enter()
+
+						link.append("path")
+					      .attr("class", "link") // you have to do this or you can't re-select it!
+					      .style("opacity", "0.2")
+					      .style("stroke-width", function(d,s) { return d.stroke; })
+					      .style("stroke", "#FFF")
+					      .style("fill", "none");
 
 				    // remove old links
 				    linkSelection.exit().remove();
+
 
 				    // bind the data array to the svg selection, with a key function
 				    nodeSelection = nodeSelection.data(filteredNodes, function(d) { return d.id; });
@@ -143,7 +145,6 @@
 					      .attr("dy",5)
 					      .attr("spacing", 15)
 					      .text(function(d) {return d.category});
-
 
 				    // remove old nodes
 				    nodeSelection.exit().remove();
@@ -324,18 +325,18 @@
 						<li id="industryr5"> <img src="/offf/images/legend-indu-sound.svg"><img src="/offf/images/legend-multi.svg"> <a>sound design</a></li>
 						<li id="industryr4"> <img src="/offf/images/legend-indu-product.svg"><img src="/offf/images/legend-multi.svg"> <a>product design</a></li>
 						<li id="industryr7"> <img src="/offf/images/legend-multi.svg"> <a>multi disciplinary</a></li>
-						<li id="industryr6"> <img src="/offf/images/legend-indu-print.svg"><img src="/offf/images/legend-indu-motion.svg"><img src="/offf/images/legend-indu-digital.svg"><img src="/offf/images/legend-indu-sound.svg"><img src="/offf/images/legend-indu-product.svg"><img src="/offf/images/legend-multi.svg"><a> All industries </a></li>
+						<li id="industryr6"> <img src="/offf/images/legend-indu-print.svg"><img src="/offf/images/legend-indu-motion.svg"><img src="/offf/images/legend-indu-digital.svg"><img src="/offf/images/legend-indu-sound.svg"><img src="/offf/images/legend-indu-product.svg"><img src="/offf/images/legend-multi.svg"> <a>all industries</a></li>
 					</ul>
 				</div>
 				<div id="locationr" class="legendr" style="display:none">
 					<ul>
-						<li id="locationr3"> <img src="/offf/images/legend-loc-europe.svg"><img src="/offf/images/legend-multi.svg"><a>Europe</a></li>
+						<li id="locationr3"> <img src="/offf/images/legend-loc-europe.svg"><img src="/offf/images/legend-multi.svg"> <a>Europe</a></li>
 						<li id="locationr4"> <img src="/offf/images/legend-loc-northamerica.svg"><img src="/offf/images/legend-multi.svg"> <a>North America</a></li>
-						<li id="locationr1"> <img src="/offf/images/legend-loc-asia.svg"><img src="/offf/images/legend-multi.svg"><a>Asia</a></li>
+						<li id="locationr1"> <img src="/offf/images/legend-loc-asia.svg"><img src="/offf/images/legend-multi.svg"> <a>Asia</a></li>
 						<li id="locationr5"> <img src="/offf/images/legend-loc-southamerica.svg"><img src="/offf/images/legend-multi.svg"> <a>South America</a></li>
-						<li id="locationr2"> <img src="/offf/images/legend-loc-australia.svg"><img src="/offf/images/legend-multi.svg"><a>Australia</a></li>
-						<li id="locationr7"> <img src="/offf/images/legend-multi.svg"><a>multi location</a></li>
-						<li id="locationr6"> <img src="/offf/images/legend-loc-europe.svg"><img src="/offf/images/legend-loc-northamerica.svg"><img src="/offf/images/legend-loc-asia.svg"><img src="/offf/images/legend-loc-southamerica.svg"><img src="/offf/images/legend-loc-australia.svg"><img src="/offf/images/legend-multi.svg"><a> all locations</a></li>
+						<li id="locationr2"> <img src="/offf/images/legend-loc-australia.svg"><img src="/offf/images/legend-multi.svg"> <a>Australia</a></li>
+						<li id="locationr7"> <img src="/offf/images/legend-multi.svg"> <a>multi location</a></li>
+						<li id="locationr6"> <img src="/offf/images/legend-loc-europe.svg"><img src="/offf/images/legend-loc-northamerica.svg"><img src="/offf/images/legend-loc-asia.svg"><img src="/offf/images/legend-loc-southamerica.svg"><img src="/offf/images/legend-loc-australia.svg"><img src="/offf/images/legend-multi.svg"> <a>all locations</a></li>
 					</ul>
 				</div>
 				<div id="statusr" class="legendr" style="display:none">
@@ -345,7 +346,7 @@
 						<li id="statusr4"><img src="/offf/images/legend-status-eponym.svg"> <a>eponym agency</a></li>
 						<li id="statusr2"><img src="/offf/images/legend-status-represented.svg"> <a>represented</a></li>
 						<li id="statusr5"><img src="/offf/images/legend-status-collective.svg"> <a>collective</a></li>
-						<li id="statusr6"><img src="/offf/images/legend-status-agency.svg"><img src="/offf/images/legend-status-independant.svg"><img src="/offf/images/legend-status-eponym.svg"><img src="/offf/images/legend-status-represented.svg"><img src="/offf/images/legend-status-collective.svg"> <a> all status</a></li>
+						<li id="statusr6"><img src="/offf/images/legend-status-agency.svg"><img src="/offf/images/legend-status-independant.svg"><img src="/offf/images/legend-status-eponym.svg"><img src="/offf/images/legend-status-represented.svg"><img src="/offf/images/legend-status-collective.svg"> <a>all status</a></li>
 					</ul>
 				</div>
 				<div id="yearr" class="legendr" style="display:none">
@@ -353,7 +354,7 @@
 						<li id="yearr1"><img src="/offf/images/legend-year-15.svg"> <a>2015</a></li>
 						<li id="yearr2"><img src="/offf/images/legend-year-16.svg"> <a>2016</a></li>
 						<li id="yearr3"><img src="/offf/images/legend-year-both.svg"> <a>2015 and 2016</a></li>
-						<li id="yearr4"><img src="/offf/images/legend-year-15.svg"><img src="/offf/images/legend-year-16.svg"><img src="/offf/images/legend-year-both.svg"> <a>All years</a></li>
+						<li id="yearr4"><img src="/offf/images/legend-year-15.svg"><img src="/offf/images/legend-year-16.svg"><img src="/offf/images/legend-year-both.svg"> <a>all years</a></li>
 					</ul>
 				</div>
 			</div>
@@ -419,8 +420,6 @@
 				draw();
 			}
 		};
-
-
 		$('.choicer li').click(function() {
 						$('.choicer li').removeClass('selected');
 						$(this).addClass('selected');
