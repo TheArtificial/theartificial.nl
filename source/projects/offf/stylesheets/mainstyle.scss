@@ -172,5 +172,13 @@
 				color:$white;
 			}
 		}
+
+		.selected {
+			// border-bottom: 0.5px solid #FFF; /* Or whatever color you want */
+			// border-bottom-width:0.5px;
+			// text-decoration: none;
+
+			text-decoration: underline;
+		}
 	}
 }

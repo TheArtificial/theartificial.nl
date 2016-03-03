@@ -81,6 +81,8 @@
 				      var target = allNodes.find(function(node) { return node.id === link.target; });
 				      return {source: source, target: target, stroke: link.stroke}; });
 				    // console.log("allLinks", allLinks);
+						console.log("rawLinks", rawLinks);
+						console.log("linkSelection", linkSelection);
 
 				    // pre-start to force allLinks to reference nodes
 				    // force
@@ -110,7 +112,7 @@
 				      .style("opacity", "0.2")
 				      .style("stroke-width", function(d,s) { return d.stroke; })
 							// .style("stroke-width", "3px")
-				      .style("stroke", "#FFFFFF")
+				      .style("stroke", "#FFF")
 				      .style("fill", "none");
 
 				    // remove old links
@@ -195,25 +197,21 @@
 					var dropdownr = d3.select("#pickr")
 					var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
 					var colornumber = dropdownr.node().selectedIndex;
-					// var lenghtgroupindustry = nodeSelection.node().length;
-					// var colorclickid = clicklegendr.node().options[dropdownr.node().selectedIndex].value;
-					// var colornumberobj = groupindustry.keys(jsonArray).length;
 					// console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
-					console.log("this is my colornumber", colornumber);
-
+					// console.log("this is my colornumber", colornumber);
 
 					// the colouring code throws error because it is looking for .groupsomething data in the category nodes?
 					if (colornumber == 1) {
-						d3.selectAll("circle").style("fill", function(d,i) { return colorindustry[d.groupindustry] } );
+						d3.selectAll("circle").style("fill", function(d,i) { return colorindustry[d.groupindustry] });
 					}
 					else if (colornumber == 2) {
-						d3.selectAll("circle").style("fill", function(d,i) { return colorcontinent[d.groupcontinent] } );
+						d3.selectAll("circle").style("fill", function(d,i) { return colorcontinent[d.groupcontinent] });
 					}
 					else if (colornumber == 3) {
-						d3.selectAll("circle").style("fill", function(d,i) { return colorstatus[d.groupstatus] } );
+						d3.selectAll("circle").style("fill", function(d,i) { return colorstatus[d.groupstatus] });
 					}
 					else if (colornumber == 4) {
-						d3.selectAll("circle").style("fill", function(d,i) { return coloryear[d.groupyear] } );
+						d3.selectAll("circle").style("fill", function(d,i) { return coloryear[d.groupyear] });
 					}
 					else {
 						d3.selectAll("circle").style("fill", "white") };
@@ -222,7 +220,7 @@
 				  // called by force layout during iteration
 				  function tick() {
 				    linkSelection.attr("d", arcPath);
-				    nodeSelection .attr("transform", function(d) {
+				    nodeSelection.attr("transform", function(d) {
 				        return "translate("
 				        + d.x + ","
 				        + d.y + ")";
@@ -245,7 +243,7 @@
 				    });
 				    return results;
 				  }
-					
+
 				  // fetch data and (in the callback) load into the arrays
 				  d3.json("/offf/data/industry.json", function(error, json) {
 				    graph = json;
@@ -308,11 +306,11 @@
 			<div class="col-2 left-3 selectl">
 				<script type="text/javascript"> </script>
 					<select id="pickl" name="pickl">
-						<option value ="" disabled="disabled">select filter</option>
-							<option value="/offf/data/industry.json" selected value= "selected" data-legendcat="#industryl"> industry</option>
-							<option value="/offf/data/location.json" data-legendcat="#locationl"> location</option>
-							<option value="/offf/data/status.json" data-legendcat="#statusl"> working status</option>
-							<option value="/offf/data/year.json" data-legendcat="#yearl"> year(s) of talk</option>
+						<option value ="selectfilter" disabled="disabled">select filter</option>
+						<option value="/offf/data/industry.json" selected value= "selected" data-legendcat="#industryl"> industry</option>
+						<option value="/offf/data/location.json" data-legendcat="#locationl"> location</option>
+						<option value="/offf/data/status.json" data-legendcat="#statusl"> working status</option>
+						<option value="/offf/data/year.json" data-legendcat="#yearl"> year(s) of talk</option>
 					</select>​
 			</div>
 
@@ -320,42 +318,42 @@
 				<li>Change artists colours by</li>
 				<div id= "industryr" class="legendr" style="display:none">
 					<ul>
-						<li id="industryr3"> <img src="/offf/images/legend-indu-print.svg"> <img src="/offf/images/legend-multi.svg"> <a>print</li> </a>
-						<li id="industryr2"> <img src="/offf/images/legend-indu-motion.svg"> <img src="/offf/images/legend-multi.svg"> <a>motion</a></li>
-						<li id="industryr1"> <img src="/offf/images/legend-indu-digital.svg"> <img src="/offf/images/legend-multi.svg"> <a>digital</a></li>
-						<li id="industryr5"> <img src="/offf/images/legend-indu-sound.svg"> <img src="/offf/images/legend-multi.svg"> <a>sound design</a></li>
-						<li id="industryr4"> <img src="/offf/images/legend-indu-product.svg"> <img src="/offf/images/legend-multi.svg"> <a>product design</a></li>
+						<li id="industryr3"> <img src="/offf/images/legend-indu-print.svg"><img src="/offf/images/legend-multi.svg"> <a>print</li> </a>
+						<li id="industryr2"> <img src="/offf/images/legend-indu-motion.svg"><img src="/offf/images/legend-multi.svg"> <a>motion</a></li>
+						<li id="industryr1"> <img src="/offf/images/legend-indu-digital.svg"><img src="/offf/images/legend-multi.svg"> <a>digital</a></li>
+						<li id="industryr5"> <img src="/offf/images/legend-indu-sound.svg"><img src="/offf/images/legend-multi.svg"> <a>sound design</a></li>
+						<li id="industryr4"> <img src="/offf/images/legend-indu-product.svg"><img src="/offf/images/legend-multi.svg"> <a>product design</a></li>
 						<li id="industryr7"> <img src="/offf/images/legend-multi.svg"> <a>multi disciplinary</a></li>
-						<li id="industryr6"> <img src="/offf/images/legend-indu-print.svg"><img src="/offf/images/legend-indu-motion.svg"><img src="/offf/images/legend-indu-digital.svg"><img src="/offf/images/legend-indu-sound.svg"><img src="/offf/images/legend-indu-product.svg"> <img src="/offf/images/legend-multi.svg"><a> All industries </a></li>
+						<li id="industryr6"> <img src="/offf/images/legend-indu-print.svg"><img src="/offf/images/legend-indu-motion.svg"><img src="/offf/images/legend-indu-digital.svg"><img src="/offf/images/legend-indu-sound.svg"><img src="/offf/images/legend-indu-product.svg"><img src="/offf/images/legend-multi.svg"><a> All industries </a></li>
 					</ul>
 				</div>
 				<div id="locationr" class="legendr" style="display:none">
 					<ul>
-						<li id="locationr3"> <img src="/offf/images/legend-loc-europe.svg"> <img src="/offf/images/legend-multi.svg"><a>Europe</a></li>
-						<li id="locationr4"> <img src="/offf/images/legend-loc-northamerica.svg"> <img src="/offf/images/legend-multi.svg"> <a>North America</a></li>
-						<li id="locationr1"> <img src="/offf/images/legend-loc-asia.svg"> <img src="/offf/images/legend-multi.svg"><a>Asia</a></li>
-						<li id="locationr5"> <img src="/offf/images/legend-loc-southamerica.svg"> <img src="/offf/images/legend-multi.svg"> <a>South America</a></li>
-						<li id="locationr2"> <img src="/offf/images/legend-loc-australia.svg"> <img src="/offf/images/legend-multi.svg"><a>Australia</a></li>
-						<li id="locationr7"> <img src="/offf/images/legend-multi.svg"> <a>multi location</a></li>
-						<li id="locationr6"> <img src="/offf/images/legend-loc-europe.svg"><img src="/offf/images/legend-loc-northamerica.svg"> <img src="/offf/images/legend-loc-asia.svg"> <img src="/offf/images/legend-loc-southamerica.svg"> <img src="/offf/images/legend-loc-australia.svg"> <img src="/offf/images/legend-multi.svg"><a> all locations</a></li>
+						<li id="locationr3"> <img src="/offf/images/legend-loc-europe.svg"><img src="/offf/images/legend-multi.svg"><a>Europe</a></li>
+						<li id="locationr4"> <img src="/offf/images/legend-loc-northamerica.svg"><img src="/offf/images/legend-multi.svg"> <a>North America</a></li>
+						<li id="locationr1"> <img src="/offf/images/legend-loc-asia.svg"><img src="/offf/images/legend-multi.svg"><a>Asia</a></li>
+						<li id="locationr5"> <img src="/offf/images/legend-loc-southamerica.svg"><img src="/offf/images/legend-multi.svg"> <a>South America</a></li>
+						<li id="locationr2"> <img src="/offf/images/legend-loc-australia.svg"><img src="/offf/images/legend-multi.svg"><a>Australia</a></li>
+						<li id="locationr7"> <img src="/offf/images/legend-multi.svg"><a>multi location</a></li>
+						<li id="locationr6"> <img src="/offf/images/legend-loc-europe.svg"><img src="/offf/images/legend-loc-northamerica.svg"><img src="/offf/images/legend-loc-asia.svg"><img src="/offf/images/legend-loc-southamerica.svg"><img src="/offf/images/legend-loc-australia.svg"><img src="/offf/images/legend-multi.svg"><a> all locations</a></li>
 					</ul>
 				</div>
 				<div id="statusr" class="legendr" style="display:none">
 					<ul>
-						<li id="statusr3"> <img src="/offf/images/legend-status-agency.svg"> <a>agency</a></li>
-						<li id="statusr1"> <img src="/offf/images/legend-multi.svg"> <a>independant</a></li>
-						<li id="statusr4"> <img src="/offf/images/legend-status-eponym.svg"> <a>eponym agency</a></li>
-						<li id="statusr2"> <img src="/offf/images/legend-status-represented.svg"> <a>represented</a></li>
-						<li id="statusr5"> <img src="/offf/images/legend-status-collective.svg"> <a>collective</a></li>
+						<li id="statusr3"><img src="/offf/images/legend-status-agency.svg"> <a>agency</a></li>
+						<li id="statusr1"><img src="/offf/images/legend-multi.svg"> <a>independant</a></li>
+						<li id="statusr4"><img src="/offf/images/legend-status-eponym.svg"> <a>eponym agency</a></li>
+						<li id="statusr2"><img src="/offf/images/legend-status-represented.svg"> <a>represented</a></li>
+						<li id="statusr5"><img src="/offf/images/legend-status-collective.svg"> <a>collective</a></li>
 						<li id="statusr6"><img src="/offf/images/legend-status-agency.svg"><img src="/offf/images/legend-status-independant.svg"><img src="/offf/images/legend-status-eponym.svg"><img src="/offf/images/legend-status-represented.svg"><img src="/offf/images/legend-status-collective.svg"> <a> all status</a></li>
 					</ul>
 				</div>
 				<div id="yearr" class="legendr" style="display:none">
 					<ul>
-						<li id="yearr1"> <img src="/offf/images/legend-year-15.svg"> <a>2015</a></li>
-						<li id="yearr2"> <img src="/offf/images/legend-year-16.svg"> <a>2016</a></li>
-						<li id="yearr3"> <img src="/offf/images/legend-year-both.svg"> <a>2015 and 2016</a></li>
-						<li id="yearr4"> <img src="/offf/images/legend-year-15.svg"> <img src="/offf/images/legend-year-16.svg"> <img src="/offf/images/legend-year-both.svg"> <a>All years</a></li>
+						<li id="yearr1"><img src="/offf/images/legend-year-15.svg"> <a>2015</a></li>
+						<li id="yearr2"><img src="/offf/images/legend-year-16.svg"> <a>2016</a></li>
+						<li id="yearr3"><img src="/offf/images/legend-year-both.svg"> <a>2015 and 2016</a></li>
+						<li id="yearr4"><img src="/offf/images/legend-year-15.svg"><img src="/offf/images/legend-year-16.svg"><img src="/offf/images/legend-year-both.svg"> <a>All years</a></li>
 					</ul>
 				</div>
 			</div>
@@ -386,7 +384,7 @@
 				graph = json; draw();
 				// console.log("this is my option", dropdownl.node().options[dropdownl.node().selectedIndex]);
 				// console.log("this is my first option", dropdownl.node().options[dropdownl.node().selectedIndex].value);
-				// console.log("this is my second option only", dropdownl.node().options[dropdownl.node().selectedIndex].dataset.legendcat);
+				console.log("this is my second option only", dropdownl.node().options[dropdownl.node().selectedIndex].dataset.legendcat);
 			})
 		}
 
@@ -421,6 +419,12 @@
 				draw();
 			}
 		};
+
+
+		$('.choicer li').click(function() {
+						$('.choicer li').removeClass('selected');
+						$(this).addClass('selected');
+		});
 
 		// Jquery function. When the dropdown pickr (right) is changed, the function changecolor starts
 		$(function() {
@@ -544,5 +548,4 @@
 			</div>
 		</div>
 	</div>
-
 </div>
