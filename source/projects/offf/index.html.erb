@@ -60,7 +60,6 @@
 					var coloryear = ["white","white","white", "#e66964", "#f3aa84", "#f6c831"];
 					var radius = ["100","100","100","5","5","5"]; // the first three shouldn't happen
 				  var transparency = ["0","0","0","0","0","0"];
-					var visibi = ["visible","visible","hidden"];
 
 				  // filter values
 					// special case: [] matches nodes with multiple values
@@ -110,6 +109,7 @@
 				      .attr("class", "link") // you have to do this or you can't re-select it!
 				      .style("opacity", "0.2")
 				      .style("stroke-width", function(d,s) { return d.stroke; })
+							// .style("stroke-width", "3px")
 				      .style("stroke", "#FFFFFF")
 				      .style("fill", "none");
 
@@ -147,42 +147,105 @@
 				    nodeSelection.exit().remove();
 						console.log("nodeSelected", nodeSelected);
 
-						// get the id name and number of the selected link to color accordingly the selected dots
-						var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
-						var colornumber = dropdownr.node().selectedIndex;
-						// var lenghtgroupindustry = nodeSelection.node().length;
-						// var colorclickid = clicklegendr.node().options[dropdownr.node().selectedIndex].value;
-						// var colornumberobj = groupindustry.keys(jsonArray).length;
-						// console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
-						// console.log("this is my colornumber", colornumber);
-						// console.log("this is my lenghtgroupindustry", lenghtgroupindustry);
-						// console.log("colorclickid", clicklegendr.node().options[dropdownr.node().selectedIndex].value);
-						// console.log("colornumberobj", colornumberobj);
+					//  function using includes to evaluate if some of node.groupcontinents exists in includeGroupcontinents
+				  function isInGpc(element, index, array) {
+				    return includeGroupcontinents.includes(element);
+				  }
 
-						// set the condition to color each dots
+					//  function using includes to evaluate if some of node.groupindustry exists in includeGroupindustries
+					function isInGpi(element, index, array) {
+						return includeGroupindustries.includes(element);
+					}
+
+					// filters the dots
+				  function filterNode(node) {
+						var dropdownr = d3.select("#pickr")
+						var colornumber = dropdownr.node().selectedIndex;
+
 						if (colornumber == 1) {
-							d3.selectAll("circle")
-							.style("fill", function(d, i) { return d.groupindustry? colorindustry[d.groupindustry] : "white"; })
-							.attr("fill", function(d,i) { return colorindustry[d.groupindustry] } );
+							var matchesGroupindustries = (typeof node.groupindustry == "undefined") || (includeGroupindustries.length === 0 ? node.groupindustry.length > 1 : node.groupindustry.some(isInGpi));
+							return matchesGroupindustries;
 						}
 						else if (colornumber == 2) {
-							d3.selectAll("circle")
-							.style("fill", function(d, i) { return d.groupcontinent? colorcontinent[d.groupcontinent] : "white"; })
-							.attr("fill", function(d,i) { return colorcontinent[d.groupcontinent] } );
+							var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || (includeGroupcontinents.length === 0 ? node.groupcontinent.length > 1 : node.groupcontinent.some(isInGpc));
+							return matchesGroupcontinents;
 						}
 						else if (colornumber == 3) {
-							d3.selectAll("circle")
-							.style("fill", function(d, i) { return d.groupstatus? colorstatus[d.groupstatus] : "white"; })
-							.attr("fill", function(d,i) { return colorstatus[d.groupstatus] } );
+							var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
+							return matchesGroupstatus;
 						}
-						else if (colornumber == 4) {
-							d3.selectAll("circle")
-							.style("fill", function(d, i) { return d.groupyear? coloryear[d.groupyear] : "white"; })
-							.attr("fill", function(d,i) { return coloryear[d.groupyear] } );
+						else if(colornumber == 4) {
+							var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
+							return matchesGroupyear;
 						}
 						else {
-							d3.selectAll("circle").attr("fill", "white") };
+							var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
+							var matchesGroupindustries = (typeof node.groupindustry == "undefined") || (includeGroupindustries.length === 0 ? node.groupindustry.length > 1 : node.groupindustry.some(isInGpi));
+							var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || (includeGroupcontinents.length === 0 ? node.groupcontinent.length > 1 : node.groupcontinent.some(isInGpc));
+							var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
+							return (matchesGroupyear && matchesGroupindustries && matchesGroupcontinents && matchesGroupstatus)
+						}
+						// console.log('includeGroupstatus', includeGroupstatus);
+				    // console.log('includeGroupcontinents', includeGroupcontinents);
+				    // console.log('node.groupcontinent', node.groupcontinent);
+				    // console.log('matchesGroupcontinents', matchesGroupcontinents);
 				  }
+
+					// get the id name and number of the selected link to color accordingly the selected dots
+					var dropdownr = d3.select("#pickr")
+					var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
+					var colornumber = dropdownr.node().selectedIndex;
+					// var lenghtgroupindustry = nodeSelection.node().length;
+					// var colorclickid = clicklegendr.node().options[dropdownr.node().selectedIndex].value;
+					// var colornumberobj = groupindustry.keys(jsonArray).length;
+					// console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
+					// console.log("this is my colornumber", colornumber);
+					// console.log("this is my lenghtgroupindustry", lenghtgroupindustry);
+					// console.log("colorclickid", clicklegendr.node().options[dropdownr.node().selectedIndex].value);
+					// console.log("colornumberobj", colornumberobj);
+
+					// the colouring code throws error because it is looking for .groupsomething data in the category nodes?
+					if (colornumber == 1) {
+						d3.selectAll("circle").style("fill", function(d,i) { return colorindustry[d.groupindustry] } );
+					}
+					else if (colornumber == 2) {
+						d3.selectAll("circle").style("fill", function(d,i) { return colorcontinent[d.groupcontinent] } );
+					}
+					else if (colornumber == 3) {
+						d3.selectAll("circle").style("fill", function(d,i) { return colorstatus[d.groupstatus] } );
+					}
+					else if (colornumber == 4) {
+						d3.selectAll("circle").style("fill", function(d,i) { return coloryear[d.groupyear] } );
+					}
+					else {
+						d3.selectAll("circle").style("fill", "white") };
+				}
+
+				// 	// set the condition to color each dots + color the category nodes in white
+				// 	if (colornumber == 1) {
+				// 		d3.selectAll("circle")
+				// 		.style("fill", function(d, i) { return d.groupindustry? colorindustry[d.groupindustry] : "white"; })
+				// 		.attr("fill", function(d,i) { return colorindustry[d.groupindustry] } );
+				// 	}
+				// 	else if (colornumber == 2) {
+				// 		d3.selectAll("circle")
+				// 		.style("fill", function(d, i) { return d.groupcontinent? colorcontinent[d.groupcontinent] : "white"; })
+				// 		.attr("fill", function(d,i) { return colorcontinent[d.groupcontinent] } );
+				// 	}
+				// 	else if (colornumber == 3) {
+				// 		d3.selectAll("circle")
+				// 		.style("fill", function(d, i) { return d.groupstatus? colorstatus[d.groupstatus] : "white"; })
+				// 		.attr("fill", function(d,i) { return colorstatus[d.groupstatus] } );
+				// 	}
+				// 	else if (colornumber == 4) {
+				// 		d3.selectAll("circle")
+				// 		.style("fill", function(d, i) { return d.groupyear? coloryear[d.groupyear] : "white"; })
+				// 		.attr("fill", function(d,i) { return coloryear[d.groupyear] } );
+				// 	}
+				// 	else {
+				// 		d3.selectAll("circle").attr("fill", "white") };
+				// }
+
 
 				  // called by force layout during iteration
 				  function tick() {
@@ -202,32 +265,6 @@
 				        dr = Math.sqrt(dx * dx + dy * dy);
 				    return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
 				  }
-
-				  //  function using includes to evaluate if some of node.groupcontinents exists in includeGroupcontinents
-				  function isInGpc(element, index, array) {
-				    return includeGroupcontinents.includes(element);
-				  }
-
-					//  function using includes to evaluate if some of node.groupindustry exists in includeGroupindustries
-					function isInGpi(element, index, array) {
-						return includeGroupindustries.includes(element);
-					}
-
-					// uses the includeGroupsomething filter lists, unless crossoverOnly is true
-				  function filterNode(node) {
-						// FIXME: This filter detection approach is brittle! It relies on absence of data to disable "hidden" filters
-						// ...and it's inconsistent with the colornumber approach used elsewhere
-						var matchesGroupindustries = (typeof node.groupindustry == "undefined") || (includeGroupindustries.length === 0 ? node.groupindustry.length > 1 : node.groupindustry.some(isInGpi));
-				    var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || (includeGroupcontinents.length === 0 ? node.groupcontinent.length > 1 : node.groupcontinent.some(isInGpc));
-				    var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
-				    var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
-						// console.log('includeGroupstatus', includeGroupstatus);
-				    // console.log('includeGroupcontinents', includeGroupcontinents);
-				    // console.log('node.groupcontinent', node.groupcontinent);
-				    // console.log('matchesGroupcontinents', matchesGroupcontinents);
-				    return (matchesGroupindustries && matchesGroupcontinents && matchesGroupyear && matchesGroupstatus);
-				  }
-
 
 				  function trimLinks(links, nodeIds) {
 				    results = [];
@@ -415,17 +452,26 @@
 			if (pickrVal == "allIndustries") {
 				includeGroupindustries = [0,1,2,3,4];
 				console.log("nodeSelected", nodeSelected);
+				console.log("success industry");
+				draw();
 			}
-			if (pickrVal == "allLocations") {
+			else if (pickrVal == "allLocations") {
 				includeGroupcontinents = [1,2,3,4,5];
+				console.log("nodeSelected", nodeSelected);
+				console.log("success location");
+				draw();
 			}
-			if (pickrVal == "allStatus") {
+			else if (pickrVal == "allStatus") {
 				includeGroupstatus = [0,1,2,3,4];
+				console.log("success location");
+				draw();
 			}
-			if (pickrVal == "allYears") {
+			else if (pickrVal == "allYears") {
 				includeGroupyears = [3,4,5];
+				console.log("success location");
+				draw();
 			}
-			draw();
+
 		};
 
 			// Jquery function. When the dropdown pickr (right) is changed, the function changecolor starts
@@ -540,8 +586,6 @@
 				includeGroupstatus = [0,1,2,3,4];
 				draw();
 			});
-
-
 	</script>
 
 	<div class="bleed intro">
