@@ -217,33 +217,7 @@
 					}
 					else {
 						d3.selectAll("circle").style("fill", "white") };
-				}
-
-				// 	// set the condition to color each dots + color the category nodes in white
-				// 	if (colornumber == 1) {
-				// 		d3.selectAll("circle")
-				// 		.style("fill", function(d, i) { return d.groupindustry? colorindustry[d.groupindustry] : "white"; })
-				// 		.attr("fill", function(d,i) { return colorindustry[d.groupindustry] } );
-				// 	}
-				// 	else if (colornumber == 2) {
-				// 		d3.selectAll("circle")
-				// 		.style("fill", function(d, i) { return d.groupcontinent? colorcontinent[d.groupcontinent] : "white"; })
-				// 		.attr("fill", function(d,i) { return colorcontinent[d.groupcontinent] } );
-				// 	}
-				// 	else if (colornumber == 3) {
-				// 		d3.selectAll("circle")
-				// 		.style("fill", function(d, i) { return d.groupstatus? colorstatus[d.groupstatus] : "white"; })
-				// 		.attr("fill", function(d,i) { return colorstatus[d.groupstatus] } );
-				// 	}
-				// 	else if (colornumber == 4) {
-				// 		d3.selectAll("circle")
-				// 		.style("fill", function(d, i) { return d.groupyear? coloryear[d.groupyear] : "white"; })
-				// 		.attr("fill", function(d,i) { return coloryear[d.groupyear] } );
-				// 	}
-				// 	else {
-				// 		d3.selectAll("circle").attr("fill", "white") };
-				// }
-
+					}
 
 				  // called by force layout during iteration
 				  function tick() {
@@ -271,14 +245,14 @@
 				    });
 				    return results;
 				  }
-
+					
 				  // fetch data and (in the callback) load into the arrays
 				  d3.json("/offf/data/industry.json", function(error, json) {
 				    graph = json;
 				    // console.log('Fetched', graph);
 				    draw();
 				  });
-				 </script>
+				</script>
 			</div>
 		</div>
 	</div>
@@ -402,16 +376,12 @@
 
 	<script>
 
-
-
 		var dropdownl = d3.select("#pickl")
 		var changesrc = function() {
 			var source = dropdownl.node().options[dropdownl.node().selectedIndex].value;
 			var legendcat = dropdownl.node().options[dropdownl.node().selectedIndex].dataset.legendcat;
-
 			// $(".legendl").hide();
 			// $(legendcat).show();
-
 			d3.json(source, function(error, json) {
 				graph = json; draw();
 				// console.log("this is my option", dropdownl.node().options[dropdownl.node().selectedIndex]);
@@ -428,22 +398,9 @@
 
 			$(".legendr").removeClass("nbr");
 			$(legendcol).addClass("nbr");
-
-			// var licolornumber = $(".nbr li").length;
-			// var liid = $('.nbr li').map(function(i,n) {
-    	// 	return $(n).attr('id');
-			// 	}).get().join(',');
-			//
-			// var liindex = $('.nbr li').map(function(i,n){
-			// 	return $(this).index();
-			// 	}).get().join(',');
-
-			// console.log("this is my legendcol", legendcol);
-			// draw();
 		};
 
-		function selectColor ()
-		{
+		function selectColor () {
 			var pickrVal = $("#pickr").val();
 			console.log("this is my pickrVal", pickrVal);
 
@@ -463,121 +420,120 @@
 				includeGroupyears = [3,4,5];
 				draw();
 			}
-
 		};
 
-			// Jquery function. When the dropdown pickr (right) is changed, the function changecolor starts
-			$(function() {
-				$('#pickr').change(function() {
-					// dropdownr.on("changecolor", changecolor)
-					changecolor();
-					selectColor();
-					});
-			});
-			// Jquery function. When the dropdown pickl (left) is changed, the function changesrc starts
-			$(function() {
-				$('#pickl').change(function() {
-					// dropdownl.on("changesrc", changesrc)
-					changesrc();
-					});
-			});
-			// wire up the filters the hard way
-			d3.select("#industryr1").on("click", function() {
-				includeGroupindustries = [0];
-				draw();
-			});
-			d3.select("#industryr2").on("click", function() {
-				includeGroupindustries = [1];
-				draw();
-			});
-			d3.select("#industryr3").on("click", function() {
-				includeGroupindustries = [2];
-				draw();
-			});
-			d3.select("#industryr4").on("click", function() {
-				includeGroupindustries = [3];
-				draw();
-			});
-			d3.select("#industryr5").on("click", function() {
-				includeGroupindustries = [4];
-				draw();
-			});
-			d3.select("#industryr6").on("click", function() {
-				includeGroupindustries = [0,1,2,3,4];
-				draw();
-			});
-			d3.select("#industryr7").on("click", function() {
-				includeGroupindustries = [];
-				draw();
-			});
-			d3.select("#yearr1").on("click", function(d,i) {
-				includeGroupyears = [3];
-				draw();
-			});
-			d3.select("#yearr2").on("click", function() {
-				includeGroupyears = [4];
-				draw();
-			});
-			d3.select("#yearr3").on("click", function() {
-				includeGroupyears = [5];
-				draw();
-			});
-			d3.select("#yearr4").on("click", function() {
-				includeGroupyears = [3,4,5];
-				draw();
-			});
-			d3.select("#locationr1").on("click", function() {
-				includeGroupcontinents = [1];
-				draw();
-			});
-			d3.select("#locationr2").on("click", function() {
-				includeGroupcontinents = [2];
-				draw();
-			});
-			d3.select("#locationr3").on("click", function() {
-				includeGroupcontinents = [3];
-				draw();
-			});
-			d3.select("#locationr4").on("click", function() {
-				includeGroupcontinents = [4];
-				draw();
-			});
-			d3.select("#locationr5").on("click", function() {
-				includeGroupcontinents = [5];
-				draw();
-			});
-			d3.select("#locationr6").on("click", function() {
-				includeGroupcontinents = [1,2,3,4,5];
-				draw();
-			});
-			d3.select("#locationr7").on("click", function() {
-				includeGroupcontinents = [];
-				draw();
-			});
-			d3.select("#statusr1").on("click", function() {
-				includeGroupstatus = [0];
-				draw();
-			});
-			d3.select("#statusr2").on("click", function() {
-				includeGroupstatus = [1];
-				draw();
-			});
-			d3.select("#statusr3").on("click", function() {
-				includeGroupstatus = [2];
-				draw();
-			});
-			d3.select("#statusr4").on("click", function() {
-				includeGroupstatus = [3];
-				draw();
-			});
-			d3.select("#statusr5").on("click", function() {
-				includeGroupstatus = [4];
-				draw();
-			});
-			d3.select("#statusr6").on("click", function() {
-				includeGroupstatus = [0,1,2,3,4];
-				draw();
-			});
+		// Jquery function. When the dropdown pickr (right) is changed, the function changecolor starts
+		$(function() {
+			$('#pickr').change(function() {
+				// dropdownr.on("changecolor", changecolor)
+				changecolor();
+				selectColor();
+				});
+		});
+		// Jquery function. When the dropdown pickl (left) is changed, the function changesrc starts
+		$(function() {
+			$('#pickl').change(function() {
+				// dropdownl.on("changesrc", changesrc)
+				changesrc();
+				});
+		});
+		// wire up the filters the hard way
+		d3.select("#industryr1").on("click", function() {
+			includeGroupindustries = [0];
+			draw();
+		});
+		d3.select("#industryr2").on("click", function() {
+			includeGroupindustries = [1];
+			draw();
+		});
+		d3.select("#industryr3").on("click", function() {
+			includeGroupindustries = [2];
+			draw();
+		});
+		d3.select("#industryr4").on("click", function() {
+			includeGroupindustries = [3];
+			draw();
+		});
+		d3.select("#industryr5").on("click", function() {
+			includeGroupindustries = [4];
+			draw();
+		});
+		d3.select("#industryr6").on("click", function() {
+			includeGroupindustries = [0,1,2,3,4];
+			draw();
+		});
+		d3.select("#industryr7").on("click", function() {
+			includeGroupindustries = [];
+			draw();
+		});
+		d3.select("#yearr1").on("click", function(d,i) {
+			includeGroupyears = [3];
+			draw();
+		});
+		d3.select("#yearr2").on("click", function() {
+			includeGroupyears = [4];
+			draw();
+		});
+		d3.select("#yearr3").on("click", function() {
+			includeGroupyears = [5];
+			draw();
+		});
+		d3.select("#yearr4").on("click", function() {
+			includeGroupyears = [3,4,5];
+			draw();
+		});
+		d3.select("#locationr1").on("click", function() {
+			includeGroupcontinents = [1];
+			draw();
+		});
+		d3.select("#locationr2").on("click", function() {
+			includeGroupcontinents = [2];
+			draw();
+		});
+		d3.select("#locationr3").on("click", function() {
+			includeGroupcontinents = [3];
+			draw();
+		});
+		d3.select("#locationr4").on("click", function() {
+			includeGroupcontinents = [4];
+			draw();
+		});
+		d3.select("#locationr5").on("click", function() {
+			includeGroupcontinents = [5];
+			draw();
+		});
+		d3.select("#locationr6").on("click", function() {
+			includeGroupcontinents = [1,2,3,4,5];
+			draw();
+		});
+		d3.select("#locationr7").on("click", function() {
+			includeGroupcontinents = [];
+			draw();
+		});
+		d3.select("#statusr1").on("click", function() {
+			includeGroupstatus = [0];
+			draw();
+		});
+		d3.select("#statusr2").on("click", function() {
+			includeGroupstatus = [1];
+			draw();
+		});
+		d3.select("#statusr3").on("click", function() {
+			includeGroupstatus = [2];
+			draw();
+		});
+		d3.select("#statusr4").on("click", function() {
+			includeGroupstatus = [3];
+			draw();
+		});
+		d3.select("#statusr5").on("click", function() {
+			includeGroupstatus = [4];
+			draw();
+		});
+		d3.select("#statusr6").on("click", function() {
+			includeGroupstatus = [0,1,2,3,4];
+			draw();
+		});
 	</script>
 
 	<div class="bleed intro">
