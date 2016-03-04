@@ -1,11 +1,40 @@
 .blog:not(.blog_index) {
 	#content {
-		.padded {
-			margin-bottom: 60px;
-		}
 
-		.blog-title {
-			margin-top: 80px;
+		@media only screen and (min-device-width: 320px) {
+			.blog-title {
+				margin-top: 40px;
+				margin-bottom: 0;
+				h1 {
+					font-size: 36px;
+					line-height: 40px;
+				}
+				h5 {
+					font-size: 14px;
+					font-weight: bold;
+					margin-top: 6px;
+				}
+			}
+		}
+		@media only screen and (min-device-width: 768px) {
+			.blog-title {
+				margin-top: 80px;
+				margin-bottom: 20px;
+				h1 {
+					font-size: 42px;
+					line-height: 46px;
+				}
+			}
+		}
+		@media only screen and (min-width: 960px) {
+			.blog-title {
+				margin-top: 80px;
+				margin-bottom: 40px;
+				h1 {
+					font-size: 54px;
+					line-height: 58px;
+				}
+			}
 		}
 
 		img {
@@ -19,11 +48,10 @@
 		}
 
 		h1 {
-			font-size: 1.1em;
-			line-height: 1.5em;
+			font-size: 20px;
+			line-height: 24px;
 			text-align: center;
-			margin-top: 20px;
-			padding:0;
+			margin-top: 16px;
 		}
 
 		h2 {
