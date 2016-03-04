@@ -1,8 +1,7 @@
 
 <script type="text/javascript" src="/offf/library/d3.js"></script>
-<link rel="stylesheet" type="text/css" href="/offf/stylesheets/mainstyle.scss">
+<link rel="stylesheet" type="text/css" href="/offf/stylesheets/project.scss">
 <script src="/offf/library/jquery-2.2.0.min.js" type="text/javascript" > </script>
-
 
 <div id="content" class="offf">
 
@@ -30,12 +29,6 @@
 				    .attr("viewBox", "0 0 " + width + " " + height) //viewbox
 				    .append("g")
 				    .attr("preserveAspectRatio", "xMidYMid meet");
-
-					// // rectangle for background color
-					// 	svg.append("rect")
-				  //   .attr("width", width*2)
-				  //   .attr("height", height*2)
-				  //   .attr("fill", "red");
 
 				  // force layout, used to calculate positions
 				  var force = d3.layout.force()
@@ -84,18 +77,12 @@
 						// console.log("rawLinks", rawLinks);
 						// console.log("linkSelection", linkSelection);
 
-				    // pre-start to force allLinks to reference nodes
-				    // force
-				    //   .nodes(allNodes)
-				    //   .links(allLinks)
-				    //   .start();
-
 				    var filteredNodes = allNodes.filter(filterNode),
 				        nodeIds = filteredNodes.map(function(node){ return node.id }),
 				        filteredLinks = trimLinks(allLinks, nodeIds)
 				        // nodeColor = filteredNodes.map(function(d){return color[d.groupyear], color[d.groupstatus]})
 				        // console.log("nodeColor", nodeColor);
-				        // console.log("Filtered links", allLinks, filteredLinks, graph);
+				        console.log("Filtered links", allLinks, filteredLinks, graph);
 
 				    // start the layout ticking
 				    force
@@ -118,7 +105,6 @@
 
 				    // remove old links
 				    linkSelection.exit().remove();
-
 
 				    // bind the data array to the svg selection, with a key function
 				    nodeSelection = nodeSelection.data(filteredNodes, function(d) { return d.id; });
@@ -148,7 +134,7 @@
 
 				    // remove old nodes
 				    nodeSelection.exit().remove();
-						console.log("nodeSelected", nodeSelected);
+						// console.log("nodeSelected", nodeSelected);
 
 					//  function using includes to evaluate if some of node.groupcontinents exists in includeGroupcontinents
 				  function isInGpc(element, index, array) {
@@ -255,7 +241,6 @@
 			</div>
 		</div>
 	</div>
-
 
 <div class="bleed blue">
 	<div class="flexcontainer">
