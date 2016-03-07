@@ -245,8 +245,17 @@
 	<div class="bleed blue">
 		<div class="flexcontainer">
 			<div class="choicescontainer">
-				<div class="col-2 left-1 choicel">
-					<li>Organise artists by</li>
+				<div class="col-4 left-1 choicel">
+					<li>
+						Organise artists by
+						<select id="pickl" name="pickl">
+							<option value="selectfilter" disabled="disabled">select filter</option>
+							<option value="/offf/data/industry.json" selected value="selected" data-legendcat="#industryl"> industry</option>
+							<option value="/offf/data/location.json" data-legendcat="#locationl"> location</option>
+							<option value="/offf/data/status.json" data-legendcat="#statusl"> working status</option>
+							<option value="/offf/data/year.json" data-legendcat="#yearl"> year(s) of talk</option>
+						</select>​
+					</li>
 					<div id= "industryl" class="legendl" style="display:none">
 						<ul>
 							<li id="industryl1"> <img src="/offf/images/dot-category.svg"> <a>print</a></li>
@@ -286,19 +295,19 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-2 left-3 selectl">
-					<script type="text/javascript"> </script>
-						<select id="pickl" name="pickl">
-							<option value="selectfilter" disabled="disabled">select filter</option>
-							<option value="/offf/data/industry.json" selected value="selected" data-legendcat="#industryl"> industry</option>
-							<option value="/offf/data/location.json" data-legendcat="#locationl"> location</option>
-							<option value="/offf/data/status.json" data-legendcat="#statusl"> working status</option>
-							<option value="/offf/data/year.json" data-legendcat="#yearl"> year(s) of talk</option>
-						</select>​
-				</div>
 
-				<div class="col-2 left-6 choicer">
-					<li>Change artists colours by</li>
+				<div class="col-4 left-6 choicer">
+					<li>
+						Change artists colours by
+						<script type="text/javascript"> </script>
+							<select id="pickr">
+								<option value="allwhite" selected value="selected" disabled="disabled">select filter</option>
+								<option value="allIndustries" data-legendcol="#industryr">industry</option>
+								<option value="allLocations" data-legendcol="#locationr">location</option>
+								<option value="allStatus" data-legendcol="#statusr">working status</option>
+								<option value="allYears" data-legendcol="#yearr"> year(s) of talk</option>
+							</select>
+					</li>
 					<div id= "industryr" class="legendr" style="display:none">
 						<ul>
 							<li id="industryr3"> <img src="/offf/images/legend-indu-print.svg"><img src="/offf/images/legend-multi.svg"> <a>print</li> </a>
@@ -340,16 +349,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-2 left-8 selectr">
-					<script type="text/javascript"> </script>
-						<select id="pickr">
-							<option value="allwhite" selected value="selected" disabled="disabled">select filter</option>
-							<option value="allIndustries" data-legendcol="#industryr">industry</option>
-							<option value="allLocations" data-legendcol="#locationr">location</option>
-							<option value="allStatus" data-legendcol="#statusr">working status</option>
-							<option value="allYears" data-legendcol="#yearr"> year(s) of talk</option>
-						</select>
-				</div>
+
 			</div>
 		</div>
 	</div>

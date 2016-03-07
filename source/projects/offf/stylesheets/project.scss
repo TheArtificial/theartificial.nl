@@ -102,7 +102,7 @@
 	.choicescontainer {
 		color: $white;
 		background-color: $darkest-sapphire;
-		height: 250px;
+		height: 300px;
 		width:100%;
 
 		li {
@@ -113,21 +113,19 @@
 		padding: 9px 3px 5px 0;
 		}
 
-		.choicel, .choicer, .selectl, .selectr, .legendl, .legendr {
+		.choicel, .choicer, .legendl, .legendr {
 			text-align: left;
-			position: absolute;
-		}
-		.choicel, .choicer {
-			text-align: right;
-			background-color: $pale-sapphire;
+			position: relative;
 		}
 
-		.selectl, .selectr {
-			background-color: $pale-tulip;
+		@media only screen and (min-device-width: 768px) {
+			.choicel, .choicer {
+				position:absolute;
+			}
 		}
 
 		#pickl, #pickr, #jsonsources {
-			margin: 7px 20px
+			margin: 7px
 		}
 
 		.legendl {
@@ -169,7 +167,9 @@
 		}
 
 		.selected {
-			text-decoration: underline;
+			a {
+				text-decoration: underline;
+			}
 		}
 	}
 }
