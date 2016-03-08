@@ -1,10 +1,12 @@
 @import "_artificial-colors.scss";
 
 .twisted {
+  background-color: $cool-grey-90;
+
   #content {
 		color: white;
 		margin-bottom: 40px;
-	
+
 		.container.packery {
 			margin-top: 0;
 		}
@@ -13,17 +15,17 @@
 
 .introduction {
 	margin: 60px 0 60px 0;
-	
+
 	h1 {
 		color: white;
 	}
-	
+
 	h2 {
 		font-size: 1em;
 		line-height: 1.4em;
 		color: $cool-grey-20;
 		font-weight: normal;
-		
+
 		a {
 			color: $pumpkin;
 		}
@@ -31,18 +33,18 @@
 			color: $dark-pumpkin;
 		}
 	}
-	
+
 	h5 {
 		color: $cool-grey-20;
 		margin-bottom: 20px;
 		text-transform: none;
 		font-family: "Droid Serif", Georgia, Times, serif;
 		font-style: italic;
-		
+
 		a {
 			text-decoration: underline;
 			color: $cool-grey-20;
-		}		
+		}
 	}
 }
 
@@ -51,7 +53,7 @@
 .contentbox {
 	h3 {
 		font-family: "Open Sans", Helvetica, Arial, sans-serif;
-		font-size: 1em;		
+		font-size: 1em;
 		font-style: normal;
 		text-align: center;
 		color: white;
@@ -59,7 +61,7 @@
 		top: 40%;
 		padding: 10px;
 	}
-	
+
 	a.overlaybox {
 		display: block;
 		margin: auto;
@@ -70,11 +72,11 @@
 
 		opacity: 0;
 		transition: opacity .4s linear;
-		
+
 		h3 {
 			padding-bottom: 5px;
 		}
-	
+
 		h4 {
 			color: white;
 			font-size: .75em;
@@ -82,7 +84,7 @@
 			padding-bottom: 12px;
 		}
 	}
-	
+
 	&:hover a.overlaybox {
 		opacity: 1;
 		transition: opacity .2s linear;
@@ -97,14 +99,26 @@
 	background-size: 100% 100%;
 }
 
+@media only screen and (min-device-width: 320px) {
+	.contentbox {
+    width: 284px;
+		height: 216px;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+	}
+}
+
 @media only screen and (min-device-width: 768px) {
 	.contentbox {
+    width: 204px;
 		height: 156px;
 	}
 }
 
 @media (min-width: 960px) {
 	.contentbox {
+    width: 284px;
 		height: 216px;
 	}
 }

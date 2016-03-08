@@ -10,30 +10,29 @@ img + h1, img + h2, img + h3, img + h4, img + h5, img + p {
 h1, h2, h3, h4, h5, p {
 	margin: 0;
 	padding-bottom: 15px;
-	color: $white;
 }
 
 .card {
-		h1, h2, h3, h4, h5, p {
-			color: $cool-grey-90;
-	}
-
 	a {
 		text-decoration: none;
 	}
 }
 
-h1, h2, h4, h5, p, ul, li, td {
+h2, h4, h5, p, ul, li, td {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-h3 {
+h1, h3, p.card-detail {
 	font-family: "Droid Serif", Georgia, Times, serif;
 	font-style: italic;
 }
 
+.periodic {
+	font-family: "Droid Serif", Georgia, Times, serif;
+	font-weight: bold;
+}
+
 h5 {
-	text-transform: uppercase;
 	margin: 0;
 	padding-bottom: 10px;
 }
@@ -48,10 +47,6 @@ h2#logo {
 
 ul, li {
 	list-style-type: none;
-}
-
-p {
-	font-weight: 300;
 }
 
 a {
@@ -70,88 +65,97 @@ h1, h2, h3, h4, h5, p {
 // for mobile
 @media only screen and (min-device-width: 320px) {
 	h1 {
-		font-size: 2em;
-		line-height: 1.25em;
+		font-size: 36px;
+		line-height: 40px;
 	}
 
 	h2 {
-		font-size: 1.625em;
-		line-height: 1.154em;
+		font-size: 20px;
+		line-height: 24px;
 	}
 
 	h3 {
-		font-size: 1.125em;
-		line-height: 1.25em;
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: lighter;
 	}
 
 	h4 {
-		font-size: 1.225em;
-		line-height: 1.11em;
-	}
-
-	h5 {
-		font-size: .8em;
-		line-height: 1.2em;
+		font-size: 20px;
+		line-height: 26px;
 	}
 
 	p, li, ul {
-		font-size: .9em;
-		line-height: 1.25em;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.periodic {
+		font-size: 120px;
+		padding-bottom: 20px;
 	}
 }
 
 // for tablet
 @media only screen and (min-device-width: 768px) {
 	h1 {
-		font-size: 2.5em;
-		line-height: 1.125em;
+		font-size: 42px;
+		line-height: 48px;
 	}
 
 	h2 {
-		font-size: 2em;
-		line-height: 1.25em;
+		font-size: 18px;
+		line-height: 22px;
 	}
 
 	h3 {
-		font-size: 1.125em;
-		line-height: 1.25em;
+		font-size: 18px;
+		line-height: 22px;
 	}
 
 	h4 {
-		font-size: .8em;
-		line-height: 1.2em;
+		font-size: 26px;
+		line-height: 30px;
+	}
+
+	.periodic {
+		font-size: 80px;
 	}
 }
 
 // for desktop
 @media only screen and (min-width: 960px) {
 	h1 {
-		font-size: 3em;
-		line-height: 1.05em;
+		font-size: 54px;
+		line-height: 60px;
 	}
 
 	h2 {
-		font-size: 2.25em;
-		line-height: 1.25em;
+		font-size: 20px;
+		line-height: 24px;
 	}
 
 	h3 {
-		font-size: 1.125em;
-		line-height: 1.25em;
+		font-size: 24px;
+		line-height: 28px;
 	}
 
 	h4 {
-		font-size: 1.225em;
-		line-height: 1.25em;
+		font-size: 26px;
+		line-height: 30px;
 	}
 
 	h5 {
-		font-size: .8em;
-		line-height: 1.2em;
+		font-size: 12px;
+		line-height: 16px;
 	}
 
-	p, li, ul {
-		font-size: .9em;
-		line-height: 1.25em;
+	.periodic {
+		font-size: 120px;
 	}
+}
+
+.slide-panel-caption {
+	font-weight: lighter;
+	text-align: center;
 }

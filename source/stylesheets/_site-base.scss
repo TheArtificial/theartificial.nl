@@ -1,11 +1,6 @@
 // for header and footer elements
-
 .padded-lr {
 	padding: 10px 16px 10px 16px;
-}
-
-body {
-	background-color: $cool-grey-90;
 }
 
 // top header
@@ -18,11 +13,13 @@ body {
 			border-top-color: $white;
 		}
 
-		.flexcontainer {
-			border-bottom-color: $cool-grey-70;
+		.flex.container {
+			border-bottom-color: $cool-grey-90;
 		}
 		#logo {
 			color: $white;
+			padding-top: 6px;
+			padding-bottom: 11px;
 		}
 
 		#nav-primary {
@@ -60,35 +57,187 @@ body {
 }
 
 // content
-#content {
+.work_index, .about, .blog_index {
 	background-color: $cool-grey-90;
-}
-
-
-.card {
-	background-color: $white;
-
+	.section-title {
+		color: $white;
+	}
 }
 
 .container.packery {
 	margin-top: 20px;
 }
 
-.card {
-	.padded {
-		img {
-			margin-bottom: 20px;
-		}
-	}
 
-	h2 a {
-		font-size: 1em;
-		text-decoration: none;
-	}
+.extra-padded {
+	padding: 48px 16px 24px 16px;
 }
 
 .padded-bottom {
 	padding-bottom: 80px;
+}
+
+// card sizing for case studies and experiments
+@media only screen and (min-device-width: 320px) {
+	.case-study { min-height: 360px; }
+	.experiment { height: 280px; }
+}
+@media only screen and (min-device-width: 768px) {
+	.case-study { height: 400px; }
+	.experiment { height: 240px; }
+}
+@media only screen and (min-width: 960px) {
+	.case-study { height: 480px; }
+	.experiment { height: 300px; }
+}
+
+.card-rule {
+	margin: auto;
+	margin-bottom: 16px;
+	width: 40px;
+	height: 1px;
+	display: block;
+	background-color: $white;
+}
+
+.experiment {
+	background-color: $cool-grey-90;
+	opacity: 0.9;
+	color: $white;
+	a {
+		color: $white;
+	}
+}
+
+// case studies artifacts list
+.bleed.artifacts {
+	padding: 24px 0 24px 0;
+	background-color: $cool-grey-10;
+	color: $cool-grey-90;
+	text-align: center;
+}
+
+svg *.frame { fill: $cool-grey-90; }
+svg *.content{ fill: $cool-grey-40; }
+
+// laboratory styles
+.bleed.animal-party {
+	background-image: url('/laboratory/images/index_background.jpg');
+	background-repeat: no-repeat;
+	height: 100%;
+	position: fixed;
+	z-index: -100;
+	display: block;
+	background-size: 100%;
+}
+
+@media only screen and (min-device-width: 320px) {
+	.laboratory {
+		.section-title {
+			margin-top: 192px;
+			margin-bottom: 0;
+		}
+	}
+}
+@media only screen and (min-device-width: 768px) {
+	.laboratory {
+		.section-title {
+			margin-top: 64px;
+			margin-bottom: 32px;
+		}
+	}
+}
+@media only screen and (min-width: 960px) {
+	.laboratory {
+		.section-title {
+			margin-top: 64px;
+			margin-bottom: 32px;
+		}
+	}
+}
+
+// about styles
+.about {
+	h3 {
+		font-size: 32px;
+		line-height: 38px;
+		font-weight: bold;
+	}
+}
+
+.map {
+	.mapboxgl-popup-content {
+		padding: 10px;
+	}
+}
+
+.hiring-button {
+	border: 1px solid $white;
+	border-radius: 5px;
+	text-align: center;
+	padding: 12px;
+	color: $white;
+}
+
+.job-description {
+	font-size: 20px;
+	line-height: 30px;
+	color: $cool-grey-40;
+	font-weight: lighter;
+	strong {
+		color: $cool-grey-10;
+		font-weight: normal;
+	}
+}
+
+.job-requirements {
+	color: $cool-grey-40;
+	li {
+		line-height: 20px;
+		list-style-type: disc;
+	}
+}
+
+.tools {
+	text-align: center;
+	h2 {
+		font-size: 16px;
+		padding: 10px 0 5px 0;
+	}
+	p {
+		color: $pale-tulip;
+		padding-bottom: 2px;
+	}
+	svg *.feather_een {
+		fill: $white;
+	}
+}
+
+.map {
+	height: 400px;
+}
+
+// people styles
+#person {
+	// TODO update these SVGs with proper CSS classes
+	svg path, svg rect, svg polygon {
+		fill: $cool-grey-90;
+	}
+
+	.person-logo {
+		padding-top: 40px;
+		text-align: center;
+	}
+
+	h1 {
+		font-family: "Open Sans", Helvetica, Arial, sans-serif;
+		font-weight: lighter;
+		font-style: normal;
+	}
+	a {
+		color: $cool-grey-90;
+		text-decoration: underline;
+	}
 }
 
 // blog preview tile style
@@ -104,8 +253,7 @@ body {
 		}
 
 		h3 {
-			font-size: 1.6em;
-			line-height: 1.2em;
+			font-weight: bold;
 			min-height: 160px;
 		}
 
@@ -115,20 +263,26 @@ body {
 	}
 }
 
+// blog tile colors
 .blog-preview.inspiration {
 	background-color: $turquoise;
+	background: linear-gradient(to bottom left, $pale-grass, $turquoise);
 }
 
 .blog-preview.process {
 	background-color: $tulip;
+	background: linear-gradient(to bottom left, $pale-pumpkin, $tulip);
+
 }
 
 .blog-preview.news {
 	background-color: $pumpkin;
+	background: linear-gradient(to bottom left, $pale-dandelion, $pumpkin);
 }
 
 .blog-preview.thoughts {
-	background-color: $grass;
+	background-color: $grape;
+	background: linear-gradient(to bottom, $pale-tulip, $grape);
 }
 
 // footer
@@ -138,26 +292,39 @@ body {
 	#footer {
 		background-color: $cool-grey-90;
 
-		.flexcontainer, #about, #promo
+		.flex.container, #about, #promo
 		{
 			border-top-color: $cool-grey-70;
 		}
-		h3, h4, p {
+		h4, p {
 			color: $cool-grey-10;
+			line-height: 20px;
 		}
 			a {
-			color: $turquoise;
+			color: $cool-grey-10;
+			text-decoration: underline;
 		}
 		a:hover {
-			color: $dark-turquoise;
+			color: $cool-grey-30;
 		}
-
+		h3 {
+			font-size: 20px;
+			color: $cool-grey-10;
+		}
 	}
 }
 
 // special styles
 .center {
 	text-align: center;
+}
+
+.light-text {
+	color: $white;
+}
+
+.dark-text {
+	color: $cool-grey-90;
 }
 
 .darkest-grey {
@@ -190,31 +357,29 @@ body {
 	}
 }
 
-.white {
-	background-color: white;
-
-	h1, h2, h3, h4, h5, p {
-		color: $cool-grey-90;
-	}
+svg *.about-logo {
+	fill: $cool-grey-90;
 }
 
-.title {
-	padding: 60px 0 40px 0;
+.section {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.section-title {
+	margin-top: 64px;
+	margin-bottom: 32px;
+	text-align: center;
 }
 
 .blog-title {
 	margin-top: 180px;
 }
 
-#casesummary, #person {
-	padding: 40px 0 40px 0;
-}
-
 // eversearch
 #oncall {
 	background-color:rgba(255, 255, 255, 0.9);
 }
-
 
 // forms and fields
 .search {
@@ -312,12 +477,80 @@ body {
 	}
 }
 
-#animal-list {
-  .padded {
-		transition: opacity 0.8s ease;
-	}
-	.filter-off {
-		opacity: 0.1;
-	  transition: opacity 0.8s ease;
+// gradient colors
+.turquoise-palegrass {
+	background-color: $turquoise;
+	background: linear-gradient(to bottom, $pale-grass, $turquoise);
+	color: $darkest-turquoise;
+}
+
+.sapphire-palegrape {
+	background-color: $sapphire;
+	background: linear-gradient(to bottom, $pale-grape, $sapphire);
+	color: $pale-grape;
+}
+
+.sapphire-paleturquoise {
+	background-color: $sapphire;
+	background: linear-gradient(to bottom, $pale-turquoise, $sapphire);
+	color: $pale-turquoise;
+}
+
+.grape-paletulip {
+	background-color: $grape;
+	background: linear-gradient(to bottom, $pale-tulip, $grape);
+	color: $pale-tulip;
+}
+.grape-palesapphire {
+	background-color: $grape;
+	background: linear-gradient(to bottom, $pale-sapphire, $grape);
+	color: $pale-sapphire;
+}
+
+.tulip-palepumpkin {
+	background-color: $tulip;
+	background: linear-gradient(to bottom, $pale-pumpkin, $tulip);
+	color: $pale-pumpkin;
+}
+
+.pumpkin-paledandelion {
+	background-color: $pumpkin;
+	background: linear-gradient(to bottom, $pale-dandelion, $pumpkin);
+	color: $dark-tulip;
+}
+
+.dandelion-paledandelion {
+	background-color: $dandelion;
+	background: linear-gradient(to bottom, $pale-dandelion, $dandelion);
+	color: $dark-pumpkin;
+}
+
+.grass-paleturquoise {
+	background-color: $grass;
+	background: linear-gradient(to bottom, $pale-turquoise, $grass);
+	color: $darkest-turquoise;
+}
+
+.grass-palelime {
+	background-color: $grass;
+	background: linear-gradient(to bottom, $pale-lime, $grass);
+	color: $pale-lime;
+}
+
+// card gradient colors
+.case-study {
+	color: $white;
+	a {
+		color: $white;
 	}
 }
+
+
+// text colors
+.turquoise-text {	color: $turquoise; }
+.grass-text {	color: $grass; }
+.dandelion-text {	color: $dandelion; }
+.pumpkin-text {	color: $pumpkin; }
+.tulip-text {	color: $tulip; }
+.grape-text {	color: $grape; }
+.sapphire-text { color: $sapphire; }
