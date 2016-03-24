@@ -4,7 +4,7 @@
 	margin:0px;
 	padding:0px;
 
-	.bleed .intro {
+	.bleed.intro {
 		background-color: $white;
 		img:hover {
 			opacity: 0.5;
@@ -120,33 +120,9 @@
 			width:320px;
 		}
 
-	// 	.choicel{
-	// 	 background-color: $pale-tulip;
-	//  }
-	 //
-	// 	.choicer{
-	// 	 background-color: $pale-sapphire;
-	//  }
-	 //
-	//  .legendr {
-	// 		background-color: $tulip;
-	// 	}
-
-
 		#pickl, #pickr, #jsonsources {
 			margin: 7px
 		}
-
-		// .legendl {
-		// 	img{
-		// 		width:18px;
-		// 		height: 18px;
-		// 		vertical-align: center;
-		// 	}
-		// 	ul{
-		// 		margin-left: 0px;
-		// 	}
-		// }
 
 		.legendr {
 			font-family: "Open Sans", Helvetica, Arial, sans-serif;
