@@ -291,99 +291,99 @@
       });
   });
   // wire up the filters the hard way
-  d3.select("#industryr1").on("click", function() {
+  d3.select("#industryrDigital").on("click", function() {
     includeGroupindustries = [0];
     draw();
   });
-  d3.select("#industryr2").on("click", function() {
+  d3.select("#industryrMotion").on("click", function() {
     includeGroupindustries = [1];
     draw();
   });
-  d3.select("#industryr3").on("click", function() {
+  d3.select("#industryrPrint").on("click", function() {
     includeGroupindustries = [2];
     draw();
   });
-  d3.select("#industryr4").on("click", function() {
+  d3.select("#industryrProduct").on("click", function() {
     includeGroupindustries = [3];
     draw();
   });
-  d3.select("#industryr5").on("click", function() {
+  d3.select("#industryrSound").on("click", function() {
     includeGroupindustries = [4];
     draw();
   });
-  d3.select("#industryr6").on("click", function() {
+  d3.select("#industryrAll").on("click", function() {
     includeGroupindustries = [0,1,2,3,4];
     draw();
   });
-  d3.select("#industryr7").on("click", function() {
+  d3.select("#industryrMulti").on("click", function() {
     includeGroupindustries = [];
     draw();
   });
-  d3.select("#yearr1").on("click", function(d,i) {
+  d3.select("#yearr15").on("click", function(d,i) {
     includeGroupyears = [3];
     draw();
   });
-  d3.select("#yearr2").on("click", function() {
+  d3.select("#yearr16").on("click", function() {
     includeGroupyears = [4];
     draw();
   });
-  d3.select("#yearr3").on("click", function() {
+  d3.select("#yearr1516").on("click", function() {
     includeGroupyears = [5];
     draw();
   });
-  d3.select("#yearr4").on("click", function() {
+  d3.select("#yearrAll").on("click", function() {
     includeGroupyears = [3,4,5];
     draw();
   });
-  d3.select("#locationr1").on("click", function() {
+  d3.select("#locationrAsia").on("click", function() {
     includeGroupcontinents = [1];
     draw();
   });
-  d3.select("#locationr2").on("click", function() {
+  d3.select("#locationrAustralia").on("click", function() {
     includeGroupcontinents = [2];
     draw();
   });
-  d3.select("#locationr3").on("click", function() {
+  d3.select("#locationrEurope").on("click", function() {
     includeGroupcontinents = [3];
     draw();
   });
-  d3.select("#locationr4").on("click", function() {
+  d3.select("#locationrNamerica").on("click", function() {
     includeGroupcontinents = [4];
     draw();
   });
-  d3.select("#locationr5").on("click", function() {
+  d3.select("#locationrSAmerica").on("click", function() {
     includeGroupcontinents = [5];
     draw();
   });
-  d3.select("#locationr6").on("click", function() {
+  d3.select("#locationrAll").on("click", function() {
     includeGroupcontinents = [1,2,3,4,5];
     draw();
   });
-  d3.select("#locationr7").on("click", function() {
+  d3.select("#locationrMulti").on("click", function() {
     includeGroupcontinents = [];
     draw();
   });
-  d3.select("#statusr1").on("click", function() {
+  d3.select("#statusrIndependant").on("click", function() {
     includeGroupstatus = [0];
     draw();
   });
-  d3.select("#statusr2").on("click", function() {
+  d3.select("#statusrRepresented").on("click", function() {
     includeGroupstatus = [1];
     draw();
   });
-  d3.select("#statusr3").on("click", function() {
+  d3.select("#statusrAgency").on("click", function() {
     includeGroupstatus = [2];
     draw();
   });
-  d3.select("#statusr4").on("click", function() {
+  d3.select("#statusrEponym").on("click", function() {
     includeGroupstatus = [3];
     draw();
   });
-  d3.select("#statusr5").on("click", function() {
+  d3.select("#statusrCollective").on("click", function() {
     includeGroupstatus = [4];
     draw();
   });
-  d3.select("#statusr6").on("click", function() {
+  d3.select("#statusrAll").on("click", function() {
     includeGroupstatus = [0,1,2,3,4];
     draw();
   });
