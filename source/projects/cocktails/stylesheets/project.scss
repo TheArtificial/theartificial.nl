@@ -1,38 +1,80 @@
 @import "_artificial-colors.scss";
-
 body {
     background-color: #fddbd1;
 }
-img {
-    width: 70%;
-    max-width: 500px;
-}
-.cocktails {
+
+.cocktails { 
+    width: 100%;
+
     img {
+        width: 70%;
+        max-width: 500px;
         max-height: 500px;
     }
+
     #content {
         background-color: #fddbd1;
-        margin-bottom: 40px;
-        .container.packery {
-            margin-top: 0;
-        }
+        padding-bottom: 0;
+
         a {
             color: #f14a23;
             text-decoration: underline;
         }
-    }
+
+        p {
+            font-family: "Droid Serif", Georgia, Times, serif;
+            color: #f14a23;
+            font-size: 1em;
+            line-height: 1.6em;
+        }
+
+        h1 {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            font-style: normal;
+            color: #f14a23;
+            font-size: 3em;
+            line-height: 1em;
+        }
+
+        h2 {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            color: #f14a23;
+            font-size: 1.8em;
+            line-height: 1.2em;
+            margin-top: 10px;
+        }
+
+        h3 {
+            color: #f14a23;
+            font-size: 1em;
+            font-family: "Droid Serif", Georgia, Times, serif;
+            font-style: normal;
+            font-weight: 300;
+            margin-top: 15px;
+            padding: 0;
+        }
+
+        h4 {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            color: #f14a23;
+            font-size: .9em;
+        }
+    } /*end content div*/
+
     #header {
         background-color: #fddbd1;
-        .topbar {
-            border-top-color: #f14a23;
-        }
-        .flexcontainer {
+            .topbar {
+                border-top-color: #f14a23;
+            }
+
+        .flex {
             border-bottom-color: transparent;
         }
+
         #logo {
             color: #f14a23;
         }
+
         #nav-primary {
             ul {
                 li {
@@ -49,130 +91,174 @@ img {
                 }
             }
         }
-    }
+    } /*end header div*/
+
     #footer {
         background-color: #f14a23;
-        .flexcontainer, #about, #promo {
-            border-top-color: transparent;
-        }
+            .flex, #about, #promo {
+                border-top-color: transparent;
+            }
+
         p {
             color: $white;
         }
+
         a {
             color: #fddbd1;
         }
+
         a:hover {
             color: #fddbd1;
         }
+    } /*end footer div*/
+
+.rating {
+    width: 100px;
+    margin: 10px 0 10px;
+}
+
+} /*end cocktails over-ride div*/
+
+.introduction {
+    margin: 40px 0 40px 0;
+
+        p {
+            font-size: 1.2em;
+        }
+}
+
+.cardcontainer {
+    position: relative;
+    height: 500px;
+}
+
+.card {
+    background-color: transparent;
+    margin: 0 25px 80px 25px;
+
+        a.overlaybox {
+            opacity: 1;
+            display: block;
+            position: absolute;
+            top: 0px;
+            width: 78%;
+            margin:10px 0 0 10px;
+        }
+}
+
+.details {
+    position: block;
+    margin-top: -80px;
+
+}
+
+/*interior page scss*/
+
+.drinkcontainer{
+    position: relative;
+    height: 400px;
+
+    img {
+        width: 100%;
     }
-    .card {
-        background-color: transparent;
-        margin: 0 25px 80px 25px;
-    }
-    .rating {
-        width: 100px;
-        margin: 10px 0 10px;
-    }
-    p {
-        font-family: "Droid Serif", Georgia, Times, serif;
-        color: #f14a23;
-    }
+}
+
+.recipe {
+    padding-bottom: 40px;
+}
+
+.name {
+    margin-top: 25px;
+}
+
+
+/*media queries*/
+
+@media only screen and (min-device-width: 768px) {
+.cocktails {
     h1 {
         font-family: "Open Sans", Helvetica, Arial, sans-serif;
         color: #f14a23;
-        font-size: 3em;
-        line-height: 1em;
-    }
-    h2 {
-        font-family: "Open Sans", Helvetica, Arial, sans-serif;
-        color: #f14a23;
-        font-size: 1.8em;
+        font-size: 4em;
         line-height: 1.2em;
-        margin-top: 15px;
-    }
-    h3 {
-        color: #f14a23;
-        font-size: .9em;
-        font-family: "Droid Serif", Georgia, Times, serif;
-        font-style: normal;
-        font-weight: 300;
-        margin-top: 15px;
-        padding: 0;
-    }
-    h4 {
-        font-family: "Open Sans", Helvetica, Arial, sans-serif;
-        color: #f14a23;
-        font-size: .9em;
-    }
-}
-.introduction {
-    margin: 40px 0 40px 0;
-    p {
-        font-size: 1.2em;
-    }
-}
-.card {
-    a.overlaybox {
-        opacity: 1;
-        display: block;
-        position: absolute;
-        top: 0px;
-        margin: 0px 25px 80px 0px;
-    }
-}
-.recipe {
-    margin: 20px 0 80px 0;
-    h3 {
-        font-weight: 700;
-        margin-top: 0;
     }
     img {
-        margin-left: 10%;
+        width: 100%;
     }
+
+    #content {
+    padding-bottom: 100px;
+}
+
+}
+
+
+.introduction {
+    margin: 100px 0 60px 0;
+        p {
+            font-size: 1.2em;
+        }
+}
+
+.right {
+    text-align: right;
+}
+
+.middle {
+    text-align: center;
+}
+
+.card {
+    position: absolute;
+    bottom:0;
+
+        a.overlaybox {
+            display: block;
+            position: absolute;
+            opacity: 0;
+            transition: opacity .2s linear;
+            width: 100%;
+            margin:0;
+        }
+
+    &:hover a.overlaybox {
+        opacity: 1;
+        transition: opacity .2s linear;
+    }
+
+}
+
+.details {
+    position: absolute;
+    bottom: 0;
+    width:280px;
+    right:0;
+    left:0;
+    height: 50px;
 }
 
 .name {
     margin-top: 40px;
 }
-@media only screen and (min-device-width: 768px) {
-    .card {
-        a.overlaybox {
-            display: block;
-            position: absolute;
-            top: 0px;
-            opacity: 0;
-            transition: opacity .2s linear;
-            margin: 0px 25px 80px 0px;
-            vertical-align: bottom;
-        }
-        &:hover a.overlaybox {
-            opacity: 1;
-            transition: opacity .2s linear;
-        }
 
-    }
-    .introduction {
-        margin: 100px 0 100px 0;
-        p {
-            font-size: 1.2em;
-        }
-    }
-    .right {
-        text-align: right;
-    }
-    .center {
-        text-align: center;
-    }
-    .cocktails {
-        h1 {
-            font-family: "Open Sans", Helvetica, Arial, sans-serif;
-            color: #f14a23;
-            font-size: 4em;
-            line-height: 1.2em;
-        }
-        img {
-            width: 100%;
-        }
+.recipe {
+    padding-bottom: 100px;
+}
+
+.drinkcontainer{
+    position: relative;
+    height: 450px;
+
+    img {
+        width: 70%;
     }
 }
-@media (min-width: 960px) {}
+
+.drink{
+    position: absolute;
+    bottom:0;
+}
+
+/*@media (min-width: 960px) {}*/
+
+} /*end media queries*/
