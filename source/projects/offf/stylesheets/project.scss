@@ -98,13 +98,13 @@
 		}
 	}
 
-	.choicescontainer {
+	.choices {
 		color: $white;
 		background-color: $darkest-sapphire;
 		height: 300px;
-		width:100%;
+		// width:100%;
 
-		li {
+		li, p {
 		font-size: 0.8em;
 		font-style: normal;
 		color: $white;
@@ -112,60 +112,63 @@
 		padding: 9px 3px 5px 9px;
 		}
 
-		.choicel, .choicer, .legendl, .legendr {
+		.choicel, .choicer, .legendr {
 			text-align: left;
-			// position: relative;
-			background-color: $pale-tulip;
+			position:relative;
+			margin:0px;
+			padding:0px;
+			width:320px;
 		}
 
-		.choicer{
-		 background-color: $pale-sapphire;
-	 }
+	// 	.choicel{
+	// 	 background-color: $pale-tulip;
+	//  }
+	 //
+	// 	.choicer{
+	// 	 background-color: $pale-sapphire;
+	//  }
+	 //
+	//  .legendr {
+	// 		background-color: $tulip;
+	// 	}
 
-		.legendl, .legendr {
-			background-color: $tulip;
-		}
-
-		// @media only screen and (min-device-width: 768px) {
-		// 	.choicel, .choicer {
-		// 		position:absolute;
-		// 	}
-		// }
 
 		#pickl, #pickr, #jsonsources {
 			margin: 7px
 		}
 
-		.legendl {
-			img{
-				width:18px;
-				height: 18px;
-				vertical-align: center;
-			}
-			ul{
-				margin-left: 0px;
-			}
-		}
+		// .legendl {
+		// 	img{
+		// 		width:18px;
+		// 		height: 18px;
+		// 		vertical-align: center;
+		// 	}
+		// 	ul{
+		// 		margin-left: 0px;
+		// 	}
+		// }
 
 		.legendr {
+			font-family: "Open Sans", Helvetica, Arial, sans-serif;
+			text-align: left;
+
 			img{
 				width:12px;
 				height: 12px;
 				vertical-align: top;
 			}
+
 			ul {
+				margin-top:0px;
 				margin-left:0px;
 				padding-left:0px;
 			}
-		}
 
-		.legendl, .legendr {
-			font-family: "Open Sans", Helvetica, Arial, sans-serif;
-			text-align: left;
 			li {
 			display:block;
-			padding: 5px 0px 5px 10px ;
+			padding: 4px 0px 4px 8px ;
 			}
+
 			li:hover{
 			opacity:0.5;
 			}
