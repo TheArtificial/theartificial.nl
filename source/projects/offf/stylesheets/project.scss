@@ -16,7 +16,6 @@
 	}
 
 	.introduction {
-
 		margin: 60px 0 60px 0;
 		padding: 0px 15px 0 15px;
 
@@ -115,14 +114,23 @@
 
 		.choicel, .choicer, .legendl, .legendr {
 			text-align: left;
-			position: relative;
+			// position: relative;
+			background-color: $pale-tulip;
 		}
 
-		@media only screen and (min-device-width: 768px) {
-			.choicel, .choicer {
-				position:absolute;
-			}
+		.choicer{
+		 background-color: $pale-sapphire;
+	 }
+
+		.legendl, .legendr {
+			background-color: $tulip;
 		}
+
+		// @media only screen and (min-device-width: 768px) {
+		// 	.choicel, .choicer {
+		// 		position:absolute;
+		// 	}
+		// }
 
 		#pickl, #pickr, #jsonsources {
 			margin: 7px
