@@ -21,6 +21,10 @@ body {
             text-decoration: underline;
         }
 
+        a:hover {
+            text-decoration: none;
+        }
+
         p {
             font-family: "Droid Serif", Georgia, Times, serif;
             color: #f14a23;
@@ -109,6 +113,10 @@ body {
 
         a:hover {
             color: #fddbd1;
+        }
+
+        h3 {
+            color:#ffffff;
         }
     } /*end footer div*/
 
