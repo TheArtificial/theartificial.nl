@@ -176,20 +176,13 @@ body {
 
 @media only screen and (min-device-width: 768px) {
 .cocktails {
-    h1 {
-        font-family: "Open Sans", Helvetica, Arial, sans-serif;
-        color: #f14a23;
-        font-size: 4em;
-        line-height: 1.2em;
-    }
     img {
         width: 100%;
     }
 
     #content {
-    padding-bottom: 100px;
-}
-
+    padding-bottom: 80px;
+    }
 }
 
 
