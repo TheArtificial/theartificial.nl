@@ -27,13 +27,13 @@ We compared seven more tools to help guide you to the appropriate tool for your 
 [**In Part 1**](http://theartificial.nl/blog/2015/11/23/prototyping.html), we discerned four types of tools: Layer-based, Page-based, Patch-based, and Code-based. It is helpful to have a big idea of what to expect from those interface, even if their constructions concepts can be mixed together. The trend among the above set of prototyping tools is mainly visual page-based interfaces with hints of layers, patches and code.
 
 
-![Continuum review](2015-11-23-prototyping/2x2.png)
+![Continuum review](2016-04-07-prototyping2/2x2.png)
 
 ## Interaction overview
 
 If the prototyping tool is smoothly handling iterations, intuitively managing assets and letting you easily collaborate with your team, it would most probably make you save a lot of time building your prototypes, testing your interactions models and flows.
 
-![Workflow and Interface](2015-11-23-prototyping/interaction.gif)
+![Workflow and Interface](2016-04-07-prototyping2/interaction.gif)
 
 ##### Linking screens
 
@@ -72,7 +72,7 @@ To share test the website / app you are building, most tools like **Adobe XD (Pr
 
 In FIgma’s Feedback mode and in **Proto.io** users that have access to the project are able to add comments and create discussion threads to provide feedback. Some tools are going further than just being able to comment by letting you work directly with your team on the same prototype. It is the case of **Axure** that makes sure all users have the latest version of the prototype and **Justinmind** with a system of committing changes and updates. **Justinmind** has another special feature of guidelines generation with Microsoft word and it supports html5 exports like **Hype**.
 
-[Download all GIFs in the Interaction overview for comparison.](2015-11-23-prototyping/InteractionOverview.zip)
+[Download all GIFs in the Interaction overview for comparison.](2016-04-07-prototyping2/InteractionOverview.zip)
 
 ### The Artificial's pick for a Interaction overview prototypes: **Flinto** and Justinimind.
 
@@ -80,7 +80,7 @@ In FIgma’s Feedback mode and in **Proto.io** users that have access to the pro
 
 Aesthetics details matters to effectively communicate with developers or other stakeholders. Your app has a unique touch and you want to convey it through flowing animations, polished effects and faithful adaptation across several devices and gestures. The tool should let you pleasingly achieve your prototype and it should not guide your design.
 
-![Transitions and Animations](2015-11-23-prototyping/aesthetic.gif)
+![Transitions and Animations](2016-04-07-prototyping2/aesthetic.gif)
 
 ##### Animating
 
@@ -109,7 +109,7 @@ You would like your design to smoothly translates from a mobile, to a tablet, to
 What is the point of placing efforts to learn to master a prototyping tool if the deliverable you are building is not interactive? Otherwise you would use a video editor such as After Effects for more effects possibilities… instead you want users to be able to test it out, to tap, to swipe, to flick, to scroll, to pinch and spread; you want them to feel it, to break it, to spot the incoherences, to enjoy the hero moments and to acknowledge swelling sequences. Unfortunately, in **Hype**, basic interactions such as scrolling can only be simulated with an animation. Contrary to **Flinto** and **Axure** that only propose a set of simple gestures, **Justinmind** incorporates some multiple fingers gestures like pinch and rotate.
 
 
-[Download all GIFs in Aesthetic detail for comparison.](2015-11-23-prototyping/AestheticDetails.zip)
+[Download all GIFs in Aesthetic detail for comparison.](2016-04-07-prototyping2/AestheticDetails.zip)
 
 ###The Artificial's pick for an Aesthetic detail prototype: **Axure** and **Hype**.
 
