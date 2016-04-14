@@ -7,31 +7,31 @@ author: ariane
 
 ![](2016-04-07-prototyping2/introduction.png)
 
-As Paul Gubbay, vice president of Creative Cloud product management at Adobe, puts it (1) “Designers have been waiting for the right UX tool to simplify app and web experience design.” As we mentioned [**in the first part of the post**](http://theartificial.nl/blog/2015/11/23/prototyping.html), when it comes to prototyping, there is not (yet) one right tool, that unanimously reached designers’ heart because each prototyping tool was born in a peculiar environment and developed with a specific angle. Before picking a tool, you should determine your prototyping goals. You may not set your mind on the same tool if you are trying to clarify an interaction model, to demonstrate concepts and functionalities or to present the product’s animation.
+As Paul Gubbay, vice president of Creative Cloud product management at Adobe, puts it (1) “Designers have been waiting for the right UX tool to simplify app and web experience design.” As we mentioned [**in Selecting the optimal prototyping tool (part 1)**](http://theartificial.nl/blog/2015/11/23/prototyping.html), when it comes to prototyping, there is not (yet) one right tool, that unanimously reaches designers’ hearts. Indeed each prototyping tool was born in a peculiar environment and developed with a specific angle. Before picking a tool, you should determine your prototyping goals. You may not set your mind on the same tool if you are trying to clarify an interaction model, to demonstrate concepts and functionalities or to present the product’s animation.
 
-In March 2016, Adobe finally announced the availability of Adobe Experience Design CC (Preview). Previously called Comet, the software, renamed Adobe XD aims to create and share interactive prototypes. We are disappointed by this public release, because we feel it still requires to mature to reach the level of the giant Adobe other pieces of software in the Suite. We are hoping that the new experience design tool would soon integrate with Photoshop CC and Illustrator CC to facilitate workflow. While Adobe is seeking for inputs from the creative community to make the product evolve, we found the timing is right to get a closer look at a second set of other prototyping tools.
+In March 2016, Adobe finally announced the availability of Adobe Experience Design CC (Preview). Previously called Comet, the software, renamed Adobe XD, aims to create and share interactive prototypes. We are disappointed by this public release, because we feel it still needs to reach the same level of intricacy that other Adobe software has. We are hoping that the new experience design tool would soon integrate with Illustrator CC and Photoshop CC to facilitate workflow. While Adobe is seeking for inputs from the creative community to make the product evolve, we felt it was a good time to get a closer look at a second set of prototyping tools.
 
 
 ## Prototyping tools
 
 We compared seven more tools to help guide you to the appropriate tool for your specific challenge.
 
-[![Axure RP](2016-04-07-prototyping2/icon-axure.png)](http://www.axure.com/)| [**Axure RP**](http://www.axure.com/)|prototype browser-based application
+[![Axure RP](2016-04-07-prototyping2/icon-axure.png)](http://www.axure.com/)| [**Axure RP**](http://www.axure.com/)|prototype application inspired from Miscrosoft Office Suite.
 [![Figma](2016-04-07-prototyping2/icon-figma.png)](https://www.figma.com/) | [**Figma**](https://www.figma.com/)|collaborative online design tool (preview with wait list released in Dec 2015)
 [![Flinto for Mac](2016-04-07-prototyping2/icon-flinto.png)](https://www.flinto.com/) | [**Flinto for Mac**](https://www.flinto.com/)|co-founded program
-[![Hype](2016-04-07-prototyping2/icon-hype.png)](http://tumult.com/hype/)| [**Hype**](http://tumult.com/hype/)|html5 based prototyping from Tumult
+[![Hype](2016-04-07-prototyping2/icon-hype.png)](http://tumult.com/hype/)| [**Hype**](http://tumult.com/hype/)|html5 based tool from Tumult
 [![Justinmind](2016-04-07-prototyping2/icon-justinmind.png)](http://www.justinmind.com/) | [**Justinmind**](http://www.justinmind.com/)|collaborative web and app prototyping
-[![Proto.io](2016-04-07-prototyping2/icon-protoio.png)](https://proto.io/) | [**Proto.io**](https://proto.io/)|mobile prototyping platform
+[![Proto.io](2016-04-07-prototyping2/icon-protoio.png)](https://proto.io/) | [**Proto.io**](https://proto.io/)|mobile prototyping
 [![Adobe XD](2016-04-07-prototyping2/icon-adobexd.png)](http://www.adobe.com/products/experience-design.html) | [**Adobe XD**](http://www.adobe.com/products/experience-design.html)| Adobe software prototyping (early release in March 2016)
 
-[**In Part 1**](http://theartificial.nl/blog/2015/11/23/prototyping.html), we discerned four types of tools: Layer-based, Page-based, Patch-based, and Code-based. It is helpful to have a big idea of what to expect from those interface, even if their constructions concepts can be mixed together. The trend among the above set of prototyping tools is mainly visual page-based interfaces with hints of layers, patches and code.
+[**In Part 1**](http://theartificial.nl/blog/2015/11/23/prototyping.html), we discerned four types of tools: Layer-based, Page-based, Patch-based, and Code-based. It is helpful to have a general idea of what to expect from these interfaces, even if their constructions's concepts can be mixed together. The trend among the above set of prototyping tools is mainly Page-based interfaces with hints of layers, patches and code.
 
 
 ![Continuum review](2016-04-07-prototyping2/2x2.png)
 
 ## Interaction overview
 
-If the prototyping tool is smoothly handling iterations, intuitively managing assets and letting you easily collaborate with your team, it would most probably make you save a lot of time building your prototypes, testing your interactions models and flows.
+If the prototyping tool is smoothly handling iterations, intuitively managing assets and lets you easily collaborate with your team, it will probably save you a lot of time.
 
 ![Workflow and Interface](2016-04-07-prototyping2/interaction.gif)
 
