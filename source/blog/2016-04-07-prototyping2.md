@@ -37,40 +37,38 @@ If the prototyping tool is smoothly handling iterations, intuitively managing as
 
 ##### Linking screens
 
-The tools reviewed are all mainly page-based except **Hype** that is relying on a layer-based interface with a timeline like video editing software such as Adobe After Effects.
+The tools reviewed are all mainly Page-based with the exception of **Hype**, which relies on a more Layer-based interface.
 
-**Figma (Preview)** did not implement the functionality of linking two screens but they seemed to have set their focus on issues concerning designers such as drawing assets and creating responsive layouts. We will talk about those later but if you are looking to create interactions and animations, it is not the right tool for you. We hope they plan on building screens sequence.
+**Figma (Preview)** has not implemented interactive prototyping functionalities. Further in the article, We will talk about other functionalities they implemented, but if you are looking to create interactions and animations, it is not the right tool for you. We hope they plan on adding interactive functionalities.
 
-In all other tools, you can connect individual elements to each others to build a flow. **Axure** and **Proto.io** are very powerful for building a flow thanks to elaborated conditions settings. They are both data-driven prototypes using variables. If you are familiar with Adobe products and its floating windows and palettes, you might quickly get in hand **Justinmind**, whereas if you are a crack with Microsoft office Suite (90’s series), **Axure** may seem faster to learn thanks to a similar interface with a top toolbar and the same left-panelled page hierarchy than Power Point. In fact, the analogy makes sense when you know that **Axure**'s two founders Victor Su and Martin Smith first started to build softwares from PowerPoint, Visio, and Word documents.
+In all other tools, you can connect individual elements to each other to build interactions. **Axure** and **Justinmind** are very powerful for building specific interactions thanks to elaborate condition settings. They are both data-driven prototyping tools that use variables.
 
-Aside from connecting independent assets, **Axure** also allows you to create links thanks to hotspots. However it has the major disadvantage of not having a layer panel. Stacks of animated layers, called dynamic panels, with their possible different states, may give you a serious headache to select and to organise, especially if you did not meticulously name your elements.
+**Axure** has the major disadvantage of not having a layer panel. Stacks of animated layers, called dynamic panels, may give you a serious headache to select and to organise, especially if you did not meticulously name your elements.
 
-**Proto.io** differentiates itself by using both pages and states to help you keep your project organised.
+**Proto.io** uses both pages and states to help you keep your project organised.
 
-**Flinto** and **Adobe XD (Preview)** are also using a page-based structure, but to define links and transitions, you drag wires between screens. Those visual connexions are an easy way to create a mental image of a short app flow but more complex products may look messy and confusing if lots of features are added to each screens. We found that prototyping with **Adobe XD (Preview)** has very little benefit for now because of the limited interactions available. For instance, in the short sequence of [**Huddle app**](http://theartificial.nl/huddle/) we tried to prototype, the single available interaction among the ones we wanted to perform is an easing between screens. We hope for future developments to include basic functions such as scrolling and overlays.
+In **Flinto** and **Adobe XD (Preview)** to define links and transitions, you drag wires between screens. Those visual connections are an easy way to create a mental image of a short app flow but more complex products may look messy and confusing if lots of interactions are added to the screens. We found that prototyping with **Adobe XD (Preview)** has very little benefit for now because of the limited interactions available. For instance, when prototyping a short [**Huddle**](http://theartificial.nl/huddle/) sequence, the single interaction we were able to perform is switching between screens.
 
 ##### Asset handling
 
-Building a prototype raises assets related questions. Would you like to be able to draw your prototypes elements from scratch within the tool? Would you rather import your designs from an external software? How often are your assets recurring in your sequence?
+Building a prototype raises assets related questions. Would you like to be able to draw your prototype elements from scratch within the tool or would you rather import your designs from an external software? How often are your assets recurring in your sequence?
 
-On the one hand, if you are interested in drawing your elements within the tool, you should consider **Justinmind**, **Proto.io**, **Adobe XD (Preview)** and, above all **Figma (Preview)**. **Figma (Preview)** browser-based editor surprised us with its fast and smooth vectors handling. Indeed, it even goes further by bringing new visions of how drawing and editing paths can be achieved more naturally. **Figma (Preview)** is build on ‘vector networks' which offer lots of flexibility and control. You can edit paths with new ways of splitting and recombining. Path bending also becomes easier with two possible manipulation: control handles, familiar to adobe user, or direct drag on the curve.
+On one hand, if you are interested in drawing your elements within the tool, you should consider **Justinmind**, **Proto.io**, **Adobe XD (Preview)** and, above all **Figma (Preview)**. **Figma (Preview)**, a browser-based editor, surprised us with its fast and smooth vector handling. Indeed, it even goes further by bringing new visions of how drawing and editing paths can be achieved more naturally.
 
-On the other hand, if you are used to create your screens from other software such as Adobe Illustrator and Sketch and you are wishing to import existing designs to build your prototype, you should know that you can import images on any of those tools, but you can have a closer look at **Proto.io**. **Proto.io**’s seamless drag and drop will easily help you importing assets. The other plus is a library assisting you managing multiples.
-If you are a Sketch addict, **Flinto** is for you. It is letting you re-import your Sketch source file and your changes will update automatically! Hooray. Unfortunately for Adobe Illustrator users, there is no such functionality and the copy and paste option results in pixelised images. So you better cut and exports your assets before importing them individually.
-Aside from importing cut assets, **Axure**’s hotspots are another way to create links and they can save you some precious time. Rather than spending time preparing individual assets, you can just create actionable zone on your image. This solution is convenient if you are wishing to have something to share in a short amount of time.
+On the other hand, if you are used to creating your screens with other software such as Adobe Illustrator or Sketch you can have a closer look at **Proto.io**. **Proto.io**’s seamless drag-and-drop-feature will easily help you import assets. If you are a Sketch addict, **Flinto** is for you. It lets you re-import your Sketch source file and your changes will update automatically! Hooray. Unfortunately for Adobe Illustrator users, there is no such functionality and the copy and paste option results in pixelated images. So you'd better finalize your assets before importing.
 
-Justinimind is the only tool handling asset linking. We believe this functionality can save you a lot of time by syncing your changes from your working files instead of making you manually update assets each time you modify them.
+**Justinmind** is the only tool that updates asset links automatically, saving you a lot of time.
 
-**Axure**, **Figma (Preview)**, **Justinmind**, and **Proto.io** and have really handy ready-to-use resources of widgets for generic designs such as iOS or Android UI mobile elements.
+**Axure**, **Figma (Preview)**, **Justinmind**, and **Proto.io** and have really handy ready-to-use resources for generic designs such as iOS or Android UI mobile elements.
 
 
 ##### Assisting with collaboration
 
-Building and improving your prototype require sharing work, collecting feedbacks and comments and collaborating with your team.
+Building and improving your prototype requires sharing work, collecting feedback and collaborating with your team.
 
-To share test the website / app you are building, most tools like **Adobe XD (Preview)** generate an url link that you can share with your stakeholders. It is the case of **Axure** and its AxShare, a cloud hosting solution, giving you slow and flicky prototypes. **Justinmind** sharing works the same way but viewing your prototype on you online account is less glitchy and inconsistent than on their app on your device. Most apps like **Justinmind**, **Flinto**, **Hype**, **Proto.io** and **Axure** have free mobile viewer apps.
+To share or test your prototype, most tools generate a url link that you can share. **Axure** uses a cloud hosting solution called AxShare, but it gives you slow and flickering prototypes. Tools like **Justinmind**, **Flinto**, **Hype**, **Proto.io** and **Axure** have a free mobile viewer app. **Justinmind** allows you to view your prototype on an app as well but it's also glitchy and inconsistent with the desktop preview.
 
-In FIgma’s Feedback mode and in **Proto.io** users that have access to the project are able to add comments and create discussion threads to provide feedback. Some tools are going further than just being able to comment by letting you work directly with your team on the same prototype. It is the case of **Axure** that makes sure all users have the latest version of the prototype and **Justinmind** with a system of committing changes and updates. **Justinmind** has another special feature of guidelines generation with Microsoft word and it supports html5 exports like **Hype**.
+In **Figma** and **Proto.io**, users that have access to the project are able to add comments and create discussion threads to provide feedback. Some tools are going further than just being able to comment by letting you work directly with your team on the same prototype. It is the case of **Axure** that makes sure all users have the latest version of the prototype and **Justinmind** with a system of committing changes and updates. **Justinmind** has another special feature of guidelines generation with Microsoft word and it supports html5 exports like **Hype**.
 
 [Download all GIFs in the Interaction overview for comparison.](2016-04-07-prototyping2/InteractionOverview.zip)
 
@@ -78,7 +76,7 @@ In FIgma’s Feedback mode and in **Proto.io** users that have access to the pro
 
 ## Aesthetic detail
 
-Aesthetics details matters to effectively communicate with developers or other stakeholders. Your app has a unique touch and you want to convey it through flowing animations, polished effects and faithful adaptation across several devices and gestures. The tool should let you pleasingly achieve your prototype and it should not guide your design.
+Aesthetics details are important to help effectively communicate with developers or stakeholders. Your app has a unique feeling and you want to convey it through flowing animations, polished effects and faithful adaptation across several devices and gestures. The tool should help you achieve your prototype and it should not guide your design.
 
 ![Transitions and Animations](2016-04-07-prototyping2/aesthetic.gif)
 
