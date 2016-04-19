@@ -9,7 +9,7 @@ author: ariane
 
 As Paul Gubbay, vice president of Creative Cloud product management at Adobe, puts it (1) “Designers have been waiting for the right UX tool to simplify app and web experience design.” As we mentioned [**in Selecting the optimal prototyping tool (part 1)**](http://theartificial.nl/blog/2015/11/23/prototyping.html), when it comes to prototyping, there is not (yet) one right tool, that unanimously reaches designers’ hearts. Indeed each prototyping tool was born in a peculiar environment and developed with a specific angle. Before picking a tool, you should determine your prototyping goals. You may not set your mind on the same tool if you are trying to clarify an interaction model or to focus on presenting the product’s animation.
 
-Before Adobe Experience Design CC (Preview)'s public release, in March 2016, we were beta testers. The software aims to create and share interactive prototypes. We contributed to their feedback forum. We were expecting the public release to implement some of testers' requests, Unfortunately, we were very disappointed. We feel it still needs to reach the same level of intricacy that other Adobe software has. We are hoping that the new experience design tool would soon integrate with Adobe Illustrator and Adobe Photoshop to facilitate workflow. While Adobe is seeking for inputs from the creative community to make the product evolve, we felt it was a good time to get a closer look at a second set of prototyping tools.
+We were beta testers for Adobe Experience Design CC (Preview) and we contributed to their feedback forum. The software aims to create and share interactive prototypes. We were expecting the public release to implement some of testers' requests, Unfortunately, we were very disappointed. We feel it still needs to reach the same level of intricacy that other Adobe software has. We are hoping that the new experience design tool would soon integrate with Adobe Illustrator and Adobe Photoshop to facilitate workflow. While Adobe is seeking for inputs from the creative community to make the product evolve, we felt it was a good time to get a closer look at a second set of prototyping tools.
 
 
 ## Prototyping tools
@@ -17,12 +17,12 @@ Before Adobe Experience Design CC (Preview)'s public release, in March 2016, we 
 We compared seven more tools to help guide you to the appropriate tool for your specific challenge.
 
 [![Axure RP](2016-04-07-prototyping2/icon-axure.png)](http://www.axure.com/)| [**Axure RP**](http://www.axure.com/)|prototype application inspired from Miscrosoft Office Suite.
-[![Figma](2016-04-07-prototyping2/icon-figma.png)](https://www.figma.com/) | [**Figma**](https://www.figma.com/)|collaborative online design tool (preview with wait list released in Dec 2015)
+[![Figma](2016-04-07-prototyping2/icon-figma.png)](https://www.figma.com/) | [**Figma**](https://www.figma.com/)|collaborative online design tool (Preview released in Dec 2015)
 [![Flinto for Mac](2016-04-07-prototyping2/icon-flinto.png)](https://www.flinto.com/) | [**Flinto for Mac**](https://www.flinto.com/)|prototyping for Sketch users
 [![Hype](2016-04-07-prototyping2/icon-hype.png)](http://tumult.com/hype/)| [**Hype**](http://tumult.com/hype/)|html5 based tool from Tumult
 [![Justinmind](2016-04-07-prototyping2/icon-justinmind.png)](http://www.justinmind.com/) | [**Justinmind**](http://www.justinmind.com/)|collaborative web and app prototyping
 [![Proto.io](2016-04-07-prototyping2/icon-protoio.png)](https://proto.io/) | [**Proto.io**](https://proto.io/)|mobile prototyping
-[![Adobe XD](2016-04-07-prototyping2/icon-adobexd.png)](http://www.adobe.com/products/experience-design.html) | [**Adobe XD**](http://www.adobe.com/products/experience-design.html)| Adobe prototyping software (early release in March 2016)
+[![Adobe XD](2016-04-07-prototyping2/icon-adobexd.png)](http://www.adobe.com/products/experience-design.html) | [**Adobe XD**](http://www.adobe.com/products/experience-design.html)| Adobe prototyping software (Preview released in March 2016)
 
 [**In Part 1**](http://theartificial.nl/blog/2015/11/23/prototyping.html), we discerned four types of tools: Layer-based, Page-based, Patch-based, and Code-based. It is helpful to have a general idea of what to expect from these interfaces, even if their construction concepts can be mixed together. The trend among the above set of prototyping tools is mainly Page-based interfaces with hints of layers, patches and code.
 
