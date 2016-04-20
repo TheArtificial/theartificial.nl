@@ -53,9 +53,9 @@ In **Flinto** and **Adobe XD (Preview)** to define links and transitions, you dr
 
 Building a prototype raises assets related questions. Would you like to be able to draw your prototype elements from scratch within the tool or would you rather import your designs from an external software? How often are your assets recurring in your sequence?
 
-On one hand, if you are interested in drawing your elements within the tool, you should consider **Justinmind**, **Proto.io**, **Adobe XD (Preview)** and, above all **Figma (Preview)**. **Figma (Preview)**, a browser-based editor, surprised us with its fast and smooth vector handling. Indeed, it even goes further by bringing new visions of how drawing and editing paths can be achieved more naturally.
+On one hand, if you are interested in drawing your elements within the tool, you should consider **Justinmind**, **Proto.io**, **Adobe XD (Preview)** and, above all **Figma (Preview)**. **Figma (Preview)**, a browser-based editor, surprised us with its fast and smooth vector handling. Indeed, it brings a new visions of how drawing and editing paths can be achieved more naturally.
 
-On the other hand, if you are used to creating your screens with other software, such as Adobe Illustrator or Sketch, you can have a closer look at **Proto.io**. **Proto.io**’s seamless drag-and-drop-feature will easily help you import assets. If you are a Sketch addict, **Flinto** is for you. It lets you re-import your Sketch source file and your changes will update automatically! Hooray. Unfortunately for Adobe Illustrator users, there is no such functionality and the copy and paste option results in pixelated images. So you'd better finalize your assets before importing.
+On the other hand, if you are used to creating your screens with other software, such as Adobe Illustrator or Sketch, you should have a closer look at **Proto.io**. The tool's seamless drag-and-drop-feature will easily help you import assets. If you are a Sketch addict, **Flinto** is for you. It lets you re-import your Sketch source file and your changes will update automatically! Hooray. Unfortunately for Adobe Illustrator users, there is no such functionality and the copy and paste option results in pixelated images. So you'd better finalize your assets before importing.
 
 **Justinmind** is the only tool that updates asset links automatically, saving you a lot of time.
 
@@ -66,7 +66,7 @@ On the other hand, if you are used to creating your screens with other software,
 
 Building and improving your prototype requires sharing work, collecting feedback and collaborating with your team.
 
-To share or test your prototype, most tools generate a url link that you can share. **Axure** uses a cloud hosting solution called AxShare, but it gives you slow and flickering prototypes. Tools like **Justinmind**, **Flinto**, **Hype**, **Proto.io** and **Axure** have a free mobile viewer app. **Justinmind** allows you to view your prototype on an app as well but it's also glitchy and inconsistent with the desktop preview.
+To test your prototype, most tools generate a url link that you can share. **Axure** uses a cloud hosting solution called AxShare, but it gives you slow and flickering prototypes. Tools like **Justinmind**, **Flinto**, **Hype**, **Proto.io** and **Axure** have a free mobile viewer app. You should just keep in mind that some prototypes' viewer apps give smoother results than other. **Justinmind's** one is glitchy and inconsistent with the desktop preview.
 
 In **Figma** and **Proto.io**, users that have access to the project are able to add comments and create discussion threads to provide feedback. Some tools are going further by letting you work directly with your team on the same prototype. It is the case of **Axure** and **Justinmind**. **Justinmind** has another special feature of guidelines generation with Microsoft word and it supports html5 exports like **Hype**.
 
@@ -82,15 +82,15 @@ Aesthetics details are important to help effectively communicate with developers
 
 ##### Animating
 
-In **Figma (Preview)** and **Adobe XD (Preview)**, animations are respectively non-existent and almost non-existent for now so there is very little to talk about regarding aesthetics details.
+In **Figma (Preview)** and **Adobe XD (Preview)**, animations are respectively non-existent and almost non-existent for now, so there is very little to talk about regarding aesthetics details.
 
-On the contrary, some other tools let you simply build animations and transitions. Indeed **Axure**, **Proto.io** and **Flinto** animations feel native and you are able to customise or create your own effects. For more experienced users, in **Axure** you can build effects by injecting code. In **Proto.io**, too many animations going on at once can be messy and in **Flinto** some animations cannot occur simultaneously… bummer! But by chance **Flinto** has other values. It lets you chose a name for your custom transition and re-use them in your prototype for consistency. It is very convenient if you’d like the same fancy animation to occur several time in the app.
+On the contrary, some other tools let you simply build animations and transitions. Well, **Axure**, **Proto.io** and **Flinto** animations feel native and you are able to customise or create your own effects. For more experienced users, in **Axure** you can build effects by injecting code. In **Proto.io**, too many animations going on at once can be messy and in **Flinto** some animations cannot occur simultaneously… bummer! But by chance **Flinto** has other values. It lets you chose a name for your custom transition and re-use them in your prototype for consistency. It is very convenient if you’d like the same fancy animation to occur several time in the app.
 
 As explained above in Interaction overview, **Justinmind** is powerful for building your navigation, but it is not your champion for animations.
 
 ##### Adjusting the feel
 
-When you reach the point of satisfaction with your prototype but you noticed a slight bothering detail, you feel grateful if the tool allows you to make your tweak without sweating it out and breaking what’s in place. Luckily, the creators of the seven tools implemented some functionalities to help you adjust the feel.
+When you reach the point of satisfaction with your prototype but you noticed a slight bothering detail, you feel grateful if the tool allows you to make your tweak without sweating it out and breaking what’s in place. Fortunately, the creators of the seven tools implemented some functionalities to help you adjust the feel.
 
 **Flinto** shows you curves representing speed and distance to ease the feel of an action, just like in Adobe After Effects.
 
@@ -98,7 +98,7 @@ When you reach the point of satisfaction with your prototype but you noticed a s
 
 In **Proto.io**, it is quite difficult to find the right component to edit. Many animations are stacked on each other and can’t be combined so each movement must be labeled explicitly. Moreover, your workflow is slowed down because saving and loading your changes take time, especially if you want to see results on a device.
 
-**Axure**'s interface is text heavy and options are hidden in submenus that do not make it very easy to adjust the prototype. Luckily, **Axure**'s community has resources to share.
+**Axure**'s interface is text heavy and options are hidden in submenus that do not make it very easy to find the options you are looking for. Luckily, **Axure**'s community has resources to share.
 
 ##### Handling different sizes and gestures
 
