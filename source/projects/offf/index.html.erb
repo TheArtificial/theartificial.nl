@@ -89,16 +89,11 @@
 
 						var linkupdate = d3.selectAll("path")
 
-						function update() {
-						  // Update selection: Resize and position existing
-						  // DOM elements with data bound to them.
-						    linkupdate.attr("class", "link") // you have to do this or you can't re-select it!
-								    .style("opacity", "0.2")
-								    .style("stroke-width", function(d,s) { return d.stroke; })
-								    .style("stroke", "#FFF")
-								    .style("fill", "none");
-						};
-						update();
+				    linkupdate.attr("class", "link") // you have to do this or you can't re-select it!
+						    .style("opacity", "0.2")
+						    .style("stroke-width", function(d,s) { return d.stroke; })
+						    .style("stroke", "#FFF")
+						    .style("fill", "none");
 
 				    linkSelection.exit().remove();
 
