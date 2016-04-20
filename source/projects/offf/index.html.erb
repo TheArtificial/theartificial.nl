@@ -91,7 +91,7 @@
 
 				    linkupdate.attr("class", "link") // you have to do this or you can't re-select it!
 						    .style("opacity", "0.2")
-						    .style("stroke-width", function(d,s) { return d.stroke; })
+						    .style("stroke-width", function(d,s) { return typeof d == "undefined" ? 1 : d.stroke; })
 						    .style("stroke", "#FFF")
 						    .style("fill", "none");
 
