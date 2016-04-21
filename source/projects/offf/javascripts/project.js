@@ -58,8 +58,10 @@ function trimLinks(links, nodeIds) {
 // assign coords near center
 function homeNodes(nodes) {
   nodes.forEach(function(node){
-    node.x = width - (width/4) - (Math.random() * width/2 );
-    node.y = height - (height/4) - (Math.random() * height/2 );
+    if (node.x == null) {
+      node.x = width - (width/4) - (Math.random() * width/2 );
+      node.y = height - (height/4) - (Math.random() * height/2 );
+    }
   });
 }
 
