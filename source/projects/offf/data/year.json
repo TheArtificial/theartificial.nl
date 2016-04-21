@@ -1,0 +1,1449 @@
+{
+  "nodes":
+[
+  {
+    "category":"2015",
+    "id": "recurrence-0"
+  },
+  {
+    "category":"2016",
+    "id": "recurrence-1"
+  },
+
+
+
+
+  {
+    "name": "3-10 studio",
+    "id": 5,
+    "groupindustry": [0,1,2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "aardman animations",
+    "id": 6,
+    "groupindustry": [0,1,2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "achos!",
+    "id": 7,
+    "groupindustry": [0,1,2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "akqa",
+    "id": 8,
+    "groupindustry": [0,1,2],
+    "groupyear": 3,
+    "groupcontinent": [1,3,4,5],
+    "groupstatus": 2
+  },
+  {
+    "name": "andoni beristain",
+    "id": 9,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "anton & irene",
+    "id": 10,
+    "groupindustry": [0,1,2],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 3
+  },
+  {
+    "name": "atelier",
+    "id": 11,
+    "groupindustry": [0,1,2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "bakea",
+    "id": 12,
+    "groupindustry": [0,1,2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "ben fry",
+    "id": 13,
+    "groupindustry": [0],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 2
+  },
+  {
+    "name": "brand nu",
+    "id": 14,
+    "groupindustry": [0,1,2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "córdova canillas",
+    "id": 15,
+    "groupindustry": [0,2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "carl sprague",
+    "id": 16,
+    "groupindustry": [1],
+    "groupyear": 4,
+    "groupcontinent": [4],
+    "groupstatus": 1
+  },
+  {
+    "name": "carla cascales",
+    "id": 17,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "casey neistat",
+    "id": 18,
+    "groupindustry": [1],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "casey reas",
+    "id": 19,
+    "groupindustry": [0,1,2],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "chris milk",
+    "id": 20,
+    "groupindustry": [0],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 3
+  },
+  {
+    "name": "chuck anderson",
+    "id": 21,
+    "groupindustry": [0,1,2],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 3
+  },
+  {
+    "name": "cocolia",
+    "id": 22,
+    "groupindustry": [2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "creativeapplications.net",
+    "id": 23,
+    "groupindustry": [1,2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "daniel aristizábal",
+    "id": 24,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [5],
+    "groupstatus": 0
+  },
+  {
+    "name": "danny sangra",
+    "id": 25,
+    "groupindustry": [1],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "david navarro &  claudio guglieri",
+    "id": 26,
+    "groupindustry": [0,1],
+    "groupyear": 4,
+    "groupcontinent": [3,4],
+    "groupstatus": 4
+  },
+  {
+    "name": "digital kitchen",
+    "id": 27,
+    "groupindustry": [0,1],
+    "groupyear": 5,
+    "groupcontinent": [4],
+    "groupstatus": 2
+  },
+  {
+    "name": "dog studio",
+    "id": 28,
+    "groupindustry": [0,1],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "dvein",
+    "id": 29,
+    "groupindustry": [1,2],
+    "groupyear": 3,
+    "groupcontinent": [3,4],
+    "groupstatus": 4
+  },
+  {
+    "name": "erik natzke",
+    "id": 30,
+    "groupindustry": [0],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 2
+  },
+  {
+    "name": "erik spiekermann",
+    "id": 31,
+    "groupindustry": [0],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 3
+  },
+  {
+    "name": "filipe carvalho",
+    "id": 32,
+    "groupindustry": [0,1],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 1
+  },
+  {
+    "name": "foreign policy",
+    "id": 33,
+    "groupindustry": [2],
+    "groupyear": 3,
+    "groupcontinent": [1],
+    "groupstatus": 2
+  },
+  {
+    "name": "framed",
+    "id": 34,
+    "groupindustry": [3],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "futuredekuxe",
+    "id": 35,
+    "groupindustry": [0,1],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "gemma o’brien",
+    "id": 36,
+    "groupindustry": [2],
+    "groupyear": 3,
+    "groupcontinent": [2],
+    "groupstatus": 0
+  },
+  {
+    "name": "gmunk",
+    "id": 37,
+    "groupindustry": [1],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 1
+  },
+  {
+    "name": "golan levin",
+    "id": 38,
+    "groupindustry": [0],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 4
+  },
+  {
+    "name": "hey",
+    "id": 39,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "hiro murai",
+    "id": 40,
+    "groupindustry": [1],
+    "groupyear": 4,
+    "groupcontinent": [4],
+    "groupstatus": 1
+  },
+  {
+    "name": "holo",
+    "id": 41,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [4],
+    "groupstatus": 2
+  },
+  {
+    "name": "hush",
+    "id": 42,
+    "groupindustry": [0,1],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 2
+  },
+  {
+    "name": "ideo",
+    "id": 43,
+    "groupindustry": [0,2,3],
+    "groupyear": 4,
+    "groupcontinent": [1,3,4],
+    "groupstatus": 2
+  },
+  {
+    "name": "james victore",
+    "id": 44,
+    "groupindustry": [2],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 3
+  },
+  {
+    "name": "jan de coster",
+    "id": 45,
+    "groupindustry": [0,1],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "javier jaen",
+    "id": 46,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "jean-paul frenay",
+    "id": 47,
+    "groupindustry": [1],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 3
+  },
+  {
+    "name": "john maeda",
+    "id": 48,
+    "groupindustry": [0],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 3
+  },
+  {
+    "name": "johnny cupcakes",
+    "id": 49,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [4],
+    "groupstatus": 2
+  },
+  {
+    "name": "jon burgerman",
+    "id": 50,
+    "groupindustry": [2],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "josep maría mir",
+    "id": 51,
+    "groupindustry": [0,2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "joshua davis",
+    "id": 52,
+    "groupindustry": [1],
+    "groupyear": 5,
+    "groupcontinent": [4],
+    "groupstatus": 3
+  },
+  {
+    "name": "joylabz",
+    "id": 53,
+    "groupindustry": [0],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "julien vallée",
+    "id": 54,
+    "groupindustry": [1,2],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 3
+  },
+  {
+    "name": "kiran gandhi",
+    "id": 55,
+    "groupindustry": [4],
+    "groupyear": 4,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "kyle cooper",
+    "id": 56,
+    "groupindustry": [1],
+    "groupyear": 5,
+    "groupcontinent": [4],
+    "groupstatus": 2
+  },
+  {
+    "name": "laika",
+    "id": 57,
+    "groupindustry": [1],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 2
+  },
+  {
+    "name": "letters are my friends",
+    "id": 58,
+    "groupindustry": [0,1,2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "lil'ol'lady",
+    "id": 59,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "linda liukas",
+    "id": 60,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "lizzie mary cullen",
+    "id": 61,
+    "groupindustry": [2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "lullatone + jono brandel",
+    "id": 62,
+    "groupindustry": [4],
+    "groupyear": 4,
+    "groupcontinent": [1,4],
+    "groupstatus": 4
+  },
+  {
+    "name": "made thought",
+    "id": 63,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "matt lambert",
+    "id": 64,
+    "groupindustry": [1,2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 1
+  },
+  {
+    "name": "mau morgo",
+    "id": 65,
+    "groupindustry": [0,1],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "michael cina",
+    "id": 66,
+    "groupindustry": [2],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "mirko borsche",
+    "id": 67,
+    "groupindustry": [2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 3
+  },
+  {
+    "name": "momoco",
+    "id": 68,
+    "groupindustry": [1],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "monika mogi",
+    "id": 69,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [1],
+    "groupstatus": 0
+  },
+  {
+    "name": "morphika",
+    "id": 70,
+    "groupindustry": [1],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "mpc",
+    "id": 71,
+    "groupindustry": [1],
+    "groupyear": 4,
+    "groupcontinent": [1,3,4,5],
+    "groupstatus": 2
+  },
+  {
+    "name": "mr bingo",
+    "id": 72,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "mucho",
+    "id": 73,
+    "groupindustry": [0,1],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "musketon",
+    "id": 74,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "neville brody",
+    "id": 75,
+    "groupindustry": [0],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "noelia lozano",
+    "id": 76,
+    "groupindustry": [0,1,2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "non-format",
+    "id": 77,
+    "groupindustry": [1,2],
+    "groupyear": 4,
+    "groupcontinent": [3,4],
+    "groupstatus": 2
+  },
+  {
+    "name": "onesize",
+    "id": 78,
+    "groupindustry": [1],
+    "groupyear": 3,
+    "groupcontinent": [3,4],
+    "groupstatus": 2
+  },
+  {
+    "name": "outro studio",
+    "id": 79,
+    "groupindustry": [0,1,2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "pablo garcia",
+    "id": 80,
+    "groupindustry": [0],
+    "groupyear": 4,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "pat perry",
+    "id": 81,
+    "groupindustry": [2],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "paula scher (pentagram)",
+    "id": 82,
+    "groupindustry": [2],
+    "groupyear": 5,
+    "groupcontinent": [4,3],
+    "groupstatus": 2
+  },
+  {
+    "name": "postpanic",
+    "id": 83,
+    "groupindustry": [1],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "random studio",
+    "id": 84,
+    "groupindustry": [0,1,2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "renascent",
+    "id": 85,
+    "groupindustry": [0,1],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "rick banks",
+    "id": 86,
+    "groupindustry": [0,2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "rick poynor",
+    "id": 87,
+    "groupindustry": [2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "rik oostenbroek",
+    "id": 88,
+    "groupindustry": [1,2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "rob chiu",
+    "id": 89,
+    "groupindustry": [1],
+    "groupyear": 5,
+    "groupcontinent": [3],
+    "groupstatus": 1
+  },
+  {
+    "name": "robert hodgin",
+    "id": 90,
+    "groupindustry": [0,1],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "rozon parein",
+    "id": 91,
+    "groupindustry": [1,2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "saad moosajee",
+    "id": 92,
+    "groupindustry": [0,1],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "saman kesh",
+    "id": 93,
+    "groupindustry": [1],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "sawdust",
+    "id": 94,
+    "groupindustry": [2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 3
+  },
+  {
+    "name": "sid lee",
+    "id": 95,
+    "groupindustry": [0,1],
+    "groupyear": 4,
+    "groupcontinent": [3,4],
+    "groupstatus": 2
+  },
+  {
+    "name": "signalnoise",
+    "id": 96,
+    "groupindustry": [2],
+    "groupyear": 5,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "snask",
+    "id": 97,
+    "groupindustry": [0,1,2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "somerset + mills",
+    "id": 98,
+    "groupindustry": [1,2],
+    "groupyear": 4,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "stefan sagmeister",
+    "id": 99,
+    "groupindustry": [0,1,2],
+    "groupyear": 3,
+    "groupcontinent": [4],
+    "groupstatus": 3
+  },
+  {
+    "name": "steven wilson",
+    "id": 100,
+    "groupindustry": [2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 0
+  },
+  {
+    "name": "studio blue",
+    "id": 101,
+    "groupindustry": [1,2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "territory",
+    "id": 102,
+    "groupindustry": [0,1],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "the mill",
+    "id": 103,
+    "groupindustry": [1],
+    "groupyear": 5,
+    "groupcontinent": [3,4],
+    "groupstatus": 2
+  },
+  {
+    "name": "the six and five studio",
+    "id": 104,
+    "groupindustry": [0,2],
+    "groupyear": 4,
+    "groupcontinent": [5],
+    "groupstatus": 2
+  },
+  {
+    "name": "timothy goodman",
+    "id": 105,
+    "groupindustry": [2],
+    "groupyear": 4,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "tobias van schneider",
+    "id": 106,
+    "groupindustry": [0,2],
+    "groupyear": 4,
+    "groupcontinent": [4],
+    "groupstatus": 0
+  },
+  {
+    "name": "unit9",
+    "id": 107,
+    "groupindustry": [0,1],
+    "groupyear": 4,
+    "groupcontinent": [3,4],
+    "groupstatus": 2
+  },
+  {
+    "name": "ustwo",
+    "id": 108,
+    "groupindustry": [0],
+    "groupyear": 4,
+    "groupcontinent": [2,3,4],
+    "groupstatus": 2
+  },
+  {
+    "name": "vasava",
+    "id": 109,
+    "groupindustry": [0,1,2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "we are seventeen",
+    "id": 110,
+    "groupindustry": [0,1],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  },
+  {
+    "name": "yukiko",
+    "id": 111,
+    "groupindustry": [1,2],
+    "groupyear": 3,
+    "groupcontinent": [3],
+    "groupstatus": 2
+  }
+],
+
+
+
+"links":
+[
+  {
+    "source": 5,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 6,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 7,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 8,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 9,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 10,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 11,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 12,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 13,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 14,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 15,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 16,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 17,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 18,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 19,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 20,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 21,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 22,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 23,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 24,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 25,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 26,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 27,
+    "target": "recurrence-0",
+    "stroke": 2.5
+  },
+  {
+    "source": 27,
+    "target": "recurrence-1",
+    "stroke": 2.5
+  },
+  {
+    "source": 28,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 29,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 30,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 31,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 32,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 33,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 34,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 35,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 36,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 37,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 38,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 39,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 40,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 41,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 42,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 43,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 44,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 45,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 46,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 47,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 48,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 49,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 50,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 51,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 52,
+    "target": "recurrence-0",
+    "stroke": 2.5
+  },
+  {
+    "source": 52,
+    "target": "recurrence-1",
+    "stroke": 2.5
+  },
+  {
+    "source": 53,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 54,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 55,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 56,
+    "target": "recurrence-0",
+    "stroke": 2.5
+  },
+  {
+    "source": 56,
+    "target": "recurrence-1",
+    "stroke": 2.5
+  },
+  {
+    "source": 57,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 58,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 59,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 60,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 61,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 62,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 63,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 64,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 65,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 66,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 67,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 68,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 69,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 70,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 71,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 72,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 73,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 74,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 75,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 76,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 77,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 78,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 79,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 80,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 81,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 82,
+    "target": "recurrence-0",
+    "stroke": 2.5
+  },
+  {
+    "source": 82,
+    "target": "recurrence-1",
+    "stroke": 2.5
+  },
+  {
+    "source": 83,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 84,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 85,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 86,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 87,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 88,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 89,
+    "target": "recurrence-0",
+    "stroke": 2.5
+  },
+  {
+    "source": 89,
+    "target": "recurrence-1",
+    "stroke": 2.5
+  },
+  {
+    "source": 90,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 91,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 92,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 93,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 94,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 95,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 96,
+    "target": "recurrence-0",
+    "stroke": 2.5
+  },
+  {
+    "source": 96,
+    "target": "recurrence-1",
+    "stroke": 2.5
+  },
+  {
+    "source": 97,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 98,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 99,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 100,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 101,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 102,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 103,
+    "target": "recurrence-0",
+    "stroke": 2.5
+  },
+  {
+    "source": 103,
+    "target": "recurrence-1",
+    "stroke": 2.5
+  },
+  {
+    "source": 104,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 105,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 106,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 107,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 108,
+    "target": "recurrence-1",
+    "stroke": 5
+  },
+  {
+    "source": 109,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 110,
+    "target": "recurrence-0",
+    "stroke": 5
+  },
+  {
+    "source": 111,
+    "target": "recurrence-0",
+    "stroke": 5
+  }
+]
+}
