@@ -15,21 +15,10 @@
 		<div class="flex container">
 			<div class="col-12 center visualization">
 				<script>
-				  // SVG selection that holds the visualization
-				  var svg = d3.select(".visualization").append("svg")
-				    .attr("id", "container")
-				    .attr("viewBox", "0 0 " + width + " " + height) //viewbox
-				    .append("g")
-				    .attr("preserveAspectRatio", "xMidYMid meet");
-
-				  // and these will hold the SVG elements
-				  var nodeSelection = svg.selectAll('.node');
-				      linkSelection = svg.selectAll('.link');
-
 				  // fetch data and (in the callback) load into the arrays
 				  d3.json("data/industry.json", function(error, json) {
-				    graph = json;
-				    // console.log('Fetched', graph);
+						graph = json;
+						initialize();
 				    draw();
 				  });
 				</script>

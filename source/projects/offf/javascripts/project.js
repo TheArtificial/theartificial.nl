@@ -21,6 +21,16 @@ var includeGroupindustries = [0,1,2,3,4];
 // this global will hold the loaded data
 var graph;
 
+// and this will be the force layout that positions nodes (and links)
+var force;
+
+// SVG selection that holds the visualization
+var svg;
+
+// and these will hold the SVG elements
+var nodeSelection,
+    linkSelection;
+
 // called by force layout during iteration
 function tick() {
   linkSelection.attr("d", arcPath);
@@ -31,13 +41,25 @@ function tick() {
   });
 }
 
-// force layout, used to calculate positions
-var force = d3.layout.force()
-  .linkDistance(50)
-  .linkStrength(0.25)
-  .charge(-125)
-  .size([width, height])
-  .on("tick", tick);
+function initialize() {
+  // SVG selection that holds the visualization
+  svg = d3.select(".visualization").append("svg")
+    .attr("id", "container")
+    .attr("viewBox", "0 0 " + width + " " + height) //viewbox
+    .append("g")
+    .attr("preserveAspectRatio", "xMidYMid meet");
+
+  // and these will hold the SVG elements
+  nodeSelection = svg.selectAll('.node');
+  linkSelection = svg.selectAll('.link');
+
+  force = d3.layout.force()
+    .linkDistance(50)
+    .linkStrength(0.25)
+    .charge(-125)
+    .size([width, height])
+    .on("tick", tick);
+}
 
 // draw SVG arc for link _d_, per http://bl.ocks.org/mbostock/1153292
 function arcPath(d) {
