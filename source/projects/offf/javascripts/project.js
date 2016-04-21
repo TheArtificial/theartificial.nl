@@ -65,6 +65,46 @@ function homeNodes(nodes) {
   });
 }
 
+//  function using includes to evaluate if some of node.groupcontinents exists in includeGroupcontinents
+function isInGpc(element, index, array) {
+  return includeGroupcontinents.includes(element);
+}
+
+//  function using includes to evaluate if some of node.groupindustry exists in includeGroupindustries
+function isInGpi(element, index, array) {
+  return includeGroupindustries.includes(element);
+}
+
+// filters the dots
+function filterNode(node) {
+  var dropdownr = d3.select("#pickr");
+  var colornumber = dropdownr.node().selectedIndex;
+
+  if (colornumber == 1) {
+    var matchesGroupindustries = (typeof node.groupindustry == "undefined") || (includeGroupindustries.length === 0 ? node.groupindustry.length > 1 : node.groupindustry.some(isInGpi));
+    return matchesGroupindustries;
+  }
+  else if (colornumber == 2) {
+    var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || (includeGroupcontinents.length === 0 ? node.groupcontinent.length > 1 : node.groupcontinent.some(isInGpc));
+    return matchesGroupcontinents;
+  }
+  else if (colornumber == 3) {
+    var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
+    return matchesGroupstatus;
+  }
+  else if(colornumber == 4) {
+    var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
+    return matchesGroupyear;
+  }
+  else {
+    var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
+    var matchesGroupindustries = (typeof node.groupindustry == "undefined") || (includeGroupindustries.length === 0 ? node.groupindustry.length > 1 : node.groupindustry.some(isInGpi));
+    var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || (includeGroupcontinents.length === 0 ? node.groupcontinent.length > 1 : node.groupcontinent.some(isInGpc));
+    var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
+    return (matchesGroupyear && matchesGroupindustries && matchesGroupcontinents && matchesGroupstatus);
+  }
+}
+
 // load and tick the layout, then draw all the things
 function draw() {
 
@@ -139,49 +179,11 @@ function draw() {
   nodeSelection.exit().remove();
   // console.log("nodeSelected", nodeSelected);
 
-  //  function using includes to evaluate if some of node.groupcontinents exists in includeGroupcontinents
-  function isInGpc(element, index, array) {
-    return includeGroupcontinents.includes(element);
-  }
 
-  //  function using includes to evaluate if some of node.groupindustry exists in includeGroupindustries
-  function isInGpi(element, index, array) {
-    return includeGroupindustries.includes(element);
-  }
-
-  // filters the dots
-  function filterNode(node) {
-    var dropdownr = d3.select("#pickr");
-    var colornumber = dropdownr.node().selectedIndex;
-
-    if (colornumber == 1) {
-      var matchesGroupindustries = (typeof node.groupindustry == "undefined") || (includeGroupindustries.length === 0 ? node.groupindustry.length > 1 : node.groupindustry.some(isInGpi));
-      return matchesGroupindustries;
-    }
-    else if (colornumber == 2) {
-      var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || (includeGroupcontinents.length === 0 ? node.groupcontinent.length > 1 : node.groupcontinent.some(isInGpc));
-      return matchesGroupcontinents;
-    }
-    else if (colornumber == 3) {
-      var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
-      return matchesGroupstatus;
-    }
-    else if(colornumber == 4) {
-      var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
-      return matchesGroupyear;
-    }
-    else {
-      var matchesGroupyear = (typeof node.groupyear == "undefined") || includeGroupyears.includes(node.groupyear);
-      var matchesGroupindustries = (typeof node.groupindustry == "undefined") || (includeGroupindustries.length === 0 ? node.groupindustry.length > 1 : node.groupindustry.some(isInGpi));
-      var matchesGroupcontinents = (typeof node.groupcontinent == "undefined") || (includeGroupcontinents.length === 0 ? node.groupcontinent.length > 1 : node.groupcontinent.some(isInGpc));
-      var matchesGroupstatus = (typeof node.groupstatus == "undefined") || includeGroupstatus.includes(node.groupstatus);
-      return (matchesGroupyear && matchesGroupindustries && matchesGroupcontinents && matchesGroupstatus);
-    }
     // console.log('includeGroupstatus', includeGroupstatus);
     // console.log('includeGroupcontinents', includeGroupcontinents);
     // console.log('node.groupcontinent', node.groupcontinent);
     // console.log('matchesGroupcontinents', matchesGroupcontinents);
-  }
 
   // get the id name and number of the selected link to color accordingly the selected dots
   var dropdownr = d3.select("#pickr");
