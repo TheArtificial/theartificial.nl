@@ -179,18 +179,18 @@ function draw() {
 
   // the colouring code throws error because it is looking for .groupsomething data in the category nodes?
   if (colornumber == 1) {
-    d3.selectAll("circle").style("fill", function(d,i) { return typeof d == "undefined" ? "white" : colorindustry[d.groupindustry] });
+    d3.selectAll(".node circle").style("fill", function(d,i) { return typeof d == "undefined" ? "white" : colorindustry[d.groupindustry] });
   }
   else if (colornumber == 2) {
-    d3.selectAll("circle").style("fill", function(d,i) { return typeof d == "undefined" ? "white" : colorcontinent[d.groupcontinent] });
+    d3.selectAll(".node circle").style("fill", function(d,i) { return typeof d == "undefined" ? "white" : colorcontinent[d.groupcontinent] });
   }
   else if (colornumber == 3) {
-    d3.selectAll("circle").style("fill", function(d,i) { return typeof d == "undefined" ? "white" : colorstatus[d.groupstatus] });
+    d3.selectAll(".node circle").style("fill", function(d,i) { return typeof d == "undefined" ? "white" : colorstatus[d.groupstatus] });
   }
   else if (colornumber == 4) {
-    d3.selectAll("circle").style("fill", function(d,i) { return typeof d == "undefined" ? "white" : coloryear[d.groupyear] });
+    d3.selectAll(".node circle").style("fill", function(d,i) { return typeof d == "undefined" ? "white" : coloryear[d.groupyear] });
   }
   else {
-    d3.selectAll("circle").style("fill", "white");
+    d3.selectAll(".node circle").style("fill", "white");
   }
 }

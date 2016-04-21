@@ -128,11 +128,35 @@
 			font-family: "Open Sans", Helvetica, Arial, sans-serif;
 			text-align: left;
 
-			img{
-				width:12px;
+			svg, img {
+				width: 12px;
 				height: 12px;
 				vertical-align: top;
 			}
+
+			svg.legendmulti * { fill: #FFFFFF; }
+
+			svg.legendprint * { fill: #BFD857; }
+			svg.legendmotion * { fill: #7BC580; }
+			svg.legenddigital * { fill: #28B67A; }
+			svg.legendsound * { fill: #BEDEA8; }
+			svg.legendproduct * { fill: #53B59F; }
+
+			svg.legendasia * { fill: #BF8EC0; }
+			svg.legendaustralia * { fill: #FBC4AA; }
+			svg.legendeurope * { fill: #DE4F76; }
+			svg.legendnorthamerica * { fill: #F494BE; }
+			svg.legendsouthamerica * { fill: #EDB9D0; }
+
+			svg.legendagency * { fill: #007BC1; }
+			svg.legendindependant * { fill: #00B3C5; }
+			svg.legendeponym * { fill: #00B7A3; }
+			svg.legendrepresented * { fill: #91D3CE; }
+			svg.legendcollective * { fill: #A0CAE7; }
+
+			svg.legend2015 * { fill: #E66964; }
+			svg.legend2016 * { fill: #F3AA84; }
+			svg.legendbothyears * { fill: #F6C831; }
 
 			ul {
 				margin-top:0px;
