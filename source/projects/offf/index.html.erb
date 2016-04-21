@@ -4,9 +4,9 @@
 	<div class="bleed intro">
 		<div class="flex container">
 			<div class="col-10 left-1 right-1 center introduction">
-				<h1>What is OFFF conference about?</h1>
+				<h1>OFFF visualization</h1>
 				<h5>an experiment by <a href="/people/ariane.html">Ariane Garoff</a></h5>
-				<h2>Artists giving talks at <a href="http://www.offf.ws/" target="_blank">OFFF conference</a> are represented by dots in this interactive data-visualisation. Dynamic filters help users understanding the conference tendancies. New comers may want to find out if the lecturers are really matching their interests whereas frequent visitors may compare several editions to see if the coming venue is as exciting as the previous.</h2>
+				<h2>Artists giving talks at <a href="http://www.offf.ws/" target="_blank">OFFF</a> are represented by dots in this interactive data visualization. Dynamic filters help users understand the conference tendancies. Newcomers may want to find out if the lecturers really match their interests whereas frequent visitors may compare several editions to see if the coming event is as exciting as the previous.</h2>
 			</div>
 		</div>
 	</div>
@@ -27,7 +27,7 @@
 				      linkSelection = svg.selectAll('.link');
 
 				  // fetch data and (in the callback) load into the arrays
-				  d3.json("/offf/data/industry.json", function(error, json) {
+				  d3.json("data/industry.json", function(error, json) {
 				    graph = json;
 				    // console.log('Fetched', graph);
 				    draw();
@@ -44,48 +44,48 @@
 						Organise artists by
 						<select id="pickl" name="pickl">
 							<option value="selectfilter" disabled="disabled">select filter</option>
-							<option value="/offf/data/industry.json" selected value="selected" data-legendcat="#industryl"> industry</option>
-							<option value="/offf/data/location.json" data-legendcat="#locationl"> location</option>
-							<option value="/offf/data/status.json" data-legendcat="#statusl"> working status</option>
-							<option value="/offf/data/year.json" data-legendcat="#yearl"> year(s) of talk</option>
+							<option value="data/industry.json" selected value="selected" data-legendcat="#industryl"> industry</option>
+							<option value="data/location.json" data-legendcat="#locationl"> location</option>
+							<option value="data/status.json" data-legendcat="#statusl"> working status</option>
+							<option value="data/year.json" data-legendcat="#yearl"> year(s) of talk</option>
 						</select>​
 					</li>
 					<div id= "industryl" class="legendl" style="display:none">
 						<ul>
-							<li id="industrylPrint"> <img src="/offf/images/dot-category.svg"> <a>print</a></li>
-							<li id="industrylMotion"> <img src="/offf/images/dot-category.svg"> <a>motion</a></li>
-							<li id="industrylDigital"> <img src="/offf/images/dot-category.svg"> <a>digital</a></li>
-							<li id="industrylSound"> <img src="/offf/images/dot-category.svg"> <a>sound design</a></li>
-							<li id="industrylProduct"> <img src="/offf/images/dot-category.svg"> <a>product design</a></li>
-							<li id="industrylAll"> <img src="/offf/images/dot-category.svg"> <a>all industries</a></li>
+							<li id="industrylPrint"> <img src="images/dot-category.svg"> <a>print</a></li>
+							<li id="industrylMotion"> <img src="images/dot-category.svg"> <a>motion</a></li>
+							<li id="industrylDigital"> <img src="images/dot-category.svg"> <a>digital</a></li>
+							<li id="industrylSound"> <img src="images/dot-category.svg"> <a>sound design</a></li>
+							<li id="industrylProduct"> <img src="images/dot-category.svg"> <a>product design</a></li>
+							<li id="industrylAll"> <img src="images/dot-category.svg"> <a>all industries</a></li>
 						</ul>
 					</div>
 					<div id="locationl" class="legendl" style="display:none">
 						<ul>
-							<li id="locationlAsia"> <img src="/offf/images/dot-category.svg"> <a>Asia</a></li>
-							<li id="locationlAustralia"> <img src="/offf/images/dot-category.svg"> <a>Australia</a></li>
-							<li id="locationlEurope"> <img src="/offf/images/dot-category.svg"> <a>Europe</a></li>
-							<li id="locationlNAmerica"> <img src="/offf/images/dot-category.svg"> <a>North America</a></li>
-							<li id="locationlSAmerica"> <img src="/offf/images/dot-category.svg"> <a>South America</a></li>
-							<li id="locationlAll"> <img src="/offf/images/dot-category.svg"> <a>all continents</a></li>
+							<li id="locationlAsia"> <img src="images/dot-category.svg"> <a>Asia</a></li>
+							<li id="locationlAustralia"> <img src="images/dot-category.svg"> <a>Australia</a></li>
+							<li id="locationlEurope"> <img src="images/dot-category.svg"> <a>Europe</a></li>
+							<li id="locationlNAmerica"> <img src="images/dot-category.svg"> <a>North America</a></li>
+							<li id="locationlSAmerica"> <img src="images/dot-category.svg"> <a>South America</a></li>
+							<li id="locationlAll"> <img src="images/dot-category.svg"> <a>all continents</a></li>
 						</ul>
 					</div>
 					<div id="statusl" class="legendl" style="display:none">
 						<ul>
-							<li id="statuslIndependant"> <img src="/offf/images/dot-category.svg"> <a>independant</a></li>
-							<li id="statuslRepresented"> <img src="/offf/images/dot-category.svg"> <a>represented</a></li>
-							<li id="statuslAgency"> <img src="/offf/images/dot-category.svg"> <a>agency</a></li>
-							<li id="statuslEponym"> <img src="/offf/images/dot-category.svg"> <a>eponym agency</a></li>
-							<li id="statuslCollective"> <img src="/offf/images/dot-category.svg"> <a>collective</a></li>
-							<li id="statuslAll"> <img src="/offf/images/dot-category.svg"> <a>all status</a></li>
+							<li id="statuslIndependant"> <img src="images/dot-category.svg"> <a>independant</a></li>
+							<li id="statuslRepresented"> <img src="images/dot-category.svg"> <a>represented</a></li>
+							<li id="statuslAgency"> <img src="images/dot-category.svg"> <a>agency</a></li>
+							<li id="statuslEponym"> <img src="images/dot-category.svg"> <a>eponym agency</a></li>
+							<li id="statuslCollective"> <img src="images/dot-category.svg"> <a>collective</a></li>
+							<li id="statuslAll"> <img src="images/dot-category.svg"> <a>all status</a></li>
 						</ul>
 					</div>
 					<div id="yearl" class="legendl" style="display:none">
 						<ul>
-							<li id="yearl15"> <img src="/offf/images/dot-category.svg"> <a>2015</a></li>
-							<li id="yearl16"> <img src="/offf/images/dot-category.svg"> <a>2016</a></li>
-							<li id="yearl1516"> <img src="/offf/images/dot-category.svg"> <a>2015 and 2016</a></li>
-							<li id="yearlAll"> <img src="/offf/images/dot-category.svg"> <a>all year</a></li>
+							<li id="yearl15"> <img src="images/dot-category.svg"> <a>2015</a></li>
+							<li id="yearl16"> <img src="images/dot-category.svg"> <a>2016</a></li>
+							<li id="yearl1516"> <img src="images/dot-category.svg"> <a>2015 and 2016</a></li>
+							<li id="yearlAll"> <img src="images/dot-category.svg"> <a>all year</a></li>
 						</ul>
 					</div>
 				</div>
@@ -362,7 +362,7 @@
 	<div class="bleed intro">
 		<div class="flex container">
 			<div class="col-10 left-1 right-1 center introduction">
-				<img src="/offf/images/offf-logo-darkest-saphire.svg" alt="offf-logo" style="width:150px" src="http://www.offf.ws/" target="_blank">
+				<a href="http://www.offf.ws/" target="_blank"><img src="images/offf-logo-darkest-saphire.svg" alt="offf-logo" style="width:150px"></a>
 				<h2>OFFF is a three-day festival annually hosting innovative, creative and international speakers in Barcelona.</h2>
 			</div>
 		</div>
