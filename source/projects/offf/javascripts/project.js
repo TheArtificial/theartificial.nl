@@ -55,12 +55,23 @@ function trimLinks(links, nodeIds) {
   return results;
 }
 
+// assign coords near center
+function homeNodes(nodes) {
+  nodes.forEach(function(node){
+    node.x = width - (width/4) - (Math.random() * width/2 );
+    node.y = height - (height/4) - (Math.random() * height/2 );
+  });
+}
+
 // load and tick the layout, then draw all the things
 function draw() {
 
   // get them from the loaded graph
   var allNodes = graph.nodes.slice(); // slice forces a copy
       rawLinks = graph.links.slice();
+
+  homeNodes(allNodes);
+
   // we have to find nodes ourself, because d3.force.links expects objects or indexes.
   var allLinks = rawLinks.map(function(link) {
     var source = allNodes.find(function(node) { return node.id === link.source; });

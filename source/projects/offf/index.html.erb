@@ -201,7 +201,8 @@
 			// $(".legendl").hide();
 			// $(legendcat).show();
 			d3.json(source, function(error, json) {
-				graph = json; draw();
+				graph = json;
+				draw();
 				// console.log("this is my option", dropdownl.node().options[dropdownl.node().selectedIndex]);
 				// console.log("this is my first option", dropdownl.node().options[dropdownl.node().selectedIndex].value);
 				// console.log("this is my second option", dropdownl.node().options[dropdownl.node().selectedIndex].dataset.legendcat);
