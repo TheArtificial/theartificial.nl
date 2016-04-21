@@ -119,14 +119,10 @@ function draw() {
     var source = allNodes.find(function(node) { return node.id === link.source; });
     var target = allNodes.find(function(node) { return node.id === link.target; });
     return {source: source, target: target, stroke: link.stroke}; });
-  // console.log("allLinks", allLinks);
-  // console.log("rawLinks", rawLinks);
-  // console.log("linkSelection", linkSelection);
 
   var filteredNodes = allNodes.filter(filterNode),
       nodeIds = filteredNodes.map(function(node){ return node.id }),
       filteredLinks = trimLinks(allLinks, nodeIds);
-      // console.log("Filtered links", allLinks, filteredLinks, graph);
 
   // start the layout ticking
   force
@@ -177,20 +173,11 @@ function draw() {
 
   // remove old nodes
   nodeSelection.exit().remove();
-  // console.log("nodeSelected", nodeSelected);
-
-
-    // console.log('includeGroupstatus', includeGroupstatus);
-    // console.log('includeGroupcontinents', includeGroupcontinents);
-    // console.log('node.groupcontinent', node.groupcontinent);
-    // console.log('matchesGroupcontinents', matchesGroupcontinents);
 
   // get the id name and number of the selected link to color accordingly the selected dots
   var dropdownr = d3.select("#pickr");
   var colorid = dropdownr.node().options[dropdownr.node().selectedIndex].value;
   var colornumber = dropdownr.node().selectedIndex;
-  // console.log("this is my colorid", dropdownr.node().options[dropdownr.node().selectedIndex]);
-  // console.log("this is my colornumber", colornumber);
 
   // the colouring code throws error because it is looking for .groupsomething data in the category nodes?
   if (colornumber == 1) {
