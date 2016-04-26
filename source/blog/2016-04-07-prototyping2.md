@@ -8,16 +8,16 @@ published: false
 
 ![](2016-04-07-prototyping2/introduction.png)
 
-As Paul Gubbay, vice president of Creative Cloud product management at Adobe, puts it (1) “Designers have been waiting for the right UX tool to simplify app and web experience design.” As we mentioned [**in Selecting the optimal prototyping tool (part 1)**](http://theartificial.nl/blog/2015/11/23/prototyping.html), when it comes to prototyping, there is not (yet) one right tool, that unanimously reaches designers’ hearts. Indeed each prototyping tool was born in a peculiar environment and developed with a specific angle. Before picking a tool, you should determine your prototyping goals. You may not set your mind on the same tool if you are trying to clarify an interaction model or to focus on presenting the product’s animation.
+As Paul Gubbay, vice president of Creative Cloud product management at Adobe, puts it (1) “Designers have been waiting for the right UX tool to simplify app and web experience design.” As we mentioned in [**Selecting the optimal prototyping tool (part 1)**](http://theartificial.nl/blog/2015/11/23/prototyping.html), when it comes to prototyping, there is not (yet) one right tool, that unanimously reaches designers’ hearts. Indeed each prototyping tool was born in a peculiar environment and developed with a specific angle. Before picking a tool, you should determine your prototyping goals. You might not set your mind on the same tool depending on if you are trying to clarify an interaction model or if you are focusing on presenting the product's animation.
 
-We were beta testers for Adobe Experience Design CC (Preview) and we contributed to their feedback forum. The software aims to create and share interactive prototypes. We were expecting the public release to implement some of testers' requests, Unfortunately, we were very disappointed. We feel it still needs to reach the same level of intricacy that other Adobe software has. We are hoping that the new experience design tool would soon integrate with Adobe Illustrator and Adobe Photoshop to facilitate workflow. While Adobe is seeking for inputs from the creative community to make the product evolve, we felt it was a good time to get a closer look at a second set of prototyping tools.
+We were beta testers for Adobe Experience Design CC (Preview) and we contributed to their feedback forum. The software aims to create and share interactive prototypes. We were expecting the public release to implement some of testers' requests. Unfortunately, we were very disappointed. We feel it still needs to reach the same level of intricacy that other Adobe software have. We are hoping that the new experience design tool will soon integrate with Adobe Illustrator and Adobe Photoshop to facilitate workflow. While Adobe is seeking for input from the creative community to make the product evolve, we felt it was a good time to get a closer look at a second set of prototyping tools.
 
 
 ## Prototyping tools
 
 We compared seven more tools to help guide you to the appropriate tool for your specific challenge.
 
-[![Axure RP](2016-04-07-prototyping2/icon-axure.png)](http://www.axure.com/)| [**Axure RP**](http://www.axure.com/)|prototype application inspired from Miscrosoft Office Suite.
+[![Axure RP](2016-04-07-prototyping2/icon-axure.png)](http://www.axure.com/)| [**Axure RP**](http://www.axure.com/)|prototype application inspired by the Miscrosoft Office Suite.
 [![Figma](2016-04-07-prototyping2/icon-figma.png)](https://www.figma.com/) | [**Figma**](https://www.figma.com/)|collaborative online design tool (Preview released in Dec 2015)
 [![Flinto for Mac](2016-04-07-prototyping2/icon-flinto.png)](https://www.flinto.com/) | [**Flinto for Mac**](https://www.flinto.com/)|prototyping for Sketch users
 [![Hype](2016-04-07-prototyping2/icon-hype.png)](http://tumult.com/hype/)| [**Hype**](http://tumult.com/hype/)|html5 based tool from Tumult
@@ -48,13 +48,13 @@ In all other tools, you can connect individual elements to each other to build i
 
 **Proto.io** uses both pages and states to help you keep your project organised.
 
-In **Flinto** and **Adobe XD (Preview)** to define links and transitions, you drag wires between screens. Those visual connections are an easy way to create a mental image of a short app flow but more complex products may look messy and confusing if lots of interactions are added to the screens. We found that prototyping with **Adobe XD (Preview)** has very little benefit for now because of the limited interactions available. For instance, when prototyping a short [**Huddle**](http://theartificial.nl/huddle/) sequence, the single interaction we were able to perform is switching between screens.
+In **Flinto** and **Adobe XD (Preview)**, to define links and transitions, you drag wires between screens. Those visual connections are an easy way to create a mental image of a short app flow but more complex products may look messy and confusing if lots of interactions are added to the screens. We found that prototyping with **Adobe XD (Preview)** has very little benefit for now because of the limited interactions available. For instance, when prototyping a short [**Huddle**](http://theartificial.nl/huddle/) sequence, the single interaction we were able to perform is switching between screens.
 
 ##### Asset handling
 
 Building a prototype raises assets related questions. Would you like to be able to draw your prototype elements from scratch within the tool or would you rather import your designs from an external software? How often are your assets recurring in your sequence?
 
-On one hand, if you are interested in drawing your elements within the tool, you should consider **Justinmind**, **Proto.io**, **Adobe XD (Preview)** and, above all **Figma (Preview)**. **Figma (Preview)**, a browser-based editor, surprised us with its fast and smooth vector handling. Indeed, it brings a new visions of how drawing and editing paths can be achieved more naturally.
+On one hand, if you are interested in drawing your elements within the tool, you should consider **Justinmind**, **Proto.io**, **Adobe XD (Preview)** and, above all **Figma (Preview)**. **Figma (Preview)**, a browser-based editor, surprised us with its fast and smooth vector handling. Indeed, it brings a new vision of how drawing and editing paths can be achieved more naturally.
 
 On the other hand, if you are used to creating your screens with other software, such as Adobe Illustrator or Sketch, you should have a closer look at **Proto.io**. The tool's seamless drag-and-drop-feature will easily help you import assets. If you are a Sketch addict, **Flinto** is for you. It lets you re-import your Sketch source file and your changes will update automatically! Hooray. Unfortunately for Adobe Illustrator users, there is no such functionality and the copy and paste option results in pixelated images. So you'd better finalize your assets before importing.
 
@@ -85,7 +85,7 @@ Aesthetics details are important to help effectively communicate with developers
 
 In **Figma (Preview)** and **Adobe XD (Preview)**, animations are respectively non-existent and almost non-existent for now, so there is very little to talk about regarding aesthetics details.
 
-On the contrary, some other tools let you simply build animations and transitions. Well, **Axure**, **Proto.io** and **Flinto** animations feel native and you are able to customise or create your own effects. For more experienced users, in **Axure** you can build effects by injecting code. In **Proto.io**, too many animations going on at once can be messy and in **Flinto** some animations cannot occur simultaneously… bummer! But by chance **Flinto** has other values. It lets you chose a name for your custom transition and re-use them in your prototype for consistency. It is very convenient if you’d like the same fancy animation to occur several time in the app.
+On the contrary, some other tools let you simply build animations and transitions. Well, **Axure**, **Proto.io** and **Flinto** animations feel native and you are able to customise or create your own effects. For more experienced users, in **Axure** you can build effects by injecting code. In **Proto.io**, too many animations going on at once can be messy and in **Flinto** some animations cannot occur simultaneously… bummer! But fortunately **Flinto** has other values. It lets you chose a name for your custom transition and re-use them in your prototype for consistency. It is very convenient if you’d like the same fancy animation to occur several time in the app.
 
 As explained above in Interaction overview, **Justinmind** is powerful for building your navigation, but it is not your champion for animations.
 
