@@ -8,16 +8,15 @@ published: false
 
 ![](2016-04-07-prototyping2/introduction.png)
 
-As Paul Gubbay, vice president of Creative Cloud product management at Adobe, puts it (1) “Designers have been waiting for the right UX tool to simplify app and web experience design.” As we mentioned in [**Selecting the optimal prototyping tool (part 1)**](http://theartificial.nl/blog/2015/11/23/prototyping.html), when it comes to prototyping, there is not (yet) one right tool, that unanimously reaches designers’ hearts. Indeed each prototyping tool was born in a peculiar environment and developed with a specific angle. Before picking a tool, you should determine your prototyping goals. You might not set your mind on the same tool depending on if you are trying to clarify an interaction model or if you are focusing on presenting the product's animation.
+As Paul Gubbay, vice president of Creative Cloud product management at Adobe, put it [**“Designers have been waiting for the right UX tool to simplify app and web experience design.”**](http://www.adobe.com/news-room/pressreleases/201603/031416AdobeExperienceDesignPreviewLaunch.html) As we mentioned in [**Selecting the optimal prototyping tool (part 1)**](http://theartificial.nl/blog/2015/11/23/prototyping.html), when it comes to prototyping, there is not (yet) one right tool that unanimously reaches designers’ hearts. Indeed each prototyping tool is born in a particular environment and developed with a specific angle. Before picking a tool, you should determine your prototyping goals. You might choose different tools if you are trying to clarify an interaction model versus focusing on presenting the product's animation.
 
-We were beta testers for Adobe Experience Design CC (Preview) and we contributed to their feedback forum. The software aims to create and share interactive prototypes. We were expecting the public release to implement some of testers' requests. Unfortunately, we were very disappointed. We feel it still needs to reach the same level of intricacy that other Adobe software have. We are hoping that the new experience design tool will soon integrate with Adobe Illustrator and Adobe Photoshop to facilitate workflow. While Adobe is seeking for input from the creative community to make the product evolve, we felt it was a good time to get a closer look at a second set of prototyping tools.
-
+We had the pleasure of being a part of the Adobe XD prerelease program. Seeing the feature requests and conversations of such a vocal design community got us excited to do a follow up on our original post.
 
 ## Prototyping tools
 
 We compared seven more tools to help guide you to the appropriate tool for your specific challenge.
 
-[![Axure RP](2016-04-07-prototyping2/icon-axure.png)](http://www.axure.com/)| [**Axure RP**](http://www.axure.com/)|prototype application inspired by the Miscrosoft Office Suite.
+[![Axure RP](2016-04-07-prototyping2/icon-axure.png)](http://www.axure.com/)| [**Axure RP**](http://www.axure.com/)|prototype application inspired by the Miscrosoft Office Suite
 [![Figma](2016-04-07-prototyping2/icon-figma.png)](https://www.figma.com/) | [**Figma**](https://www.figma.com/)|collaborative online design tool (Preview released in Dec 2015)
 [![Flinto for Mac](2016-04-07-prototyping2/icon-flinto.png)](https://www.flinto.com/) | [**Flinto for Mac**](https://www.flinto.com/)|prototyping for Sketch users
 [![Hype](2016-04-07-prototyping2/icon-hype.png)](http://tumult.com/hype/)| [**Hype**](http://tumult.com/hype/)|html5 based tool from Tumult
@@ -25,34 +24,32 @@ We compared seven more tools to help guide you to the appropriate tool for your 
 [![Proto.io](2016-04-07-prototyping2/icon-protoio.png)](https://proto.io/) | [**Proto.io**](https://proto.io/)|mobile prototyping
 [![Adobe XD](2016-04-07-prototyping2/icon-adobexd.png)](http://www.adobe.com/products/experience-design.html) | [**Adobe XD**](http://www.adobe.com/products/experience-design.html)| Adobe prototyping software (Preview released in March 2016)
 
-[**In Part 1**](http://theartificial.nl/blog/2015/11/23/prototyping.html), we discerned four types of tools: Layer-based, Page-based, Patch-based, and Code-based. It is helpful to have a general idea of what to expect from these interfaces, even if their construction concepts can be mixed together. The trend among the above set of prototyping tools is mainly Page-based interfaces with hints of layers, patches and code.
+[**In Part 1**](http://theartificial.nl/blog/2015/11/23/prototyping.html), we discerned four types of tools: Layer-based, Page-based, Patch-based, and Code-based. It is helpful to have a general idea of what to expect from these interfaces, even if their construction concepts can be mixed together. The above set of prototyping tools are mainly Page-based interfaces with hints of layers, patches, and code.
 
 
 ![Continuum review](2016-04-07-prototyping2/2x2.png)
 
 ## Interaction overview
 
-If the prototyping tool is smoothly handling iterations, intuitively managing assets and lets you easily collaborate with your team, it will probably save you a lot of time.
+If the prototyping tool smoothly handles iterations, intuitively manages assets, and enables easy collaboration with your team, it will probably save you a lot of time. These are the aspects we focused on for our interaction overview.
 
 ![Workflow and Interface](2016-04-07-prototyping2/interaction.gif)
 
 ##### Linking screens
 
-The tools reviewed are all mainly Page-based with the exception of **Hype**, which relies on a more Layer-based interface.
+One of the tool we tested in this round, **Figma (Preview)**, don't allow for the linking of screens. Instead, it focuses on drawing UI rather than prototyping it. We believe that Figma provides a viable alternative to Illustrator or Photoshop, but a lack of integration will hold it back.
 
-**Figma (Preview)** has not implemented interactive prototyping functionalities. If you are looking to create interactions and animations, it is not the right tool for you. We hope they plan on adding interactive functionalities.
+In the other tools we explored, you can connect individual elements to each other to build interactions. **Axure** and **Justinmind** are very powerful for building specific interactions thanks to elaborate condition settings. They are both data-driven prototyping tools. They use variables to create precise and personalized interactions.
 
-In all other tools, you can connect individual elements to each other to build interactions. **Axure** and **Justinmind** are very powerful for building specific interactions thanks to elaborate condition settings. They are both data-driven prototyping tools that use variables.
+**Axure** has the major disadvantage of not showing all of your composition's layers hierarchy. Stacks of animated layers, called dynamic panels, may give you a serious headache to select or to organize.
 
-**Axure** has the major disadvantage of not having a layer panel. Stacks of animated layers, called dynamic panels, may give you a serious headache to select and to organise, especially if you did not meticulously name your elements.
+**Proto.io** uses both pages and states to help you keep your project organized.
 
-**Proto.io** uses both pages and states to help you keep your project organised.
-
-In **Flinto** and **Adobe XD (Preview)**, to define links and transitions, you drag wires between screens. Those visual connections are an easy way to create a mental image of a short app flow but more complex products may look messy and confusing if lots of interactions are added to the screens. We found that prototyping with **Adobe XD (Preview)** has very little benefit for now because of the limited interactions available. For instance, when prototyping a short [**Huddle**](http://theartificial.nl/huddle/) sequence, the single interaction we were able to perform is switching between screens.
+In **Flinto** and **Adobe XD (Preview)**, you drag wires between screens to define links and transitions. These visual connections are an easy way to create a mental image of a short app flow, but more complex products may look messy and confusing if lots of interactions are added to the screens. We found that prototyping with **Adobe XD (Preview)** suffers because of the limited interactions available. For instance, when prototyping a short [**Huddle**](http://theartificial.nl/huddle/) sequence, the single interaction we were able to perform is a slide animation between two screens from left to right.
 
 ##### Asset handling
 
-Building a prototype raises assets related questions. Would you like to be able to draw your prototype elements from scratch within the tool or would you rather import your designs from an external software? How often are your assets recurring in your sequence?
+Building a prototype raises asset-related questions. Would you like to be able to draw your prototype elements from scratch within the tool, or would you rather import your designs from external software? How often are your assets recurring in your sequence?
 
 On one hand, if you are interested in drawing your elements within the tool, you should consider **Justinmind**, **Proto.io**, **Adobe XD (Preview)** and, above all **Figma (Preview)**. **Figma (Preview)**, a browser-based editor, surprised us with its fast and smooth vector handling. Indeed, it brings a new vision of how drawing and editing paths can be achieved more naturally.
 
@@ -115,5 +112,3 @@ What is the point of putting effort into learning a prototyping tool if the prot
 ## Making a decision
 
 To put in a nutshell, as mentioned in [Part 1 of this article](http://theartificial.nl/blog/2015/11/23/prototyping.html), we avoided categorising those seven prototyping tools with a binary vision of  “good vs. bad” or “easy vs. difficult” because they all have strengths that could satisfy different designers' primary objectives for specific projects. This post intended to broaden the scope and draw you a more global image of the tools' capabilities. We hope you have a better idea of which tools you want to play with. If you've found another prototyping tool to love, please share your thoughts with us on [Twitter](https://twitter.com/veryartificial).
-
-(1) [March 14, 2016 - in Adobe Posts Preview Release of New Experience Design Tool](http://www.adobe.com/news-room/pressreleases/201603/031416AdobeExperienceDesignPreviewLaunch.html)
