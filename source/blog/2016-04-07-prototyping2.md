@@ -70,6 +70,8 @@ In **Figma** and **Proto.io**, users that have access to the project are able to
 
 [Download all GIFs in the Interaction overview for comparison.](2016-04-07-prototyping2/InteractionOverview.zip)
 
+
+
 ### The Artificial's pick for an Interaction overview prototype: **Flinto** and **Justinmind**.
 
 ## Aesthetic detail
