@@ -8,7 +8,7 @@ published: false
 
 ![](2016-04-07-prototyping2/introduction.png)
 
-As Paul Gubbay, vice president of Creative Cloud product management at Adobe, put it [**“Designers have been waiting for the right UX tool to simplify app and web experience design.”**](http://www.adobe.com/news-room/pressreleases/201603/031416AdobeExperienceDesignPreviewLaunch.html) As we mentioned in [**Selecting the optimal prototyping tool (part 1)**](http://theartificial.nl/blog/2015/11/23/prototyping.html), when it comes to prototyping, there is not (yet) one right tool that unanimously reaches designers’ hearts. Indeed each prototyping tool is born in a particular environment and developed with a specific angle. Before picking a tool, you should determine your prototyping goals. You might choose different tools if you are trying to clarify an interaction model versus focusing on presenting the product's animation.
+As Paul Gubbay, vice president of Creative Cloud product management at Adobe, [put it](http://www.adobe.com/news-room/pressreleases/201603/031416AdobeExperienceDesignPreviewLaunch.html) “Designers have been waiting for the right UX tool to simplify app and web experience design.” As we mentioned in [**Selecting the optimal prototyping tool (part 1)**](/blog/2015/11/23/prototyping.html), when it comes to prototyping, there is not (yet) one right tool that unanimously reaches designers’ hearts. Indeed each prototyping tool is born in a particular environment and developed with a specific angle. Before picking a tool, you should determine your prototyping goals. You might choose different tools if you are trying to clarify an interaction model versus focusing on presenting the product's animation.
 
 We had the pleasure of being a part of the Adobe XD prerelease program. Seeing the feature requests and conversations of such a vocal design community got us excited to do a follow up on our original post.
 
@@ -24,7 +24,7 @@ We compared seven more tools to help guide you to the appropriate tool for your 
 [![Proto.io](2016-04-07-prototyping2/icon-protoio.png)](https://proto.io/) | [**Proto.io**](https://proto.io/)|mobile prototyping
 [![Adobe XD](2016-04-07-prototyping2/icon-adobexd.png)](http://www.adobe.com/products/experience-design.html) | [**Adobe XD**](http://www.adobe.com/products/experience-design.html)| Adobe prototyping software (Preview released in March 2016)
 
-[**In Part 1**](http://theartificial.nl/blog/2015/11/23/prototyping.html), we discerned four types of tools: Layer-based, Page-based, Patch-based, and Code-based. It is helpful to have a general idea of what to expect from these interfaces, even if their construction concepts can be mixed together. The above set of prototyping tools are mainly Page-based interfaces with hints of layers, patches, and code.
+In [Part 1](/blog/2015/11/23/prototyping.html), we discerned four types of tools: Layer-based, Page-based, Patch-based, and Code-based. It is helpful to have a general idea of what to expect from these interfaces, even if their construction concepts can be mixed together. The above set of prototyping tools are mainly Page-based interfaces with hints of layers, patches, and code.
 
 
 ![Continuum review](2016-04-07-prototyping2/2x2.png)
@@ -45,7 +45,7 @@ In the other tools we explored, you can connect individual elements to each othe
 
 **Proto.io** uses both pages and states to help you keep your project organized.
 
-In **Flinto** and **Adobe XD (Preview)**, you drag wires between screens to define links and transitions. These visual connections are an easy way to create a mental image of a short app flow, but more complex products may look messy and confusing if lots of interactions are added to the screens. We found that prototyping with **Adobe XD (Preview)** suffers because of the limited interactions available. For instance, when prototyping a short [**Huddle**](http://theartificial.nl/huddle/) sequence, the single interaction we were able to perform is a slide animation between two screens from left to right.
+In **Flinto** and **Adobe XD (Preview)**, you drag wires between screens to define links and transitions. These visual connections are an easy way to create a mental image of a short app flow, but more complex products may look messy and confusing if lots of interactions are added to the screens. We found that prototyping with **Adobe XD (Preview)** suffers because of the limited interactions available. For instance, when prototyping a short [**Huddle**](/huddle/) sequence, the single interaction we were able to perform is a slide animation between two screens from left to right.
 
 ##### Asset handling
 
@@ -113,4 +113,4 @@ What is the point of putting effort into learning a prototyping tool if the prot
 
 ## Making a decision
 
-To put it in a nutshell, as mentioned in [Part 1 of this article](http://theartificial.nl/blog/2015/11/23/prototyping.html), we avoided categorizing those seven prototyping tools with a binary vision of  “good vs. bad” or “easy vs. difficult” because they all have strengths that could satisfy different designers' primary objectives for specific projects. This post intends to broaden the scope and draw a more global image of the tools' capabilities. We hope you have a better idea of which tools you want to play with. If you've found another prototyping tool to love, please share your thoughts with us on [Twitter](https://twitter.com/veryartificial).
+To put it in a nutshell, as mentioned in [Part 1 of this article](/blog/2015/11/23/prototyping.html), we avoided categorizing those seven prototyping tools with a binary vision of  “good vs. bad” or “easy vs. difficult” because they all have strengths that could satisfy different designers' primary objectives for specific projects. This post intends to broaden the scope and draw a more global image of the tools' capabilities. We hope you have a better idea of which tools you want to play with. If you've found another prototyping tool to love, please share your thoughts with us on [Twitter](https://twitter.com/veryartificial).
