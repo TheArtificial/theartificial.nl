@@ -37,7 +37,7 @@ If the prototyping tool smoothly handles iterations, intuitively manages assets,
 
 ##### Linking screens
 
-One of the tool we tested in this round, **Figma (Preview)**, don't allow for the linking of screens. Instead, it focuses on drawing UI rather than prototyping it. We believe that Figma provides a viable alternative to Illustrator or Photoshop, but a lack of integration will hold it back.
+One of the tools we tested in this round, **Figma (Preview)**, doesn't allow for the linking of screens. Instead, it focuses on drawing UI rather than prototyping it. We believe that Figma provides a viable alternative to Illustrator or Photoshop, but a lack of integration will hold it back.
 
 In the other tools we explored, you can connect individual elements to each other to build interactions. **Axure** and **Justinmind** are very powerful for building specific interactions thanks to elaborate condition settings. They are both data-driven prototyping tools. They use variables to create precise and personalized interactions.
 
