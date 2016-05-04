@@ -19,7 +19,7 @@ We compared seven more tools to help guide you to the appropriate tool for your 
 [![Axure RP](2016-04-07-prototyping2/icon-axure.png)](http://www.axure.com/)| [**Axure RP**](http://www.axure.com/)|prototype application inspired by the Miscrosoft Office Suite
 [![Figma](2016-04-07-prototyping2/icon-figma.png)](https://www.figma.com/) | [**Figma**](https://www.figma.com/)|collaborative online design tool (Preview released in Dec 2015)
 [![Flinto for Mac](2016-04-07-prototyping2/icon-flinto.png)](https://www.flinto.com/) | [**Flinto for Mac**](https://www.flinto.com/)|prototyping for Sketch users
-[![Hype](2016-04-07-prototyping2/icon-hype.png)](http://tumult.com/hype/)| [**Hype**](http://tumult.com/hype/)|html5 based tool from Tumult
+[![Hype](2016-04-07-prototyping2/icon-hype.png)](http://tumult.com/hype/)| [**Hype**](http://tumult.com/hype/)|HTML5 based tool from Tumult
 [![Justinmind](2016-04-07-prototyping2/icon-justinmind.png)](http://www.justinmind.com/) | [**Justinmind**](http://www.justinmind.com/)|collaborative web and app prototyping
 [![Proto.io](2016-04-07-prototyping2/icon-protoio.png)](https://proto.io/) | [**Proto.io**](https://proto.io/)|mobile prototyping
 [![Adobe XD](2016-04-07-prototyping2/icon-adobexd.png)](http://www.adobe.com/products/experience-design.html) | [**Adobe XD**](http://www.adobe.com/products/experience-design.html)| Adobe prototyping software (Preview released in March 2016)
@@ -51,7 +51,7 @@ In **Flinto** and **Adobe XD (Preview)**, you drag wires between screens to defi
 
 Building a prototype raises asset-related questions. Would you like to be able to draw your prototype elements from scratch within the tool, or would you rather import your designs from external software? How often are your assets recurring in your sequence?
 
-On one hand, if you are interested in drawing your elements within the tool, you should consider **Justinmind**, **Proto.io**, **Adobe XD (Preview)** and, above all **Figma (Preview)**. **Figma (Preview)**, a browser-based editor, surprised us with its fast and smooth vector handling. Indeed, it brings a new vision of how drawing and editing paths can be achieved more naturally. Indeed, **Figma (Preview)** is build on ‘vector networks’ which offer lots of flexibility and control. You can edit paths with new ways of splitting and recombining. Path bending also becomes easier with two possible manipulation: control handles, familiar to adobe user, or direct drag on the curve.
+On one hand, if you are interested in drawing your elements within the tool, you should consider **Justinmind**, **Proto.io**, **Adobe XD (Preview)** and, above all **Figma (Preview)**. **Figma (Preview)**, a browser-based editor, surprised us with its fast and smooth vector handling. Indeed, it brings a new vision of how drawing and editing paths can be achieved more naturally. Indeed, **Figma (Preview)** is buildt on ‘vector networks’ which offer lots of flexibility and control. You can edit paths with new ways of splitting and recombining. Path bending also becomes easier with two possible manipulation: control handles, familiar to adobe user, or direct drag on the curve.
 
 On the other hand, if you are used to creating your screens with other software, such as Adobe Illustrator or Sketch, you should have a closer look at **Proto.io**. The tool's seamless drag-and-drop-feature will easily help you import assets. If you are a Sketch addict, **Flinto** is for you. It lets you re-import your Sketch source file and your changes will update automatically! Hooray. Unfortunately for Adobe Illustrator users, there is no such functionality, and the copy and paste option results in pixelated images. So you'd better finalize your assets before importing.
 
@@ -66,7 +66,7 @@ Building and improving your prototype requires sharing work, collecting feedback
 
 To test your prototype, most tools generate a link that you can share. **Axure** uses a cloud hosting solution called AxShare, but it gives you slow and flickering prototypes. Tools like **Justinmind**, **Flinto**, **Hype**, **Proto.io**, and **Axure** have a free mobile viewer app. You should just keep in mind that some prototypes' viewer apps give smoother results than others. **Justinmind's** viewer is glitchy and inconsistent with the desktop preview.
 
-In **Figma** and **Proto.io**, users that have access to the project are able to add comments and create discussion threads to provide feedback. Some tools are going further by letting you work directly with your team on the same prototype. This is the case for **Axure** and **Justinmind**. **Justinmind** has another special feature of guidelines generation with Microsoft Word, and it supports html5 exports like **Hype**.
+In **Figma** and **Proto.io**, users that have access to the project are able to add comments and create discussion threads to provide feedback. Some tools are going further by letting you work directly with your team on the same prototype. This is the case for **Axure** and **Justinmind**. **Justinmind** has another special feature of guidelines generation with Microsoft Word, and it supports HTML5 exports like **Hype**.
 
 [Download all GIFs in the Interaction overview for comparison.](2016-04-07-prototyping2/InteractionOverview.zip)
 
