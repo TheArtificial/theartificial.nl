@@ -7,6 +7,8 @@ author: carol
 
 ![](2015-11-23-prototyping/introduction.png)
 
+_Update: see [part 2](/blog/2016/05/04/prototyping2.html) for consideration of 7 more tools._
+
 It's important to know your goals with prototyping in order to determine which tool best caters to your needs. Prototypes can be used for clarifying interaction models, demonstrating concepts and functionalities, or presenting the product's animations. Some tools may handle one requisite brilliantly, but lack the functionality to accomplish your targeted goal efficiently.
 
 We compared seven prototyping tools to help guide you to the appropriate tool for your specific challenge.
@@ -114,3 +116,5 @@ A polished and thorough prototype should be able to support all the gestures and
 ## Making a decision
 
 We avoided categorizing these tools into "good vs. bad" or "easy vs. difficult" because they all have strengths and we all have different goals with our prototypes. This comparison was intended to give you a better idea of capabilities, but nothing replaces hands-on experience. All of these tools are either free or have a free trial period, so try a handful out yourself. For our workflow, we have decided to use a combination of Principle and Pixate, at least until we can test out Adobe Comet. If you've found another prototyping tool to love, please share your thoughts with us on [Twitter](https://twitter.com/veryartificial).
+
+_Update: see [part 2](/blog/2016/05/04/prototyping2.html) for consideration of 7 more tools._
