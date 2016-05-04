@@ -66,7 +66,7 @@ With **Origami**, Sketch users can create links to the working file, so updating
 
 [Download all GIFs in the Interaction overview for comparison.](2015-11-23-prototyping/InteractionOverview.zip)
 
-### The Artificial's pick for a Interaction overview prototypes: Principle
+### The Artificial's pick for an Interaction overview prototype: Principle
 
 ## Aesthetic detail
 
