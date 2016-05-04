@@ -5,7 +5,7 @@ tags: prototype, tool, ux, comparison, review, program
 author: ariane
 ---
 
-![](2016-04-07-prototyping2/introduction.png)
+![](2016-05-04-prototyping2/introduction.png)
 
 As Paul Gubbay, vice president of Creative Cloud product management at Adobe, [put it](http://www.adobe.com/news-room/pressreleases/201603/031416AdobeExperienceDesignPreviewLaunch.html) “Designers have been waiting for the right UX tool to simplify app and web experience design.” As we mentioned in [**Selecting the optimal prototyping tool (part 1)**](/blog/2015/11/23/prototyping.html), when it comes to prototyping, there is not (yet) one right tool that unanimously reaches designers’ hearts. Indeed each prototyping tool is born in a particular environment and developed with a specific angle. Before picking a tool, you should determine your prototyping goals. You might choose different tools if you are trying to clarify an interaction model versus focusing on presenting the product's animation.
 
@@ -15,24 +15,24 @@ We had the pleasure of being a part of the Adobe XD prerelease program. Seeing t
 
 We compared seven more tools to help guide you to the appropriate tool for your specific challenge.
 
-[![Axure RP](2016-04-07-prototyping2/icon-axure.png)](http://www.axure.com/)| [**Axure RP**](http://www.axure.com/)|prototype application inspired by the Miscrosoft Office Suite
-[![Figma](2016-04-07-prototyping2/icon-figma.png)](https://www.figma.com/) | [**Figma**](https://www.figma.com/)|collaborative online design tool (Preview released in Dec 2015)
-[![Flinto for Mac](2016-04-07-prototyping2/icon-flinto.png)](https://www.flinto.com/) | [**Flinto for Mac**](https://www.flinto.com/)|prototyping for Sketch users
-[![Hype](2016-04-07-prototyping2/icon-hype.png)](http://tumult.com/hype/)| [**Hype**](http://tumult.com/hype/)|HTML5 based tool from Tumult
-[![Justinmind](2016-04-07-prototyping2/icon-justinmind.png)](http://www.justinmind.com/) | [**Justinmind**](http://www.justinmind.com/)|collaborative web and app prototyping
-[![Proto.io](2016-04-07-prototyping2/icon-protoio.png)](https://proto.io/) | [**Proto.io**](https://proto.io/)|mobile prototyping
-[![Adobe XD](2016-04-07-prototyping2/icon-adobexd.png)](http://www.adobe.com/products/experience-design.html) | [**Adobe XD**](http://www.adobe.com/products/experience-design.html)| Adobe prototyping software (Preview released in March 2016)
+[![Axure RP](2016-05-04-prototyping2/icon-axure.png)](http://www.axure.com/)| [**Axure RP**](http://www.axure.com/)|prototype application inspired by the Miscrosoft Office Suite
+[![Figma](2016-05-04-prototyping2/icon-figma.png)](https://www.figma.com/) | [**Figma**](https://www.figma.com/)|collaborative online design tool (Preview released in Dec 2015)
+[![Flinto for Mac](2016-05-04-prototyping2/icon-flinto.png)](https://www.flinto.com/) | [**Flinto for Mac**](https://www.flinto.com/)|prototyping for Sketch users
+[![Hype](2016-05-04-prototyping2/icon-hype.png)](http://tumult.com/hype/)| [**Hype**](http://tumult.com/hype/)|HTML5 based tool from Tumult
+[![Justinmind](2016-05-04-prototyping2/icon-justinmind.png)](http://www.justinmind.com/) | [**Justinmind**](http://www.justinmind.com/)|collaborative web and app prototyping
+[![Proto.io](2016-05-04-prototyping2/icon-protoio.png)](https://proto.io/) | [**Proto.io**](https://proto.io/)|mobile prototyping
+[![Adobe XD](2016-05-04-prototyping2/icon-adobexd.png)](http://www.adobe.com/products/experience-design.html) | [**Adobe XD**](http://www.adobe.com/products/experience-design.html)| Adobe prototyping software (Preview released in March 2016)
 
 In [Part 1](/blog/2015/11/23/prototyping.html), we discerned four types of tools: layer-based, page-based, patch-based, and code-based. It is helpful to have a general idea of what to expect from these interfaces, even if their construction concepts can be mixed together. The above set of prototyping tools are mainly page-based interfaces with hints of layers, patches, and code.
 
 
-![Continuum review](2016-04-07-prototyping2/2x2.png)
+![Continuum review](2016-05-04-prototyping2/2x2.png)
 
 ## Interaction overview
 
 If the prototyping tool smoothly handles iterations, intuitively manages assets, and enables easy collaboration with your team, it will probably save you a lot of time. These are the aspects we focused on for our interaction overview.
 
-![Workflow and Interface](2016-04-07-prototyping2/interaction.gif)
+![Workflow and Interface](2016-05-04-prototyping2/interaction.gif)
 
 ##### Linking screens
 
@@ -67,7 +67,7 @@ To test your prototype, most tools generate a link that you can share. **Axure**
 
 In **Figma** and **Proto.io**, users that have access to the project are able to add comments and create discussion threads to provide feedback. Some tools are going further by letting you work directly with your team on the same prototype. This is the case for **Axure** and **Justinmind**. **Justinmind** has another special feature of guidelines generation with Microsoft Word, and it supports HTML5 exports like **Hype**.
 
-[Download all GIFs in the Interaction overview for comparison.](2016-04-07-prototyping2/InteractionOverview.zip)
+[Download all GIFs in the Interaction overview for comparison.](2016-05-04-prototyping2/InteractionOverview.zip)
 
 
 
@@ -77,7 +77,7 @@ In **Figma** and **Proto.io**, users that have access to the project are able to
 
 Aesthetics details are important to help effectively communicate with developers or stakeholders. Your app has a unique feeling and you want to convey it through flowing animations, polished effects, and faithful adaptations across several devices and gestures. The tool should help you achieve your ideal prototype without constraining your design too much.
 
-![Transitions and Animations](2016-04-07-prototyping2/aesthetic.gif)
+![Transitions and Animations](2016-05-04-prototyping2/aesthetic.gif)
 
 ##### Animating
 
@@ -106,7 +106,7 @@ You would like your design to smoothly translate from a mobile, to a tablet, to 
 What is the point of putting effort into learning a prototyping tool if the prototype is not interactive? Otherwise you could just use a video editor such as After Effects for more effects possibilities. Instead you want users to be able to test it out, to feel it, to break it, to spot the incoherences, to enjoy the hero moments, and to acknowledge building up sequences. Unfortunately, in **Hype**, basic interactions such as scrolling can only be simulated with an animation. Unlike **Axure**, **Atomic**, **Flinto**, **Hype**, **Proto.io**, and **Adobe XD (Preview)**, which only propose a set of simple gestures, **Justinmind** incorporates some multi-touch gestures like pinch and rotate.
 
 
-[Download all GIFs in Aesthetic detail for comparison.](2016-04-07-prototyping2/AestheticDetails.zip)
+[Download all GIFs in Aesthetic detail for comparison.](2016-05-04-prototyping2/AestheticDetails.zip)
 
 ###The Artificial's picks for an Aesthetic detail prototype: **Axure** and **Hype**.
 
