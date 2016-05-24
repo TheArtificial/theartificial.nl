@@ -1,270 +1,42 @@
-  <div class="flex container">
-    <div class="col-8 right-2 left-2 introduction center">
-      <div class="padded">
-        <h1>Friday Cocktails</h1>
-        <p>On Fridays, we welcome any excuse to practice our mixology
-        skills. Here's a collection of our successes, trials, and
-        errors.</p>
-        <p>Cheers, proost, and enjoy!</p>
-      </div>
-    </div>
+<div class="flex container padded">
+  <div class="col-8 right-2 left-2 introduction center">
+      <h1>Friday Cocktails</h1>
+      <p>On Fridays, we welcome any excuse to practice our mixology
+      skills. Here's a collection of our successes, trials, and
+      errors.</p>
+      <p>Cheers, proost, and enjoy!</p>
   </div>
+</div>
 
-  <div class="container packery">
+<div class="container packery">
+<%
+  # we know this is "cocktails" but let's be formal
+  project_folder = current_page.metadata[:project]
+  # get all HTML files at project root
+  drink_resources = sitemap.resources.select{ |r| r.path[/#{project_folder}\/([^\/]*).html/] }
+  # but then remove anything without a date (like index.html)
+  drink_resources.delete_if{ |r| !r.data.date }
+  # and sort (newest first)
+  drink_resources.sort!{ |x,y| y.data.date <=> x.data.date }
 
+  drink_resources.each_with_index do |drink, i|
+%>
   <div class="col-4 packed">
-    <a href="nutellamartini.html">
+    <% link_to drink do %>
       <div class="card">
         <div class="anchor">
           <div class="preview">
-            <img class="static" alt="Nutella Martini" src="images/png/nutellamartini.png">
-            <img class="animated" src="images/gif/misc_martini.gif">
+            <img class="static" alt="<%= drink.data.name %>" src="<%= "images/png/#{drink.data.glass}.png" %>">
+            <img class="animated" src="<%= "images/gif/#{drink.data.contents}.gif" %>">
           </div>
+
           <div class="details padded center">
-            <h3>May 20, 2016</h3>
-            <h2>Nutella Martini</h2>
+            <h3><%= drink.data.date.strftime('%B %e, %Y') %></h3>
+            <h2><%= drink.data.name %></h2>
           </div>
         </div>
       </div>
-    </a>
+    <% end %>
   </div>
-
-  <div class="col-4 packed">
-    <a href="aperolspritz.html">
-      <div class="card">
-        <div class="anchor">
-          <div class="preview">
-            <img class="static" alt="Aperol Spritz" src="images/png/nederlandseoranje.png">
-            <img class="animated" src="images/gif/champagnemisc_wine.gif">
-          </div>
-          <div class="details padded center">
-            <h3>April 29, 2016</h3>
-            <h2>Aperol Spritz</h2>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-4 packed">
-    <a href="wg.html">
-      <div class="card">
-        <div class="anchor">
-          <div class="preview">
-            <img class="static" alt="W&G" src="images/png/wg.png">
-            <img class="animated" src="images/gif/whiskey_snifter.gif">
-          </div>
-          <div class="details padded center">
-            <h3>April 8, 2016</h3>
-            <h2>W&amp;G</h2>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-4 packed">
-    <a href="pinkparadise.html">
-      <div class="card">
-        <div class="anchor">
-          <div class="preview">
-            <img class="static" alt="Pink Paradise" src="images/png/pinkparadise.png">
-            <img class="animated" src="images/gif/vodka_tonic.gif">
-          </div>
-          <div class="details padded center">
-            <h3>April 1, 2016</h3>
-            <h2>Pink Paradise</h2>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-4 packed">
-    <a href="grapefruittorpedo.html">
-      <div class="card">
-        <div class="anchor">
-          <div class="preview">
-            <img class="static" alt="Grapefruit Torpedo" src="images/png/grapefruittorpedo.png">
-            <img class="animated" src="images/gif/miscchampagne_champagne.gif">
-          </div>
-          <div class="details padded center">
-            <h3>March 24, 2016</h3>
-            <h2>Grapefruit Torpedo</h2>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-4 packed">
-    <a href="mouthwash.html">
-      <div class="card">
-        <div class="anchor">
-          <div class="preview">
-            <img class="static" alt="Mouthwash" src="images/png/mouthwash.png">
-            <img class="animated" src="images/gif/misc_margarita.gif">
-          </div>
-          <div class="details padded center">
-            <h3>March 18, 2016</h3>
-            <h2>Mouthwash</h2>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-4 packed">
-    <a href="manhattan.html">
-      <div class="card">
-        <div class="anchor">
-          <div class="preview">
-            <img class="static" alt="Manhattan" src="images/png/manhattan.png">
-            <img class="animated" src="images/gif/miscwhiskey_martini.gif">
-          </div>
-          <div class="details padded center">
-            <h3>March 11, 2016</h3>
-            <h2>Manhattan</h2>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-4 packed">
-    <a href="hotananaslove.html">
-      <div class="card">
-        <div class="anchor">
-          <div class="preview">
-            <img class="static" alt="Hot Ananas Love" src="images/png/hotananaslove.png">
-            <img class="animated" src="images/gif/vodka_hurricane.gif">
-          </div>
-          <div class="details padded center">
-            <h3>March 4, 2016</h3>
-            <h2>Hot Ananas Love</h2>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-4 packed">
-    <a href="justpeachy.html">
-      <div class="card">
-        <div class="anchor">
-          <div class="preview">
-            <img class="static" alt="Just Peachy" src="images/png/justpeachy.png">
-            <img class="animated" src="images/gif/whiskey_snifter.gif">
-          </div>
-          <div class="details padded center">
-            <h3>Feb 26, 2016</h3>
-            <h2>Just Peachy</h2>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-4 packed">
-    <a href="milkysticks.html">
-      <div class="card">
-        <div class="anchor">
-          <div class="preview">
-            <img class="static" alt="Milky Sticks" src="images/png/milkysticks.png">
-            <img class="animated" src="images/gif/miscrum_lowball.gif">
-          </div>
-          <div class="details padded center">
-            <h3>Feb 19, 2016</h3>
-            <h2>Milky Sticks</h2>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-4 packed">
-    <a href="blossom.html">
-      <div class="card">
-        <div class="anchor">
-          <div class="preview">
-            <img class="static" alt="Blossom 开花 (Kāihuā)" src="images/png/blossom.png">
-            <img class="animated" src="images/gif/miscvodka_coupe.gif">
-          </div>
-          <div class="details padded center">
-            <h3>Feb 12, 2016</h3>
-            <h2>Blossom 开花 (Kāihuā)</h2>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-4 packed">
-    <a href="moscowmule.html">
-      <div class="card">
-        <div class="anchor">
-          <div class="preview">
-            <img class="static" alt="Moscow Mule" src="images/png/moscowmule.png">
-            <img class="animated" src="images/gif/vodka_mug.gif">
-          </div>
-          <div class="details padded center">
-            <h3>Feb 5, 2016</h3>
-            <h2>Moscow Mule</h2>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-  <div class="col-4 packed">
-    <a href="nederlandseoranje.html">
-      <div class="card">
-        <div class="anchor">
-          <div class="preview">
-            <img class="static" alt="Nederlandse Oranje" src="images/png/nederlandseoranje.png">
-            <img class="animated" src="images/gif/champagnemisc_wine.gif">
-          </div>
-          <div class="details padded center">
-            <h3>January 29, 2016</h3>
-            <h2>Nederlandse Oranje</h2>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-    <div class="col-4 packed">
-      <a href="beesknees.html">
-        <div class="card">
-          <div class="anchor">
-            <div class="preview">
-              <img class="static" alt="Bee's Knees" src="images/png/beesknees.png">
-              <img class="animated" src="images/gif/gin_coupe.gif">
-            </div>
-            <div class="details padded center">
-              <h3>January 22, 2016</h3>
-              <h2>Bee's Knees</h2>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-4 packed">
-      <a href="sweetmidnight.html">
-        <div class="card">
-          <div class="anchor">
-            <div class="preview">
-              <img class="static" alt="Sweet Midnight" src="images/png/sweetmidnight.png">
-              <img class="animated" src="images/gif/gin_goblet.gif">
-            </div>
-            <div class="details padded center">
-              <h3>January 8, 2016</h3>
-              <h2>Sweet Midnight</h2>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-
-  </div>
+<% end %>
+</div>
