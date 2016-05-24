@@ -134,3 +134,6 @@ DEPENDENCIES
   middleman (~> 3.4.0)
   middleman-blog
   nokogiri
+
+BUNDLED WITH
+   1.10.3

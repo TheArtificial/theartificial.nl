@@ -1,0 +1,360 @@
+
+<div id="content" class="offf">
+
+	<div class="bleed intro">
+		<div class="flex container">
+			<div class="col-10 left-1 right-1 center introduction">
+				<h1>OFFF visualization</h1>
+				<h5>an experiment by <a href="/people/ariane.html">Ariane Garoff</a></h5>
+				<h2>Artists giving talks at <a href="http://www.offf.ws/" target="_blank">OFFF</a> are represented by dots in this interactive data visualization. Dynamic filters help users understand the conference tendancies. Newcomers may want to find out if the lecturers really match their interests whereas frequent visitors may compare several editions to see if the coming event is as exciting as the previous.</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="bleed blue">
+		<div class="flex container">
+			<div class="col-12 center visualization">
+				<script>
+				  // fetch data and (in the callback) load into the arrays
+				  d3.json("data/industry.json", function(error, json) {
+						graph = json;
+						initialize();
+				    draw();
+				  });
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="bleed blue">
+			<div class="col-12 flex container choices">
+				<div class="col-4 left-1 choicel">
+					<li>
+						Organise artists by
+						<select id="pickl" name="pickl">
+							<option value="selectfilter" disabled="disabled">select filter</option>
+							<option value="data/industry.json" selected value="selected" data-legendcat="#industryl"> industry</option>
+							<option value="data/location.json" data-legendcat="#locationl"> location</option>
+							<option value="data/status.json" data-legendcat="#statusl"> working status</option>
+							<option value="data/year.json" data-legendcat="#yearl"> year(s) of talk</option>
+						</select>​
+					</li>
+					<div id= "industryl" class="legendl" style="display:none">
+						<ul>
+							<li id="industrylPrint"> <img src="images/dot-category.svg"> <a>print</a></li>
+							<li id="industrylMotion"> <img src="images/dot-category.svg"> <a>motion</a></li>
+							<li id="industrylDigital"> <img src="images/dot-category.svg"> <a>digital</a></li>
+							<li id="industrylSound"> <img src="images/dot-category.svg"> <a>sound design</a></li>
+							<li id="industrylProduct"> <img src="images/dot-category.svg"> <a>product design</a></li>
+							<li id="industrylAll"> <img src="images/dot-category.svg"> <a>all industries</a></li>
+						</ul>
+					</div>
+					<div id="locationl" class="legendl" style="display:none">
+						<ul>
+							<li id="locationlAsia"> <img src="images/dot-category.svg"> <a>Asia</a></li>
+							<li id="locationlAustralia"> <img src="images/dot-category.svg"> <a>Australia</a></li>
+							<li id="locationlEurope"> <img src="images/dot-category.svg"> <a>Europe</a></li>
+							<li id="locationlNAmerica"> <img src="images/dot-category.svg"> <a>North America</a></li>
+							<li id="locationlSAmerica"> <img src="images/dot-category.svg"> <a>South America</a></li>
+							<li id="locationlAll"> <img src="images/dot-category.svg"> <a>all continents</a></li>
+						</ul>
+					</div>
+					<div id="statusl" class="legendl" style="display:none">
+						<ul>
+							<li id="statuslIndependant"> <img src="images/dot-category.svg"> <a>independant</a></li>
+							<li id="statuslRepresented"> <img src="images/dot-category.svg"> <a>represented</a></li>
+							<li id="statuslAgency"> <img src="images/dot-category.svg"> <a>agency</a></li>
+							<li id="statuslEponym"> <img src="images/dot-category.svg"> <a>eponym agency</a></li>
+							<li id="statuslCollective"> <img src="images/dot-category.svg"> <a>collective</a></li>
+							<li id="statuslAll"> <img src="images/dot-category.svg"> <a>all status</a></li>
+						</ul>
+					</div>
+					<div id="yearl" class="legendl" style="display:none">
+						<ul>
+							<li id="yearl15"> <img src="images/dot-category.svg"> <a>2015</a></li>
+							<li id="yearl16"> <img src="images/dot-category.svg"> <a>2016</a></li>
+							<li id="yearl1516"> <img src="images/dot-category.svg"> <a>2015 and 2016</a></li>
+							<li id="yearlAll"> <img src="images/dot-category.svg"> <a>all year</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-4 left-7 choicer">
+					<li>
+						Change artists colours by
+						<script type="text/javascript"> </script>
+							<select id="pickr">
+								<option value="allwhite" selected value="selected" disabled="disabled">select filter</option>
+								<option value="allIndustries" data-legendcol="#industryr">industry</option>
+								<option value="allLocations" data-legendcol="#locationr">location</option>
+								<option value="allStatus" data-legendcol="#statusr">working status</option>
+								<option value="allYears" data-legendcol="#yearr"> year(s) of talk</option>
+							</select>
+					</li>
+					<div id= "industryr" class="legendr" style="display:none">
+						<ul>
+							<li id="industryrMulti">
+								<svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>multi disciplinary</a></li>
+							<li id="industryrPrint">
+								<svg class="legendprint" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>print</li> </a>
+							<li id="industryrMotion">
+								<svg class="legendmotion" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>motion</a></li>
+							<li id="industryrDigital">
+								<svg class="legenddigital" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>digital</a></li>
+							<li id="industryrSound">
+								<svg class="legendsound" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>sound design</a></li>
+							<li id="industryrProduct">
+								<svg class="legendproduct" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>product design</a></li>
+							<li id="industryrAll">
+								<svg class="legendprint" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmotion" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legenddigital" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendsound" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendproduct" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>all industries</a></li>
+						</ul>
+					</div>
+					<div id="locationr" class="legendr" style="display:none">
+						<ul>
+							<li id="locationrMulti">
+								<svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>multi location</a></li>
+							<li id="locationrEurope">
+								<svg class="legendeurope" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>Europe</a></li>
+							<li id="locationrNamerica">
+								<svg class="legendnorthamerica" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>North America</a></li>
+							<li id="locationrAsia">
+								<svg class="legendasia" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>Asia</a></li>
+							<li id="locationrSAmerica">
+								<svg class="legendsouthamerica" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>South America</a></li>
+							<li id="locationrAustralia">
+								<svg class="legendaustralia" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>Australia</a></li>
+							<li id="locationrAll">
+								<svg class="legendeurope" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendnorthamerica" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendasia" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendsouthamerica" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendaustralia" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendmulti" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>all locations</a></li>
+						</ul>
+					</div>
+					<div id="statusr" class="legendr" style="display:none">
+						<ul>
+							<li id="statusrAgency">
+								<svg class="legendagency" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>agency</a></li>
+							<li id="statusrIndependant">
+								<svg class="legendindependant" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>independant</a></li>
+							<li id="statusrEponym">
+								<svg class="legendeponym" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>eponym agency</a></li>
+							<li id="statusrRepresented">
+								<svg class="legendrepresented" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>represented</a></li>
+							<li id="statusrCollective">
+								<svg class="legendcollective" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>collective</a></li>
+							<li id="statusrAll">
+								<svg class="legendagency" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendindependant" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendeponym" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendrepresented" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendcollective" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>all status</a></li>
+						</ul>
+					</div>
+					<div id="yearr" class="legendr" style="display:none">
+						<ul>
+							<li id="yearr15">
+								<svg class="legend2015" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>2015</a></li>
+							<li id="yearr16">
+								<svg class="legend2016" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>2016</a></li>
+							<li id="yearr1516">
+								<svg class="legendbothyears" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>2015 and 2016</a></li>
+							<li id="yearrAll">
+								<svg class="legend2015" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legend2016" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg><svg class="legendbothyears" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+								<a>all years</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<script>
+		var dropdownl = d3.select("#pickl");
+		var changesrc = function() {
+			var source = dropdownl.node().options[dropdownl.node().selectedIndex].value;
+			var legendcat = dropdownl.node().options[dropdownl.node().selectedIndex].dataset.legendcat;
+			// $(".legendl").hide();
+			// $(legendcat).show();
+			d3.json(source, function(error, json) {
+				graph = json;
+				draw();
+				// console.log("this is my option", dropdownl.node().options[dropdownl.node().selectedIndex]);
+				// console.log("this is my first option", dropdownl.node().options[dropdownl.node().selectedIndex].value);
+				// console.log("this is my second option", dropdownl.node().options[dropdownl.node().selectedIndex].dataset.legendcat);
+			})
+		}
+
+		var dropdownr = d3.select("#pickr");
+		var changecolor = function() {
+			var legendcol = dropdownr.node().options[dropdownr.node().selectedIndex].dataset.legendcol;
+			$(".legendr").hide();
+			$(legendcol).show();
+
+			$(".legendr").removeClass("nbr");
+			$(legendcol).addClass("nbr");
+		};
+
+		function selectColor () {
+			var pickrVal = $("#pickr").val();
+			console.log("this is my pickrVal", pickrVal);
+
+			if (pickrVal == "allIndustries") {
+				includeGroupindustries = [0,1,2,3,4];
+				draw();
+			}
+			else if (pickrVal == "allLocations") {
+				includeGroupcontinents = [1,2,3,4,5];
+				draw();
+			}
+			else if (pickrVal == "allStatus") {
+				includeGroupstatus = [0,1,2,3,4];
+				draw();
+			}
+			else if (pickrVal == "allYears") {
+				includeGroupyears = [3,4,5];
+				draw();
+			}
+		};
+		// Add a class to the selected link
+		$('.choicer li').click(function() {
+						$('.choicer li').removeClass('selected');
+						$(this).addClass('selected');
+		});
+		// Jquery function. When the dropdown pickr (right) is changed, the function changecolor starts
+		$(function() {
+			$('#pickr').change(function() {
+				// dropdownr.on("changecolor", changecolor)
+				changecolor();
+				selectColor();
+				});
+		});
+		// Jquery function. When the dropdown pickl (left) is changed, the function changesrc starts
+		$(function() {
+			$('#pickl').change(function() {
+				// dropdownl.on("changesrc", changesrc)
+				changesrc();
+				});
+		});
+		// wire up the filters the hard way
+		d3.select("#industryrDigital").on("click", function() {
+			includeGroupindustries = [0];
+			draw();
+		});
+		d3.select("#industryrMotion").on("click", function() {
+			includeGroupindustries = [1];
+			draw();
+		});
+		d3.select("#industryrPrint").on("click", function() {
+			includeGroupindustries = [2];
+			draw();
+		});
+		d3.select("#industryrProduct").on("click", function() {
+			includeGroupindustries = [3];
+			draw();
+		});
+		d3.select("#industryrSound").on("click", function() {
+			includeGroupindustries = [4];
+			draw();
+		});
+		d3.select("#industryrAll").on("click", function() {
+			includeGroupindustries = [0,1,2,3,4];
+			draw();
+		});
+		d3.select("#industryrMulti").on("click", function() {
+			includeGroupindustries = [];
+			draw();
+		});
+		d3.select("#yearr15").on("click", function(d,i) {
+			includeGroupyears = [3];
+			draw();
+		});
+		d3.select("#yearr16").on("click", function() {
+			includeGroupyears = [4];
+			draw();
+		});
+		d3.select("#yearr1516").on("click", function() {
+			includeGroupyears = [5];
+			draw();
+		});
+		d3.select("#yearrAll").on("click", function() {
+			includeGroupyears = [3,4,5];
+			draw();
+		});
+		d3.select("#locationrAsia").on("click", function() {
+			includeGroupcontinents = [1];
+			draw();
+		});
+		d3.select("#locationrAustralia").on("click", function() {
+			includeGroupcontinents = [2];
+			draw();
+		});
+		d3.select("#locationrEurope").on("click", function() {
+			includeGroupcontinents = [3];
+			draw();
+		});
+		d3.select("#locationrNamerica").on("click", function() {
+			includeGroupcontinents = [4];
+			draw();
+		});
+		d3.select("#locationrSAmerica").on("click", function() {
+			includeGroupcontinents = [5];
+			draw();
+		});
+		d3.select("#locationrAll").on("click", function() {
+			includeGroupcontinents = [1,2,3,4,5];
+			draw();
+		});
+		d3.select("#locationrMulti").on("click", function() {
+			includeGroupcontinents = [];
+			draw();
+		});
+		d3.select("#statusrIndependant").on("click", function() {
+			includeGroupstatus = [0];
+			draw();
+		});
+		d3.select("#statusrRepresented").on("click", function() {
+			includeGroupstatus = [1];
+			draw();
+		});
+		d3.select("#statusrAgency").on("click", function() {
+			includeGroupstatus = [2];
+			draw();
+		});
+		d3.select("#statusrEponym").on("click", function() {
+			includeGroupstatus = [3];
+			draw();
+		});
+		d3.select("#statusrCollective").on("click", function() {
+			includeGroupstatus = [4];
+			draw();
+		});
+		d3.select("#statusrAll").on("click", function() {
+			includeGroupstatus = [0,1,2,3,4];
+			draw();
+		});
+	</script>
+
+	<div class="bleed intro">
+		<div class="flex container">
+			<div class="col-10 left-1 right-1 center introduction">
+				<a href="http://www.offf.ws/" target="_blank"><img src="images/offf-logo-darkest-saphire.svg" alt="offf-logo" style="width:150px"></a>
+				<h2>OFFF is a three-day festival annually hosting innovative, creative and international speakers in Barcelona.</h2>
+			</div>
+		</div>
+	</div>
+
+</div>
