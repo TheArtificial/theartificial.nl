@@ -4,12 +4,6 @@
   background-color: #fddbd1;
   width: 100%;
 
-  img {
-    width: 70%;
-    max-width: 500px;
-    max-height: 500px;
-  }
-
   #content {
     padding-bottom: 0;
 
@@ -135,19 +129,58 @@
 
 .card {
   position: relative;
-  height: 600px;
+  height: 480px;
   margin: 0 25px 80px 25px;
 
   .anchor {
     position: absolute;
     bottom: 0;
+    width: 100%;
 
     .preview {
       position: relative;
+      width: 70%;
+      margin: auto;
 
-      .static, .animated {
+      .static {
         position: absolute;
         bottom: 0;
+      }
+
+      .animated {
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        transition: opacity .2s linear;
+      }
+    }
+
+    .details {
+      height: 140px;
+
+      h2 {
+        text-decoration: underline;
+      }
+
+    }
+  }
+}
+
+.local-nav {
+  padding-bottom: 20px;
+  text-align: center;
+
+  .padded {
+    padding: 6px 22px 6px 22px;
+  }
+}
+
+.card:hover {
+  .anchor {
+    .preview {
+      .animated {
+        opacity: 1;
+        transition: opacity .2s linear;
       }
     }
   }
@@ -155,7 +188,7 @@
 
 /*interior page scss*/
 
-.drinkcontainer{
+.drinkcontainer {
   height: 400px;
 
   img {
@@ -185,48 +218,36 @@
     }
   }
 
-
   .introduction {
     margin: 100px 0 60px 0;
+    width: 100%;
 
     p {
         font-size: 1.2em;
     }
   }
 
+  .left {
+    text-align: left;
+  }
+
   .right {
     text-align: right;
   }
 
-  .middle {
-    text-align: center;
-  }
-
   .card {
-    position: relative;
-    height: 600px;
-    margin: 0 25px 80px 25px;
+    height: 480px;
+    margin: 0 5px 80px 5px;
 
     .anchor {
-      position: absolute;
-      bottom: 0;
       width: 100%;
 
       .preview {
         position: relative;
-
-        .static {
-          position: absolute;
-          bottom: 0;
-        }
-
-        .animated {
-          position: absolute;
-          bottom: 0;
-          opacity: 0;
-          transition: opacity .2s linear;
-        }
+        width: 80%;
+        margin: auto;
       }
+
       .details {
         height: 140px;
 
@@ -266,5 +287,11 @@
       bottom: 0;
       width: 70%;
     }
+  }
+}
+
+@media (min-width: 960px) {
+  .card {
+    height: 600px;
   }
 }
