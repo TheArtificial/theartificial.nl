@@ -1,265 +1,269 @@
 @import "_artificial-colors.scss";
-body {
-    background-color: #fddbd1;
-}
 
-.cocktails { 
-    width: 100%;
+.cocktails {
+  background-color: #fddbd1;
+  width: 100%;
 
-    img {
-        width: 70%;
-        max-width: 500px;
-        max-height: 500px;
+  img {
+    width: 70%;
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  #content {
+    padding-bottom: 0;
+
+    a {
+      color: #f14a23;
+      text-decoration: underline;
     }
 
-    #content {
-        background-color: #fddbd1;
-        padding-bottom: 0;
+    a:hover {
+      text-decoration: none;
+    }
 
-        a {
+    p {
+      font-family: "Droid Serif", Georgia, Times, serif;
+      color: #f14a23;
+      font-size: 1em;
+      line-height: 1.6em;
+    }
+
+    h1 {
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      font-style: normal;
+      color: #f14a23;
+      font-size: 3em;
+      line-height: 1em;
+    }
+
+    h2 {
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      color: #f14a23;
+      font-size: 1.8em;
+      line-height: 1.2em;
+      margin-top: 10px;
+    }
+
+    h3 {
+      color: #f14a23;
+      font-size: 1em;
+      font-family: "Droid Serif", Georgia, Times, serif;
+      font-style: normal;
+      font-weight: 300;
+      margin-top: 15px;
+      padding: 0;
+    }
+
+    h4 {
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      color: #f14a23;
+      font-size: .9em;
+    }
+  }
+
+  #header {
+    background-color: #fddbd1;
+
+    .topbar {
+      border-top-color: #f14a23;
+    }
+
+    .flex {
+      border-bottom-color: transparent;
+    }
+
+    #logo {
+      color: #f14a23;
+    }
+
+    #nav-primary {
+      ul {
+        li {
+          a {
+            font-weight: bold;
             color: #f14a23;
-            text-decoration: underline;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        p {
-            font-family: "Droid Serif", Georgia, Times, serif;
-            color: #f14a23;
-            font-size: 1em;
-            line-height: 1.6em;
-        }
-
-        h1 {
-            font-family: "Open Sans", Helvetica, Arial, sans-serif;
-            font-style: normal;
-            color: #f14a23;
-            font-size: 3em;
-            line-height: 1em;
-        }
-
-        h2 {
-            font-family: "Open Sans", Helvetica, Arial, sans-serif;
-            color: #f14a23;
-            font-size: 1.8em;
-            line-height: 1.2em;
-            margin-top: 10px;
-        }
-
-        h3 {
-            color: #f14a23;
-            font-size: 1em;
-            font-family: "Droid Serif", Georgia, Times, serif;
-            font-style: normal;
-            font-weight: 300;
-            margin-top: 15px;
-            padding: 0;
-        }
-
-        h4 {
-            font-family: "Open Sans", Helvetica, Arial, sans-serif;
-            color: #f14a23;
-            font-size: .9em;
-        }
-    } /*end content div*/
-
-    #header {
-        background-color: #fddbd1;
-            .topbar {
-                border-top-color: #f14a23;
-            }
-
-        .flex {
-            border-bottom-color: transparent;
-        }
-
-        #logo {
-            color: #f14a23;
-        }
-
-        #nav-primary {
-            ul {
-                li {
-                    a {
-                        font-weight: bold;
-                        color: #f14a23;
-                    }
-                    a:hover {
-                        color: $white;
-                    }
-                }
-                li.active a {
-                    color: #f14a23;
-                }
-            }
-        }
-    } /*end header div*/
-
-    #footer {
-        background-color: #f14a23;
-            .flex, #about, #promo {
-                border-top-color: transparent;
-            }
-
-        p {
+          }
+          a:hover {
             color: $white;
+          }
         }
-
-        a {
-            color: #fddbd1;
+        li.active a {
+          color: #f14a23;
         }
+      }
+    }
+  }
 
-        a:hover {
-            color: #fddbd1;
-        }
+  #footer {
+    background-color: #f14a23;
 
-        h3 {
-            color:#ffffff;
-        }
-    } /*end footer div*/
+    .flex, #about, #promo {
+      border-top-color: transparent;
+    }
 
-.rating {
+    p {
+      color: $white;
+    }
+
+    a {
+      color: #fddbd1;
+    }
+
+    a:hover {
+      color: #fddbd1;
+    }
+
+    h3 {
+      color:#ffffff;
+    }
+  }
+
+  .rating {
     width: 100px;
     margin: 10px 0 10px;
+  }
 }
-
-} /*end cocktails over-ride div*/
 
 .introduction {
-    margin: 40px 0 40px 0;
+  margin: 40px 0 40px 0;
 
-        p {
-            font-size: 1.2em;
-        }
-}
-
-.cardcontainer {
-    position: relative;
-    height: 600px;
+  p {
+    font-size: 1.2em;
+  }
 }
 
 .card {
-    background-color: transparent;
-    margin: 0 25px 80px 25px;
+  position: relative;
+  height: 600px;
+  margin: 0 25px 80px 25px;
 
-        a.overlaybox {
-            opacity: 1;
-            display: block;
-            position: absolute;
-            top: 0px;
-            width: 78%;
-            margin:10px 0 0 10px;
-        }
-}
+  .anchor {
+    position: absolute;
+    bottom: 0;
 
-.details {
-    position: block;
-    margin-top: -80px;
+    .preview {
+      position: relative;
 
+      .static, .animated {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
 }
 
 /*interior page scss*/
 
 .drinkcontainer{
-    position: relative;
-    height: 400px;
+  height: 400px;
 
-    img {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 }
 
 .recipe {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .name {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 
 /*media queries*/
 
 @media only screen and (min-device-width: 768px) {
-.cocktails {
+  .cocktails {
     img {
-        width: 100%;
+      width: 100%;
     }
 
     #content {
-    padding-bottom: 80px;
+      padding-bottom: 80px;
     }
-}
+  }
 
 
-.introduction {
+  .introduction {
     margin: 100px 0 60px 0;
-        p {
-            font-size: 1.2em;
-        }
-}
 
-.right {
-    text-align: right;
-}
-
-.middle {
-    text-align: center;
-}
-
-.card {
-    position: absolute;
-    bottom:0;
-
-        a.overlaybox {
-            display: block;
-            position: absolute;
-            opacity: 0;
-            transition: opacity .2s linear;
-            width: 100%;
-            margin:0;
-        }
-
-    &:hover a.overlaybox {
-        opacity: 1;
-        transition: opacity .2s linear;
+    p {
+        font-size: 1.2em;
     }
+  }
 
-}
+  .right {
+    text-align: right;
+  }
 
-.details {
-    position: absolute;
-    bottom: 0;
-    width:280px;
-    right:0;
-    left:0;
-    height: 50px;
-}
+  .middle {
+    text-align: center;
+  }
 
-.name {
+  .card {
+    position: relative;
+    height: 600px;
+    margin: 0 25px 80px 25px;
+
+    .anchor {
+      position: absolute;
+      bottom: 0;
+
+      .preview {
+        position: relative;
+
+        .static {
+          position: absolute;
+          bottom: 0;
+        }
+
+        .animated {
+          position: absolute;
+          bottom: 0;
+          opacity: 0;
+          transition: opacity .2s linear;
+        }
+      }
+      .details {
+        height: 140px;
+
+        h2 {
+          text-decoration: underline;
+        }
+
+      }
+    }
+  }
+
+  .card:hover {
+    .anchor {
+      .preview {
+        .animated {
+          opacity: 1;
+          transition: opacity .2s linear;
+        }
+      }      
+    }
+  }
+
+  .name {
     margin-top: 40px;
-}
+  }
 
-.recipe {
+  .recipe {
     padding-bottom: 100px;
-}
+  }
 
-.drinkcontainer{
+  .drinkcontainer{
     position: relative;
     height: 450px;
 
-    img {
-        width: 70%;
+    img.drink {
+      position: absolute;
+      bottom: 0;
+      width: 70%;
     }
+  }
 }
-
-.drink{
-    position: absolute;
-    bottom:0;
-}
-
-/*@media (min-width: 960px) {}*/
-
-} /*end media queries*/
