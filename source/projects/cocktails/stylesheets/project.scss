@@ -16,33 +16,44 @@
       text-decoration: none;
     }
 
-    p {
-      font-family: "Droid Serif", Georgia, Times, serif;
+    p, h1, h2, h3, h4, li {
       color: #f14a23;
-      font-size: 1em;
-      line-height: 1.6em;
+    }
+
+    p, h3, li {
+      font-family: "Droid Serif", Georgia, Times, serif;
+
+    }
+
+    h1, h2, h4 {
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    }
+
+
+    p, li {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    ul {
+      padding-left: 0;
+      padding-bottom: 20px;
     }
 
     h1 {
-      font-family: "Open Sans", Helvetica, Arial, sans-serif;
       font-style: normal;
-      color: #f14a23;
-      font-size: 3em;
-      line-height: 1em;
+      font-size: 48px;
+      line-height: 48px;
     }
 
     h2 {
-      font-family: "Open Sans", Helvetica, Arial, sans-serif;
-      color: #f14a23;
-      font-size: 1.8em;
-      line-height: 1.2em;
+      font-size: 28px;
+      line-height: 34px;
       margin-top: 10px;
     }
 
     h3 {
-      color: #f14a23;
-      font-size: 1em;
-      font-family: "Droid Serif", Georgia, Times, serif;
+      font-size: 16px;
       font-style: normal;
       font-weight: 300;
       margin-top: 15px;
@@ -50,9 +61,7 @@
     }
 
     h4 {
-      font-family: "Open Sans", Helvetica, Arial, sans-serif;
-      color: #f14a23;
-      font-size: .9em;
+      font-size: 14px;
     }
   }
 
