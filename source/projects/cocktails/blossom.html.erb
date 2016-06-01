@@ -1,12 +1,11 @@
-<div class="flex container cocktails" id="content">
-<div class="flex container">
-    <div class="col-10 left-1 right-1 center name">
-        <div class="padded">
-            <h3>February 12, 2016</h3>
-            <h1>Blossom 开花 (Kāihuā)</h1>
-        </div>
-    </div>
-</div>
+---
+name: Blossom 开花 (Kāihuā)
+date: 2016-02-12
+glass: blossom
+contents: miscvodka_coupe
+---
+<%= partial 'drink_header' %>
+
 <div class="flex container padded-bottom recipe">
     <div class="col-6">
         <div class="padded drinkcontainer"><img alt="Blossom 开花 (Kāihuā)"
@@ -24,23 +23,5 @@
         </div>
     </div>
 </div>
-<div class="flex container">
-    <div class="col-4">
-        <div class="padded">
-            <a href="milkysticks.html">
-            <h4>Newer cocktail</h4></a>
-        </div>
-    </div>
-    <div class="col-4 middle">
-        <div class="padded">
-            <a href="index.html">
-            <h4>Overview</h4></a>
-        </div>
-    </div>
-    <div class="col-4 right">
-        <div class="padded">
-            <a href="moscowmule.html">
-            <h4>Older cocktail</h4></a>
-        </div>
-    </div>
-</div>
+
+<%= partial 'drink_footer' %>

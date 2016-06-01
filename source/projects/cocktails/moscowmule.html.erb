@@ -1,12 +1,11 @@
-<div class="flex container cocktails" id="content">
-<div class="flex container">
-    <div class="col-10 left-1 right-1 center name">
-        <div class="padded">
-            <h3>February 5, 2016</h3>
-            <h1>Moscow Mule</h1>
-        </div>
-    </div>
-</div>
+---
+name: Moscow Mule
+date: 2016-02-05
+glass: moscowmule
+contents: vodka_mug
+---
+<%= partial 'drink_header' %>
+
 <div class="flex container padded-bottom recipe">
     <div class="col-6">
         <div class="padded drinkcontainer"><img alt="Moscow Mule"
@@ -26,23 +25,5 @@
         </div>
     </div>
 </div>
-<div class="flex container">
-    <div class="col-4">
-        <div class="padded">
-            <a href="blossom.html">
-            <h4>Newer cocktail</h4></a>
-        </div>
-    </div>
-    <div class="col-4 middle">
-        <div class="padded">
-            <a href="index.html">
-            <h4>Overview</h4></a>
-        </div>
-    </div>
-    <div class="col-4 right">
-        <div class="padded">
-            <a href="nederlandseoranje.html">
-            <h4>Older cocktail</h4></a>
-        </div>
-    </div>
-</div>
+
+<%= partial 'drink_footer' %>
