@@ -1,12 +1,11 @@
-<div class="flex container cocktails" id="content">
-<div class="flex container">
-    <div class="col-10 left-1 right-1 center name">
-        <div class="padded">
-            <h3>March 4, 2016</h3>
-            <h1>Hot Ananas Love</h1>
-        </div>
-    </div>
-</div>
+---
+name: Hot Ananas Love
+date: 2016-03-04
+glass: hotananaslove
+contents: vodka_hurricane
+---
+<%= partial 'drink_header' %>
+
 <div class="flex container padded-bottom recipe">
     <div class="col-6">
         <div class="padded drinkcontainer"><img alt="Hot Ananas Love"
@@ -24,23 +23,5 @@
         </div>
     </div>
 </div>
-<div class="flex container">
-    <div class="col-4">
-        <div class="padded">
-            <a href="manhattan.html">
-            <h4>Newer cocktail</h4></a>
-        </div>
-    </div>
-    <div class="col-4 middle">
-        <div class="padded">
-            <a href="index.html">
-            <h4>Overview</h4></a>
-        </div>
-    </div>
-    <div class="col-4 right">
-        <div class="padded">
-            <a href="justpeachy.html">
-            <h4>Older cocktail</h4></a>
-        </div>
-    </div>
-</div>
+
+<%= partial 'drink_footer' %>

@@ -1,12 +1,11 @@
-<div class="flex container cocktails" id="content">
-<div class="flex container">
-    <div class="col-10 left-1 right-1 center name">
-        <div class="padded">
-            <h3>January 22, 2016</h3>
-            <h1>Bee's Knees</h1>
-        </div>
-    </div>
-</div>
+---
+name: Bee's Knees
+date: 2016-01-22
+glass: beesknees
+contents: gin_coupe
+---
+<%= partial 'drink_header' %>
+
 <div class="flex container padded-bottom recipe">
     <div class="col-6">
         <div class="padded drinkcontainer"><img alt="Bee's Knees"
@@ -26,23 +25,5 @@
         </div>
     </div>
 </div>
-<div class="flex container">
-    <div class="col-4">
-        <div class="padded">
-            <a href="nederlandseoranje.html">
-            <h4>Newer cocktail</h4></a>
-        </div>
-    </div>
-    <div class="col-4 middle">
-        <div class="padded">
-            <a href="index.html">
-            <h4>Overview</h4></a>
-        </div>
-    </div>
-    <div class="col-4 right">
-        <div class="padded">
-            <a href="sweetmidnight.html">
-            <h4>Older cocktail</h4></a>
-        </div>
-    </div>
-</div>
+
+<%= partial 'drink_footer' %>
