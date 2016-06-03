@@ -166,11 +166,20 @@
 
     .details {
       height: 140px;
-
       h2 {
         text-decoration: underline;
       }
+    }
+  }
 
+  &:hover {
+    .anchor {
+      .preview {
+        .animated {
+          opacity: 1;
+          transition: opacity .2s linear;
+        }
+      }
     }
   }
 }
@@ -181,17 +190,6 @@
 
   .padded {
     padding: 6px 22px 6px 22px;
-  }
-}
-
-.card:hover {
-  .anchor {
-    .preview {
-      .animated {
-        opacity: 1;
-        transition: opacity .2s linear;
-      }
-    }
   }
 }
 
@@ -249,32 +247,8 @@
     margin: 0 5px 80px 5px;
 
     .anchor {
-      width: 100%;
-
       .preview {
-        position: relative;
         width: 80%;
-        margin: auto;
-      }
-
-      .details {
-        height: 140px;
-
-        h2 {
-          text-decoration: underline;
-        }
-
-      }
-    }
-  }
-
-  .card:hover {
-    .anchor {
-      .preview {
-        .animated {
-          opacity: 1;
-          transition: opacity .2s linear;
-        }
       }
     }
   }
