@@ -16,7 +16,7 @@ We decided to celebrate by going back in time to Madison Avenue in the 1960s. Th
 
 # Eats and Drinks
 
-No Artificial party would be complete without a beautiful and delicious food and drink. For our third birthday, we created a cocktail for each of us, pre-mixed for easy consumption. As a takeaway, we created a recipe book for anyone wanting to recreate our concoctions at home. If you forgot to grab one, the recipes are below!
+No Artificial party would be complete without beautiful and delicious food and drink. For our third birthday, we created a cocktail for each of us, pre-mixed for easy consumption. As a takeaway, we created a recipe book for anyone wanting to recreate our concoctions at home. If you forgot to grab one, the recipes are below!
 
 [![Mixology](2016-08-09-thirdbirthday/mixology.png)](2016-08-09-thirdbirthday/mixology.png)
 [![Drinks](2016-08-09-thirdbirthday/food.jpg)](2016-08-09-thirdbirthday/food.jpg)
