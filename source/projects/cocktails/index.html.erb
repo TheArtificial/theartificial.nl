@@ -16,8 +16,7 @@
   drink_resources = sitemap.resources.select{ |r| r.path[/#{project_folder}\/([^\/]*).html/] }
   # but then remove anything without a date (like index.html)
   drink_resources.delete_if{ |r| !r.data.date }
-  # and sort (newest first)
-  drink_resources.sort!{ |x,y| y.data.date <=> x.data.date }
+  drink_resources.sort_by!{ |r| [r.data.date, r.data.name] }.reverse!
 
   drink_resources.each_with_index do |drink, i|
 %>
