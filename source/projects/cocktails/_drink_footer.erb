@@ -1,11 +1,12 @@
 <%
   this_date = current_page.data.date
+  this_name = current_page.data.name
   project_folder = current_page.metadata[:project]
   drink_resources = sitemap.resources.select{ |r| r.path[/#{project_folder}\/([^\/]*)/] && r.data.date }
-  older_drinks = drink_resources.select{ |r| r.data.date < this_date }
-  next_drink = older_drinks.max_by{ |r| r.data.date }
-  younger_drinks = drink_resources.select{ |r| r.data.date > this_date }
-  prev_drink = younger_drinks.min_by{ |r| r.data.date }
+  older_drinks = drink_resources.select{ |r| (r.data.date <= this_date) && (r.data.date == this_date ? r.data.name < this_name : true) }
+  next_drink = older_drinks.max_by{ |r| [r.data.date, r.data.name] }
+  younger_drinks = drink_resources.select{ |r| (r.data.date >= this_date) && (r.data.date == this_date ? r.data.name > this_name : true) }
+  prev_drink = younger_drinks.min_by{ |r| [r.data.date, r.data.name] }
 %>
 
 <div class="flex container local-nav">
