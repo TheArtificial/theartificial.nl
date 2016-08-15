@@ -1,0 +1,80 @@
+@import "_artificial-colors.scss";
+
+.ftfy {
+  background-color: $grape;
+  background: linear-gradient(to top right, $sapphire, $grape, $tulip);
+
+  h1, h2 {
+    font-family: "Droid Serif", Georgia, Times, serif;
+  }
+
+  h3, h4 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  }
+
+  h1 {
+    font-style: normal;
+    font-size: 80px;
+  }
+
+  h2 {
+    font-style: normal;
+    font-size: 48px;
+    padding-bottom: 40px;
+  }
+
+  h3 {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  h1, h4 {
+    color: $white;
+    text-align: center;
+  }
+
+  #title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .fixes {
+    padding-bottom: 80px;
+  }
+
+  .preview {
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .overlay {
+    padding: 15px;
+    background-color: $white;
+    h3, p {
+      padding-bottom: 0;
+    }
+  }
+
+  #footer {
+    background-color: transparent;
+    .flex.container {
+
+      border-top-color: $dark-sapphire;
+    }
+  }
+
+  .white {
+    background-color: $white;
+    color: $cool-grey-90;
+  }
+  
+  .dark {
+    background-color: $cool-grey-90;
+    color: $white;
+  }
+}
