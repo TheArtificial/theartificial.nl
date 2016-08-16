@@ -327,6 +327,10 @@ svg *.content{ fill: $cool-grey-40; }
 	color: $cool-grey-90;
 }
 
+.dark-fill *, .dark-fill g * {
+	fill: $cool-grey-90;
+}
+
 .darkest-grey {
 	background-color: $cool-grey-90;
 }
@@ -355,10 +359,6 @@ svg *.content{ fill: $cool-grey-40; }
 	a {
 		color: white;
 	}
-}
-
-svg *.about-logo {
-	fill: $cool-grey-90;
 }
 
 .section {
