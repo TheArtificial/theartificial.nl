@@ -69,6 +69,24 @@ helpers do
     end
   end
 
+  def link_to_person(username, options = {})
+    if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
+      return link_to(person_page.data.title, person_page, options)
+    else
+      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
+      return "<span class=\"error\">#{username}</span>"
+    end
+  end
+
+  def link_to_person_logo(username, options = {})
+    if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
+      return link_to(get_logo_svg(username), person_page, options)
+    else
+      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
+      return "<span class=\"error\">#{username}</span>"
+    end
+  end
+
   def get_logo_svg(name)
     path = "images/logo-#{name}.svg"
     if resource = sitemap.find_resource_by_path(path)
