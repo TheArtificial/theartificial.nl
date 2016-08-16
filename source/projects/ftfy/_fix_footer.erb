@@ -12,7 +12,7 @@
   <div class="col-4">
     <% if prev_fix %>
       <div class="padded">
-        <%= link_to "older fix", prev_fix, {class: 'button', title: prev_fix.data.name} %>
+        <%= link_to "newer fix", prev_fix, {class: 'button', title: prev_fix.data.name} %>
       </div>
     <% end %>
   </div>
@@ -24,7 +24,7 @@
   <div class="col-4">
     <% if next_fix %>
       <div class="padded">
-        <%= link_to "newer fix", next_fix, {class: 'button', title: next_fix.data.name} %>
+        <%= link_to "older fix", next_fix, {class: 'button', title: next_fix.data.name} %>
       </div>
     <% end %>
   </div>
