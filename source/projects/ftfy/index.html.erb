@@ -1,31 +1,43 @@
- <div class="bleed background-gradient">
+<div class="bleed background-gradient">
 
-   <div id="title" class="flex container">
-     <div class="col-8 left-2 right-2">
-       <h1>FTFY</h1>
-       <h4>We thought it could be better, so we Fixed That For You.</h4>
-     </div>
-   </div>
+  <div id="title" class="flex container">
+    <div class="col-8 left-2 right-2">
+      <h1>FTFY</h1>
+      <h4>We thought it could be better, so we Fixed That For You.</h4>
+    </div>
+  </div>
 
+  <div class="flex container fixes">
+    <%
+      # we know this is "ftfy" but let's be formal
+      project_folder = current_page.metadata[:project]
+      # get all HTML files at project root
+      fix_resources = sitemap.resources.select{ |r| r.path[/#{project_folder}\/([^\/]*).html/] }
+      # but then remove anything without a date (like index.html)
+      fix_resources.delete_if{ |r| !r.data.date }
+      fix_resources.sort_by!{ |r| [r.data.date, r.data.name] }.reverse!
 
-   <div class="flex container fixes">
-     <div class="col-3">
-
-       <a href="pokemongo-transfer.html">
-         <div class="card">
-           <div class="padded">
-             <div class="preview">
-               <img src="images/pokemongo-transfer/fixed-01.png" alt="Pokémon Go">
-             </div>
-             <div class="overlay">
-               <h3>Pokémon Go</h3>
-               <p>Transferring Pokémon</p>
-             </div>
-           </div>
+      fix_resources.each_with_index do |fix, i|
+        name = fix.data.name
+        subtitle = fix.data.subtitle
+        thumbnail = "images#{fix.path[/\/.*(?=\..+$)/]}/#{fix.data.thumbnail}"
+    %>
+    <div class="col-3">
+      <% link_to fix do %>
+        <div class="card">
+          <div class="padded">
+            <div class="preview">
+              <img src="<%= thumbnail %>" alt="<%= name %>">
+            </div>
+            <div class="overlay">
+              <h3><%= name %></h3>
+              <p><%= subtitle %></p>
+            </div>
+          </div>
          </div>
-       </a>
-
+       <% end %>
      </div>
+     <% end %>
    </div>
 
 </div>
