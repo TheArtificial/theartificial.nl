@@ -68,13 +68,31 @@
     }
   }
 
-  .white {
-    background-color: $white;
-    color: $cool-grey-90;
+  .partially-padded {
+    padding: 16px 16px 0 16px;
   }
-  
+
+  .before, .after {
+    padding-top: 60px;
+  }
+
+  .etc {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .dark {
     background-color: $cool-grey-90;
     color: $white;
   }
+
+  .white {
+    background-color: $white;
+    color: $cool-grey-90;
+  }
+
+  .lightest-grey {
+    background-color: $cool-grey-10;
+  }
+
 }
