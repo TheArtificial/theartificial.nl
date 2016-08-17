@@ -48,10 +48,6 @@
     text-align: center;
   }
 
-  a {
-    text-decoration: underline;
-  }
-
   #title {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -68,7 +64,7 @@
   }
 
   .preview {
-    height: 200px;
+    height: 240px;
     overflow: hidden;
   }
 
@@ -87,6 +83,11 @@
     padding: 16px 16px 0 16px;
   }
 
+  .before, .after, .etc {
+    a {
+      text-decoration: underline;
+    }
+  }
   .before, .after {
     padding-top: 60px;
   }
@@ -102,6 +103,12 @@
 
     a {
       color: $white;
+    }
+  }
+
+  .white, .lightest-grey {
+    a {
+      color: $cool-grey-90;
     }
   }
 
