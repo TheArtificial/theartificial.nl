@@ -1,8 +1,18 @@
 @import "_artificial-colors.scss";
 
-.ftfy #content {
+.ftfy {
   background-color: $grape;
-  background: linear-gradient(to top right, $sapphire, $grape, $tulip);
+  background: linear-gradient(to top right, $darkest-sapphire, $dark-grape, $dark-tulip);
+}
+
+.ftfy #header {
+  background-color: $dark-grape;
+  .topbar {
+    border-bottom-color: $dark-grape;
+  }
+}
+
+.ftfy #content {
 
   h1, h2 {
     font-family: "Droid Serif", Georgia, Times, serif;
@@ -65,16 +75,11 @@
   .overlay {
     padding: 15px;
     background-color: $white;
+
     h3, p {
       padding-bottom: 0;
-    }
-  }
-
-  #footer {
-    background-color: transparent;
-    .flex.container {
-
-      border-top-color: $dark-sapphire;
+      text-decoration: none;
+      color: $cool-grey-90;
     }
   }
 
@@ -125,4 +130,12 @@
     color: $white;
   }
 
+}
+
+.ftfy #footer {
+  background-color: transparent;
+
+  .flex.container {
+    border-top-color: $darkest-sapphire;
+  }
 }
