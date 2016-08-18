@@ -1,0 +1,87 @@
+---
+name: Pokémon Go
+date: 2016-08-16
+author: shannon
+subtitle: "Transferring Pokémon"
+thumbnail: fixed-01.png
+---
+<%= partial 'fix_header' %>
+<div class="bleed dark">
+  <div class="flex container before">
+    <div class="col-3">
+      <div class="padded">
+        <h2>Before</h2>
+        <p>After accidentally transferring my brand new, beautiful Venomoth, and then seeing that
+          <a href="https://www.reddit.com/r/pokemongo/comments/4s00h3/when_you_accidentally_transfer_your_best_pokemon/">I was not alone</a>, I knew this would be a perfect FTFY example.</p>
+        <p>Overall Pokémon Go is a beautifully designed game. And like most beautifully-designed things, this only makes the flaws stand out more.
+        </p>
+        <p>Enough talk, let’s fix this thing.</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="partially-padded">
+        <img src="images/pokemongo-transfer/original-01.jpg" alt="Pokémon Go">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="partially-padded">
+        <img src="images/pokemongo-transfer/original-02.jpg" alt="Pokémon Go">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="partially-padded">
+        <img src="images/pokemongo-transfer/original-03.jpg" alt="Pokémon Go">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bleed white">
+  <div class="flex container after">
+    <div class="col-12">
+      <div class="padded">
+        <h2>After</h2>
+        <p>The most frustrating aspect of the accidental-transfer-button is that it wasn’t a problem in the beginning. The transfer button was at the bottom of the Pokémon’s card. It wasn’t in a FAB (floating action button) with its opposing action – favorite.</p>
+        <p>In my story, it’s the “favorite” that threw me. On the Pokémon overview screen, the FAB also has “favorite” – only here it serves as a sort rather than an action. I had sorted by favorite and I wanted to sort by something else. I was in autopilot
+          as I sorted by the only other thing in the list.</p>
+        <p>This brings me to another point. This game has so many confirmation overlays, and whether you’re confirming positive or negative, they’re the same!</p>
+        <p>So here’s the fix.</p>
+        <p>We all know hamburgers are terrible. We all know FABs are terrible. Get rid of this frankenstein fabburger and bring back the button. Make the user scroll to transfer. Create a nice big touch target. This solves the lesser problem of accidentally
+          evolving the thing you mean to transfer because your left thumb can’t reach all the way to the fabburger.</p>
+        <p>And then, embrace red. Negative actions like transfering a pokemon should not appear the same as positive actions like leveling up and evolving. Interrupt the user’s autopilot.</p>
+      </div>
+    </div>
+    <div class="flex container">
+      <div class="col-4">
+        <div class="partially-padded">
+          <img src="images/pokemongo-transfer/fixed-01.png" alt="Pokémon Go">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="partially-padded">
+          <img src="images/pokemongo-transfer/fixed-02.png" alt="Pokémon Go">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="partially-padded">
+          <img src="images/pokemongo-transfer/fixed-03.png" alt="Pokémon Go">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bleed lightest-grey">
+  <div class="flex container etc">
+    <div class="col-12">
+      <div class="padded">
+        <h3>Additional notes</h3>
+        <p>You might have noticed a few other changes with the profile. I separated the Pokémon's species from it's nickname and added the IVs – attack, defence, and stamina. Currently these are hidden despite the data existing.</p>
+        <p>I also prioritized actions like level up and evolve (though not visible here since Venomoth is already evolved). These actions would disappear when entering a gym, with the stats pushing up to the top.</p>
+        <p>Another detail, I updated the date to be unmistakable in its format and specified whether the Pokémon was caught, hatched, or evolved.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= partial 'fix_footer' %>

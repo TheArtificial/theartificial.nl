@@ -1,0 +1,88 @@
+---
+name: Apple Health
+date: 2016-08-16
+author: shannon
+subtitle: "Visualization"
+thumbnail: fixed-01.png
+---
+<%= partial 'fix_header' %>
+<div class="bleed dark">
+  <div class="flex container before">
+    <div class="col-4">
+      <div class="padded">
+        <h2>Before</h2>
+        <p>I've been using Apple Health since it came out. It wasn't my first health app – I also use (or used) Fitbit, Withings, Moves, Spire, Argus, etc. You get the idea.</p>
+        <p>The service of Apple Health is great. It keeps my health data together and it keeps it save (encrypted).</p>
+        <p>The product (app), however, is another story entirely.</p>
+        <p>When I see data, I want to explore data. In charts, not lists. This Fix focuses on exploring my steps history.</p>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="partially-padded">
+        <img src="images/applehealth-visualization/original-01.png" alt="Apple Health">
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="partially-padded">
+        <img src="images/applehealth-visualization/original-02.png" alt="Apple Health">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bleed white">
+  <div class="flex container after">
+    <div class="col-12">
+      <div class="padded">
+        <h2>After</h2>
+        <p>First off, I changed the color. The orange-orange gradient was just so…flat.</p>
+        <p>After that bit of artistry, I dove into the data visualization. First step: make the thing scroll through time. I extended the card to the left and right edges and then added a peek of data from the previous time period (here that's a month).</p>
+        <p>This gets into a bit of data fun. For a "month" time period, Apple shows the previous 31 days' of data. I agree with this decision, but also want to show calendar months when the user scrolls. The solution is to snap. There's the current time period (t minus 31 days), and when the user scrolls, the frame snaps to the previous month (July in this example).</p>
+        <p>The peeks provide the scrolling affordance, but the coloring makes them distinctly not part of the relevant data set for calculating things like "Daily average".</p>
+        <p>The "Daily average" is one of my favorite aspects of these charts, and I chose to highlight it in the bars of data. See that invisible line running halfway through the bars? That's the Daily average. I used this to provide relevance to the height of the bars. If a bar is twice the height of the avarge, it's twice the steps. This meant I could also lose that pesky top-label (the 40,000 in the original designs).</p>
+        <p>From here, I wanted to do a quick cleanup of the items below the chart. I grouped the "Show all data" control with the data sources that comprise it (these were previously hiding under "Share Data"). Under this, I grouped settings like "Show on Dashboard" and "Units". Under that, I expose "Share Data" with the apps and services listed at the top level. And finally, below all of that, the other apps that could be connected and the Mayo Clinic's description of the data type. Whew!</p>
+      </div>
+    </div>
+    <div class="flex container">
+      <div class="col-4">
+        <div class="partially-padded">
+          <img src="images/applehealth-visualization/fixed-01.png" alt="Apple Health">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="partially-padded">
+          <img src="images/applehealth-visualization/fixed-02.png" alt="Apple Health">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="partially-padded">
+          <img src="images/applehealth-visualization/fixed-03.png" alt="Apple Health">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bleed lightest-grey">
+  <div class="flex container etc">
+    <div class="col-6">
+      <div class="padded">
+        <h3>Additional notes</h3>
+        <p>One last thought – editing data. Adding and removing data is a real power-user move. Apple knows this and hides it, but at different levels. Add is at the top detail level, while remove can only be done within all data.</p>
+        <p>I prefer keeping my adding and removing together, so I pulled add into this screen. This also enables some feedback, as the user can see their step count incremented after completing the action. Yay!</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="padded">
+        <img src="images/applehealth-visualization/original-03.png" alt="Apple Health">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="padded">
+        <img src="images/applehealth-visualization/fixed-04.png" alt="Apple Health">
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= partial 'fix_footer' %>

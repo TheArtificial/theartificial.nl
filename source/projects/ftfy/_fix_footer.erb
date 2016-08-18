@@ -1,0 +1,33 @@
+<%
+  this_date = current_page.data.date
+  this_name = current_page.data.name
+  project_folder = current_page.metadata[:project]
+  fix_resources = sitemap.resources.select{ |r| r.path[/#{project_folder}\/([^\/]*)/] && r.data.date }
+  older_fixes = fix_resources.select{ |r| (r.data.date <= this_date) && (r.data.date == this_date ? r.data.name < this_name : true) }
+  next_fix = older_fixes.max_by{ |r| [r.data.date, r.data.name] }
+  younger_fixes = fix_resources.select{ |r| (r.data.date >= this_date) && (r.data.date == this_date ? r.data.name > this_name : true) }
+  prev_fix = younger_fixes.min_by{ |r| [r.data.date, r.data.name] }
+%>
+<div class="flex container project-nav">
+  <div class="col-4">
+    <% if prev_fix %>
+      <div class="padded">
+        <%= link_to "newer fix", prev_fix, {class: 'button', title: prev_fix.data.name} %>
+      </div>
+    <% end %>
+  </div>
+  <div class="col-4">
+    <div class="padded">
+      <a class="button" href=".">back to all</a>
+    </div>
+  </div>
+  <div class="col-4">
+    <% if next_fix %>
+      <div class="padded">
+        <%= link_to "older fix", next_fix, {class: 'button', title: next_fix.data.name} %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+</div><%# #content (from _header) %>

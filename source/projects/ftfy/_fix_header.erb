@@ -1,0 +1,11 @@
+<div id="content">
+
+  <div class="bleed dark">
+    <div class="flex container before">
+      <div class="col-8 left-2 right-2">
+        <h1><%= current_page.data.name %></h1>
+        <h4><%= current_page.data.subtitle %> <%= link_to_person(current_page.data.author, {class: 'author'}) %></h4>
+        <!-- <%= current_page.data.date.strftime('%B %e, %Y') %> -->
+      </div>
+    </div>
+  </div>
