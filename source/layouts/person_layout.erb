@@ -23,7 +23,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section">
+	<div class="section bleed darkest-grey">
 	<% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
 	<div class="flex container">
 		<div class="col-12">
