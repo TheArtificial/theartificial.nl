@@ -1,25 +1,23 @@
 ---
-title: "We're Three!"
+title: We're Three!
 category: news
-tags: office, party, celebration, anniversary
+tags: 'office, party, celebration, anniversary'
 author: shannon
 ---
 
 [![Invitation](2016-08-09-thirdbirthday/invitation.jpg)](2016-08-09-thirdbirthday/invitation.jpg)
 
-It's hard to believe that it's been almost a year since we [celebrated](/blog/2015/09/03/openingparty.html) moving into our new space. It's even harder to believe that The Artificial is already three years old. It seems like just yesterday that we were moving into our little garage with a handful of clients and small projects…
+It's hard to believe that it's been almost a year since we [celebrated](/blog/2015/09/03/openingparty.html) moving into our new space. It's even harder to believe that The Artificial is already three years old. It seems like just yesterday that we were moving into our little garage with a handful of clients and small projects...
 
 # Mad Women
 
-We decided to celebrate by going back in time to Madison Avenue in the 1960s. This meant channeling our inner ad-women and creating some Artificial advertisements. Can you guess the original brands?
-[![Ad posters](2016-08-09-thirdbirthday/posters.jpg)](2016-08-09-thirdbirthday/posters.jpg)
+We decided to celebrate by going back in time to Madison Avenue in the 1960s. This meant channeling our inner ad-women and creating some Artificial advertisements. Can you guess the original brands? [![Ad posters](2016-08-09-thirdbirthday/posters.jpg)](2016-08-09-thirdbirthday/posters.jpg)
 
 # Eats and Drinks
 
 No Artificial party would be complete without beautiful and delicious food and drink. For our third birthday, we created a cocktail for each of us, pre-mixed for easy consumption. As a takeaway, we created a recipe book for anyone wanting to recreate our concoctions at home. If you forgot to grab one, the recipes are below!
 
-[![Mixology](2016-08-09-thirdbirthday/mixology.png)](2016-08-09-thirdbirthday/mixology.png)
-[![Drinks](2016-08-09-thirdbirthday/food.jpg)](2016-08-09-thirdbirthday/food.jpg)
+[![Mixology](2016-08-09-thirdbirthday/mixology.png)](2016-08-09-thirdbirthday/mixology.png) [![Drinks](2016-08-09-thirdbirthday/food.jpg)](2016-08-09-thirdbirthday/food.jpg)
 
 # Take Away
 
