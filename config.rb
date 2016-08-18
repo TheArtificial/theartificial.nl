@@ -69,6 +69,15 @@ helpers do
     end
   end
 
+  def person_name(username)
+    if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
+      return person_page.data.title
+    else
+      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
+      return "<span class=\"error\">#{username}</span>"
+    end
+  end
+
   def link_to_person(username, options = {})
     if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
       return link_to(person_page.data.title, person_page, options)
@@ -144,7 +153,7 @@ Time.zone = "Amsterdam"
 # Blog
 activate :blog do |blog|
   blog.prefix = "blog"
-  blog.sources = "{year}-{month}-{day}-{title}"
+  blog.sources = "{year}/{month}-{day}-{title}.html"
   blog.permalink = "{year}/{month}/{day}/{title}.html"
   blog.layout = "blog_layout"
   blog.default_extension = ".md"
