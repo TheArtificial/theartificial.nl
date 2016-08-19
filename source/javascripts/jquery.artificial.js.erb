@@ -6,7 +6,6 @@
 // Everything here is licensed CC-BY: http://creativecommons.org/licenses/by/4.0/
 // Nothing here has been cleaned up for use by others. Please excuse the mess.
 
-//= require_self
-//= require jquery.artificial.utils
-//= require jquery.artificial.logo
-//= require jquery.artificial.parallax
+<%= sitemap.find_resource_by_path("javascripts/jquery.artificial.utils.js").render %>
+<%= sitemap.find_resource_by_path("javascripts/jquery.artificial.logo.js").render %>
+<%= sitemap.find_resource_by_path("javascripts/jquery.artificial.parallax.js").render %>
