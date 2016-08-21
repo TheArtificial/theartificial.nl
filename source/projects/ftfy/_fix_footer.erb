@@ -9,19 +9,19 @@
   prev_fix = younger_fixes.min_by{ |r| [r.data.date, r.data.name] }
 %>
 <div class="flex container project-nav">
-  <div class="col-4">
+  <div class="col-3">
     <% if prev_fix %>
       <div class="padded">
         <%= link_to "newer fix", prev_fix, {class: 'button', title: prev_fix.data.name} %>
       </div>
     <% end %>
   </div>
-  <div class="col-4">
+  <div class="col-3">
     <div class="padded">
       <a class="button" href=".">back to all</a>
     </div>
   </div>
-  <div class="col-4">
+  <div class="col-3">
     <% if next_fix %>
       <div class="padded">
         <%= link_to "older fix", next_fix, {class: 'button', title: next_fix.data.name} %>
