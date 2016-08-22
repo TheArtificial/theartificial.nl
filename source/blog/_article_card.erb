@@ -1,0 +1,21 @@
+<%#
+  article_path = article.path[/.*(?=\..+$)/]
+  if preview = find_image(article_path + '/-preview')
+    preview_url = preview.url
+  else
+    preview_url = "/blog/2014/03/17/test/-preview.png"
+  end
+%>
+<% link_to article do %>
+<div class="col-4 packed">
+	<div class="card blog-preview <%= article.data.category %>">
+		<div class="double-padded">
+			<h5><%= article.data.category %></h5>
+				<h3><%= article.title %></h3>
+        <!-- <%= article.summary(180, '…') %> -->
+			 	<p><%= person_name article.data.author %></p>
+			<p><%= article.date.strftime('%B %e, %Y') %></p>
+		</div>
+	</div>
+</div>
+<% end %>

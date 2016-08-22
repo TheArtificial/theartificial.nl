@@ -1,0 +1,280 @@
+@import "../../../stylesheets/_artificial-colors.scss";
+
+.cocktails {
+  background-color: #fddbd1;
+  width: 100%;
+
+  #content {
+    padding-bottom: 0;
+
+    a {
+      color: #f14a23;
+      text-decoration: underline;
+    }
+
+    a:hover, a:hover * {
+      text-decoration: none;
+    }
+
+    p, h1, h2, h3, h4, li {
+      color: #f14a23;
+    }
+
+    p, h3, li {
+      font-family: "Droid Serif", Georgia, Times, serif;
+
+    }
+
+    h1, h2, h4 {
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    }
+
+
+    p, li {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    ul {
+      padding-left: 0;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      font-style: normal;
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    h2 {
+      font-size: 28px;
+      line-height: 34px;
+      margin-top: 10px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      margin-top: 15px;
+      padding: 0;
+    }
+
+    h4 {
+      font-size: 14px;
+    }
+  }
+
+  #header {
+    background-color: #fddbd1;
+
+    .topbar {
+      border-top-color: #f14a23;
+    }
+
+    .flex {
+      border-bottom-color: transparent;
+    }
+
+    #logo {
+      color: #f14a23;
+    }
+
+    #nav-primary {
+      ul {
+        li {
+          a {
+            font-weight: bold;
+            color: #f14a23;
+          }
+          a:hover {
+            color: $white;
+          }
+        }
+        li.active a {
+          color: #f14a23;
+        }
+      }
+    }
+  }
+
+  #footer {
+    background-color: #f14a23;
+
+    .flex, #about, #promo {
+      border-top-color: transparent;
+    }
+
+    p {
+      color: $white;
+    }
+
+    a {
+      color: #fddbd1;
+    }
+
+    a:hover {
+      color: #fddbd1;
+    }
+
+    h3 {
+      color:#ffffff;
+    }
+  }
+
+  .rating {
+    width: 100px;
+    margin: 10px 0 10px;
+  }
+}
+
+.introduction {
+  margin: 40px 0 40px 0;
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.card {
+  position: relative;
+  height: 480px;
+  margin: 0 25px 80px 25px;
+
+  .anchor {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    .preview {
+      position: relative;
+      width: 70%;
+      margin: auto;
+
+      .static {
+        position: absolute;
+        bottom: 0;
+      }
+
+      .animated {
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        transition: opacity .2s linear;
+      }
+    }
+
+    .details {
+      height: 140px;
+      h2 {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &:hover {
+    .anchor {
+      .preview {
+        .animated {
+          opacity: 1;
+          transition: opacity .2s linear;
+        }
+      }
+    }
+  }
+}
+
+.local-nav {
+  padding-bottom: 20px;
+  text-align: center;
+
+  .padded {
+    padding: 6px 22px 6px 22px;
+  }
+}
+
+/*interior page scss*/
+
+.drinkcontainer {
+  height: 400px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.recipe {
+  padding-bottom: 40px;
+}
+
+.name {
+  margin-top: 25px;
+}
+
+
+/*media queries*/
+
+@media only screen and (min-device-width: 768px) {
+  .cocktails {
+    img {
+      width: 100%;
+    }
+
+    #content {
+      padding-bottom: 80px;
+    }
+  }
+
+  .introduction {
+    margin: 100px 0 60px 0;
+    width: 100%;
+
+    p {
+        font-size: 1.2em;
+    }
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  .card {
+    height: 480px;
+    margin: 0 5px 80px 5px;
+
+    .anchor {
+      .preview {
+        width: 80%;
+      }
+    }
+  }
+
+  .name {
+    margin-top: 40px;
+  }
+
+  .recipe {
+    padding-bottom: 100px;
+  }
+
+  .drinkcontainer{
+    position: relative;
+    height: 450px;
+
+    img.drink {
+      position: absolute;
+      bottom: 0;
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .card {
+    height: 600px;
+  }
+}

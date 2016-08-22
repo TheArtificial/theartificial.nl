@@ -69,6 +69,15 @@ helpers do
     end
   end
 
+  def person_name(username)
+    if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
+      return person_page.data.title
+    else
+      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
+      return "<span class=\"error\">#{username}</span>"
+    end
+  end
+
   def link_to_person(username, options = {})
     if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
       return link_to(person_page.data.title, person_page, options)
@@ -135,15 +144,17 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-page '*.html', layout: 'site_layout'
-
 Time.zone = "Amsterdam"
+
+# serve as HTML by default so we can use the live dev server
+# apparently a blog permalink ending with .html isn't obvious enough
+::Rack::Mime::MIME_TYPES[''] = 'text/html'
 
 # Blog
 activate :blog do |blog|
-  blog.prefix = ""
-  blog.sources = "/blog/{year}-{month}-{day}-{title}.html"
-  blog.permalink = "/blog/{year}/{month}/{day}/{title}.html"
+  blog.prefix = "blog"
+  blog.sources = "{year}/{month}-{day}-{title}.html"
+  blog.permalink = "{year}/{month}/{day}/{title}.html"
   blog.layout = "blog_layout"
   blog.default_extension = ".md"
   blog.summary_separator = /READMORE/
@@ -156,11 +167,7 @@ activate :blog do |blog|
 #  }
 end
 
-# WTF, Middleman?
-page 'blog/*', layout: 'blog_layout'
-page 'blog', layout: 'site_layout'
 page "blog/feed.xml", layout: false
-
 
 set :markdown_engine, :kramdown
 set :markdown, :fenced_code_blocks => true,
