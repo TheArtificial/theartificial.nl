@@ -39,7 +39,7 @@
 	<div class="container packery padded-bottom">
 			<% if articles.length > 0 %>
 	    	<% articles.each do |article, i| %>
-          <%= partial(:article_card, locals: { article: article }) %>
+          <%= partial('blog/article_card', locals: { article: article }) %>
     		<% end %>
     	<% else %>
     		<!-- no blog posts -->

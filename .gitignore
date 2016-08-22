@@ -2,3 +2,4 @@
 build
 .bundle
 .cache
+.sass-cache/

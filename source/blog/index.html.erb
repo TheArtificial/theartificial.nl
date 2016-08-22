@@ -14,7 +14,7 @@ title: The Artificial blog
 
   <div class="container packery padded-bottom">
 		<% page_articles.each do |article| %>
-			<%= partial(:article_card, locals: { article: article }) %>
+			<%= partial('blog/article_card', locals: { article: article }) %>
 		<% end %>
 	</div>
 
