@@ -14,7 +14,7 @@ We’re a design shop in the tech industry. We pride ourselves in our ability to
 
 It was easy to dismiss this as an accident at first, but our recruiting has been so consistently the opposite of what I’ve experienced at past companies, it’s obvious that chance isn’t what sets us apart.
 
-Attracting Female Applicants with Culture
+# Attracting Female Applicants with Culture
 It’s no secret that women find many company cultures [unappealing](https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996#.36hjla5u3), so let me start with some observations around this.
 
 I think of company culture as those things that the employees of a company enjoy together, including and not including the work itself. “Company culture” is usually what makes its way to Instagram and Facebook. Looking at a company’s culture is often like perusing stock photography – it’s all men on leather couches with scotch and cigars or men drinking beers around foosball tables. Sometimes there’s a token woman. She’s probably in HR.
@@ -25,9 +25,7 @@ The Artificial is made of powerful women. We ooze not only with powerful, but al
 
 And it gets better. Seeing a company that has groups of women (not just the token one or two) in relevant positions of power means that we have a place to learn and grow. It hasn’t gone unnoticed by our applicants that The Artificial is women all the way up.
 
-it’s all men on leather couches with scotch and cigars or men drinking beers around foosball tables. Sometimes there’s a token woman. She’s probably in HR.
-
-Recruiting Women by Looking for Feminine Traits
+# Recruiting Women by Looking for Feminine Traits
 What keeps women from making it from the candidate pool into interviews and jobs? In my experience, it’s often the unintentional biases of male recruiters and hiring directors. [This bias](http://www.fastcompany.com/3026889/6-ways-to-scare-off-technical-women-from-your-company) is often present from the job posting to the interview process.
 
 Early in my career, I read countless “entry level” postings that required 3-5 years of experience. Only when I embellished my experience was I able to break through this barrier, but this résumé padding wasn’t natural. I was raised (as many women are) to be humble and curious, two things that recruiters are often blind to when sifting through résumés. Now that I’m on the other side of the recruiting software, I feel the pressure to look for years of experience, but I’m also quick to discount portfolios from applicants who brag about their work or boast about their skillz.
@@ -38,5 +36,5 @@ In screening for these traits, my greatest learning has been to ask a simple but
 
 What’s more surprising is how many men this tactic weeds out, while their female competitors tend to answer this question both more thoughtfully and authentically. And even without the question trick, the cover letters we receive show similar patterns. Our male applicants tend to talk more about themselves and what they can do for you, while our female applicants convey interest in The Artificial while expressing excitement for what they’ll learn.
 
-The Magic
+# The Magic
 We have a team that is almost entirely women. It may be serendipity, but it works because we’re all humble and curious and passionate and supportive. There are exceptions – we have [a man](http://theartificial.nl/people/hans.html) who fits this mold, and we’ve hired women who haven’t. Is it better? I think so.
