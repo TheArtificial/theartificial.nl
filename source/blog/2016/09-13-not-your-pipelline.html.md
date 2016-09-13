@@ -1,9 +1,10 @@
 ---
-title: "Your Pipeline Is Not the Problem"
+title: "Hiring Women Isn't an Accident"
 category: thoughts
 tags: hiring, recruiting, culture, women
 author: shannon
 ---
+
 This year marks my tenth year out of university. It’s also my tenth year as a full-time designer. I’ve been around. I’ve worked in-house. I’ve consulted. I’ve worked in advertising and in UX. I’ve designed social networks for cats and music lovers. I’ve designed game UI and interfaces for financial analysts. I’ve choreographed experiences in retail and predicted tech trends that we’re finally seeing come to life. I’ve worked with clients on three continents.
 
 Then I decided I wanted to do something more than design. I decided to build a great company. For the past three and a half years, I’ve been doing just that. This summer, we decided to get serious about growth, and, after combing through hundreds of résumés, we’ve brought on an intern and two new full time employees. Somehow, unexpectedly and unintentionally, all of our new hires are women.
@@ -37,4 +38,8 @@ In screening for these traits, my greatest learning has been to ask a simple but
 What’s more surprising is how many men this tactic weeds out, while their female competitors tend to answer this question both more thoughtfully and authentically. And even without the question trick, the cover letters we receive show similar patterns. Our male applicants tend to talk more about themselves and what they can do for you, while our female applicants convey interest in The Artificial while expressing excitement for what they’ll learn.
 
 # The Magic
-We have a team that is almost entirely women. It may be serendipity, but it works because we’re all humble and curious and passionate and supportive. There are exceptions &ndash; we have [a man](http://theartificial.nl/people/hans.html) who fits this mold, and we’ve hired women who haven’t. Is it better? I think so.
+We have a team that is almost entirely women. It may be serendipity, but it works because we’re all humble and curious and passionate and supportive. There are exceptions &ndash; we have [a man](/people/hans.html) who fits this mold, and we’ve hired women who haven’t.
+
+The women we hire, often straight out of school, grow into senior responsibilities. As a company and at our individual levels, we develop our practice, we perfect our craft, and we enjoy learning from and teaching each other.
+
+So is it wise for a young company to overlook experience in favor of a few traits? Based on our results, adamantly yes.
