@@ -40,6 +40,6 @@ What’s more surprising is how many men this tactic weeds out, while their fema
 # The Magic
 We have a team that is almost entirely women. It may be serendipity, but it works because we’re all humble and curious and passionate and supportive. There are exceptions &ndash; we have [a man](/people/hans.html) who fits this mold, and we’ve hired women who haven’t.
 
-The women we hire, often straight out of school, grow into senior responsibilities. As a company and at our individual levels, we develop our practice, we perfect our craft, and we enjoy learning from and teaching each other.
+When we hire women, they're often straight out of school, and grow into senior responsibilities. As a company and at our individual levels, we develop our practice, we perfect our craft, and we enjoy learning from and teaching each other.
 
 So is it wise for a young company to overlook experience in favor of a few traits? Based on our results, adamantly yes.
