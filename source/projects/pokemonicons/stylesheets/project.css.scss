@@ -1,0 +1,86 @@
+@import "../../../stylesheets/_artificial-colors.scss";
+.pokemonicons-content {
+
+	.introduction, .end {
+		padding: 80px 0 30px 0;
+
+		h1, h2 h3, p {
+			color: $white;
+		}
+
+		h2 {
+			font-size: 1em;
+			line-height: 1.8em;
+			color: $white;
+			font-weight: normal;
+
+			a {
+				color: $pale-turquoise;
+			}
+			a:hover {
+				color: $turquoise;
+			}
+		}
+	}
+
+	h6 {
+		font-size: .8em;
+		color: $cool-grey-20;
+		margin: 10px 0 5px;
+	}
+
+	img {
+		width: 50%;
+		margin-top: 50px;
+	}
+
+	#casesummary {
+		padding-top: 100px;
+	}
+
+	.bg {
+    background: linear-gradient(90deg, #135E66 50%, #104452 50%);
+	}
+
+	.pokeball {
+		background-image: url("../images/pokeball.png");
+		background-position: bottom center;
+		background-size: cover;
+	}
+
+	.download {
+		padding: 15px 100px 0 100px;
+		color: $cool-grey-90;
+		font-weight: 700;
+		background-color: $white;
+		border-radius: 45px;
+		margin: 0 0 120px;
+	}
+
+	.download:hover {
+		padding: 15px 120px 0 120px;
+		color: $turquoise;
+	}
+
+	.transition {
+	    -webkit-transition: all .2s ease-in-out;
+	    -moz-transition: all .2s ease-in-out;
+	    -o-transition: all .2s ease-in-out;
+	    transition: all .2s ease-in-out;
+	}
+
+	.transition::before {
+	    -webkit-transition: all .2s ease-in-out;
+	    -moz-transition: all .2s ease-in-out;
+	    -o-transition: all .2s ease-in-out;
+	    transition: all .2s ease-in-out;
+	}
+
+	.transition::after {
+	    -webkit-transition: all .2s ease-in-out;
+	    -moz-transition: all .2s ease-in-out;
+	    -o-transition: all .2s ease-in-out;
+	    transition: all .2s ease-in-out;
+	}
+
+}
