@@ -1,257 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="32px" height="32px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-<style type="text/css">
-	.grey_16{fill:#373F3F;}
-	.grey_17{fill:#2B3332;}
-	.grape_05{fill:#D285D2;}
-	.grape_06{fill:#C27BC6;}
-	.grape_07{fill:#B370B9;}
-	.grape_08{fill:#A366AD;}
-	.sand_02{fill:#FDEBBB;}
-	.sand_03{fill:#FAE09F;}
-	.sand_04{fill:#F7D684;}
-	.sand_05{fill:#F0C877;}
-	.st0{fill:#78DF7C;}
-	.st1{fill:#54B668;}
-	.st2{fill:#7A63AD;}
-	.st3{fill:#866EBA;}
-	.st4{fill:#D2E6F3;}
-	.st5{fill:#C1DDEE;}
-	.st6{fill:#E0C193;}
-	.st7{fill:#DBBA8C;}
-	.st8{fill:#7FB8E0;}
-	.st9{fill:#8EC0E0;}
-	.st10{fill:#71B1E1;}
-	.st11{fill:#9FC9E4;}
-	.st12{fill:#FFEAA7;}
-	.st13{fill:#FFE28A;}
-	.st14{fill:#FF6B8B;}
-	.st15{fill:#F4A984;}
-	.st16{fill:#EA9C7A;}
-	.st17{fill:#FEF1C6;}
-	.st18{fill:#E85160;}
-	.st19{fill:#D84459;}
-	.st20{fill:#F7F7F7;}
-	.st21{fill:#FFFFFF;}
-	.st22{fill:#E55D53;}
-	.st23{fill:#FFD400;}
-	.st24{fill:#FF8F00;}
-	.st25{fill:#FF4A00;}
-	.st26{fill:#FFF3D9;}
-	.st27{fill:#FFD96C;}
-	.st28{fill:#9ACC2E;}
-	.st29{fill:#AADB3D;}
-	.st30{fill:#A2D336;}
-	.st31{fill:#93C427;}
-	.st32{fill:#F79654;}
-	.st33{fill:#FFD04D;}
-	.st34{fill:#FCA15E;}
-	.st35{fill:#A9E260;}
-	.st36{fill:#97DB4A;}
-	.st37{fill:#B1E346;}
-	.st38{fill:#FCD8DE;}
-	.st39{fill:#CDA073;}
-	.st40{fill:#C09265;}
-	.st41{fill:#A7794C;}
-	.st42{fill:#96643B;}
-	.st43{fill:#845331;}
-	.st44{fill:#B38658;}
-	.st45{fill:#9E6E43;}
-	.st46{fill:#8D5B36;}
-	.st47{fill:#FBCFD6;}
-	.st48{fill:#FAC4D1;}
-	.st49{fill:#FAB8CD;}
-	.st50{fill:#F9ADC8;}
-	.st51{fill:#F8A1C4;}
-	.st52{fill:#F297BE;}
-	.st53{fill:#EA8BB4;}
-	.st54{fill:#E8BA36;}
-	.st55{fill:#E0B12E;}
-	.st56{fill:#FFC172;}
-	.st57{fill:#FFAD68;}
-	.st58{fill:#FFB76D;}
-	.st59{fill:#6E57A0;}
-	.st60{fill:#675099;}
-	.st61{fill:#F3586F;}
-	.st62{fill:#604893;}
-	.st63{fill:#CBEB6B;}
-	.st64{fill:#4EAC5D;}
-	.st65{fill:#BEE758;}
-	.st66{fill:#6CD275;}
-	.st67{fill:#48A353;}
-	.st68{fill:#60C46F;}
-	.st69{fill:#D9F07D;}
-	.st70{fill:#E6F490;}
-	.st71{fill:#4896C8;}
-	.st72{fill:#4390BF;}
-	.st73{fill:#5CA3D5;}
-	.st74{fill:#529CCF;}
-	.st75{fill:#F7C845;}
-	.st76{fill:#ECCD50;}
-	.st77{fill:#FF8D6E;}
-	.st78{fill:#FF805D;}
-	.st79{fill:#EDEEEE;}
-	.st80{fill:#65A9DC;}
-	.st81{fill:#8BC07A;}
-	.st82{fill:#F0C13E;}
-	.st83{fill:#9A3644;}
-	.st84{fill:#8A323F;}
-	.st85{fill:#945BA0;}
-	.st86{fill:#F6B392;}
-	.st87{fill:#FDEBBB;}
-	.st88{fill:#FAE09F;}
-	.st89{fill:#DBA728;}
-	.st90{fill:#505957;}
-	.st91{fill:#56C7CD;}
-	.st92{fill:#434C4B;}
-	.st93{fill:#687271;}
-	.st94{fill:#5C6664;}
-	.st95{fill:#51BAC5;}
-	.st96{fill:#D64F45;}
-	.st97{fill:#D1D4D4;}
-	.st98{fill:#E3E5E5;}
-	.st99{fill:#DADDDC;}
-	.st100{fill:#845194;}
-	.st101{fill:#5BD3D5;}
-	.st102{fill:#46B080;}
-	.st103{fill:#53BF8C;}
-	.st104{fill:#6EDCA2;}
-	.st105{fill:#7AEBAC;}
-	.st106{fill:#60CD96;}
-	.st107{fill:#E8803A;}
-	.st108{fill:#0A6F8E;}
-	.st109{fill:#0F769B;}
-	.st110{fill:#EF8C48;}
-	.st111{fill:#838C8A;}
-	.st112{fill:#757F7E;}
-	.st113{fill:#D1473D;}
-	.st114{fill:#9179C6;}
-	.st115{fill:#906DBB;}
-	.st116{fill:#A78EDD;}
-	.st117{fill:#9D85D3;}
-	.st118{fill:#E2EFF7;}
-	.st119{fill:#B0D3EA;}
-	.st120{fill:#F7BC48;}
-	.st121{fill:#FFC550;}
-	.st122{fill:#FFCF6E;}
-	.st123{fill:#4CAEBC;}
-	.st124{fill:#47A1B4;}
-	.st125{fill:#4295AC;}
-	.st126{fill:#FDE2E6;}
-	.st127{fill:#FFF5D8;}
-	.st128{fill:#99533D;}
-	.st129{fill:#914C39;}
-	.st130{fill:#D4C9EF;}
-	.st131{fill:#E3DBF4;}
-	.st132{fill:#F1EDFA;}
-	.st133{fill:#C6B7E9;}
-	.st134{fill:#B8A5E4;}
-	.st135{fill:#E8BA67;}
-	.st136{fill:#DDAA5F;}
-	.st137{fill:#D4994F;}
-	.st138{fill:#C98B44;}
-	.st139{fill:#F7D684;}
-	.st140{fill:#BF7D3C;}
-	.st141{fill:#909997;}
-	.st142{fill:#724D31;}
-	.st143{fill:#93C2CA;}
-	.st144{fill:#99C7CE;}
-	.st145{fill:#9FCCD3;}
-	.st146{fill:#ACD7DD;}
-	.st147{fill:#B9E2E7;}
-	.st148{fill:#A5D1D8;}
-	.st149{fill:#88B9C3;}
-	.st150{fill:#7EB1BD;}
-	.st151{fill:#C8CCCB;}
-	.st152{fill:none;}
-	.st153{fill:#4F4032;}
-	.st154{fill:#604631;}
-	.st155{fill:#F9BDA0;}
-	.st156{fill:#E7685F;}
-	.st157{fill:#C84054;}
-	.st158{fill:#ABB2B1;}
-	.st159{fill:#9DA5A4;}
-	.st160{fill:#F74000;}
-	.st161{fill:#F97C00;}
-	.st162{fill:#F9C900;}
-	.st163{fill:#EFD4A7;}
-	.st164{fill:#EACEA1;}
-	.st165{fill:#FCE8CC;}
-	.st166{fill:#F5DEB9;}
-	.st167{fill:#CFAB81;}
-	.st168{fill:#D5B387;}
-	.st169{fill:#3A4274;}
-	.st170{fill:#707EB7;}
-	.st171{fill:#424B7E;}
-	.st172{fill:#7C8AC4;}
-	.st173{fill:#FFD98D;}
-	.st174{fill:#8694D1;}
-	.st175{fill:#9AA6D6;}
-	.st176{fill:#ABB4DD;}
-	.st177{fill:#FDECEF;}
-	.st178{fill:#137FA0;}
-	.st179{fill:#EB6B48;}
-	.st180{fill:#F57552;}
-	.st181{fill:#515E91;}
-	.st182{fill:#5C699E;}
-	.st183{fill:#6673AA;}
-	.st184{fill:#504484;}
-	.st185{fill:#FF5F7E;}
-	.st186{fill:#EBCEEB;}
-	.st187{fill:#E5BDE5;}
-	.st188{fill:#E0ABDF;}
-	.st189{fill:#D799D6;}
-	.st190{fill:#3B8FA3;}
-	.st191{fill:#348B99;}
-	.st192{fill:#3AA176;}
-	.st193{fill:#84ED82;}
-	.st194{fill:#EFEAEA;}
-	.st195{fill:#FF9A7E;}
-	.st196{fill:#FCD2BE;}
-	.st197{fill:#FCDDCF;}
-	.st198{fill:#C683C8;}
-	.st199{fill:#A55F49;}
-	.st200{fill:#FEF5F7;}
-</style>
-<g>
-	<path class="grape_05" d="M15.654,12.983c-2.852-0.143-4.849-2.257-5.456-5.111L4.9,13.171C4.074,13.997,3.417,14.96,2.933,16
-		C2.354,17.244,2.025,18.602,2,20c0,2.209,1.791,4,4,4h10v-8h-2.615L15.654,12.983z"/>
-	<path class="grape_06" d="M12.896,12.102L9.385,16h4l2.269-3.017C14.612,12.931,13.683,12.621,12.896,12.102z"/>
-	<path class="sand_02" d="M10.198,7.873l-2,2C8.826,12.828,10.943,15,13.958,15c0.063,0,0.124-0.008,0.186-0.01l1.509-2.006
-		C12.802,12.841,10.805,10.726,10.198,7.873z"/>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
+	 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g id="labels">
+</g>
+<g id="icons">
 	<g>
-		<path class="sand_02" d="M24.494,6.5C24.656,6.291,24.631,5,24,5s-0.656,1.291-0.494,1.5H24.494z"/>
-		<path class="sand_05" d="M24.869,11h-1.737c-0.658,0.5-0.658,2.5-0.25,3h2.237C25.526,13.5,25.526,11.5,24.869,11z"/>
-		<path class="sand_04" d="M24.66,8.5H23.34c-0.548,0.417-0.548,2.083-0.208,2.5h1.737C25.208,10.583,25.208,8.917,24.66,8.5z"/>
-		<path class="sand_03" d="M24.494,6.5h-0.987c-0.438,0.333-0.438,1.667-0.167,2h1.321C24.932,8.167,24.932,6.833,24.494,6.5z"/>
+		<path fill="#D285D2" d="M15.654,12.983c-2.852-0.143-4.849-2.257-5.456-5.111L4.9,13.171C4.074,13.997,3.417,14.96,2.933,16
+			C2.354,17.244,2.025,18.602,2,20c0,2.209,1.791,4,4,4h10v-8h-2.615L15.654,12.983z"/>
+		<path fill="#C27BC6" d="M12.896,12.102L9.385,16h4l2.269-3.017C14.612,12.931,13.683,12.621,12.896,12.102z"/>
+		<path fill="#FDEBBB" d="M10.198,7.873l-2,2C8.826,12.828,10.943,15,13.958,15c0.063,0,0.124-0.008,0.186-0.01l1.509-2.006
+			C12.802,12.841,10.805,10.726,10.198,7.873z"/>
+		<g>
+			<path fill="#FDEBBB" d="M24.494,6.5C24.656,6.291,24.631,5,24,5s-0.656,1.291-0.494,1.5H24.494z"/>
+			<path fill="#F0C877" d="M24.869,11h-1.737c-0.658,0.5-0.658,2.5-0.25,3h2.237C25.526,13.5,25.526,11.5,24.869,11z"/>
+			<path fill="#F7D684" d="M24.66,8.5H23.34c-0.548,0.417-0.548,2.083-0.208,2.5h1.737C25.208,10.583,25.208,8.917,24.66,8.5z"/>
+			<path fill="#FAE09F" d="M24.494,6.5h-0.987c-0.438,0.333-0.438,1.667-0.167,2h1.321C24.932,8.167,24.932,6.833,24.494,6.5z"/>
+		</g>
+		<polygon fill="#A366AD" points="25.5,16 22.5,16 22.881,14 25.119,14 		"/>
+		<path fill="#C27BC6" d="M26,16h-1.563H16v8h10c2.209,0,4-1.791,4-4C30,17.791,28.209,16,26,16z"/>
+		<path fill="#D285D2" d="M16,24H4c-2.209,0-4,1.791-4,4c0,2.209,1.791,4,4,4h12V24z"/>
+		<path fill="#C27BC6" d="M28,24H16v8h12c2.209,0,4-1.791,4-4C32,25.791,30.209,24,28,24z"/>
+		<path fill="#C27BC6" d="M16,30H4c-1.642,0-3.086-0.802-3.998-2.024C0.002,27.984,0,27.992,0,28c0,2.209,1.791,4,4,4h12V30z"/>
+		<path fill="#B370B9" d="M28,30H16v2h12c2.209,0,4-1.791,4-4c0-0.008-0.002-0.016-0.002-0.024C31.086,29.198,29.642,30,28,30z"/>
+		<path fill="#C27BC6" d="M16,22H5.5c-1.335,0-2.541-0.531-3.438-1.384C2.36,22.531,4.002,24,6,24h10V22z"/>
+		<path fill="#B370B9" d="M16,22v2h10c1.998,0,3.64-1.469,3.938-3.384C29.041,21.469,27.835,22,26.5,22H16z"/>
+		<path fill="#FAE09F" d="M12.896,12.102l-1.875,2.082C11.859,14.703,12.847,15,13.958,15c0.063,0,0.124-0.008,0.186-0.01
+			l1.509-2.006C14.612,12.931,13.683,12.621,12.896,12.102z"/>
+		<path fill="#D285D2" d="M16,0.003C15.985,0.003,15.973,0,15.958,0C12.069,0,10,2.134,10,6c0,3.866,2.333,7,5.958,7
+			c0.014,0,0.028-0.002,0.042-0.002V0.003z"/>
+		<path fill="#C27BC6" d="M16,0.003v12.995c3.601-0.024,6-3.147,6-6.998C22,2.149,19.861,0.019,16,0.003z"/>
+		<g>
+			<circle fill="#FDEBBB" cx="11.5" cy="5.5" r="1.5"/>
+			<path fill="#373F3F" d="M12,5.5c0,1.105-0.224,1.25-0.5,1.25S11,6.605,11,5.5s0.224-1.25,0.5-1.25S12,4.395,12,5.5z"/>
+		</g>
+		<g>
+			<circle fill="#FAE09F" cx="20.5" cy="5.5" r="1.5"/>
+			<path fill="#2B3332" d="M21,5.5c0,1.105-0.224,1.25-0.5,1.25S20,6.605,20,5.5s0.224-1.25,0.5-1.25S21,4.395,21,5.5z"/>
+		</g>
+		<path fill="#C27BC6" d="M16,10.998c-0.019,0-1.037,0.002-1.056,0.002c-2.22,0-4.139-1.342-4.139-1.342
+			C11.781,11.661,13.592,13,15.958,13c0.014,0,0.027-0.003,0.042-0.003V10.998z"/>
+		<path fill="#B370B9" d="M16.042,13c2.366,0,4.178-1.339,5.152-3.342c0,0-1.918,1.342-4.139,1.342
+			c-0.019,0-1.037-0.002-1.056-0.002v1.999C16.014,12.997,16.027,13,16.042,13z"/>
 	</g>
-	<polygon class="grape_08" points="25.5,16 22.5,16 22.881,14 25.119,14 	"/>
-	<path class="grape_06" d="M26,16h-1.563H16v8h10c2.209,0,4-1.791,4-4C30,17.791,28.209,16,26,16z"/>
-	<path class="grape_05" d="M16,24H4c-2.209,0-4,1.791-4,4c0,2.209,1.791,4,4,4h12V24z"/>
-	<path class="grape_06" d="M28,24H16v8h12c2.209,0,4-1.791,4-4C32,25.791,30.209,24,28,24z"/>
-	<path class="grape_06" d="M16,30H4c-1.642,0-3.086-0.802-3.998-2.024C0.002,27.984,0,27.992,0,28c0,2.209,1.791,4,4,4h12V30z"/>
-	<path class="grape_07" d="M28,30H16v2h12c2.209,0,4-1.791,4-4c0-0.008-0.002-0.016-0.002-0.024C31.086,29.198,29.642,30,28,30z"/>
-	<path class="grape_06" d="M16,22H5.5c-1.335,0-2.541-0.531-3.438-1.384C2.36,22.531,4.002,24,6,24h10V22z"/>
-	<path class="grape_07" d="M16,22v2h10c1.998,0,3.64-1.469,3.938-3.384C29.041,21.469,27.835,22,26.5,22H16z"/>
-	<path class="sand_03" d="M12.896,12.102l-1.875,2.082C11.859,14.703,12.847,15,13.958,15c0.063,0,0.124-0.008,0.186-0.01
-		l1.509-2.006C14.612,12.931,13.683,12.621,12.896,12.102z"/>
-	<path class="grape_05" d="M16,0.003C15.985,0.003,15.973,0,15.958,0C12.069,0,10,2.134,10,6c0,3.866,2.333,7,5.958,7
-		c0.014,0,0.028-0.002,0.042-0.002V0.003z"/>
-	<path class="grape_06" d="M16,0.003v12.995c3.601-0.024,6-3.147,6-6.998C22,2.149,19.861,0.019,16,0.003z"/>
-	<g>
-		<circle class="sand_02" cx="11.5" cy="5.5" r="1.5"/>
-		<path class="grey_16" d="M12,5.5c0,1.105-0.224,1.25-0.5,1.25S11,6.605,11,5.5s0.224-1.25,0.5-1.25S12,4.395,12,5.5z"/>
-	</g>
-	<g>
-		<circle class="sand_03" cx="20.5" cy="5.5" r="1.5"/>
-		<path class="grey_17" d="M21,5.5c0,1.105-0.224,1.25-0.5,1.25S20,6.605,20,5.5s0.224-1.25,0.5-1.25S21,4.395,21,5.5z"/>
-	</g>
-	<path class="grape_06" d="M16,10.998c-0.019,0-1.037,0.002-1.056,0.002c-2.22,0-4.139-1.342-4.139-1.342
-		C11.781,11.661,13.592,13,15.958,13c0.014,0,0.027-0.003,0.042-0.003V10.998z"/>
-	<path class="grape_07" d="M16.042,13c2.366,0,4.178-1.339,5.152-3.342c0,0-1.918,1.342-4.139,1.342
-		c-0.019,0-1.037-0.002-1.056-0.002v1.999C16.014,12.997,16.027,13,16.042,13z"/>
 </g>
 </svg>

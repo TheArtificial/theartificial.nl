@@ -1,170 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="32px" height="32px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-<style type="text/css">
-	.grey_01{fill:#F7F7F7;}
-	.grey_02{fill:#EDEEEE;}
-	.grey_16{fill:#373F3F;}
-	.grey_17{fill:#2B3332;}
-	.tulip_06{fill:#D84459;}
-	.tulip_07{fill:#C84054;}
-	.st0{fill:#945BA0;}
-	.st1{fill:#B8A5E4;}
-	.st2{fill:#C6B7E9;}
-	.st3{fill:#D4C9EF;}
-	.st4{fill:#E3DBF4;}
-	.st5{fill:#B370B9;}
-	.st6{fill:#A78EDD;}
-	.st7{fill:#A366AD;}
-	.st8{fill:#F1EDFA;}
-	.st9{fill:#4B7E77;}
-	.st10{fill:#56C7CD;}
-	.st11{fill:#FFFFFF;}
-	.st12{fill:#EB6B48;}
-	.st13{fill:#E55F4A;}
-	.st14{fill:#FF805D;}
-	.st15{fill:#FFD96C;}
-	.st16{fill:#F57552;}
-	.st17{fill:#FFD04D;}
-	.st18{fill:#96643B;}
-	.st19{fill:#9E6E43;}
-	.st20{fill:#FFE28A;}
-	.st21{fill:#FF8D6E;}
-	.st22{fill:#4390BF;}
-	.st23{fill:#4896C8;}
-	.st24{fill:#A7794C;}
-	.st25{fill:#8EC0E0;}
-	.st26{fill:#9FC9E4;}
-	.st27{fill:#7FB8E0;}
-	.st28{fill:#D2E6F3;}
-	.st29{fill:#E2EFF7;}
-	.st30{fill:#C1DDEE;}
-	.st31{fill:#DCF2FD;}
-	.st32{fill:#51BAC5;}
-	.st33{fill:#5BD3D5;}
-	.st34{fill:#FFAD68;}
-	.st35{fill:#FFB76D;}
-	.st36{fill:#FCA15E;}
-	.st37{fill:#F7D684;}
-	.st38{fill:#F0C877;}
-	.st39{fill:#FAE09F;}
-	.st40{fill:#FDEBBB;}
-	.st41{fill:#FFF3D9;}
-	.st42{fill:#FFC172;}
-	.st43{fill:#231F20;}
-	.st44{fill:#D1D4D4;}
-	.st45{fill:#DADDDC;}
-	.st46{fill:#C8CCCB;}
-	.st47{fill:#71B1E1;}
-	.st48{fill:#B93D4F;}
-	.st49{fill:#E85160;}
-	.st50{fill:#F9ADC8;}
-	.st51{fill:#F8A1C4;}
-	.st52{fill:#E3E5E5;}
-	.st53{fill:#FAB8CD;}
-	.st54{fill:#FBCFD6;}
-	.st55{fill:#FAC4D1;}
-	.st56{fill:#E55D53;}
-	.st57{fill:#D64F45;}
-	.st58{fill:#FFA68E;}
-	.st59{fill:#FF9A7E;}
-	.st60{fill:#2B3332;}
-	.st61{fill:#EA8BB4;}
-	.st62{fill:#FFF5D8;}
-	.st63{fill:#373F3F;}
-	.st64{fill:#F297BE;}
-	.st65{fill:#FEF1C6;}
-	.st66{fill:#FCD2BE;}
-	.st67{fill:#FCDDCF;}
-	.st68{fill:#F79654;}
-	.st69{fill:#EF8C48;}
-	.st70{fill:none;}
-	.st71{fill:#6673AA;}
-	.st72{fill:#7C8AC4;}
-	.st73{fill:#8694D1;}
-	.st74{fill:#B0D3EA;}
-	.st75{fill:#60C46F;}
-	.st76{fill:#6CD275;}
-	.st77{fill:#54B668;}
-	.st78{fill:#84ED82;}
-	.st79{fill:#78DF7C;}
-	.st80{fill:#B38658;}
-	.st81{fill:#C09265;}
-	.st82{fill:#CDA073;}
-	.st83{fill:#A7A9AC;}
-	.st84{fill:#FF6B8B;}
-	.st85{fill:#FF5F7E;}
-	.st86{fill:#D49A87;}
-	.st87{fill:#9179C6;}
-	.st88{fill:#866EBA;}
-	.st89{fill:#7A63AD;}
-	.st90{fill:#9D85D3;}
-	.st91{fill:#9E86BF;}
-	.st92{fill:#FDE2E6;}
-	.st93{fill:#FCD8DE;}
-	.st94{fill:#E8BA36;}
-	.st95{fill:#E0B12E;}
-	.st96{fill:#DBA728;}
-	.st97{fill:#C27BC6;}
-	.st98{fill:#E8803A;}
-	.st99{fill:#DD7731;}
-	.st100{fill:#FF7899;}
-	.st101{fill:#FAC7AF;}
-	.st102{fill:#5C699E;}
-	.st103{fill:#707EB7;}
-	.st104{fill:#F7C845;}
-	.st105{fill:#E26447;}
-	.st106{fill:#5CA3D5;}
-	.st107{fill:#529CCF;}
-	.st108{fill:#65A9DC;}
-	.st109{fill:#D799D6;}
-	.st110{fill:#D285D2;}
-	.st111{fill:#E0ABDF;}
-	.st112{fill:#FEF8E8;}
-	.st113{fill:#4295AC;}
-	.st114{fill:#3B8FA3;}
-	.st115{fill:#47A1B4;}
-	.st116{fill:#8D5B36;}
-	.st117{fill:#845331;}
-	.st118{fill:#687271;}
-	.st119{fill:#505957;}
-	.st120{fill:#5C6664;}
-	.st121{fill:#838C8A;}
-	.st122{fill:#434C4B;}
-	.st123{fill:#757F7E;}
-	.st124{fill:#909997;}
-	.st125{fill:#AADB3D;}
-	.st126{fill:#B1E346;}
-	.st127{fill:#9ACC2E;}
-	.st128{fill:#93C427;}
-	.st129{fill:#A2D336;}
-	.st130{fill:#4CAEBC;}
-	.st131{fill:#111918;}
-	.st132{fill:#80C0DF;}
-	.st133{fill:#F0C13E;}
-	.st134{fill:#9DB5DE;}
-	.st135{fill:#515E91;}
-	.st136{fill:#495587;}
-	.st137{fill:#CFAB81;}
-	.st138{fill:#724D31;}
-	.st139{fill:#604631;}
-</style>
-<g>
-	<path class="tulip_06" d="M16,16H1c0,8.284,6.716,15,15,15V16z"/>
-	<path class="tulip_07" d="M16,31c8.284,0,15-6.716,15-15H16V31z"/>
-	<path class="grey_01" d="M16,1C7.716,1,1,7.716,1,16h15V1z"/>
-	<path class="grey_02" d="M31,16c0-8.284-6.716-15-15-15v15H31z"/>
-	<path class="grey_16" d="M16,16H1c0,0.68,0.044,1.344,0.132,2H16V16z"/>
-	<path class="grey_17" d="M16,18h14.865C30.952,17.344,31,16.68,31,16H16V18z"/>
-	<ellipse class="grey_17" cx="21" cy="12" rx="1" ry="2"/>
-	<ellipse class="grey_16" cx="11" cy="12" rx="1" ry="2"/>
-	<path class="grey_17" d="M18,10.375c-0.098,0-0.195-0.038-0.269-0.114c-0.144-0.148-0.141-0.386,0.008-0.53l4.119-4
-		c0.094-0.091,0.228-0.127,0.355-0.094l2.881,0.75c0.201,0.052,0.321,0.257,0.269,0.457c-0.052,0.201-0.259,0.319-0.457,0.269
-		l-2.677-0.696l-3.967,3.853C18.188,10.34,18.094,10.375,18,10.375z"/>
-	<path class="grey_16" d="M14,10.375c-0.094,0-0.188-0.035-0.261-0.106L9.771,6.416L7.094,7.112
-		c-0.201,0.05-0.405-0.068-0.457-0.269c-0.052-0.2,0.068-0.405,0.269-0.457l2.881-0.75c0.128-0.033,0.262,0.002,0.355,0.094l4.119,4
-		c0.148,0.145,0.152,0.382,0.008,0.53C14.195,10.337,14.098,10.375,14,10.375z"/>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
+	 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g id="labels">
+</g>
+<g id="icons">
+	<g>
+		<path fill="#D84459" d="M16,16H1c0,8.284,6.716,15,15,15V16z"/>
+		<path fill="#C84054" d="M16,31c8.284,0,15-6.716,15-15H16V31z"/>
+		<path fill="#F7F7F7" d="M16,1C7.716,1,1,7.716,1,16h15V1z"/>
+		<path fill="#EDEEEE" d="M31,16c0-8.284-6.716-15-15-15v15H31z"/>
+		<path fill="#373F3F" d="M16,16H1c0,0.68,0.044,1.344,0.132,2H16V16z"/>
+		<path fill="#2B3332" d="M16,18h14.865C30.952,17.344,31,16.68,31,16H16V18z"/>
+		<ellipse fill="#2B3332" cx="21" cy="12" rx="1" ry="2"/>
+		<ellipse fill="#373F3F" cx="11" cy="12" rx="1" ry="2"/>
+		<path fill="#2B3332" d="M18,10.375c-0.098,0-0.195-0.038-0.269-0.114c-0.144-0.148-0.141-0.386,0.008-0.53l4.119-4
+			c0.094-0.091,0.228-0.127,0.355-0.094l2.881,0.75c0.201,0.052,0.321,0.257,0.269,0.457c-0.052,0.201-0.259,0.319-0.457,0.269
+			l-2.677-0.696l-3.967,3.853C18.188,10.34,18.094,10.375,18,10.375z"/>
+		<path fill="#373F3F" d="M14,10.375c-0.094,0-0.188-0.035-0.261-0.106L9.771,6.416L7.094,7.112
+			c-0.201,0.05-0.405-0.068-0.457-0.269c-0.052-0.2,0.068-0.405,0.269-0.457l2.881-0.75c0.128-0.033,0.262,0.002,0.355,0.094
+			l4.119,4c0.148,0.145,0.152,0.382,0.008,0.53C14.195,10.337,14.098,10.375,14,10.375z"/>
+	</g>
+</g>
+<g id="notes" display="none">
 </g>
 </svg>
