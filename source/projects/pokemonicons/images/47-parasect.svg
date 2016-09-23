@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.white{fill:#FFFFFF;}
+	.grey_01{fill:#F7F7F7;}
+	.rose_10{fill:#F297BE;}
+	.rose_11{fill:#EA8BB4;}
+	.tangerine_01{fill:#FFC172;}
+	.tangerine_02{fill:#FFB76D;}
+	.tangerine_03{fill:#FFAD68;}
+	.tangerine_04{fill:#FCA15E;}
+	.tangerine_05{fill:#F79654;}
+	.lemon_04{fill:#FFE28A;}
+	.lemon_05{fill:#FFD96C;}
+	.st0{fill:#78DF7C;}
+	.st1{fill:#54B668;}
+	.st2{fill:#7A63AD;}
+	.st3{fill:#866EBA;}
+	.st4{fill:#D2E6F3;}
+	.st5{fill:#C1DDEE;}
+	.st6{fill:#E0C193;}
+	.st7{fill:#DBBA8C;}
+	.st8{fill:#7FB8E0;}
+	.st9{fill:#8EC0E0;}
+	.st10{fill:#71B1E1;}
+	.st11{fill:#9FC9E4;}
+	.st12{fill:#FFEAA7;}
+	.st13{fill:#FF6B8B;}
+	.st14{fill:#F4A984;}
+	.st15{fill:#EA9C7A;}
+	.st16{fill:#FEF1C6;}
+	.st17{fill:#E85160;}
+	.st18{fill:#D84459;}
+	.st19{fill:#E55D53;}
+	.st20{fill:#FFD400;}
+	.st21{fill:#FF8F00;}
+	.st22{fill:#FF4A00;}
+	.st23{fill:#F7D684;}
+	.st24{fill:#2B3332;}
+	.st25{fill:#FAE09F;}
+	.st26{fill:#373F3F;}
+	.st27{fill:#FDEBBB;}
+	.st28{fill:#FFF3D9;}
+	.st29{fill:#9ACC2E;}
+	.st30{fill:#AADB3D;}
+	.st31{fill:#A2D336;}
+	.st32{fill:#93C427;}
+	.st33{fill:#FFD04D;}
+	.st34{fill:#A9E260;}
+	.st35{fill:#97DB4A;}
+	.st36{fill:#B1E346;}
+	.st37{fill:#FCD8DE;}
+	.st38{fill:#CDA073;}
+	.st39{fill:#C09265;}
+	.st40{fill:#A7794C;}
+	.st41{fill:#96643B;}
+	.st42{fill:#845331;}
+	.st43{fill:#B38658;}
+	.st44{fill:#9E6E43;}
+	.st45{fill:#8D5B36;}
+	.st46{fill:#FBCFD6;}
+	.st47{fill:#FAC4D1;}
+	.st48{fill:#FAB8CD;}
+	.st49{fill:#F9ADC8;}
+	.st50{fill:#F8A1C4;}
+	.st51{fill:#E8BA36;}
+	.st52{fill:#E0B12E;}
+	.st53{fill:#6E57A0;}
+	.st54{fill:#675099;}
+	.st55{fill:#F3586F;}
+	.st56{fill:#604893;}
+	.st57{fill:#CBEB6B;}
+	.st58{fill:#4EAC5D;}
+	.st59{fill:#BEE758;}
+	.st60{fill:#6CD275;}
+	.st61{fill:#48A353;}
+	.st62{fill:#60C46F;}
+	.st63{fill:#D9F07D;}
+	.st64{fill:#E6F490;}
+	.st65{fill:#4896C8;}
+	.st66{fill:#4390BF;}
+	.st67{fill:#5CA3D5;}
+	.st68{fill:#529CCF;}
+	.st69{fill:#F7C845;}
+	.st70{fill:#ECCD50;}
+	.st71{fill:#FF8D6E;}
+	.st72{fill:#FF805D;}
+	.st73{fill:#EDEEEE;}
+	.st74{fill:#65A9DC;}
+	.st75{fill:#8BC07A;}
+	.st76{fill:#F0C13E;}
+	.st77{fill:#9A3644;}
+	.st78{fill:#8A323F;}
+	.st79{fill:#945BA0;}
+	.st80{fill:#A366AD;}
+	.st81{fill:#B370B9;}
+	.st82{fill:#C27BC6;}
+	.st83{fill:#F6B392;}
+	.st84{fill:#D285D2;}
+	.st85{fill:#DBA728;}
+	.st86{fill:#505957;}
+	.st87{fill:#56C7CD;}
+	.st88{fill:#434C4B;}
+	.st89{fill:#687271;}
+	.st90{fill:#5C6664;}
+	.st91{fill:#51BAC5;}
+	.st92{fill:#D64F45;}
+	.st93{fill:#D1D4D4;}
+	.st94{fill:#E3E5E5;}
+	.st95{fill:#DADDDC;}
+	.st96{fill:#845194;}
+	.st97{fill:#5BD3D5;}
+	.st98{fill:#46B080;}
+	.st99{fill:#53BF8C;}
+	.st100{fill:#6EDCA2;}
+	.st101{fill:#7AEBAC;}
+	.st102{fill:#60CD96;}
+	.st103{fill:#E8803A;}
+	.st104{fill:#0A6F8E;}
+	.st105{fill:#0F769B;}
+	.st106{fill:#EF8C48;}
+	.st107{fill:#838C8A;}
+	.st108{fill:#757F7E;}
+	.st109{fill:#D1473D;}
+	.st110{fill:#FFE28A;}
+	.st111{fill:#9179C6;}
+	.st112{fill:#906DBB;}
+	.st113{fill:#A78EDD;}
+	.st114{fill:#9D85D3;}
+	.st115{fill:#E2EFF7;}
+	.st116{fill:#B0D3EA;}
+	.st117{fill:#F7BC48;}
+	.st118{fill:#FFC550;}
+	.st119{fill:#FFCF6E;}
+	.st120{fill:#4CAEBC;}
+	.st121{fill:#47A1B4;}
+	.st122{fill:#4295AC;}
+	.st123{fill:#FDE2E6;}
+	.st124{fill:#FFF5D8;}
+	.st125{fill:#99533D;}
+	.st126{fill:#914C39;}
+	.st127{fill:#D4C9EF;}
+	.st128{fill:#E3DBF4;}
+	.st129{fill:#F1EDFA;}
+	.st130{fill:#C6B7E9;}
+	.st131{fill:#B8A5E4;}
+	.st132{fill:#F0C877;}
+	.st133{fill:#E8BA67;}
+	.st134{fill:#DDAA5F;}
+	.st135{fill:#D4994F;}
+	.st136{fill:#C98B44;}
+	.st137{fill:#BF7D3C;}
+	.st138{fill:#909997;}
+	.st139{fill:#724D31;}
+	.st140{fill:#93C2CA;}
+	.st141{fill:#99C7CE;}
+	.st142{fill:#9FCCD3;}
+	.st143{fill:#ACD7DD;}
+	.st144{fill:#B9E2E7;}
+	.st145{fill:#A5D1D8;}
+	.st146{fill:#88B9C3;}
+	.st147{fill:#7EB1BD;}
+	.st148{fill:#F297BE;}
+	.st149{fill:#EA8BB4;}
+	.st150{fill:#C8CCCB;}
+	.st151{fill:none;}
+	.st152{fill:#4F4032;}
+	.st153{fill:#604631;}
+	.st154{fill:#F9BDA0;}
+	.st155{fill:#E7685F;}
+	.st156{fill:#C84054;}
+	.st157{fill:#ABB2B1;}
+	.st158{fill:#9DA5A4;}
+	.st159{fill:#FFD96C;}
+	.st160{fill:#F74000;}
+	.st161{fill:#F97C00;}
+	.st162{fill:#F9C900;}
+	.st163{fill:#EFD4A7;}
+	.st164{fill:#EACEA1;}
+	.st165{fill:#FCE8CC;}
+	.st166{fill:#F5DEB9;}
+	.st167{fill:#CFAB81;}
+	.st168{fill:#D5B387;}
+	.st169{fill:#3A4274;}
+	.st170{fill:#707EB7;}
+	.st171{fill:#424B7E;}
+	.st172{fill:#7C8AC4;}
+	.st173{fill:#FFD98D;}
+	.st174{fill:#8694D1;}
+	.st175{fill:#9AA6D6;}
+	.st176{fill:#ABB4DD;}
+	.st177{fill:#FDECEF;}
+	.st178{fill:#137FA0;}
+	.st179{fill:#EB6B48;}
+	.st180{fill:#F57552;}
+	.st181{fill:#515E91;}
+	.st182{fill:#5C699E;}
+	.st183{fill:#6673AA;}
+	.st184{fill:#504484;}
+	.st185{fill:#FF5F7E;}
+	.st186{fill:#EBCEEB;}
+	.st187{fill:#E5BDE5;}
+	.st188{fill:#E0ABDF;}
+	.st189{fill:#D799D6;}
+	.st190{fill:#3B8FA3;}
+	.st191{fill:#348B99;}
+	.st192{fill:#F7F7F7;}
+	.st193{fill:#3AA176;}
+	.st194{fill:#84ED82;}
+	.st195{fill:#EFEAEA;}
+	.st196{fill:#FF9A7E;}
+	.st197{fill:#FCD2BE;}
+	.st198{fill:#FCDDCF;}
+	.st199{fill:#C683C8;}
+	.st200{fill:#A55F49;}
+	.st201{fill:#FEF5F7;}
+</style>
+<g>
+	<path class="tangerine_04" d="M16,16H7v6c0,3.976,4.029,6,9,6V16z"/>
+	<path class="tangerine_05" d="M25,22v-6h-9v12C20.971,28,25,25.976,25,22z"/>
+	<path class="rose_11" d="M27.686,19.558L27.686,19.558C29.441,19.792,31,18.427,31,16.657c0-1.028-0.539-1.981-1.421-2.51
+		c-2.315-1.389-4.083-3.532-5.005-6.07L24.05,6.639C22.819,3.253,19.602,1,16,1v17.782C19.904,18.782,23.808,19.041,27.686,19.558z"
+		/>
+	<path class="rose_10" d="M16,1c-3.602,0-6.819,2.253-8.05,5.639L7.426,8.077c-0.923,2.538-2.69,4.681-5.005,6.07
+		C1.539,14.676,1,15.629,1,16.657c0,1.77,1.559,3.135,3.314,2.901l0,0c3.878-0.517,7.782-0.776,11.686-0.776V1z"/>
+	<path class="lemon_05" d="M20,14.5c0-1.243-1.791-1.5-4-1.5v3C18.209,16,20,15.743,20,14.5z"/>
+	<path class="lemon_04" d="M16,13c-2.209,0-4,0.257-4,1.5c0,1.243,1.791,1.5,4,1.5V13z"/>
+	<path class="lemon_04" d="M16,4c-2.209,0-4,0.257-4,1.5C12,6.743,13.791,7,16,7V4z"/>
+	<path class="lemon_05" d="M20,5.5C20,4.257,18.209,4,16,4v3C18.209,7,20,6.743,20,5.5z"/>
+	<path class="lemon_05" d="M30.825,15.717c-0.22-0.644-0.645-1.209-1.246-1.569c-0.565-0.339-1.095-0.724-1.591-1.147
+		C25.785,13.001,24,13.26,24,14.5c0,1.243,1.791,1.5,4,1.5C29.103,16,30.101,15.936,30.825,15.717z"/>
+	<path class="lemon_05" d="M22,11c1.636,0,3.037-0.144,3.657-0.721c-0.401-0.642-0.744-1.323-1.016-2.038C23.935,8.06,23.017,8,22,8
+		c-2.209,0-4,0.257-4,1.5C18,10.743,19.791,11,22,11z"/>
+	<path class="lemon_04" d="M4,16c2.209,0,4-0.257,4-1.5c0-1.24-1.785-1.499-3.988-1.5c-0.495,0.423-1.026,0.808-1.591,1.147
+		c-0.601,0.361-1.025,0.925-1.246,1.569C1.899,15.936,2.897,16,4,16z"/>
+	<path class="lemon_04" d="M10,8C8.983,8,8.065,8.06,7.359,8.241c-0.272,0.716-0.616,1.396-1.016,2.038C6.963,10.856,8.364,11,10,11
+		c2.209,0,4-0.257,4-1.5C14,8.257,12.209,8,10,8z"/>
+	<g>
+		<path class="tangerine_02" d="M1.346,19.369c-1.937,1.937-1.76,5.128,0.379,6.84l1,0.8C5.955,29.592,9.968,31,14.105,31h0
+			c0.474,0,0.799-0.295,0.931-0.659C5.76,28.285,1.346,19.369,1.346,19.369z"/>
+		<path class="tangerine_01" d="M15.035,30.341c0.15-0.415,0.047-0.921-0.416-1.199c-1.246-0.748-2.268-1.818-2.957-3.098
+			L8.644,20.44c-1.46-2.711-5.12-3.248-7.298-1.071C1.346,19.369,5.76,28.285,15.035,30.341z"/>
+	</g>
+	<g>
+		<path class="tangerine_03" d="M30.654,19.369c1.937,1.937,1.76,5.128-0.379,6.84l-1,0.8C26.045,29.592,22.032,31,17.895,31h0
+			c-0.474,0-0.799-0.295-0.931-0.659C26.24,28.285,30.654,19.369,30.654,19.369z"/>
+		<path class="tangerine_02" d="M16.965,30.341c-0.15-0.415-0.047-0.921,0.416-1.199c1.246-0.748,2.268-1.818,2.957-3.098
+			l3.018-5.605c1.46-2.711,5.12-3.248,7.298-1.071C30.654,19.369,26.24,28.285,16.965,30.341z"/>
+	</g>
+	<path class="tangerine_02" d="M16,17v8c3.314,0,6-1.349,6-4S19.314,17,16,17z"/>
+	<path class="tangerine_01" d="M10,21c0,2.651,2.686,4,6,4v-8C12.686,17,10,18.349,10,21z"/>
+	<circle class="white" cx="13" cy="19" r="2"/>
+	<circle class="grey_01" cx="19" cy="19" r="2"/>
+</g>
+</svg>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.white{fill:#FFFFFF;}
+	.grey_01{fill:#F7F7F7;}
+	.grey_16{fill:#373F3F;}
+	.grey_17{fill:#2B3332;}
+	.rose_08{fill:#F9ADC8;}
+	.rose_09{fill:#F8A1C4;}
+	.rose_10{fill:#F297BE;}
+	.tangerine_01{fill:#FFC172;}
+	.tangerine_02{fill:#FFB76D;}
+	.tangerine_03{fill:#FFAD68;}
+	.tangerine_04{fill:#FCA15E;}
+	.tangerine_05{fill:#F79654;}
+	.lemon_02{fill:#FEF1C6;}
+	.lemon_03{fill:#FFEAA7;}
+	.lemon_04{fill:#FFE28A;}
+	.st0{fill:#78DF7C;}
+	.st1{fill:#54B668;}
+	.st2{fill:#7A63AD;}
+	.st3{fill:#866EBA;}
+	.st4{fill:#D2E6F3;}
+	.st5{fill:#C1DDEE;}
+	.st6{fill:#E0C193;}
+	.st7{fill:#DBBA8C;}
+	.st8{fill:#7FB8E0;}
+	.st9{fill:#8EC0E0;}
+	.st10{fill:#71B1E1;}
+	.st11{fill:#9FC9E4;}
+	.st12{fill:#FF6B8B;}
+	.st13{fill:#F4A984;}
+	.st14{fill:#EA9C7A;}
+	.st15{fill:#E85160;}
+	.st16{fill:#D84459;}
+	.st17{fill:#E55D53;}
+	.st18{fill:#FFD400;}
+	.st19{fill:#FF8F00;}
+	.st20{fill:#FF4A00;}
+	.st21{fill:#F7D684;}
+	.st22{fill:#FAE09F;}
+	.st23{fill:#FDEBBB;}
+	.st24{fill:#FFF3D9;}
+	.st25{fill:#FFD96C;}
+	.st26{fill:#9ACC2E;}
+	.st27{fill:#AADB3D;}
+	.st28{fill:#A2D336;}
+	.st29{fill:#93C427;}
+	.st30{fill:#FFD04D;}
+	.st31{fill:#A9E260;}
+	.st32{fill:#97DB4A;}
+	.st33{fill:#B1E346;}
+	.st34{fill:#FCD8DE;}
+	.st35{fill:#CDA073;}
+	.st36{fill:#C09265;}
+	.st37{fill:#A7794C;}
+	.st38{fill:#96643B;}
+	.st39{fill:#845331;}
+	.st40{fill:#B38658;}
+	.st41{fill:#9E6E43;}
+	.st42{fill:#8D5B36;}
+	.st43{fill:#FBCFD6;}
+	.st44{fill:#FAC4D1;}
+	.st45{fill:#FAB8CD;}
+	.st46{fill:#EA8BB4;}
+	.st47{fill:#E8BA36;}
+	.st48{fill:#E0B12E;}
+	.st49{fill:#6E57A0;}
+	.st50{fill:#675099;}
+	.st51{fill:#F3586F;}
+	.st52{fill:#604893;}
+	.st53{fill:#CBEB6B;}
+	.st54{fill:#4EAC5D;}
+	.st55{fill:#BEE758;}
+	.st56{fill:#6CD275;}
+	.st57{fill:#48A353;}
+	.st58{fill:#60C46F;}
+	.st59{fill:#D9F07D;}
+	.st60{fill:#E6F490;}
+	.st61{fill:#4896C8;}
+	.st62{fill:#4390BF;}
+	.st63{fill:#5CA3D5;}
+	.st64{fill:#529CCF;}
+	.st65{fill:#F7C845;}
+	.st66{fill:#ECCD50;}
+	.st67{fill:#FF8D6E;}
+	.st68{fill:#FF805D;}
+	.st69{fill:#EDEEEE;}
+	.st70{fill:#65A9DC;}
+	.st71{fill:#8BC07A;}
+	.st72{fill:#F0C13E;}
+	.st73{fill:#9A3644;}
+	.st74{fill:#8A323F;}
+	.st75{fill:#945BA0;}
+	.st76{fill:#A366AD;}
+	.st77{fill:#B370B9;}
+	.st78{fill:#C27BC6;}
+	.st79{fill:#F6B392;}
+	.st80{fill:#D285D2;}
+	.st81{fill:#DBA728;}
+	.st82{fill:#505957;}
+	.st83{fill:#56C7CD;}
+	.st84{fill:#434C4B;}
+	.st85{fill:#687271;}
+	.st86{fill:#5C6664;}
+	.st87{fill:#51BAC5;}
+	.st88{fill:#D64F45;}
+	.st89{fill:#D1D4D4;}
+	.st90{fill:#E3E5E5;}
+	.st91{fill:#DADDDC;}
+	.st92{fill:#845194;}
+	.st93{fill:#5BD3D5;}
+	.st94{fill:#46B080;}
+	.st95{fill:#53BF8C;}
+	.st96{fill:#6EDCA2;}
+	.st97{fill:#7AEBAC;}
+	.st98{fill:#60CD96;}
+	.st99{fill:#E8803A;}
+	.st100{fill:#0A6F8E;}
+	.st101{fill:#0F769B;}
+	.st102{fill:#EF8C48;}
+	.st103{fill:#838C8A;}
+	.st104{fill:#757F7E;}
+	.st105{fill:#D1473D;}
+	.st106{fill:#FFE28A;}
+	.st107{fill:#9179C6;}
+	.st108{fill:#906DBB;}
+	.st109{fill:#A78EDD;}
+	.st110{fill:#9D85D3;}
+	.st111{fill:#E2EFF7;}
+	.st112{fill:#B0D3EA;}
+	.st113{fill:#F7BC48;}
+	.st114{fill:#FFC550;}
+	.st115{fill:#FFCF6E;}
+	.st116{fill:#4CAEBC;}
+	.st117{fill:#47A1B4;}
+	.st118{fill:#4295AC;}
+	.st119{fill:#FDE2E6;}
+	.st120{fill:#FEF1C6;}
+	.st121{fill:#FFF5D8;}
+	.st122{fill:#99533D;}
+	.st123{fill:#914C39;}
+	.st124{fill:#D4C9EF;}
+	.st125{fill:#E3DBF4;}
+	.st126{fill:#F1EDFA;}
+	.st127{fill:#C6B7E9;}
+	.st128{fill:#B8A5E4;}
+	.st129{fill:#F0C877;}
+	.st130{fill:#E8BA67;}
+	.st131{fill:#DDAA5F;}
+	.st132{fill:#D4994F;}
+	.st133{fill:#C98B44;}
+	.st134{fill:#BF7D3C;}
+	.st135{fill:#909997;}
+	.st136{fill:#724D31;}
+	.st137{fill:#93C2CA;}
+	.st138{fill:#99C7CE;}
+	.st139{fill:#9FCCD3;}
+	.st140{fill:#ACD7DD;}
+	.st141{fill:#B9E2E7;}
+	.st142{fill:#A5D1D8;}
+	.st143{fill:#88B9C3;}
+	.st144{fill:#7EB1BD;}
+	.st145{fill:#F297BE;}
+	.st146{fill:#C8CCCB;}
+	.st147{fill:none;}
+	.st148{fill:#4F4032;}
+	.st149{fill:#604631;}
+	.st150{fill:#F9BDA0;}
+	.st151{fill:#E7685F;}
+	.st152{fill:#C84054;}
+	.st153{fill:#ABB2B1;}
+	.st154{fill:#9DA5A4;}
+	.st155{fill:#F74000;}
+	.st156{fill:#F97C00;}
+	.st157{fill:#F9C900;}
+	.st158{fill:#EFD4A7;}
+	.st159{fill:#EACEA1;}
+	.st160{fill:#FCE8CC;}
+	.st161{fill:#F5DEB9;}
+	.st162{fill:#CFAB81;}
+	.st163{fill:#D5B387;}
+	.st164{fill:#3A4274;}
+	.st165{fill:#707EB7;}
+	.st166{fill:#424B7E;}
+	.st167{fill:#7C8AC4;}
+	.st168{fill:#FFD98D;}
+	.st169{fill:#8694D1;}
+	.st170{fill:#9AA6D6;}
+	.st171{fill:#ABB4DD;}
+	.st172{fill:#FDECEF;}
+	.st173{fill:#137FA0;}
+	.st174{fill:#EB6B48;}
+	.st175{fill:#F57552;}
+	.st176{fill:#515E91;}
+	.st177{fill:#5C699E;}
+	.st178{fill:#6673AA;}
+	.st179{fill:#504484;}
+	.st180{fill:#FF5F7E;}
+	.st181{fill:#EBCEEB;}
+	.st182{fill:#E5BDE5;}
+	.st183{fill:#E0ABDF;}
+	.st184{fill:#D799D6;}
+	.st185{fill:#3B8FA3;}
+	.st186{fill:#348B99;}
+	.st187{fill:#F7F7F7;}
+	.st188{fill:#3AA176;}
+	.st189{fill:#84ED82;}
+	.st190{fill:#EFEAEA;}
+	.st191{fill:#FF9A7E;}
+	.st192{fill:#FCD2BE;}
+	.st193{fill:#FCDDCF;}
+	.st194{fill:#C683C8;}
+	.st195{fill:#A55F49;}
+	.st196{fill:#FEF5F7;}
+</style>
+<g>
+	<g>
+		<path class="tangerine_01" d="M16,10c-4.971,0-9,3.029-9,8c0,4.971,4.029,8,9,8V10z"/>
+		<path class="tangerine_01" d="M25,18c0-4.971-4.029-8-9-8v16C20.971,26,25,22.971,25,18z"/>
+		<path class="tangerine_01" d="M16,10c-4.971,0-9,3.029-9,8c0,0.709,0.09,1.373,0.245,2c0.932-3.768,4.493-6,8.755-6V10z"/>
+		<path class="tangerine_01" d="M24.755,20C24.91,19.373,25,18.709,25,18c0-4.971-4.029-8-9-8v4C20.262,14,23.823,16.232,24.755,20z
+			"/>
+		<g>
+			<path class="tangerine_01" d="M0.537,22.001c0.77,1.334,4.34,3.626,6.429,4.89c0.338,0.205,0.722,0.183,1.02,0.012L2.001,16.537
+				C0.087,17.641-0.568,20.087,0.537,22.001z"/>
+			<path class="tangerine_01" d="M2.001,16.537l5.985,10.366c0.297-0.172,0.508-0.493,0.5-0.889c-0.05-2.442-0.25-6.679-1.02-8.013
+				C6.36,16.087,3.914,15.432,2.001,16.537z"/>
+		</g>
+		<g>
+			<path class="tangerine_01" d="M31.463,22.001c-0.77,1.334-4.34,3.626-6.429,4.89c-0.338,0.205-0.722,0.183-1.02,0.012
+				l5.985-10.366C31.913,17.641,32.568,20.087,31.463,22.001z"/>
+			<path class="tangerine_01" d="M29.999,16.537l-5.985,10.366c-0.297-0.172-0.508-0.493-0.5-0.889
+				c0.05-2.442,0.25-6.679,1.02-8.013C25.64,16.087,28.086,15.432,29.999,16.537z"/>
+		</g>
+		<path class="tangerine_01" d="M16,20c-1.105,0-2,0.895-2,2c0,1.105,0.895,1,2,1V20z"/>
+		<path class="tangerine_01" d="M18,22c0-1.105-0.895-2-2-2v3C17.105,23,18,23.105,18,22z"/>
+		<g>
+			<circle class="tangerine_01" cx="21.5" cy="18.5" r="2.5"/>
+			<circle class="tangerine_01" cx="21" cy="19" r="1"/>
+		</g>
+		<g>
+			<circle class="tangerine_01" cx="10.5" cy="18.5" r="2.5"/>
+			<circle class="tangerine_01" cx="11" cy="19" r="1"/>
+		</g>
+		<path class="tangerine_01" d="M16,23.5c0,0.276-0.698,0.5-1.25,0.5S14,23.776,14,23.5s0.198-0.5,0.75-0.5S16,23.224,16,23.5z"/>
+		<path class="tangerine_01" d="M18,23.5c0,0.276-0.198,0.5-0.75,0.5S16,23.776,16,23.5s0.698-0.5,1.25-0.5S18,23.224,18,23.5z"/>
+		<path class="tangerine_01" d="M16,24.5c0,0.276-0.698,0.5-1.25,0.5S14,24.776,14,24.5s0.198-0.5,0.75-0.5S16,24.224,16,24.5z"/>
+		<path class="tangerine_01" d="M18,24.5c0,0.276-0.198,0.5-0.75,0.5S16,24.776,16,24.5s0.698-0.5,1.25-0.5S18,24.224,18,24.5z"/>
+		<g>
+			<g>
+				<path class="tangerine_01" d="M12.331,7.511c1.381,2.391-0.439,3.717-2.83,5.098l-4-6.928C7.892,4.3,10.95,5.119,12.331,7.511z"
+					/>
+				<path class="tangerine_01" d="M9.501,12.609c-2.391,1.381-4.449,2.293-5.83-0.098s-0.561-5.449,1.83-6.83L9.501,12.609z"/>
+			</g>
+			<ellipse transform="matrix(0.866 -0.5 0.5 0.866 -2.9881 5.8726)" class="tangerine_01" cx="9.464" cy="8.512" rx="1" ry="1"/>
+			<ellipse transform="matrix(0.866 -0.5 0.5 0.866 -4.4522 4.4085)" class="tangerine_01" cx="6" cy="10.512" rx="1" ry="1"/>
+			<path class="tangerine_01" d="M7.216,8.652c0.005-0.003,0.011-0.003,0.016-0.005C7.711,8.37,7.875,7.758,7.598,7.28
+				C7.322,6.802,6.711,6.638,6.232,6.914C6.227,6.917,6.225,6.922,6.22,6.925L7.216,8.652z"/>
+			<path class="tangerine_01" d="M6.22,6.925C5.753,7.206,5.593,7.807,5.866,8.28C6.14,8.753,6.74,8.915,7.216,8.652L6.22,6.925z"/>
+			<g>
+				<path class="tangerine_01" d="M28.329,12.491c-1.381,2.391-3.439,1.479-5.83,0.098l4-6.928
+					C28.891,7.042,29.71,10.1,28.329,12.491z"/>
+				<path class="tangerine_01" d="M22.499,12.589c-2.391-1.381-4.211-2.707-2.83-5.098c1.381-2.391,4.439-3.211,6.83-1.83
+					L22.499,12.589z"/>
+			</g>
+			<ellipse transform="matrix(0.5 -0.866 0.866 0.5 3.9129 27.7961)" class="tangerine_01" cx="26.029" cy="10.509" rx="1" ry="1"/>
+			<ellipse transform="matrix(0.5 -0.866 0.866 0.5 3.9129 23.7961)" class="tangerine_01" cx="22.564" cy="8.509" rx="1" ry="1"/>
+			<path class="tangerine_01" d="M24.784,8.632c0.005,0.003,0.008,0.008,0.013,0.011c0.478,0.276,1.09,0.112,1.366-0.366
+				c0.276-0.478,0.112-1.09-0.366-1.366c-0.005-0.003-0.011-0.003-0.016-0.005L24.784,8.632z"/>
+			<path class="tangerine_01" d="M25.78,6.906c-0.476-0.264-1.077-0.102-1.35,0.371c-0.273,0.473-0.113,1.075,0.353,1.355
+				L25.78,6.906z"/>
+		</g>
+	</g>
+	<g>
+		<path class="tangerine_04" d="M16,10c-4.971,0-9,3.029-9,8c0,4.971,4.029,8,9,8V10z"/>
+		<path class="tangerine_05" d="M25,18c0-4.971-4.029-8-9-8v16C20.971,26,25,22.971,25,18z"/>
+		<path class="tangerine_03" d="M16,10c-4.971,0-9,3.029-9,8c0,0.709,0.09,1.373,0.245,2c0.932-3.768,4.493-6,8.755-6V10z"/>
+		<path class="tangerine_04" d="M24.755,20C24.91,19.373,25,18.709,25,18c0-4.971-4.029-8-9-8v4C20.262,14,23.823,16.232,24.755,20z
+			"/>
+		<g>
+			<path class="tangerine_02" d="M0.537,22.001c0.77,1.334,4.34,3.626,6.429,4.89c0.338,0.205,0.722,0.183,1.02,0.012L2.001,16.537
+				C0.087,17.641-0.568,20.087,0.537,22.001z"/>
+			<path class="tangerine_01" d="M2.001,16.537l5.985,10.366c0.297-0.172,0.508-0.493,0.5-0.889c-0.05-2.442-0.25-6.679-1.02-8.013
+				C6.36,16.087,3.914,15.432,2.001,16.537z"/>
+		</g>
+		<g>
+			<path class="tangerine_03" d="M31.463,22.001c-0.77,1.334-4.34,3.626-6.429,4.89c-0.338,0.205-0.722,0.183-1.02,0.012
+				l5.985-10.366C31.913,17.641,32.568,20.087,31.463,22.001z"/>
+			<path class="tangerine_02" d="M29.999,16.537l-5.985,10.366c-0.297-0.172-0.508-0.493-0.5-0.889
+				c0.05-2.442,0.25-6.679,1.02-8.013C25.64,16.087,28.086,15.432,29.999,16.537z"/>
+		</g>
+		<path class="tangerine_02" d="M16,20c-1.105,0-2,0.895-2,2c0,1.105,0.895,1,2,1V20z"/>
+		<path class="tangerine_03" d="M18,22c0-1.105-0.895-2-2-2v3C17.105,23,18,23.105,18,22z"/>
+		<g>
+			<circle class="grey_01" cx="21.5" cy="18.5" r="2.5"/>
+			<circle class="grey_17" cx="21" cy="19" r="1"/>
+		</g>
+		<g>
+			<circle class="white" cx="10.5" cy="18.5" r="2.5"/>
+			<circle class="grey_16" cx="11" cy="19" r="1"/>
+		</g>
+		<path class="white" d="M16,23.5c0,0.276-0.698,0.5-1.25,0.5S14,23.776,14,23.5s0.198-0.5,0.75-0.5S16,23.224,16,23.5z"/>
+		<path class="grey_01" d="M18,23.5c0,0.276-0.198,0.5-0.75,0.5S16,23.776,16,23.5s0.698-0.5,1.25-0.5S18,23.224,18,23.5z"/>
+		<path class="white" d="M16,24.5c0,0.276-0.698,0.5-1.25,0.5S14,24.776,14,24.5s0.198-0.5,0.75-0.5S16,24.224,16,24.5z"/>
+		<path class="grey_01" d="M18,24.5c0,0.276-0.198,0.5-0.75,0.5S16,24.776,16,24.5s0.698-0.5,1.25-0.5S18,24.224,18,24.5z"/>
+		<g>
+			<g>
+				<path class="rose_08" d="M12.331,7.511c1.381,2.391-0.439,3.717-2.83,5.098l-4-6.928C7.892,4.3,10.95,5.119,12.331,7.511z"/>
+				<path class="rose_09" d="M9.501,12.609c-2.391,1.381-4.449,2.293-5.83-0.098s-0.561-5.449,1.83-6.83L9.501,12.609z"/>
+			</g>
+			<ellipse transform="matrix(0.866 -0.5 0.5 0.866 -2.9881 5.8726)" class="lemon_02" cx="9.464" cy="8.512" rx="1" ry="1"/>
+			<ellipse transform="matrix(0.866 -0.5 0.5 0.866 -4.4522 4.4085)" class="lemon_03" cx="6" cy="10.512" rx="1" ry="1"/>
+			<path class="lemon_02" d="M7.216,8.652c0.005-0.003,0.011-0.003,0.016-0.005C7.711,8.37,7.875,7.758,7.598,7.28
+				C7.322,6.802,6.711,6.638,6.232,6.914C6.227,6.917,6.225,6.922,6.22,6.925L7.216,8.652z"/>
+			<path class="lemon_03" d="M6.22,6.925C5.753,7.206,5.593,7.807,5.866,8.28C6.14,8.753,6.74,8.915,7.216,8.652L6.22,6.925z"/>
+			<g>
+				<path class="rose_10" d="M28.329,12.491c-1.381,2.391-3.439,1.479-5.83,0.098l4-6.928C28.891,7.042,29.71,10.1,28.329,12.491z"
+					/>
+				<path class="rose_09" d="M22.499,12.589c-2.391-1.381-4.211-2.707-2.83-5.098c1.381-2.391,4.439-3.211,6.83-1.83L22.499,12.589z
+					"/>
+			</g>
+			<ellipse transform="matrix(0.5 -0.866 0.866 0.5 3.9129 27.7961)" class="lemon_04" cx="26.029" cy="10.509" rx="1" ry="1"/>
+			<ellipse transform="matrix(0.5 -0.866 0.866 0.5 3.9129 23.7961)" class="lemon_03" cx="22.564" cy="8.509" rx="1" ry="1"/>
+			<path class="lemon_04" d="M24.784,8.632c0.005,0.003,0.008,0.008,0.013,0.011c0.478,0.276,1.09,0.112,1.366-0.366
+				c0.276-0.478,0.112-1.09-0.366-1.366c-0.005-0.003-0.011-0.003-0.016-0.005L24.784,8.632z"/>
+			<path class="lemon_03" d="M25.78,6.906c-0.476-0.264-1.077-0.102-1.35,0.371c-0.273,0.473-0.113,1.075,0.353,1.355L25.78,6.906z"
+				/>
+		</g>
+	</g>
+</g>
+</svg>
