@@ -1,4 +1,5 @@
 @import "../../../stylesheets/_artificial-colors.scss";
+
 .pokemonicons-content {
 
 	h1, figcaption {
@@ -44,7 +45,7 @@
 		margin-top: 50px;
 	}
 
-	#casesummary {
+	#alltheicons {
 		padding-top: 100px;
 	}
 
@@ -62,39 +63,26 @@
 		background-size: cover;
 	}
 
-	.download {
-		padding: 15px 100px 0 100px;
+	button {
+		padding: 15px 100px 15px 100px;
 		color: $cool-grey-90;
+		border: none;
 		font-weight: 700;
 		background-color: $white;
 		border-radius: 45px;
-		margin: 0 0 120px;
+		margin: 0 0 120px 0;
 	}
 
-	.download:hover {
-		padding: 15px 120px 0 120px;
+	button:hover {
+		padding: 15px 120px 15px 120px;
 		color: $turquoise;
 	}
 
-	.transition {
-	    -webkit-transition: all .2s ease-in-out;
-	    -moz-transition: all .2s ease-in-out;
-	    -o-transition: all .2s ease-in-out;
-	    transition: all .2s ease-in-out;
-	}
-
-	.transition::before {
-	    -webkit-transition: all .2s ease-in-out;
-	    -moz-transition: all .2s ease-in-out;
-	    -o-transition: all .2s ease-in-out;
-	    transition: all .2s ease-in-out;
-	}
-
-	.transition::after {
-	    -webkit-transition: all .2s ease-in-out;
-	    -moz-transition: all .2s ease-in-out;
-	    -o-transition: all .2s ease-in-out;
-	    transition: all .2s ease-in-out;
+	.transition, .transition::before, .transition::after {
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
 	}
 
 }
