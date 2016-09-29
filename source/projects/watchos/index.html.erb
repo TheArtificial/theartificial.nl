@@ -5,12 +5,14 @@
 			<p class="authors">an experiment by <%= link_to_person 'shannon' %> and <%= link_to_person 'ariane' %></p>
 			<p>The Apple Watch is a beautiful and powerful piece of hardware accompanied by incredibly useful software. It replaces a handful of other wearables by tracking steps, heartrate, standing, and more. It empowers users to handle notifications without digging through their bags (or pockets) to find their phones. It provides information at multiple resolutions with complications and apps (and formerly glances). Appropriately limited in its functionality, the Apple Watch still provides users with the ability to get directions, check the weather, send quick replies to messages, set tea timers, check into a location, and meditate with haptic guidance.</p>
 			<p>WatchOS 3 brought some changes to the familiar interface. Most notably, Glances and Friends were removed and Dock was introduced. WatchOS 3 also made it possible to switch between multiple watch faces. The interaction of multiple watch faces (and complications) is the subject of this redesign.</p>
+
 			<h2>Beautiful alone, imperfect together</h2>
 			<p>There is no doubt that Apple Watch faces are <a href="https://www.wired.com/2015/04/apple-watch-design/">beautifully designed</a>. The details of each face are painstakingly considered and executed with the utmost care; however, with the introduction of multiple watch faces in the new WatchOS, it is obvious that the watch faces were designed to be perfect when standing alone, but not when viewed with others.</p>
 			<p>Looking first at the digital faces, the time itself jumps a few pixels up and then a few more back down when switching between Photo, Motion, Astronomy, and Activity watch faces. Only the Activity watch face offers the long-format time (in a notably non-standard version of SF Compact), while only the Photo and Photo Album faces allow the user to switch the time between top and bottom layouts.</p>
 			<img src="images/grid-digital.png">
 			<p>The analog faces have somewhat more consistency, but still the ring of numbers bounces up and down while the allowed complications vary (somewhat unpredictably) per watch face. In addition, the Chronograph and and Activity watch faces have unique inner elements; Color offers a monogram option; and Simple, Utility, and Chronograph allow for the date within the face (Activity requires it).</p>
 			<img src="images/grid-analog.png">
+
 			<h2>Unifying the Grid</h2>
 			<p>At a glance, the different watch faces have more in common than not. The digital faces all have the time in large type positioned with the baseline about 33% from the top of the screen. We started here, and then created variations across faces for top and bottom text placement and consistent complication arrangement. In the case of Activity, we found that by treating the activity visualization as a complication, the layout could be created with the Modular watch face.</p>
 			<img src="images/grid-digital-adjusted.png">
@@ -18,6 +20,18 @@
 			<img src="images/grid-analog-adjusted.png">
 			<p>To avoid locking a user in a world of either digital or analog, we synchronized the two grids. Ten rows of 39px or 34px (depending on screen size) create a vertical rhythm across faces, with the complications fitting nicely into the corners across all. Now the user wanting the date always in the top left can do so across all faces without any format changes or jumps.</p>
 			<img src="images/grid-overall.png">
+
+			<h2>Freeing complications</h2>
+			<p>With the current WatchOS, choose a watch face, and you’re also making decisions about the complications you can use on that watch face. Apple currently has <a href="https://developer.apple.com/watchos/human-interface-guidelines/app-components/">six non-interchangeable complications</a>: Circular, Modular large, Modular small, Utilitarian small, Utilitarian large, and Extra large. Many of the complication types bear the names of the faces they match – though their use extends beyond only those faces.</p>
+			<p>Many additional complication-like details fall outside the realm of complications. Items like Date and Monogram have special treatments that are inconsistent across the watch and phone customization interfaces; activity is considered so special it has both a unique digital and analog face devoted to it; and chronograph has its own face as well.</p>
+			<img src="images/complications.png">
+			<p>We simplified Apple’s six types of complications into only four: small, small text, long text, and large. With this system, the complication-like visualization from the Activity digital face is treated as a large complication.</p>
+			<p>To further simplify watch face customization, small and small text are often interchangeable, providing users several visualization options for the same information. These complications behave in much the same way as the existing WatchOS complications when it comes to color customization.</p>
+			<img src="images/complications-adjusted.png">
+			<p>From here, we extended the complication to include all complication-like details from the analog faces. This resulted in a fifth type of complication available (only on analog faces): the inner complication. This means that, rather than having watch faces specific to Chronograph and Activity, these are complications available across watch faces. It also means the monograms and dates are available across faces.</p>
+			<img src="images/complications-inner.png">
+
+			<h2>Redesigning the analog faces</h2>
 		</div>
 	</div>
 </div>
