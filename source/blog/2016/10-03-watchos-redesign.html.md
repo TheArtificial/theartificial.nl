@@ -31,6 +31,8 @@ At a glance, the different watch faces have more in common than not. The digital
 
 Getting the analog watch faces on the same grid was simple compared to the digital faces. Here, however, we took on the additional challenge of making the Activity and Chronograph features into complications that could be used across all faces. We also shared the monogram and date complications across all analog faces.
 
+![WatchOS analog grid adjusted](10-03-watchos-redesign/grid-analog-adjusted.png)
+
 To avoid locking a user in a world of either digital or analog, we aligned the two grids. Ten rows of 39px or 34px (depending on screen size) create a vertical rhythm across faces, with the complications fitting nicely into the corners across all. Now the user wanting the date always in the top left can do so across all faces without any format changes or jumps.
 
 ![WatchOS overall grid](10-03-watchos-redesign/grid-overall.png)
