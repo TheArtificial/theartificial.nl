@@ -89,8 +89,8 @@ We also looked at each individual watch face to see how color might best enhance
 
 # Making more with less
 
-Our Apple Watch face design system allows users to create more with less. With the consolidation across watch faces, there are only a handful of layouts across faces, while each individual face has more possible options.
-
 To create a new watch face, the user must first select a face type. We have sixteen (one fewer than Apple). For faces like Photo, Photo Album, Timelapse, or Motion, the user selects a background before choosing a digital time layout – top or bottom, long or short. For analog faces, the user adjusts the complexity of the style. Both analog and digital faces have multiple complication layouts. The user first selects the layout, and then chooses which complications occupy the available spaces. Lastly, for those faces that allow it, the user customizes the color.
 
 ![WatchOS customization](10-03-watchos-redesign/customization.gif)
+
+Design systems allow users to have more power often with less complexity. Our Apple Watch face design system increases the number of watch face options users can create while simplifying the process through consistency. Furthermore, a greater possible diversity in watch faces feels less random as all faces work together across a single consistent grid.
