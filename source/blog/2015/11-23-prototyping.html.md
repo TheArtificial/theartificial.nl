@@ -19,7 +19,7 @@ We selected these seven tools because of their diverse range of qualities and me
 
 [![InVision](11-23-prototyping/icon-invision.png)](http://www.invisionapp.com) | [**InVision**](http://www.invisionapp.com/)| A web-based collaborative program  
 [![Pixate](11-23-prototyping/icon-pixate.png)](http://www.pixate.com/) | [**Pixate**](http://www.pixate.com/)| Google's native mobile prototyping tool
-[![Principle](11-23-prototyping/icon-principle.png)](www.principleformac.com) | [**Principle**](http://www.principleformac.com/)| Created by a former Apple engineer  
+[![Principle](11-23-prototyping/icon-principle.png)](http://www.principleformac.com/) | [**Principle**](http://www.principleformac.com/)| Created by a former Apple engineer  
 [![Form](11-23-prototyping/icon-form.png)](http://www.relativewave.com/form/) | [**Form**](http://www.relativewave.com/form/)| Google's patch-based prototyping tool  
 [![Origami](11-23-prototyping/icon-origami.png)](https://facebook.github.io/origami/) | [**Origami**](https://facebook.github.io/origami/)| Facebook's Quartz Composer plugin
 [![Framer](11-23-prototyping/icon-framer.png)](http://www.framerjs.com) | [**Framer**](http://www.framerjs.com/)| JavaScript based prototyping
