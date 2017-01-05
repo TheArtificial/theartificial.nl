@@ -36,6 +36,6 @@ So, we decided to add images to make it more personal and to use collage as the 
 
 ![Book sections ](01-05-sinterklaas-book/P1050625.png)
 
-But creating consistency was a bit of a struggle, as they were not meant to stand alone we had to somehow fit them to one publication. In order to achieve this, we treated the images in the same way and we created a color palette to unify them. We divided the book into three sections: The Experiments, The Classics, and The Signatures.
+But creating consistency was a bit of a struggle, as they were not meant to stand alone we had to somehow fit them into one publication. In order to achieve this, we treated the images in the same way and we created a color palette to unify them. We divided the book into three sections: The Experiments, The Classics, and The Signatures.
 
 For me, the biggest challenge was to get to know everyone at the Artificial a bit better, to be able to express our personality throughout the book. We all like whimsy stuff, hand lettering, colors, animals (although some of us have allergies), illustrations, typography, writing and of course, cocktails.
