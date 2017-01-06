@@ -10,7 +10,17 @@
 			<div class="col-7 left-1 dark-text section">
 				<div class="padded">
 					<h1 class="name"><%= current_page.data.title %></h1>
-					<h5><a href="https://linkedin.com/in/<%= current_page.data.linkedin %>">linkedin</a> | <a href="https://twitter.com/<%= current_page.data.twitter %>">twitter</a></h5>
+<%
+		social_links = []
+		if current_page.data.linkedin
+			social_links << link_to("linkedin", "https://linkedin.com/in/#{current_page.data.linkedin}")
+		end
+		if current_page.data.twitter
+			social_links << link_to("twitter", "https://twitter.com/#{current_page.data.twitter}")
+		end
+		social_html = social_links.join(" | ").html_safe
+%>
+					<h5><%= social_html %></h5>
 				</div>
 				<div class="padded">
 					<h3><%= "&ldquo;#{current_page.data['quote']}&rdquo;" %></h3>
