@@ -5,38 +5,45 @@ tags: cocktails, book, design, collage
 author: natalia
 ---
 
+This year we decided to treat our clients and friends to a very special [Sinterklaas](/blog/2014/12/05/stnicholasday.html) gift, a collection of our Friday cocktail recipes.
+
 ![Book Cover](01-06-sinterklaas-book/cover.jpg)
 
-This year, we decided to treat our clients and friends with a very special Christmas gift, a collection of our Friday cocktail recipes.
 
-# How we made the book
+# Defining a Style
 
-We started off by analyzing other cocktail books. What works, what doesn't? What colors and typography are popular? How can we make ours different?
+We started off by analyzing other cocktail books. What works and what doesn't? What colors and typography are popular? How do others balance utility with style? Where should we copy, and how could we make our book of recipes different?
 
-We all love cocktails and for us, each one of them has its own personality, the ingredients we use are what make them unique.
+Because we are a UI/UX studio a lot of people would think that we spend most of our time behind the screen, but not at The Artificial. We start our projects by doing research, sketching in our notebooks, looking for materials, exploring different ways to show what we want, and making decisions together.
 
 ![Ingredients for prints](01-06-sinterklaas-book/fruits.jpg)
 
-When mixing, it is very important to have the right amount of each of the ingredients, it is what defines the taste of it. Each ingredient has its own characteristics and once they are mixed they create something tasty and beautiful.
+We all love cocktails, and each one of them has its own personality. Our mixology experiments usually start with an ingredient or a flavor we want to try, and we used these ingredients as the foundation for the presentation of each recipe.
 
-Because we are a UI/UX studio a lot of people would think that we spend most of our time behind the screen, but not at The Artificial. We try to start our projects by doing research, sketching on our notebooks, looking for materials, exploring different ways to show what we want and making decisions together.
+In this case, we decided to create patterns using the ingredients we used to mix our cocktails.
 
 ![Adding paint to the ingredients](01-06-sinterklaas-book/painting.jpg)
 
 ![Creating prints](01-06-sinterklaas-book/impressions.jpg)
 
-In this case, we decided to create patterns using ingredients we had used to mix our cocktails.
+# Refining Each Recipe
+
+When mixing, it is very important to have the right amount of each of each ingredient; different proportions result in different tastes. Each ingredient has its own characteristics that need to be considered so that they can be mixed to create something beautiful.
+
+The same can be said for layouts.
 
 ![Soap](01-06-sinterklaas-book/soap.jpg)
 
-After the first round of sketches, we found out that the patterns by themselves were not going to cut it. The spreads looked like soap packaging and that does not represent us as a studio.
+After the first round of sketches, we found out that the patterns by themselves were not going to cut it. The spreads looked like soap packaging, a look that does not represent us as a studio.
+
+So we decided to add images to make it more personal and to use collage as the technique. The beauty of collage is chaos, and with the right images and proportions we could give the illusion of three-dimensionality to a flat canvas. It also allowed us to combine different elements and styles and to create harmony within each composition.
 
 ![Book close up](01-06-sinterklaas-book/closeup.jpg)
 
-So we decided to add images to make it more personal and to use collage as the technique. The beauty of collage is chaos, and with the right images and proportions you can give the illusion of three-dimensionality to a flat canvas. It also allows you to combine different elements and styles and to create harmony within them.
+# Pulling Everything Together
+
+But creating consistency was a bit of a struggle; as the spreads were not meant to stand alone. We had to somehow fit them into one publication. In order to achieve this, we treated the images in the same way and created a color palette to unify the pages. We then divided the book into three sections: The Experiments, The Classics, and The Signatures.
 
 ![Book sections](01-06-sinterklaas-book/sections.jpg)
 
-But creating consistency was a bit of a struggle; as they were not meant to stand alone we had to somehow fit them into one publication. In order to achieve this, we treated the images in the same way and we created a color palette to unify them. We then divided the book into three sections: The Experiments, The Classics, and The Signatures.
-
-For me, the biggest challenge was to get to know everyone at The Artificial a bit better, so to express our personality throughout the book. We all like whimsical stuff: hand lettering, colors, animals (although some of us have allergies), illustrations, typography, writing and of course, cocktails.
+For me, the biggest challenge was to get to know everyone at The Artificial a bit better, so to express our personality throughout the book. We all like whimsical stuff: hand lettering, colors, animals (although some of us have allergies), illustrations, typography, writing, and of course, cocktails.
