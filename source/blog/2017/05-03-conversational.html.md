@@ -31,9 +31,9 @@ So we did what we always do, we tried some things and made some mistakes. And th
 
 One of the biggest misconceptions is that conversational interfaces are chatbots. Chatbots are typically AI that aim to be very human, and like a human on the other side of any text conversation, they require a good amount of attention. When designing interfaces for connected products, it’s common that we don’t have the user’s complete attention. He’s often focused on the product or the experience and not the screen. He may even be using his hands in other ways than tapping on glass.
 
-In needing to optimize for these sorts of scenarios, we found it was important that we carefully consider every demand our algorithm made on the user’s attention (and fingertips). When asking a question, we’d ask Do we absolutely need this input?
+In needing to optimize for these sorts of scenarios, we found it was important that we carefully consider every demand our algorithm made on the user’s attention (and fingertips). When asking a question, we’d ask _Do we absolutely need this input?_
 
-In most situations, we also decided against free-form text entry, opting instead for pre-set answers. In choosing the potential responses, we asked ourselves How few choices can we give him and still make it clear that he’s in control?
+In most situations, we also decided against free-form text entry, opting instead for pre-set answers. In choosing the potential responses, we asked ourselves _How few choices can we give him and still make it clear that he’s in control?_
 
 Of course there are places in the experience where we wanted to give our user the opportunity to express himself. We made sure that these moments occurred during low-intensity parts of the experience where he could give the interface his full attention. Then we gave him the opportunity to express himself not just with text, but also with photos.
 
@@ -51,7 +51,7 @@ The conversation we designed with our user became multi-dimensional as we added 
 
 Designing a conversational interface goes beyond designing the interactions of having conversations or the look and feel of the bubbles. To design a conversational interface is to design the rules of engagement. Is the AI funny or serious? Does it call the user by his name? Does it pretend to be sad when something goes wrong? Does it use emoji?
 
-And then more broadly, when does the AI communicate what and how? When does it use non-verbal communication? When does it inform, and when does it ask for a response? When does it make the use r wait?
+And then more broadly, when does the AI communicate what and how? When does it use non-verbal communication? When does it inform, and when does it ask for a response? When does it make the user wait?
 
 Defining the rules around how the AI uses the interface is as important as designing the interface itself. While the interface empowers the AI to communicate in potentially innovative ways, designing a solid ruleset around how that AI engages allows it to live beyond the single interface it was born in. The AI could live on other platforms like Facebook or iMessage and could perform marketing or customer support experiences.
 
