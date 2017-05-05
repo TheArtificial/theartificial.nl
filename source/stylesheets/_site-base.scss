@@ -335,6 +335,10 @@ svg *.content{ fill: $cool-grey-40; }
 	background-color: $cool-grey-90;
 }
 
+.grey-10 {
+	background-color: $cool-grey-10;
+}
+
 .grey {
 	background-color: $cool-grey-50;
 	h1, a {
@@ -352,6 +356,10 @@ svg *.content{ fill: $cool-grey-40; }
 		margin-top: 20px;
 	}
 
+}
+
+.pale-turquoise {
+	background-color: $pale-turquoise;
 }
 
 .turquoise {
