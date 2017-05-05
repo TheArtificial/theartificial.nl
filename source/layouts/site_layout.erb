@@ -17,10 +17,10 @@
 <% end %>
 
 <%# TODO add title %>
-<% content_for :title, "The Artificial" %>
+<% content_for :title, "The Artificial" unless content_for?(:title) %>
 
 <%# TODO add description %>
-<% content_for :description, "The Artificial" %>
+<% content_for :description, "The Artificial is a UX design agency that works on connected products around the world." %>
 
 <%# TODO add keywords %>
 <% content_for :keywords, "design" %>
