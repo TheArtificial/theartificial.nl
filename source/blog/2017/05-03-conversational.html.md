@@ -27,7 +27,7 @@ We experimented with many different approaches, and came to the now-obvious conc
 
 So we did what we always do, we tried some things and made some mistakes. And then we wrote about our experience so that others could learn from it:
 
-#Know Your User’s Attention Level
+# Know Your User’s Attention Level
 
 One of the biggest misconceptions is that conversational interfaces are chatbots. Chatbots are typically AI that aim to be very human, and like a human on the other side of any text conversation, they require a good amount of attention. When designing interfaces for connected products, it’s common that we don’t have the user’s complete attention. He’s often focused on the product or the experience and not the screen. He may even be using his hands in other ways than tapping on glass.
 
