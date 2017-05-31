@@ -29,17 +29,17 @@ Having learned the difference between good diversity and bad diversity, we decid
 
 # Proof over Promises
 
-We tend to hire people who don’t have a lot of experience. We look for passion and a foundational understanding and then invest in training to build good habits and deep expertise. Even without a portfolio flush with relevant work, it’s easy to see when a product or graphic designer takes pride in what she makes.
+We tend to hire people who don’t have a lot of experience. We look for passion and a foundational understanding and then invest in training to build good habits and deep expertise. Even without a portfolio flush with relevant work, it’s easy to see when a product or graphic designer takes pride in what they make.
 
 But somebody whose value is in working with users and connecting with the community doesn’t necessarily present via a traditional portfolio, and so we took the pitch we received in the interview as a promise.
 
-In retrospect, I never should have hired someone who didn’t have a track record of doing what she claimed. I mistook a lack of success for a lack of opportunity and an inability to weave a story around her experience for an insufficient education. It was my own hubris that led me to believe that I was uniquely positioned to provide an environment that would lead her to share our passion and to develop her own.
+In retrospect, I never should have hired someone who didn’t have a track record of doing what they claimed. I mistook a lack of success for a lack of opportunity and an inability to weave a story around their experience for an insufficient education. It was my own hubris that led me to believe that I was uniquely positioned to provide an environment that would lead them to share our passion and to develop their own.
 
 # Attention Is a Valuable Resource
 
 It’s easy to over-invest in problem employees at the cost of those who are committed and successful, after all, in order to be a productive contributor, an employee who’s struggling _needs_ more attention than one who isn't.
 
-I spent nearly six months fully committed to teaching this one lagging employee everything I could. We spent time collaborating; I demonstrated how I would approach different design problems; and we even iterated on her process. I rarely went a night or weekend without working as I struggled not only to teach but also to backfill on the project she wasn’t able to productively contribute to.
+I spent nearly six months fully committed to teaching one lagging employee everything I could. We spent time collaborating; I demonstrated how I would approach different design problems; and we even iterated on their process. I rarely went a night or weekend without working as I struggled not only to teach but also to backfill on the project they weren’t able to productively contribute to.
 
 While it may seem that the victim here was my free time, it was something far more important – my ability to give time to other Artificial employees. While our team is four people, 80% of my time was going to the weakest member. My attention was so consumed, I only had time to react to problems and never to proactively prepare the team for what was coming. Even worse, I found myself pushing others to fill my shoes often without the support they needed.
 
@@ -47,4 +47,4 @@ While it may seem that the victim here was my free time, it was something far mo
 
 It’s a common interview question to ask: _What’s your biggest weakness?_ Hands down, mine is that I’m terrible at giving up on people. More than once, I've spent months investing more than I could afford while ignoring my own exhaustion because I needed to prove that I could teach anyone to be an Artificial designer.
 
-And in the end, the decision to give up one someone is always one that I obsess over. When faced with a team member who just isn't working, I can't go an hour without bringing it up and I am constantly distracted by the weight of it. But once the decision is made, it all seems so obvious, and I don’t know how I didn’t see it sooner. It’s clear now that creating a safe and challenging environment at The Artificial means staying focused on the overall composition rather than obsessing over a single element that just doesn’t fit.
+And in the end, the decision to give up one someone is always one that I obsess over. When faced with a team member who just isn't working, I can't go an hour without bringing it up and I am constantly distracted by the weight of it. But once the decision is made, it all seems so obvious, and I don’t know how I didn’t see it sooner. It’s clear now that creating a safe and challenging environment at The Artificial means staying focused on the overall composition rather than obsessing over any single element that just doesn’t fit.
