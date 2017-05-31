@@ -1,5 +1,5 @@
 ---
-title: 'Knowing When to Give up'
+title: 'Knowing When to Give Up'
 category: thoughts
 tags: 'culture, management, company'
 author: shannon
