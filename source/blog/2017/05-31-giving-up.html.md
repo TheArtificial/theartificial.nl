@@ -27,7 +27,7 @@ What I realize now is that hiring someone who’s different only works if that p
 
 Having learned the difference between good diversity and bad diversity, we decided to add a [design test](http://theartificial.nl/blog/2017/04/11/design-test.html) to our hiring process. This test looks beyond basic design skills to understand a person's process, ensuring that those we hire can create and communicate with everyone else on the team, even if their passions are wildly different.
 
-# Proof Over Promises
+# Proof over Promises
 
 We tend to hire people who don’t have a lot of experience. We look for passion and a foundational understanding and then invest in training to build good habits and deep expertise. Even without a portfolio flush with relevant work, it’s easy to see when a product or graphic designer takes pride in what they make.
 
