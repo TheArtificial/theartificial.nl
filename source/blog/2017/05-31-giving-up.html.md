@@ -3,6 +3,7 @@ title: 'Knowing When to Give Up'
 category: thoughts
 tags: 'culture, management, company'
 author: shannon
+published: false
 ---
 
 When I began my career as a designer, I thought about designing stuff. I worried about things like typography, transitions, and usability. Then, through several promotions and starting my own company, I began thinking less about designing stuff and more about designing teams.
