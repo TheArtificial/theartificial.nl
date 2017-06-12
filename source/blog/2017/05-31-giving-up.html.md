@@ -3,7 +3,7 @@ title: 'Knowing When to Give Up'
 category: thoughts
 tags: 'culture, management, company'
 author: shannon
-published: false
+published: true
 ---
 
 When I began my career as a designer, I thought about designing stuff. I worried about things like typography, transitions, and usability. Then, through several promotions and starting my own company, I began thinking less about designing stuff and more about designing teams.
@@ -18,7 +18,7 @@ But like all failures, I see a failed hire as an opportunity to learn. It’s im
 
 ---
 
-# Good Diversity and Bad Diversity
+# There's More to Diversity than Being Different
 
 We strive to create a diverse team in background as well as in passion, which often means hiring people without traditional UX or UI backgrounds. Usually, we’ll seek common ground, looking for portfolios that show an orientation to the details, a passion for visual design, and an ability to express process through writing. While this has served us well in team-building, it’s also created an environment where we all prefer working to talking. This is what we were hoping to shake up.
 
@@ -28,7 +28,7 @@ What I realize now is that hiring someone who’s different only works if that p
 
 Having learned the difference between good diversity and bad diversity, we decided to add a [design test](http://theartificial.nl/blog/2017/04/11/design-test.html) to our hiring process. This test looks beyond basic design skills to understand a person's process, ensuring that those we hire can create and communicate with everyone else on the team, even if their passions are wildly different.
 
-# Proof over Promises
+# Proof Is More Important than Promises
 
 We tend to hire people who don’t have a lot of experience. We look for passion and a foundational understanding and then invest in training to build good habits and deep expertise. Even without a portfolio flush with relevant work, it’s easy to see when a product or graphic designer takes pride in what they make.
 
