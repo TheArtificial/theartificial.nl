@@ -1,5 +1,5 @@
 ---
-title: "Calling tech-savvy designers"
+title: "Calling Tech-Savvy Designers"
 category: news
 tags: hiring, jobs, designer
 author: carol

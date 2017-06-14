@@ -1,5 +1,5 @@
 ---
-title: "Redesigning WatchOS"
+title: "Redesigning watchOS"
 category: process
 tags: apple, watch, watchos, redesign
 author: shannon

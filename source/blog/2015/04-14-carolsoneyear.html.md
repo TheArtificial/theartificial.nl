@@ -1,5 +1,5 @@
 ---
-title: "How I learned to embrace familiarity"
+title: "How I Learned to Embrace Familiarity"
 category: thoughts
 tags: ui
 author: carol

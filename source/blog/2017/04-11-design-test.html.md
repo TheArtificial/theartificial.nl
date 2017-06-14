@@ -1,5 +1,5 @@
 ---
-title: 'Creating a design test for prospective candidates'
+title: 'Creating a Design Test for Prospective Candidates'
 category: process
 tags: agency, design, test, interview, hiring
 author: carol

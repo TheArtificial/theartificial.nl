@@ -1,5 +1,5 @@
 ---
-title: The communication that makes an outstanding design internship
+title: The Communication That Makes an Outstanding Design Internship
 category: thoughts
 tags: 'internship, design, office, communication, job, workspace'
 author: carol

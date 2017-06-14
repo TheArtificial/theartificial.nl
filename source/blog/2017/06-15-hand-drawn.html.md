@@ -1,5 +1,5 @@
 ---
-title: 'Hand-drawn Icons Tutorial'
+title: 'Hand-Drawn Icons Tutorial'
 category: process
 tags: 'tutorial, icons, iconography, sketch, hand-drawn'
 author: shannon

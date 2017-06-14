@@ -1,5 +1,5 @@
 ---
-title: "Action icons speak <br>louder than words"
+title: "Action Icons Speak Louder Than Words"
 category: news
 tags: icons, verbs, kickstarter
 author: jo

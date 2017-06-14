@@ -1,5 +1,5 @@
 ---
-title: "Mothers & design"
+title: "Mothers & Design"
 category: inspiration
 tags: mothers, women, pioneers, collaboration
 author: carol

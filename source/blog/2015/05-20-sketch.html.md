@@ -1,5 +1,5 @@
 ---
-title: "Why we won’t sketch in Sketch"
+title: "Why We Won’t Sketch in Sketch"
 category: process
 tags: tools, illustrator, sketch
 author: shannon

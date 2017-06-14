@@ -1,5 +1,5 @@
 ---
-title: "Designing our new studio"
+title: "Designing Our New Studio"
 category: inspiration
 tags: design, furniture, space, studio
 author: shannon

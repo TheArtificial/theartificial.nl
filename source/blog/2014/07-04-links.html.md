@@ -1,5 +1,5 @@
 ---
-title: "Typography in the<br> United States"
+title: "Typography in the United States"
 category: inspiration
 tags: july 4, independence day, United States, America 
 author: carol

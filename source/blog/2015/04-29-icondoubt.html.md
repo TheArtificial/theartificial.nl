@@ -1,5 +1,5 @@
 ---
-title: "Icon story: to doubt"
+title: "Icon Story: To Doubt"
 category: process
 tags: icon, design, doubt
 author: shannon

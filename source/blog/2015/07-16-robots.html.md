@@ -1,5 +1,5 @@
 ---
-title: "The Artificial's robots"
+title: "The Artificial's Robots"
 category: process
 tags: tools, robots, machines, office
 author: carol

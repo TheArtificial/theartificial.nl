@@ -1,5 +1,5 @@
 ---
-title: "Passion and beauty at OFFF 2015"
+title: "Passion and Beauty at OFFF 2015"
 category: thoughts
 tags: conferences, process, inspiration
 author: susana

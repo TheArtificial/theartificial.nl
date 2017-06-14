@@ -1,5 +1,5 @@
 ---
-title: 'Thoughts that Resonate'
+title: 'Thoughts That Resonate'
 category: thoughts
 tags: 'resonate, conference'
 author: shannon

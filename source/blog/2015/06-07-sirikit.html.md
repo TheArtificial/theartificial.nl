@@ -1,5 +1,5 @@
 ---
-title: "How will “privacy” limit Apple?"
+title: "How Will “Privacy” Limit Apple?"
 category: thoughts
 tags: apple, google, privacy
 author: hans

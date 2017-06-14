@@ -1,5 +1,5 @@
 ---
-title: "Selecting the optimal prototyping tool (Part 2)"
+title: "Selecting the Optimal Prototyping Tool (Part 2)"
 category: process
 tags: prototype, tool, ux, comparison, review, program
 author: ariane

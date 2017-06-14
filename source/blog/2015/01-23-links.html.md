@@ -1,5 +1,5 @@
 ---
-title: "Light therapy"
+title: "Light Therapy"
 category: inspiration
 tags: sun, light thearpy, winter, light
 author: carol

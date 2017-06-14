@@ -1,5 +1,5 @@
 ---
-title: "Fishes, a Deep Dive into the Interaction of Filters"
+title: "Fishes, a Deep Dive Into the Interaction of Filters"
 category: process
 tags: ux, comparison, review, FTFY
 author: ariane

@@ -1,5 +1,5 @@
 ---
-title: "One week, three graduations"
+title: "One Week, Three Graduations"
 category: thoughts
 tags: gerrit rietveld academie, sandberg institute, werkplaats typografie, graduation, exhibit
 author: carol
