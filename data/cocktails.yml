@@ -1,0 +1,96 @@
+-
+  slug: aperolspritz
+  name: Aperol Spritz
+  date: 2016-04-29
+  glass: nederlandseoranje
+  contents: champagnemisc_wine
+  author: susana
+  rating: 3
+  html: |
+    <p>Last Tuesday, we threw a big King’s night party to kick off King Willem-Alexander’s birthday. Of course, this means orange drinks, orange snacks, and even more orange drinks. Were we sick of the color orange? Most definitely. But that didn’t stop us from more Aperol Spritz’s today!</p>
+    <ul>
+      <li>2 parts Aperol</li>
+      <li>3 parts prosecco</li>
+      <li>sliced orange</li>
+    </ul>
+    <p>Pour Aperol over a half-full glass of chilled prosecco. Garnish with some slices of fresh orange.</p>
+-
+  slug: baltimorebang
+  name: Baltimore Bang
+  date: 2017-03-10
+  glass: baltimorebang
+  contents: miscwhiskey_martini
+  author: shannon
+  rating: 3
+  html: |
+    <p>The first of many mixology experiments for today. The apricot brandy might not be our favorite, but it does inspire more mixing!</p>
+    <ul>
+      <li>1 part bourbon whiskey</li>
+      <li>1 part apricot brandy</li>
+      <li>.5 parts lemon juice</li>
+      <li>lemon or orange twist for garnish</li>
+    </ul>
+    <p>Pour ingredients into a cocktail shaker and shake with ice. Pour into chilled glass and serve with a citrus twist.</p>
+-
+  slug: basilsmash
+  name: Basil Smash
+  date: 2016-11-18
+  glass: basilsmash
+  contents: gin_lowball
+  author: carol
+  rating: 5
+  html: |
+    <p>The Basil Smash will be sure to get you smashed. It's strong and yet way too easy to drink. Add more ice if you want it to dilute a bit!</p>
+    <ul>
+      <li>2 parts gin</li>
+      <li>1.5 parts lemon juice</li>
+      <li>1 part agave syrup</li>
+      <li>fresh basil</li>
+    </ul>
+    <p>Muddle basil with gin, lemon juice, and agave syrup until leaves are well crushed. Pour into a shaker and filled with ice. Shake vigorously and strain into a glass with ice. Garnish with extra fresh basil.</p>
+-
+  slug: beesknees
+  name: Bee's Knees
+  date: 2016-01-22
+  glass: beesknees
+  contents: gin_coupe
+  author: shannon
+  rating: 4
+  html: |
+    <p>A birthday drink for the birthday founder! Today we learned that it’s totally okay for your bee’s knees to be really strong as long as you’ve got <a href="https://www.instagram.com/p/BA2UXUEj2xt/?taken-by=shannonethomas"
+    target="blank">plenty of macaroons</a> to chase it down with. For those hesitant about our ratio, we recommend ice in the glass. Gefeliciteerd!</p>
+    1 part fresh lemon juice<br>
+    <p>2 parts gin<br>
+    1 long drizzle of honey</p><br>
+    <p>Add all ingredients to a shaker and fill with ice. Shake, and strain into a chilled cocktail glass. Garnish with a lemon twist.</p>
+-
+  slug: blossom
+  name: "Blossom 开花 (Kāihuā)"
+  date: 2016-02-12
+  glass: blossom
+  contents: miscvodka_coupe
+  author: ariane
+  rating: 5
+  html: |
+    <p>To celebrate the recent Chinese New Year, we decided to do an Asian inspired drink. Yes, sake is actually Japanese, but we don't discriminate alcohol origins.<br> For the pear vodka, we left sliced pears in vodka for four days, though most suggest a week or two for optimal flavor. This is our first Artificial alcohol infusion and we definitely plan to do this more often. </p>
+    <p>1.5 parts pear infused vodka<br>
+    1 part sake<br>
+    1 part lychee juice from canned lychees nuts</p><br>
+    <p>Pour contents in a shaker with ice. Pour into chilled glasses and garnish with a slice of vodka soaked pear. Eating the pear is advised only for the brave.</p>
+-
+  slug: brightandstrong
+  name: Bright and Strong
+  date: 2017-01-20
+  glass: brightandstrong
+  contents: whiskey_lowball
+  author: shannon
+  rating: 4
+  html: |
+    <p>Pre-birthday party drinks at The Artificial! Perhaps starting this strong this early isn't the best idea before heading to a bar, but who can resist a great whiskey cocktail?</p>
+    <ul>
+      <li>1 part limoncello</li>
+      <li>2 parts whiskey</li>
+      <li>1 generous squeeze of lemon</li>
+      <li>a splash of ginger beer</li>
+    </ul>
+    <p>Combine limoncello, whiskey, lemon juice, and ice in a shaker. Shake well, then pour in a glass and top with a splash of ginger beer.</p>
