@@ -12,7 +12,7 @@ By the end of the tutorial you should:
 <li>Know some fundamentals about isometric drawing</li>
 <li>Be able to set up an isomeric grid on art boards</li>
 <li>Be able to make kick ass isometric cubes</li>
-<li>Be a able to extrude and cutaway details </li>
+<li>Be able to extrude and cutaway details </li>
 </ol>
 
 # Know Thy Axis
