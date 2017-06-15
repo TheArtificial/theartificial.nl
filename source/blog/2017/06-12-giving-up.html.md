@@ -40,7 +40,3 @@ When interviewing candidates, it's important to ask these two questions: After t
 ---
 
 Hiring is a process, and finding the right fit for The Artificial isn't always easy. Our application process alone, which looks for listening and writing skills, weeds out 98% of applicants. Still, we've had a few bad hires, so we'll continue iterating on our process to make sure we have the strongest team possible.
-
----
-
-_Due to a Lawyer's threatening email, this is a toned down version of the original article entitled "Knowing When to Give up". If you'd like to read the personal story behind these three hiring commandments, please send a tweet to [@shannonethomas](https://twitter.com/shannonethomas), and I'll direct you there._
