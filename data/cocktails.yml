@@ -299,15 +299,15 @@
     </ul>
     <p>Infuse sliced cucumbers in vodka for 2 weeks. Strain and mix with ice, tonic, and lime juice. Garnish with fresh basil and serve!</p>
 -
-  slug: konningsspritz
-  name: Konnings Spritz
+  slug: koningsspritz
+  name: Konings Spritz
   date: 2017-04-26
-  glass: konningsspritz
+  glass: koningsspritz
   contents: champagnemiscwhiskey_tonic
   author: shannon
   rating: 4
   html: |
-    <p>It's that time of year where the streets and our glasses flood with orange. Hope you enjoyed your Konningsdag as much as we did!</p>
+    <p>It's that time of year where the streets and our glasses flood with orange. Hope you enjoyed your Koningsdag as much as we did!</p>
     <ul>
       <li>2 parts rosemary infused Aperol</li>
       <li>1.5 parts prosecco</li>
