@@ -79,11 +79,13 @@ helpers do
   end
 
   def link_to_person(username, options = {})
-    if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
+    if username.kind_of?(Array)
+      return username.map{|u| link_to_person u }.join(', ')
+    elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
       return link_to(person_page.data.title, person_page, options)
     else
       puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
-      return "<span class=\"error\">#{username}</span>"
+      return "<span>#{username}</span>"
     end
   end
 
