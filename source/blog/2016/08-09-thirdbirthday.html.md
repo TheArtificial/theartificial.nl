@@ -3,9 +3,8 @@ title: We're Three!
 category: news
 tags: 'office, party, celebration, anniversary'
 author: shannon
+masthead: 08-09-thirdbirthday/invitation.jpg
 ---
-
-[![Invitation](08-09-thirdbirthday/invitation.jpg)](08-09-thirdbirthday/invitation.jpg)
 
 It's hard to believe that it's been almost a year since we [celebrated](/blog/2015/09/03/openingparty.html) moving into our new space. It's even harder to believe that The Artificial is already three years old. It seems like just yesterday that we were moving into our little garage with a handful of clients and small projects...
 

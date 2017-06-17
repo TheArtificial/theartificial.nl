@@ -3,9 +3,8 @@ title: "Classy or Fabulous"
 category: process
 tags: office, opening, party, classy, fabulous
 author: carol
+masthead: 09-03-openingparty/invitation.gif
 ---
-
-[![Invitation](09-03-openingparty/invitation.gif)](09-03-openingparty/invitation.gif)
 
 We have finally settled into our second space! The desks are in, the kitchen is finished, and the roof deck was ready for guests. It's exciting going from a small garage to a rooftop office right in the heart of the city. Naturally, people started badgering us for an office warming party. 
 
