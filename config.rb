@@ -60,7 +60,9 @@ helpers do
   end
 
   def person_name(username)
-    if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
+    if username.kind_of?(Array)
+      return username.map{|u| link_to_person u }.join(', ')
+    elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
       return person_page.data.title
     else
       puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
