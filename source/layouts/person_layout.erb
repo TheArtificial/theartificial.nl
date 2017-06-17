@@ -1,60 +1,56 @@
 <% wrap_layout 'site_layout' do %>
 
 <section class="content">
-	<div id="person" class="bleed turquoise-palegrass">
-		<div class="flex container">
-			<div class="col-4">
-				<div class="person-logo"><%= get_logo_svg(current_page.path.split('/').last.gsub(/.html$/, '')) %></div>
-			</div>
+  <div id="person" class="bleed turquoise-palegrass">
+    <div class="flex container">
+      <div class="col-4">
+        <div class="person-logo"><%= get_logo_svg(current_page.path.split('/').last.gsub(/.html$/, '')) %></div>
+      </div>
 
-			<div class="col-7 left-1 dark-text section">
-				<div class="padded">
-					<h1 class="name"><%= current_page.data.title %></h1>
+      <div class="col-7 left-1 dark-text section">
+        <div class="padded">
+          <h1 class="name"><%= current_page.data.title %></h1>
 <%
-		social_links = []
-		if current_page.data.linkedin
-			social_links << link_to("linkedin", "https://linkedin.com/in/#{current_page.data.linkedin}")
-		end
-		if current_page.data.twitter
-			social_links << link_to("twitter", "https://twitter.com/#{current_page.data.twitter}")
-		end
-		social_html = social_links.join(" | ").html_safe
+    social_links = []
+    if current_page.data.linkedin
+      social_links << link_to("linkedin", "https://linkedin.com/in/#{current_page.data.linkedin}")
+    end
+    if current_page.data.twitter
+      social_links << link_to("twitter", "https://twitter.com/#{current_page.data.twitter}")
+    end
+    social_html = social_links.join(" | ").html_safe
 %>
-					<h5><%= social_html %></h5>
-				</div>
-				<div class="padded">
-					<h3><%= "&ldquo;#{current_page.data['quote']}&rdquo;" %></h3>
-					<%= yield %>
-				</div>
-				<div class="padded">
-					<h2>Logo Story</h2>
-					<%= Tilt['markdown'].new {current_page.data['logo-story']}.render %>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="section bleed darkest-grey">
-	<% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
-	<div class="flex container">
-		<div class="col-12">
-			<div class="padded light-text center">
-				<% if articles.length > 0 %>
-					<h3>blog posts by <%= current_page.data.title %></h3>
-				<% else %>
-					<!-- no blog posts -->
-				<% end %>
-			</div>
-		</div>
-	</div>
-	<div class="container packery padded-bottom">
-			<% if articles.length > 0 %>
-	    	<% articles.each do |article, i| %>
-          <%= partial('blog/article_card', locals: { article: article }) %>
-    		<% end %>
-    	<% else %>
-    		<!-- no blog posts -->
+          <h5><%= social_html %></h5>
+        </div>
+        <div class="padded">
+          <h3><%= "&ldquo;#{current_page.data['quote']}&rdquo;" %></h3>
+          <%= yield %>
+        </div>
+        <div class="padded">
+          <h2>Logo Story</h2>
+          <%= Tilt['markdown'].new {current_page.data['logo-story']}.render %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section bleed darkest-grey">
+  <% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
+  <% if articles.length > 0 %>
+    <div class="flex container">
+      <div class="col-12">
+        <div class="padded light-text center">
+          <h3>blog posts by <%= current_page.data.title %></h3>
+        </div>
+      </div>
+    </div>
+    <div class="container packery padded-bottom">
+      <% articles.each do |article, i| %>
+        <%= partial('blog/article_card', locals: { article: article }) %>
       <% end %>
-	</div>
+    </div>
+  <% else %>
+    <!-- no blog posts -->
+  <% end %>
 </div>
 
 </section>
