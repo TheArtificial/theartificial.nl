@@ -3,8 +3,8 @@ title: "Pop Culture"
 category: inspiration
 tags: pop culture, movies, video games, tv, memes, mainstream
 author: carol
+masthead: 07-11-links/main.png
 ---
-![Pop Culture Inspiration](07-11-links/main.png)
 
 For the past two weeks I’ve had my head buried in all things pop cultureREADMORE, and not because of Game of Thrones withdrawals. After wrapping up a minimal monochromatic icon set for to [icon], I decided to challenge myself by venturing to the opposite side of the icon spectrum with a illustrative set inspired by pop culture. (Funny, because those who know me well would tell you I’m the least likely person to voluntarily design something pop culture related.)
 

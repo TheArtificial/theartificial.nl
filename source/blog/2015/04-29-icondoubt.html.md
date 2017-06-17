@@ -3,8 +3,8 @@ title: "Icon Story: To Doubt"
 category: process
 tags: icon, design, doubt
 author: shannon
+masthead: 04-29-icondoubt/main.png
 ---
-![Puchi Puchi's to doubt](04-29-icondoubt/main.png)
 
 Here is the story of [Puchi Puchi’s](http://www.toicon.com/series/puchi-puchi) [to doubt](http://www.toicon.com/icons/puchi-puchi_doubt), which was a commissioned by one of our Kickstarter backers, Dominick Cancilla.
 

@@ -3,9 +3,8 @@ title: "Fun & Play"
 category: inspiration
 tags: play, games, experimentation
 author: carol
+masthead: 04-11-links/main.png
 ---
-
-![Fun and play inspiration](04-11-links/main.png)
 
 One of the most valuable lessons we took away from this year’s Resonate conference was the importance of play. READMORE More than just a trend, play has shown to lead to some of the most innovative projects, and is something we look forward to implementing more of here at The Artificial. 
 

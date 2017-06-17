@@ -3,9 +3,8 @@ title: "Redesigning watchOS"
 category: process
 tags: apple, watch, watchos, redesign
 author: shannon
+masthead: 10-03-watchos-redesign/hero.jpg
 ---
-
-![Redesigning WatchOS](10-03-watchos-redesign/hero.jpg)
 
 The Apple Watch is a beautiful and powerful piece of hardware accompanied by incredibly useful software. Now running software on its third iteration, it’s time to make the beauty of the software match that of the hardware.
 

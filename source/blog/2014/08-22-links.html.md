@@ -3,8 +3,8 @@ title: "Data Visualization"
 category: inspiration
 tags: data, visualization, infographic, chart, information 
 author: carol
+masthead: 08-22-links/main.png
 ---
-![Data Inspiration](08-22-links/main.png)
 
 Our library, both physical and virtual, is packed with data visualization inspiration. READMORE I think it's safe to say we're all data enthusiasts here. This week we're sharing a few of our favorite resources and examples. 
 

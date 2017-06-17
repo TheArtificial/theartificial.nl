@@ -3,8 +3,8 @@ title: "Calling Tech-Savvy Designers"
 category: news
 tags: hiring, jobs, designer
 author: carol
+masthead: 09-09-hiring/main.png
 ---
-![Now hiring](09-09-hiring/main.png)
 
 Collaboration is at the core of what we do—after all, we are better together than as individuals.READMORE We’re looking for a tech-savvy designer to join our team and help us create beautiful digital products and services that delight our clients and their customers.
 

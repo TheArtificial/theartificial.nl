@@ -3,8 +3,8 @@ title: "Resonate 2014"
 category: inspiration
 tags: event, resonate, art
 author: hans
+masthead: 04-02-links/main.png
 ---
-![Resonate inspiration](04-02-links/main.png)
 
 This week, our Friday Inspiration is already off schedule--because we're all heading to Belgrade to enjoy [Resonate 2014](http://resonate.io/2014/). READMORE The schedule is intimidating with a wealth of amazing speakers. Here are just a few of the sessions we're excited about:
 

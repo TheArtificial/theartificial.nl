@@ -30,8 +30,11 @@
 			<div class="col-10 left-1 right-1 padded-bottom">
 				<div class="padded">
 					<article>
-		      	<%= yield %>
-		    	</article>
+						<% if current_page.data.masthead %>
+							<%= image_tag current_page.data.masthead %>
+						<% end %>
+						<%= yield %>
+					</article>
 				</div>
 			</div>
 

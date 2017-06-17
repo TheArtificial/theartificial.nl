@@ -3,9 +3,8 @@ title: "The Pixel"
 category: inspiration
 tags: pixels, ppi, blocks
 author: carol
+masthead: 05-02-links/main.png
 ---
-
-![Pixel inspiration](05-02-links/main.png)
 
 Pixels are at the core of all digital imaging, and often considered as a technical piece of a larger composition. But the pixel itself packs a lot of punch on its own, and can easily fill a spotlight. READMORE
 

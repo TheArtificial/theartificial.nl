@@ -3,9 +3,8 @@ title: "Chocolate"
 category: inspiration
 tags: easter, chocolate, confections 
 author: carol
+masthead: 04-18-links/main.png
 ---
-
-![Chocolate inspiration](04-18-links/main.png)
 
 Chocolate in all shapes and colors has been integrated into Easter traditions since the 19th century, when the famous chocolate egg started being mass produced. READMORE Chocolate got its place in this holiday because of the many people who give up chocolate or sweets for Lent, and are finally able to relieve their cravings on Easter Sunday. 
 

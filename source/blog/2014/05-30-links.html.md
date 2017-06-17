@@ -3,8 +3,8 @@ title: "Massimo Vignelli"
 category: inspiration
 tags: massimo vignelli, modernism, tribute
 author: carol
+masthead: 05-30-links/main.png
 ---
-![Massimo Vignelli inspiration](05-30-links/main.png)
 
 Massimo Vignelli, a renowned modernist, designer, and teacher, passed away at the age of 83  this past Tuesday. READMORE As one of the true masters in design history, his teachings and work have inspired thousands and will continue for generations to&nbsp;come.   
 

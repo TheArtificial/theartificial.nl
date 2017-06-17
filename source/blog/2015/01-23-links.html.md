@@ -3,8 +3,8 @@ title: "Light Therapy"
 category: inspiration
 tags: sun, light thearpy, winter, light
 author: carol
+masthead: 01-23-links/main.png
 ---
-![Light therapy inspiration](01-23-links/main.png)
 
 The sun plays a vital role in sustaining human life. READMORE It provides us with warmth, light, and energy. READMORE Our fundamental need for these elements has engendered technological substitutions for when we lack sun exposure. We brought warmth to cold buildings with central heating systems, light to shadowy roads with street lamps, and energy to factories with solar panels. 
 

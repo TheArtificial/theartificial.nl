@@ -3,8 +3,8 @@ title: "Typography in the United States"
 category: inspiration
 tags: july 4, independence day, United States, America 
 author: carol
+masthead: 07-04-links/main.png
 ---
-![Typography in the United States Inspiration](07-04-links/main.png)
 
 So it’s Independence Day in the US and America needs some extra lovin’ READMOREafter all the stress and agony from Tuesday’s loss to Belgium. Here in Amsterdam, it’s just another beautiful summer Friday. But in our office of primarily Americans, it’s really lacking fireworks and some good ol’ American barbecue. So, I’m compensating with something I love more than fireworks and barbecues; typography. While typography may not be specifically “American”, I thought it would be interesting to take a deeper look into the typography that 'the people in charge' have decided was American enough to live in places that define our country. 
 

@@ -3,8 +3,8 @@ title: "Designing Our New Studio"
 category: inspiration
 tags: design, furniture, space, studio
 author: shannon
+masthead: 04-17-links/main.jpg
 ---
-![Designing our new studio](04-17-links/main.jpg)
 
 The Artificial just turned two, and we're looking forward to a big upgradeREADMORE: a new studio on the Herengracht! We'll be on the sixth floor, perched just above [Wieden + Kennedy](http://www.wk.com). When looking for a space, we had many considerations: high ceilings, outdoor space, and big windows being the most obvious. Less obvious, we wanted to create many small spaces.
 

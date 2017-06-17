@@ -3,9 +3,8 @@ title: "Idiomatic Expressions"
 category: inspiration
 tags: language, idioms
 author: carol
+masthead: 05-23-links/main.png
 ---
-
-![Idiomatic expression inspiration](05-23-links/main.png)
 
 Idioms enrich conversations, writing, and add a bit of colour to your language. It’s amazing that there are about 25,000 idiomatic expressions in the English language alone. READMORE The use of idioms is often a good indicator of how fluent someone is in a foreign language. Every language has their own unique idioms that don’t always translate logically, but that’s the beauty of them, isn’t it?
 

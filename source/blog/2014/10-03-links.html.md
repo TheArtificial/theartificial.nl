@@ -3,8 +3,8 @@ title: "Open Copyrights"
 category: inspiration
 tags: creative commons, sharing, licenses, copyright 
 author: carol
+masthead: 10-03-links/main.png
 ---
-![Open Copyrights inspiration](10-03-links/main.png)
 
 The Creative Commons is easily one of my favorite non-profit organizations. READMORETheir goal is to maximize creativity by providing a fair and legal way to share and distribute materials, while giving the creator options for how much leeway to permit. They have provided a variety of licenses for distribution since 2002, and now there are over 350 million CC licensed works in use. We chose the Creative Commons Attribution 4.0 International License for our verb icon project, [toicon.com](http://www.toicon.com), so that all of our icons are free for personal and commercial use with attribution. 
 

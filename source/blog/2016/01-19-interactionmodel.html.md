@@ -3,9 +3,8 @@ title: "Finding an Interaction Model"
 category: process
 tags: ux, ui, interaction, exploration
 author: shannon
+masthead: 01-19-interactionmodel/introduction.png
 ---
-
-![](01-19-interactionmodel/introduction.png)
 
 When designing new experiences, it is imperative that we balance invention with inspiration. Learning from other tools helps us to create quality experiences, and copying patterns that work ensures a familiarity of experience for our users.
 

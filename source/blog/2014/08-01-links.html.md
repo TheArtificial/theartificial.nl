@@ -3,9 +3,8 @@ title: "Street Art"
 category: inspiration
 tags: street art, graffiti, paint, activism 
 author: carol
+masthead: 08-01-links/main.png
 ---
-
-![Street art Inspiration](08-01-links/main.png)
 
 Let’s take our eyes off the screen--this week we’re looking at art in our environment. READMORE Street art has evolved a great deal and become has more innovative and expressive. Bansky is no longer the only name that comes to mind, now we have more creative and bold artists hitting cities world wide. They’re creating some beautiful and thoughtful projects, and here are our favourites.
 
