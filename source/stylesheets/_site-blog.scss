@@ -1,3 +1,65 @@
+.blog_index {
+	.introduction {
+		width: 100%;
+		p {
+			margin-top: 24px;
+			text-align: left;
+			font-size: 32px;
+			line-height: 40px;
+			font-weight: 100;
+			color: $cool-grey-40;
+			a {
+				color: $white;
+			}
+		}
+	}
+
+	.blog-preview {
+		color: $white;
+		background-color: $cool-grey-60;
+
+		.double-padded {
+			padding: 28px;
+
+			* {
+				color: $white;
+			}
+
+			h3 {
+				font-weight: bold;
+				min-height: 160px;
+			}
+
+			a, p {
+				padding-bottom: 2px;
+			}
+		}
+	}
+
+	// blog tile colors
+	.blog-preview.inspiration {
+		background-color: $turquoise;
+		background: linear-gradient(to bottom left, $pale-grass, $turquoise);
+	}
+
+	.blog-preview.process {
+		background-color: $tulip;
+		background: linear-gradient(to bottom left, $pale-pumpkin, $tulip);
+
+	}
+
+	.blog-preview.news {
+		background-color: $pumpkin;
+		background: linear-gradient(to bottom left, $pale-dandelion, $pumpkin);
+	}
+
+	.blog-preview.thoughts {
+		background-color: $grape;
+		background: linear-gradient(to bottom, $pale-tulip, $grape);
+	}
+
+}
+
 .blog:not(.blog_index) {
 	#content {
 
