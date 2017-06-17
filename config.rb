@@ -59,16 +59,6 @@ helpers do
     link_to(link_text, url, options)
   end
 
-  def find_image(base_path)
-    if found = sitemap.find_resource_by_path(base_path+'.png')
-      return found
-    elsif found = sitemap.find_resource_by_path(base_path+'.jpg')
-      return found
-    else
-      return nil
-    end
-  end
-
   def person_name(username)
     if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
       return person_page.data.title
@@ -78,9 +68,14 @@ helpers do
     end
   end
 
+
   def link_to_person(username, options = {})
-    if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
+    if username.kind_of?(Array)
+      return username.map{|u| link_to_person u }.join(', ')
+    elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
       return link_to(person_page.data.title, person_page, options)
+    elsif username.include? ' '
+      return "<span>#{username}</span>"
     else
       puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
       return "<span class=\"error\">#{username}</span>"
@@ -167,6 +162,14 @@ activate :blog do |blog|
 #  }
 end
 
+helpers do
+  # Middleman 4.1.14 is leaving the seperator in the summary
+  def proper_blog_summary(article, length=180)
+    text = Nokogiri::HTML(article.summary(length, '…')).css('p').text
+    return text.split(blog.options.summary_separator).first
+  end
+end
+
 page "blog/feed.xml", layout: false
 
 set :markdown_engine, :kramdown
@@ -215,7 +218,7 @@ class Projects < Middleman::Extension
     projects = resources.select{ |r| r.path =~ /^projects\// }
     projects.each do |r|
       project_name = r.path.match(/projects\/([^\/]*)\/.*/)[1]
-      puts "Moving #{project_name}: #{r.path}"
+      # puts "Moving #{project_name}: #{r.path}"
       r.destination_path.gsub!(/^projects\//, "")
       if r.ext == '.html'
         r.add_metadata project: project_name

@@ -1,21 +1,34 @@
-<%#
-  article_path = article.path[/.*(?=\..+$)/]
-  if preview = find_image(article_path + '/-preview')
-    preview_url = preview.url
-  else
-    preview_url = "/blog/2014/03/17/test/-preview.png"
-  end
+<%
+  last_slash = article.path.rindex('/')
+  base_path = article.path[0...last_slash]
 %>
 <% link_to article do %>
 <div class="col-4 packed">
-	<div class="card blog-preview <%= article.data.category %>">
-		<div class="double-padded">
-			<h5><%= article.data.category %></h5>
-				<h3><%= article.title %></h3>
-        <!-- <%= article.summary(180, '…') %> -->
-			 	<p><%= person_name article.data.author %></p>
-			<p><%= article.date.strftime('%B %e, %Y') %></p>
-		</div>
-	</div>
+
+  <% if article.data.masthead %>
+    <div class="card blog-preview <%= article.data.category %>">
+      <div class="masthead">
+        <%= image_tag base_path + '/' + article.data.masthead %>
+      </div>
+      <div class="meta">
+        <div class="category"><%= article.data.category %></div>
+        <div class="title"><%= article.title %></div>
+        <div class="author"><%= person_name article.data.author %></div>
+        <div class="date"><%= article.date.strftime('%B %e, %Y') %></div>
+      </div>
+    </div>
+  <% else %>
+    <div class="card blog-preview no-image <%= article.data.category %>">
+      <div class="meta">
+        <div class="category"><%= article.data.category %></div>
+        <div class="title"><%= article.title %></div>
+        <div class="author"><%= person_name article.data.author %></div>
+        <div class="date"><%= article.date.strftime('%B %e, %Y') %></div>
+      </div>
+      <div class="summary">
+        <%= proper_blog_summary(article, 180) %>
+      </div>
+    </div>
+  <% end %>
 </div>
 <% end %>
