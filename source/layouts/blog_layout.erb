@@ -6,30 +6,30 @@
 <% end %>
 
 <section id="content">
-	<div class="bleed white">
-		<div class="flex container">
+  <div class="bleed white">
+    <div class="flex container">
 
-			<div class="col-8 left-2 right-2">
-				<div class="padded">
-					<div class="blog-title">
-						<h1 class="center"><%= current_page.title %></h1>
-						<h5 class="center"><time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%B %e, %Y') %></time> | <%= link_to_person current_page.data.author %></h5>
-					</div>
-    		</div>
-			</div>
+      <div class="col-8 left-2 right-2">
+        <div class="padded">
+          <div class="blog-title">
+            <h1 class="center"><%= current_page.title %></h1>
+            <h5 class="center"><time datetime="<%= current_page.date.strftime('%Y-%m-%d') %>"><%= current_page.date.strftime('%B %e, %Y') %></time> | <%= link_to_person current_page.data.author %></h5>
+          </div>
+        </div>
+      </div>
 
-			<div class="col-10 left-1 right-1 padded-bottom">
-				<div class="padded">
-					<article>
-						<% if current_page.data.masthead %>
-							<%= image_tag current_page.data.masthead %>
-						<% end %>
-						<%= yield %>
-					</article>
-				</div>
-			</div>
+      <div class="col-10 left-1 right-1 padded-bottom">
+        <div class="padded">
+          <article>
+            <% if current_page.data.masthead %>
+              <%= image_tag current_page.data.masthead %>
+            <% end %>
+            <%= yield %>
+          </article>
+        </div>
+      </div>
 
-		</div>
-	</div>
+    </div>
+  </div>
 </section>
 <% end %>
