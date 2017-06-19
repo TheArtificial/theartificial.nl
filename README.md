@@ -114,6 +114,10 @@ _(PNG files will also work, but read below.)_
 
 PNGs are nice because they are "lossless" and don't get blurring compression artifacts like JPEG. But this also makes them less efficient. With large visuals it's very easy to end up wasting many MB of space and network traffic. Please use JPEG (not PNG) for photos and optimize all images with [ImageOptim](https://imageoptim.com).
 
+### Testing
+
+If you're working on something that will take more than a day, please [make a branch](https://guides.github.com/introduction/flow/). But for a very small change that you just want someone else to review before publishing, you can add `ignored: true` to the frontmatter. For testing, remove it, and when it's goo to go, commit and push without it.
+
 ### Commit
 
 Use the GitHub app to commit your changes with a meaningful comment and be sure to push (synchronize). You can always double-check that your commit was pushed by visiting the [history page](https://github.com/gerwitz/theartificial.nl/commits/master).
