@@ -183,6 +183,22 @@
     </ul>
     <p>Stir dark rum and ginger beer in a glass and add a dash of cherry bitters.</p>
 -
+  slug: frankenmousse
+  name: Franken Mousse
+  date: 2017-06-16
+  glass: frankenmousse
+  contents: misc_wine
+  author: ariane
+  rating: 1
+  html: |
+    <p>So the idea was to make a Rosé Pamplemousse. Rather than using grapefruit syrup, we used what was at hand and unfortunately came up with the worst drink we had in a while. Make with caution.</p>
+    <ul>
+      <li>2 parts rosé</li>
+      <li>1 part Velvoir blackcurrant and blueberry syrup</li>
+      <li>a dash of lime</li>
+    </ul>
+    <p>Pour ingredients in a wine glass and stir with ice.</p>
+-
   slug: frenchbull
   name: French Bull
   date: 2016-08-19
