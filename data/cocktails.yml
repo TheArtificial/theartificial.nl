@@ -1,0 +1,957 @@
+-
+  slug: aperolspritz
+  name: Aperol Spritz
+  date: 2016-04-29
+  glass: nederlandseoranje
+  contents: champagnemisc_wine
+  author: susana
+  rating: 3
+  html: |
+    <p>Last Tuesday, we threw a big King’s night party to kick off King Willem-Alexander’s birthday. Of course, this means orange drinks, orange snacks, and even more orange drinks. Were we sick of the color orange? Most definitely. But that didn’t stop us from more Aperol Spritz’s today!</p>
+    <ul>
+      <li>2 parts Aperol</li>
+      <li>3 parts prosecco</li>
+      <li>sliced orange</li>
+    </ul>
+    <p>Pour Aperol over a half-full glass of chilled prosecco. Garnish with some slices of fresh orange.</p>
+-
+  slug: baltimorebang
+  name: Baltimore Bang
+  date: 2017-03-10
+  glass: baltimorebang
+  contents: miscwhiskey_martini
+  author: shannon
+  rating: 3
+  html: |
+    <p>The first of many mixology experiments for today. The apricot brandy might not be our favorite, but it does inspire more mixing!</p>
+    <ul>
+      <li>1 part bourbon whiskey</li>
+      <li>1 part apricot brandy</li>
+      <li>.5 parts lemon juice</li>
+      <li>lemon or orange twist for garnish</li>
+    </ul>
+    <p>Pour ingredients into a cocktail shaker and shake with ice. Pour into chilled glass and serve with a citrus twist.</p>
+-
+  slug: basilsmash
+  name: Basil Smash
+  date: 2016-11-18
+  glass: basilsmash
+  contents: gin_lowball
+  author: carol
+  rating: 5
+  html: |
+    <p>The Basil Smash will be sure to get you smashed. It's strong and yet way too easy to drink. Add more ice if you want it to dilute a bit!</p>
+    <ul>
+      <li>2 parts gin</li>
+      <li>1.5 parts lemon juice</li>
+      <li>1 part agave syrup</li>
+      <li>fresh basil</li>
+    </ul>
+    <p>Muddle basil with gin, lemon juice, and agave syrup until leaves are well crushed. Pour into a shaker and filled with ice. Shake vigorously and strain into a glass with ice. Garnish with extra fresh basil.</p>
+-
+  slug: beesknees
+  name: Bee's Knees
+  date: 2016-01-22
+  glass: beesknees
+  contents: gin_coupe
+  author: shannon
+  rating: 4
+  html: |
+    <p>A birthday drink for the birthday founder! Today we learned that it’s totally okay for your bee’s knees to be really strong as long as you’ve got <a href="https://www.instagram.com/p/BA2UXUEj2xt/?taken-by=shannonethomas"
+    target="blank">plenty of macaroons</a> to chase it down with. For those hesitant about our ratio, we recommend ice in the glass. Gefeliciteerd!</p>
+    1 part fresh lemon juice<br>
+    <p>2 parts gin<br>
+    1 long drizzle of honey</p><br>
+    <p>Add all ingredients to a shaker and fill with ice. Shake, and strain into a chilled cocktail glass. Garnish with a lemon twist.</p>
+-
+  slug: blossom
+  name: "Blossom 开花 (Kāihuā)"
+  date: 2016-02-12
+  glass: blossom
+  contents: miscvodka_coupe
+  author: ariane
+  rating: 5
+  html: |
+    <p>To celebrate the recent Chinese New Year, we decided to do an Asian inspired drink. Yes, sake is actually Japanese, but we don't discriminate alcohol origins.<br> For the pear vodka, we left sliced pears in vodka for four days, though most suggest a week or two for optimal flavor. This is our first Artificial alcohol infusion and we definitely plan to do this more often. </p>
+    <p>1.5 parts pear infused vodka<br>
+    1 part sake<br>
+    1 part lychee juice from canned lychees nuts</p><br>
+    <p>Pour contents in a shaker with ice. Pour into chilled glasses and garnish with a slice of vodka soaked pear. Eating the pear is advised only for the brave.</p>
+-
+  slug: brightandstrong
+  name: Bright and Strong
+  date: 2017-01-20
+  glass: brightandstrong
+  contents: whiskey_lowball
+  author: shannon
+  rating: 4
+  html: |
+    <p>Pre-birthday party drinks at The Artificial! Perhaps starting this strong this early isn't the best idea before heading to a bar, but who can resist a great whiskey cocktail?</p>
+    <ul>
+      <li>1 part limoncello</li>
+      <li>2 parts whiskey</li>
+      <li>1 generous squeeze of lemon</li>
+      <li>a splash of ginger beer</li>
+    </ul>
+    <p>Combine limoncello, whiskey, lemon juice, and ice in a shaker. Shake well, then pour in a glass and top with a splash of ginger beer.</p>
+-
+  slug: bubbles
+  name: Bubbles
+  date: 2017-04-13
+  glass: bubbles
+  contents: champagnegin_champagne
+  author: shannon
+  rating: 3
+  html: |
+    <p>A light and fresh drink to kick off the long Easter weekend.</p>
+    <ul>
+      <li>1 part strawberry infused gin</li>
+      <li>1 part prosecco</li>
+      <li>a splash of soda water</li>
+      <li>a squeeze of lemon</li>
+      <li>a dash of agave syrup</li>
+    </ul>
+    <p>Pour infused gin in a champagne flute and top with prosecco and a splash of soda water. Add in some lemon and agave syrup and stir gently before serving.</p>
+-
+  slug: campariorange
+  name: Campari Orange
+  date: 2017-02-10
+  glass: campariorange
+  contents: miscvodka_lowball
+  author: shannon
+  rating: 4
+  html: |
+    <p>A perfect balance of bitter and sweet. More importantly, a great excuse to use up our orange infused vodka to make room for our next infusion.</p>
+    <ul>
+      <li>1 part orange infused vodka</li>
+      <li>1 part Campari</li>
+      <li>1 part Grand Marnier</li>
+      <li>1 part fresh orange juice</li>
+      <li>Orange slices</li>
+    </ul>
+    <p>Pour ingredients in a shaker with ice. Shake vigorously and strain into a glass. Garnish with a fresh orange slice before serving.</p>
+-
+  slug: creatureofthemist
+  name: Creature of the Mist
+  date: 2017-03-24
+  glass: creatureofthemist
+  contents: miscvodka_coupe2
+  author: shannon
+  rating: 5
+  html: |
+    <p>Creature of the Mist is named after <a href="https://www.instagram.com/p/BSBPcuJjMIX/?taken-by=gerwitz" target="blank">this adorable Nebelung kitten</a>, which directly translated from German means creature of the mist.</p>
+    <ul>
+      <li>2 parts sake</li>
+      <li>1 part vodka</li>
+      <li>.5 parts elderflower cordial</li>
+      <li>a squeeze of lime</li>
+      <li>a squeeze of honey</li>
+    </ul>
+    <p>Pour all ingredients into a shaker with ice and serve immediately.</p>
+-
+  slug: dtginger
+  name: DT Ginger
+  date: 2017-04-07
+  glass: dtginger
+  contents: rum_goblet
+  author: natalia
+  rating: 3
+  html: |
+    <p>A sweet orange drink with a smokey herby finish. We named this one as a celebration of Natalia's 'fabulous' new apartment! Can you guess why?</p>
+    <ul>
+      <li>2 parts rum</li>
+      <li>1 part mandarin juice</li>
+      <li>sugar</li>
+      <li>mandarines halved crosswise</li>     
+      <li>rosemary sprigs for garnish</li>
+    </ul>
+    <p>Pour some sugar on a plate and dip the cut sides of the mandarines. Scatter the rosemary sprigs on a heated pan and add the mandarines, cut side down. Cook until sugar caramelizes. Place mandarines in a shaker, add sugar and muddle. Add rum ice and juice, shake and pour in glasses with ice. Garnish with rosemary and serve.</p>
+-
+  slug: dutchandstormy
+  name: Dutch and Stormy
+  date: 2016-06-24
+  glass: dutchandstormy
+  contents: rum_highball
+  author: shannon
+  rating: 4
+  html: |
+    <p>Part one of today's weather drinking game. A <a href="sgroppino.html">sgroppino</a> for those rare but loved sunny moments, and a Dutch twist on the Dark and stormy cocktail for the rest. </p>
+    <ul>
+      <li>1 part dark rum</li>
+      <li>2 parts ginger beer</li>
+      <li>1 dash of cherry bitters</li>
+    </ul>
+    <p>Stir dark rum and ginger beer in a glass and add a dash of cherry bitters.</p>
+-
+  slug: frenchbull
+  name: French Bull
+  date: 2016-08-19
+  glass: frenchbull
+  contents: miscchampagne_champagne
+  author: carol
+  rating: 3
+  html: |
+    <p>The French Bull is a version of the French 75 that uses apriocot brandy in place of gin. Little known fact, not all French 75's are gin based! (according to my cocktail book, at least). The French of the office called bull and denounced it by equating the taste to Red Bull. And so the French Bull was born.</p>
+    <ul>
+      <li>2 parts champagne</li>
+      <li>1 part apricot brandy</li>
+      <li>1 dash lemon juice</li>
+      <li>1 dash simple syrup</li>
+    </ul>
+    <p>Shake brandy, lemon juice, and simple syrup with ice. Pour in a tall glass, top with champagne, and serve with a lemon for garnish.</p>
+-
+  slug: fuzzysmash
+  name: Fuzzy Smash
+  date: 2017-02-03
+  glass: fuzzysmash
+  contents: gin_lowball
+  author: carol
+  rating: 4
+  html: |
+    <p>After the success of our last gin smash, we decided to try a different variation. The star of this drink is the fancy candied garnish, but the drink is definitely good enough to hold its own.</p>
+    <ul>
+      <li>2 parts gin</li>
+      <li>.5 parts lemon juice</li>
+      <li>.5 parts agave syrup</li>
+      <li>a few blackberries</li>
+      <li>fresh sage</li>
+      <li>sugar</li>
+      <li>a splash of club soda</li>
+    </ul>
+    <p>Muddle the sage and blackberries in gin. Pour into a shaker with icee, lemon juice, and agave syrup. Shake well and pour into a glass with ice and top with club soda. To candy the sage, soak in simple syrup then toss in sugar. Put the candied sage and halved blackberries on a toothpick to serve on top of the cocktail.</p>
+-
+  slug: gingersmash
+  name: Ginger Smash
+  date: 2017-03-17
+  glass: gingersmash
+  contents: gin_highball
+  author: carol
+  rating: 3
+  html: |
+    <p>Another Basil Smash variation. Slightly diluted with a splash of ginger beer, if you want to hold of the getting smashed part.</p>
+    <ul>
+      <li>1 part basil infused gin</li>
+      <li>a splash of ginger beer</li>
+      <li>fresh basil for garnish</li>
+    </ul>
+    <p>Infuse fresh, cut basil in gin for no more than 3 days. Pour in a glass with ice and muddle fresh basil in. Top off with ginger beer and serve with a basil garnish.</p>
+-
+  slug: grapefruittorpedo
+  name: Grapefruit Torpedo
+  date: 2016-03-24
+  glass: grapefruittorpedo
+  contents: miscchampagne_champagne
+  author: carol
+  rating: 4
+  html: |
+    <p>A Thursday drink? Why not? To kick-off our five day Easter weekend, we're doing a bubbly spring mimosa. </p>
+    <p>2 parts prosecco<br>
+    1 part fresh grapefruit juice<br>
+    .5 parts Grand Marnier<br>
+    raspberries<br>
+    mint leaves</p><br>
+    <p>Squeeze grapefruit juice into a cup and muddle a few raspberries with it. Pour into a champagne flute and top with prosecco or champagne. Add a splash of Grand Marnier and garnish with fresh mint leaves.</p>
+-
+  slug: hotananaslove
+  name: Hot Ananas Love
+  date: 2016-03-04
+  glass: hotananaslove
+  contents: vodka_hurricane
+  author: shannon
+  rating: 4
+  html: |
+    <p>A bit of sweet, a bit of sour, and a kick of spice. This shockingly alcoholic drink is dangerously delicious. Warning: don't let the sweetness deceive you. Remember this drink is 2/3rds straight vodka!</p>
+    <p>2 parts pineapple infused vodka<br>
+    1 part orange juice<br>
+    sliced chili peppers</p><br>
+    <p>Combine all ingredients in a shaker with ice. Strain and garnish with a cocktail umbrella. Serve with chunks of the vodka soaked pineapple for extra fun.</p>
+-
+  slug: justpeachy
+  name: Just Peachy
+  date: 2016-02-26
+  glass: justpeachy
+  contents: whiskey_snifter
+  author: carol
+  rating: 3
+  html: |
+    <p>A bit too peachy for my taste. Unfortunately the rosemary simple syrup didn't shine through the ginger beer as much as I had hoped. Perhaps we'll try it with more rosemary and less ginger beer next time!</p>
+    <p>1 part whiskey<br>
+    1 part peach juice<br>
+    .5 parts rosemary simple syrup<br>
+    1 part ginger beer<br>
+    rosemary</p><br>
+    <p>To make the rosemary simple syrup, boil equal parts water and sugar. Add rosemary leaves and simmer for 15 minutes. Leave to cool and strain. Combine whiskey, peach juice, and cooled simple syrup in a shaker with ice. Pour into a glass, top with ginger beer, and garnish with fresh rosemary.</p>
+-
+  slug: komkommertonic
+  name: Komkommer Tonic
+  date: 2016-07-08
+  glass: komkommertonic
+  contents: vodka_tonic-tall
+  author: shannon
+  rating: 3
+  html: |
+    <p>The infusion experiments continue! We found that the lime here is key to brightening up this refreshing drink.</p>
+    <ul>
+      <li>1 part cucumber infused vodka</li>
+      <li>2 parts tonic</li>
+      <li>.5 parts lime juice</li>
+      <li>basil for garnish</li>
+    </ul>
+    <p>Infuse sliced cucumbers in vodka for 2 weeks. Strain and mix with ice, tonic, and lime juice. Garnish with fresh basil and serve!</p>
+-
+  slug: koningsspritz
+  name: Konings Spritz
+  date: 2017-04-26
+  glass: koningsspritz
+  contents: champagnemiscwhiskey_tonic
+  author: shannon
+  rating: 4
+  html: |
+    <p>It's that time of year where the streets and our glasses flood with orange. Hope you enjoyed your Koningsdag as much as we did!</p>
+    <ul>
+      <li>2 parts rosemary infused Aperol</li>
+      <li>1.5 parts prosecco</li>
+      <li>1.5 parts seltzer</li>
+      <li>1 part bourbon</li>
+      <li>.5 parts honey syrup</li>
+      <li>grapefruit slices</li>
+      <li>rosemary sprigs</li>
+    </ul>
+    <p>Infuse Aperol with fresh rosemary for at least 3 hours. Strain and add honey syrup, mixing well.  Add bourbon, sparkling wine, and seltzer, and garnish with grapefruit slices and rosemary sprigs. Add ice and serve.</p>
+-
+  slug: lastoftheoaxacans
+  name: Last of the Oaxacans
+  date: 2017-01-06
+  glass: lastoftheoaxacans
+  contents: misctequilla_coupe
+  author: shannon
+  rating: 3
+  html: |
+    <p>The Last of the Oaxacans, the Artificial edition is a variation on <a href="http://www.seriouseats.com/recipes/2014/04/last-of-the-oaxacans-mezcal-last-word-variation-cocktail-recipe.html" target="blank">Serious Eat's</a> variantion on Last Word. We subbed the chartreuse for a splash of absinthe to give it an herby flavor.</p>
+    <ul>
+      <li>1 part mezcal</li>
+      <li>1 part maraschino liquor</li>
+      <li>.5 parts lime juice</li>
+      <li>a splash of absinthe</li>
+    </ul>
+    <p>Combine all ingredients into a cocktail shaker. Fill with ice and shake vigorously. Pour over ice and serve.</p>
+-
+  slug: mandarinmule
+  name: Mandarin Mule
+  date: 2016-11-25
+  glass: mandarinmule
+  contents: vodka_highball
+  author: shannon
+  rating: 4
+  html: |
+    <p>This drink was born of two desires: to have something light after a day of indulging on Thanksgiving leftovers and to light something on fire. What originally aimed to be a very autumny drink turned out to be very fruity and refreshing. This drink would be perfect for a spring or summer night on the terrace. For different variations, try lighting different herbs on fire. We found that a burning thyme shrub also worked quite nicely.</p>
+    <ul>
+      <li>2 parts orange-infused vodka</li>
+      <li>1 part orange juice</li>
+      <li>1 part ginger beer</li>
+      <li>cinnamon stick</li>
+      <li>mandarin orange for garnish</li>
+    </ul>
+    <p>Pour orange-infused vodka, orange juice, ginger beer over ice. Garnish with a mandarin segment and a cinnamon stick. Light the stick on fire.</p>
+-
+  slug: manhattan
+  name: Manhattan
+  date: 2016-03-11
+  glass: manhattan
+  contents: miscwhiskey_martini
+  author: hans
+  rating: 4
+  html: |
+    <p>We're going back to the classics. A strong Manhattan with an orange twist for garnish to end our busy week.</p>
+    <p>2 parts whiskey<br>
+    1 part vermouth<br>
+    a splash of angostura bitters<br>
+    orange peel</p><br>
+    <p>Combine all ingredients and stir with ice. Pour into a chilled glass a serve with an orange twist.</p>
+-
+  slug: theflamingpeach
+  name: The Flaming Peach
+  date: 2016-05-27
+  glass: theflamingpeach
+  contents: whiskey_goblet
+  author: shannon
+  rating: 4
+  html: |
+    <p>The Dutch weather gods have pleasantly surprised us with sun, so we made a last minute drink change and brightened up our cocktail choice to suit the evanescent sunlight.</p>
+    <ul>
+      <li>1 part whiskey</li>
+      <li>1 part peach iced tea</li>
+      <li>1 dash of firewater bitters</li>
+      <li>rosemary</li>
+    </ul>
+    <p>Pour whiskey and peach iced tea in a shaker and shake with ice. Serve with a stem of rosemary and a splash of firewater bitters. Two splashes for the brave, three splashes for enemies.</p>
+-
+  slug: mezcaloldfashioned
+  name: Mezcal Old-Fashioned
+  date: 2017-01-27
+  glass: mezcaloldfashioned
+  contents: misctequillawhiskey_lowball
+  author: natalia
+  rating: 3
+  html: |
+    <p>January is Mezcal month at The Artificial. Our resident mezcal expert brings it into her own version of the Old Fashioned.</p>
+    <ul>
+      <li>1 part mezcal</li>
+      <li>1 part whiskey</li>
+      <li>.5 parts Aperol</li>
+      <li>Lemon wedge for garnish</li>
+    </ul>
+    <p>Stir all ingredients in a glass and pour over ice. Garnish with a lemon wedge.</p>
+-
+  slug: milkysticks
+  name: Milky Sticks
+  date: 2016-02-19
+  glass: milkysticks
+  contents: miscrum_lowball
+  author: susana
+  rating: 3
+  html: |
+    <p>Susana is our resident sugar fanatic, so of course her first cocktail is creamy sugary goodness. We added an extra zip of chestnut liqueur, but the hazelnut is delicious enough on its own if you're in a pinch. Definitely recommend as an after dinner dessert drink!</p>
+    <p>1 part hazelnut liqueur <br>
+    1 part chestnut liqueur<br>
+    .5 parts rum<br>
+    1 part half & half<br>
+    2 Pocky sticks</p><br>
+    <p>Pour all contents in a chilled glass and stir. We use chocolate <a href="http://www.pocky.com/" alt="Pocky sticks">Pocky sticks</a> as a stir and garnish.</p>
+-
+  slug: mintjulep
+  name: Mint Julep
+  date: 2016-08-19
+  glass: mintjulep
+  contents: whiskey_highball
+  author: "Abdul Nabi"
+  rating: 4
+  html: |
+    <p>Our first summer guest bartender brings us a lovely classic but with homemade mint simple syrup!</p>
+    <ul>
+      <li>1 part mint simple syrup</li>
+      <li>1 part soda water</li>
+      <li>1 part Maker’s Mark bourbon</li>
+      <li>mint for garnish</li>
+    </ul>
+    <p>Pour all ingredients in a glass over ice. Stir and garnish with a spring of fresh mint.</p>
+-
+  slug: monkeyguts
+  name: Monkey Guts
+  date: 2016-09-02
+  glass: monkeyguts
+  contents: miscgin_highball
+  author: shannon
+  rating: 1
+  html: |
+    <p>The story behind Monkey Guts is simple. Shannon found out there was a liquor called Monkey Balls, and of course we had to try it. The liquor itself is horrid, but she managed to make it into a cocktail that was, well, drinkable. Pro-tip, do NOT skip the orange garnish.</p>
+    <ul>
+      <li>1 part Monkey Balls</li>
+      <li>1 part gin</li>
+      <li>2 parts tonic</li>
+      <li>an orange slice for garnish</li>
+    </ul>
+    <p>Hold your breath and pour gin and monkey balls in a glass over ice. Top up with tonic and garnish with a slice of orange.</p>
+-
+  slug: moscowmule
+  name: Moscow Mule
+  date: 2016-02-05
+  glass: moscowmule
+  contents: vodka_mug
+  author: shannon
+  rating: 5
+  html: |
+    <p>The Moscow mule is one of our favorite drinks to sip in the summer on our beautiful roof deck. We love this drink so much that we've decided we can't wait for Holland weather to cooperate, so we've decided to embrace the cold and freshen our minds with this classic. </p>
+    <p>1 part vodka<br>
+    2 parts ginger beer<br> 
+    1 splash simple syrup<br> 
+    1 squeeze fresh lime juice</p><br>
+    <p>Squeeze lime juice into a copper glass and drop in the shell. Add ice and vodka then top with ginger beer. Serve it up with an animated gif of <a href="http://giphy.com/gifs/dance-awesome-russian-zjhH1lh3bDRug" target="blank">dancing Russians.</a></p>
+-
+  slug: mouthwash
+  name: Mouthwash
+  date: 2016-03-18
+  glass: mouthwash
+  contents: misc_margarita
+  author: shannon
+  rating: 2
+  html: |
+    <p>To welcome our oral healthcare clients to our office, we created a minty concoction just for them. We intended to mix creme de menthe and peppermint schnapps with vodka, but those things were harder to find than we expected! We're glad we found Bols' Peppermint Green liqueur at the last minute, which still got the job done fine. Want to try? We hope you really, really like mint.</p>
+    <p>1 part Bols Peppermint Green liqueur<br>
+    1 part vodka<br>
+    a spring of fresh mint</p><br>
+    <p>Pour mint liqueur and vodka into a shaker with ice. Shake and strain into a chilled glass and garnish with a fresh spring of mint.</p>
+-
+  slug: nederlandseoranje
+  name: Nederlandse Oranje
+  date: 2016-01-29
+  glass: nederlandseoranje
+  contents: champagnemisc_wine
+  author: "Roos de Bildt"
+  rating: 3
+  html: |
+    <p>To bid farewell to our token Dutch Artificial, we celebrated with some Nederlandse borrel en drankjes (Dutch snacks and drinks). Similar to an Aperol Spritz, this bubbly drink is typically only consumed on King's (or Queen's) Day. This is a slight twist on the traditional recipe, but just as orange all the same. Good luck to Roos on her next adventure!</p>
+    <p>2 parts champagne<br>
+    1 part oranje bitters<br>
+    <p>Pour chilled champagne and oranje bitters into a stemmed glass. Garnish with a slice of orange and say proost to Dutch weather.</p>
+-
+  slug: negroni
+  name: Negroni
+  date: 2016-10-07
+  glass: negroni
+  contents: miscgin_lowball
+  author: ariane
+  html: |
+    <p>We enjoyed some fancy Negronis today! Natalia and Shannon helped with designing our garnishes. They made a mint leave in a butt of a mandarin orange (two segments of mandarin orange. It looked like a funny feather cabaret outfit.</p>
+    <ul>
+      <li>1 part campari</li>
+      <li>1 part vermouth</li>
+      <li>1 part gin</li>
+      <li>mint for garnis</li>
+      <li>mandarin orange for garnish</li>
+    </ul>
+    <p>Pour ice cubes in an old fashion glass, add equal parts of campari, vermouth and gin. Stir. Garnish with a twist of orange peel, mint and two segments of mandarin oranges. </p>
+-
+  slug: nutellamartini
+  name: Nutella Martini
+  date: 2016-05-20
+  glass: nutellamartini
+  contents: misc_martini
+  author: shannon
+  rating: 4
+  html: |
+    <p>It was a cold day and we needed some comfort-drink. And what's more comforting than Nutella? A Nutella cocktail of course! For extra comfort, lose the ice and serve warm.</p>
+    <ul>
+      <li>.5 parts Nutella</li>
+      <li>1 part Frangelico</li>
+      <li>2 parts Baileys</li>
+    </ul>
+    <p>Heat the Nutella and Frangelico in a small saucepan. Stir until blended. <br>Combine the Nutella-Frangelico mixture with the Baileys and shake with ice.<br>Pour. Enjoy. Mix. Repeat.</p>
+-
+  slug: nutellamartini2
+  name: Nutella Martini v2
+  date: 2016-10-14
+  glass: nutellamartini
+  contents: misc_martini
+  author: shannon
+  rating: 4
+  html: |
+    <p>Since Carol missed the last nutella martini and we have three new nutella-martini-virgins, Shannon remade one of her most popular drinks.</p>
+    <ul>
+      <li>.5 parts Nutella</li>
+      <li>1 part Frangelico</li>
+      <li>2 parts Baileys</li>
+    </ul>
+    <p>Heat the Nutella and Frangelico in a small saucepan. Stir until blended. <br>Combine the Nutella-Frangelico mixture with the Baileys and shake with ice.<br>Pour. Enjoy. Mix. Repeat.</p>
+-
+  slug: paras
+  name: Paras
+  date: 2016-09-30
+  glass: paras
+  contents: vodka_lowball
+  author: shannon
+  rating: 4
+  html: |
+    <p>To celebrate the launch of our <a href="http://theartificial.nl/pokemonicons/" target="blank">Pokémon icons</a>, we've created a Paras inspired cocktail. Cute, orange, and bubbly, this drink features two orange "Paras claws" that perch on the rim of the glass.</p>
+    <ul>
+      <li>1 part orange infused vodka</li>
+      <li>1 part sprite</li>
+      <li>mandarin oranges for garnish</li>
+    </ul>
+    <p>Infuse sliced oranges in vodka for two weeks. Pour over ice, top with sprite and stir.</p>
+-
+  slug: pineapplesakeandspice
+  name: Pineapple Sake and Spice
+  date: 2017-03-31
+  glass: pineapplesakeandspice
+  contents: misc_tonic
+  author: shannon
+  rating: 4
+  html: |
+    <p>After the success of last week's sake cocktail, why not try another?</p>
+    <ul>
+      <li>1 part pineapple juice</li>
+      <li>2 parts dry filtered sake</li>
+      <li>a dash of jalapeño simple syrup</li>
+    </ul>
+    <p>We made our own jalapeño simple syrup for this drink. Boil equal parts water and sugar and add in sliced jalapeños. Simmer, strain, and chill. Pour pineapple juice and sake over ice and mix in simple syrup to taste. Wait for the afterkick before adding more!</p>
+-
+  slug: pinkiesout
+  name: Pinkies Out
+  date: 2017-02-24
+  glass: pinkiesout
+  contents: misc_mug
+  author: shannon
+  rating: 4
+  html: |
+    <p>We were recovering from two days of cold, wet windstorms, and we needed a cozy drink. Something warm, something sweet, and something with just enough alcohol to warm us from the inside out. </p>
+    <ul>
+      <li>1 part amaretto</li>
+      <li>1 part Cointreau</li>
+      <li>2 parts orange tea (we used black tea so that the hot toddy wouldn’t put us right to sleep)</li>
+    </ul>
+    <p>Brew tea according to instructions. Add amaretto and Cointreau and serve with snacks.</p>
+-
+  slug: pinkparadise
+  name: Pink Paradise
+  date: 2016-04-01
+  glass: pinkparadise
+  contents: vodka_tonic
+  author: susana
+  rating: 3
+  html: |
+    <p>A quiet day at the office calls for a loud drink! This spontaneous mixture was made to celebrate our first roof deck outing of the year. If the weather doesn’t warm your soul, maybe the booze will?</p>
+    <p>1 part vodka<br>
+    2 parts tonic<br>
+    .5 parts raspberry lemon cordial<br>
+    blueberries</p><br>
+    <p>Pour ingredients in a glass with ice and stir. Drop a few blueberries in for extra pizazz.</p>
+-
+  slug: rootbeerfloat
+  name: Root Beer Float
+  date: 2016-08-12
+  glass: rootbeerfloat
+  contents: vodka_highball
+  author: shannon
+  rating: 4
+  html: |
+    <p>We're introducing Ariane to the sweet, sweet taste of spiked ice cream cocktails. Needless to say, the ice cream part was our favorite.</p>
+    <ul>
+      <li>1 part vanilla vodka</li>
+      <li>2 parts root beer</li>
+      <li>2 heaping scoops of vanilla ice cream</li>
+    </ul>
+    <p>Fill a tall glass with ice cream. Pour vanilla vodka in and top with root beer. Mix with a straw and serve immediately!</p>
+-
+  slug: sazerac
+  name: Sazerac
+  date: 2016-09-23
+  glass: sazerac
+  contents: whiskey_lowball
+  author: hans
+  rating: 3
+  html: |
+    <p>This classic drink is originally from New Orleans and uses bitters from one of our favorite sources – Scrappy's bitters.</p>
+    <ul>
+      <li>1 part rye whiskey</li>
+      <li>a dash of simple syrup</li>
+      <li>3 dashes Scrappy's Orleans Bitters</li>
+      <li>lemon for garnish</li>
+      <li>absinthe for glass rinse</li>
+    </ul>
+    <p>Rinse glass with absinthe for aroma. Stir and strain contents into the glass and garnish with a lemon peel.</p>
+-
+  slug: sgroppino
+  name: Sgroppino
+  date: 2016-06-24
+  glass: sgroppino
+  contents: miscchampagne_margarita
+  author: shannon
+  rating: 4
+  html: |
+    <p>Part two of today's weather drinking game. A sgroppino for those rare but loved sunny moments, and a <a href="dutchandstormy.html">Dutch twist on the Dark and Stormy</a> cocktail for the rest.</p>
+    <ul>
+      <li>2 parts prosecco</li>
+      <li>1 part Limoncello</li>
+      <li>1 scoop lemon sorbet</li>
+    </ul>
+    <p>Pour prosecco and limoncello in a wide glass and stir. Drop a generous scoop of lemon sorbet on top and wait for sun!</p>
+-
+  slug: smokeandspritz
+  name: Smoke and Spritz
+  date: 2016-12-02
+  glass: smokeandspritz
+  contents: misc_tonic
+  author: natalia
+  rating: 4
+  html: |
+    <p>This deliciously smokey drink is nicely balanced with the taste of Aperol. A great way to kick off a cold weekend!</p>
+    <ul>
+      <li>1 part mezcal</li>
+      <li>1 part Aperol</li>
+      <li>.5 parts of lemon or lime juice</li>
+      <li>a dash of Angostura bitters</li>
+      <li>2 parts of club soda</li>
+      <li>lemon peel for garnish</li>
+    </ul>
+    <p>Pour mezcal, aperol, and lemon or lime juice into a shaker with ice. Shake well then pour into a wide glass. Top with club soda, a dash of Angostura bitters, and garnish with a lemon peel.</p>
+-
+  slug: sparklinglemon
+  name: Sparkling Lemon
+  date: 2017-06-09
+  glass: sparklinglemon
+  contents: misc_wine
+  author: shannon
+  rating: 4
+  html: |
+    <p>A light and summery drink before we head off to a sunny weekend. If you're looking for the quicker drink option, we tried round two with just lemonade and it still turns out pretty nice.</p>
+    <ul>
+      <li>2 parts Prosecco</li>
+      <li>1 fresh lemon</li>
+      <li>.5 part sugar</li>
+      <li>A splash of Angostura bitters</li>
+    </ul>
+    <p>Muddle lemons, sugar, and bitters in a glass until lemon is soft. Pour in a wine glass and top with prosecco.</p>
+-
+  slug: sweetmidnight
+  name: Sweet Midnight
+  date: 2016-01-08
+  glass: sweetmidnight
+  contents: gin_goblet
+  author: shannon
+  rating: 3
+  html: |
+    <p>It's our first drink of the new year together, so we decided to start off with an experiment. This dark and sweet drink inspired many gory names (some insisted bloody was the best adjective), but we decided to keep it clean and so we present to you, Sweet Midnight.</p>
+    <p>1 part gin<br> 
+        1 part blueberry blackcurrant cordial<br> 
+        1 splash simple syrup<br> 
+        1 dash cinnamon</p><br>
+    <p>Combine all ingredients in a shaker and pour over ice.<br> Garnish with berries.</p>
+-
+  slug: theariane
+  name: The Ariane
+  date: 2016-07-13
+  glass: theariane
+  contents: misctequila_margarita
+  author: ariane
+  rating: 5
+  html: |
+    <p>Today we’re testing out Ariane’s party cockail, and what says Ariane more than tequila on a Wednesday afternoon? The good news is we had plenty of delicious grilled corn, cheese, and veggies to get us through the rest of the workday.</p>
+    <ul>
+      <li>2 parts strawberry and basil infused tequila</li>
+      <li>1 part orange liqueur</li>
+      <li>a splash of simple syrup</li>
+      <li>a squeeze of lime</li>
+      <li>basil for garnish</li>
+    </ul>
+    <p>Infuse tequila with strawberries and basil for two days. Blend infused tequila with orange liqueur, lime, simple syrup, and ice. Garnish with basil and a strawberry.</p>
+-
+  slug: thecarol
+  name: The Carol
+  date: 2016-07-01
+  glass: thecarol
+  contents: rum_hurricane
+  author: carol
+  rating: 5
+  html: |
+    <p>This week we're testing three out of five mixology self portraits for our July summer party. Stay tuned for Susana and Ariane's comming up in a few weeks!</p>
+    <ul>
+      <li>2 parts mango purée</li>
+      <li>1 part dark rum</li>
+      <li>sliced chili peppers</li>
+      <li>lime wedge</li>
+    </ul>
+    <p>Blend fresh or frozen mango with water to create a thin purée. Pour into a shaker with ice, dark rum, and slices of chili peppers. Shake, strain, and serve with a squeeze of lime and extra peppers.</p>
+-
+  slug: lavenderpearlemonade
+  name: Lavender Pear Lemonade
+  date: 2016-06-03
+  glass: lavenderpearlemonade
+  contents: vodka_highball
+  author: carol
+  rating: 4
+  html: |
+    <p>Because all our drinks are weather inspired, we're starting June off with a refreshing spiked floral lemonade to welcome summer.</p>
+    <ul>
+      <li>1 part vodka</li>
+      <li>1 part pear juice</li>
+      <li>.5 parts water</li>
+      <li>.5 parts lemon juice</li>
+      <li>2 dashes lavender simple syrup</li>
+      <li>lemon wedge for garnish</li>
+    </ul>
+    <p>To make lavender simple syrup, boil equal parts water and sugar with fresh stalks of lavender for 10 minutes. Strain and let cool. Mix other ingredients in a shaker with ice and add simple syrup to taste. Garnish with a lemon wedge or lavender.</p>
+-
+  slug: thehans
+  name: The Hans
+  date: 2016-07-01
+  glass: thehans
+  contents: gin_highball
+  author: hans
+  rating: 5
+  html: |
+    <p>This week we're testing three out of five mixology self portraits for our July summer party. Stay tuned for Susana and Ariane's comming up in a few weeks!</p>
+    <ul>
+      <li>1 part dry gin</li>
+      <li>2 parts ginger beer</li>
+      <li>.5 parts lime juice</li>
+      <li>fresh mint</li>
+    </ul>
+    <p>Mix a dry gin with muddled mint and ice. Top with ginger beer and add lime juice to tase, then garnish with a fresh spring of mint.</p>
+-
+  slug: thekatinka
+  name: The Katinka
+  date: 2016-10-21
+  glass: thekatinka
+  contents: miscgin_wine
+  author: katinka
+  rating: 5
+  html: |
+    <p>I wanted to create something fresh yet nostalgic. Being reminded of my childhood where my friends and I sat out in the sun eating fruits and having no care in the world, drawing on the peels and giving them faces, I searched for something watermelon-y. This led me to finding this lovely cocktail, 'The Merchant's Wife', which I like to believe is based on the poem "The River-Merchant’s Wife: A Letter”, by Ezra Pound. In this poem the character looks back to the past with fond memories in a sweet and charming way.</p><p>What’s not to love?</p>
+    <ul>
+      <li>2 chunks watermelon</li>
+      <li>1 part gin</li>
+      <li>1 part club soda</li>
+      <li>.5 parts simple syrup</li>
+      <li>.5 parts Aperol </li>
+      <li>.5 parts lemon juice</li>
+    </ul>
+    <p>Muddle the watermelon chunks and simple syrup together in a cocktail shaker. Add the remaining ingredients, fill shaker with ice, and shake vigorously. Strain over into a wine glass filled with crushed ice and serve garnished with a wedge of watermelon.</p>
+-
+  slug: thenatalia
+  name: The Natalia
+  date: 2016-10-13
+  glass: thenatalia
+  contents: misc_lowball
+  author: natalia
+  rating: 5
+  html: |
+    <p></p>
+    <ul>
+      <li>1 part mezcal </li>
+      <li>1 part ginger ale</li>
+      <li>.5 parts agave syrup</li>
+      <li>a slice of grilled pineapple</li>
+      <li>a dash of lime juice
+      <li>jalapeño pepper </li>
+      <li>cilantro or mint</li>
+    </ul>
+    <p>Grill the pineapple on a pan flipping once, until charred on both sides. Remove from pan and let cool. <br><br>
+    Place the grilled pineapple, jalapeño, and cilantro in a pitcher and using a muddler, crush fruit and herbs until broken down. <br><br>
+    Add mezcal, lime juice, and syrup. Stir well and pour into glasses filled with ice, to serve.</p>
+-
+  slug: thepariane
+  name: The Pariane
+  date: 2017-01-13
+  glass: thepariane
+  contents: miscwhiskey_goblet
+  author: ariane, "Parizad Saremi"
+  rating: 4
+  html: |
+    <p>A collaboration between Ariane and Parizad equals the Pariane! It's a strong drink, but the pear juice makes it easy to drink.</p>
+    <ul>
+      <li>2 parts bourbon</li>
+      <li>2 parts pear juice</li>
+      <li>1 part sweet vermouth</li>
+      <li>.5 parts sugar</li>
+      <li>a few dashes of The Bitter Housewife Cardamom Bitters</li>
+      <li>a pear slice for garnish</li>
+    </ul>
+    <p>Stir all ingredients in a mixing glass filled with ice. Strain into a glass and serve with a slice of fresh pear.</p>
+-
+  slug: theparizad
+  name: The Parizad
+  date: 2016-10-28
+  glass: theparizad
+  contents: miscvodka_lowball
+  author: "Parizad Saremi"
+  rating: 4
+  html: |
+    <p>A good chunk of our tiny office is out today, so we're making it a point to try the Parizad again in the near future! This drink is based on the classic White Russian. Proportions are vital, but the ingredients themselves can be swapped out for different variations.</p>
+    <ul>
+      <li>2 parts vodka</li>
+      <li>1 part coffee liquor</li>
+      <li>1 part cream</li>
+    </ul>
+    <p>Fill a low glass with ice and add vodka and coffee liquor. Give the mixture a stir to combine the ingredients before adding the cream on top. Serve immediately to keep the layered effect.</p>
+-
+  slug: theshannon
+  name: The Shannon
+  date: 2016-07-01
+  glass: theshannon
+  contents: miscwhiskey_martini
+  author: shannon
+  rating: 5
+  html: |
+    <p>This week we're testing three out of five mixology self portraits for our July summer party. Stay tuned for Susana and Ariane's comming up in a few weeks!</p>
+    <ul>
+      <li>2 parts scotch whiskey</li>
+      <li>1 part maraschino liquor</li>
+      <li>1 dash of angostura bitters</li>
+      <li>cherry for garnish</li>
+    </ul>
+    <p>Combine all ingredients in a chilled glass. garnish with a fresh cherry before serving.</p>
+-
+  slug: thesusana
+  name: The Susana
+  date: 2016-07-21
+  glass: thesusana
+  contents: misc_short
+  author: susana
+  rating: 5
+  html: |
+    <p>What started as a brandy based drink only became more delicious with a switch to amaretto. A typical Susana drink will always make you wonder if it’s a cocktail or really just dessert. Cheers!</p>
+    <ul>
+      <li>2 parts amaretto</li>
+      <li>1 part Bailey’s Chocolat Luxe</li>
+      <li>1 part cream</li>
+      <li>Pocky stick for garnish</li>
+    </ul>
+    <p>Combine amaretto, Bailey’s, and cream. Shake with ice. Pour over ice and garnish with a Pocky stick. Infuse amaretto with vanilla beans for extra flavor.</p>
+-
+  slug: thetrudeau
+  name: The Trudeau
+  date: 2017-03-03
+  glass: thetrudeau
+  contents: whiskey_martini
+  author: shannon
+  rating: 5
+  html: |
+    <p>For a drink so strong, spicy, and Canadian, we had to name this drink after <a href="http://www.telegraph.co.uk/news/2017/03/01/photos-young-shirtless-justin-trudeau-send-internet-frenzy/" target="blank">Justin Trudeau</a>.</p>
+    <ul>
+      <li>2 parts whiskey</li>
+      <li>.5 parts maple syrup</li>
+      <li>a splash of firewater bitters</li>
+    </ul>
+    <p>Stir maple syrup into whiskey until well combined. Pour into a chilled glass and drop a few splashes of firewater bitters in.</p>
+-
+  slug: tipsyandtangy
+  name: Tipsy and Tangy
+  date: 2017-06-02
+  glass: tipsyandtangy
+  contents: miscgin_highball
+  author: shannon
+  rating: 5
+  html: |
+    <p>We tried an amazing drink at the Pulitzer bar yesterday that got us inspired. Disguised as a light, refreshing drink, this one got us all pretty tipsy with just one (or half) cocktail!</p>
+    <ul>
+      <li>1 part Tanqueray Gin</li>
+      <li>1 part triple sec</li>
+      <li>2 parts soda water</li>
+      <li>orange slices</li>
+      <li>a fresh sprig of mint</li>
+    </ul>
+    <p>Pour gin, triple sec, and soda water over ice. Squeeze in some fresh orange juice and stir with mint.</p>
+-
+  slug: vitaminc
+  name: Vitamin C
+  date: 2016-09-16
+  glass: vitaminC
+  contents: whiskey_snifter
+  author: ariane
+  rating: 4
+  html: |
+    <p>Medication and doctor visits couldn't cure Ariane of her untimely summer cold, but maybe whiskey and citrus juices will!</p>
+    <ul>
+      <li>2 parts bourbon whiskey</li>
+      <li>1 part lemon lime juice</li>
+      <li>1.5 parts orange juice</li>
+      <li>.5 parts tangerine juice</li>
+    </ul>
+    <p>Shake all ingredients together with ice. Strain and pour into a wide glass and garnish with a citrus slice.</p>
+-
+  slug: wg
+  name: "W&G"
+  date: 2016-04-08
+  glass: wg
+  contents: whiskey_snifter-short
+  author: carol
+  rating: 3
+  html: |
+    <p>A simple whiskey and ginger ale, with a dash of honey chamomile bitters from my lovely Dram Apothecary bitters set. Yes, I know, mixing whiskey and ginger ale is blasphemy in the cocktail making world, but it will always have a special place in my heart (stomach).</p>
+    <ul>
+      <li>1 part whiskey</li>
+      <li>2 parts ginger ale</li>
+      <li>a dash of honey chamomile bitters</li>
+    </ul>
+    <p>Pour ingredients in a glass with ice and stir. A couple drops of honey chamomile bitters gives the drink a slightly herby taste.</p>

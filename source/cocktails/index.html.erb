@@ -1,0 +1,43 @@
+---
+title: Friday Cocktails
+---
+  <% content_for :stylesheet_tags do %>
+    <%= stylesheet_link_tag "cocktails.css" %>
+  <% end %>
+  <section id="content">
+
+    <div class="flex container">
+      <div class="col-8 right-2 left-2 introduction center">
+        <div class="padded">
+            <h1>Friday Cocktails</h1>
+            <p>On Fridays, we welcome any excuse to practice our mixology
+            skills. Here's a collection of our successes, trials, and
+            errors.</p>
+            <p>Cheers, proost, and enjoy!</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="container packery">
+      <% data.cocktails.sort_by{|c| c.date}.reverse.each_with_index do |c, i| %>
+      <div class="col-4 packed">
+        <% link_to "#{c.slug}.html" do %>
+          <div class="card">
+            <div class="anchor">
+              <div class="preview">
+                <img class="static" alt="<%= c.name %>" src="<%= "images/glass/#{c.glass}.png" %>">
+                <img class="animated" src="<%= "images/contents/#{c.contents}.gif" %>">
+              </div>
+
+              <div class="details padded center">
+                <h3><%= c.date.strftime('%B %e, %Y') %></h3>
+                <h2><%= c.name %></h2>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+
+</section>

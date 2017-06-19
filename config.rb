@@ -80,7 +80,7 @@ helpers do
       return "<span>#{username}</span>"
     else
       puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
-      return "<span class=\"error\">#{username}</span>"
+      return "<span>#{username}</span>"
     end
   end
 
@@ -178,6 +178,12 @@ set :markdown_engine, :kramdown
 set :markdown, :fenced_code_blocks => true,
                :autolink => true,
                :smartypants => true
+
+# Cocktails
+
+data.cocktails.each do |c|
+  proxy "/cocktails/#{c.slug}.html", "/cocktails/template.html", locals: { cocktail: c }, ignore: true
+end
 
 # Build-specific configuration
 configure :development do
