@@ -56,7 +56,7 @@ The site is built using the [Middleman](http://middlemanapp.com/) framework. In 
 
 Usually, you will want to let it magically do this on the fly. Use this command:
 
-    $ middleman
+    $ bundle exec middleman server
 
 It should tell you this:
 
@@ -95,14 +95,14 @@ Create a file in `source/blog` with a `YYYY-MM-DD-slug.md` filename. The reuslti
     category: testing
     tags: one, two, three
     author: hans
+    masthead: MM-DD-slug/someimage.jpg
     ---
 
 N.B. titles don't have to have quotes but it's more reliable to include them, and author must match one of the files avaiable under `source/people`
 
-Also creat a folder named `YYYY-MM-DD-slug` for images,and include two standard images:
+The author field will look for a corresponding `people` page and display proper names and links. If you use a string such as "Hans Gerwitz" it will display that name without a link. This should be used sparingly for guest posts.
 
-- `-preview.jpg` 600x400px image used in lists
-- `-masthead.jpg` 1200x320px header image rendered in the post itself
+Optionally, create a folder named `YYYY-MM-DD-slug` for images, and specify a relative path to one as the masthead image, as above.
 
 You may, of course, include other images there, preferably 800px wide. They can be referenced within a post with the '!' Markdown syntax:
 
