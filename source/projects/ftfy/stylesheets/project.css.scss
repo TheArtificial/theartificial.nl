@@ -1,5 +1,8 @@
 @import "../../../stylesheets/_artificial-colors.scss";
 
+body {
+  height: 100%;
+}
 .ftfy {
   background-color: $grape;
   background: linear-gradient(to top right, $darkest-sapphire, $dark-grape, $dark-tulip);

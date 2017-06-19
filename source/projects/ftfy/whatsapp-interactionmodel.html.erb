@@ -1,0 +1,78 @@
+---
+name: WhatsApp
+date: 2017-06-19
+author: carol
+subtitle: "Interaction Model"
+thumbnail: fixed-01.png
+---
+<%= partial 'fix_header' %>
+<div class="bleed dark">
+  <div class="flex container before">
+    <div class="col-4 right-2">
+      <div class="padded">
+        <h2>Before</h2>
+        <p>WhatsApp is one of the most commonly used messaging apps in Europe. It’s often used in conjunction with Facebook Messenger, its parent company, but the two have disparate interaction models. </p>
+        <p>While it’s understandable that Facebook doesn’t want WhatsApp to be an exact duplicate of Messenger, there can be improvements to WhatsApp’s interaction model to give it more focus.</p>
+      </div>
+    </div>
+    <div class="col-4 right-2">
+      <div class="partially-padded">
+        <img src="images/whatsapp-interactionmodel/original-01.png" alt="Apple Health">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bleed white">
+  <div class="flex container after">
+    <div class="col-12">
+      <div class="padded">
+        <h2>After</h2>
+        <p>I started by looking at the conceptual model. Status in WhatsApp used to be the now “About” text update, yet suggested options are still status-like bits such as “Available” and “In a meeting”. Now, status is the equivalent of Instagram stories or Messenger Shared Days. With the current interaction model, these two updates are found under two different tabs. Part of this fix was to consolidate the two into one status; either text only or with photos or videos, found under the status tab, though users can always see which contacts have recently added a new status with the blue ring around chat profile images.</p>
+        <p>While we’re consolidating and simplifying, I’m also getting rid of the camera tab. Users can access the camera from either a chat or a status already, so I find it redundant and confusing to duplicate that function as a tab.</p>
+        <p>And we’re down to four tabs! Hooray! Already, I feel that the app has more focus, with a type of action per tab and no awkward crossovers. And best of all, there’s now consistency in the selected states of all four tabs; filled icons for all!</p>
+      </div>
+    </div>
+    <div class="flex container">
+      <div class="col-3">
+        <div class="partially-padded">
+          <img src="images/whatsapp-interactionmodel/fixed-01.png" alt="Apple Health">
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="partially-padded">
+          <img src="images/whatsapp-interactionmodel/fixed-02.png" alt="Apple Health">
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="partially-padded">
+          <img src="images/whatsapp-interactionmodel/fixed-03.png" alt="Apple Health">
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="partially-padded">
+          <img src="images/whatsapp-interactionmodel/fixed-04.png" alt="Apple Health">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bleed lightest-grey">
+  <div class="flex container etc">
+    <div class="col-9">
+      <div class="padded">
+        <h3>Additional notes</h3>
+        <p>The other bone I had to pick was the bar at the top of the Chat screen showing Broadcast Lists and New Group. Both are about creating new lists, yet only “New Group” appears when the user taps the new chat icon on the upper left.</p> 
+        <p>In this fix, I’ve decided to remove the bar in the Chat screen, and bring both actions into the “New chat” screen. Now, there's one less element in the chat tab, brining more focus to the screen.</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="padded">
+        <img src="images/whatsapp-interactionmodel/fixed-05.png" alt="Apple Health">
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= partial 'fix_footer' %>
