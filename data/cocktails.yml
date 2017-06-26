@@ -402,6 +402,21 @@
     </ul>
     <p>Pour whiskey and peach iced tea in a shaker and shake with ice. Serve with a stem of rosemary and a splash of firewater bitters. Two splashes for the brave, three splashes for enemies.</p>
 -
+  slug: mezcalmule
+  name: Mezcal Mule
+  date: 2017-06-23
+  glass: mezcalmule
+  contents: misc_coppermug
+  author: natalia
+  rating: 4
+  html: |
+    <p>A drink so good it even inspired us to get our own set of copper mugs.</p>
+    <p>1 part jalapeño-infused mezcal<br>
+    2 parts ginger beer<br>
+    a splash of lime juice<br>
+    jalapeños and cucumbers for garnish</p><br>
+    <p>Combine all ingredients and stir with ice. Pour into a copper mug and go crazy with your garnishes.</p>
+-
   slug: mezcaloldfashioned
   name: Mezcal Old-Fashioned
   date: 2017-01-27
