@@ -16,10 +16,21 @@
 		.flex.container {
 			border-bottom-color: $cool-grey-90;
 		}
+
 		#logo {
-			color: $white;
 			padding-top: 6px;
-			padding-bottom: 11px;
+			a {
+				height: 22px;
+
+				font-family: Georgia, Times, serif;
+				font-weight: bold;
+				font-style: italic;
+				font-size: 26px;
+				color: white;
+			}
+			a:hover {
+				color: $pale-turquoise;
+			}
 		}
 
 		#nav-primary {
@@ -76,7 +87,7 @@
 	padding-bottom: 80px;
 }
 
-.sentence {
+.small-statement * {
 	color: $cool-grey-40;
 
 	strong, a {
@@ -101,6 +112,7 @@
 
 .card-rule {
 	margin: auto;
+	margin-top: 16px;
 	margin-bottom: 16px;
 	width: 40px;
 	height: 1px;
@@ -236,19 +248,16 @@ svg *.content{ fill: $cool-grey-40; }
 			border-top-color: $cool-grey-70;
 		}
 		h4, p {
-			color: $cool-grey-10;
-			line-height: 20px;
-		}
-			a {
-			color: $cool-grey-10;
-			text-decoration: underline;
-		}
-		a:hover {
 			color: $cool-grey-30;
 		}
-		h3 {
-			font-size: 20px;
+			a {
+			color: $white;
+		}
+		a:hover {
 			color: $cool-grey-10;
+		}
+		h3 {
+			color: $white;
 		}
 	}
 }
@@ -295,10 +304,6 @@ svg *.content{ fill: $cool-grey-40; }
 		margin-top: 20px;
 	}
 
-}
-
-.pale-turquoise {
-	background-color: $pale-turquoise;
 }
 
 .turquoise {
@@ -423,6 +428,9 @@ svg *.content{ fill: $cool-grey-40; }
 		}
 	}
 }
+
+// background colors
+.pale-turquoise { background-color: $pale-turquoise; }
 
 // gradient colors
 .turquoise-palegrass {

@@ -2,69 +2,20 @@
 // this document should not be edited
 // ever
 
-img + h1, img + h2, img + h3, img + h4, img + h5, img + p {
-	margin: 0;
-	padding: 20px 0 20px 0;
-}
+h1, h2, h3, p, ul, li { margin: 0; }
 
-h1, h2, h3, h4, h5, p {
-	margin: 0;
-	padding-bottom: 15px;
-}
+h2, h3, p, ul, li, .nav, .label, .statement, .small-statement { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+h1, #logo, .small-title, .description, .snippit, .letters { font-family: Georgia, Times, serif; }
 
-.card {
-	a {
-		text-decoration: none;
-	}
-}
+#logo, .small-title, .letters { font-weight: bold; }
+.statement, .small-statement { font-weight: lighter; }
+h1, #logo, .small-title, .description, .snippit { font-style: italic; }
+.label { text-transform: uppercase; }
 
-h2, h4, h5, p, ul, li, td {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
+ul, li { list-style-type: none; }
+a { text-decoration: none; }
 
-h1, h3, p.card-detail {
-	font-family: "Droid Serif", Georgia, Times, serif;
-	font-style: italic;
-}
-
-.periodic {
-	font-family: "Droid Serif", Georgia, Times, serif;
-	font-weight: bold;
-}
-
-.statement, .sentence {
-	font-weight: lighter;
-}
-
-h5 {
-	margin: 0;
-	padding-bottom: 10px;
-}
-
-h2#logo {
-	padding-top: 4px;
-	height: 22px;
-	font-family: "Droid Serif", Georgia, Times, serif;
-	font-style: italic;
-	font-size: 29px;
-}
-
-ul, li {
-	list-style-type: none;
-}
-
-a {
-	text-decoration: none;
-	color: $turquoise;
-}
-
-a:hover {
-	color: $dark-turquoise;
-};
-
-h1, h2, h3, h4, h5, p {
-	margin-top: 0;
-}
+.center { text-align: center; }
 
 // for mobile
 @media only screen and (min-device-width: 320px) {
@@ -79,19 +30,8 @@ h1, h2, h3, h4, h5, p {
 	}
 
 	h3 {
-		font-size: 20px;
-		line-height: 28px;
-		font-weight: lighter;
-	}
-
-	h4 {
 		font-size: 16px;
 		line-height: 22px;
-	}
-
-	h5 {
-		font-size: 12px;
-		line-height: 20px;
 	}
 
 	p, li, ul {
@@ -99,14 +39,38 @@ h1, h2, h3, h4, h5, p {
 		line-height: 20px;
 	}
 
-	.statement, .sentence {
+	.small-title * {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.description * {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.letters {
+		font-size: 120px;
+	}
+
+	.statement * {
 		font-size: 24px;
 		line-height: 32px;
 	}
 
-	.periodic {
-		font-size: 120px;
-		padding-bottom: 20px;
+	.small-statement * {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.label * {
+		font-size: 10px;
+		line-height: 14px;
+	}
+
+	.snippit * {
+		font-size: 12px;
+		line-height: 20px;
 	}
 }
 
@@ -123,18 +87,8 @@ h1, h2, h3, h4, h5, p {
 	}
 
 	h3 {
-		font-size: 20px;
-		line-height: 28px;
-	}
-
-	h4 {
 		font-size: 16px;
 		line-height: 22px;
-	}
-
-	h5 {
-		font-size: 12px;
-		line-height: 20px;
 	}
 
 	p, li, ul {
@@ -142,18 +96,38 @@ h1, h2, h3, h4, h5, p {
 		line-height: 20px;
 	}
 
-	.statement {
+	.small-title * {
+		font-size: 20px;
+		line-height: 38px;
+	}
+
+	.description * {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.letters {
+		font-size: 80px;
+	}
+
+	.statement * {
 		font-size: 32px;
 		line-height: 40px;
 	}
 
-	.sentence {
+	.small-statement * {
 		font-size: 28px;
 		line-height: 36px;
 	}
 
-	.periodic {
-		font-size: 80px;
+	.label * {
+		font-size: 10px;
+		line-height: 14px;
+	}
+
+	.snippit * {
+		font-size: 12px;
+		line-height: 20px;
 	}
 }
 
@@ -170,18 +144,8 @@ h1, h2, h3, h4, h5, p {
 	}
 
 	h3 {
-		font-size: 24px;
-		line-height: 32px;
-	}
-
-	h4 {
 		font-size: 20px;
 		line-height: 26px;
-	}
-
-	h5 {
-		font-size: 14px;
-		line-height: 22px;
 	}
 
 	p, li, ul {
@@ -189,22 +153,37 @@ h1, h2, h3, h4, h5, p {
 		line-height: 22px;
 	}
 
-	.statement {
-		font-size: 42px;
-		line-height: 50px;
+	.small-title * {
+		font-size: 24px;
+		line-height: 32px;
 	}
 
-	.sentence {
+	.description * {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.letters {
+		font-size: 120px;
+	}
+
+	.statement * {
+		font-size: 40px;
+		line-height: 48px;
+	}
+
+	.small-statement * {
 		font-size: 32px;
 		line-height: 40px;
 	}
 
-	.periodic {
-		font-size: 120px;
+	.label * {
+		font-size: 10px;
+		line-height: 14px;
 	}
-}
 
-.slide-panel-caption {
-	font-weight: lighter;
-	text-align: center;
+	.snippit * {
+		font-size: 14px;
+		line-height: 22px;
+	}
 }
