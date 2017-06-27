@@ -68,13 +68,21 @@
 	margin-top: 20px;
 }
 
-
 .extra-padded {
 	padding: 48px 16px 24px 16px;
 }
 
 .padded-bottom {
 	padding-bottom: 80px;
+}
+
+.sentence {
+	color: $cool-grey-40;
+
+	strong, a {
+		color: $white;
+		font-weight: normal;
+	}
 }
 
 // card sizing for case studies and experiments
@@ -171,15 +179,6 @@ svg *.content{ fill: $cool-grey-40; }
 	text-align: center;
 	padding: 12px;
 	color: $white;
-}
-
-.job-details {
-	color: $cool-grey-40;
-
-	strong {
-		color: $cool-grey-10;
-		font-weight: normal;
-	}
 }
 
 .job-requirements {
