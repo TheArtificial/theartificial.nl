@@ -5,23 +5,17 @@
 <link rel="alternate" type="application/atom+xml" title="The Artificial blog" href="/blog/feed.xml" />
 <% end %>
 
-<section id="content">
+<section id="content" class="<%= "with-masthead" if current_page.data.masthead %>">
+  <% if current_page.data.masthead %>
   <div class="bleed">
-    <% if current_page.data.masthead %>
-      <div id="masthead">
-      </div>
+      <div id="masthead"></div>
       <style>
-      #masthead {
-        background-image: url('<%= image_path current_page.data.masthead %>');
-        height: 400px;
-        background-position: center center;
-        background-repeat: repeat-x;
-      }
+        #masthead { background-image: url('<%= image_path current_page.data.masthead %>'); }
       </style>
-    <% end %>
   </div>
+  <% end %>
 
-  <div class="flex container">
+  <article class="flex container">
 
     <div class="col-8 left-2 right-2 white">
       <div class="padded">
@@ -40,7 +34,7 @@
       </div>
     </div>
 
-  </div>
+  </article>
 
 </section>
 <% end %>

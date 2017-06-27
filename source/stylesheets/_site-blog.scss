@@ -105,9 +105,19 @@
 
   #content {
 
-    .flex.container {
-      margin-top: -100px;
-      background-color: $white;
+    // the background of the masthead will be set in-page
+    #masthead {
+      height: 400px;
+      background-position: center center;
+      background-repeat: repeat-x;
+    }
+
+    // if we have a masthead, we want to protrude into it
+    &.with-masthead {
+      article {
+        margin-top: -100px;
+        background-color: $white;
+      }
     }
 
     @media only screen and (min-device-width: 320px) {
