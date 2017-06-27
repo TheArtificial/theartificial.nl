@@ -102,7 +102,13 @@
 }
 
 .blog:not(.blog_index) {
+
   #content {
+
+    .flex.container {
+      margin-top: -100px;
+      background-color: $white;
+    }
 
     @media only screen and (min-device-width: 320px) {
       .blog-title {
@@ -119,9 +125,10 @@
         }
       }
     }
+
     @media only screen and (min-device-width: 768px) {
       .blog-title {
-        margin-top: 80px;
+        margin-top: 60px;
         margin-bottom: 20px;
         h1 {
           font-size: 42px;
@@ -129,9 +136,10 @@
         }
       }
     }
+
     @media only screen and (min-width: 960px) {
       .blog-title {
-        margin-top: 80px;
+        margin-top: 60px;
         margin-bottom: 40px;
         h1 {
           font-size: 54px;
