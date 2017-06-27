@@ -32,7 +32,7 @@ h1, h3, p.card-detail {
 	font-weight: bold;
 }
 
-.statement {
+.statement, .sentence {
 	font-weight: lighter;
 }
 
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, p {
 		line-height: 20px;
 	}
 
-	.statement {
+	.statement, .sentence {
 		font-size: 24px;
 		line-height: 32px;
 	}
@@ -147,6 +147,11 @@ h1, h2, h3, h4, h5, p {
 		line-height: 40px;
 	}
 
+	.sentence {
+		font-size: 28px;
+		line-height: 36px;
+	}
+
 	.periodic {
 		font-size: 80px;
 	}
@@ -187,6 +192,11 @@ h1, h2, h3, h4, h5, p {
 	.statement {
 		font-size: 42px;
 		line-height: 50px;
+	}
+
+	.sentence {
+		font-size: 32px;
+		line-height: 40px;
 	}
 
 	.periodic {

@@ -157,15 +157,9 @@ svg *.content{ fill: $cool-grey-40; }
 }
 
 // about styles
-.about {
-	h3 {
-		font-size: 32px;
-		line-height: 38px;
-		font-weight: bold;
-	}
-}
-
 .map {
+	height: 400px;
+
 	.mapboxgl-popup-content {
 		padding: 10px;
 	}
@@ -179,11 +173,9 @@ svg *.content{ fill: $cool-grey-40; }
 	color: $white;
 }
 
-.job-description {
-	font-size: 20px;
-	line-height: 30px;
+.job-details {
 	color: $cool-grey-40;
-	font-weight: lighter;
+
 	strong {
 		color: $cool-grey-10;
 		font-weight: normal;
@@ -193,28 +185,21 @@ svg *.content{ fill: $cool-grey-40; }
 .job-requirements {
 	color: $cool-grey-40;
 	li {
-		line-height: 20px;
 		list-style-type: disc;
 	}
 }
 
 .tools {
 	text-align: center;
-	h2 {
-		font-size: 16px;
-		padding: 10px 0 5px 0;
-	}
-	p {
-		color: $pale-tulip;
-		padding-bottom: 2px;
-	}
+
 	svg *.feather_een {
 		fill: $white;
+		padding-bottom: 20px;
 	}
-}
-
-.map {
-	height: 400px;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
 }
 
 // people styles
