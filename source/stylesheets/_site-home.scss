@@ -2,12 +2,7 @@
 body.index {
 	height: 100%;
 
-	scroll-behavior: smooth;
 	scroll-snap-type: mandatory;
-	scroll-snap-points-y: repeat(100%);
-	-webkit-scroll-behavior: smooth;
-	-webkit-scroll-snap-type: mandatory;
-	-webkit-scroll-snap-points-y: repeat(100%);
 }
 
 // the comp lacks this line!
@@ -33,6 +28,10 @@ body.index #header .flex.container {
 // homepage panels
 .slide-panel {
 	*, *:hover { color: inherit; }
+
+	scroll-snap-align: center;
+
+	height: 100vh;
 
 	&>.container {
 		padding-top: 68px;
