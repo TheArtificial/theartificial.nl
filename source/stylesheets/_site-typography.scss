@@ -25,6 +25,10 @@ a { text-decoration: none; }
 		line-height: 22px;
 	}
 
+	p {
+		padding-bottom: 8px;
+	}
+
 	#logo {
 		font-size: 28px;
 	}
@@ -50,6 +54,7 @@ a { text-decoration: none; }
 	.subtitle {
 		font-size: 20px;
 		line-height: 26px;
+		padding-bottom: 24px;
 	}
 
 	.small-subtitle {

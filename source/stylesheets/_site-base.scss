@@ -72,13 +72,9 @@
 	margin-top: 20px;
 }
 
-.extra-padded {
-	padding: 48px 16px 24px 16px;
-}
-
-.padded-bottom {
-	padding-bottom: 80px;
-}
+.extra-padded { padding: 48px 16px 24px 16px; }
+.extra-vertical { padding-top: 40px; padding-bottom: 40px; }
+.padded-bottom { padding-bottom: 80px; }
 
 .small-statement * {
 	color: $cool-grey-40;
@@ -273,10 +269,6 @@ svg *.content{ fill: $cool-grey-40; }
 	background-color: $cool-grey-90;
 }
 
-.grey-10 {
-	background-color: $cool-grey-10;
-}
-
 .grey {
 	background-color: $cool-grey-50;
 	h1, a {
@@ -325,65 +317,66 @@ svg *.content{ fill: $cool-grey-40; }
 
 // background colors
 .pale-turquoise { background-color: $pale-turquoise; }
+.grey-10 { background-color: $cool-grey-10; }
 
 // background gradients
 .turquoise-palegrass {
 	background-color: $turquoise;
 	background: linear-gradient(to bottom, $pale-grass, $turquoise);
-	.statement { color: $darkest-turquoise; }
+	.statement, .statement:hover { color: $darkest-turquoise; }
 }
 
 .sapphire-palegrape {
 	background-color: $sapphire;
 	background: linear-gradient(to bottom, $pale-grape, $sapphire);
-	.statement { color: $pale-grape; }
+	.statement, .statement:hover { color: $pale-grape; }
 }
 
 .sapphire-paleturquoise {
 	background-color: $sapphire;
 	background: linear-gradient(to bottom, $pale-turquoise, $sapphire);
-	.statement { color: $pale-turquoise; }
+	.statement, .statement:hover { color: $pale-turquoise; }
 }
 
 .grape-paletulip {
 	background-color: $grape;
 	background: linear-gradient(to bottom, $pale-tulip, $grape);
-	.statement { color: $pale-tulip; }
+	.statement, .statement:hover { color: $pale-tulip; }
 }
 .grape-palesapphire {
 	background-color: $grape;
 	background: linear-gradient(to bottom, $pale-sapphire, $grape);
-	.statement { color: $pale-sapphire; }
+	.statement, .statement:hover { color: $pale-sapphire; }
 }
 
 .tulip-palepumpkin {
 	background-color: $tulip;
 	background: linear-gradient(to bottom, $pale-pumpkin, $tulip);
-	.statement { color: $pale-pumpkin; }
+	.statement, .statement:hover { color: $pale-pumpkin; }
 }
 
 .pumpkin-paledandelion {
 	background-color: $pumpkin;
 	background: linear-gradient(to bottom, $pale-dandelion, $pumpkin);
-	.statement { color: $dark-tulip; }
+	.statement, .statement:hover { color: $dark-tulip; }
 }
 
 .dandelion-paledandelion {
 	background-color: $dandelion;
 	background: linear-gradient(to bottom, $pale-dandelion, $dandelion);
-	.statement { color: $dark-pumpkin; }
+	.statement, .statement:hover { color: $dark-pumpkin; }
 }
 
 .grass-paleturquoise {
 	background-color: $grass;
 	background: linear-gradient(to bottom, $pale-turquoise, $grass);
-	.statement { color: $darkest-turquoise; }
+	.statement, .statement:hover { color: $darkest-turquoise; }
 }
 
 .grass-palelime {
 	background-color: $grass;
 	background: linear-gradient(to bottom, $pale-lime, $grass);
-	.statement {	color: $pale-lime }
+	.statement, .statement:hover {	color: $pale-lime }
 }
 
 // text colors
