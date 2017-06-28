@@ -11,8 +11,8 @@
         <%= image_tag base_path + '/' + article.data.masthead %>
       </div>
       <div class="meta">
-        <div class="category"><%= article.data.category %></div>
-        <div class="title"><%= article.title %></div>
+        <div class="label"><%= article.data.category %></div>
+        <div class="small-title"><%= article.title %></div>
         <div class="author"><%= person_name article.data.author %></div>
         <div class="date"><%= article.date.strftime('%B %e, %Y') %></div>
       </div>
@@ -20,8 +20,8 @@
   <% else %>
     <div class="card blog-preview no-image <%= article.data.category %>">
       <div class="meta">
-        <div class="category"><%= article.data.category %></div>
-        <div class="title"><%= article.title %></div>
+        <div class="label"><%= article.data.category %></div>
+        <div class="small-title"><%= article.title %></div>
         <div class="author"><%= person_name article.data.author %></div>
         <div class="date"><%= article.date.strftime('%B %e, %Y') %></div>
       </div>

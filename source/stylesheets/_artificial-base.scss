@@ -11,11 +11,6 @@ body {
 	height: 100%;
 }
 
-// for header and footer elements
-.padded-lr {
-	padding: 10px 16px 10px 16px;
-}
-
 // top header
 // mobile
 @media only screen {
@@ -47,17 +42,21 @@ body {
 		}
 
 		#nav-primary {
-			ul {
-				text-align: center;
-				margin: 0 auto;
-				padding: 0;
+			.padded-lr {
+				padding: 0px 16px 10px 16px;
 
-				li {
-					display: inline-block;
-					margin: 0 10px 0 10px;
+				ul {
+					text-align: center;
+					margin: 0 auto;
+					padding: 0;
 
-					a {
-						text-decoration: none;
+					li {
+						display: inline-block;
+						margin: 0 12px 0 12px;
+
+						a {
+							text-decoration: none;
+						}
 					}
 				}
 			}
@@ -108,13 +107,17 @@ body {
 		}
 
 		#nav-primary {
-			ul {
-				float: right;
-				padding-top: 14px;
+			.padded-lr {
+				padding: 10px 16px 10px 16px;
 
-				li {
-					float: left;
-					margin-left: 20px;
+				ul {
+					float: right;
+					padding-top: 14px;
+
+					li {
+						float: left;
+						margin-left: 20px;
+					}
 				}
 			}
 		}

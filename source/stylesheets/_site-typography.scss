@@ -2,12 +2,12 @@
 // this document should not be edited
 // ever
 
-h1, h2, h3, p, ul, li { margin: 0; }
+p, ul, li, h1, h2, h3 { margin: 0; }
 
-h2, h3, p, ul, li, .nav, .label, .statement, .small-statement { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
-h1, #logo, .small-title, .description, .snippit, .letters { font-family: Georgia, Times, serif; }
+p, ul, li, .nav, .subtitle, .small-subtitle, .label, .statement, .small-statement { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+h1, #logo, .title, .small-title, .description, .snippit, .letters { font-family: Georgia, Times, serif; }
 
-#logo, .small-title, .letters { font-weight: bold; }
+#logo, .title, .small-title, .subtitle, .small-subtitle, .letters, .label { font-weight: bold; }
 .statement, .small-statement { font-weight: lighter; }
 h1, #logo, .small-title, .description, .snippit { font-style: italic; }
 .label { text-transform: uppercase; }
@@ -19,171 +19,216 @@ a { text-decoration: none; }
 
 // for mobile
 @media only screen and (min-device-width: 320px) {
-	h1 {
-		font-size: 36px;
-		line-height: 42px;
+
+	p, ul, li {
+		font-size: 14px;
+		line-height: 22px;
 	}
 
-	h2 {
+	#logo {
+		font-size: 28px;
+	}
+
+	#nav-primary {
+		li {
+			font-size: 14px;
+		}
+	}
+
+	.title {
+		font-size: 36px;
+		line-height: 42px;
+		padding-bottom: 20px;
+	}
+
+	.small-title {
+		font-size: 20px;
+		line-height: 26px;
+		padding-bottom: 16px;
+	}
+
+	.subtitle {
 		font-size: 20px;
 		line-height: 26px;
 	}
 
-	h3 {
+	.small-subtitle {
 		font-size: 16px;
 		line-height: 22px;
+		padding-bottom: 16px;
 	}
 
-	p, li, ul {
-		font-size: 12px;
-		line-height: 20px;
-	}
-
-	.small-title * {
-		font-size: 20px;
-		line-height: 28px;
-	}
-
-	.description * {
+	.description {
 		font-size: 20px;
 		line-height: 28px;
 	}
 
 	.letters {
 		font-size: 120px;
+		line-height: 200px;
 	}
 
-	.statement * {
+	.statement {
+		font-size: 24px;
+		line-height: 32px;
+		padding-bottom: 20px;
+	}
+
+	.small-statement, .small-statement * {
 		font-size: 24px;
 		line-height: 32px;
 	}
 
-	.small-statement * {
-		font-size: 24px;
-		line-height: 32px;
-	}
-
-	.label * {
+	.label {
 		font-size: 10px;
 		line-height: 14px;
+		padding-bottom: 20px;
 	}
 
-	.snippit * {
-		font-size: 12px;
-		line-height: 20px;
+	.snippit {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.large-body {
+		font-size: 14px;
+		line-height: 22px;
 	}
 }
 
 // for tablet
 @media only screen and (min-device-width: 768px) {
-	h1 {
+
+	p, ul, li {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	#logo {
+		font-size: 26px;
+	}
+
+	.title {
 		font-size: 42px;
 		line-height: 48px;
 	}
 
-	h2 {
+	.small-title {
 		font-size: 20px;
 		line-height: 26px;
 	}
 
-	h3 {
+	.subtitle {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.small-subtitle {
 		font-size: 16px;
 		line-height: 22px;
+		padding-bottom: 12px;
 	}
 
-	p, li, ul {
-		font-size: 12px;
-		line-height: 20px;
-	}
-
-	.small-title * {
-		font-size: 20px;
-		line-height: 38px;
-	}
-
-	.description * {
+	.description {
 		font-size: 20px;
 		line-height: 28px;
 	}
 
 	.letters {
 		font-size: 80px;
+		line-height: 140px;
 	}
 
-	.statement * {
+	.statement {
 		font-size: 32px;
 		line-height: 40px;
+		padding-bottom: 20px;
 	}
 
-	.small-statement * {
+	.small-statement, .small-statement * {
 		font-size: 28px;
 		line-height: 36px;
 	}
 
-	.label * {
+	.label {
 		font-size: 10px;
 		line-height: 14px;
 	}
 
-	.snippit * {
+	.snippit {
 		font-size: 12px;
 		line-height: 20px;
+	}
+
+	.large-body {
+		font-size: 14px;
+		line-height: 22px;
 	}
 }
 
 // for desktop
 @media only screen and (min-width: 960px) {
-	h1 {
-		font-size: 54px;
-		line-height: 60px;
-	}
-
-	h2 {
-		font-size: 24px;
-		line-height: 32px;
-	}
-
-	h3 {
-		font-size: 20px;
-		line-height: 26px;
-	}
 
 	p, li, ul {
 		font-size: 14px;
 		line-height: 22px;
 	}
 
-	.small-title * {
+	.title {
+		font-size: 54px;
+		line-height: 60px;
+	}
+
+	.small-title {
+		font-size: 24px;
+		line-height: 30px;
+		padding-bottom: 16px;
+	}
+
+	.subtitle {
 		font-size: 24px;
 		line-height: 32px;
 	}
 
-	.description * {
+	.small-subtitle {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.description {
 		font-size: 24px;
 		line-height: 32px;
 	}
 
 	.letters {
 		font-size: 120px;
+		line-height: 200px;
 	}
 
-	.statement * {
+	.statement {
 		font-size: 40px;
 		line-height: 48px;
+		padding-bottom: 20px;
 	}
 
-	.small-statement * {
+	.small-statement, .small-statement * {
 		font-size: 32px;
 		line-height: 40px;
 	}
 
-	.label * {
+	.label {
 		font-size: 10px;
 		line-height: 14px;
 	}
 
-	.snippit * {
+	.snippit {
 		font-size: 14px;
 		line-height: 22px;
 	}
+
+	.large-body {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
 }

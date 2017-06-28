@@ -19,17 +19,10 @@
 
 		#logo {
 			padding-top: 6px;
+
 			a {
 				height: 22px;
-
-				font-family: Georgia, Times, serif;
-				font-weight: bold;
-				font-style: italic;
-				font-size: 26px;
 				color: white;
-			}
-			a:hover {
-				color: $pale-turquoise;
 			}
 		}
 
@@ -98,8 +91,8 @@
 
 // card sizing for case studies and experiments
 @media only screen and (min-device-width: 320px) {
-	.case-study { min-height: 360px; }
-	.experiment { height: 280px; }
+	.case-study { min-height: 480px; }
+	.experiment { height: 320px; }
 }
 @media only screen and (min-device-width: 768px) {
 	.case-study { height: 400px; }
@@ -107,12 +100,11 @@
 }
 @media only screen and (min-width: 960px) {
 	.case-study { height: 480px; }
-	.experiment { height: 300px; }
+	.experiment { height: 320px; }
 }
 
 .card-rule {
 	margin: auto;
-	margin-top: 16px;
 	margin-bottom: 16px;
 	width: 40px;
 	height: 1px;
@@ -267,12 +259,10 @@ svg *.content{ fill: $cool-grey-40; }
 	text-align: center;
 }
 
-.light-text {
-	color: $white;
-}
+.white-text { color: $white; }
 
 .dark-text {
-	color: $cool-grey-90;
+	p, a { color: $cool-grey-90; }
 }
 
 .dark-fill *, .dark-fill g * {
@@ -328,12 +318,92 @@ svg *.content{ fill: $cool-grey-40; }
 	margin-top: 180px;
 }
 
-// eversearch
+// card gradient colors
+.case-study {
+	h3, p { color: $white; }
+}
+
+// background colors
+.pale-turquoise { background-color: $pale-turquoise; }
+
+// background gradients
+.turquoise-palegrass {
+	background-color: $turquoise;
+	background: linear-gradient(to bottom, $pale-grass, $turquoise);
+	.statement { color: $darkest-turquoise; }
+}
+
+.sapphire-palegrape {
+	background-color: $sapphire;
+	background: linear-gradient(to bottom, $pale-grape, $sapphire);
+	.statement { color: $pale-grape; }
+}
+
+.sapphire-paleturquoise {
+	background-color: $sapphire;
+	background: linear-gradient(to bottom, $pale-turquoise, $sapphire);
+	.statement { color: $pale-turquoise; }
+}
+
+.grape-paletulip {
+	background-color: $grape;
+	background: linear-gradient(to bottom, $pale-tulip, $grape);
+	.statement { color: $pale-tulip; }
+}
+.grape-palesapphire {
+	background-color: $grape;
+	background: linear-gradient(to bottom, $pale-sapphire, $grape);
+	.statement { color: $pale-sapphire; }
+}
+
+.tulip-palepumpkin {
+	background-color: $tulip;
+	background: linear-gradient(to bottom, $pale-pumpkin, $tulip);
+	.statement { color: $pale-pumpkin; }
+}
+
+.pumpkin-paledandelion {
+	background-color: $pumpkin;
+	background: linear-gradient(to bottom, $pale-dandelion, $pumpkin);
+	.statement { color: $dark-tulip; }
+}
+
+.dandelion-paledandelion {
+	background-color: $dandelion;
+	background: linear-gradient(to bottom, $pale-dandelion, $dandelion);
+	.statement { color: $dark-pumpkin; }
+}
+
+.grass-paleturquoise {
+	background-color: $grass;
+	background: linear-gradient(to bottom, $pale-turquoise, $grass);
+	.statement { color: $darkest-turquoise; }
+}
+
+.grass-palelime {
+	background-color: $grass;
+	background: linear-gradient(to bottom, $pale-lime, $grass);
+	.statement {	color: $pale-lime }
+}
+
+// text colors
+.turquoise-text {	color: $turquoise; }
+.dark-turquoise-text { color: $dark-turquoise; }
+.darkest-turquoise-text {color: $darkest-turquoise; }
+.grass-text {	color: $grass; }
+.dandelion-text {	color: $dandelion; }
+.pumpkin-text {	color: $pumpkin; }
+.tulip-text {	color: $tulip; }
+.grape-text {	color: $grape; }
+.sapphire-text { color: $sapphire; }
+
+
+// eversearch (unused)
 #oncall {
 	background-color:rgba(255, 255, 255, 0.9);
 }
 
-// forms and fields
+// forms and fields (unused)
 .search {
 	background-color: $cool-grey-10;
 	border: none;
@@ -428,86 +498,3 @@ svg *.content{ fill: $cool-grey-40; }
 		}
 	}
 }
-
-// background colors
-.pale-turquoise { background-color: $pale-turquoise; }
-
-// gradient colors
-.turquoise-palegrass {
-	background-color: $turquoise;
-	background: linear-gradient(to bottom, $pale-grass, $turquoise);
-	color: $darkest-turquoise;
-}
-
-.sapphire-palegrape {
-	background-color: $sapphire;
-	background: linear-gradient(to bottom, $pale-grape, $sapphire);
-	color: $pale-grape;
-}
-
-.sapphire-paleturquoise {
-	background-color: $sapphire;
-	background: linear-gradient(to bottom, $pale-turquoise, $sapphire);
-	color: $pale-turquoise;
-}
-
-.grape-paletulip {
-	background-color: $grape;
-	background: linear-gradient(to bottom, $pale-tulip, $grape);
-	color: $pale-tulip;
-}
-.grape-palesapphire {
-	background-color: $grape;
-	background: linear-gradient(to bottom, $pale-sapphire, $grape);
-	color: $pale-sapphire;
-}
-
-.tulip-palepumpkin {
-	background-color: $tulip;
-	background: linear-gradient(to bottom, $pale-pumpkin, $tulip);
-	color: $pale-pumpkin;
-}
-
-.pumpkin-paledandelion {
-	background-color: $pumpkin;
-	background: linear-gradient(to bottom, $pale-dandelion, $pumpkin);
-	color: $dark-tulip;
-}
-
-.dandelion-paledandelion {
-	background-color: $dandelion;
-	background: linear-gradient(to bottom, $pale-dandelion, $dandelion);
-	color: $dark-pumpkin;
-}
-
-.grass-paleturquoise {
-	background-color: $grass;
-	background: linear-gradient(to bottom, $pale-turquoise, $grass);
-	color: $darkest-turquoise;
-}
-
-.grass-palelime {
-	background-color: $grass;
-	background: linear-gradient(to bottom, $pale-lime, $grass);
-	color: $pale-lime;
-}
-
-// card gradient colors
-.case-study {
-	color: $white;
-	a {
-		color: $white;
-	}
-}
-
-
-// text colors
-.turquoise-text {	color: $turquoise; }
-.dark-turquoise-text { color: $dark-turquoise; }
-.darkest-turquoise-text {color: $darkest-turquoise; }
-.grass-text {	color: $grass; }
-.dandelion-text {	color: $dandelion; }
-.pumpkin-text {	color: $pumpkin; }
-.tulip-text {	color: $tulip; }
-.grape-text {	color: $grape; }
-.sapphire-text { color: $sapphire; }
