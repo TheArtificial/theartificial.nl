@@ -317,6 +317,8 @@ svg *.content{ fill: $cool-grey-40; }
 
 // background colors
 .pale-turquoise { background-color: $pale-turquoise; }
+.pale-pumpkin { background-color: $pale-pumpkin; }
+.pale-grape { background-color: $pale-grape; }
 .grey-10 { background-color: $cool-grey-10; }
 
 // background gradients
@@ -386,10 +388,13 @@ svg *.content{ fill: $cool-grey-40; }
 .grass-text {	color: $grass; }
 .dandelion-text {	color: $dandelion; }
 .pumpkin-text {	color: $pumpkin; }
+.dark-pumpkin-text { color: $dark-pumpkin; }
+.darkest-pumpkin-text {color: $darkest-pumpkin; }
 .tulip-text {	color: $tulip; }
 .grape-text {	color: $grape; }
 .sapphire-text { color: $sapphire; }
-
+.dark-grape-text { color: $dark-grape; }
+.darkest-grape-text {color: $darkest-grape; }
 
 // eversearch (unused)
 #oncall {
