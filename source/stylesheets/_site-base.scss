@@ -317,8 +317,12 @@ svg *.content{ fill: $cool-grey-40; }
 
 // background colors
 .pale-turquoise { background-color: $pale-turquoise; }
+.pale-grass { background-color: $pale-grass; }
+.pale-dandelion { background-color: $pale-dandelion; }
 .pale-pumpkin { background-color: $pale-pumpkin; }
+.pale-tulip { background-color: $pale-tulip; }
 .pale-grape { background-color: $pale-grape; }
+.pale-sapphire { background-color: $pale-sapphire; }
 .grey-10 { background-color: $cool-grey-10; }
 
 // background gradients
@@ -386,15 +390,23 @@ svg *.content{ fill: $cool-grey-40; }
 .dark-turquoise-text { color: $dark-turquoise; }
 .darkest-turquoise-text {color: $darkest-turquoise; }
 .grass-text {	color: $grass; }
+.dark-grass-text { color: $dark-grass; }
+.darkest-grass-text {color: $darkest-grass; }
 .dandelion-text {	color: $dandelion; }
+.dark-dandelion-text { color: $dark-dandelion; }
+.darkest-dandelion-text {color: $darkest-dandelion; }
 .pumpkin-text {	color: $pumpkin; }
 .dark-pumpkin-text { color: $dark-pumpkin; }
 .darkest-pumpkin-text {color: $darkest-pumpkin; }
 .tulip-text {	color: $tulip; }
+.dark-tulip-text { color: $dark-tulip; }
+.darkest-tulip-text {color: $darkest-tulip; }
 .grape-text {	color: $grape; }
-.sapphire-text { color: $sapphire; }
 .dark-grape-text { color: $dark-grape; }
 .darkest-grape-text {color: $darkest-grape; }
+.sapphire-text { color: $sapphire; }
+.dark-sapphire-text { color: $dark-sapphire; }
+.darkest-sapphire-text {color: $darkest-sapphire; }
 
 // eversearch (unused)
 #oncall {
