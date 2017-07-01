@@ -1,14 +1,23 @@
 <%
   last_slash = article.path.rindex('/')
   base_path = article.path[0...last_slash]
+
+  image = nil
+  if article.data.preview
+    if article.data.preview != 'none'
+      image = article.data.preview
+    end
+  elsif article.data.masthead
+    image = article.data.masthead
+  end
 %>
 <% link_to article do %>
 <div class="col-4 packed">
 
-  <% if article.data.masthead %>
+  <% if image %>
     <div class="card blog-preview <%= article.data.category %>">
       <div class="masthead">
-        <%= image_tag base_path + '/' + article.data.masthead %>
+        <%= image_tag base_path + '/' + image %>
       </div>
       <div class="meta center">
         <div class="label"><%= article.data.category %></div>

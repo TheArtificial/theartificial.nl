@@ -3,7 +3,8 @@ title: Microsoft and Minecraft
 category: thoughts
 tags: microsoft, minecraft
 author: hans
-masthead: microcraft/main.png
+masthead: 09-15-microcraft/main.png
+preview: none
 ---
 
 Minecraft is a ridiculously popular game that blends exploration and creation. READMORE It would be difficult to overstate its cultural importance, particularly among young players.
