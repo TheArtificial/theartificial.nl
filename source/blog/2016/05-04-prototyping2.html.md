@@ -14,13 +14,15 @@ We had the pleasure of being a part of the Adobe XD prerelease program. Seeing t
 
 We compared seven more tools to help guide you to the appropriate tool for your specific challenge.
 
-[![Axure RP](05-04-prototyping2/icon-axure.png)](http://www.axure.com/)| [**Axure RP**](http://www.axure.com/)|prototype application inspired by the Miscrosoft Office Suite
-[![Figma](05-04-prototyping2/icon-figma.png)](https://www.figma.com/) | [**Figma**](https://www.figma.com/)|collaborative online design tool (Preview released in Dec 2015)
-[![Flinto for Mac](05-04-prototyping2/icon-flinto.png)](https://www.flinto.com/) | [**Flinto for Mac**](https://www.flinto.com/)|prototyping for Sketch users
-[![Hype](05-04-prototyping2/icon-hype.png)](http://tumult.com/hype/)| [**Hype**](http://tumult.com/hype/)|HTML5 based tool from Tumult
-[![Justinmind](05-04-prototyping2/icon-justinmind.png)](http://www.justinmind.com/) | [**Justinmind**](http://www.justinmind.com/)|collaborative web and app prototyping
-[![Proto.io](05-04-prototyping2/icon-protoio.png)](https://proto.io/) | [**Proto.io**](https://proto.io/)|mobile prototyping
-[![Adobe XD](05-04-prototyping2/icon-adobexd.png)](http://www.adobe.com/products/experience-design.html) | [**Adobe XD**](http://www.adobe.com/products/experience-design.html)| Adobe prototyping software (Preview released in March 2016)
+| | | |
+|-|-|-|
+|[![Axure RP](05-04-prototyping2/icon-axure.png)](http://www.axure.com/) | [**Axure RP**](http://www.axure.com/)|prototype application inspired by the Miscrosoft Office Suite|
+|[![Figma](05-04-prototyping2/icon-figma.png)](https://www.figma.com/) | [**Figma**](https://www.figma.com/)|collaborative online design tool (Preview released in Dec 2015)|
+|[![Flinto for Mac](05-04-prototyping2/icon-flinto.png)](https://www.flinto.com/) | [**Flinto for Mac**](https://www.flinto.com/)|prototyping for Sketch users|
+|[![Hype](05-04-prototyping2/icon-hype.png)](http://tumult.com/hype/)| [**Hype**](http://tumult.com/hype/)|HTML5 based tool from Tumult|
+|[![Justinmind](05-04-prototyping2/icon-justinmind.png)](http://www.justinmind.com/) | [**Justinmind**](http://www.justinmind.com/)|collaborative web and app prototyping|
+|[![Proto.io](05-04-prototyping2/icon-protoio.png)](https://proto.io/) | [**Proto.io**](https://proto.io/)|mobile prototyping|
+|[![Adobe XD](05-04-prototyping2/icon-adobexd.png)](http://www.adobe.com/products/experience-design.html) | [**Adobe XD**](http://www.adobe.com/products/experience-design.html)| Adobe prototyping software (Preview released in March 2016)|
 
 In [Part 1](/blog/2015/11/23/prototyping.html), we discerned four types of tools: layer-based, page-based, patch-based, and code-based. It is helpful to have a general idea of what to expect from these interfaces, even if their construction concepts can be mixed together. The above set of prototyping tools are mainly page-based interfaces with hints of layers, patches, and code.
 
