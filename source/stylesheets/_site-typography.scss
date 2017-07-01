@@ -2,14 +2,14 @@
 // this document should not be edited
 // ever
 
-p, ul, li, h1, h2, h3 { margin: 0; }
+p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 
-p, ul, li, .nav, .subtitle, .small-subtitle, .label, .statement, .small-statement { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
-h1, #logo, .title, .small-title, .description, .snippit, .letters { font-family: Georgia, Times, serif; }
+h3, p, ul, li, h3, h4, h5, .nav, .subtitle, .small-subtitle, .label, .statement, .small-statement { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+h1, h2, #logo, .title, .small-title, .description, .snippit, .letters { font-family: Georgia, Times, serif; }
 
 #logo, .title, .small-title, .subtitle, .small-subtitle, .letters, .label { font-weight: bold; }
 .statement, .small-statement { font-weight: lighter; }
-h1, #logo, .small-title, .description, .snippit { font-style: italic; }
+h1, h2, #logo, .small-title, .description, .snippit { font-style: italic; }
 .label { text-transform: uppercase; }
 
 ul, li { list-style-type: none; }
@@ -46,8 +46,8 @@ a { text-decoration: none; }
 	}
 
 	.small-title {
-		font-size: 20px;
-		line-height: 26px;
+		font-size: 24px;
+		line-height: 30px;
 		padding-bottom: 16px;
 	}
 
@@ -85,7 +85,7 @@ a { text-decoration: none; }
 	}
 
 	.label {
-		font-size: 10px;
+		font-size: 12px;
 		line-height: 14px;
 		padding-bottom: 20px;
 	}
@@ -95,9 +95,14 @@ a { text-decoration: none; }
 		line-height: 22px;
 	}
 
-	.large-body {
+	.large-copy {
 		font-size: 14px;
 		line-height: 22px;
+	}
+
+	.small-copy {
+		font-size: 12px;
+		line-height: 16px;
 	}
 }
 
@@ -165,9 +170,14 @@ a { text-decoration: none; }
 		line-height: 20px;
 	}
 
-	.large-body {
+	.large-copy {
 		font-size: 14px;
 		line-height: 22px;
+	}
+
+	.small-copy {
+		font-size: 12px;
+		line-height: 16px;
 	}
 }
 
@@ -222,7 +232,7 @@ a { text-decoration: none; }
 	}
 
 	.label {
-		font-size: 10px;
+		font-size: 12px;
 		line-height: 14px;
 	}
 
@@ -231,9 +241,13 @@ a { text-decoration: none; }
 		line-height: 22px;
 	}
 
-	.large-body {
+	.large-copy {
 		font-size: 16px;
 		line-height: 24px;
 	}
 
+	.small-copy {
+		font-size: 14px;
+		line-height: 18px;
+	}
 }
