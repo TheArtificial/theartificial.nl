@@ -10,7 +10,7 @@ This year we decided to treat our clients and friends to a very special [Sinterk
 ![Book Cover](01-16-sinterklaas-book/cover.jpg)
 
 
-# Defining a Style
+## Defining a Style
 
 We started off by analyzing other cocktail books. What works and what doesn't? What colors and typography are popular? How do others balance utility with style? Where should we copy, and how could we make our book of recipes different?
 
@@ -26,7 +26,7 @@ In this case, we decided to create patterns using the ingredients we used to mix
 
 ![Creating prints](01-16-sinterklaas-book/impressions.jpg)
 
-# Refining Each Recipe
+## Refining Each Recipe
 
 When mixing, it is very important to have the right amount of each of each ingredient; different proportions result in different tastes. Each ingredient has its own characteristics that need to be considered so that they can be mixed to create something beautiful.
 
@@ -40,7 +40,7 @@ So we decided to add images to make it more personal and to use collage as the t
 
 ![Book close up](01-16-sinterklaas-book/closeup.jpg)
 
-# Pulling Everything Together
+## Pulling Everything Together
 
 But creating consistency was a bit of a struggle; as the spreads were not meant to stand alone. We had to somehow fit them into one publication. In order to achieve this, we treated the images in the same way and created a color palette to unify the pages. We then divided the book into three sections: The Experiments, The Classics, and The Signatures.
 

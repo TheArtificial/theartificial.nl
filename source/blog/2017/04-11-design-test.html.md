@@ -9,7 +9,7 @@ For a single design position, it’s not unusual to look through a hundred candi
 
 Not all our candidates come from a background of making or are interaction-savvy, so we needed a test that reveals process more than technical capabilities. 
 
-## Principles
+### Principles
 
 Before we even got into the content of the test, we established three principles:
 
@@ -19,7 +19,7 @@ It shouldn’t feel anything like an attempt to get free work from prospective c
 
 And finally, we won’t expect perfection. A successful design test isn’t a clear-cut pass or fail. We’ll use the test as a talking point for those who pass, and ideally, this will be a learning experience whether the candidate gets the position or not.
 
-## Test ingredients
+### Test ingredients
 
 So what does a good design test include?
 
@@ -35,7 +35,7 @@ So what does a good design test include?
 
 We’ve tested our design test internally, and were glad to discover that the results had a broad enough range to give true tells about each designer’s strengths and way of working. 
 
-## Final thoughts
+### Final thoughts
 
 If you’re in a company as small as ours, every hire molds the office in some way or another. When creating a design test, determine which criteria are essential for a new hire, and which you’re willing to teach. Make sure the test caters to the essentials first, and allow room for the test to reveal other strengths or weaknesses that might become the more valuable talking point. 
 

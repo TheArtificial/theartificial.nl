@@ -10,7 +10,7 @@ The Apple Watch is a beautiful and powerful piece of hardware accompanied by inc
 
 WatchOS 3 brought some changes to the familiar interface. Most notably, Glances and Friends were removed and the Dock was introduced. WatchOS 3 also made it possible to switch between multiple watch faces. We redesigned the interaction of multiple watch faces (and complications) as an exercise. This is an overview of our results.
 
-# Beautiful alone, imperfect together
+## Beautiful alone, imperfect together
 
 There is no doubt that Apple Watch faces are [beautifully designed](https://www.wired.com/2015/04/apple-watch-design/). The details of each face are painstakingly considered and executed with the utmost care; however, with the introduction of multiple watch faces in the new WatchOS, it is obvious that the watch faces were designed to be perfect when standing alone, not when viewed with others.
 
@@ -22,7 +22,7 @@ The analog faces have somewhat more consistency, but still the ring of numbers b
 
 ![WatchOS analog grid](10-03-watchos-redesign/grid-analog.png)
 
-# Unifying the Grid
+## Unifying the Grid
 
 At a glance, the different watch faces have more in common than not. The digital faces all have the time in large type positioned with the baseline about 33% from the top of the screen. We started here, and then created variations across faces for top and bottom text placement and consistent complication arrangement. In the case of Activity, we found that by treating the activity visualization as a complication, a similar layout could be created with the Modular watch face.
 
@@ -36,7 +36,7 @@ To avoid locking a user in a world of either digital or analog, we aligned the t
 
 ![WatchOS overall grid](10-03-watchos-redesign/grid-overall.png)
 
-# Freeing complications
+## Freeing complications
 
 With the current WatchOS, choose a watch face and you’re also making decisions about the complications you can use on that watch face. Apple currently has [six non-interchangeable complications](https://developer.apple.com/watchos/human-interface-guidelines/app-components/): Circular, Modular large, Modular small, Utilitarian small, Utilitarian large, and Extra large. Many of the complication types bear the names of the faces they match – though their use extends beyond only those faces.
 
@@ -52,7 +52,7 @@ To further simplify watch face customization, small and small text are often int
 
 From here, we extended the complication to include all complication-like details from the analog faces. This resulted in a fifth type of complication available (only on analog faces): the inner complication. This means rather than having watch faces specific to Chronograph and Activity, these are complications available across watch faces. It also means the monograms and dates are available across faces.
 
-# Adding new styles
+## Adding new styles
 
 The strong overall grid established a system for faces and complications. We took this grid a step further, using it to create a radial grid to be used across the design of analog watch faces. We used this grid to align numbers and tick marks, creating uniformity across the seven radial faces.
 
@@ -72,7 +72,7 @@ At the same time, we sized down the Numerals face to fit within the same grid as
 
 ![WatchOS numerals](10-03-watchos-redesign/numerals.png)
 
-# Infusing color with meaning
+## Infusing color with meaning
 
 The Apple Watch’s color story is a confusing one. The HIG has a small number of recommended colors which are widely used, but also widely broken. The green used to show activity, for example, is close to but not quite the green used to show battery, which uses the official green from the palette. To add to the confusion, the watch faces with customizable colors come in more colors than the watch has bands, with palettes that vary per face.
 
@@ -88,7 +88,7 @@ We also looked at each individual watch face to see how color might best enhance
 
 ![WatchOS applied colors](10-03-watchos-redesign/colors-applied.png)
 
-# Making more with less
+## Making more with less
 
 To create a new watch face, the user must first select a face type. We have sixteen (one fewer than Apple). For faces like Photo, Photo Album, Timelapse, or Motion, the user selects a background before choosing a digital time layout – top or bottom, long or short. For analog faces, the user adjusts the complexity of the style. Both analog and digital faces have multiple complication layouts. The user first selects the layout, and then chooses which complications occupy the available spaces. Lastly, for those faces that allow it, the user customizes the color.
 

@@ -12,7 +12,7 @@ It's important to know your goals with prototyping in order to determine which t
 
 We compared seven prototyping tools to help guide you to the appropriate tool for your specific challenge.
 
-## Prototyping tools
+### Prototyping tools
 
 We selected these seven tools because of their diverse range of qualities and methods.     
 
@@ -32,12 +32,12 @@ Visual layer-based tools layer multiple assets and screens on one canvas. The us
 
 ![Continuum review](11-23-prototyping/2x2.png)
 
-## Interaction overview
+### Interaction overview
 
 When clarifying interaction models, quick iterations are often necessary to solidify decisions. For this, you'll need an interface that has common interactions readily available. Your assets will likely be updated frequently through the early stages of your project, so how efficiently your tool handles assets can save a lot of time.
 ![Workflow and Interface](11-23-prototyping/interaction.gif)
 
-##### Linking screens
+###### Linking screens
 
 In visual page-based tools such as **InVision**, screens can be linked with hotspots that allow you to tell the tool what should come when an action is performed. **InVision** allows for time saving hotspot templates, so you won't need to reformat frequently used interactions. There is no limit on the number of screens you wish to include, though it has an upload limit of 10GB for an account. **Principle** is another visual page-based tool. We found the visualization of arrows pointing to subsequent screens helpful for at-a-glance edits.
 
@@ -47,7 +47,7 @@ In visual page-based tools such as **InVision**, screens can be linked with hots
 
 Tools such as **Form**, **Framer** and **Origami** are slightly better suited for handling long flows. You have more control over how things are organized, though it will still lead to a plethora of patches or code. Your biggest obstacle is your patience level.
 
-##### Asset handling
+###### Asset handling
 
 Since **InVision** works with hotspots, you can upload complete screens and save a lot of time cutting tappable assets.
 
@@ -59,7 +59,7 @@ With **Origami**, Sketch users can create links to the working file, so updating
 
 **Xcode** also links assets, and their visual editing interface helps makes the process more approachable. Assets can be dragged and dropped into the appropriate screens, and you can also use native assets that can be customized within the editor. Using native assets is beneficial because you can use Auto Layout to specify scaling behavior across multiple screens, rather than using simple scale-up options from the other tools. The downside is the difficulty in doing truly custom controls, as Xcode's default options are limited.
 
-##### Assisting with collaboration
+###### Assisting with collaboration
 
 **Origami** has export options that allow you to send code snippets to your developers. With **Xcode**, your developer can work directly with your file itself. Using version control, you can always recall your original prototype incase instructions were interpreted differently.
 
@@ -67,14 +67,14 @@ With **Origami**, Sketch users can create links to the working file, so updating
 
 [Download all GIFs in the Interaction overview for comparison.](11-23-prototyping/InteractionOverview.zip)
 
-### The Artificial's pick for an Interaction overview prototype: Principle
+#### The Artificial's pick for an Interaction overview prototype: Principle
 
-## Aesthetic detail
+### Aesthetic detail
 
 A lot of the prototypes you'll see showcased online demonstrate unique animations to show the app's personality through motion. When you are at this stage of your project, you'll want a tool that gives you high fidelity and native-feeling effects. If your aim is for a prototype ready to show a developer, then it should also be able to accommodate all necessary gestures and screen sizes. It's important to be able to tweak animations with ease, and for your developer to discern their final values.
 ![Transitions and Animations](11-23-prototyping/aesthetic.gif)
 
-##### Animating
+###### Animating
 
 **Principle** is very reminiscent of Adobe After Effects, so for those switching over from it, the logic of animating with timelines is familiar. Each layer has its own animation and driver panel, which give you full control over the behavior. In **Pixate**, you also attach animations to layers, but conditions and numeric value inputs replace the timeline. While we found **Principle**'s method more familiar, **Pixate** mimics native apps more accurately.
 
@@ -84,7 +84,7 @@ A lot of the prototypes you'll see showcased online demonstrate unique animation
 
 **InVision** cruelly lacks effects. While transition animations are available, nothing custom can be made. If your app has unique animations, you'll want to try something more robust, at least until they launch [Motion](http://blog.invisionapp.com/motion-prototype-animation/).
 
-##### Adjusting the feel
+###### Adjusting the feel
 
 In the very likely case that you'll want to tweak your animations, you'll want a tool that doesn't require you tearing apart half your work. Luckily, all the tools we tried that handled animations provided easy ways to do so.
 
@@ -98,7 +98,7 @@ With **Form** and **Origami**, effects are tied to patches, so they can be adjus
 
 In **InVision**, there are limited, but easy to adjust options for transitions between screens.
 
-##### Handling different screen sizes and gestures
+###### Handling different screen sizes and gestures
 
 A polished and thorough prototype should be able to support all the gestures and screen sizes you need.
 
@@ -112,7 +112,7 @@ A polished and thorough prototype should be able to support all the gestures and
 
 ###The Artificial's pick for an Aesthetic detail prototype: Pixate and Xcode
 
-## Making a decision
+### Making a decision
 
 We avoided categorizing these tools into "good vs. bad" or "easy vs. difficult" because they all have strengths and we all have different goals with our prototypes. This comparison was intended to give you a better idea of capabilities, but nothing replaces hands-on experience. All of these tools are either free or have a free trial period, so try a handful out yourself. For our workflow, we have decided to use a combination of Principle and Pixate, at least until we can test out Adobe Comet. If you've found another prototyping tool to love, please share your thoughts with us on [Twitter](https://twitter.com/veryartificial).
 
