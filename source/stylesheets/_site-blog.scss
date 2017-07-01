@@ -204,22 +204,18 @@
 
     img {
       padding-top: 40px;
-    }
-
-    // images in blog float left of their paragraph
-    p img, img.float-left  {
-      width:48%;
-      padding:20px 20px 10px 0;
-      float: left;      
-    }
-
-    // standalone images are 100% wide
-    img:only-child {
       width: 100%;
       float: none;
     }
 
     // this has to be used with explicit HTML
+    img.float-left  {
+      width:48%;
+      padding:20px 20px 10px 0;
+      float: left;      
+    }
+
+    // this also has to be used with explicit HTML
     img.small-centered {
       width: 33.333%;
       margin-left: 33.333%;
