@@ -1,18 +1,4 @@
 .blog_index {
-  .introduction {
-    width: 100%;
-    p {
-      margin-top: 24px;
-      text-align: left;
-      font-size: 32px;
-      line-height: 40px;
-      font-weight: 100;
-      color: $cool-grey-40;
-      a {
-        color: $white;
-      }
-    }
-  }
 
   .blog-preview {
 
@@ -27,37 +13,12 @@
       padding-left: 12px;
       padding-right: 12px;
 
-      text-align: center;
-
-      .title {
-        padding-top: 0;
-        padding-bottom: 24px;
-
-        text-align: center;
-
-        font-family: "Droid Serif", Georgia, Times, serif;
-        font-style: italic;
-        font-size: 28px;
-        font-weight: 600;
-      }
-      
-      .author, .date {
-        text-align: center;
-
-        font-size: 12px;
-        font-weight: 400;
-      }
     }
 
     .summary {
       padding: 24px;
-
       background-color: $white;
       color: $cool-grey-90;
-
-      font-size: 12px;
-      line-height: 20px;
-      font-weight: 400;
     }
 
   }
@@ -107,7 +68,7 @@
 
     // if we have a masthead, we want to protrude into it
     &.with-masthead {
-      article {
+      .flex.container {
         margin-top: -100px;
         background-color: $white;
       }
@@ -117,15 +78,6 @@
       .blog-title {
         margin-top: 40px;
         margin-bottom: 0;
-        h1 {
-          font-size: 36px;
-          line-height: 40px;
-        }
-        h5 {
-          font-size: 14px;
-          font-weight: bold;
-          margin-top: 6px;
-        }
       }
     }
 
@@ -133,10 +85,6 @@
       .blog-title {
         margin-top: 60px;
         margin-bottom: 20px;
-        h1 {
-          font-size: 42px;
-          line-height: 46px;
-        }
       }
     }
 
@@ -144,10 +92,6 @@
       .blog-title {
         margin-top: 60px;
         margin-bottom: 40px;
-        h1 {
-          font-size: 54px;
-          line-height: 58px;
-        }
       }
     }
 
@@ -166,65 +110,73 @@
       margin-left: 33.333%;
     }
 
-    h1 {
-      font-size: 20px;
-      line-height: 24px;
-      text-align: center;
-      margin-top: 16px;
+    a {
+      color: $turquoise;
+    }
+    
+    a:hover {
+      color: $dark-turquoise;
     }
 
-    h2 {
-      font-size: 2.5em;
-      line-height: 1.3em;
-      font-family: "Droid Serif", Georgia, Times, serif;
-      font-style: italic;
-      margin-top: 20px;
-    }
-
-    h3 {
-      font-size: .9em;
-      line-height: .8em;
-      font-family: "Open Sans", Helvetica, sans-serif;
-      font-style: normal;
-      font-weight: 700;
-    }
-
-    h5 {
-      font-size: 1.4em;
-      line-height: 1.4em;
-      font-weight: 300;
-      margin-top: 20px;
-      text-transform: uppercase
-    }
-
-    p, li, ul, td {
-      font-size: .9em;
-      line-height: 1.8em;
-    }
-
-    table {
-      margin-bottom: 30px;
-    }
-    td {
-      padding: 0 20px 0 0;
-
-      img {
-        padding-top: 5px;
+    .post-content {
+      h2 {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 16px;
       }
 
-    }
+      h3 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
 
-    li, ul {
-      list-style-type: circle;
-    }
+      h4 {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
 
-    hr {
-      margin-top: 20px;
-      margin-bottom: 40px;
-      border-bottom: 1px solid $cool-grey-20;
-      border-top: none;
-      border-right: none;
-      border-left: none;
+      h5 {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 16px;
+        text-transform: uppercase;
+      }
+
+      p, li, ul, td {
+        line-height: 28px;
+        padding-bottom: 16px;
+      }
+
+      table {
+        margin-bottom: 30px;
+      }
+      td {
+        padding: 0 20px 0 0;
+
+        img {
+          padding-top: 5px;
+        }
+
+      }
+
+      li, ul {
+        list-style-type: circle;
+      }
+
+      hr {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid $cool-grey-20;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+      }
     }
 
   }
