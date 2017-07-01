@@ -73,9 +73,9 @@ Independent filters and results consist of separating the filters and the result
 - cons: I imagine the long way (4 levels) required before I can tap on the correct locations.
 
 
-_Air BnB inspired solution - one filter one page_
+_AirBnB inspired solution - one filter one page_
 
-![Airbnb](09-02-fishes/solution-airbnb.gif){: .small-centered}
+<img alt="Airbnb" src="fishes/solution-airbnb.gif" class="small-centered">
 ![Airbnb](09-02-fishes/mockup-airbnb.png)
 
 **Oh She Glows**
@@ -86,7 +86,7 @@ _Air BnB inspired solution - one filter one page_
 
 _Oh She Glows inspired solution - carousel and lists_
 
-![osg](09-02-fishes/solution-osg.gif){: .small-centered}
+<img alt="osg" src="fishes/solution-osg.gif" class="small-centered">
 ![osg](09-02-fishes/mockup-osg.png)
 
 
@@ -98,7 +98,7 @@ _Oh She Glows inspired solution - carousel and lists_
 
 _Kitchen Stories inspired solution - hybrid lists_
 
-![kitchen stories](09-02-fishes/solution-kitchenstories.gif){: .small-centered}
+<img src="fishes/solution-kitchenstories.gif" class="small-centered">
 ![kitchen stories](09-02-fishes/mockup-kitchenstories.png)
 
 Independent filters live on a separate level of information, allowing a nice layout with lots of negative space to breathe. The issue is that users need more effort to find their fishes. Aside from requiring more taps, independent filters also require the model to be simple enough for them to enjoy the experience of navigating between the fish area and the filter area(s). My favorite option is **Oh She Glows** because of the few depth levels. I feel it's quite nice to be able to scroll horizontally to pick a filter and to scroll down vertically to tick all the applicable fields.
@@ -115,7 +115,7 @@ Direct feedback filters are combining the research zone with some results. It al
 
 _Rent The Runway inspired solution - scrollable tray_
 
-![Rent the runway](09-02-fishes/solution-runway.gif){: .small-centered}
+<img alt="Rent the runway" src="fishes/solution-runway.gif" class="small-centered">
 ![Rent the runway](09-02-fishes/mockup-runway.png)
 
 
@@ -126,8 +126,8 @@ _Rent The Runway inspired solution - scrollable tray_
 
   _Facebook messenger inspired solution - keyboard_
 
-![Facebook messenger](09-02-fishes/solution-messenger.gif){: .small-centered}
-![Rent the runway](09-02-fishes/mockup-messenger.png)
+<img alt="Facebook messenger" src="fishes/solution-messenger.gif" class="small-centered">
+![Facebook messengery](09-02-fishes/mockup-messenger.png)
 
 **Miitomo**
 
@@ -136,7 +136,7 @@ _Rent The Runway inspired solution - scrollable tray_
 
 _Miitomo inspired solution - model your fish_
 
-![Miitomo](09-02-fishes/solution-miitomo.gif){: .small-centered}
+<img alt="Miitomo" src="fishes/solution-miitomo.gif" class="small-centered">
 ![Miitomo](09-02-fishes/mockup-miitomo.png)
 
 Direct feedback filters are either showing results as soon as filters are touched, either changing the appearance of the model fish. **Miitomo** fish creation from scratch seems as amusing as designing a Mii avatar; but I am not sure this solution is the most time efficient. I really love how simple **Rent The Runway** made the app. I also think it's quite useful to always see 3 matching fishes.

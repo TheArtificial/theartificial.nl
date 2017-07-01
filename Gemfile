@@ -12,6 +12,6 @@ gem "better_errors"
 # bloggity-blog
 gem 'middleman-blog'
 
-gem 'kramdown'
+gem 'redcarpet'
 gem 'nokogiri'
 gem 'builder'

@@ -7,14 +7,12 @@ author: jo
 
 We've launched our first Kickstarter campaign, [to [icon]](http://toicon.com/). Unlike other icon design endeavours, to [icon] will be focusing solely on creating icons that are verbs. READMORE Tired of inconsistent icon sets, with strange artefacts, pixel misalignment and archaic metaphors, we decided to take matters into our own hands (and styluses).
 
-![to icon](04-10-toicon/toicon_images-05.png){: .float-left}
-
+![to icon](04-10-toicon/toicon_images-05.png)
 To [icon] started because icons deserve our time. Just like letterforms, icon-forms should be carefully plotted with specific weights and styles; like letters, they should work together to communicate words and sentences and stories; and like a well-formed typeface, they should be legible even at the smallest sizes.
  
 With support from our backers we aim to create a place for verb iconography to have a home. We'll be shaking up the icon field by finally championing the somewhat neglected, ever-elusive verb icon, and creating sets with over 100 icons each, and brutally stringent quality assurance cycles. Even the most ambitious set will be ready to use in any device, scale, or project. And once kickstarted, they will all be free to use.
 
-![blueprint series](04-10-toicon/toicon_images-07.png){: .float-left}
-
+![blueprint series](04-10-toicon/toicon_images-07.png)
 Besides the expected UI actions, the Blueprint series will also include moustaches, cats, and snow globes. Just because you are serious about design doesn't mean you can't have fun with it.
 
 The Sharp corner set by The Artificial founder Shannon E. Thomas already has over 120 icons which is a great baseline for any project.
