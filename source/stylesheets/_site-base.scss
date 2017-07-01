@@ -61,7 +61,9 @@
 }
 
 // content
-.work_index, .about, .blog_index {
+body { color: $cool-grey-90; }
+
+.work_index, .blog_index {
 	background-color: $cool-grey-90;
 	.section-title {
 		color: $white;
@@ -190,11 +192,11 @@ svg *.content{ fill: $cool-grey-40; }
 
 .tools {
 	text-align: center;
+	color: $white;
 
-	svg *.feather_een {
-		fill: $white;
-		padding-bottom: 20px;
-	}
+	svg *.feather_een { fill: $white; }
+	svg { margin-bottom: 20px; }
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -213,11 +215,6 @@ svg *.content{ fill: $cool-grey-40; }
 		text-align: center;
 	}
 
-	h1 {
-		font-family: "Open Sans", Helvetica, Arial, sans-serif;
-		font-weight: lighter;
-		font-style: normal;
-	}
 	a {
 		color: $cool-grey-90;
 		text-decoration: underline;
@@ -267,6 +264,7 @@ svg *.content{ fill: $cool-grey-40; }
 
 .darkest-grey {
 	background-color: $cool-grey-90;
+	color: $white;
 }
 
 .grey {
