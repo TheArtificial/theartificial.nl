@@ -4,14 +4,14 @@ body {
   height: 100%;
 }
 .ftfy {
-  background-color: $grape;
-  background: linear-gradient(to top right, $darkest-sapphire, $dark-grape, $dark-tulip);
+  background-color: $dark-grape;
+  background: linear-gradient(to right, $darkest-sapphire, $dark-grape, $dark-tulip);
 }
 
 .ftfy #header {
-  background-color: $dark-grape;
+  background-color: $darkest-sapphire;
   .topbar {
-    border-bottom-color: $dark-grape;
+    border-bottom-color: $darkest-sapphire;
   }
 }
 
@@ -164,6 +164,10 @@ body {
 .ftfy #footer {
   background-color: transparent;
 
+  p {
+    color: $pale-grape;
+  }
+  
   .flex.container {
     border-top-color: $darkest-sapphire;
   }
