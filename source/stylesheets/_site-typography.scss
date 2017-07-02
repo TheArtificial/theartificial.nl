@@ -4,12 +4,10 @@
 
 p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 
-h3, p, ul, li, h3, h4, h5, div, .nav, .subtitle, .small-subtitle, .label, .statement, .small-statement { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
-h1, h2, #logo, .title, .small-title, .description, .snippit, .letters { font-family: Georgia, Times, serif; }
-
+#logo, .title, .small-title, .description, .snippit, .letters { font-family: Georgia, Times, serif; }
 #logo, .title, .small-title, .subtitle, .small-subtitle, .letters, .label { font-weight: bold; }
 .statement, .small-statement { font-weight: lighter; }
-h1, h2, #logo, .small-title, .description, .snippit { font-style: italic; }
+#logo, .title, .small-title, .description, .snippit { font-style: italic; }
 .label { text-transform: uppercase; }
 
 ul, li { list-style-type: none; }

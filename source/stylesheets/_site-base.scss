@@ -61,7 +61,14 @@
 }
 
 // content
-body { color: $cool-grey-90; }
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: $cool-grey-90;
+
+	a {
+		color: $turquoise;
+	}
+}
 
 .work_index, .blog_index {
 	background-color: $cool-grey-90;
