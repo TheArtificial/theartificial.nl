@@ -157,7 +157,7 @@ function draw() {
 
   linkSelection.enter().append("path");
 
-  var linkupdate = d3.selectAll("path");
+  var linkupdate = svg.selectAll("path");
 
   linkupdate.attr("class", "link") // you have to do this or you can't re-select it!
       .style("opacity", "0.2")

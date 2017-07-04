@@ -27,7 +27,7 @@ We experimented with many different approaches, and came to the now-obvious conc
 
 So we did what we always do, we tried some things and made some mistakes. And then we wrote about our experience so that others could learn from it:
 
-# Know Your User’s Attention Level
+## Know Your User’s Attention Level
 
 One of the biggest misconceptions is that conversational interfaces are chatbots. Chatbots are typically AI that aim to be very human, and like a human on the other side of any text conversation, they require a good amount of attention. When designing interfaces for connected products, it’s common that we don’t have the user’s complete attention. He’s often focused on the product or the experience and not the screen. He may even be using his hands in other ways than tapping on glass.
 
@@ -39,7 +39,7 @@ Of course there are places in the experience where we wanted to give our user th
 
 ![Needy AI](05-03-conversational/CUI_03.png)
 
-# Communicate beyond Words
+## Communicate beyond Words
 
 It would have been easy to assume that, because we were designing a conversational interface to replace a human, our interface should only communicate as a human would. While our early explorations had much more of the back-and-forth of a traditional conversation, we quickly realized that we should take advantage of having a screen and a computer and data. After all, humans communicate with more than words – we use body language and facial expressions that AI can’t yet compete with.
 
@@ -47,7 +47,7 @@ The conversation we designed with our user became multi-dimensional as we added 
 
 ![Beyond Words](05-03-conversational/CUI_04.png)
 
-# Define Rules of Conversation
+## Define Rules of Conversation
 
 Designing a conversational interface goes beyond designing the interactions of having conversations or the look and feel of the bubbles. To design a conversational interface is to design the rules of engagement. Is the AI funny or serious? Does it call the user by his name? Does it pretend to be sad when something goes wrong? Does it use emoji?
 

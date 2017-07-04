@@ -5,7 +5,7 @@ tags: conferences, process, inspiration
 author: susana
 ---
 
-# In English
+## In English
 
 **I want to be inspired!**
 
@@ -41,7 +41,7 @@ Stefan Sagmeister didn’t present his work or his process like the other speake
 
 [![Sketch interface](07-06-passionandbeauty/passion.jpg)](07-06-passionandbeauty/passion.jpg)
 
-# Em Português
+## Em Português
 **Inspirem-me!**
 
 A última vez que estive no OFFF, foi em Lisboa, 2009. Nessa altura fiquei fascinada com as apresentações, os projetos e toda atmosfera da conferência, por isso este ano as minhas expectativas estavam altas.

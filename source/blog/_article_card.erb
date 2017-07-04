@@ -1,32 +1,41 @@
 <%
   last_slash = article.path.rindex('/')
   base_path = article.path[0...last_slash]
+
+  image = nil
+  if article.data.preview
+    if article.data.preview != 'none'
+      image = article.data.preview
+    end
+  elsif article.data.masthead
+    image = article.data.masthead
+  end
 %>
 <% link_to article do %>
 <div class="col-4 packed">
 
-  <% if article.data.masthead %>
+  <% if image %>
     <div class="card blog-preview <%= article.data.category %>">
       <div class="masthead">
-        <%= image_tag base_path + '/' + article.data.masthead %>
+        <%= image_tag base_path + '/' + image %>
       </div>
-      <div class="meta">
-        <div class="category"><%= article.data.category %></div>
-        <div class="title"><%= article.title %></div>
-        <div class="author"><%= person_name article.data.author %></div>
-        <div class="date"><%= article.date.strftime('%B %e, %Y') %></div>
+      <div class="meta center">
+        <div class="label"><%= article.data.category %></div>
+        <div class="small-title"><%= article.title %></div>
+        <div class="small-copy author"><%= person_name article.data.author %></div>
+        <div class="small-copy date"><%= article.date.strftime('%B %e, %Y') %></div>
       </div>
     </div>
   <% else %>
     <div class="card blog-preview no-image <%= article.data.category %>">
-      <div class="meta">
-        <div class="category"><%= article.data.category %></div>
-        <div class="title"><%= article.title %></div>
-        <div class="author"><%= person_name article.data.author %></div>
-        <div class="date"><%= article.date.strftime('%B %e, %Y') %></div>
+      <div class="meta center">
+        <div class="label"><%= article.data.category %></div>
+        <div class="small-title"><%= article.title %></div>
+        <div class="small-copy author"><%= person_name article.data.author %></div>
+        <div class="small-copy date"><%= article.date.strftime('%B %e, %Y') %></div>
       </div>
       <div class="summary">
-        <%= proper_blog_summary(article, 180) %>
+        <p><%= proper_blog_summary(article, 180) %></p>
       </div>
     </div>
   <% end %>

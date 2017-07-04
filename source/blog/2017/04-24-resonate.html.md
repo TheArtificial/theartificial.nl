@@ -7,13 +7,13 @@ author: shannon
 
 We've just wrapped up a week in Belgrade, a majority of which was spent at [Resonate](http://resonate.io/2017/). Aside from the meta-thoughts about how to run a conference – presentation synopses are helpful, panelists should at least appear to be aware of the panel's topic, and venues should have ample space and WiFi – there were a number of fun facts and provocations that we'll be taking home with us.
 
-# 01
+## 01
 
 [Régine Debatty](http://we-make-money-not-art.com/about/) spoke about a number of intertwined topics, jumping from one to the next guided by the thread of her curiosity. Most topics had something to do with the unseen or the underground, and she shared many fun facts from the many bunkers of Switzerland disguised and painted to look like chalets to the exploitation of the people in the mineral-rich Democratic Republic of the Congo.
 
 More than any specific thought, Régine's talk left me more determined to follow my curiosity to strange and unforeseen places.
 
-# 02
+## 02
 
 ![Julie](04-24-resonate/Julie.jpg)
 
@@ -28,13 +28,13 @@ Another fun fact from Julie Freeman's talk is about [naked mole rats](http://rat
 It's a fun fact in itself, but Julie brought up a more interesting thought: _What might happen if our social structure had specific breeders that could take away others' ability to breed?_ I also wonder (perhaps more provocationally): _How do certain members of societies metaphorically "run over" others to suppress their freedom??_
 
 
-# 04
+## 04
 
 [Yosuke Ushigome](http://www.yosukeushigo.me) showed a number of his works that deal with the relationship between the human and the user. One of his more amusing speculative design pieces used accent transfer to facilitate a conversation between a Japanese driver and a British passenger. He also looked at how body language is a part of communication.
 
 All of these nuances of human communication made me wonder: _What opportunities are we missing as we design conversational interfaces?_
 
-# 05
+## 05
 
 ![Ava and Maria](04-24-resonate/AvaAndMaria.jpg)
 
@@ -42,13 +42,13 @@ Ava Aghakouchak and Maria Paneta showed their thesis work about soft, wearable i
 
 This made me think about how wearable interfaces can serve as communication both to the wearer and those around her. How might we design these simultaneous and discrete communications in ways that don't conflict with one another?
 
-# 06
+## 06
 
 [Alan Warburton](http://alanwarburton.co.uk) showed clips from a variety of CGI productions. Most notably, he distinguished between how the commercial creations benefit from having a lot of money and therefore fidelity, but little flexibility on aesthetic: they must appear real to appeal broadly to audiences. Conversely, more experimental creations have a fidelity that matches the lower investment, but are able to be more experimental when it comes to aesthetic.
 
 When it comes to user interfaces, the same might also be said. Large companies can spend large sums creating reliable interfaces, but they are often held back by needing to create according to established UI patterns. Smaller companies often create less-reliable interfaces but can afford to experiment more. Perhaps we get innovation when the large companies take the patterns established by small companies and codify them into their experiences.
 
-# 07
+## 07
 
 ![Joana](04-24-resonate/Joana.png)
 
@@ -56,7 +56,7 @@ When it comes to user interfaces, the same might also be said. Large companies c
 
 This project made it clear how easy it is for social hackers to track down and potentially influence those outside the progressive bubble.
 
-# 08
+## 08
 
 Dimitri Hegemann provoked with a question I've often considered since I left my hometown of St. Louis for the more culturally influential cities of Seattle and then Amsterdam: _How can we convince artists to live in smaller cities and suburbs so that we can more evenly distribute culture?_
 

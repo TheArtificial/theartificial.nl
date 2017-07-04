@@ -10,7 +10,7 @@ Collaboration is at the core of what we do—after all, we are better together t
 
 We are too small and close-knit for formal titles, but hope our next addition will have some "senior-level" experience working with clients and managing a creative process.
 
-#  Desired Skills and Experience
+##  Desired Skills and Experience
 
 - 3+ years of experience working with design teams
 - approach problems with questions before seeking solutions

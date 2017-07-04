@@ -15,7 +15,7 @@ While iterating on a design is easy, iterating on a team can be costly – both
 
 ---
 
-# There's More to Diversity than Being Different
+## There's More to Diversity than Being Different
 
 We strive to create a diverse team in background and experience, which often means hiring people without traditional UX or UI backgrounds. It also means that our hires often don't have portfolios that show expertise in UX and UI design, which means we have to be a bit more open-minded when it comes to judging candidates.
 
@@ -23,7 +23,7 @@ So what do we look for? It starts with an ability to communicate. We enjoy organ
 
 Because CVs, portfolios, and letters of recommendation can be misleading in terms of a persons actual ability, we decided to add a [design test](http://theartificial.nl/blog/2017/04/11/design-test.html) to our hiring process. This test looks beyond the expected design skills to better understand a person's process, ensuring that those we hire can create and communicate with everyone else on the team.
 
-# Proof Is More Important than Promises
+## Proof Is More Important than Promises
 
 We tend to hire people who don’t have a lot of experience. We build on our aligned passion and any foundational understanding and then invest in training to build good habits and deep expertise. This means finding people who take pride in what they make (as much or even more than in what they say).
 
@@ -31,7 +31,7 @@ This means screening portfolios with an eye towards ambition and aligned passion
 
 When hiring, it's easy to take someone's words as enthusiasm and their self-assessment as a promise of future quality. Don't. If a candidate hasn't shown a past of successes (even industry-unrelated successes), it's probably because that candidate doesn't have what they're selling. And this sort of [sunshine-blowing](http://www.urbandictionary.com/define.php?term=blowing%20sunshine) is toxic to a team of people who are excited to develop and share their passions with the world.
 
-# Attention Is a Valuable Resource
+## Attention Is a Valuable Resource
 
 It’s easy to over-invest in problem employees at the cost of those who are committed and successful, after all, in order to be a productive contributor, an employee who’s struggling _needs_ more attention than one who isn't. This is the most important reason to keep hiring standards high.
 

@@ -23,7 +23,7 @@ _So why is this a design problem?_
 
 Nearly every designer we interview has a Schiphol or KLM case study in their portfolio. Most Dutch design agencies have done some sort of work with the airport. Most of these projects are about the user’s experience of getting from the front door to their flight. Most of these projects also focus on new and emerging technologies or ticket kiosks or signage. Most of these projects also forget the most important aspect of getting through an airport: the people.
 
-# If you talk to customers, you’re in customer service
+## If you talk to customers, you’re in customer service
 
 The KLM agents who apologized on behalf of Schiphol understood that customer service was a key part of their role, as did the Twitter team that contacted me to better understand my experience.
 
@@ -31,7 +31,7 @@ When running a business that interfaces with the public, this sort of ghettoizat
 
 How do you create an organization of individuals that care about customer service? Start by changing hiring standards, and only bring on employees who self-identify as a customer service ambassadors. Redefine what success looks like by setting goals and quantifiable objectives that prioritize customer service alongside safety and security. Reward individuals and teams that exemplify customer service, using their stories to inspire the rest of the organization.
 
-# If you make allies of your customers, they’ll help you fulfill your purpose
+## If you make allies of your customers, they’ll help you fulfill your purpose
 
 One of the things I love about Dutch culture is the we’re-all-in-this-together attitude. The situation at Schiphol, however, was distinctly us-versus-them. This authoritarian approach is not only off-putting to customers, it’s also ineffective. After all, what’s better than having two security guards to manage thousands of customers? Having thousands of customers who want to help those two security guards.
 
@@ -39,7 +39,7 @@ We recently experienced the power of a strong customer-brand alliance when our c
 
 VanMoof has a team of Bike Hunters who will seek out stolen bicycles once they’re reported stolen. Of course they use GPS, but in our situation, they had something even more powerful: a loyal customer on the lookout for suspicious VanMoof activity. When a brand makes allies of its customers, they’ll support the brand’s purpose.
 
-# If you empower customer support, you’ll provide confidence to your customers
+## If you empower customer support, you’ll provide confidence to your customers
 
 While it was comforting that Schiphol’s Twitter team was proactively responsive to my angry tweet, the exchange provided little resolution:
 
