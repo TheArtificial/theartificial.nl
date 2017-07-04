@@ -9,7 +9,7 @@
 
       <div class="col-7 left-1 dark-text section">
         <div class="padded">
-          <h1 class="name"><%= current_page.data.title %></h1>
+          <h1 class="title"><%= current_page.data.title %></h1>
 <%
     social_links = []
     if current_page.data.linkedin
@@ -20,14 +20,14 @@
     end
     social_html = social_links.join(" | ").html_safe
 %>
-          <h5><%= social_html %></h5>
+        <div class="label"><%= social_html %></div>
         </div>
         <div class="padded">
-          <h3><%= "&ldquo;#{current_page.data['quote']}&rdquo;" %></h3>
+          <p class="small-statement"><%= "&ldquo;#{current_page.data['quote']}&rdquo;" %></p>
           <%= yield %>
         </div>
         <div class="padded">
-          <h2>Logo Story</h2>
+          <h2 class="small-title">Logo Story</h2>
           <%= Tilt['markdown'].new {current_page.data['logo-story']}.render %>
         </div>
       </div>
@@ -39,7 +39,7 @@
     <div class="flex container">
       <div class="col-12">
         <div class="padded light-text center">
-          <h3>blog posts by <%= current_page.data.title %></h3>
+          <h2 class="small-title">Blog posts by <%= current_page.data.title %></h2>
         </div>
       </div>
     </div>

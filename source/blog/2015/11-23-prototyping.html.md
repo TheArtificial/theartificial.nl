@@ -16,13 +16,15 @@ We compared seven prototyping tools to help guide you to the appropriate tool fo
 
 We selected these seven tools because of their diverse range of qualities and methods.     
 
-[![InVision](11-23-prototyping/icon-invision.png)](http://www.invisionapp.com) | [**InVision**](http://www.invisionapp.com/)| A web-based collaborative program  
-[![Pixate](11-23-prototyping/icon-pixate.png)](http://www.pixate.com/) | [**Pixate**](http://www.pixate.com/)| Google's native mobile prototyping tool
-[![Principle](11-23-prototyping/icon-principle.png)](http://www.principleformac.com/) | [**Principle**](http://www.principleformac.com/)| Created by a former Apple engineer  
-[![Form](11-23-prototyping/icon-form.png)](http://www.relativewave.com/form/) | [**Form**](http://www.relativewave.com/form/)| Google's patch-based prototyping tool  
-[![Origami](11-23-prototyping/icon-origami.png)](https://facebook.github.io/origami/) | [**Origami**](https://facebook.github.io/origami/)| Facebook's Quartz Composer plugin
-[![Framer](11-23-prototyping/icon-framer.png)](http://www.framerjs.com) | [**Framer**](http://www.framerjs.com/)| JavaScript based prototyping
-[![Xcode](11-23-prototyping/icon-xcode.png)](https://developer.apple.com/xcode/) | [**Xcode**](https://developer.apple.com/xcode/)| Development tool by Apple Developer
+| | | |
+|-|-|-|
+| [![InVision](11-23-prototyping/icon-invision.png)](http://www.invisionapp.com) | [**InVision**](http://www.invisionapp.com/)| A web-based collaborative program  |
+| [![Pixate](11-23-prototyping/icon-pixate.png)](http://www.pixate.com/) | [**Pixate**](http://www.pixate.com/)| Google's native mobile prototyping tool |
+| [![Principle](11-23-prototyping/icon-principle.png)](http://www.principleformac.com/) | [**Principle**](http://www.principleformac.com/)| Created by a former Apple engineer |
+| [![Form](11-23-prototyping/icon-form.png)](http://www.relativewave.com/form/) | [**Form**](http://www.relativewave.com/form/)| Google's patch-based prototyping tool |
+| [![Origami](11-23-prototyping/icon-origami.png)](https://facebook.github.io/origami/) | [**Origami**](https://facebook.github.io/origami/)| Facebook's Quartz Composer plugin |
+| [![Framer](11-23-prototyping/icon-framer.png)](http://www.framerjs.com) | [**Framer**](http://www.framerjs.com/)| JavaScript based prototyping |
+| [![Xcode](11-23-prototyping/icon-xcode.png)](https://developer.apple.com/xcode/) | [**Xcode**](https://developer.apple.com/xcode/)| Development tool by Apple Developer |
 
 Adobe is also working on their own prototyping tool called [Comet](http://landing.adobe.com/en/na/products/creative-cloud/comet/229818-notifyme.html). A preview will be released in 2016, and we're looking forward to seeing how it will benefit Illustrator and Photoshop users.
 
@@ -37,7 +39,7 @@ Visual layer-based tools layer multiple assets and screens on one canvas. The us
 When clarifying interaction models, quick iterations are often necessary to solidify decisions. For this, you'll need an interface that has common interactions readily available. Your assets will likely be updated frequently through the early stages of your project, so how efficiently your tool handles assets can save a lot of time.
 ![Workflow and Interface](11-23-prototyping/interaction.gif)
 
-##### Linking screens
+### Linking screens
 
 In visual page-based tools such as **InVision**, screens can be linked with hotspots that allow you to tell the tool what should come when an action is performed. **InVision** allows for time saving hotspot templates, so you won't need to reformat frequently used interactions. There is no limit on the number of screens you wish to include, though it has an upload limit of 10GB for an account. **Principle** is another visual page-based tool. We found the visualization of arrows pointing to subsequent screens helpful for at-a-glance edits.
 
@@ -47,7 +49,7 @@ In visual page-based tools such as **InVision**, screens can be linked with hots
 
 Tools such as **Form**, **Framer** and **Origami** are slightly better suited for handling long flows. You have more control over how things are organized, though it will still lead to a plethora of patches or code. Your biggest obstacle is your patience level.
 
-##### Asset handling
+### Asset handling
 
 Since **InVision** works with hotspots, you can upload complete screens and save a lot of time cutting tappable assets.
 
@@ -59,7 +61,7 @@ With **Origami**, Sketch users can create links to the working file, so updating
 
 **Xcode** also links assets, and their visual editing interface helps makes the process more approachable. Assets can be dragged and dropped into the appropriate screens, and you can also use native assets that can be customized within the editor. Using native assets is beneficial because you can use Auto Layout to specify scaling behavior across multiple screens, rather than using simple scale-up options from the other tools. The downside is the difficulty in doing truly custom controls, as Xcode's default options are limited.
 
-##### Assisting with collaboration
+### Assisting with collaboration
 
 **Origami** has export options that allow you to send code snippets to your developers. With **Xcode**, your developer can work directly with your file itself. Using version control, you can always recall your original prototype incase instructions were interpreted differently.
 
@@ -67,14 +69,14 @@ With **Origami**, Sketch users can create links to the working file, so updating
 
 [Download all GIFs in the Interaction overview for comparison.](11-23-prototyping/InteractionOverview.zip)
 
-### The Artificial's pick for an Interaction overview prototype: Principle
+**_The Artificial's pick for an Interaction overview prototype:_ Principle**
 
 ## Aesthetic detail
 
 A lot of the prototypes you'll see showcased online demonstrate unique animations to show the app's personality through motion. When you are at this stage of your project, you'll want a tool that gives you high fidelity and native-feeling effects. If your aim is for a prototype ready to show a developer, then it should also be able to accommodate all necessary gestures and screen sizes. It's important to be able to tweak animations with ease, and for your developer to discern their final values.
 ![Transitions and Animations](11-23-prototyping/aesthetic.gif)
 
-##### Animating
+### Animating
 
 **Principle** is very reminiscent of Adobe After Effects, so for those switching over from it, the logic of animating with timelines is familiar. Each layer has its own animation and driver panel, which give you full control over the behavior. In **Pixate**, you also attach animations to layers, but conditions and numeric value inputs replace the timeline. While we found **Principle**'s method more familiar, **Pixate** mimics native apps more accurately.
 
@@ -84,7 +86,7 @@ A lot of the prototypes you'll see showcased online demonstrate unique animation
 
 **InVision** cruelly lacks effects. While transition animations are available, nothing custom can be made. If your app has unique animations, you'll want to try something more robust, at least until they launch [Motion](http://blog.invisionapp.com/motion-prototype-animation/).
 
-##### Adjusting the feel
+### Adjusting the feel
 
 In the very likely case that you'll want to tweak your animations, you'll want a tool that doesn't require you tearing apart half your work. Luckily, all the tools we tried that handled animations provided easy ways to do so.
 
@@ -98,7 +100,7 @@ With **Form** and **Origami**, effects are tied to patches, so they can be adjus
 
 In **InVision**, there are limited, but easy to adjust options for transitions between screens.
 
-##### Handling different screen sizes and gestures
+### Handling different screen sizes and gestures
 
 A polished and thorough prototype should be able to support all the gestures and screen sizes you need.
 
@@ -110,7 +112,7 @@ A polished and thorough prototype should be able to support all the gestures and
 
 [Download all GIFs in Aesthetic detail for comparison.](11-23-prototyping/AestheticDetails.zip)
 
-###The Artificial's pick for an Aesthetic detail prototype: Pixate and Xcode
+**_The Artificial's picks for an Aesthetic detail prototype:_ Pixate _and_ Xcode**
 
 ## Making a decision
 

@@ -15,14 +15,14 @@ By the end of the tutorial you should:
 <li>Be able to extrude and cutaway details </li>
 </ol>
 
-# Know Thy Axis
+## Know Thy Axis
 If you didn't know it already, to really get into the isometric sketching you will have to deal with the X, Y, and Z axis. Anything drawn on your isometric grid, which is at 60 degree angles to itself, will not really have a front face or bottom face. What this means is that whatever you choose to sketch will have at least two sides visible in addition to the top face. Note that even if the object is hollow or has no top you might be dealing with an object that has 4 to 5 sides partially visible.
 
 ![The Isometric Axis](04-23-isotute/iso_axis.png)
-# 1. Some Prep
+## 1. Some Prep
 Just for my own peace of mind. Start off strong with some .ai hygiene. Start a new layer and label it `guides`.
 
-# 2. Make the Z lines
+## 2. Make the Z lines
 Make your Z axis first. Draw a line and, using transform, align it to a full pixel value on the X and Y.
 Now with a simple Option-Shift-D you can drag to duplicate it. Once you have your first copy you can &#8984;-D to repeat that until you get as many verticals as you need to cover your artboard.
 Keep it clean, so Group them, Ctrl or &#8984;-G.
@@ -31,14 +31,14 @@ Tip: If you want to align your lines further to a specific value after that, say
 
 ![Z axis](04-23-isotute/iso_z.png)
 
-# 3. Make the Y lines
+## 3. Make the Y lines
 Duplicate your freshly made Z lines--copy, paste basically. I'm not going to give you the shortcuts for that.
 Rotate them 60 degrees, and adjust the length to cover the artboard.
 These will soon be your Y-axis guides. I’ve trimmed these, but you can leave them as they are. What's important is that they are there.
 
 ![Y axis](04-23-isotute/iso_y.png)
 
-# 4. Make the X lines
+## 4. Make the X lines
 Duplicate your Y axis lines. Copy and Paste these in place &#8984;-Shift-V.
 While they are still fresh and still  selected, then go to Transform > Reflect > Horizontal.
 These will be your X-axis guides. I’ve trimmed these, but you can leave them as they are.
@@ -48,7 +48,7 @@ Tip: If you want to apply these to multiple artboards like I did, Copy and Paste
 
 ![X axis](04-23-isotute/iso_x.png)
 
-# 5. Convert to Guides
+## 5. Convert to Guides
 Ready? Ok. Select all your lines and go to View > Guides > Make Guides.
 Your lines should go cyan, and officially be guides.
 Now if you press &#8984; and ; together, those guys should toggle on/off.
@@ -59,7 +59,7 @@ If you have aligned your original lines, with a bit of luck with Snap to Grid an
 
 ![Making guides](04-23-isotute/iso_guides.png)
 
-# 6. Sketching
+## 6. Sketching
 As I mentioned before anything you will draw in an isometric view will have a left, right, and top face. So you will have to design all three sides, if not more.
 
 I tend to make these all at the same time. Making sure the heights and widths line up. I usually start with the left view (my front) and then duplicate that and resize to make sure everything lines up.
@@ -76,7 +76,7 @@ Open question to the crowd: has anyone suceeded with building Isometric Actions 
 
 ![Isometric Example](04-23-isotute/iso_isometricexample.png)
 
-# 6. Adding Depth (a.k.a. making it sexy)
+## 6. Adding Depth (a.k.a. making it sexy)
 Adding depth is unfortunately a bit hit and miss at the beginning, but a bit of practice goes a long way.
 
 My technique is to copy and paste in place (&#8984;-Shift-V) parts I want to extrude or embelish. Then I move the copied object forward or back using the 60 degree angle guides. I then use Pathfinder to Boolean ‘unite’ or ‘minus front’ to create protrusions or cutaway holes.

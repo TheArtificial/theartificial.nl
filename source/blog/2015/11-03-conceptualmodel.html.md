@@ -16,7 +16,7 @@ When getting into the guts of designing technical systems, what can we do to rem
 
 A Conceptual Model goes beyond lists of user needs and goals. It gets into the details of what the user understands from other experiences (both digital and beyond), and it looks at how the relationships between different concepts can be optimized to reduce the cognitive load on the user. A simplicity-seeking approach encourages the combination of concepts that are similar to each other and the elimination of concepts that don't have strong relationships with others.
 
-# Keep it simple
+## Keep it simple
 
 ![iTunes](11-03-conceptualmodel/itunes.jpg)
 *Do I heart or star this song? How many stars equal a heart?*
@@ -27,7 +27,7 @@ The consideration doesn't stop there! It's important to also consider what other
 
 It's easy for machines (who don't carry a cognitive load) to process these many concepts, and it's perhaps even easier for a product manager to imagine a user who will use every feature. Here the Conceptual Model not only provides a tool for synthesis, it also serves as a means of alignment behind the goals of simplicity and comprehensibility.
 
-# Beware of novelty
+## Beware of novelty
 
 Perhaps more important than serving as a tool to assess the *how* of a feature, the Conceptual Model reduces the chances of creating an app whose novelty results in uselessness. Most users enjoy the tickle of a clever bit of interaction or an occasional punny icon, but an app full of unique features is bound to create confusion.
 
@@ -39,7 +39,7 @@ In The Artificial's practice, we print cards for the different concepts we expec
 
 So how can app product managers and designers differentiate in a saturated market without overwhelming their users? It makes sense that limiting to concepts that users are already familiar with *limits innovation*. Yes and no. Nobody wants to create an experience that fails because it's "before its time." If you have a game-changing concept, introduce it slowly. While a user might balk at foreign concepts, slowly introducing new ideas via familiar concepts will help change what your user considers *foreign*. Twitter has a history of changing the way we message. Consider the hashtag or the at-reply. It seems natural that Slack would use these features and oddly antiquated that email does not.
 
-# Don't forget the humans
+## Don't forget the humans
 
 When designing systems, don't forget the humans. Creating and maintaining the Conceptual Model helps align business needs and development costs with users' expectations. It doesn't matter if you're a startup trying to balance differentiation with familiar or if you're a large corporation trying managing a robust ecosystem of features – the Conceptual Model will help you to build a better, more usable, and even more joyful product.
 

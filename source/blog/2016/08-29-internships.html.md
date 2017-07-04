@@ -15,19 +15,19 @@ Of all the exciting things to create, and of all the places to learn it, they ch
 
 There are plenty of good design internships, but an outstanding design internship needs to tick more than just the “learn”, “paid”, and “fun” boxes, and I believe that lies in the communication.
 
-# A personal welcome over a long wait
+## A personal welcome over a long wait
 Can you remember a single “first day” of anything where you weren’t either excited or anxious? Today might just be an ordinary day for you, but your intern is starting something completely new. If you don’t have the time to welcome her and show her to her desk, you probably wont have the time to teach her anything.
 
-# Company integration over segregated environments
+## Company integration over segregated environments
 Similar to how expats gravitate towards each other in foreign environments, interns might be lunching together because they don’t feel integrated. A big part of understanding what it’s like to work in a company is understanding what it’s like to socialize in a company. While it’s great that your interns are getting along, make sure they’re also getting along with full-time employees, managers, and directors well enough to feel comfortable joining for beers.
 
-# Demonstrations over LMGTFY
+## Demonstrations over LMGTFY
 I sincerely hope no mentor has ever explicitly sent a [LMGTFY](http://lmgtfy.com/) as anything but a joke, but you get the idea. Yes, your intern could  easily Google a tutorial, but for some things, demonstrations are far more efficient, and you can feel confident that she learned the process correctly. No time for a demonstration? Providing a high-quality source or showing previous work for reference is much more constructive than blind Googling, and your intern will appreciate the guidance. 
 
-# Coffee excursions over conference room meetings
+## Coffee excursions over conference room meetings
 It’s easy to forget that while we’ve gotten used to 8+ hour work days in front of a computer, they’re not the norm for a student. Having light meetings and informal check-ins at a local cafe helps break up the day. Not only does it give you both a nice change of scenery, but it could help a nervous intern feel more relaxed and feel comfortable expressing themselves honestly.
 
-# In-person conversations over digital messaging
+## In-person conversations over digital messaging
 Yes, we all know that email, Slack, HipChat, or what have you, are all easier ways of communicating with colleagues. But whenever possible, try to make the time to discuss things in person. This is especially important in international companies, where 'English as a second language' might manifest itself differently in conversation than in quick writing. Both sides understand that your schedule is busier than hers, but by carving out time for in-person conversations, she won’t feel the need to restrain from asking questions.
 
 

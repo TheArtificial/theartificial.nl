@@ -8,8 +8,8 @@ author: shannon
 This year’s Resonate was no less full of inspiring projects than last year’s, with a refreshing amount of variety in the projects themselves. READMORE I attended the usual talks on data visualization and interactive installations. Popular were themes of play and curiosity, and many artists spoke about blurring lines between physical and digital.
 
 While I always find inspiration in hearing artists talk about their processes, this year I found myself more inspired by the questions that the speakers implicitly asked through their work. I’ve outlined a few below:
-![Resonate 2014 Sketchnotes](04-17-resonaterecap/sketchnotes.jpg){: .float-left}
 
+![Resonate 2014 Sketchnotes](04-17-resonaterecap/sketchnotes.jpg)
 What current technologies are like film of 20 years ago (meaning only those with large budgets can render a quality product that doesn’t distract from the message)?
 
 How do we maintain cleverness as technology evolves to support all possibility? We used to use all kinds of tricks to fool the eye, now we have CG. Does this make us more or less creative?

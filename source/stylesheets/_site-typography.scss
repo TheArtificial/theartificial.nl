@@ -2,209 +2,250 @@
 // this document should not be edited
 // ever
 
-img + h1, img + h2, img + h3, img + h4, img + h5, img + p {
-	margin: 0;
-	padding: 20px 0 20px 0;
-}
+p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 
-h1, h2, h3, h4, h5, p {
-	margin: 0;
-	padding-bottom: 15px;
-}
+#logo, .title, .small-title, .description, .snippit, .letters { font-family: Georgia, Times, serif; }
+#logo, .title, .small-title, .subtitle, .small-subtitle, .letters, .label { font-weight: bold; }
+.statement, .small-statement { font-weight: lighter; }
+#logo, .title, .small-title, .description, .snippit { font-style: italic; }
+.label { text-transform: uppercase; }
 
-.card {
-	a {
-		text-decoration: none;
-	}
-}
+ul, li { list-style-type: none; }
+a { text-decoration: none; }
 
-h2, h4, h5, p, ul, li, td {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
-
-h1, h3, p.card-detail {
-	font-family: "Droid Serif", Georgia, Times, serif;
-	font-style: italic;
-}
-
-.periodic {
-	font-family: "Droid Serif", Georgia, Times, serif;
-	font-weight: bold;
-}
-
-.statement, .sentence {
-	font-weight: lighter;
-}
-
-h5 {
-	margin: 0;
-	padding-bottom: 10px;
-}
-
-h2#logo {
-	padding-top: 4px;
-	height: 22px;
-	font-family: "Droid Serif", Georgia, Times, serif;
-	font-style: italic;
-	font-size: 29px;
-}
-
-ul, li {
-	list-style-type: none;
-}
-
-a {
-	text-decoration: none;
-	color: $turquoise;
-}
-
-a:hover {
-	color: $dark-turquoise;
-};
-
-h1, h2, h3, h4, h5, p {
-	margin-top: 0;
-}
+.center { text-align: center; }
 
 // for mobile
 @media only screen and (min-device-width: 320px) {
-	h1 {
-		font-size: 36px;
-		line-height: 42px;
-	}
 
-	h2 {
-		font-size: 20px;
-		line-height: 26px;
-	}
-
-	h3 {
-		font-size: 20px;
-		line-height: 28px;
-		font-weight: lighter;
-	}
-
-	h4 {
-		font-size: 16px;
+	p, ul, li {
+		font-size: 14px;
 		line-height: 22px;
 	}
 
-	h5 {
-		font-size: 12px;
-		line-height: 20px;
+	p {
+		padding-bottom: 8px;
 	}
 
-	p, li, ul {
-		font-size: 12px;
-		line-height: 20px;
+	#logo {
+		font-size: 28px;
 	}
 
-	.statement, .sentence {
+	#nav-primary {
+		li {
+			font-size: 14px;
+		}
+	}
+
+	.title {
+		font-size: 36px;
+		line-height: 42px;
+		padding-bottom: 20px;
+	}
+
+	.small-title {
+		font-size: 24px;
+		line-height: 30px;
+		padding-bottom: 16px;
+	}
+
+	.subtitle {
+		font-size: 20px;
+		line-height: 26px;
+		padding-bottom: 24px;
+	}
+
+	.small-subtitle {
+		font-size: 16px;
+		line-height: 22px;
+		padding-bottom: 16px;
+	}
+
+	.description {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.letters {
+		font-size: 120px;
+		line-height: 200px;
+	}
+
+	.statement {
+		font-size: 24px;
+		line-height: 32px;
+		padding-bottom: 20px;
+	}
+
+	.small-statement, .small-statement * {
 		font-size: 24px;
 		line-height: 32px;
 	}
 
-	.periodic {
-		font-size: 120px;
+	.label {
+		font-size: 12px;
+		line-height: 14px;
 		padding-bottom: 20px;
+	}
+
+	.snippit {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.large-copy {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.small-copy {
+		font-size: 12px;
+		line-height: 16px;
 	}
 }
 
 // for tablet
 @media only screen and (min-device-width: 768px) {
-	h1 {
+
+	p, ul, li {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	#logo {
+		font-size: 26px;
+	}
+
+	.title {
 		font-size: 42px;
 		line-height: 48px;
 	}
 
-	h2 {
+	.small-title {
 		font-size: 20px;
 		line-height: 26px;
 	}
 
-	h3 {
+	.subtitle {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.small-subtitle {
+		font-size: 16px;
+		line-height: 22px;
+		padding-bottom: 12px;
+	}
+
+	.description {
 		font-size: 20px;
 		line-height: 28px;
 	}
 
-	h4 {
-		font-size: 16px;
-		line-height: 22px;
-	}
-
-	h5 {
-		font-size: 12px;
-		line-height: 20px;
-	}
-
-	p, li, ul {
-		font-size: 12px;
-		line-height: 20px;
+	.letters {
+		font-size: 80px;
+		line-height: 140px;
 	}
 
 	.statement {
 		font-size: 32px;
 		line-height: 40px;
+		padding-bottom: 20px;
 	}
 
-	.sentence {
+	.small-statement, .small-statement * {
 		font-size: 28px;
 		line-height: 36px;
 	}
 
-	.periodic {
-		font-size: 80px;
+	.label {
+		font-size: 10px;
+		line-height: 14px;
+	}
+
+	.snippit {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	.large-copy {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.small-copy {
+		font-size: 12px;
+		line-height: 16px;
 	}
 }
 
 // for desktop
 @media only screen and (min-width: 960px) {
-	h1 {
-		font-size: 54px;
-		line-height: 60px;
-	}
-
-	h2 {
-		font-size: 24px;
-		line-height: 32px;
-	}
-
-	h3 {
-		font-size: 24px;
-		line-height: 32px;
-	}
-
-	h4 {
-		font-size: 20px;
-		line-height: 26px;
-	}
-
-	h5 {
-		font-size: 14px;
-		line-height: 22px;
-	}
 
 	p, li, ul {
 		font-size: 14px;
 		line-height: 22px;
 	}
 
-	.statement {
-		font-size: 42px;
-		line-height: 50px;
+	.title {
+		font-size: 54px;
+		line-height: 60px;
 	}
 
-	.sentence {
+	.small-title {
+		font-size: 24px;
+		line-height: 30px;
+		padding-bottom: 16px;
+	}
+
+	.subtitle {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.small-subtitle {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.description {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.letters {
+		font-size: 120px;
+		line-height: 200px;
+	}
+
+	.statement {
+		font-size: 40px;
+		line-height: 48px;
+		padding-bottom: 20px;
+	}
+
+	.small-statement, .small-statement * {
 		font-size: 32px;
 		line-height: 40px;
 	}
 
-	.periodic {
-		font-size: 120px;
+	.label {
+		font-size: 12px;
+		line-height: 14px;
 	}
-}
 
-.slide-panel-caption {
-	font-weight: lighter;
-	text-align: center;
+	.snippit {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.large-copy {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.small-copy {
+		font-size: 14px;
+		line-height: 18px;
+	}
 }
