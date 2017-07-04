@@ -14,7 +14,7 @@
 		}
 
 		.flex.container {
-			border-bottom-color: $cool-grey-90;
+			border-bottom-color: $white;
 		}
 
 		#logo {
@@ -248,7 +248,7 @@ svg *.content{ fill: $cool-grey-40; }
 		a:hover {
 			color: $cool-grey-10;
 		}
-		h3 {
+		div {
 			color: $white;
 		}
 	}
@@ -317,7 +317,10 @@ svg *.content{ fill: $cool-grey-40; }
 
 // card gradient colors
 .case-study {
-	h3, p { color: $white; }
+	color: $white;
+	img {
+		margin-bottom: 10px;
+	}
 }
 
 // background colors
