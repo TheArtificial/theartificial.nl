@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/sn3p/middleman-search.git
+  revision: 6077d7b76d010ade046a32711536cab3601e4910
+  branch: update-lunr
+  specs:
+    middleman-search (0.10.0)
+      middleman-core (>= 3.2)
+      nokogiri (~> 1.6)
+      therubyracer (~> 0.12.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,6 +47,7 @@ GEM
     hashie (3.5.5)
     i18n (0.7.0)
     kramdown (1.14.0)
+    libv8 (3.16.14.19)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -95,6 +106,7 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     redcarpet (3.4.0)
+    ref (2.0.0)
     sass (3.4.24)
     sassc (1.11.2)
       bundler
@@ -102,6 +114,9 @@ GEM
       sass (>= 3.3.0)
     servolux (0.13.0)
     temple (0.8.0)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.7)
@@ -118,6 +133,7 @@ DEPENDENCIES
   builder
   middleman (~> 4.1.10)
   middleman-blog
+  middleman-search!
   nokogiri
   redcarpet
   sassc

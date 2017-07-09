@@ -187,6 +187,26 @@ data.cocktails.each do |c|
   proxy "/cocktails/#{c.slug}.html", "/cocktails/template.html", locals: { cocktail: c }, ignore: true
 end
 
+activate :search do |search|
+  search.resources = ['blog/', 'cocktails/']
+  search.index_path = 'search/index.json'
+  search.fields = {
+    title:   {boost: 100, store: true, required: true},
+    path:    {index: false, store: true},
+    tags:    {boost: 100},
+    content: {boost: 50},
+    url:     {index: false, store: true}
+  }
+  search.before_index = Proc.new do |to_index, to_store, resource|
+    path = resource.path
+    puts "will index #{path}"
+    to_store[:path] = path
+    path_split = path.split('/',2)
+    type = path_split.first
+    to_store[:type] = type
+  end
+end
+
 # Build-specific configuration
 configure :development do
   require "better_errors"
