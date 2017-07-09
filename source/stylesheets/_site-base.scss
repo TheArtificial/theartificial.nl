@@ -1,6 +1,55 @@
 // top header
 // mobile
-@media only screen {
+
+@media only screen and (min-device-width: 320px) {
+	#header {
+		background-color: $cool-grey-90;
+
+		.topbar {
+			border-top-color: $white;
+		}
+
+		.flex.container {
+			border-bottom-color: $white;
+		}
+
+		#logo {
+			padding-top: 18px;
+			padding-bottom: 2px;
+
+			a {
+				height: 22px;
+				color: white;
+			}
+		}
+
+		#nav-primary {
+			.padded-lr{
+				overflow: auto;
+
+				ul {
+					padding-top: 8px;
+					padding-bottom: 14px;
+
+					li {
+						a {
+							font-weight: bold;
+							color: $white;
+						}
+						a:hover {
+							color: $pale-turquoise;
+						}
+					}
+					li.active a {
+						color: $turquoise;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-device-width: 768px) {
 	#header {
 		background-color: $cool-grey-90;
 
@@ -28,19 +77,7 @@
 
 				ul {
 					padding-top: 28px;
-
-					li {
-						a {
-							font-weight: bold;
-							color: $white;
-						}
-						a:hover {
-							color: $pale-turquoise;
-						}
-					}
-					li.active a {
-						color: $turquoise;
-					}
+					padding-bottom: 0;
 				}
 			}
 		}
@@ -79,6 +116,8 @@ body {
 	}
 }
 
+
+// two-column layout for mobile
 .container.packery {
 	margin-top: 20px;
 }
@@ -176,6 +215,24 @@ svg *.content{ fill: $cool-grey-40; }
 }
 
 // about styles
+@media only screen and (min-device-width: 320px) {
+	.bleed.about-us {
+		background-image: url(/about/images/us.jpg);
+		min-height: 160px;
+		margin: auto;
+		background-position: top center;
+	}
+}
+
+@media only screen and (min-device-width: 768px) {
+	.bleed.about-us {
+		background-image: url(/about/images/us.jpg);
+		min-height: 400px;
+		margin: auto;
+		background-position: top center;
+	}
+}
+
 .map {
 	height: 400px;
 
