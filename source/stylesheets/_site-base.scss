@@ -241,6 +241,11 @@ svg *.content{ fill: $cool-grey-40; }
 	}
 }
 
+.person-logo svg {
+	width: 100%;
+	height: 100%;
+}
+
 .hiring-button {
 	border: 1px solid $white;
 	border-radius: 5px;
