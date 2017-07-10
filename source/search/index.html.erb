@@ -75,9 +75,12 @@ title: Search
             // where = monthName(date.getMonth()) + ' ' + ordinal(date.getDate()) + ', ' + date.getFullYear();
           }
 
-          list.append('<li><a href="' + page.url + '">' +
-            '<span class="title">' + page.title + '<\/span>' +
-            '<\/a><\/li>');
+          list.append('<li>' +
+              '<a href="' + page.url + '">' +
+                '<span>' + page.title + '<\/span>' +
+              '<\/a>' +
+              ' (' + page.author + ')' +
+            '<\/li>');
         });
         list.append('<\/ol>');
         if (results.length > 0) {

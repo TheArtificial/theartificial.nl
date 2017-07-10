@@ -1,32 +1,6 @@
-###
-# Compass
-###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
+require "helpers/people_helpers"
+# "include" rather than "helpers" so we can use person_name in search prep
+include PeopleHelpers
 
 ###
 # Helpers
@@ -49,58 +23,12 @@
 
 ANSI_COLOR_RED = "\e[31m"
 ANSI_COLOR_RESET = "\e[0m"
-ANSI_BOLD_ON = "\e[1m"
-ANSI_BOLD_OFF = "\e[22m"
 
 helpers do
   def nav_link(link_text, url, options = {})
     options[:class] ||= ""
     options[:class] << " current" if current_resource.url.start_with?(url)
     link_to(link_text, url, options)
-  end
-
-  def person_name(username)
-    if username.kind_of?(Array)
-      return username.map{|u| link_to_person u }.join(', ')
-    elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
-      return person_page.data.title
-    else
-      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
-      return "<span class=\"error\">#{username}</span>"
-    end
-  end
-
-
-  def link_to_person(username, options = {})
-    if username.kind_of?(Array)
-      return username.map{|u| link_to_person u }.join(', ')
-    elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
-      return link_to(person_page.data.title, person_page, options)
-    elsif username.include? ' '
-      return "<span>#{username}</span>"
-    else
-      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
-      return "<span>#{username}</span>"
-    end
-  end
-
-  def link_to_person_logo(username, options = {})
-    if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
-      return link_to(get_logo_svg(username), person_page, options)
-    else
-      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
-      return "<span class=\"error\">#{username}</span>"
-    end
-  end
-
-  def get_logo_svg(name)
-    path = "images/logo-#{name}.svg"
-    if resource = sitemap.find_resource_by_path(path)
-      file = File.open(resource.source_file, 'r')
-      return file.read
-    else
-      return ''
-    end
   end
 
   # this overrides the built-in helper
@@ -147,6 +75,11 @@ Time.zone = "Amsterdam"
 # apparently a blog permalink ending with .html isn't obvious enough
 ::Rack::Mime::MIME_TYPES[''] = 'text/html'
 
+# Cocktails
+data.cocktails.each do |c|
+  proxy "/cocktails/#{c.slug}.html", "/cocktails/template.html", locals: { cocktail: c, title: c.name, author: c.author }, ignore: true
+end
+
 # Blog
 activate :blog do |blog|
   blog.prefix = "blog"
@@ -181,29 +114,29 @@ set :markdown,  fenced_code_blocks: true,
                 smartypants: true,
                 footnotes: true
 
-# Cocktails
-
-data.cocktails.each do |c|
-  proxy "/cocktails/#{c.slug}.html", "/cocktails/template.html", locals: { cocktail: c }, ignore: true
-end
-
 activate :search do |search|
-  search.resources = ['blog/', 'cocktails/']
+  search.resources = ['blog/20', 'cocktails/']
   search.index_path = 'search/index.json'
   search.fields = {
     title:   {boost: 100, store: true, required: true},
     path:    {index: false, store: true},
     tags:    {boost: 100},
+    author:  {boost: 100},
     content: {boost: 50},
     url:     {index: false, store: true}
   }
   search.before_index = Proc.new do |to_index, to_store, resource|
+    # set type
     path = resource.path
-    puts "will index #{path}"
     to_store[:path] = path
     path_split = path.split('/',2)
     type = path_split.first
     to_store[:type] = type
+
+    # prep author
+    if author = resource.data.author
+      to_store[:author] = to_index[:author] = person_name(author)
+    end
   end
 end
 

@@ -34,12 +34,20 @@
         lunrMap = data.docs;
 
         el.html(''); // clear loading indicator
-        el.append('<ol class="article-list">');
+
+        el.append('<ol>');
+        for (var docId in Object.keys(lunrMap)){
+          if (doc = lunrMap[docId]) {
+            el.append('<li>'+doc.type+': '+doc.title+'</li>');
+          }
+        }
+        el.append('<\/ol>');
+
+        el.append('<ol>');
 
         // tokens = lunrIndex.tokenSet.toArray();
         invIndex = lunrIndex.invertedIndex;
 
-        console.log(invIndex.length + ' terms');
         for (var term in invIndex){
           count = Object.keys(invIndex[term].content).length
           el.append('<li>'+term+': '+count+'</li>');
