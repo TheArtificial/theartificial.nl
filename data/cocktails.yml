@@ -15,6 +15,24 @@
     </ul>
     <p>Pour Aperol over a half-full glass of chilled prosecco. Garnish with some slices of fresh orange.</p>
 -
+  slug: applebrother
+  name: Apple Brother
+  date: 2017-06-30
+  glass: applebrother
+  contents: misc_hurricane
+  author: nathalie
+  rating: 3
+  html: |
+    <p>Our newest bartender makes her first drink! Nathalie's learning the in's and out's of our office, as well as our tastes in cocktails.</p>
+    <ul>
+      <li>1 part Licor 43 </li>
+      <li>1 part apple juice</li>
+      <li>1 part ginger beer</li>
+      <li>fresh mint</li>
+      <li>apple slice for garnish</li>
+    </ul>
+    <p>Pour Licor 43 and apple juice into a shaker with ice a mint. Shake well, and pour into a glass. Top with ginger beer and garnish with a slice of apple and mint leaves.</p>
+-
   slug: baltimorebang
   name: Baltimore Bang
   date: 2017-03-10
@@ -638,6 +656,24 @@
     blueberries</p><br>
     <p>Pour ingredients in a glass with ice and stir. Drop a few blueberries in for extra pizazz.</p>
 -
+  slug: polishwater
+  name: Polish Water
+  date: 2017-07-07
+  glass: polishwater
+  contents: vodka_shot
+  author: kamila
+  rating: 3
+  html: |
+    <p>To welcome our new intern, we put Kamila to the bartending test, and what we got was shots of straight vodka paired with an amazing homemade lemonade! Na zdrowie!</p>
+    <ul>
+      <li>1 part pure vodka</li>
+      <li>For the lemonade:</li>
+      <li>5 parts water</li>
+      <li>2 chopped lemons</li>
+      <li>a few dashes of sugar</li>
+    </ul>
+    <p>Pour vodka into a shot glass. Don't mix with anything, and drink all at once. Be bold, as this is the only ingredient. We are no strangers to vodka flavor, but we also know that shots of pureness can be difficult, so it's nice to have something on the side. To change the taste and hydrate, always have a tall glass of lemonade on hand for when your vodka shot arrives. Mix and don't make it too sweet.</p>
+-
   slug: rootbeerfloat
   name: Root Beer Float
   date: 2016-08-12
@@ -953,6 +989,24 @@
       <li>a fresh sprig of mint</li>
     </ul>
     <p>Pour gin, triple sec, and soda water over ice. Squeeze in some fresh orange juice and stir with mint.</p>
+-
+  slug: twistedamberdream
+  name: Twisted Amber Dream
+  date: 2017-07-14
+  glass: twistedamberdream
+  contents: miscwhiskey_highball
+  author: nathalie
+  rating: 2
+  html: |
+    <p>A drink that's easier on the eyes than on the tongue. This variation on the Amber Dream makes a beautiful gradient, but unless you're a mint and absinthe fan, perhaps not our top recommendation.</p>
+    <ul>
+      <li>1 part Bols peppermint green liqueur</li>
+      <li>2 parts whiskey</li>
+      <li>1 part ginger ale</li>
+      <li>a splash of absinthe</li>
+      <li>a fresh sprig of mint</li>
+    </ul>
+    <p>Put fresh mint in a tall glass with ice. Add peppermint liqueur, whiskey, ginger ale, and absinth in that order for a nice gradient. Stir with mint before drinking.</p>
 -
   slug: vitaminc
   name: Vitamin C
