@@ -55,7 +55,7 @@
     }
 
     if (attributionElement.length) {
-      var link = '<a href="' + logos[i].url + '">logo by ' + logos[i].name + '</a>';
+      var link = '<a class="small-copy" href="' + logos[i].url + '">logo by ' + logos[i].name + '</a>';
       attributionElement.html(link);
     } else {
       console.log('artificialLogo: cannot find attribution element ' + attributionSelector);

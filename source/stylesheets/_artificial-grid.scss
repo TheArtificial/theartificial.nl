@@ -75,6 +75,30 @@ img {
 		}
 	}
 
+	.flex.container.double {
+		width: 100%;
+
+		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6 {
+			width: 50%;
+		}
+
+		.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+			width: 100%;
+		}
+	}
+
+	.flex.container {
+		.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+			width: 100%;
+		}
+		.left-1, .left-2, .left-3, .left-4, .left-5, .left-6, .left-7, .left-8, .left-9, .left-10, .left-11 {
+			margin-left: 0;
+		}
+		.right-1, .right-2, .right-3, .right-4, .right-5, .right-6, .right-7, .right-8, .right-9, .right-10, .right-11 {
+			margin-right: 0;
+		}
+	}
+
 	.card {
 		margin: 8px 8px 0 8px;
 		overflow: hidden;
@@ -110,7 +134,7 @@ img {
 		.col-12 { width: $width; }
 	}
 
-	.flex.container {
+	.flex.container, .flex.container.double {
 		// 12 60px columns on tablets
 		$width: 720px;
 		$col-width: $width/12;
@@ -189,7 +213,7 @@ img {
 		.col-12 { width: $width; }
 	}
 
-	.flex.container {
+	.flex.container, .flex.container.double {
 		// 12 80px columns on tablets
 		$width: 960px;
 		$col-width: $width/12;

@@ -31,6 +31,10 @@ body {
 			border-bottom-style: solid;
 		}
 
+		.padded-lr {
+			padding: 0px 16px 0 16px;
+		}
+
 		#logo {
 			text-align: center;
 
@@ -43,8 +47,6 @@ body {
 
 		#nav-primary {
 			.padded-lr {
-				padding: 0px 16px 10px 16px;
-
 				ul {
 					text-align: center;
 					margin: 0 auto;
@@ -108,15 +110,14 @@ body {
 
 		#nav-primary {
 			.padded-lr {
-				padding: 10px 16px 10px 16px;
-
 				ul {
 					float: right;
-					padding-top: 14px;
+					padding-top: 16px;
 
 					li {
 						float: left;
-						margin-left: 20px;
+						margin-left: 32px;
+						margin-right: 0;
 					}
 				}
 			}
