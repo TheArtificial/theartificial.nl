@@ -2,7 +2,7 @@
 title: "Redesigning watchOS"
 category: process
 tags: apple, watch, watchos, redesign
-author: shannon
+author: [shannon, ariane]
 masthead: 10-03-watchos-redesign/hero.jpg
 ---
 
