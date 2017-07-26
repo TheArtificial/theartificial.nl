@@ -2,147 +2,166 @@
 title: 'Dating Apocalypse'
 category: process
 tags: 'app review, dating, trends'
-author: [natalia, ariane]
+author: [natalia, ariane, shannon]
 published: false
 
 ---
 
-Nowadays, dating app services ease the search for the right person, you have a wide range of apps to find whatever type of relationship you are looking for, from I want to get married soon to I want free drinks and a one night stand.
+In this day and age, digital products help us to be more efficient, more social, more self-promoting, and more informed. We can hop online to find everything from the best-performing power drill to the perfect piece of pre-loved furniture. With our always-connected, always-needing culture, it’s no surprise the number of products and services that are devoted to finding the right person for the right relationship has increased.
 
-As designers, we felt the need to research about the dating apps massive democratization and the so called dating apocalypse. We choose 8 popular apps and we analyzed some features we considered interesting, all from a user experience perspective.
+As designers of experiences, we felt the need to research the mass democratization of dating and the so-called dating apocalypse. We chose 8 popular apps and focused on (12 if we have a feature in each part) ____ features we consider the most interesting from a user experience perspective.
 
-| | | |
-|-|-|-|
-|[![Appetence](07-14-dating-apps/icon-appetence.png)](https://www.appetence.co/) | [**Appetence**](https://www.appetence.co/)| Fall in love |
-|[![Bumble](07-14-dating-apps/icon-bumble.png)](https://bumble.com/en-us/) | [**Bumble**](https://bumble.com/en-us/)| Women empowered |
-|[![Grindr](07-14-dating-apps/icon-grindr.png)](https://www.grindr.com/) | [**Grindr**](https://www.grindr.com/)| Hookup with gay and bi nearby |
-|[![Happn](07-14-dating-apps/icon-happn.png)](https://www.happn.com/en/) | [**Happn**](https://www.happn.com/en)| Find people you've crossed path with in real life |
-|[![Inner Circle](07-14-dating-apps/icon-innercircle.png)](https://www.theinnercircle.co/) | [**Inner Circle**](https://www.theinnercircle.co/)| Selective dating |
-|[![OkCupid](07-14-dating-apps/icon-okcupid.png)](https://www.okcupid.com/) | [**OkCupid**](https://www.okcupid.com/)| Find someone compatible |
-|[![Sudy](07-14-dating-apps/icon-sudy.png)](https://www.sudyapp.com/) | [**Sudy**](https://www.sudyapp.com/)| Match with sugar daddy / mummy, or babies|
-|[![Tinder](07-14-dating-apps/icon-tindr.png)](https://www.gotinder.com/) | [**Tinder**](https://www.gotinder.com/)| Meet new people |
+![Apps](07-14-dating-apps/eight-apps.png)
 
+## Aesthetics and Perception
 
-## 1. Aesthetics and Perception
+###Colors play a crucial role in setting the mood.
 
-**Colors and Fonts Play an Important Role in Presenting the Dating Service.**
+While it’s important that the palette supports the brand’s personality, it’s even more essential that it set the right tone for the user’s experience. When it comes to desire, color can play a big role in setting the mood.
 
-Color defines the personality of a brand. It is a constantly overlooked aspect of design. We value color and fonts, because we believe they participate to create a successful design.
+Is the user looking for love in a corporate environment, along the beach at sunset, or in a dark and shiny swinger room? **Grindr** and **Sudy** know just what its users want. Sporting a dark palette, it provides the perfect space for a little something nefarious. Highlighting actions with little pops of yellow or pink is not only a usability win, it also adds to the feel of quick and dirty.
 
-There are many misconceptions about color psychology. The idea that colors can evoke a super specific emotion, is as accurate as what horoscope predict about your love life. Sorry, we know you thought the planets were finally aligned in your favor. Choosing the right colors is not an easy task. The fact is, they should support the brand personality, and set a favorable atmosphere to meet a goal. Dating apps want you to find someone matching your desire, so their colors should set the scene. Are you in for networking in a corporate environment, an intense sunset on the beach, or a dark and shiny swinger room? Yes, some brands play safe by using white and blue, while other are communicating a stronger point of view. Take Grindr as an example, it is provoking a different kind of feelings. Opening the app for the first time, gave us an impression of a quick and dirty evening. We are not fond of their graphical charter, but it serves the purpose. All actions are highlighted in yellow, quick intercourses, within a few tap reach.
+On the opposite end of the spectrum, **Appetence** and **Inner Circle** have a monochrome color scheme that makes the likelihood of red-hot passion feel even more distant than its boring grey buttons.
 
-We believe accent colors, by contrast, drive the user towards specific action, like ‘super swipe’ in Bumble, or sending ‘candies’, in Sudy. Apps like Appetence could benefit from a more varied color palette. Instead of setting the mood for something fun and exciting, they went for a very dry look and feel. Where is the big-jump feeling of letting a new face enter in your life? Tinder and Sudy use a very bold color palette, to capture the users attention. We are not against keeping the whole dating app business sober and clean, but we are sure we would rather tap on a pink button than in a grey one.
+While certain colors might be associated with common reactions, the idea that a particular color can evoke a specific emotion is about as accurate as the horoscope of your love life. Sorry – we know you thought the planets were finally aligned in your favor.
 
-![Colors](07-14-dating-apps/Color.png)
+### Typographic hierarchy draws the user’s attention to the important bits.
 
-The typography influence the perception of the seriousness or frivolity you are bound to find. Too many dating apps are using dull sans serif fonts. Some of them dared to add some CAPS. When it comes to font selection, there is a big opportunity to start being a bit more creative, and this is also true for non-dating-related apps. We hear that the font needs to be readable and optimized for screens, but some words could use some special treatment. Maybe, the person you are about to meet deserves a fancy serif on his or her name. This would help to create a hierarchy, and focus the user’s attention to a specific section of the profile. Appetence did try, with rounded fonts and a slabbed logo, but something about that font combo throws us off.
+When meeting someone new, what’s the first thing you look at? Their eyes? Their smile? Their…something else? Well we looked at their typography.
 
+Typography creates hierarchy and helps to focus the user’s attention on what’s most important. Most apps, including **Bumble** and **OKCupid** use type size and weight to highlight the user’s on name only, while **Appetence** and **Tinder** include age and distance in more prominent typographic styles.
 
-**Symbols and Metaphors Speak about Relationship Goals.**
+While most apps use sans-serif fonts with little personality, **Appetence** tries to set itself apart with an awkward coupling of rounded fonts and a slabbed logo. While it might be attention getting, it definitely falls short of a superlike.
 
-Aside from contributing to define the brand identity, symbols and metaphors also play a role in showing what types of relationship you may find in a dating app. The most self-explanatory is Appetence’s heart. Well, heart is the universal symbol for love and compassion, and Appetence is for serious relationships only. DUH! Happn uses a thunderbolt. It makes perfect sense. Plato described the thunderbolt as the consequence of a close approach between two planetary cosmic bodies. In our opinion, if a body is not cosmic, whats the point in even bothering.
+![Symbols](07-14-dating-apps/symbols.png)
 
-Perhaps Bumble is the one that confuses us the most. No doubt that bees represent balanced communities, but in reality, in each colony, there are only one or a few drones that can make the queen bee preggers. For an app that gives power to the queen bee, they should have considered the availability of drones. No queen bee wants to be constrained by so little options, neither to be fighting among a million of female honey-craving bees.
+### Symbols and metaphors set a tone for relationship goals.
 
-Another good example of a symbol supporting the relationship purpose is Grindr’s mask. Masks help their wearer to emphasize with a facet of themselves, or to hide behind and perform acts that are totally out of their character. Grindr lets you freely and anonymously flirt, and make as many strikes as you want. It also let you choose between different emojis and their colorful variations. Thanks to these very edible metaphors, you don't have to worry about words.
+Aside from contributing to the brand identity, symbols and metaphors play a vital role in foreshadowing the type of relationship you might find in a dating app.
+
+**Appetence** went with the obvious, the heart symbol. Fortunately, the other apps in this review got more creative with their self-expression.
+
+**Happn** uses a thunderbolt, perhaps referencing Plato’s description of what occurs when two cosmic bodies collide. Even without the ancient greek, it’s obvious that a little spark can go a long way.
+
+Apropos to its name, **Bumble** uses a bee as its icon, no doubt referencing the power of the queen. Yet it’s hard to imagine any queen being satisfied, considering the limited number of drones on the service.
+
+Speaking of drones, there’s **Grindr**’s iconic mask, which is perfect for a land of anonymous flirtation, unlimited strikes, and peach emoji in every skintone.
+
+With app icons often replacing logos in our mobile-first world, it’s no surprise that a simple metaphor choice could completely change a service’s demographics. In a world of bad boys and puppy love, perhaps the safe guy is truly the way to go.
 
 ![Profile effort level](07-14-dating-apps/Grids-cards-list.png)
 
-**Layouts Affect the Perception of One Potential Candidate.**
+### Layouts help define the field.
 
-The most current practices to present potential matches are full-screen cards, and comparative grids. Tinder, Bumble, Appetence, and OkCupid present people on a single card. This format values one individual at the time. Tinder and Bumble use a very similar layout. The card consists of one main large picture, name, age, and for Bumble, educational background. OkCupid presents in one card, 4 pictures of your potential match, and provides a little bit more details, like the compatibility percentage, the height, the astrological sign, and a short description.
+When shopping for love, the presentation of goods can significantly affect your ability to make a choice.
 
-Appetence, adds distance and hashtags with interests. But as mentioned before, the picture is partly hidden and will be revealed as the conversation goes which makes us think; can love starts without physical attraction? True that not-so-handsome people with a great personality might turn out very attractive, but do you really want to put all these efforts to find out if the person is hot… naah.
+The most popular ways to present possible mates is on full-screen cards, a method that **Tinder**, **Bumble**, **Appetence**, and **OKCupid** all use. With this method, you focus on one person at a time, reviewing a few key details before saying yay or nay. **Appetence** has an added twist where the user’s photo is partially hidden until you get to know each other – putting the brains before the beauty.
 
-Tinder Elo score (desirability rank) considers the time you spend looking at a picture before swiping. The more time you spend examining someone and considering the option, the higher your score will be. OkCupid and Inner Circle give you some flexibility in the presentation modes. You may switch between full cards to the comparative grid, either with a tab bar (different modes), or a toggle button. Are you feeling emotional and want to spend time examining one person, or, do you feel like comparing options?
+For the comparison shopper, **Happn**, **OKCupid**, **Inner Circle**, and **Grindr** provide grids of potential matches. The most extreme grid award goes to **Grindr**, which shows a whipping 14 men at a time. Gentlemen please, some curation! When viewing starred profiles, **Grindr** presents only 6 pictures at once.
 
-Grids are very efficient if you want to scan through the meat market in a quick way. Grinder chat room shows 14 men pictures, giving lots of boys to choose from… but the ones you starred, are presented in a reduced number of 6 pictures. Gentlemen, please, some curation! Happn and Inner Circle grids show 4 people at the time. Another interesting detail is the green dot notifying online users so for those who want it right here right now it is perfect, though if they don’t reply you know they are ignoring you.
+**Sudy** the Sugar Daddy app uses a list to present potential matches, which is conveniently sortable by income. Of course there are other important details, like the distance separating the two of you…a bon entendeur!
 
-Sudy has a function to view one person at the time, but the main screen to find someone is a list, that way sugar babies, who we assume care more about the income than the face, can scan quickly to find the wealthiest. If you feel like to shopping around… you’ll find lots of details about one person, including the distance separating you… a bon entendeur!
+## Interaction and Choice.
 
-![Profile effort level](07-14-dating-apps/profile-stalking.png)
+### A successful dating app understands the user’s desires.
 
-**Hierarchy is Key to Highlight What Matters.**
+In the human jungle of dating apps, there are millions of opportunities for individuals to connect. To get from connections to matches, it’s important to understand what users want from each other.
 
-As humans tend to judge quickly, making an outstanding first impression is important. While most of the apps give more importance to the name of the person, apps like Sudy highlight other data like the yearly income. As you dive in on the people’s profiles, some tend to give importance to distance and description, while others go straight to availability.
-Which brings us to the question, how much can you dive in and read about someone? Hey, stalkers!  … Bumble does not let you read further. If you want to know more, start a conversation.
+Services like **Grindr** and **Sudy** create meeting grounds for specific groups by virtue of the audiences they target: sexy, attractive, and interesting gay people and sugar daddies or babies respectively. There are apps for almost every niche imaginable – from religious groups to body shapes and people who love horses to those with gluten-free diets.
 
-Appetence users remain quite mysterious as their picture is partly hidden. The only pieces of information displayed are distance, age, and a few keywords.
+Services that cater towards a less specific audience have other techniques for segmenting their users. **Appetence** asks users to pick keywords about the type of relationship they’re interested in, and then highlights those hashtags on each user’s profile. **OKCupid** goes beyond simple keywords and asks about gender, age, and desired duration of the relationship.
 
-In Tinder, Happn, Grinder, InnerCircle, and OkCupid, to reveal more details about one person, you have to tap on their picture, and then, to scroll down. The mastering apps for stalkers, or should we say, for people who want to find out more before starting a conversation, are OkCupid and InnerCircle. OkCupid’s main card contains long (sometimes endless) descriptions, and you can dive even deeper by tapping on the card. Data include answers to some questions, and personality tags. InnerCircle also gives quite some clues about the person you are dealing with. You can see the last location on a map, attending events, which Facebook friends can connect you, tags about lifestyle questions and more…
-
-
-
-## 2. Interaction and Choice
-
-
-**A Successful Dating App Understands its User’s Desires.**
-
-Dating apps provide millions of options for individuals to connect. Out there in our Human Jungle, there are almost as many possibilities for relationships as there are for beers in a Dutch brown café. To make a match happen, apps should let their users express their desires.
-
-Grindr, a niche for a very targeted audience, expresses the user’s needs through their service description. Grindr is a chat for “sexy, attractive, and interesting” gay, and bisexual people. No need to say more. Everyone knows Grindr is a hit for gay hookups, however, you can still filter your research by what you are ‘looking for’. The list goes from “Networking”, to “Right Now”. In the dating apps market, plenty of other apps understood specific desires. Other niche apps focus on bold body shapes, beards, pets, or more precisely horse lovers, gluten-free diets, farmers, similar-politic orientation or religious beliefs, air travelers, or big age-gap relationships, like Sudy. One of Sudy’s first screen asks if the user would like to be a sugar daddy/mummy or a sugar baby.
-
-At the beginning of the experience, Appetence also asks users to pick some keywords to describe the type of relationship they are interested in, which later appear as hashtags on your profile. OkCupid goes a little beyond simple keywords, by asking about the gender, age, and the duration of the relationship sought. The last one may sound a bit odd because how the hell would you know how long you want your relationship to be?
-Tinder, Happn, and Bumble are not directly asking what their users are looking for. Instead, they propose light filters of gender, age and distance to narrow down the massive waiting list of aspirants. Inner Circle is asking less, users may adjust the age range but not the gender. If you are not straight, this is not your app.
+**Tinder**, **Happn**, and **Bumble** provide the user with a way to filter down based on traits like age and gender and distance. **Inner Circle** only allows the user to filter based on age range… making it an app for strait folks only.
 
 ![Profile effort level](07-14-dating-apps/Filling-profile-info.png)
 
-**Completing a Dense Profile Requires Involvement and Set Expectations Higher.**
+### Completing a dense profile creates a sense of commitment.
 
-The more you input, the more you expect. If you are looking for a soul mate or a perfect hookup, you are probably ready to provide some information about yourself, and even to answer some personal questions. All reviewed apps are collecting basic user information such as name or pseudo, gender, age. Most apps are also providing a job title and educational background. Bumble and Tinder profile creation are light, but they are missing key elements like height, there’s nothing worse than going on a date with someone to find out they are to tall or too short for you.
+The more you invest, the more you expect. For example, the woman looking for the perfect hookup is likely to care less about her match’s pet preferences than the guy seeking a soulmate.
 
-Grindr does not require lots of information to let you access to the chat room, but you may enhance your profile with very personal details such as relationship status, preferred position, HIV status and the date of the last test.
+All apps in this review ask for the basics – name, nickname, gender, and age. Most with the exceptions of **Appetence** and **Grindr** suggest their users to add their job title and educational background. Apps like **Tinder** and **Bumble** could benefit from user details like height – there’s nothing worse than going on a date with someone who’s too tall or short for you!
 
-Appetence, OkCupid, Inner Circle, and Sudy ask for the most information to define yourself, or who you are looking for. They include lifestyle information, cultural background, physical traits (fair for apps putting the emphasis on appearances). Appetence asks you to pick a handful of keywords in a lot of different categories like music, gastronomy, movie, fashion, etc. It feels very heavy to get started. OkCupid doesn’t let you access to the potential match until you answer a set of 15 questions. These apps are perfect if you have time, and if you are willing to connect emotionally, but, not sure, it is not the most efficient way to find a one night stand.
+**Grindr** gets deep into details with specifics like preferred position and HIV status (and even the date of the last test).
 
-Dense profiles are an easy way to narrow down your search and to decide if you are interested or not before chatting, but by setting too many requirements, you might miss the most wonderful thing in dating : surprising encounters.
+**Inner Circle** and **Sudy** all ask a bit more about the user and what they’re looking for. When signing up for these services, expect to answer questions about lifestyle, cultural background, and physical traits. **Appetence** takes things a step further, asking for musical, gastronomical, film, and fashion preferences. **OKCupid** requires the user to answer at least 15 questions before seeing potential matches. That’s a lot of investment to see what fish are in the sea!
 
-**Some Gestures Have an Emotional Impact When it Comes to Judging Potential Matches.**
+Dense profiles are an easy way to narrow down your search and to decide if you are interested or not before chatting, but by setting too many requirements, you might miss the most wonderful thing in dating : surprising encounters!
 
-Dating apps involve people and their load of emotions. It is interesting to see how feelings are translated into gestures.
+### Gestures can lighten the load of saying “no thanks.”
 
-Swiping left and right among a huge number of faces removed the negative emotions about rejecting someone drastically. For instance, if you would have to “throw someone to the bin”, or be yourself “thrown to the bin”, you might experience a little more guilt or uneasiness. The fear of being rejected also vanishes with the number of people you’ve swiped left yourself. The celebratory moments are emphasized more than the rejections. How happy do you feel when a match is revealed! Bumble, Tinder, and Inner Circle celebrate these special moments.
+Browsing one profile after another can be an emotional experience. Finding a diamond in the rough can give the user a surge of positive energy, while a lack of diamonds can lead to a feeling of hopelessness. The interface around these elements can help keep the user swiping, even through the rough times
 
-Bumble ranked taping on a higher interest level than swiping right. To stand out for the people you really like, you should tap on a heart button (premium button).
+Let’s start with the legendary swipe, which **Tinder** popularized in 2012, and now apps like **OkCupid** and **Sudy** incorporate it in their mechanics. Swiping left and right helps to remove the negative emotions around rejecting someone. Imagine if you were instead tapping a trashcan icon –symbolically throwing another person away. The guiltless swipe gesture makes rejection as easy as closing a tab in your browser.
 
-**Types of Shareable Content Speak About the Seriousness of a Relationship.**
+When a match is made, it’s time to celebrate. To keep the user in high spirits, these moments are often more dramatic than the rejections. **Bumble** celebrates the matches with a boom and the picture of both parties, while **Inner Circle** just puts them under a tab in your Activity section. The fear of being rejected vanishes with each joyful match.
 
-While all apps let you exchange texts to get to know each other on a 1-1 chat, some apps considered a more substantial exchange of material. Inner circle and Tinder integrate third-party apps like Spotify and Instagram. Sudy lets you send voice messages, much like a hot line. In Inner Circle, you can also discover how many Facebook friends could lead you to your potential date, and which music he or she enjoys. Grinder parti-pris is stronger. In the chat, on top of the basic text, you can share photos, videos, music, and the amazing emojis to help someone read your mind with explicit metaphors like with different aubergine colors. You can also share your location… the intention is clear. Let’s meet right NOW.
+### How you share indicates how serious you are.
 
-## 3. Mechanics and Trust
+What happens after the initial flutter of a match? Every app treats taking things to the next level a bit differently.
+
+While all of the reviewed apps have basic text exchanges to allow users go get to know each other on a 1:1 chat, a few took things to the next level. **Inner Circle**, **Happn**, and **Tinder** integrate third-party services like Spotify and Instagram. **Sudy** lets users send each other voice messages so you can feel that hotline bling.
+
+**Grindr**’s parti-pris makes its way into its users’ conversations with a series of custom emoji… some more subtle than others. Along with flesh-colored aubergines, users can also share photos, videos, music, and location. Let’s meet RIGHT NOW.
+
+With all of this sharing, educating users about safety is a must. **Tinder** does this with their Safety Tips section which provides users with useful about online behavior, offline behavior, and health. **Grindr** also has a help center with a sexual health resource section.
+
+
+## Mechanics and Trust
 
 ![Candidate meeting my expectations](07-14-dating-apps/Candidates.png)
 
-**Explicit Algorithms aren’t Especially the Most Trustworthy.**
+### Knowing the truth doesn’t always lead to trust.
 
-We have personally, not experienced any magical matching solutions in any of the apps we reviewed. It is obvious that matching algorithms are hidden to the user. The first assumption is that revealing the math behind the candidates can hurt the mechanic of the app and the user’s feelings; The second one is that it may be the real gold of their businesses, and this is preciously protected. It seems that in Grindr and Happn, location is a key parameter to favor one person over another. Some other apps are more evasive about the information they correlate to try to match people. Tinder and Bumble raise interesting questions, who is deciding for you what card should be pushed first? You may feel it’s getting out of control, when so many individuals, one after the other is presented to you. Switching cards of so many faces may make you feel tired, or even, depressed. You may also receive OkCupid as a disappointment because it asks a lot of questions, and yet, you can feel overwhelmed with a flow of messages from people that are absolutely not fitting your desires. It seems that it is not the quantity of the information that helps you find a match, but rather how the app uses your information. If suggestions are not taking into account the information you took time the to input, the app is a big fail.
+The magic behind matching algorithms is more or less explicit in different apps. Surprisingly, the most transparent mechanics aren’t the most efficient in matching people.
 
-Filters are a very efficient way to refine a list of candidates. Bumble, Happn, Sudy are proposing very few criteria, basically age range, and gender. Appetence and Tinder use the same few filters but add the location, and for Sudy (the last online). InnerCircle allows you to adjust your list a bit more by adding height, education level, smoking, and children. Grindr is also doing a great job at organizing the chat room with two sets of filters: My Type, Online Now, or Photos only, Age range, Looking For and Tribes. Advanced filters (Height, Weight, Position, Ethnicity…) are reserved for premium users. OkCupid search is quite powerful thanks to a numerous categories of filters. The user can adjust a lot of parameters in different categories: Looks, Background, Availability, Personality, vices, specific questions and more. It is quite interesting that the apps that favor the instantaneous hook up include filters for when a person was last online.
+**Grindr** and **Happn** make clear that location is a key parameter to promote one person over another. It meets the purpose of finding someone nearby, but it is not proven that your neighbor is your soul mate.
 
+**OKCupid** asks their users a set of questions to generate a matching percentage. When a user, rejects a few profile, new questions pops in. However, this exercise is futile when the app allows any user to start a conversation.
 
-![Mutual consent prior to chats](07-14-dating-apps/Consent-on-matches.png)
+**Tinder** and **Bumble** are more elusive about their way to prioritize profiles. They are crossing more informations to find out who their users are more likely to match with. **Tinder** uses a score, called Elo. It may be hidden to protect the user’s feelings. We are wondering, to what extend this hidden ranking made the success of **Tinder**?
 
-**The User With the Right to Start a Conversation is Empowered.**
+### Filters are a very efficient way to find THE needle in a haystack.
 
-OkCupid, Sudy, Inner Circle and Grindr are not using pre-conversation mutual consent. This results in 200 notifications within a few days of trial. While some people might feel it’s flattering their ego, some others might feel overwhelmed, disgusted, harassed, or even, depressed by these first points of contact… Mutual consent before chatting solves the problem of unwanted conversations. Appetence, Happn, Tinder, and Bumble do require a match before a conversation starts. But there are other ways to let someone know they have a special place in your heart. Tinder has special features to “super like” someone or to “skip the line” but you have to pay for these options. In Happn, there is a special “Say Hi” button, that will notify to someone you would like to start chatting. Bumble claims to “weed out jerks online”, by allowing only ladies to start a conversation. Refreshing mentality! Bumble’s policy about the woman starting the conversation seems like a good idea, but it could lead to frustrations for some men, or for some women that would prefer when a man makes the first move. The app gives a 24-hours deadline to start conversing with your match, otherwise, it disappears. Inner Circle emphasis on the privilege to chat with someone by making this option available if you pay 20 euros per month, or if you invite friends to use the app.
+To determine a range of candidate or to fine-tune a list of potential matches dating apps (like other apps) use filters, which very efficient way to determine a range.
 
+Some apps like **Bumble**, **Tinder** and **Sudy** offer very few criteria like age, range and gender. **Appetence** and **Happn** use the same few filters but add current location. InnerCircle allows to be more picky by adding height, education level, and some other optional filters.
 
-**Transparency About who Likes me Boost my Confidence to talk to Someone.**
+**Grindr** narrows even more the search by organizing the chat room into: My Type, Online Now,  Photos only, Age range, Looking For and Tribes. Advanced filters such as Height and favorite position, are reserved for premium users. **OKCupid** search is the most powerful, it includes categories like: Looks, Zodiac Sign, Availability, Personality, and Vices.
 
-Inner circle takes the LinkedIn approach and allows you to see who has viewed your profile. If you are not a hundred percent sure you want to talk to someone, you can send a “wink” to check if the other person is interested. Happn also lets you see who wants to talk to you or basically who paid to talk to you. We think this feature is very interesting, while in the previous paragraph we discussed about feeling overwhelmed when people can talk to you with out matching, sending a wink or pushing a request to talk to you steel makes you feel in control and somehow it takes some weight off the….. (need to finish it)
+The more filters, the better the user can refine their search. We hope that the heavy-filter-users will still catch surprising butterflies.
 
-![Gamification on apps](07-14-dating-apps/Sudy-gamification.png)
+### The User With the Right to Start a Conversation is Empowered.
 
-**Gamification Plays Down Dating but Also Discredits Serious Dating.**
+Mutual consent prior to chatting, is key to avoid the user to feel embarrassed, overwhelmed, harassed, or even depressed by these first points of contacts.
 
-Gamification plays an important part in UI and UX design, many apps incorporate games to their mechanics to either bring the seriousness down or to keep the user hooked. Most of the dating apps we analyzed incorporate one or more gamified features to their mechanics. Sudy brings it to the next level by making it feel like finding someone is a game, they took the sugar metaphor to do so, their game currency: candy. The mechanic of the game is frustrating because you need some candies to be able to chat with someone but then again if you are looking for someone who will pay your bills for the upcoming X time, it is worth investing. You can either earn them or buy them. The sugar daddy’s with the most coins make it to the leader board which brings the competition on, we wonder if it would be wise to incorporate a Pokemon-like battle field so sugar babies can fight for their daddy.
+![Messages](07-14-dating-apps/creepy.png)
 
-Happn and Tinder also have some bits of gamification with some coins/credits you can buy or earn, Happn uses the coins to allow you to talk to someone without their approval and Tinder uses credits to let you super-like someone, you get a limited amount of super-likes per day and if you want you can buy more. By letting the users spend this coins/credits how they want, gives them a sense of achievement, and they are encouraged to log in on a daily basis to claim their credits.
+In the one hand, apps like **OKCupid**, **Sudy**, **Inner Circle** and **Grindr** allow every user to start a conversation, resulting in thousands of notifications within a few days of trial. While this might sound ego-flattering for some users, some others, might experience uneasy feelings.
 
-We think there is a big opportunity for dating apps to incorporate more gamification to their mechanics, perhaps they could benefit from challenges like “be the one who says hi first, and win X amount of coins” to push people to actually start a conversation. But truth be told, swiping left or right to meet someone is already a game. And weather we like it or not dating apps have changed dating for good. It has become a giant game. It is both funny and scary to think about this considerable behavioral change.
+In the other hand, **Appetence**, **Happn**, **Tinder**, and **Bumble** do require a match before a conversation starts. This mechanic prevents unwanted conversation to happened. **Bumble** claims to “weed out jerks online”, by allowing only ladies to start a conversation. Refreshing mentality! But woman starting the conversation could lead to frustration among some men really eager to make the first move. The app gives a 24-hours deadline to start conversing, otherwise, the match disappears. You better be quick!
 
+**Inner Circle** takes a different approach by emphasizing on the privilege to chat with someone. The one-to-one chat is only available to users that invited 3 friends or that paid a 20 euros subscription per month.
 
+### Gamification keep users playing.
 
+Gamification plays an important part in UX and UI design, and many apps incorporate game mechanics to either reduce the seriousness of their experience or to encourage users to return for more. Most of the dating apps we analyzed incorporate one or more game mechanics into their product.
 
+**Happn** and **Tinder** also use coins/credits that can be either bought or earned to motivate the user through scarcity. **Happn** uses coins to allow one user to talk to another without mutual approval, while **Tinder** uses them to super-like someone. With **Tinder**, the limited number of super-likes per day keeps users coming back regularly.
 
-Conclusion goes here
+![Messages](07-14-dating-apps/Sudy-gamification.png)
+
+**Sudy** extends the game beyond just a currency, posting leaderboards of the hottest and wealthiest sugar daddies. There are plenty of other ways dating apps could use rankings to motivate users. Imagine leaderboards for the men who swipe right the most, or for the ladies with the most courage to make the first move.
+
+### Conclusion
+
+Truth be told, maybe dating is enough of a game without all of the mechanics.
+
+Aesthetics, Interactions, and mechanics play an important role in defining the success of a connected dating service. These 3 elements give the users their chance to experience excitement, joy, and trust through the adventure of meeting someone new.
+
+When talking about online dating, the experience should be polished so the senses and perception about the service sounds right to their user. The beauty of the interface, from colors to typographies set users in the mood. The iconography and the metaphors they convey are also communicating a tone for relationship goals. The layout act as a matchmaker, presenting potential candidates.
+
+In effect, interactions are also key in defining a pleasant user experience. An empathic dating app let their users express their desires and allow them to commit to the level they want. Gestures used to like or dismiss someone have their cognitive load to cope with the fear of being rejected or the guilt of liking someone. And the different sharable content give freedom to the user to define their wishes.
+
+Dating apps elaborated different mechanics to guide the user to trust them. Fine-tuning by filtering is an obvious, yet efficient way to help users find the rare pearl and feel confident that the service is listening to their needs. Explicit algorithm aren’t necessary the best way to have a user feel confident in the service. What's more valuable is a service that say less, or at least respect the user has took the time to define. Valuing the chat feature gives power to the users. Gamification motivates and reward users.
+
+In our connected era, dating apps have revolutionized the way people meet. Furthermore, it has changed the perception of relationships and contributed to transform our society. Taboos tend to shift toward more acceptance of the dating-apps phenomenon. Possibilities of meeting new lovers increased regardless of any sexual preference, or goal sought.
