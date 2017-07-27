@@ -78,7 +78,7 @@ Services like **Grindr** and **Sudy** create meeting grounds for specific groups
 
 Services that cater towards a less specific audience have other techniques for segmenting their users. **Appetence** asks users to pick keywords about the type of relationship they’re interested in, and then highlights those hashtags on each user’s profile. **OKCupid** goes beyond simple keywords and asks about gender, age, and desired duration of the relationship.
 
-**Tinder**, **Happn**, and **Bumble** provide the user with a way to filter down based on traits like age and gender and distance. **Inner Circle** only allows the user to filter based on age range… making it an app for strait folks only.
+**Tinder**, **Happn**, and **Bumble** provide the user with a way to filter down based on traits like age and gender and distance. **Inner Circle** only allows the user to filter based on age range… making it an app for straight folks only.
 
 ### Completing a dense profile creates a sense of commitment.
 
