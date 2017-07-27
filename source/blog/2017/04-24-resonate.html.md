@@ -21,7 +21,7 @@ More than any specific thought, Régine's talk left me more determined to follow
 
 I would take this a step further to ask: _How can we ensure animals' privacy?_ Surely if Facebook's algorithms can protect us from dick pics, they can also protect animals from poachers.
 
-#03
+## 03
 
 Another fun fact from Julie Freeman's talk is about [naked mole rats](http://rat.systems/colony/), who establish and maintain dominance by running over the tops of other naked mole rats. In a naked mole rat colony, only the queen is able to reproduce. While all female naked mole rats _can_ reproduce, they are forced into sterility by the queen's dominance.
 
