@@ -30,9 +30,9 @@ While certain colors might be associated with common reactions, the idea that a 
 
 ### Typographic hierarchy draws the user’s attention to the important bits.
 
-When meeting someone new, what’s the first thing you look at? Their eyes? Their smile? Their…something else? Well we looked at their typography.
+When meeting someone new, what’s the first thing you look at? Their eyes? Their smile? Their…something else? Well, we looked at their typography.
 
-Typography creates hierarchy and helps to focus the user’s attention on what’s most important. Most apps, including **Bumble** and **OKCupid** use type size and weight to highlight the user’s on name only, while **Appetence** and **Tinder** include age and distance in more prominent typographic styles.
+Typography creates hierarchy and helps to focus the user’s attention on what’s most important. Most apps, including **Bumble** and **OKCupid** use type size and weight to highlight the users on name only, while **Appetence** and **Tinder** include age and distance in more prominent typographic styles.
 
 While most apps use sans-serif fonts with little personality, **Appetence** tries to set itself apart with an awkward coupling of rounded fonts and a slabbed logo. While it might be attention getting, it definitely falls short of a superlike.
 
@@ -60,7 +60,7 @@ The most popular ways to present possible mates is on full-screen cards, a metho
 
 For the comparison shopper, **Happn**, **OKCupid**, **Inner Circle**, and **Grindr** provide grids of potential matches. The most extreme grid award goes to **Grindr**, which shows a whipping 14 men at a time. Gentlemen please, some curation! When viewing starred profiles, **Grindr** presents only 6 pictures at once.
 
-**Sudy** the Sugar Daddy app uses a list to present potential matches, which is conveniently sortable by income. Of course there are other important details, like the distance separating the two of you…a bon entendeur!
+**Sudy** the Sugar Daddy app uses a list to present potential matches, which is conveniently sortable by income. Of course, there are other important details, like the distance separating the two of you…a bon entendeur!
 
 ![Profile effort level](07-14-dating-apps/Grids-cards-list.png)
 
@@ -76,7 +76,7 @@ In the human jungle of dating apps, there are millions of opportunities for indi
 
 Services like **Grindr** and **Sudy** create meeting grounds for specific groups by virtue of the audiences they target: sexy, attractive, and interesting gay people and sugar daddies or babies respectively. There are apps for almost every niche imaginable – from religious groups to body shapes and people who love horses to those with gluten-free diets.
 
-Services that cater towards a less specific audience have other techniques for segmenting their users. **Appetence** asks users to pick keywords about the type of relationship they’re interested in, and then highlights those hashtags on each user’s profile. **OKCupid** goes beyond simple keywords and asks about gender, age, and desired duration of the relationship.
+Services that cater towards a less specific audience have other techniques for segmenting their users. **Appetence** asks users pick keywords about the type of relationship they’re interested in and then highlights those hashtags on each user’s profile. **OKCupid** goes beyond simple keywords and asks about gender, age, and desired duration of the relationship.
 
 **Tinder**, **Happn**, and **Bumble** provide the user with a way to filter down based on traits like age and gender and distance. **Inner Circle** only allows the user to filter based on age range… making it an app for straight folks only.
 
@@ -90,7 +90,7 @@ All apps in this review ask for the basics – name, nickname, gender, and age.
 
 **Inner Circle** and **Sudy** all ask a bit more about the user and what they’re looking for. When signing up for these services, expect to answer questions about lifestyle, cultural background, and physical traits. **Appetence** takes things a step further, asking for musical, gastronomical, film, and fashion preferences. **OKCupid** requires the user to answer at least 15 questions before seeing potential matches. That’s a lot of investment to see what fish are in the sea!
 
-Dense profiles are an easy way to narrow down your search and to decide if you are interested or not before chatting, but by setting too many requirements, you might miss the most wonderful thing in dating : surprising encounters!
+Dense profiles are an easy way to narrow down your search and to decide if you are interested or not before chatting, but by setting too many requirements, you might miss the most wonderful thing in dating: surprising encounters!
 
 ![Profile density](07-14-dating-apps/profile-density.png)
 
@@ -110,7 +110,7 @@ While all of the reviewed apps have basic text exchanges to allow users go get t
 
 **Grindr**’s parti-pris makes its way into its users’ conversations with a series of custom emoji… some more subtle than others. Along with flesh-colored aubergines, users can also share photos, videos, music, and location. Let’s meet RIGHT NOW.
 
-With all of this sharing, educating users about safety is a must. **Tinder** does this with their Safety Tips section which provides users with useful about online behavior, offline behavior, and health. **Grindr** also has a help center with a sexual health resource section.
+With all of this sharing, educating users about safety is a must. **Tinder** does this with their Safety Tips section which provides users with useful information about online behavior, offline behavior, and health. **Grindr** also has a help center with a sexual health resource section.
 
 ---
 
@@ -152,7 +152,7 @@ On the other hand, **Appetence**, **Happn**, **Tinder**, and **Bumble** do requi
 
 ![Messages](07-14-dating-apps/creepy.png)
 
-### Gamification keep users playing.
+### Gamification keeps users playing.
 
 Gamification plays an important part in UX and UI design, and many apps incorporate game mechanics to either reduce the seriousness of their experience or to encourage users to return for more. Most of the dating apps we analyzed incorporate one or more game mechanics into their product.
 
@@ -172,8 +172,8 @@ Aesthetics, interaction, and mechanics play an important role in defining the su
 
 When talking about online dating, the experience should be polished so the user gets the sense that the service is right for them. The beauty of the interface, from colors to typography, creates a mood for the experience. The iconography and the metaphors they convey also communicate a tone for relationship goals. The layout acts as a matchmaker, presenting potential candidates.
 
-Interactions are also key in defining a pleasant user experience. An empathic dating app lets their users express their desires and allows them to commit to the level of engagement they want. Using gestures to like or dismiss someone reduces the emotional weight of the fear of being rejected or the guilt of liking someone. And the different sharable content give freedom to the user to define their wishes.
+Interactions are also key in defining a pleasant user experience. An empathic dating app lets their users express their desires and allows them to commit to the level of engagement they want. Using gestures to like or dismiss someone reduces the emotional weight of the fear of being rejected or the guilt of liking someone. And the different sharable content gives freedom to the user to define their wishes.
 
-Dating apps use a variety of mechanics to earn the user's trust. Fine-tuning by filtering is an obvious and efficient way to help users find the rare pearl and to feel confident that the service is listening to their needs. Explicit algorithms aren’t necessary the best way to earn a user's confidence. What's more valuable is a service that says less, or at least that respects what the user has taken the time to define. A thoughtful chat experience gives power to the user, while gamification motivates and rewards them.
+Dating apps use a variety of mechanics to earn the user's trust. Fine-tuning by filtering is an obvious and efficient way to help users find the rare pearl and to feel confident that the service is listening to their needs. Explicit algorithms aren’t necessarily the best way to earn a user's confidence. What's more valuable is a service that says less, or at least that respects what the user has taken the time to define. A thoughtful chat experience gives power to the user, while gamification motivates and rewards them.
 
-In our connected era, dating apps have revolutionized the way people meet. Furthermore, they have changed the perception of relationships and contributed to the transformation our society. Taboos shift toward more acceptance , and the possibilities of meeting new lovers increases regardless of age, sexual preference, or relationship goal.
+In our connected era, dating apps have revolutionized the way people meet. Furthermore, they have changed the perception of relationships and contributed to the transformation our society. Taboos shift toward more acceptance, and the possibilities of meeting new lovers increase regardless of age, sexual preference, or relationship goal.
