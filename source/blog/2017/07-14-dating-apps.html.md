@@ -11,7 +11,13 @@ In this day and age, digital products help us to be more efficient, more social,
 
 As designers of experiences, we felt the need to research the mass democratization of dating and the so-called dating apocalypse. We chose 8 popular apps and focused on 12 features we consider the most interesting from a user experience perspective.
 
+![Apps](07-14-dating-apps/eight-apps.png)
+
+---
+
 ## Aesthetics and Perception
+
+![personality](07-14-dating-apps/apps-personality.png)
 
 ###Colors play a crucial role in setting the mood.
 
@@ -22,8 +28,6 @@ Is the user looking for love in a corporate environment, along the beach at suns
 On the opposite end of the spectrum, **Appetence** and **Inner Circle** have a monochrome color scheme that makes the likelihood of red-hot passion feel even more distant than its boring grey buttons.
 
 While certain colors might be associated with common reactions, the idea that a particular color can evoke a specific emotion is about as accurate as the horoscope of your love life. Sorry – we know you thought the planets were finally aligned in your favor.
-
-![Apps](07-14-dating-apps/eight-apps.png)
 
 ### Typographic hierarchy draws the user’s attention to the important bits.
 
@@ -88,6 +92,8 @@ All apps in this review ask for the basics – name, nickname, gender, and age.
 **Inner Circle** and **Sudy** all ask a bit more about the user and what they’re looking for. When signing up for these services, expect to answer questions about lifestyle, cultural background, and physical traits. **Appetence** takes things a step further, asking for musical, gastronomical, film, and fashion preferences. **OKCupid** requires the user to answer at least 15 questions before seeing potential matches. That’s a lot of investment to see what fish are in the sea!
 
 Dense profiles are an easy way to narrow down your search and to decide if you are interested or not before chatting, but by setting too many requirements, you might miss the most wonderful thing in dating : surprising encounters!
+
+![Profile density](07-14-dating-apps/profile-density.png)
 
 ### Gestures can lighten the load of saying “no thanks.”
 
@@ -157,7 +163,7 @@ Gamification plays an important part in UX and UI design, and many apps incorpor
 
 There are plenty of other ways dating apps could use rankings to motivate users. Imagine leaderboards for the men who swipe right the most, or for the ladies with the most courage to make the first move.
 
-![Messages](07-14-dating-apps/Sudy-gamification.png)
+![Gamification](07-14-dating-apps/Sudy-gamification.png)
 
 ---
 
