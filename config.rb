@@ -196,7 +196,7 @@ end
 configure :build do
   activate :minify_css
   activate :minify_javascript, ignore: 'jquery.artificial.logo.js'
-  activate :gzip
+  # activate :gzip
   # default_caching_policy public: true, must_revalidate: true
 
   # For example, change the Compass output style for deployment
