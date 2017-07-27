@@ -61,7 +61,7 @@ helpers do
 
   def person_name(username)
     if username.kind_of?(Array)
-      return username.map{|u| link_to_person u }.join(', ')
+      return username.map{|u| person_name u }.join(', ')
     elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
       return person_page.data.title
     else

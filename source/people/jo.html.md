@@ -1,5 +1,6 @@
 ---
 layout: person_layout
+current: false
 title: Jo Szczepanska
 linkedin: joszczepanska
 twitter: szczpanks

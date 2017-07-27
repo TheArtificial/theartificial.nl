@@ -1,6 +1,6 @@
 ---
 layout: person_layout
-current: true
+current: false
 title: Susana Passinhas
 linkedin: susanapassinhas
 twitter: susanapassinhas
