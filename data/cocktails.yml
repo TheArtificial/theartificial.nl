@@ -609,6 +609,23 @@
     </ul>
     <p>Infuse sliced oranges in vodka for two weeks. Pour over ice, top with sprite and stir.</p>
 -
+  slug: pastelsummer
+  name: Pastel Summer
+  date: 2017-07-21
+  glass: pastelsummer
+  contents: tequila_lowball
+  author: ariane
+  rating: 4
+  html: |
+    <p>We rarely do tequila, but this infusion makes for a great summer cocktail. For those who detest the bitterness of the extra grapefruit juice, orange juice also works well.</p>
+    <ul>
+      <li>2 parts grapefruit and cinnamon infused tequila</li>
+      <li>2 parts grapefruit juice</li>
+      <li>1 part sparkling water</li>
+      <li>a dash of lime juice</li>
+    </ul>
+    <p>Infuse tequila with cinnamon sticks and 2 peeled graphefruit for 3-5 days. Stir ingredients together and serve with ice.</p>
+-
   slug: pineapplesakeandspice
   name: Pineapple Sake and Spice
   date: 2017-03-31
@@ -1024,6 +1041,23 @@
       <li>.5 parts tangerine juice</li>
     </ul>
     <p>Shake all ingredients together with ice. Strain and pour into a wide glass and garnish with a citrus slice.</p>
+-
+  slug: watermelonsangria
+  name: Watermelon Sangria
+  date: 2017-07-28
+  glass: watermelonsangria
+  contents: misc_tonic
+  author: carol
+  rating: 4
+  html: 
+    <p>A drink on the lighter side compared to our usual cocktails in preparation for next week's color party! Spoiler, we're planning a cocktail for each color of the rainbow. Stay tuned!</p>
+    <ul>
+      <li>3 parts white wine</li>
+      <li>1 part triple sec</li>
+      <li>fresh watermelon</li>
+      <li>fresh limes</li>
+    </ul>
+    <p>Pour ingredients into a pitcher with ice. Chop watermelon and limes and mix well.</p>
 -
   slug: wg
   name: "W&G"
