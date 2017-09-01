@@ -286,6 +286,24 @@
     mint leaves</p><br>
     <p>Squeeze grapefruit juice into a cup and muddle a few raspberries with it. Pour into a champagne flute and top with prosecco or champagne. Add a splash of Grand Marnier and garnish with fresh mint leaves.</p>
 -
+  slug: herbalcitrus
+  name: Herbal Citrus
+  date: 2017-08-18
+  glass: herbalcitrus
+  contents: ginmisc_martini
+  author: ariane
+  rating: 3
+  html: |
+    <p>Fresh out of our cocktail making class at <a href="https://www.vesperbar.nl" target="blank">Vesper</a>, we try out our new skills and some new ingredients.</p>
+    <p>2 parts gin<br>
+    1 part chartreuse<br>
+    0.5 part honey simple syrup<br>
+    a dash of orange<br>
+    sugar for the rim<br>
+    thyme for garnish
+    orange bitters</p><br>
+    <p>Rim the glass with sugar. Pour the rest of the ingredients in a shaker with ice and shake vigorously. Pour into the glass and garnish with thyme.</p>
+-
   slug: hotananaslove
   name: Hot Ananas Love
   date: 2016-03-04
@@ -367,6 +385,22 @@
       <li>1 part maraschino liquor</li>
       <li>.5 parts lime juice</li>
       <li>a splash of absinthe</li>
+    </ul>
+    <p>Combine all ingredients into a cocktail shaker. Fill with ice and shake vigorously. Pour over ice and serve.</p>
+-
+  slug: lemondrop
+  name: Lemon Drop
+  date: 2017-08-25
+  glass: lemondrop
+  contents: vodka_martini
+  author: kamila
+  rating: 4
+  html: |
+    <p>A classic simple Lemon Drop. Serve with an extra shot of vodka on the side, if you're lucky enough to have some smooth <a href="https://en.wikipedia.org/wiki/Wódka_Żołądkowa_Gorzka" target="blank">Polish vodka</a> handy. </p>
+    <ul>
+      <li>2 parts vodka</li>
+      <li>2 parts lemon juice</li>
+      <li>1 part simple syrup</li>
     </ul>
     <p>Combine all ingredients into a cocktail shaker. Fill with ice and shake vigorously. Pour over ice and serve.</p>
 -
