@@ -661,14 +661,14 @@
     <p>Infuse tequila with cinnamon sticks and 2 peeled graphefruit for 3-5 days. Stir ingredients together and serve with ice.</p>
 -
   slug: pbj
-  name: PB & J
+  name: PB&amp;J
   date: 2017-09-01
   glass: pbj
   contents: whiskey_martini
   author: hans
   rating: 4
   html: |
-    <p>Our infamous original PB&J cocktail was made in the days before our digital cocktail collection existed, so we felt it was time to give it another try. We're happy to say v2 was much more successful, but we recommend straining the homemade syrup with some cheesecloth if you have some handy.</p>
+    <p>Our infamous original PB&amp;J cocktail was made in the days before our digital cocktail collection existed, so we felt it was time to give it another try. We're happy to say v2 was much more successful, but we recommend straining the homemade syrup with some cheesecloth if you have some handy.</p>
     <ul>
       <li>1 part whiskey</li>
       <li>1 part peach-infused whiskey</li>
