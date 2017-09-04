@@ -660,6 +660,27 @@
     </ul>
     <p>Infuse tequila with cinnamon sticks and 2 peeled graphefruit for 3-5 days. Stir ingredients together and serve with ice.</p>
 -
+  slug: pbj
+  name: PB & J
+  date: 2017-09-01
+  glass: pbj
+  contents: whiskey_martini
+  author: hans
+  rating: 4
+  html: |
+    <p>Our infamous original PB&J cocktail was made in the days before our digital cocktail collection existed, so we felt it was time to give it another try. We're happy to say v2 was much more successful, but we recommend straining the homemade syrup with some cheesecloth if you have some handy.</p>
+    <ul>
+      <li>1 part whiskey</li>
+      <li>1 part peach-infused whiskey</li>
+      <li>1 part peanut simple syrup</li>
+      <li>a splash of cardamom bitters</li>
+      <li>crushed peanuts for garnish</li>
+      <li>orange slice</li>
+    </ul>
+    <p>To make the peanut simple syrup, slowly boil crushed peanuts for an hour. Strain for about 100ml of reduction, saving some for dusting. This is added to  about 800ml of simple syrup, (half white sugar, half water) and chilled.</p>
+    <p>To make peach-infused whiskey, put fresh sliced peaches into whiskey and let infuse for at least a week.</p>
+    <p>Pour whiskey, peach-infused whiskey, and peanut simple syrup in a shaker over ice. Use a slice of orange to wet half the rim of the glass and dust with crushed peanuts. Pour cocktail into glass and add a dash of cardamom bitters.</p>
+-
   slug: pineapplesakeandspice
   name: Pineapple Sake and Spice
   date: 2017-03-31
