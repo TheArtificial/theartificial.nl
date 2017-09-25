@@ -318,6 +318,20 @@
     sliced chili peppers</p><br>
     <p>Combine all ingredients in a shaker with ice. Strain and garnish with a cocktail umbrella. Serve with chunks of the vodka soaked pineapple for extra fun.</p>
 -
+  slug: hotchaibutteredrum
+  name: Hot Chai Buttered Rum
+  date: 2017-09-22
+  glass: hotchaibutteredrum
+  contents: rum_mug
+  author: shannon
+  rating: 3
+  html: |
+    <p>A drink to warm the soul. We're all in a chai mood this week thanks to the amazing chai tea Manjari made for us yesterday!</p>
+    <p>2 parts spiced rum<br>
+    1 part hot water<br>
+    .5 parts chai butter</p><br>
+    <p>To make chai butter, mix 5 parts brown sugar with approximately 1 part cinnamon, ginger, nutmeg and cardamom each. Mash together with equal parts butter. Drop a spoonful into the bottom of a mug and pour spiced rum with hot water over it and stir.</p>
+-
   slug: justpeachy
   name: Just Peachy
   date: 2016-02-26
@@ -436,6 +450,21 @@
     a splash of angostura bitters<br>
     orange peel</p><br>
     <p>Combine all ingredients and stir with ice. Pour into a chilled glass a serve with an orange twist.</p>
+-
+  slug: theamsterdam
+  name: The Amsterdam
+  date: 2017-09-15
+  glass: theamsterdam
+  contents: ginmisc_martini
+  author: carol
+  rating: 3
+  html: |
+    <p>Manjari joins us for her first Artificial cocktail in Amsterdam! What better way to welcome our newest team member than with a genever based drink on the terrace?</p>
+    <p>2 parts genever<br>
+    1 part triple sec<br>
+    1 part orange juice<br>
+    dash of angostura bitters</p><br>
+    <p>Pour genever, orange juice, and triple sec into a shaker with ice. Shake and strain into a glass and top with a few dashes of angostura bitters. Garnish with a sugar rim or orange peel.</p>
 -
   slug: theflamingpeach
   name: The Flaming Peach
