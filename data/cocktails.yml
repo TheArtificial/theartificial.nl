@@ -180,7 +180,7 @@
       <li>2 parts rum</li>
       <li>1 part mandarin juice</li>
       <li>sugar</li>
-      <li>mandarines halved crosswise</li>     
+      <li>mandarines halved crosswise</li>
       <li>rosemary sprigs for garnish</li>
     </ul>
     <p>Pour some sugar on a plate and dip the cut sides of the mandarines. Scatter the rosemary sprigs on a heated pan and add the mandarines, cut side down. Cook until sugar caramelizes. Place mandarines in a shaker, add sugar and muddle. Add rum ice and juice, shake and pour in glasses with ice. Garnish with rosemary and serve.</p>
@@ -269,6 +269,22 @@
       <li>fresh basil for garnish</li>
     </ul>
     <p>Infuse fresh, cut basil in gin for no more than 3 days. Pour in a glass with ice and muddle fresh basil in. Top off with ginger beer and serve with a basil garnish.</p>
+-
+  slug: grownupcherrycoke
+  name: Grown-up Cherry Coke
+  date: 2017-10-06
+  glass: grownupcherrycoke
+  contents: miscrum_lowball
+  author: nathalie
+  rating: 3
+  html: |
+    <p>Natalie’s nearing the end of her logo process and we thought we’d end the week with a critique and a logo-inspired drink. Since her logo uses wide, blocky type to serve as a canvas for data, we thought this dark drink would go well with her logotype.</p>
+    <ul>
+      <li>3 parts spiced rum</li>
+      <li>2 parts cola</li>
+      <li>1.5 parts amaretto</li>
+    </ul>
+    <p>Pour all the ingredients in a lowball glass filled with ice. Serve immediately.</p>
 -
   slug: grapefruittorpedo
   name: Grapefruit Torpedo
@@ -575,8 +591,8 @@
   html: |
     <p>The Moscow mule is one of our favorite drinks to sip in the summer on our beautiful roof deck. We love this drink so much that we've decided we can't wait for Holland weather to cooperate, so we've decided to embrace the cold and freshen our minds with this classic. </p>
     <p>1 part vodka<br>
-    2 parts ginger beer<br> 
-    1 splash simple syrup<br> 
+    2 parts ginger beer<br>
+    1 splash simple syrup<br>
     1 squeeze fresh lime juice</p><br>
     <p>Squeeze lime juice into a copper glass and drop in the shell. Add ice and vodka then top with ginger beer. Serve it up with an animated gif of <a href="http://giphy.com/gifs/dance-awesome-russian-zjhH1lh3bDRug" target="blank">dancing Russians.</a></p>
 -
@@ -870,9 +886,9 @@
   rating: 3
   html: |
     <p>It's our first drink of the new year together, so we decided to start off with an experiment. This dark and sweet drink inspired many gory names (some insisted bloody was the best adjective), but we decided to keep it clean and so we present to you, Sweet Midnight.</p>
-    <p>1 part gin<br> 
-        1 part blueberry blackcurrant cordial<br> 
-        1 splash simple syrup<br> 
+    <p>1 part gin<br>
+        1 part blueberry blackcurrant cordial<br>
+        1 splash simple syrup<br>
         1 dash cinnamon</p><br>
     <p>Combine all ingredients in a shaker and pour over ice.<br> Garnish with berries.</p>
 -
@@ -1133,7 +1149,7 @@
   contents: misc_tonic
   author: carol
   rating: 4
-  html: 
+  html:
     <p>A drink on the lighter side compared to our usual cocktails in preparation for next week's color party! Spoiler, we're planning a cocktail for each color of the rainbow. Stay tuned!</p>
     <ul>
       <li>3 parts white wine</li>
