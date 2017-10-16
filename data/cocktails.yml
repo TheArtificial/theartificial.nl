@@ -67,6 +67,23 @@
     </ul>
     <p>Muddle basil with gin, lemon juice, and agave syrup until leaves are well crushed. Pour into a shaker and filled with ice. Shake vigorously and strain into a glass with ice. Garnish with extra fresh basil.</p>
 -
+  slug: basilsmashv2
+  name: Basil Smash V2
+  date: 2017-10-13
+  glass: basilsmash
+  contents: gin_lowball
+  author: carol
+  rating: 5
+  html: |
+    <p>Carol is leaving The Artificial and for one of her last weeks with us we asked her to mix one of her favorite cocktails. This time she added lime to give it more flavor and to hide even more the gin. Really easy to drink and perfect for getting smashed.</p>
+    <ul>
+      <li>2 parts gin</li>
+      <li>1.5 parts lime juice</li>
+      <li>1 part agave syrup</li>
+      <li>fresh basil</li>
+    </ul>
+    <p>Muddle basil with gin, lime juice, and agave syrup until leaves are well crushed. Pour into a shaker and filled with ice. Shake vigorously and strain into a glass with ice. Garnish with extra fresh basil.</p>
+-
   slug: beesknees
   name: Bee's Knees
   date: 2016-01-22
