@@ -67,6 +67,23 @@
     </ul>
     <p>Muddle basil with gin, lemon juice, and agave syrup until leaves are well crushed. Pour into a shaker and filled with ice. Shake vigorously and strain into a glass with ice. Garnish with extra fresh basil.</p>
 -
+  slug: basilsmashv2
+  name: Basil Smash V2
+  date: 2017-10-13
+  glass: basilsmash
+  contents: gin_lowball
+  author: carol
+  rating: 5
+  html: |
+    <p>Carol is leaving The Artificial and for one of her last weeks with us we asked her to mix one of her favorite cocktails. This time she added lime to give it more flavor and to hide even more the gin. Really easy to drink and perfect for getting smashed.</p>
+    <ul>
+      <li>2 parts gin</li>
+      <li>1.5 parts lime juice</li>
+      <li>1 part agave syrup</li>
+      <li>fresh basil</li>
+    </ul>
+    <p>Muddle basil with gin, lime juice, and agave syrup until leaves are well crushed. Pour into a shaker and filled with ice. Shake vigorously and strain into a glass with ice. Garnish with extra fresh basil.</p>
+-
   slug: beesknees
   name: Bee's Knees
   date: 2016-01-22
@@ -180,7 +197,7 @@
       <li>2 parts rum</li>
       <li>1 part mandarin juice</li>
       <li>sugar</li>
-      <li>mandarines halved crosswise</li>     
+      <li>mandarines halved crosswise</li>
       <li>rosemary sprigs for garnish</li>
     </ul>
     <p>Pour some sugar on a plate and dip the cut sides of the mandarines. Scatter the rosemary sprigs on a heated pan and add the mandarines, cut side down. Cook until sugar caramelizes. Place mandarines in a shaker, add sugar and muddle. Add rum ice and juice, shake and pour in glasses with ice. Garnish with rosemary and serve.</p>
@@ -270,6 +287,22 @@
     </ul>
     <p>Infuse fresh, cut basil in gin for no more than 3 days. Pour in a glass with ice and muddle fresh basil in. Top off with ginger beer and serve with a basil garnish.</p>
 -
+  slug: grownupcherrycoke
+  name: Grown-up Cherry Coke
+  date: 2017-10-06
+  glass: grownupcherrycoke
+  contents: miscrum_lowball
+  author: nathalie
+  rating: 3
+  html: |
+    <p>Natalie’s nearing the end of her logo process and we thought we’d end the week with a critique and a logo-inspired drink. Since her logo uses wide, blocky type to serve as a canvas for data, we thought this dark drink would go well with her logotype.</p>
+    <ul>
+      <li>3 parts spiced rum</li>
+      <li>2 parts cola</li>
+      <li>1.5 parts amaretto</li>
+    </ul>
+    <p>Pour all the ingredients in a lowball glass filled with ice. Serve immediately.</p>
+-
   slug: grapefruittorpedo
   name: Grapefruit Torpedo
   date: 2016-03-24
@@ -286,6 +319,24 @@
     mint leaves</p><br>
     <p>Squeeze grapefruit juice into a cup and muddle a few raspberries with it. Pour into a champagne flute and top with prosecco or champagne. Add a splash of Grand Marnier and garnish with fresh mint leaves.</p>
 -
+  slug: herbalcitrus
+  name: Herbal Citrus
+  date: 2017-08-18
+  glass: herbalcitrus
+  contents: ginmisc_martini
+  author: ariane
+  rating: 3
+  html: |
+    <p>Fresh out of our cocktail making class at <a href="https://www.vesperbar.nl" target="blank">Vesper</a>, we try out our new skills and some new ingredients.</p>
+    <p>2 parts gin<br>
+    1 part chartreuse<br>
+    0.5 part honey simple syrup<br>
+    a dash of orange<br>
+    sugar for the rim<br>
+    thyme for garnish
+    orange bitters</p><br>
+    <p>Rim the glass with sugar. Pour the rest of the ingredients in a shaker with ice and shake vigorously. Pour into the glass and garnish with thyme.</p>
+-
   slug: hotananaslove
   name: Hot Ananas Love
   date: 2016-03-04
@@ -299,6 +350,20 @@
     1 part orange juice<br>
     sliced chili peppers</p><br>
     <p>Combine all ingredients in a shaker with ice. Strain and garnish with a cocktail umbrella. Serve with chunks of the vodka soaked pineapple for extra fun.</p>
+-
+  slug: hotchaibutteredrum
+  name: Hot Chai Buttered Rum
+  date: 2017-09-22
+  glass: hotchaibutteredrum
+  contents: rum_mug
+  author: shannon
+  rating: 3
+  html: |
+    <p>A drink to warm the soul. We're all in a chai mood this week thanks to the amazing chai tea Manjari made for us yesterday!</p>
+    <p>2 parts spiced rum<br>
+    1 part hot water<br>
+    .5 parts chai butter</p><br>
+    <p>To make chai butter, mix 5 parts brown sugar with approximately 1 part cinnamon, ginger, nutmeg and cardamom each. Mash together with equal parts butter. Drop a spoonful into the bottom of a mug and pour spiced rum with hot water over it and stir.</p>
 -
   slug: justpeachy
   name: Just Peachy
@@ -370,6 +435,22 @@
     </ul>
     <p>Combine all ingredients into a cocktail shaker. Fill with ice and shake vigorously. Pour over ice and serve.</p>
 -
+  slug: lemondrop
+  name: Lemon Drop
+  date: 2017-08-25
+  glass: lemondrop
+  contents: vodka_martini
+  author: kamila
+  rating: 4
+  html: |
+    <p>A classic simple Lemon Drop. Serve with an extra shot of vodka on the side, if you're lucky enough to have some smooth <a href="https://en.wikipedia.org/wiki/Wódka_Żołądkowa_Gorzka" target="blank">Polish vodka</a> handy. </p>
+    <ul>
+      <li>2 parts vodka</li>
+      <li>2 parts lemon juice</li>
+      <li>1 part simple syrup</li>
+    </ul>
+    <p>Combine all ingredients into a cocktail shaker. Fill with ice and shake vigorously. Pour over ice and serve.</p>
+-
   slug: mandarinmule
   name: Mandarin Mule
   date: 2016-11-25
@@ -402,6 +483,21 @@
     a splash of angostura bitters<br>
     orange peel</p><br>
     <p>Combine all ingredients and stir with ice. Pour into a chilled glass a serve with an orange twist.</p>
+-
+  slug: theamsterdam
+  name: The Amsterdam
+  date: 2017-09-15
+  glass: theamsterdam
+  contents: ginmisc_martini
+  author: carol
+  rating: 3
+  html: |
+    <p>Manjari joins us for her first Artificial cocktail in Amsterdam! What better way to welcome our newest team member than with a genever based drink on the terrace?</p>
+    <p>2 parts genever<br>
+    1 part triple sec<br>
+    1 part orange juice<br>
+    dash of angostura bitters</p><br>
+    <p>Pour genever, orange juice, and triple sec into a shaker with ice. Shake and strain into a glass and top with a few dashes of angostura bitters. Garnish with a sugar rim or orange peel.</p>
 -
   slug: theflamingpeach
   name: The Flaming Peach
@@ -512,8 +608,8 @@
   html: |
     <p>The Moscow mule is one of our favorite drinks to sip in the summer on our beautiful roof deck. We love this drink so much that we've decided we can't wait for Holland weather to cooperate, so we've decided to embrace the cold and freshen our minds with this classic. </p>
     <p>1 part vodka<br>
-    2 parts ginger beer<br> 
-    1 splash simple syrup<br> 
+    2 parts ginger beer<br>
+    1 splash simple syrup<br>
     1 squeeze fresh lime juice</p><br>
     <p>Squeeze lime juice into a copper glass and drop in the shell. Add ice and vodka then top with ginger beer. Serve it up with an animated gif of <a href="http://giphy.com/gifs/dance-awesome-russian-zjhH1lh3bDRug" target="blank">dancing Russians.</a></p>
 -
@@ -625,6 +721,27 @@
       <li>a dash of lime juice</li>
     </ul>
     <p>Infuse tequila with cinnamon sticks and 2 peeled graphefruit for 3-5 days. Stir ingredients together and serve with ice.</p>
+-
+  slug: pbj
+  name: PB&amp;J
+  date: 2017-09-01
+  glass: pbj
+  contents: whiskey_martini
+  author: hans
+  rating: 4
+  html: |
+    <p>Our infamous original PB&amp;J cocktail was made in the days before our digital cocktail collection existed, so we felt it was time to give it another try. We're happy to say v2 was much more successful, but we recommend straining the homemade syrup with some cheesecloth if you have some handy.</p>
+    <ul>
+      <li>1 part whiskey</li>
+      <li>1 part peach-infused whiskey</li>
+      <li>1 part peanut simple syrup</li>
+      <li>a splash of cardamom bitters</li>
+      <li>crushed peanuts for garnish</li>
+      <li>orange slice</li>
+    </ul>
+    <p>To make the peanut simple syrup, slowly boil crushed peanuts for an hour. Strain for about 100ml of reduction, saving some for dusting. This is added to  about 800ml of simple syrup, (half white sugar, half water) and chilled.</p>
+    <p>To make peach-infused whiskey, put fresh sliced peaches into whiskey and let infuse for at least a week.</p>
+    <p>Pour whiskey, peach-infused whiskey, and peanut simple syrup in a shaker over ice. Use a slice of orange to wet half the rim of the glass and dust with crushed peanuts. Pour cocktail into glass and add a dash of cardamom bitters.</p>
 -
   slug: pineapplesakeandspice
   name: Pineapple Sake and Spice
@@ -786,9 +903,9 @@
   rating: 3
   html: |
     <p>It's our first drink of the new year together, so we decided to start off with an experiment. This dark and sweet drink inspired many gory names (some insisted bloody was the best adjective), but we decided to keep it clean and so we present to you, Sweet Midnight.</p>
-    <p>1 part gin<br> 
-        1 part blueberry blackcurrant cordial<br> 
-        1 splash simple syrup<br> 
+    <p>1 part gin<br>
+        1 part blueberry blackcurrant cordial<br>
+        1 splash simple syrup<br>
         1 dash cinnamon</p><br>
     <p>Combine all ingredients in a shaker and pour over ice.<br> Garnish with berries.</p>
 -
@@ -1049,7 +1166,7 @@
   contents: misc_tonic
   author: carol
   rating: 4
-  html: 
+  html:
     <p>A drink on the lighter side compared to our usual cocktails in preparation for next week's color party! Spoiler, we're planning a cocktail for each color of the rainbow. Stay tuned!</p>
     <ul>
       <li>3 parts white wine</li>
