@@ -1,4 +1,24 @@
 -
+  slug: anythingbuttea
+  name: Anything but Tea
+  date: 2017-10-27
+  glass: anythingbuttea
+  contents: misc_highball
+  author: manjari
+  rating: 4
+  html: |
+    <p>As an ode to the long-gone summer days, Manjari mixed a cocktail that had anything but tea which was based on the long island ice tea, but better. Its the perfect cocktail that hides the oh so many alcohol flavors and tricks you into thinking your drinking some cola (and that you are by the beach) it even got Ariane drunk, which is always a good surprise.</p>
+    <ul>
+      <li>5 parts Cola</li>
+      <li>1 part Gin</li>
+      <li>1 part Tequila</li>
+      <li>1 part Vodka</li>
+      <li>.5 part Triple Sec</li>
+      <li>.5 part fresh lime juice</li>
+      <li>lots of ice</li>
+    </ul>
+    <p>Mix all the alcohol and the lemon juice in a shaker, and pour it over some ice in a tall glass. Top it off with the cola and a lemon twist. Stir and serve immediately.</p>
+-
   slug: aperolspritz
   name: Aperol Spritz
   date: 2016-04-29
