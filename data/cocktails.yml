@@ -225,6 +225,24 @@
     </ul>
     <p>Pour some sugar on a plate and dip the cut sides of the mandarines. Scatter the rosemary sprigs on a heated pan and add the mandarines, cut side down. Cook until sugar caramelizes. Place mandarines in a shaker, add sugar and muddle. Add rum ice and juice, shake and pour in glasses with ice. Garnish with rosemary and serve.</p>
 -
+  slug: doodlesandbubbles
+  name: Doodles and Bubbles
+  date: 2017-11-10
+  glass: doodlesandbubbles
+  contents: miscchampagne_coupe
+  author: natalia
+  rating: 4
+  html: |
+    <p>To celebrate that the print proof of The Artificial City Guide (stay tuned) arrived on time, and that we were all feeling better after a week of the horrible flu. We decided to make grapefruit juice more drinkable by mixing it with bubbles and mezcal, what a great source of vitamin c! </p>
+    <ul>
+      <li>2 parts sparkling wine or champagne</li>
+      <li>1 part mezcal</li>
+      <li>1 part fresh grapefruit juice</li>
+      <li>a dash cardamom of bitters</li>
+      <li>agave syrup</li>
+    </ul>
+    <p>Combine all ingredients, except the sparkling wine, and stir with ice. Add agave syrup until it is a bit less bitter. Strain into a coupe, top with sparkling wine and enjoy.</p>
+-
   slug: dutchandstormy
   name: Dutch and Stormy
   date: 2016-06-24
