@@ -492,6 +492,23 @@
     </ul>
     <p>Combine all ingredients into a cocktail shaker. Fill with ice and shake vigorously. Pour over ice and serve.</p>
 -
+  slug: lumpyspacepumpkin
+  name: LSP (Lumpy Space Pumpkin)
+  date: 2017-11-17
+  glass: lumpyspacepumpkin
+  contents: misc_lowball
+  author: shannon
+  rating: 3
+  html: |
+    <p>Thanksgiving is approaching and it is getting colder and colder here in Amsterdam. A great excuse to mix a cocktail that you can munch on, we got to keep the calorie count high and our stomachs happy. Who would say that the pumpkin puree is so delicious, or is it the bourbon? Who cares! After drinking/eating this we all went home happy. </p>
+    <ul>
+      <li>2 parts bourbon</li>
+      <li>2 parts ginger beer</li>
+      <li>1 part pumpkin mixture</li>
+    </ul>
+    <p>To make the pumpkin pie mixture, mix the pumpkin purée, the apple juice, and some ginger, cardamum, cinnamon, and nutmeg till you are satisfied with the taste, let it cool down for a while. Then, drop a spoonful into the bottom of a glass. Pour the bourbon and the ginger beer, and top off with ice. </p>
+    <p>After this experiment we definitely recommend blending the pumpkin mixture so the drink is all drink and not part of the snack. </p>
+-
   slug: mandarinmule
   name: Mandarin Mule
   date: 2016-11-25
