@@ -1,0 +1,272 @@
+@import "../../../stylesheets/_artificial-colors.scss";
+
+
+.travelguide {
+  h1, h2, h3 { text-transform: uppercase; }
+
+  h1 {
+    line-height: 1.2em;
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2.4em;
+    letter-spacing: .5em;
+    padding-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 1.0em;
+    padding-bottom: 10px;
+  }
+
+  .summary p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+
+  .feature {
+    height: 600px;
+  }
+
+}
+
+.bleed.illustrations {
+  background-image: url("../images/intro_bg.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.gidtroduction {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  p {
+    font-size: 1.0em;
+    font-weight: 500;
+  }
+}
+
+.bleed.cool-grey-80 {
+  background-color: $cool-grey-80;
+  color: $white;
+}
+
+.toc {
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  .citytoc {
+    text-align: center;
+
+    h2 {
+      font-size: 1.2em;
+      letter-spacing: 0em;
+      padding-bottom: 0px;
+    }
+
+    .name {
+      padding-top: 10px;
+    }
+
+    a { color: $cool-grey-90; }
+    a:hover { color: $turquoise; }
+  }
+}
+
+.neighborhood, .seedo, .onething, .fooddrink {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.foursquare {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  p {
+    font-size: 1.0em;
+  }
+
+  a {
+  text-align: center;
+  color: $white;
+  }
+}
+
+.travelguide_amsterdam {
+  .bleed.cover {
+    background-image: url("../images/amsterdam_cover.png");
+    height: 400px;
+
+    h1, h3 {
+      color: $darkest-turquoise;
+      letter-spacing: .5em;
+    }
+
+    h1 {
+      padding-top: 120px;
+      padding-bottom: 20px;
+    }
+  }
+  .bleed.feature {
+    background-image: url("../images/amsterdam_feature.png");
+  }
+}
+
+.travelguide_gdansk {
+  .bleed.cover {
+    background-image: url("../images/gdansk_cover.png");
+    height: 400px;
+
+    h1, h3 {
+      color: $dark-sapphire;
+      letter-spacing: .5em;
+    }
+
+    h1 {
+      padding-top: 120px;
+      padding-bottom: 20px;
+    }
+  }
+  .bleed.feature {
+    background-image: url("../images/gdansk_feature.png");
+  }
+}
+
+.travelguide_losangeles {
+  .bleed.cover {
+    background-image: url("../images/la_cover.png");
+    height: 400px;
+
+    h1, h3 {
+      color: $lime;
+      letter-spacing: .5em;
+    }
+
+    h1 {
+      padding-top: 120px;
+      padding-bottom: 20px;
+    }
+  }
+  .bleed.feature {
+    background-image: url("../images/la_feature.png");
+  }
+}
+
+.travelguide_mexicocity {
+  .bleed.cover {
+    background-image: url("../images/mexicocity_cover.png");
+    height: 400px;
+
+    h1, h3 {
+      color: $dark-tulip;
+      letter-spacing: .5em;
+    }
+
+    h1 {
+      padding-top: 120px;
+      padding-bottom: 20px;
+    }
+  }
+  .bleed.feature {
+    background-image: url("../images/mexicocity_feature.png");
+  }
+}
+
+.travelguide_mumbai {
+  .bleed.cover {
+    background-image: url("../images/mumbai_cover.png");
+    height: 400px;
+
+    h1, h3 {
+      color: $pale-dandelion;
+      letter-spacing: .5em;
+    }
+
+    h1 {
+      padding-top: 120px;
+      padding-bottom: 20px;
+    }
+  }
+  .bleed.feature {
+    background-image: url("../images/mumbai_feature.png");
+  }
+}
+
+.travelguide_saintlouis {
+  .bleed.cover {
+    background-image: url("../images/stlouis_cover.png");
+    height: 400px;
+
+    h1, h3 {
+      color: $pumpkin;
+      letter-spacing: .5em;
+    }
+
+    h1 {
+      padding-top: 120px;
+      padding-bottom: 20px;
+    }
+  }
+  .bleed.feature {
+    background-image: url("../images/stlouis_feature.png");
+  }
+}
+
+.travelguide_seattle {
+  .bleed.cover {
+    background-image: url("../images/seattle_cover.png");
+    height: 400px;
+
+    h1, h3 {
+      color: $darkest-grape;
+      letter-spacing: .5em;
+    }
+
+    h1 {
+      padding-top: 120px;
+      padding-bottom: 20px;
+    }
+  }
+  .bleed.feature {
+    background-image: url("../images/seattle_feature.png");
+  }
+}
+
+.travelguide_shanghai {
+  .bleed.cover {
+    background-image: url("../images/shanghai_cover.png");
+    height: 400px;
+
+    h1, h3 {
+      color: $darkest-grass;
+      letter-spacing: .5em;
+    }
+
+    h1 {
+      padding-top: 120px;
+      padding-bottom: 20px;
+    }
+  }
+  .bleed.feature {
+    background-image: url("../images/shanghai_feature.png");
+  }
+}
+
+.bleed.dark-turquoise, .bleed.dark-pumpkin, .bleed.dark-dandelion, .bleed.dark-sapphire, .bleed.dark-grass, .bleed.dark-tulip, .bleed.dark-lime, .bleed.dark-grape { color: $white; }
+
+.bleed.dark-turquoise { background-color: $dark-turquoise;}
+.bleed.dark-grass { background-color: $dark-grass; }
+.bleed.dark-lime { background-color: $darkest-lime; }
+.bleed.dark-dandelion { background-color: $dark-dandelion; }
+.bleed.dark-pumpkin { background-color: $dark-pumpkin; }
+.bleed.dark-tulip { background-color: $dark-tulip; }
+.bleed.dark-grape { background-color: $dark-grape; }
+.bleed.dark-sapphire { background-color: $dark-sapphire; }
+
+.bleed.pale-lime { background-color: $pale-lime; }
+
+h2.turquoise-text { color: $turquoise; }
+h2.grass-text { color: $grass; }
+h2.pumpkin-text { color: $pumpkin; }
+h2.tulip-text { color: $tulip; }
+h2.sapphire-text { color: $sapphire; }
