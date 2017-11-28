@@ -1,0 +1,70 @@
+---
+name: Memrise
+date: 2017-11-28
+author: [shannon, natalia]
+subtitle: "Navigating a New Language"
+thumbnail: fixed-01.png
+---
+<%= partial 'fix_header' %>
+<div class="bleed dark">
+  <div class="flex container before">
+    <div class="col-3">
+      <div class="padded">
+        <h2>Before</h2>
+        <p>Memrise is probably our favorite language learning app for the lessons, but as soon as we go to navigate, we find ourselves disappointed. So we fixed the navigation to keep the focus on learning and less on all the other stuff.</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="partially-padded">
+        <img src="images/memrise-navigation/original-01.png" alt="Memrise Home">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="partially-padded">
+        <img src="images/memrise-navigation/original-02.png" alt="Memrise Profile">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="partially-padded">
+        <img src="images/memrise-navigation/original-03.png" alt="Memrise Leaderboards">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bleed white">
+  <div class="flex container after">
+    <div class="col-12">
+      <div class="padded">
+        <h2>After</h2>
+        <p>To start, we identified a handful of problems that bothered us most when using Memrise.</p>
+        <p>The different types of learning feel hidden, and the types of learning you can do on the web version of Memrise don't map to the types of learning you can do within the app. Meanwhile, the primary navigation feels committed to a lot of things that aren't learning, including one tab that serves only as an ad for the Pro version. Replacing the tab bar with a more learning-focused version of the same thing was where we began.</p>
+        <p>Of course this introduced new problems. Where should the profile live? The profile was the second pain point of our experience – with pieces of the profile living scattered throughout the experience. We lumped all of the profile pieces together into a tray to the left of the main learning experience. Here the user can see all of her stats and languages in one place.</p>
+        <p>The leaderboards were similar to the profile in that the were scattered throughout the experience. Our solution was to place all leaderboards in a tray to the right of the main learning experience, creating a nice symmetry with the profile to the left.</p>
+      </div>
+    </div>
+    <div class="flex container">
+      <div class="col-12">
+        <div class="partially-padded">
+          <img src="images/memrise-navigation/flat-spatial-metaphor.png" alt="Memrise Navigation">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="bleed lightest-grey">
+  <div class="flex container etc">
+    <div class="col-12">
+      <div class="padded">
+        <h3>Additional notes</h3>
+        <p>Beyond simple navigation, we wanted to improve the learning experience as well. In the current experience, each language is broken into chapters and levels. Competitions and progress are specific to chapters. We decided to make the chapters less discrete, focusing instead on the user's overall progress.</p>
+        <p>This manifests in the UI in the left-side planetary visualization which in our design would allow the user to navigate between chapters. The visualization would also get an upgrade, showing progress along with current chapter. The user could scroll between chapters (currently impossible), and the visualization would update to provide a sense of place.</p>
+        <p>The seemless chapters would also be apparent in the leaderboards, where a user's overall progress across chapters would be used towards her competitive score.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= partial 'fix_footer' %>
