@@ -1,8 +1,8 @@
 ---
 title: 'Creating The Artificial Travel Guide'
 category: process
-tags: 'holiday, book, print, design'
-author: [shannon]
+tags: holiday, book, print, design
+author: shannon
 published: true
 masthead: 11-28-holiday-gids/masthead.png
 preview: 11-28-holiday-gids/preview.png
@@ -30,4 +30,4 @@ From this view of everything, we could be sure to balance overall use of color, 
 
 ![Spreads](11-28-holiday-gids/spreads.png)
 
-The guide is a limited edition, but we don't want anyone to miss out. If you want to get our travel tips, visit our lists on [Foursquare] ().
+The guide is a limited edition, but we don't want anyone to miss out. If you want to get our travel tips, visit [our lists on Foursquare](https://foursquare.com/veryartificial?all=lists).
