@@ -3,7 +3,6 @@ title: 'Creating The Artificial Travel Guide'
 category: process
 tags: holiday, book, print, design
 author: shannon
-published: true
 masthead: 11-28-holiday-gids/masthead.png
 preview: 11-28-holiday-gids/preview.png
 ---
