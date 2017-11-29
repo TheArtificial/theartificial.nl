@@ -1,34 +1,70 @@
 @import "../../../stylesheets/_artificial-colors.scss";
 
-
 .travelguide {
-  h1, h2, h3 { text-transform: uppercase; }
+  @media only screen and (min-device-width: 320px) {
+    h1, h2, h3 { text-transform: uppercase; }
 
-  h1 {
-    line-height: 1.2em;
-    font-size: 4em;
+    h1 {
+      padding-top: 64px;
+      padding-bottom: 8px;
+
+      line-height: 1.2em;
+      font-size: 2em;
+      letter-spacing: .2em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      letter-spacing: .2em;
+      padding-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 1.0em;
+      padding-bottom: 10px;
+    }
+
+    .summary p {
+      font-size: 1.2em;
+      line-height: 1.2em;
+    }
+
+    .cover { height: 200px; }
+    .feature { height: 200px; }
   }
 
-  h2 {
-    font-size: 2.4em;
-    letter-spacing: .5em;
-    padding-bottom: 20px;
-  }
+  @media only screen and (min-device-width: 768px) {
 
-  h3 {
-    font-size: 1.0em;
-    padding-bottom: 10px;
-  }
+    h1, h2, h3 { text-transform: uppercase; }
 
-  .summary p {
-    font-size: 1.2em;
-    line-height: 1.2em;
-  }
+    h1 {
+      padding-top: 120px;
+      padding-bottom: 20px;
 
-  .feature {
-    height: 600px;
-  }
+      line-height: 1.2em;
+      font-size: 4em;
+      letter-spacing: .5em;
+    }
 
+    h2 {
+      font-size: 2.4em;
+      letter-spacing: .5em;
+      padding-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 1.0em;
+      padding-bottom: 10px;
+    }
+
+    .summary p {
+      font-size: 1.2em;
+      line-height: 1.2em;
+    }
+
+    .cover { height: 400px; }
+    .feature { height: 600px; }
+  }
 }
 
 .bleed.illustrations {
@@ -40,15 +76,11 @@
 .gidtroduction {
   padding-top: 40px;
   padding-bottom: 40px;
+
   p {
     font-size: 1.0em;
     font-weight: 500;
   }
-}
-
-.bleed.cool-grey-80 {
-  background-color: $cool-grey-80;
-  color: $white;
 }
 
 .toc {
@@ -73,186 +105,113 @@
   }
 }
 
-.neighborhood, .seedo, .onething, .fooddrink {
+#subnav {
+  background-color: $cool-grey-90;
+  overflow: auto;
+
+  .container {
+    ul {
+      padding: 0;
+
+      li {
+        float: left;
+        margin-right: 24px;
+        padding-bottom: 16px;
+        text-transform: uppercase;
+
+        a { color: $white; }
+        a:hover { color: $cool-grey-20 }
+
+      }
+    }
+  }
+}
+
+#neighborhood, #seedo, #onething, #fooddrink {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.foursquare {
+#foursquare {
   padding-top: 20px;
   padding-bottom: 20px;
 
-  p {
-    font-size: 1.0em;
-  }
+  p { font-size: 1.0em; }
 
   a {
   text-align: center;
   color: $white;
   }
+
+  a:hover { color: $cool-grey-20; }
+
 }
 
 .travelguide_amsterdam {
   .bleed.cover {
     background-image: url("../images/amsterdam_cover.png");
-    height: 400px;
-
-    h1, h3 {
-      color: $darkest-turquoise;
-      letter-spacing: .5em;
-    }
-
-    h1 {
-      padding-top: 120px;
-      padding-bottom: 20px;
-    }
+    h1, h3 { color: $darkest-turquoise; }
   }
-  .bleed.feature {
-    background-image: url("../images/amsterdam_feature.png");
-  }
+  .bleed.feature { background-image: url("../images/amsterdam_feature.png"); }
 }
 
 .travelguide_gdansk {
   .bleed.cover {
     background-image: url("../images/gdansk_cover.png");
-    height: 400px;
-
-    h1, h3 {
-      color: $dark-sapphire;
-      letter-spacing: .5em;
-    }
-
-    h1 {
-      padding-top: 120px;
-      padding-bottom: 20px;
-    }
+    h1, h3 { color: $dark-sapphire; }
   }
-  .bleed.feature {
-    background-image: url("../images/gdansk_feature.png");
-  }
+  .bleed.feature { background-image: url("../images/gdansk_feature.png"); }
 }
 
 .travelguide_losangeles {
   .bleed.cover {
     background-image: url("../images/la_cover.png");
-    height: 400px;
-
-    h1, h3 {
-      color: $lime;
-      letter-spacing: .5em;
-    }
-
-    h1 {
-      padding-top: 120px;
-      padding-bottom: 20px;
-    }
+    h1, h3 { color: $lime; }
   }
-  .bleed.feature {
-    background-image: url("../images/la_feature.png");
-  }
+  .bleed.feature { background-image: url("../images/la_feature.png"); }
 }
 
 .travelguide_mexicocity {
   .bleed.cover {
     background-image: url("../images/mexicocity_cover.png");
-    height: 400px;
-
-    h1, h3 {
-      color: $dark-tulip;
-      letter-spacing: .5em;
-    }
-
-    h1 {
-      padding-top: 120px;
-      padding-bottom: 20px;
-    }
+    h1, h3 { color: $dark-tulip; }
   }
-  .bleed.feature {
-    background-image: url("../images/mexicocity_feature.png");
-  }
+  .bleed.feature { background-image: url("../images/mexicocity_feature.png"); }
 }
 
 .travelguide_mumbai {
   .bleed.cover {
     background-image: url("../images/mumbai_cover.png");
-    height: 400px;
-
-    h1, h3 {
-      color: $pale-dandelion;
-      letter-spacing: .5em;
-    }
-
-    h1 {
-      padding-top: 120px;
-      padding-bottom: 20px;
-    }
+    h1, h3 { color: $pale-dandelion; }
   }
-  .bleed.feature {
-    background-image: url("../images/mumbai_feature.png");
-  }
+  .bleed.feature { background-image: url("../images/mumbai_feature.png"); }
 }
 
 .travelguide_saintlouis {
   .bleed.cover {
     background-image: url("../images/stlouis_cover.png");
-    height: 400px;
-
-    h1, h3 {
-      color: $pumpkin;
-      letter-spacing: .5em;
-    }
-
-    h1 {
-      padding-top: 120px;
-      padding-bottom: 20px;
-    }
+    h1, h3 { color: $pumpkin; }
   }
-  .bleed.feature {
-    background-image: url("../images/stlouis_feature.png");
-  }
+  .bleed.feature { background-image: url("../images/stlouis_feature.png"); }
 }
 
 .travelguide_seattle {
   .bleed.cover {
     background-image: url("../images/seattle_cover.png");
-    height: 400px;
-
-    h1, h3 {
-      color: $darkest-grape;
-      letter-spacing: .5em;
-    }
-
-    h1 {
-      padding-top: 120px;
-      padding-bottom: 20px;
-    }
+    h1, h3 { color: $darkest-grape; }
   }
-  .bleed.feature {
-    background-image: url("../images/seattle_feature.png");
-  }
+  .bleed.feature { background-image: url("../images/seattle_feature.png"); }
 }
 
 .travelguide_shanghai {
   .bleed.cover {
     background-image: url("../images/shanghai_cover.png");
-    height: 400px;
-
-    h1, h3 {
-      color: $darkest-grass;
-      letter-spacing: .5em;
-    }
-
-    h1 {
-      padding-top: 120px;
-      padding-bottom: 20px;
-    }
+    h1, h3 { color: $darkest-grass; }
   }
-  .bleed.feature {
-    background-image: url("../images/shanghai_feature.png");
-  }
+  .bleed.feature { background-image: url("../images/shanghai_feature.png"); }
 }
 
-.bleed.dark-turquoise, .bleed.dark-pumpkin, .bleed.dark-dandelion, .bleed.dark-sapphire, .bleed.dark-grass, .bleed.dark-tulip, .bleed.dark-lime, .bleed.dark-grape { color: $white; }
+.bleed.dark-turquoise, .bleed.dark-pumpkin, .bleed.dark-dandelion, .bleed.dark-sapphire, .bleed.dark-grass, .bleed.dark-tulip, .bleed.dark-lime, .bleed.dark-grape, .bleed.cool-grey-80 { color: $white; }
 
 .bleed.dark-turquoise { background-color: $dark-turquoise;}
 .bleed.dark-grass { background-color: $dark-grass; }
@@ -262,6 +221,7 @@
 .bleed.dark-tulip { background-color: $dark-tulip; }
 .bleed.dark-grape { background-color: $dark-grape; }
 .bleed.dark-sapphire { background-color: $dark-sapphire; }
+.bleed.cool-grey-80 { background-color: $cool-grey-80; }
 
 .bleed.pale-lime { background-color: $pale-lime; }
 
