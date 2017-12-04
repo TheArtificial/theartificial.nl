@@ -406,6 +406,25 @@
     .5 parts chai butter</p><br>
     <p>To make chai butter, mix 5 parts brown sugar with approximately 1 part cinnamon, ginger, nutmeg and cardamom each. Mash together with equal parts butter. Drop a spoonful into the bottom of a mug and pour spiced rum with hot water over it and stir.</p>
 -
+  slug: hotornot
+  name: Hot or Not
+  date: 2017-11-23
+  glass: hotornot
+  contents: miscwhiskey_mug
+  author: natalia
+  rating: 3
+  html: |
+    <p>Our favorite (food) holiday arrived! It is part of the studio culture to celebrate Thanksgiving together, and for this each one of us cooks something that goes well with the season and we put together a feast to share with some lucky clients and friends.</p>
+    <p>Normally to pair with our delicious food we prepare Sangria but we find it quite heavy, so this year we decided to save the space for more food and replaced it with a warm and “digestive” drink.</p> 
+    <ul>
+      <li>2 parts Thanksgiving juice</li>
+      <li>1 part whisky or mezcal</li>
+      <li>apple juice</li>
+      <li>spices</li>
+      <li>a dash of mole bitters</li>
+    </ul>
+    <p>To make the Thanksgiving juice, heat the apple juice and mix it with spices (nutmeg, cinnamon, ginger, cardamom, and whatever else you see fit). Pour some whisky or mezcal in a mug and top it off with the warm and tasty juice. Be careful, a few of us got fooled by the hidden booze!</p>
+-
   slug: justpeachy
   name: Just Peachy
   date: 2016-02-26
@@ -484,7 +503,7 @@
   author: kamila
   rating: 4
   html: |
-    <p>A classic simple Lemon Drop. Serve with an extra shot of vodka on the side, if you're lucky enough to have some smooth <a href="https://en.wikipedia.org/wiki/Wódka_Żołądkowa_Gorzka" target="blank">Polish vodka</a> handy. </p>
+    <p>A classic simple Lemon Drop. Serve with an extra shot of vodka on the side, if you're lucky enough to have some smooth <a href="https://en.wikipedia.org/wiki/Wódka_Żołądkowa_Gorzka" target="blank">Polish vodka</a> handy.</p>
     <ul>
       <li>2 parts vodka</li>
       <li>2 parts lemon juice</li>
