@@ -1,9 +1,8 @@
 ---
 title: 'Hand-Drawn Icons Tutorial'
 category: process
-tags: 'tutorial, icons, iconography, sketch, hand-drawn'
+tags: tutorial, icons, iconography, sketch, hand-drawn
 author: shannon
-published: true
 masthead: 06-26-hand-drawn/Masthead.png
 preview: 06-26-hand-drawn/Preview.png
 ---

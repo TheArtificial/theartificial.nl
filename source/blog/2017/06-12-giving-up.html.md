@@ -1,9 +1,8 @@
 ---
 title: 'Making Good Hiring Decisions'
 category: thoughts
-tags: 'culture, management, company'
+tags: culture, management, company
 author: shannon
-published: true
 ---
 
 

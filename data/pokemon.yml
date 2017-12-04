@@ -1,0 +1,1164 @@
+-
+  number: "001"
+  name: bulbasaur
+-
+  number: "002"
+  name: ivysaur
+-
+  number: "003"
+  name: venusaur
+-
+  number: "004"
+  name: charmander
+-
+  number: "005"
+  name: charmeleon
+-
+  number: "006"
+  name: charizard
+-
+  number: "007"
+  name: squirtle
+-
+  number: "008"
+  name: wartortle
+-
+  number: "009"
+  name: blastoise
+-
+  number: "010"
+  name: caterpie
+-
+  number: "011"
+  name: metapod
+-
+  number: "012"
+  name: butterfree
+-
+  number: "013"
+  name: weedle
+-
+  number: "014"
+  name: kakuna
+-
+  number: "015"
+  name: beedrill
+-
+  number: "016"
+  name: pidgey
+-
+  number: "017"
+  name: pidgeotto
+-
+  number: "018"
+  name: pidgeot
+-
+  number: "019"
+  name: rattata
+-
+  number: "020"
+  name: raticate
+-
+  number: "021"
+  name: spearow
+-
+  number: "022"
+  name: fearow
+-
+  number: "023"
+  name: ekans
+-
+  number: "024"
+  name: arbok
+-
+  number: "025"
+  name: pikachu
+-
+  number: "026"
+  name: raichu
+-
+  number: "027"
+  name: sandshrew
+-
+  number: "028"
+  name: sandslash
+-
+  number: "029"
+  name: nidoran-f
+-
+  number: "030"
+  name: nidorina
+-
+  number: "031"
+  name: nidoqueen
+-
+  number: "032"
+  name: nidoran-m
+-
+  number: "033"
+  name: nidorino
+-
+  number: "034"
+  name: nidoking
+-
+  number: "035"
+  name: clefairy
+-
+  number: "036"
+  name: clefable
+-
+  number: "037"
+  name: vulpix
+-
+  number: "038"
+  name: ninetales
+-
+  number: "039"
+  name: jigglypuff
+-
+  number: "040"
+  name: wigglytuff
+-
+  number: "041"
+  name: zubat
+-
+  number: "042"
+  name: golbat
+-
+  number: "043"
+  name: oddish
+-
+  number: "044"
+  name: gloom
+-
+  number: "045"
+  name: vileplume
+-
+  number: "046"
+  name: paras
+-
+  number: "047"
+  name: parasect
+-
+  number: "048"
+  name: venonat
+-
+  number: "049"
+  name: venomoth
+-
+  number: "050"
+  name: diglett
+-
+  number: "051"
+  name: dugtrio
+-
+  number: "052"
+  name: meowth
+-
+  number: "053"
+  name: persian
+-
+  number: "054"
+  name: psyduck
+-
+  number: "055"
+  name: golduck
+-
+  number: "056"
+  name: mankey
+-
+  number: "057"
+  name: primeape
+-
+  number: "058"
+  name: growlithe
+-
+  number: "059"
+  name: arcanine
+-
+  number: "060"
+  name: poliwag
+-
+  number: "061"
+  name: poliwhirl
+-
+  number: "062"
+  name: poliwrath
+-
+  number: "063"
+  name: abra
+-
+  number: "064"
+  name: kadabra
+-
+  number: "065"
+  name: alakazam
+-
+  number: "066"
+  name: machop
+-
+  number: "067"
+  name: machoke
+-
+  number: "068"
+  name: machamp
+-
+  number: "069"
+  name: bellsprout
+-
+  number: "070"
+  name: weepinbell
+-
+  number: "071"
+  name: victreebel
+-
+  number: "072"
+  name: tentacool
+-
+  number: "073"
+  name: tentacruel
+-
+  number: "074"
+  name: geodude
+-
+  number: "075"
+  name: graveler
+-
+  number: "076"
+  name: golem
+-
+  number: "077"
+  name: ponyta
+-
+  number: "078"
+  name: rapidash
+-
+  number: "079"
+  name: slowpoke
+-
+  number: "080"
+  name: slowbro
+-
+  number: "081"
+  name: magnemite
+-
+  number: "082"
+  name: magneton
+-
+  number: "083"
+  name: farfetchd
+-
+  number: "084"
+  name: doduo
+-
+  number: "085"
+  name: dodrio
+-
+  number: "086"
+  name: seel
+-
+  number: "087"
+  name: dewgong
+-
+  number: "088"
+  name: grimer
+-
+  number: "089"
+  name: muk
+-
+  number: "090"
+  name: shellder
+-
+  number: "091"
+  name: cloyster
+-
+  number: "092"
+  name: gastly
+-
+  number: "093"
+  name: haunter
+-
+  number: "094"
+  name: gengar
+-
+  number: "095"
+  name: onix
+-
+  number: "096"
+  name: drowzee
+-
+  number: "097"
+  name: hypno
+-
+  number: "098"
+  name: krabby
+-
+  number: "099"
+  name: kingler
+-
+  number: "100"
+  name: voltorb
+-
+  number: "101"
+  name: electrode
+-
+  number: "102"
+  name: exeggcute
+-
+  number: "103"
+  name: exeggutor
+-
+  number: "104"
+  name: cubone
+-
+  number: "105"
+  name: marowak
+-
+  number: "106"
+  name: hitmonlee
+-
+  number: "107"
+  name: hitmonchan
+-
+  number: "108"
+  name: lickitung
+-
+  number: "109"
+  name: koffing
+-
+  number: "110"
+  name: weezing
+-
+  number: "111"
+  name: rhyhorn
+-
+  number: "112"
+  name: rhydon
+-
+  number: "113"
+  name: chansey
+-
+  number: "114"
+  name: tangela
+-
+  number: "115"
+  name: kangaskhan
+-
+  number: "116"
+  name: horsea
+-
+  number: "117"
+  name: seadra
+-
+  number: "118"
+  name: goldeen
+-
+  number: "119"
+  name: seaking
+-
+  number: "120"
+  name: staryu
+-
+  number: "121"
+  name: starmie
+-
+  number: "122"
+  name: mrmime
+-
+  number: "123"
+  name: scyther
+-
+  number: "124"
+  name: jynx
+-
+  number: "125"
+  name: electabuzz
+-
+  number: "126"
+  name: magmar
+-
+  number: "127"
+  name: pinsir
+-
+  number: "128"
+  name: tauros
+-
+  number: "129"
+  name: magikarp-shiny
+-
+  number: "129"
+  name: magikarp
+-
+  number: "130"
+  name: gyarados-shiny
+-
+  number: "130"
+  name: gyarados
+-
+  number: "131"
+  name: lapras
+-
+  number: "132"
+  name: ditto
+-
+  number: "133"
+  name: eevee
+-
+  number: "134"
+  name: vaporeon
+-
+  number: "135"
+  name: jolteon
+-
+  number: "136"
+  name: flareon
+-
+  number: "137"
+  name: porygon
+-
+  number: "138"
+  name: omanyte
+-
+  number: "139"
+  name: omastar
+-
+  number: "140"
+  name: kabuto
+-
+  number: "141"
+  name: kabutops
+-
+  number: "142"
+  name: aerodactyl
+-
+  number: "143"
+  name: snorlax
+-
+  number: "144"
+  name: articuno
+-
+  number: "145"
+  name: zapdos
+-
+  number: "146"
+  name: moltres
+-
+  number: "147"
+  name: dratini
+-
+  number: "148"
+  name: dragonair
+-
+  number: "149"
+  name: dragonite
+-
+  number: "150"
+  name: mewtwo
+-
+  number: "151"
+  name: mew
+-
+  number: "152"
+  name: chikorita
+-
+  number: "153"
+  name: bayleef
+-
+  number: "154"
+  name: meganium
+-
+  number: "155"
+  name: cyndaquil
+-
+  number: "156"
+  name: quilava
+-
+  number: "157"
+  name: typhlosion
+-
+  number: "158"
+  name: totodile
+-
+  number: "159"
+  name: croconaw
+-
+  number: "160"
+  name: feraligatr
+-
+  number: "161"
+  name: sentret
+-
+  number: "162"
+  name: furret
+-
+  number: "163"
+  name: hoothoot
+-
+  number: "164"
+  name: noctowl
+-
+  number: "165"
+  name: ledyba
+-
+  number: "166"
+  name: ledian
+-
+  number: "167"
+  name: spinarak
+-
+  number: "168"
+  name: ariados
+-
+  number: "169"
+  name: crobat
+-
+  number: "170"
+  name: chinchou
+-
+  number: "171"
+  name: lanturn
+-
+  number: "172"
+  name: pichu
+-
+  number: "173"
+  name: cleffa
+-
+  number: "174"
+  name: igglybuff
+-
+  number: "175"
+  name: togepi
+-
+  number: "176"
+  name: togetic
+-
+  number: "177"
+  name: natu
+-
+  number: "178"
+  name: xatu
+-
+  number: "179"
+  name: mareep
+-
+  number: "180"
+  name: flaaffy
+-
+  number: "181"
+  name: ampharos
+-
+  number: "182"
+  name: bellossom
+-
+  number: "183"
+  name: marill
+-
+  number: "184"
+  name: azumarill
+-
+  number: "185"
+  name: sudowoodo
+-
+  number: "186"
+  name: politoed
+-
+  number: "187"
+  name: hoppip
+-
+  number: "188"
+  name: skiploom
+-
+  number: "189"
+  name: jumpluff
+-
+  number: "190"
+  name: aipom
+-
+  number: "191"
+  name: sunkern
+-
+  number: "192"
+  name: sunflora
+-
+  number: "193"
+  name: yanma
+-
+  number: "194"
+  name: wooper
+-
+  number: "195"
+  name: quagsire
+-
+  number: "196"
+  name: espeon
+-
+  number: "197"
+  name: umbreon
+-
+  number: "198"
+  name: murkrow
+-
+  number: "199"
+  name: slowking
+-
+  number: "200"
+  name: misdreavus
+-
+  number: "201"
+  name: unown
+-
+  number: "202"
+  name: wobbuffet
+-
+  number: "203"
+  name: girafarig
+-
+  number: "204"
+  name: pineco
+-
+  number: "205"
+  name: forretress
+-
+  number: "206"
+  name: dunsparce
+-
+  number: "207"
+  name: gligar
+-
+  number: "208"
+  name: steelix
+-
+  number: "209"
+  name: snubbull
+-
+  number: "210"
+  name: granbull
+-
+  number: "211"
+  name: qwilfish
+-
+  number: "212"
+  name: scizor
+-
+  number: "213"
+  name: shuckle
+-
+  number: "214"
+  name: heracross
+-
+  number: "215"
+  name: sneasel
+-
+  number: "216"
+  name: teddiursa
+-
+  number: "217"
+  name: ursaring
+-
+  number: "218"
+  name: slugma
+-
+  number: "219"
+  name: magcargo
+-
+  number: "220"
+  name: swinub
+-
+  number: "221"
+  name: piloswine
+-
+  number: "222"
+  name: corsola
+-
+  number: "223"
+  name: remoraid
+-
+  number: "224"
+  name: octillery
+-
+  number: "225"
+  name: delibird
+-
+  number: "226"
+  name: mantine
+-
+  number: "227"
+  name: skarmory
+-
+  number: "228"
+  name: houndour
+-
+  number: "229"
+  name: houndoom
+-
+  number: "230"
+  name: kingdra
+-
+  number: "231"
+  name: phanpy
+-
+  number: "232"
+  name: donphan
+-
+  number: "233"
+  name: porygon2
+-
+  number: "234"
+  name: stantler
+-
+  number: "235"
+  name: smeargle
+-
+  number: "236"
+  name: tyrogue
+-
+  number: "237"
+  name: hitmontop
+-
+  number: "238"
+  name: smoochum
+-
+  number: "239"
+  name: elekid
+-
+  number: "240"
+  name: magby
+-
+  number: "241"
+  name: miltank
+-
+  number: "242"
+  name: blissey
+-
+  number: "243"
+  name: raikou
+-
+  number: "244"
+  name: entei
+-
+  number: "245"
+  name: suicune
+-
+  number: "246"
+  name: larvitar
+-
+  number: "247"
+  name: pupitar
+-
+  number: "248"
+  name: tyranitar
+-
+  number: "249"
+  name: lugia
+-
+  number: "250"
+  name: ho-oh
+-
+  number: "251"
+  name: celebi
+-
+  number: "252"
+  name: treecko
+-
+  number: "253"
+  name: grovyle
+-
+  number: "254"
+  name: sceptille
+-
+  number: "255"
+  name: torchic
+-
+  number: "256"
+  name: combusken
+-
+  number: "257"
+  name: blaziken
+-
+  number: "258"
+  name: mudkip
+-
+  number: "259"
+  name: marshtomp
+-
+  number: "260"
+  name: swampert
+-
+  number: "261"
+  name: poochyena
+-
+  number: "262"
+  name: mightyena
+-
+  number: "263"
+  name: zigzagoon
+-
+  number: "264"
+  name: linoone
+-
+  number: "265"
+  name: wurmple
+-
+  number: "266"
+  name: silcoon
+-
+  number: "267"
+  name: beautifly
+-
+  number: "268"
+  name: cascoon
+-
+  number: "269"
+  name: dustox
+-
+  number: "270"
+  name: lotad
+-
+  number: "271"
+  name: lombre
+-
+  number: "272"
+  name: ludicolo
+-
+  number: "273"
+  name: seedot
+-
+  number: "274"
+  name: nuzleaf
+-
+  number: "275"
+  name: shiftry
+-
+  number: "276"
+  name: taillow
+-
+  number: "277"
+  name: swellow
+-
+  number: "278"
+  name: wingull
+-
+  number: "279"
+  name: pelipper
+-
+  number: "280"
+  name: ralts
+-
+  number: "281"
+  name: kirlia
+-
+  number: "282"
+  name: gardevoir
+-
+  number: "283"
+  name: surskit
+-
+  number: "284"
+  name: masquerain
+-
+  number: "285"
+  name: shroomish
+-
+  number: "286"
+  name: breloom
+-
+  number: "287"
+  name: slakoth
+-
+  number: "288"
+  name: vigoroth
+-
+  number: "289"
+  name: slaking
+-
+  number: "290"
+  name: nincada
+-
+  number: "291"
+  name: niniask
+-
+  number: "292"
+  name: shedinja
+-
+  number: "293"
+  name: whismur
+-
+  number: "294"
+  name: loudred
+-
+  number: "295"
+  name: exploud
+-
+  number: "296"
+  name: makuhita
+-
+  number: "297"
+  name: hariyama
+-
+  number: "298"
+  name: azurill
+-
+  number: "299"
+  name: nosepass
+-
+  number: "300"
+  name: skitty
+-
+  number: "301"
+  name: delcatty
+-
+  number: "302"
+  name: sableye
+-
+  number: "303"
+  name: mawile
+-
+  number: "304"
+  name: aron
+-
+  number: "305"
+  name: lairon
+-
+  number: "306"
+  name: aggron
+-
+  number: "307"
+  name: meditite
+-
+  number: "308"
+  name: medicham
+-
+  number: "309"
+  name: electrike
+-
+  number: "310"
+  name: manectric
+-
+  number: "311"
+  name: plusle
+-
+  number: "312"
+  name: minun
+-
+  number: "313"
+  name: volbeat
+-
+  number: "314"
+  name: illumise
+-
+  number: "315"
+  name: roselia
+-
+  number: "316"
+  name: gulpin
+-
+  number: "317"
+  name: swalot
+-
+  number: "318"
+  name: carvanha
+-
+  number: "319"
+  name: sharpedo
+-
+  number: "320"
+  name: wailmer
+-
+  number: "321"
+  name: wailord
+-
+  number: "322"
+  name: numel
+-
+  number: "323"
+  name: camerupt
+-
+  number: "324"
+  name: torkoal
+-
+  number: "325"
+  name: spoink
+-
+  number: "326"
+  name: grumpig
+-
+  number: "327"
+  name: spinda
+-
+  number: "328"
+  name: trapinch
+-
+  number: "329"
+  name: vibrava
+-
+  number: "330"
+  name: flygon
+-
+  number: "331"
+  name: cacnea
+-
+  number: "332"
+  name: cacturne
+-
+  number: "333"
+  name: swablu
+-
+  number: "334"
+  name: altaria
+-
+  number: "335"
+  name: zangoose
+-
+  number: "336"
+  name: seviper
+-
+  number: "337"
+  name: lunatone
+-
+  number: "338"
+  name: solrock
+-
+  number: "339"
+  name: barboach
+-
+  number: "340"
+  name: whiscash
+-
+  number: "341"
+  name: corphish
+-
+  number: "342"
+  name: crawdaunt
+-
+  number: "343"
+  name: baltov
+-
+  number: "344"
+  name: clavdol
+-
+  number: "345"
+  name: lileep
+-
+  number: "346"
+  name: cradily
+-
+  number: "347"
+  name: anorith
+-
+  number: "348"
+  name: armaldo
+-
+  number: "349"
+  name: feebas
+-
+  number: "350"
+  name: milotic
+-
+  number: "351"
+  name: castform
+-
+  number: "352"
+  name: kecleon
+-
+  number: "353"
+  name: shuppet
+-
+  number: "354"
+  name: banette
+-
+  number: "355"
+  name: duskull
+-
+  number: "356"
+  name: dusclops
+-
+  number: "357"
+  name: tropius
+-
+  number: "358"
+  name: chimecho
+-
+  number: "359"
+  name: absol
+-
+  number: "360"
+  name: wynaut
+-
+  number: "361"
+  name: snorunt
+-
+  number: "362"
+  name: glalie
+-
+  number: "363"
+  name: spheal
+-
+  number: "364"
+  name: sealeo
+-
+  number: "365"
+  name: walrein
+-
+  number: "366"
+  name: clamperl
+-
+  number: "367"
+  name: huntail
+-
+  number: "368"
+  name: gorebyss
+-
+  number: "369"
+  name: relicanth
+-
+  number: "370"
+  name: luvdisc
+-
+  number: "371"
+  name: bagon
+-
+  number: "372"
+  name: shelgon
+-
+  number: "373"
+  name: salamence
+-
+  number: "374"
+  name: beldum
+-
+  number: "375"
+  name: metang
+-
+  number: "376"
+  name: metagross
+-
+  number: "377"
+  name: regirock
+-
+  number: "378"
+  name: regice
+-
+  number: "379"
+  name: registeel
+-
+  number: "380"
+  name: latias
+-
+  number: "381"
+  name: latios
+-
+  number: "382"
+  name: kyogre
+-
+  number: "383"
+  name: groudon
+-
+  number: "384"
+  name: rayquaza
+-
+  number: "385"
+  name: lirachi
+-
+  number: "386"
+  name: deoxys

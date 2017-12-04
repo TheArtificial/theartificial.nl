@@ -1,7 +1,7 @@
 ---
 title: 'Join the Conversational Interface'
 category: process
-tags: 'UI, design, chatbot, AI, interface'
+tags: UI, design, chatbot, AI, interface
 author: shannon
 ---
 
