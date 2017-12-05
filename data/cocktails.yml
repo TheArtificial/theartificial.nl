@@ -415,7 +415,7 @@
   rating: 3
   html: |
     <p>Our favorite (food) holiday arrived! It is part of the studio culture to celebrate Thanksgiving together, and for this each one of us cooks something that goes well with the season and we put together a feast to share with some lucky clients and friends.</p>
-    <p>Normally to pair with our delicious food we prepare Sangria but we find it quite heavy, so this year we decided to save the space for more food and replaced it with a warm and “digestive” drink.</p> 
+    <p>Normally to pair with our delicious food we prepare Sangria but we find it quite heavy, so this year we decided to save the space for more food and replaced it with a warm and “digestive” drink.</p>
     <ul>
       <li>2 parts Thanksgiving juice</li>
       <li>1 part whisky or mezcal</li>
@@ -1252,6 +1252,24 @@
       <li>fresh limes</li>
     </ul>
     <p>Pour ingredients into a pitcher with ice. Chop watermelon and limes and mix well.</p>
+-
+  slug: winterbreak
+  name: Winter Break
+  date: 2017-12-01
+  glass: winterbreak
+  contents: rum_coppermug
+  author: Kamila
+  rating: 3
+  html:
+    <p>If you like traditional mojitos and <a href="http://theartificial.nl/cocktails/moscowmule.html" target="blank">Moscow mules</a>, you’ll love this drink. We decided to make it in the middle of cold, rainy Dutch autumn to help us forget about it and pretend like it is summer for a moment. Like some say, if you <a href="https://www.youtube.com/watch?v=Ys-KP8oPdvg" target="blank">don’t complain about the weather</a>in this country you'll never truly fit in.</p>
+    <ul>
+      <li>2 parts fresh lime juice</li>
+      <li>2 parts light rum</li>
+      <li>4 parts ginger beer</li>
+      <li>lime slices</li>
+      <li>mint leaves</li>
+    </ul>
+    <p>In a pitcher, mash some of the mint leaves and lime slices to make them more aromatic. Add the rest of the ingredients and stir well, top it off with some ice. Garnish with mint leaves and lime slices and serve.</p>
 -
   slug: wg
   name: "W&G"
