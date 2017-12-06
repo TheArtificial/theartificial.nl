@@ -4,25 +4,21 @@ body {
   height: 100%;
 }
 .ftfy {
-  background-color: $dark-grape;
-  background: linear-gradient(to right, $darkest-sapphire, $dark-grape, $dark-tulip);
+  background-color: $cool-grey-80;
 }
 
 .ftfy #header {
-  background-color: $darkest-sapphire;
-  .topbar {
-    border-bottom-color: $darkest-sapphire;
-  }
+  background-color: $cool-grey-90;
 }
 
 .ftfy #content {
 
-  h1, h2, h3 {
-    font-family: "Droid Serif", Georgia, Times, serif;
+  h1 {
+    font-family: "Noto Serif", Georgia, Times, serif;
   }
 
-  h4 {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  h2, h3, h4 {
+    font-family: "Barlow", Helvetica, Arial, sans-serif;
   }
 
   h1 {
@@ -44,6 +40,7 @@ body {
 
   h4 {
     font-size: 14px;
+    letter-spacing: 1px;
   }
 
   h1, h4 {
@@ -167,7 +164,7 @@ body {
   p {
     color: $pale-grape;
   }
-  
+
   .flex.container {
     border-top-color: $darkest-sapphire;
   }

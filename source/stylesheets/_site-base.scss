@@ -133,7 +133,12 @@ body {
 
 // card sizing for case studies and experiments
 @media only screen and (min-device-width: 320px) {
-	.case-study { min-height: 480px; }
+	.case-study {
+		min-height: 480px;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px
+	}
 	.experiment { height: 320px; }
 }
 @media only screen and (min-device-width: 768px) {
@@ -169,6 +174,8 @@ body {
 	background-color: $cool-grey-10;
 	color: $cool-grey-90;
 	text-align: center;
+
+	h2 { margin-bottom: 20px; }
 }
 
 svg *.frame { fill: $cool-grey-90; }
@@ -384,73 +391,67 @@ svg *.content{ fill: $cool-grey-40; }
 }
 
 // background colors
-.pale-turquoise { background-color: $pale-turquoise; }
-.pale-grass { background-color: $pale-grass; }
-.pale-dandelion { background-color: $pale-dandelion; }
-.pale-pumpkin { background-color: $pale-pumpkin; }
-.pale-tulip { background-color: $pale-tulip; }
-.pale-grape { background-color: $pale-grape; }
-.pale-sapphire { background-color: $pale-sapphire; }
 .grey-10 { background-color: $cool-grey-10; }
+
 
 // background gradients
 .turquoise-palegrass {
 	background-color: $turquoise;
 	background: linear-gradient(to bottom, $pale-grass, $turquoise);
-	.statement, .statement:hover { color: $white; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .sapphire-palegrape {
 	background-color: $sapphire;
 	background: linear-gradient(to bottom, $pale-grape, $sapphire);
-	.statement, .statement:hover { color: $white; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .sapphire-paleturquoise {
 	background-color: $sapphire;
 	background: linear-gradient(to bottom, $pale-turquoise, $sapphire);
-	.statement, .statement:hover { color: $white; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .grape-paletulip {
 	background-color: $grape;
 	background: linear-gradient(to bottom, $pale-tulip, $grape);
-	.statement, .statement:hover { color: $white; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 .grape-palesapphire {
 	background-color: $grape;
 	background: linear-gradient(to bottom, $pale-sapphire, $grape);
-	.statement, .statement:hover { color: $white; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .tulip-palepumpkin {
 	background-color: $tulip;
 	background: linear-gradient(to bottom, $pale-pumpkin, $tulip);
-	.statement, .statement:hover { color: $white; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .pumpkin-paledandelion {
 	background-color: $pumpkin;
 	background: linear-gradient(to bottom, $pale-dandelion, $pumpkin);
-	.statement, .statement:hover { color: $white; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .dandelion-paledandelion {
 	background-color: $dandelion;
 	background: linear-gradient(to bottom, $pale-dandelion, $dandelion);
-	.statement, .statement:hover { color: $white; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .grass-paleturquoise {
 	background-color: $grass;
 	background: linear-gradient(to bottom, $pale-turquoise, $grass);
-	.statement, .statement:hover { color: $white; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .grass-palelime {
 	background-color: $grass;
 	background: linear-gradient(to bottom, $pale-lime, $grass);
-	.statement, .statement:hover {	color: $white; }
+	.statement, .statement:hover, .label, .description {	color: $white; }
 }
 
 // text colors
