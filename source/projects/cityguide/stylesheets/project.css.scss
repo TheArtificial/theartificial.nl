@@ -1,6 +1,6 @@
 @import "../../../stylesheets/_artificial-colors.scss";
 
-.travelguide {
+.cityguide {
   @media only screen and (min-device-width: 320px) {
     h1, h2, h3 { text-transform: uppercase; }
 
@@ -132,7 +132,7 @@
   padding-bottom: 40px;
 }
 
-#foursquare {
+#explainer, #foursquare {
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -144,10 +144,15 @@
   }
 
   a:hover { color: $cool-grey-20; }
-
 }
 
-.travelguide_amsterdam {
+#explainer {
+  a {
+    text-decoration: underline;
+  }
+}
+
+.cityguide_amsterdam {
   .bleed.cover {
     background-image: url("../images/amsterdam_cover.png");
     h1, h3 { color: $darkest-turquoise; }
@@ -155,7 +160,7 @@
   .bleed.feature { background-image: url("../images/amsterdam_feature.png"); }
 }
 
-.travelguide_gdansk {
+.cityguide_gdansk {
   .bleed.cover {
     background-image: url("../images/gdansk_cover.png");
     h1, h3 { color: $dark-sapphire; }
@@ -163,7 +168,7 @@
   .bleed.feature { background-image: url("../images/gdansk_feature.png"); }
 }
 
-.travelguide_losangeles {
+.cityguide_losangeles {
   .bleed.cover {
     background-image: url("../images/la_cover.png");
     h1, h3 { color: $lime; }
@@ -171,7 +176,7 @@
   .bleed.feature { background-image: url("../images/la_feature.png"); }
 }
 
-.travelguide_mexicocity {
+.cityguide_mexicocity {
   .bleed.cover {
     background-image: url("../images/mexicocity_cover.png");
     h1, h3 { color: $dark-tulip; }
@@ -179,7 +184,7 @@
   .bleed.feature { background-image: url("../images/mexicocity_feature.png"); }
 }
 
-.travelguide_mumbai {
+.cityguide_mumbai {
   .bleed.cover {
     background-image: url("../images/mumbai_cover.png");
     h1, h3 { color: $pale-dandelion; }
@@ -187,7 +192,7 @@
   .bleed.feature { background-image: url("../images/mumbai_feature.png"); }
 }
 
-.travelguide_saintlouis {
+.cityguide_saintlouis {
   .bleed.cover {
     background-image: url("../images/stlouis_cover.png");
     h1, h3 { color: $pumpkin; }
@@ -195,7 +200,7 @@
   .bleed.feature { background-image: url("../images/stlouis_feature.png"); }
 }
 
-.travelguide_seattle {
+.cityguide_seattle {
   .bleed.cover {
     background-image: url("../images/seattle_cover.png");
     h1, h3 { color: $darkest-grape; }
@@ -203,7 +208,7 @@
   .bleed.feature { background-image: url("../images/seattle_feature.png"); }
 }
 
-.travelguide_shanghai {
+.cityguide_shanghai {
   .bleed.cover {
     background-image: url("../images/shanghai_cover.png");
     h1, h3 { color: $darkest-grass; }
