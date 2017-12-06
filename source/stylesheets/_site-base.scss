@@ -142,7 +142,7 @@ body {
 	.experiment { height: 320px; }
 }
 @media only screen and (min-device-width: 768px) {
-	.case-study { height: 400px; }
+	.case-study { min-height: 400px; height: 400px; }
 	.experiment { height: 240px; }
 }
 @media only screen and (min-width: 960px) {

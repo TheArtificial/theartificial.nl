@@ -4,10 +4,10 @@
 
 p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 
-#logo, .title, .small-title, .subtitle, .snippit, .letters { font-family: "Noto Serif", Georgia, Times, serif; }
+#logo, .title, .small-title, .subtitle, .letters { font-family: "Noto Serif", Georgia, Times, serif; }
 #logo, .title, .small-title, .subtitle, .small-subtitle, .letters, .label { font-weight: 600; }
 .description, .statement, .small-statement { font-weight: 300; }
-#logo, .title, .subtitle, .small-title, .snippit { font-style: italic; }
+#logo, .title, .subtitle, .small-title { font-style: italic; }
 
 ul, li { list-style-type: none; }
 a { text-decoration: none; }
@@ -88,7 +88,7 @@ a { text-decoration: none; }
 	}
 
 	.snippit {
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 22px;
 	}
 
@@ -159,7 +159,7 @@ a { text-decoration: none; }
 	}
 
 	.snippit {
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 20px;
 	}
 
@@ -230,7 +230,7 @@ a { text-decoration: none; }
 	}
 
 	.snippit {
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 22px;
 	}
 
