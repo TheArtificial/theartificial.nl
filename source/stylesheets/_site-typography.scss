@@ -9,6 +9,8 @@ p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 .description, .statement, .small-statement { font-weight: 300; }
 #logo, .title, .subtitle, .small-title { font-style: italic; }
 
+.small-statement p { padding-bottom: 24px; }
+
 ul, li { list-style-type: none; }
 a { text-decoration: none; }
 

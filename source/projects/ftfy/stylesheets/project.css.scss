@@ -13,17 +13,13 @@ body {
 
 .ftfy #content {
 
-  h1 {
-    font-family: "Noto Serif", Georgia, Times, serif;
-  }
-
-  h2, h3, h4 {
+  h2, h4 {
     font-family: "Barlow", Helvetica, Arial, sans-serif;
   }
 
   h1 {
-    font-style: normal;
-    font-size: 80px;
+    font-family: "Noto Serif", Georgia, Times, serif;
+    font-size: 72px;
   }
 
   h2 {
@@ -36,6 +32,7 @@ body {
     font-style: normal;
     font-size: 18px;
     font-weight: bold;
+    padding-bottom: 20px;
   }
 
   h4 {
@@ -65,6 +62,7 @@ body {
     .card {
       margin: 3px;
       background-color: $white;
+      border-radius: 2px;
 
       .padded {
         padding: 8px;
@@ -117,7 +115,7 @@ body {
   }
 
   .dark {
-    background-color: $cool-grey-90;
+    background-color: $cool-grey-80;
     color: $white;
 
     a {
@@ -145,27 +143,15 @@ body {
     padding-top: 16px;
     width: 100%;
     height: 32px;
-    background-color: $darkest-sapphire;
+    background-color: $palest-turquoise;
+    color: $cool-grey-80;
     border-radius: 24px;
     text-decoration: none;
     text-align: center;
   }
 
   a.button:hover {
-    background-color: $grape;
-    color: $white;
+    background-color: $pale-turquoise;
   }
 
-}
-
-.ftfy #footer {
-  background-color: transparent;
-
-  p {
-    color: $pale-grape;
-  }
-
-  .flex.container {
-    border-top-color: $darkest-sapphire;
-  }
 }
