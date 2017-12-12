@@ -4,7 +4,7 @@ current: false
 title: Susana Passinhas
 linkedin: susanapassinhas
 twitter: susanapassinhas
-
+personal: http://susanapassinhas.com/
 logo-story: "Everything has its own shape at each moment. Life generates dynamics, patterns shapes the world. Design is a constant process changing over time. Still in this process we can choose key moments that define the shape of our path."
 quote: "life is about discovery and joy"
 ---

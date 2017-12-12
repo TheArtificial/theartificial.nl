@@ -5,7 +5,7 @@ title: Hans Gerwitz
 linkedin: gerwitz
 twitter: gerwitz
 personal: http://hans.gerwitz.com/
-logo-story: "The Artificial is inspired by Walter Gropius's success building the Bauhaus, which broke down the &ldquo;barrier between craftsmen and artists&rdquo; by blending design inspiration with understanding of engineering. In this spirit, I hand-coded my logo from SVG with a lettering style inspired by Herbert Bayer."
+logo-story: "The Artificial was inspired by Walter Gropius's success building the Bauhaus, which broke down the &ldquo;barrier between craftsmen and artists&rdquo; by blending design inspiration with understanding of engineering. In this spirit, I hand-coded my logo from SVG with a geometric style inspired by Herbert Bayer."
 quote: "Strong design expresses the creator's intention in ways that are experienced more than noticed."
 ---
 
