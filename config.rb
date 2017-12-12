@@ -188,6 +188,11 @@ data.cocktails.each do |c|
   proxy "/cocktails/#{c.slug}.html", "/cocktails/template.html", locals: { cocktail: c }, ignore: true
 end
 
+# Redirects
+redirect "3dsystems.html", to: "/work/3DSystems-consumer.html"
+redirect "designfordeath.html", to: "/laboratory/futureofdeath.html"
+redirect "travelguide/index.html", to: "/cityguide/"
+
 # Build-specific configuration
 configure :development do
   require "better_errors"
