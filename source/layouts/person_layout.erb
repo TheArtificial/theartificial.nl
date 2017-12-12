@@ -18,9 +18,13 @@
     if current_page.data.twitter
       social_links << link_to("twitter", "https://twitter.com/#{current_page.data.twitter}")
     end
-    social_html = social_links.join(" | ").html_safe
+    # social_html = social_links.join(" | ").html_safe
+    if social_links.count > 0
 %>
-        <div class="label"><%= social_html %></div>
+          <ul class="metadata"><% social_links.each {|link| concat content_tag(:li, link).html_safe } %></ul>
+<%
+    end
+%>
         </div>
         <div class="padded">
           <p class="small-statement"><%= "&ldquo;#{current_page.data['quote']}&rdquo;" %></p>

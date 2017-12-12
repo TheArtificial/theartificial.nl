@@ -5,7 +5,7 @@
 p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 
 #logo, .title, .small-title, .subtitle, .letters { font-family: "Noto Serif", Georgia, Times, serif; }
-#logo, .title, .small-title, .subtitle, .small-subtitle, .letters, .label { font-weight: 600; }
+#logo, .title, .small-title, .subtitle, .small-subtitle, .letters, .label, .metadata { font-weight: 600; }
 .description, .statement, .small-statement { font-weight: 300; }
 #logo, .title, .subtitle, .small-title { font-style: italic; }
 
@@ -90,6 +90,25 @@ a { text-decoration: none; }
 
 		time { padding-right: 5px; }
 		a { padding-left: 5px; }
+	}
+
+	// .metadata is like .label but without the padding baggage
+	.metadata {
+		font-size: 14px;
+		line-height: 14px;
+
+		padding-left: 0; // in case this is a ul or ol
+
+		li {
+			display: inline-block;
+			margin: 0;
+		}
+		li + li::before {
+			content: " | ";
+			font-size: 150%;
+			font-weight: 100;
+			margin: 0 0 0 .33em;
+		}
 	}
 
 	.snippit {
