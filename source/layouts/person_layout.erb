@@ -7,7 +7,7 @@
         <div class="person-logo"><%= get_logo_svg(current_page.path.split('/').last.gsub(/.html$/, '')) %></div>
       </div>
 
-      <div class="col-7 left-1 dark-text section">
+      <div class="col-7 left-1 section">
         <div class="padded">
           <h1 class="title"><%= current_page.data.title %></h1>
 <%
@@ -24,10 +24,12 @@
         </div>
         <div class="padded">
           <p class="small-statement"><%= "&ldquo;#{current_page.data['quote']}&rdquo;" %></p>
+        </div>
+        <div class="padded">
           <%= yield %>
         </div>
         <div class="padded">
-          <h2 class="small-title">Logo Story</h2>
+          <h2 class="">Logo Story</h2>
           <%= Tilt['markdown'].new {current_page.data['logo-story']}.render %>
         </div>
       </div>
