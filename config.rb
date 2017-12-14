@@ -189,6 +189,9 @@ data.cocktails.each do |c|
 end
 
 # Redirects
+# note https://github.com/middleman/middleman/issues/2011
+# and make sure to set up the host to send 301: http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html
+
 redirect "3dsystems.html", to: "/work/3DSystems-consumer.html"
 redirect "designfordeath.html", to: "/laboratory/futureofdeath.html"
 redirect "travelguide/index.html", to: "/cityguide/"
