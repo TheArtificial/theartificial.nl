@@ -8,4 +8,4 @@ logo-story: "XXX"
 quote: "XXX"
 ---
 
-XXX
+Hello, world!
