@@ -106,7 +106,7 @@
 }
 
 #subnav {
-  background-color: $cool-grey-90;
+  background-color: $cool-grey-80;
   overflow: auto;
 
   .container {
@@ -182,7 +182,7 @@
 .travelguide_mumbai {
   .bleed.cover {
     background-image: url("../images/mumbai_cover.png");
-    h1, h3 { color: $pale-dandelion; }
+    h1, h3 { color: $palest-dandelion; }
   }
   .bleed.feature { background-image: url("../images/mumbai_feature.png"); }
 }
@@ -223,7 +223,16 @@
 .bleed.dark-sapphire { background-color: $dark-sapphire; }
 .bleed.cool-grey-80 { background-color: $cool-grey-80; }
 
-.bleed.pale-lime { background-color: $pale-lime; }
+.bleed.palest-turquoise { background-color: $palest-turquoise;}
+.bleed.palest-grass { background-color: $palest-grass; }
+.bleed.palest-lime { background-color: $palest-lime; }
+.bleed.palest-dandelion { background-color: $palest-dandelion; }
+.bleed.palest-pumpkin { background-color: $palest-pumpkin; }
+.bleed.palest-tulip { background-color: $palest-tulip; }
+.bleed.palest-grape { background-color: $palest-grape; }
+.bleed.palest-sapphire { background-color: $palest-sapphire; }
+
+
 
 h2.turquoise-text { color: $turquoise; }
 h2.grass-text { color: $grass; }

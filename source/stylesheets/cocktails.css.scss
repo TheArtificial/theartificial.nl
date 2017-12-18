@@ -7,139 +7,60 @@
   #content {
     padding-bottom: 0;
 
-    a {
-      color: #f14a23;
-      text-decoration: underline;
-    }
+    a { text-decoration: underline; }
+    a:hover, a:hover * { text-decoration: none; }
 
-    a:hover, a:hover * {
-      text-decoration: none;
-    }
+    p, h1, h2, h3, h4, li, a { color: #f14a23; }
 
-    p, h1, h2, h3, h4, li {
-      color: #f14a23;
-    }
+    p, h3, li { font-family: "Nota Serif", Georgia, Times, serif; }
+    h1, h3 { font-style: normal; }
+    h1, h2, h4 { font-family: "Barlow", Helvetica, Arial, sans-serif; }
+    h2 { text-decoration: underline; }
+    h3 { font-weight: 300; }
 
-    p, h3, li {
-      font-family: "Nota Serif", Georgia, Times, serif;
+    h1 { font-size: 48px; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 16px; }
+    h4 { font-size: 14px; }
 
-    }
-
-    h1, h2, h4 {
-      font-family: "Barlow", Helvetica, Arial, sans-serif;
-    }
-
-
-    p, li {
-      font-size: 16px;
-      line-height: 26px;
-    }
-
-    ul {
-      padding-left: 0;
-      padding-bottom: 20px;
-    }
-
-    h1 {
-      font-style: normal;
-      font-size: 48px;
-      line-height: 48px;
-    }
-
-    h2 {
-      font-size: 28px;
-      line-height: 34px;
-      margin-top: 10px;
-    }
-
-    h3 {
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 300;
-      margin-top: 15px;
-      padding: 0;
-    }
-
-    h4 {
-      font-size: 14px;
-    }
+    p, li { font-size: 16px; }
   }
 
+  .fridaycocktails { padding-bottom: 20px; }
+  .drinkname { padding-top: 10px; }
+
   #header {
-    background-color: #fddbd1;
+    background-color: #FDDBD1;
 
-    .topbar {
-      border-top-color: #f14a23;
-    }
+    .topbar { border-top-color: #F14A23; }
 
-    .flex {
-      border-bottom-color: transparent;
-    }
-
-    #logo a {
-      color: #f14a23;
-    }
-
+    #logo a { color: #F14A23; }
     #nav-primary {
       ul {
         li {
-          a {
-            font-weight: bold;
-            color: #f14a23;
-          }
-          a:hover {
-            color: $white;
-          }
-        }
-        li.active a {
-          color: #f14a23;
+          a { color: #F14A23; }
+          a:hover { color: #9B1600; }
         }
       }
     }
   }
 
   #footer {
-    background-color: #f14a23;
+    background-color: #F14A23;
 
-    .flex, #about, #promo {
-      border-top-color: transparent;
-    }
-
-    p {
-      color: $white;
-    }
-
-    a {
-      color: #fddbd1;
-    }
-
-    a:hover {
-      color: #fddbd1;
-    }
-
-    h3 {
-      color:#ffffff;
-    }
+    p, h3, a { color: $white; }
+    a:hover { color: #FDDBD1; }
   }
 
   .rating {
     width: 100px;
-    margin: 10px 0 10px;
-  }
-}
-
-.introduction {
-  margin: 40px 0 40px 0;
-
-  p {
-    font-size: 1.2em;
+    margin: 10px 0 20px 0;
   }
 }
 
 .card {
   position: relative;
   height: 480px;
-  margin: 0 25px 80px 25px;
 
   .anchor {
     position: absolute;
@@ -166,9 +87,7 @@
 
     .details {
       height: 140px;
-      h2 {
-        text-decoration: underline;
-      }
+      padding-top: 30px;
     }
   }
 
@@ -185,12 +104,8 @@
 }
 
 .local-nav {
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   text-align: center;
-
-  .padded {
-    padding: 6px 22px 6px 22px;
-  }
 }
 
 /*interior page scss*/
@@ -206,61 +121,29 @@
 
 .recipe {
   padding-bottom: 40px;
+
+  ul { padding: 30px 0 40px 0; }
 }
 
-.name {
-  margin-top: 25px;
-}
 
 
 /*media queries*/
 
 @media only screen and (min-device-width: 768px) {
-  .cocktails {
-    img {
-      width: 100%;
-    }
 
-    #content {
-      padding-bottom: 80px;
-    }
-  }
-
-  .introduction {
-    margin: 100px 0 60px 0;
-    width: 100%;
-
-    p {
-        font-size: 1.2em;
-    }
-  }
-
-  .left {
-    text-align: left;
-  }
-
-  .right {
-    text-align: right;
-  }
+  .left { text-align: left; }
+  .right { text-align: right; }
 
   .card {
     height: 480px;
-    margin: 0 5px 80px 5px;
 
     .anchor {
-      .preview {
-        width: 80%;
-      }
+      .preview { width: 80%; }
     }
   }
 
-  .name {
-    margin-top: 40px;
-  }
-
-  .recipe {
-    padding-bottom: 100px;
-  }
+  .name { margin-top: 40px; }
+  .recipe { padding-bottom: 100px; }
 
   .drinkcontainer{
     position: relative;
@@ -275,7 +158,5 @@
 }
 
 @media (min-width: 960px) {
-  .card {
-    height: 600px;
-  }
+  .card { height: 600px; }
 }

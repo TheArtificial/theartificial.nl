@@ -229,10 +229,13 @@ svg *.content{ fill: $cool-grey-40; }
 
 @media only screen and (min-device-width: 768px) {
 	.bleed.about-us {
-		background-image: url(/about/images/us.jpg);
-		min-height: 400px;
-		margin: auto;
-		background-position: top center;
+		min-height: 360px;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.bleed.about-us {
+		min-height: 480px;
 	}
 }
 
