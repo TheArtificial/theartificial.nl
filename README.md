@@ -14,13 +14,13 @@ As seen at http://theartificial.nl/
 
 The source code for the site is managed with git, with a shared repository hosted on GitHub: https://github.com/TheArtificial/theartificial.nl
 
-Using the GitHub app, get a local working repository to work with. I suggest keeping local repositories in a folder (in your user "home" folder) named "Working".
+Using the GitHub app, get a local working repository to work with.
 
 ### Sharing changes
 
-As you edit, "commit" frequently with a short note about the changes you've made.
+As you edit, _commit_ frequently with a short note about the changes you've made.
 
-The GitHub app makes it easy to "pull" and "push" your commits to our shared repository. It will notify you and we can work through conflicts if the same file is edited by multiple people. Please reduce the chances and the scope of these conflicts by pulling/pushing often, and discussing large changes first.
+The GitHub app makes it easy to _pull_ and _push_ your commits to our shared repository. It will notify you and we can work through conflicts if the same file is edited by multiple people. Please reduce the chances and the scope of these conflicts by pulling/pushing often, and discussing large changes first.
 
 ## Testing
 
