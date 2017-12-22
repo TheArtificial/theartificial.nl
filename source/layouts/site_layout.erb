@@ -4,6 +4,10 @@
 	<%= javascript_include_tag 'jquery.color-2.1.2' %>
 <% end %>
 
+<% content_for :stylesheet_tags do %>
+	<link href="https://fonts.googleapis.com/css?family=Barlow:400,700|Noto+Serif:400,700" rel="stylesheet">
+<% end %>
+
 <% content_for :favicon_element do %>
 	<link rel="icon" type="image/png" href="images/favicon_dafault.png" />
 	<link rel="shortcut icon" href="narwhale" type="image/x-icon" />
