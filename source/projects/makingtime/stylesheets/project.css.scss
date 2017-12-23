@@ -245,6 +245,12 @@ a.grey-link:hover { color: $warm-grey-50; }
 }
 
 .timebook {
+  .title {
+    margin-top: 20px;
+    font-family: "Barlow", Helvetica, Arial, sans-serif;
+    font-style: normal;
+  }
+
  .small-statement {
    font-weight: 700;
  }
