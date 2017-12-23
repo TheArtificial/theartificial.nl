@@ -6,14 +6,11 @@
 
 	.bleed.intro {
 		background-color: $white;
-		img:hover {
-			opacity: 0.5;
-		}
+
+		img:hover { opacity: 0.5; }
 	}
 
-	.bleed.blue{
-		background-color: $darkest-sapphire;
-	}
+	.bleed.blue{ background-color: $darkest-sapphire; }
 
 	.introduction {
 		margin: 60px 0 60px 0;
