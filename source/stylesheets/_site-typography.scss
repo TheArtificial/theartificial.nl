@@ -10,7 +10,7 @@ p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 #logo, .title, .subtitle, .small-title { font-style: italic; }
 
 .small-statement p { padding-bottom: 24px; }
-.small-copy { font-weight: 500; }
+.small-body { font-weight: 500; }
 
 ul, li { list-style-type: none; }
 a { text-decoration: none; }
@@ -114,14 +114,14 @@ a { text-decoration: none; }
 		line-height: 22px;
 	}
 
-	.large-copy {
-		font-size: 14px;
-		line-height: 22px;
+	.large-body {
+		font-size: 16px;
+		line-height: 24px;
 	}
 
-	.small-copy {
-		font-size: 12px;
-		line-height: 16px;
+	.small-body {
+		font-size: 14px;
+		line-height: 18px;
 	}
 }
 
@@ -185,12 +185,12 @@ a { text-decoration: none; }
 		line-height: 20px;
 	}
 
-	.large-copy {
+	.large-body {
 		font-size: 14px;
 		line-height: 22px;
 	}
 
-	.small-copy {
+	.small-body {
 		font-size: 12px;
 		line-height: 16px;
 	}
@@ -256,12 +256,12 @@ a { text-decoration: none; }
 		line-height: 22px;
 	}
 
-	.large-copy {
+	.large-body {
 		font-size: 16px;
 		line-height: 24px;
 	}
 
-	.small-copy {
+	.small-body {
 		font-size: 14px;
 		line-height: 18px;
 	}

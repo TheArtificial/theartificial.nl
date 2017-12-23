@@ -16,43 +16,6 @@
   border-top: 1px solid $cool-grey-20;
 }
 
-// background colors
-
-.turquoise, .sapphire, .grape, .dark-grape, .tulip, .dark-tulip, .dandelion, .warm-grey-30, .warm-grey-70, .warm-grey-80, .cool-grey-70, .cool-grey-80, .cool-grey-90 {
-  h1, h2, h3, h4, h5, p { color: $white; }
-}
-
-.white { background-color: $white; }
-
-.turquoise { background-color: $turquoise; }
-.palest-turquoise { background-color: $palest-turquoise; }
-
-.sapphire { background-color: $sapphire; }
-.palest-sapphire { background-color: $palest-sapphire; }
-
-.grape { background-color: $grape; }
-.dark-grape { background-color: $dark-grape; }
-
-.tulip { background-color: $tulip; }
-.dark-tulip { background-color: $dark-tulip; }
-
-.palest-grass { background-color: $palest-grass; }
-
-.palest-lime { background-color: $palest-lime; }
-.lime { background-color: $lime; }
-
-.dandelion { background-color: $dandelion; }
-
-.warm-grey-10 { background-color: $warm-grey-10; }
-.warm-grey-30 { background-color: $warm-grey-30; }
-.warm-grey-70 { background-color: $warm-grey-70; }
-.warm-grey-80 { background-color: $warm-grey-80; }
-
-.cool-grey-10 { background-color: $cool-grey-10; }
-.cool-grey-70 { background-color: $cool-grey-70; }
-.cool-grey-80 { background-color: $cool-grey-80; }
-.cool-grey-90 { background-color: $cool-grey-90; }
-
 // link colors
 
 a.turquoise-link { color: $turquoise; }
