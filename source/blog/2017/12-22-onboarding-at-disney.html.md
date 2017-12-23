@@ -3,7 +3,7 @@ title: 'Onboarding at Disney'
 category: thoughts
 tags: experience, design, UX, disney, princess
 author: shannon
-masthead: 12-22-onboarding-at-disney/masthead.png
+masthead: 12-22-onboarding-at-disney/masthead.jpg
 preview: 12-22-onboarding-at-disney/preview.png
 ---
 
