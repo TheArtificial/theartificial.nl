@@ -401,7 +401,80 @@ svg *.content{ fill: $cool-grey-40; }
 }
 
 // background colors
-.grey-10 { background-color: $cool-grey-10; }
+
+.turquoise, .dark-turquoise, .darkest-turquoise,
+.sapphire, .dark-sapphire, .darkest-sapphire,
+.grape, .dark-grape, .darkest-grape,
+.tulip, .dark-tulip, .darkest-tulip,
+.pumpkin, .dark-pumpkin, .darkest-pumpkin,
+.dandelion, .dark-dandelion, .darkest-dandelion,
+.lime, .dark-lime, .darkest-lime,
+.grass, .dark-grass, .darkest-grass,
+.warm-grey-30, .warm-grey-70, .warm-grey-80,
+.cool-grey-70, .cool-grey-80, .cool-grey-90 {
+  color: $white;
+}
+
+.white { background-color: $white; }
+
+.palest-turquoise { background-color: $palest-turquoise; }
+.pale-turquoise { background-color: $pale-turquoise; }
+.turquoise { background-color: $turquoise; }
+.dark-turquoise { background-color: $dark-turquoise; }
+.darkest-turquoise { background-color: $darkest-turquoise; }
+
+.palest-sapphire { background-color: $palest-sapphire; }
+.pale-sapphire { background-color: $pale-sapphire; }
+.sapphire { background-color: $sapphire; }
+.dark-sapphire { background-color: $dark-sapphire; }
+.darkest-sapphire { background-color: $darkest-sapphire; }
+
+.palest-grape { background-color: $palest-grape; }
+.pale-grape { background-color: $pale-grape; }
+.grape { background-color: $grape; }
+.dark-grape { background-color: $dark-grape; }
+.darkest-grape { background-color: $darkest-grape; }
+
+.palest-tulip { background-color: $palest-tulip; }
+.pale-tulip { background-color: $pale-tulip; }
+.tulip { background-color: $tulip; }
+.dark-tulip { background-color: $dark-tulip; }
+.darkest-tulip { background-color: $darkest-tulip; }
+
+.palest-pumpkin { background-color: $palest-pumpkin; }
+.pale-pumpkin { background-color: $pale-pumpkin; }
+.pumpkin { background-color: $pumpkin; }
+.dark-pumpkin { background-color: $dark-pumpkin; }
+.darkest-pumpkin { background-color: $darkest-pumpkin; }
+
+.palest-dandelion { background-color: $palest-dandelion; }
+.pale-dandelion { background-color: $pale-dandelion; }
+.dandelion { background-color: $dandelion; }
+.dark-dandelion { background-color: $dark-dandelion; }
+.darkest-dandelion { background-color: $darkest-dandelion; }
+
+.palest-lime { background-color: $palest-lime; }
+.pale-lime { background-color: $pale-lime; }
+.lime { background-color: $lime; }
+.dark-lime { background-color: $dark-lime; }
+.darkest-lime { background-color: $darkest-lime; }
+
+.palest-grass { background-color: $palest-grass; }
+.pale-grass { background-color: $pale-grass; }
+.grass { background-color: $grass; }
+.dark-grass { background-color: $dark-grass; }
+.darkest-grass { background-color: $darkest-grass; }
+
+.warm-grey-10 { background-color: $warm-grey-10; }
+.warm-grey-30 { background-color: $warm-grey-30; }
+.warm-grey-70 { background-color: $warm-grey-70; }
+.warm-grey-80 { background-color: $warm-grey-80; }
+
+.cool-grey-10 { background-color: $cool-grey-10; }
+.cool-grey-70 { background-color: $cool-grey-70; }
+.cool-grey-80 { background-color: $cool-grey-80; }
+.cool-grey-90 { background-color: $cool-grey-90; }
+
 
 
 // background gradients
@@ -428,6 +501,7 @@ svg *.content{ fill: $cool-grey-40; }
 	background: linear-gradient(to bottom, $pale-tulip, $grape);
 	.statement, .statement:hover, .label, .description { color: $white; }
 }
+
 .grape-palesapphire {
 	background-color: $grape;
 	background: linear-gradient(to bottom, $pale-sapphire, $grape);

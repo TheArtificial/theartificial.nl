@@ -10,52 +10,18 @@
 		img:hover { opacity: 0.5; }
 	}
 
-	.bleed.blue{ background-color: $darkest-sapphire; }
-
 	.introduction {
 		margin: 60px 0 60px 0;
 		padding: 0px 15px 0 15px;
+		color: $darkest-sapphire;
 
-		h1,h2,h3,h4,h5 {
-			font-family: "Open Sans", Helvetica, Arial, sans-serif;
-			color: $darkest-sapphire;
-		}
+		.title, .author { font-family: "Noto Serif", Georgia, Times, serif; }
 
-		h1 {
-			font-size:2.3em;
-			font-family: "Droid Serif", Georgia, Times, serif;
-		}
+		.title { font-style: normal; }
 
-		h2 {
-			font-size: 0.8em;
-			line-height: 1.4em;
-			font-weight: normal;
+		.author { font-style: italic; }
 
-			a {
-				color: $darkest-sapphire;
-			}
-
-			a:hover {
-				opacity: 0.5;
-			}
-		}
-
-		h5 {
-			font-size: 0.7em;
-			margin-bottom: 30px;
-			text-transform: none;
-			font-family: "Droid Serif", Georgia, Times, serif;
-			font-style: italic;
-
-			a {
-				text-decoration: underline;
-				color: $darkest-sapphire;
-			}
-
-			a:hover {
-				opacity: 0.5;
-			}
-		}
+		a { color: $darkest-sapphire; }
 	}
 
 	.visualization {
@@ -66,9 +32,7 @@
 			max-width: 100%;
 		}
 
-		.node circle {
-			fill: #fff;
-		}
+		.node circle { fill: #FFFFFF; }
 
 		.node text {
 			display: none;
@@ -77,19 +41,18 @@
 		}
 
 		.node:hover circle {
-			// fill: #ccc;
-			stroke: #fff;
+			stroke: #FFFFFF;
 			stroke-width: 2px;
 		}
 
 		.node:hover text {
 			display: inline;
-			fill: #FFF;
+			fill: #FFFFFF;
 		}
 
 		.node .textcategory {
 			display: inline;;
-			fill: #FFF;
+			fill: #FFFFFF;
 			font: "Open Sans", Helvetica, Arial, sans-serif;
 			font-size: 1em;
 		}
@@ -162,22 +125,16 @@
 			}
 
 			li {
-			display:block;
-			padding: 4px 0px 4px 8px ;
+				display:block;
+				padding: 4px 0px 4px 8px ;
 			}
 
-			li:hover{
-			opacity:0.5;
-			}
-			a {
-				color:$white;
-			}
+			li:hover { opacity:0.5; }
+			a { color:$white; }
 		}
 
 		.selected {
-			a {
-				text-decoration: underline;
-			}
+			a { text-decoration: underline; }
 		}
 	}
 }
