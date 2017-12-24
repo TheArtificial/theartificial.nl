@@ -1,5 +1,5 @@
 ---
-title: 'Creating The Artificial Travel Guide'
+title: 'Creating The Artificial City Guide'
 category: process
 tags: holiday, book, print, design
 author: shannon
@@ -7,13 +7,13 @@ masthead: 11-28-holiday-gids/masthead.png
 preview: 11-28-holiday-gids/preview.png
 ---
 
-For the second year in a row, we decided to create a Sinterklaas book for our clients and partners. Last year the book was all about [cocktails](http://theartificial.nl/blog/2017/01/16/sinterklaas-book.html). This year, we celebrated our many varied origins and influences by creating a travel guide. Each of us selected a city we've called home, and we curated our top travel tips and food and drink recommendations.
+For the second year in a row, we decided to create a Sinterklaas book for our clients and partners. Last year the book was all about [cocktails](http://theartificial.nl/blog/2017/01/16/sinterklaas-book.html). This year, we celebrated our many varied origins and influences by creating a city travel guide. Each of us selected a city we've called home, and we curated our top travel tips and food and drink recommendations.
 
 ![Us](11-28-holiday-gids/us.png)
 
 The annual print project gives us an opportunity to set aside usability and to prioritize graphic expression. We get to forget about OS patterns and imagine our own patterns. And as much as we like to see our apps built, the book is a welcome opportunity to push our graphic skills beyond the constraints of implementation.
 
-For the travel guide's style, we decided to create thoroughly integrated compositions of photography, illustration, typography, and our whimsical white animals. Rather than sitting in rectangles on discrete spatial plans, our goal was to have all of these elements interwoven with each other to create rich and engaging compositions.
+For the guide's style, we decided to create thoroughly integrated compositions of photography, illustration, typography, and our whimsical white animals. Rather than sitting in rectangles on discrete spatial plans, our goal was to have all of these elements interwoven with each other to create rich and engaging compositions.
 
 ![Typography](11-28-holiday-gids/typography.png)
 
@@ -25,7 +25,7 @@ Less visually obvious choices also hold the book together, including the common 
 
 Perhaps most challenging aspect of this year's design was establishing the careful cadence of elements that transcends any individual spread. While we wanted some pages, like titles, to have a common thread, we also wanted to avoid templates that lead to a uniform appearance. To do this, it was important to look at the book composition as a whole, rather than as pages in a series.
 
-From this view of everything, we could be sure to balance overall use of color, the cadence of light and dark, and pages dominated by photography or typography or illustration. Most importantly, we could ensure that the reader of our travel guide never went too long without a bit of humor popping up across the spreads.
+From this view of everything, we could be sure to balance overall use of color, the cadence of light and dark, and pages dominated by photography or typography or illustration. Most importantly, we could ensure that the reader of our city guide never went too long without a bit of humor popping up across the spreads.
 
 ![Spreads](11-28-holiday-gids/spreads.png)
 

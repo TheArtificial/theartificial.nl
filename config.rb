@@ -77,10 +77,11 @@ helpers do
     elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
       return link_to(person_page.data.title, person_page, options)
     elsif username.include? ' '
+      # not really a username, but we'll forgive it for guest authors
       return "<span>#{username}</span>"
     else
       puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
-      return "<span>#{username}</span>"
+      return "<span>#{username.capitalize}</span>"
     end
   end
 
@@ -186,6 +187,14 @@ set :markdown,  fenced_code_blocks: true,
 data.cocktails.each do |c|
   proxy "/cocktails/#{c.slug}.html", "/cocktails/template.html", locals: { cocktail: c }, ignore: true
 end
+
+# Redirects
+# note https://github.com/middleman/middleman/issues/2011
+# and make sure to set up the host to send 301: http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html
+
+redirect "3dsystems.html", to: "/work/3DSystems-consumer.html"
+redirect "designfordeath.html", to: "/laboratory/futureofdeath.html"
+redirect "travelguide/index.html", to: "/cityguide/"
 
 # Build-specific configuration
 configure :development do
