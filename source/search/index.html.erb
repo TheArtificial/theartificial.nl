@@ -13,6 +13,11 @@ title: Search
 				<div class="padded center">
 					<h1 class="title">Search</h1>
 				</div>
+				<div class="padded center" id="query">
+					<form id="search-form" method="get">
+						<input name="q" type="search">
+					</form>
+				</div>
 				<div class="padded center" id="results">
 
 				</div>
@@ -37,13 +42,10 @@ title: Search
   var lunrIndex;
   var lunrMap;
 
-  function lunrSearch(el) {
-    var query = paramValue('query');
-
-    $('.title').html('Pages containing “' + query + '”');
+  function lunrSearch(query, el) {
 
     console.log('Requesting Lunr file');
-    el.append('loading');
+    el.append('Loading...');
 
     $.ajax({
       dataType: "json",
@@ -78,7 +80,7 @@ title: Search
           }
 
           list.append('<li>' +
-							'<b>' + where + '</b>: ' +
+							'<b>' + type + '</b>: ' +
               '<a href="' + page.url + '">' +
                 '<span>' + page.title + '<\/span>' +
               '<\/a>' +
@@ -98,7 +100,18 @@ title: Search
   }
 
   $(document).ready(function() {
-    lunrSearch($('#results'));
+		var query;
+		var resultsEl = $('#results');
+		$("#search-form").submit(function(e){
+	    e.preventDefault();
+			query = $("input[type='search'][name='q']").val();
+	    lunrSearch(query, resultsEl);
+		});
+
+		query = paramValue('q');
+		if (query) {
+			lunrSearch(query, resultsEl);
+		}
   });
 
 </script>
