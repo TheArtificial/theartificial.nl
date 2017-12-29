@@ -122,7 +122,8 @@ Time.zone = "Amsterdam"
 
 # Cocktails
 data.cocktails.each do |c|
-  proxy "/cocktails/#{c.slug}.html", "/cocktails/template.html", locals: { cocktail: c, title: c.name, author: c.author }, ignore: true
+  metadata = { cocktail: c, title: c.name, author: c.author } # used for locals and for data (for search)
+  proxy "/cocktails/#{c.slug}.html", "/cocktails/template.html", locals: metadata, data: metadata, ignore: true, title: "just for search"
 end
 
 # Blog
@@ -179,9 +180,17 @@ activate :search do |search|
     type = path_split.first
     to_store[:type] = type
 
+    if type == 'blog'
+      # article = blog.convert_to_article(resource)
+      # date = resource.date
+      # to_store[:date] = date
+    end
+
     # prep author
     if author = resource.data.author
       to_store[:author] = to_index[:author] = person_name(author)
+    else
+      puts "no author: #{resource.locals.inspect}"
     end
   end
 end

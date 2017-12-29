@@ -36,12 +36,15 @@
         el.html(''); // clear loading indicator
 
         el.append('<ol>');
-        for (var docId in Object.keys(lunrMap)){
+        for (var docId in lunrMap){
+					// console.log(docId, lunrMap[docId]);
           if (doc = lunrMap[docId]) {
-            el.append('<li>'+doc.type+': '+doc.title+'</li>');
+            el.append('<li><a href="'+doc.url+'">'+doc.type+': '+doc.title+' ('+doc.author+')</a></li>');
           }
         }
         el.append('<\/ol>');
+
+				el.append('<hr>');
 
         el.append('<ol>');
 
