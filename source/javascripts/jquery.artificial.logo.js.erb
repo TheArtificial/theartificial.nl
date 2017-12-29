@@ -18,7 +18,12 @@
     { name: 'Jo Szczpanska',      username: 'jo' },
     { name: 'Carol Liao',         username: 'carol' },
     { name: 'Susana Passinhas',   username: 'susana' },
-    { name: 'Ariane Garoff',      username: 'ariane' }
+    { name: 'Ariane Garoff',      username: 'ariane' },
+    { name: 'Natalia Bourges',    username: 'natalia' },
+    { name: 'Katinka Berghuis',   username: 'katinka' },
+    { name: 'Nathalie de Graaf',   username: 'nathalie' },
+    { name: 'Kamila Piątkowska',  username: 'kamila' },
+    { name: 'Manjari Sahu',       username: 'manjari' }
   ]
 
   people.each do |person|
@@ -53,7 +58,7 @@
     }
 
     if (attributionElement.length) {
-      var link = '<a href="' + logos[i].url + '">logo by ' + logos[i].name + '</a>';
+      var link = '<a class="small-body" href="' + logos[i].url + '">logo by ' + logos[i].name + '</a>';
       attributionElement.html(link);
     } else {
       console.log('artificialLogo: cannot find attribution element ' + attributionSelector);

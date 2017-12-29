@@ -31,6 +31,51 @@ helpers do
     link_to(link_text, url, options)
   end
 
+  def person_name(username)
+    if username.kind_of?(Array)
+      return username.map{|u| person_name u }.join(', ')
+    elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
+      return person_page.data.title
+    else
+      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
+      return "<span class=\"error\">#{username}</span>"
+    end
+  end
+
+
+  def link_to_person(username, options = {})
+    if username.kind_of?(Array)
+      return username.map{|u| link_to_person(u, options) }.join(', ')
+    elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
+      return link_to(person_page.data.title, person_page, options)
+    elsif username.include? ' '
+      # not really a username, but we'll forgive it for guest authors
+      return "<span>#{username}</span>"
+    else
+      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
+      return "<span>#{username.capitalize}</span>"
+    end
+  end
+
+  def link_to_person_logo(username, options = {})
+    if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
+      return link_to(get_logo_svg(username), person_page, options)
+    else
+      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
+      return "<span class=\"error\">#{username}</span>"
+    end
+  end
+
+  def get_logo_svg(name)
+    path = "images/logo-#{name}.svg"
+    if resource = sitemap.find_resource_by_path(path)
+      file = File.open(resource.source_file, 'r')
+      return file.read
+    else
+      return ''
+    end
+  end
+
   # this overrides the built-in helper
   # see https://github.com/middleman/middleman/issues/145
   def extra_page_classes
@@ -140,6 +185,14 @@ activate :search do |search|
   end
 end
 
+# Redirects
+# note https://github.com/middleman/middleman/issues/2011
+# and make sure to set up the host to send 301: http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html
+
+redirect "3dsystems.html", to: "/work/3DSystems-consumer.html"
+redirect "designfordeath.html", to: "/laboratory/futureofdeath.html"
+redirect "travelguide/index.html", to: "/cityguide/"
+
 # Build-specific configuration
 configure :development do
   require "better_errors"
@@ -149,7 +202,7 @@ end
 configure :build do
   activate :minify_css
   activate :minify_javascript, ignore: 'jquery.artificial.logo.js'
-  activate :gzip
+  # activate :gzip
   # default_caching_policy public: true, must_revalidate: true
 
   # For example, change the Compass output style for deployment

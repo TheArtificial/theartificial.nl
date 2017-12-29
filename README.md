@@ -12,15 +12,15 @@ As seen at http://theartificial.nl/
 
 ### Getting the source
 
-The source code for the site is managed with git, with a shared repository hosted on GitHub: https://github.com/gerwitz/theartificial.nl
+The source code for the site is managed with git, with a shared repository hosted on GitHub: https://github.com/TheArtificial/theartificial.nl
 
-Using the GitHub app, get a local working repository to work with. I suggest keeping local repositories in a folder (in your user "home" folder) named "Working".
+Using the GitHub app, get a local working repository to work with.
 
-### Synchronizing changes
+### Sharing changes
 
-As you edit, "commit" frequently with a short note about the changes you've made. The GitHub app makes it easy to sync (also known as "pushing" and "pulling") with our shared repository as you do this.
+As you edit, _commit_ frequently with a short note about the changes you've made.
 
-It will notify you and we can work through conflicts if the same file is edited by multiple people. But please reduce the chances and the scope of conflicts by synchronizing often.
+The GitHub app makes it easy to _pull_ and _push_ your commits to our shared repository. It will notify you and we can work through conflicts if the same file is edited by multiple people. Please reduce the chances and the scope of these conflicts by pulling/pushing often, and discussing large changes first.
 
 ## Testing
 
@@ -32,7 +32,7 @@ Open a shell (a window of the Terminal app). It will start in the context of you
 
 Change the current directory to your working repository with the "cd" commend, like so:
 
-    $ cd Working/theartificial.nl
+    $ cd Documents/GitHub/theartificial.nl
 
 _Do not type the `$` in front, I use it only to denote this is a shell command._
 
@@ -46,13 +46,13 @@ The first time, you will need to use this command to set up your machine:
 
 _(Remember, don't type that `$`)_
 
-_(If this command doesn't work, you may need to [install Bundler](http://bundler.io/#getting-started) or just ask for help.)_
+_(If this command doesn't work, just ask for help.)_
 
 When major code changes are made, you may have to `bundle install` again.
 
 ### Launching Middleman
 
-The site is built using the [Middleman](http://middlemanapp.com/) framework. In short, it uses the files in the `source` folder to build the files that will be hosted on the server.
+The site is built using [Middleman](http://middlemanapp.com/). Essentially, it uses the files in the `source` folder to build the files that we will upload to the server.
 
 Usually, you will want to let it magically do this on the fly. Use this command:
 
@@ -72,7 +72,7 @@ You may stop Middleman by closing that Terminal window or pressing control-C.
 
 ### Pull from git
 
-Don't forget to regularly visit the GitHub app and pull (synchronize) to make sure you're working with the latest files!
+Don't forget to regularly visit the GitHub app and pull to make sure you're working with the latest files!
 
 ### Files
 
@@ -112,7 +112,9 @@ _(PNG files will also work, but read below.)_
 
 ### Optimizing images
 
-PNGs are nice because they are "lossless" and don't get blurring compression artifacts like JPEG. But this also makes them less efficient. With large visuals it's very easy to end up wasting many MB of space and network traffic. Please use JPEG (not PNG) for photos and optimize all images with [ImageOptim](https://imageoptim.com).
+PNGs are nice because they are "lossless" and don't get blurring compression artifacts like JPEG. But this also makes them less efficient. With large visuals it's very easy to end up wasting many MB of space and network traffic. Please use JPEG (not PNG) for photos.
+
+Also be sure to optimize all images with [ImageOptim](https://imageoptim.com/).
 
 ### Testing
 
@@ -120,4 +122,4 @@ If you're working on something that will take more than a day, please [make a br
 
 ### Commit
 
-Use the GitHub app to commit your changes with a meaningful comment and be sure to push (synchronize). You can always double-check that your commit was pushed by visiting the [history page](https://github.com/gerwitz/theartificial.nl/commits/master).
+Use the GitHub app to commit your changes with a meaningful comment and be sure to push. You can always double-check that your commit was pushed by visiting the [history page](https://github.com/gerwitz/theartificial.nl/commits/master).

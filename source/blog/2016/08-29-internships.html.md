@@ -1,7 +1,7 @@
 ---
 title: The Communication That Makes an Outstanding Design Internship
 category: thoughts
-tags: 'internship, design, office, communication, job, workspace'
+tags: internship, design, office, communication, job, workspace
 author: carol
 ---
 
@@ -9,9 +9,9 @@ Many people who’ve worked with me know that I’m extremely passionate about t
 
 As The Artificial grows, I’m taking on more responsibilities — one of them being mentoring our new intern (yikes, sounds so formal). Needless to say, I want to make sure I pass on only the best from my previous experiences.
 
-Internships are often a student’s first chance to dive into an industry and that experience can be so important to her future path. 
+Internships are often a student’s first chance to dive into an industry and that experience can be so important to her future path.
 
-Of all the exciting things to create, and of all the places to learn it, they chose your industry, and deemed your company fit to learn from. Whether this is pushed by a school curriculum or by pure ambition, I believe that mentors should be eager to take this opportunity to share their passion and show what makes this line of work so rewarding. 
+Of all the exciting things to create, and of all the places to learn it, they chose your industry, and deemed your company fit to learn from. Whether this is pushed by a school curriculum or by pure ambition, I believe that mentors should be eager to take this opportunity to share their passion and show what makes this line of work so rewarding.
 
 There are plenty of good design internships, but an outstanding design internship needs to tick more than just the “learn”, “paid”, and “fun” boxes, and I believe that lies in the communication.
 
@@ -22,7 +22,7 @@ Can you remember a single “first day” of anything where you weren’t either
 Similar to how expats gravitate towards each other in foreign environments, interns might be lunching together because they don’t feel integrated. A big part of understanding what it’s like to work in a company is understanding what it’s like to socialize in a company. While it’s great that your interns are getting along, make sure they’re also getting along with full-time employees, managers, and directors well enough to feel comfortable joining for beers.
 
 ## Demonstrations over LMGTFY
-I sincerely hope no mentor has ever explicitly sent a [LMGTFY](http://lmgtfy.com/) as anything but a joke, but you get the idea. Yes, your intern could  easily Google a tutorial, but for some things, demonstrations are far more efficient, and you can feel confident that she learned the process correctly. No time for a demonstration? Providing a high-quality source or showing previous work for reference is much more constructive than blind Googling, and your intern will appreciate the guidance. 
+I sincerely hope no mentor has ever explicitly sent a [LMGTFY](http://lmgtfy.com/) as anything but a joke, but you get the idea. Yes, your intern could  easily Google a tutorial, but for some things, demonstrations are far more efficient, and you can feel confident that she learned the process correctly. No time for a demonstration? Providing a high-quality source or showing previous work for reference is much more constructive than blind Googling, and your intern will appreciate the guidance.
 
 ## Coffee excursions over conference room meetings
 It’s easy to forget that while we’ve gotten used to 8+ hour work days in front of a computer, they’re not the norm for a student. Having light meetings and informal check-ins at a local cafe helps break up the day. Not only does it give you both a nice change of scenery, but it could help a nervous intern feel more relaxed and feel comfortable expressing themselves honestly.

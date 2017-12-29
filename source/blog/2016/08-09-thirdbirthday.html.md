@@ -1,7 +1,7 @@
 ---
 title: We're Three!
 category: news
-tags: 'office, party, celebration, anniversary'
+tags: office, party, celebration, anniversary
 author: shannon
 masthead: 08-09-thirdbirthday/invitation.jpg
 ---

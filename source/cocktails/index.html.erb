@@ -9,7 +9,7 @@ title: Friday Cocktails
     <div class="flex container">
       <div class="col-8 right-2 left-2 introduction center">
         <div class="padded">
-            <h1>Friday Cocktails</h1>
+            <h1 class="fridaycocktails">Friday Cocktails</h1>
             <p>On Fridays, we welcome any excuse to practice our mixology
             skills. Here's a collection of our successes, trials, and
             errors.</p>
@@ -31,7 +31,7 @@ title: Friday Cocktails
 
               <div class="details padded center">
                 <h3><%= c.date.strftime('%B %e, %Y') %></h3>
-                <h2><%= c.name %></h2>
+                <h2 class="drinkname"><%= c.name %></h2>
               </div>
             </div>
           </div>
