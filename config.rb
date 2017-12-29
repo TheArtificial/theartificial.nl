@@ -167,6 +167,7 @@ activate :search do |search|
     path:    {index: false, store: true},
     tags:    {boost: 100},
     author:  {boost: 100},
+    date:    {index: false, store: true},
     content: {boost: 50},
     url:     {index: false, store: true}
   }

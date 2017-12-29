@@ -61,21 +61,24 @@ title: Search
         lunrIndex = lunr.Index.load(data.index);
         lunrMap = data.docs;
         var results = lunrIndex.search(query)
-        console.log('Found ' + results.length + ' results');
+        console.log('Found ' + results.length + ' results', results);
 
         var list = $('<ol class="article-list">');
         $.each(results, function(index, result) {
           page = lunrMap[result.ref];
+					console.log('page ' + index, page);
 
           var type = page.type;
           var where = 'unknown';
 
           if (type == 'blog') {
             date = new Date(page.date);
-            // where = monthName(date.getMonth()) + ' ' + ordinal(date.getDate()) + ', ' + date.getFullYear();
+						where = page.date;
+            // where = monthName(date.getMonth()) + ' ' + date.getDate() + ', ' + date.getFullYear();
           }
 
           list.append('<li>' +
+							'<b>' + where + '</b>: ' +
               '<a href="' + page.url + '">' +
                 '<span>' + page.title + '<\/span>' +
               '<\/a>' +
