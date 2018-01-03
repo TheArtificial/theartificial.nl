@@ -1,0 +1,68 @@
+<% content_for :javascript_tags do %>
+	<%= javascript_include_tag 'lunr' %>
+<% end %>
+
+<section id="content">
+	<div class="bleed padded-bottom">
+		<div class="flex container">
+			<div class="col-8 title">
+        <div id="output"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+  function lunrTest(el) {
+    console.log('Requesting Lunr file');
+    el.append('Loading');
+
+    $.ajax({
+      dataType: "json",
+      url: '/search/index.json',
+      xhr: function() {
+        var xhr = new window.XMLHttpRequest();
+        //Download progress
+        xhr.addEventListener("progress", function(evt){
+          el.append('.');
+        }, false);
+        return xhr;
+      },
+      success: function(data) {
+        lunrIndex = lunr.Index.load(data.index);
+        lunrMap = data.docs;
+
+        el.html(''); // clear loading indicator
+
+        el.append('<ol>');
+        for (var docId in lunrMap){
+					// console.log(docId, lunrMap[docId]);
+          if (doc = lunrMap[docId]) {
+            el.append('<li><a href="'+doc.url+'">'+doc.type+': '+doc.title+' ('+doc.author+')</a></li>');
+          }
+        }
+        el.append('<\/ol>');
+
+				el.append('<hr>');
+
+        el.append('<ol>');
+
+        // tokens = lunrIndex.tokenSet.toArray();
+        invIndex = lunrIndex.invertedIndex;
+
+        for (var term in invIndex){
+          count = Object.keys(invIndex[term].content).length
+          el.append('<li>'+term+': '+count+'</li>');
+          // console.log(invIndex[term].content);
+        }
+        el.append('<\/ol>');
+      }
+    });
+  }
+
+  $(document).ready(function() {
+    lunrTest($('#output'));
+  });
+
+</script>

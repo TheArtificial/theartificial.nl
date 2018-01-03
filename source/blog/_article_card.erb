@@ -22,8 +22,8 @@
       <div class="meta center">
         <div class="label"><%= article.data.category %></div>
         <div class="small-title"><%= article.title %></div>
-        <div class="small-copy author"><%= person_name article.data.author %></div>
-        <div class="small-copy date"><%= article.date.strftime('%B %e, %Y') %></div>
+        <div class="small-body author"><%= person_name article.data.author %></div>
+        <div class="small-body date"><%= article.date.strftime('%B %e, %Y') %></div>
       </div>
     </div>
   <% else %>
@@ -31,8 +31,8 @@
       <div class="meta center">
         <div class="label"><%= article.data.category %></div>
         <div class="small-title"><%= article.title %></div>
-        <div class="small-copy author"><%= person_name article.data.author %></div>
-        <div class="small-copy date"><%= article.date.strftime('%B %e, %Y') %></div>
+        <div class="small-body author"><%= person_name article.data.author %></div>
+        <div class="small-body date"><%= article.date.strftime('%B %e, %Y') %></div>
       </div>
       <div class="summary">
         <p><%= proper_blog_summary(article, 180) %></p>

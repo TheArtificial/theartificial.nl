@@ -33,11 +33,11 @@
 
 					li {
 						a {
-							font-weight: bold;
+							font-weight: 700;
 							color: $white;
 						}
 						a:hover {
-							color: $pale-turquoise;
+							opacity: 0.75;
 						}
 					}
 					li.active a {
@@ -97,7 +97,7 @@
 
 // content
 body {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Barlow", Helvetica, Arial, sans-serif;
 	color: $cool-grey-90;
 
 	a {
@@ -106,7 +106,7 @@ body {
 }
 
 .work_index, .blog_index {
-	background-color: $cool-grey-90;
+	background-color: $cool-grey-80;
 	.section-title {
 		color: $white;
 	}
@@ -133,11 +133,16 @@ body {
 
 // card sizing for case studies and experiments
 @media only screen and (min-device-width: 320px) {
-	.case-study { min-height: 480px; }
+	.case-study {
+		min-height: 480px;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px
+	}
 	.experiment { height: 320px; }
 }
 @media only screen and (min-device-width: 768px) {
-	.case-study { height: 400px; }
+	.case-study { min-height: 400px; height: 400px; }
 	.experiment { height: 240px; }
 }
 @media only screen and (min-width: 960px) {
@@ -169,6 +174,8 @@ body {
 	background-color: $cool-grey-10;
 	color: $cool-grey-90;
 	text-align: center;
+
+	h2 { margin-bottom: 20px; }
 }
 
 svg *.frame { fill: $cool-grey-90; }
@@ -222,10 +229,13 @@ svg *.content{ fill: $cool-grey-40; }
 
 @media only screen and (min-device-width: 768px) {
 	.bleed.about-us {
-		background-image: url(/about/images/us.jpg);
-		min-height: 400px;
-		margin: auto;
-		background-position: top center;
+		min-height: 360px;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.bleed.about-us {
+		min-height: 480px;
 	}
 }
 
@@ -282,6 +292,10 @@ svg *.content{ fill: $cool-grey-40; }
 		text-align: center;
 	}
 
+	.label {
+		color: $cool-grey-90;
+	}
+
 	a {
 		color: $cool-grey-90;
 		text-decoration: underline;
@@ -302,9 +316,12 @@ svg *.content{ fill: $cool-grey-40; }
 		h4, p {
 			color: $cool-grey-30;
 		}
+
 			a {
 			color: $white;
+			font-weight: 500;
 		}
+
 		a:hover {
 			color: $cool-grey-10;
 		}
@@ -384,73 +401,141 @@ svg *.content{ fill: $cool-grey-40; }
 }
 
 // background colors
+
+.turquoise, .dark-turquoise, .darkest-turquoise,
+.sapphire, .dark-sapphire, .darkest-sapphire,
+.grape, .dark-grape, .darkest-grape,
+.tulip, .dark-tulip, .darkest-tulip,
+.pumpkin, .dark-pumpkin, .darkest-pumpkin,
+.dandelion, .dark-dandelion, .darkest-dandelion,
+.lime, .dark-lime, .darkest-lime,
+.grass, .dark-grass, .darkest-grass,
+.warm-grey-30, .warm-grey-70, .warm-grey-80,
+.cool-grey-70, .cool-grey-80, .cool-grey-90 {
+  color: $white;
+}
+
+.white { background-color: $white; }
+
+.palest-turquoise { background-color: $palest-turquoise; }
 .pale-turquoise { background-color: $pale-turquoise; }
-.pale-grass { background-color: $pale-grass; }
-.pale-dandelion { background-color: $pale-dandelion; }
-.pale-pumpkin { background-color: $pale-pumpkin; }
-.pale-tulip { background-color: $pale-tulip; }
-.pale-grape { background-color: $pale-grape; }
+.turquoise { background-color: $turquoise; }
+.dark-turquoise { background-color: $dark-turquoise; }
+.darkest-turquoise { background-color: $darkest-turquoise; }
+
+.palest-sapphire { background-color: $palest-sapphire; }
 .pale-sapphire { background-color: $pale-sapphire; }
-.grey-10 { background-color: $cool-grey-10; }
+.sapphire { background-color: $sapphire; }
+.dark-sapphire { background-color: $dark-sapphire; }
+.darkest-sapphire { background-color: $darkest-sapphire; }
+
+.palest-grape { background-color: $palest-grape; }
+.pale-grape { background-color: $pale-grape; }
+.grape { background-color: $grape; }
+.dark-grape { background-color: $dark-grape; }
+.darkest-grape { background-color: $darkest-grape; }
+
+.palest-tulip { background-color: $palest-tulip; }
+.pale-tulip { background-color: $pale-tulip; }
+.tulip { background-color: $tulip; }
+.dark-tulip { background-color: $dark-tulip; }
+.darkest-tulip { background-color: $darkest-tulip; }
+
+.palest-pumpkin { background-color: $palest-pumpkin; }
+.pale-pumpkin { background-color: $pale-pumpkin; }
+.pumpkin { background-color: $pumpkin; }
+.dark-pumpkin { background-color: $dark-pumpkin; }
+.darkest-pumpkin { background-color: $darkest-pumpkin; }
+
+.palest-dandelion { background-color: $palest-dandelion; }
+.pale-dandelion { background-color: $pale-dandelion; }
+.dandelion { background-color: $dandelion; }
+.dark-dandelion { background-color: $dark-dandelion; }
+.darkest-dandelion { background-color: $darkest-dandelion; }
+
+.palest-lime { background-color: $palest-lime; }
+.pale-lime { background-color: $pale-lime; }
+.lime { background-color: $lime; }
+.dark-lime { background-color: $dark-lime; }
+.darkest-lime { background-color: $darkest-lime; }
+
+.palest-grass { background-color: $palest-grass; }
+.pale-grass { background-color: $pale-grass; }
+.grass { background-color: $grass; }
+.dark-grass { background-color: $dark-grass; }
+.darkest-grass { background-color: $darkest-grass; }
+
+.warm-grey-10 { background-color: $warm-grey-10; }
+.warm-grey-30 { background-color: $warm-grey-30; }
+.warm-grey-70 { background-color: $warm-grey-70; }
+.warm-grey-80 { background-color: $warm-grey-80; }
+
+.cool-grey-10 { background-color: $cool-grey-10; }
+.cool-grey-70 { background-color: $cool-grey-70; }
+.cool-grey-80 { background-color: $cool-grey-80; }
+.cool-grey-90 { background-color: $cool-grey-90; }
+
+
 
 // background gradients
 .turquoise-palegrass {
 	background-color: $turquoise;
 	background: linear-gradient(to bottom, $pale-grass, $turquoise);
-	.statement, .statement:hover { color: $darkest-turquoise; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .sapphire-palegrape {
 	background-color: $sapphire;
 	background: linear-gradient(to bottom, $pale-grape, $sapphire);
-	.statement, .statement:hover { color: $pale-grape; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .sapphire-paleturquoise {
 	background-color: $sapphire;
 	background: linear-gradient(to bottom, $pale-turquoise, $sapphire);
-	.statement, .statement:hover { color: $pale-turquoise; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .grape-paletulip {
 	background-color: $grape;
 	background: linear-gradient(to bottom, $pale-tulip, $grape);
-	.statement, .statement:hover { color: $pale-tulip; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
+
 .grape-palesapphire {
 	background-color: $grape;
 	background: linear-gradient(to bottom, $pale-sapphire, $grape);
-	.statement, .statement:hover { color: $pale-sapphire; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .tulip-palepumpkin {
 	background-color: $tulip;
 	background: linear-gradient(to bottom, $pale-pumpkin, $tulip);
-	.statement, .statement:hover { color: $pale-pumpkin; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .pumpkin-paledandelion {
 	background-color: $pumpkin;
 	background: linear-gradient(to bottom, $pale-dandelion, $pumpkin);
-	.statement, .statement:hover { color: $dark-tulip; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .dandelion-paledandelion {
 	background-color: $dandelion;
 	background: linear-gradient(to bottom, $pale-dandelion, $dandelion);
-	.statement, .statement:hover { color: $dark-pumpkin; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .grass-paleturquoise {
 	background-color: $grass;
 	background: linear-gradient(to bottom, $pale-turquoise, $grass);
-	.statement, .statement:hover { color: $darkest-turquoise; }
+	.statement, .statement:hover, .label, .description { color: $white; }
 }
 
 .grass-palelime {
 	background-color: $grass;
 	background: linear-gradient(to bottom, $pale-lime, $grass);
-	.statement, .statement:hover {	color: $pale-lime }
+	.statement, .statement:hover, .label, .description {	color: $white; }
 }
 
 // text colors

@@ -15,3 +15,5 @@ gem 'middleman-blog'
 gem 'redcarpet'
 gem 'nokogiri'
 gem 'builder'
+
+gem 'middleman-search', git: 'https://github.com/passatgt/middleman-search.git', branch: 'master'

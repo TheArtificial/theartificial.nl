@@ -32,8 +32,11 @@
 		<%= stylesheet_link_tag 'normalize', 'site' %>
 		<%= yield_content :stylesheet_tags %>
 
-		<script src="http://code.jquery.com/jquery.js"></script>
-    <%= javascript_include_tag 'jquery.artificial', 'imagesloaded.pkgd.min', 'packery.pkgd.min', 'imgLiquid-min', 'artificial' %>
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.min.js"
+		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		  crossorigin="anonymous"></script>
+	  <%= javascript_include_tag 'jquery.artificial', 'imagesloaded.pkgd.min', 'packery.pkgd.min', 'imgLiquid-min', 'artificial' %>
 		<%= yield_content :javascript_tags %>
 	</head>
 

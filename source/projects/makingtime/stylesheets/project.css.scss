@@ -16,47 +16,10 @@
   border-top: 1px solid $cool-grey-20;
 }
 
-// background colors
-
-.turquoise, .sapphire, .grape, .dark-grape, .tulip, .dark-tulip, .dandelion, .warm-grey-30, .warm-grey-70, .warm-grey-80, .cool-grey-70, .cool-grey-80, .cool-grey-90 {
-  h1, h2, h3, h4, h5, p { color: $white; }
-}
-
-.white { background-color: $white; }
-
-.turquoise { background-color: $turquoise; }
-.pale-turquoise { background-color: $pale-turquoise; }
-
-.sapphire { background-color: $sapphire; }
-.pale-sapphire { background-color: $pale-sapphire; }
-
-.grape { background-color: $grape; }
-.dark-grape { background-color: $dark-grape; }
-
-.tulip { background-color: $tulip; }
-.dark-tulip { background-color: $dark-tulip; }
-
-.pale-grass { background-color: $pale-grass; }
-
-.pale-lime { background-color: $pale-lime; }
-.lime { background-color: $lime; }
-
-.dandelion { background-color: $dandelion; }
-
-.warm-grey-10 { background-color: $warm-grey-10; }
-.warm-grey-30 { background-color: $warm-grey-30; }
-.warm-grey-70 { background-color: $warm-grey-70; }
-.warm-grey-80 { background-color: $warm-grey-80; }
-
-.cool-grey-10 { background-color: $cool-grey-10; }
-.cool-grey-70 { background-color: $cool-grey-70; }
-.cool-grey-80 { background-color: $cool-grey-80; }
-.cool-grey-90 { background-color: $cool-grey-90; }
-
 // link colors
 
 a.turquoise-link { color: $turquoise; }
-a.turquoise-link:hover { color: $pale-turquoise; }
+a.turquoise-link:hover { color: $palest-turquoise; }
 
 a.darkturquoise-link { color: $turquoise; }
 a.darkturquoise-link:hover { color: $dark-turquoise; }
@@ -85,25 +48,8 @@ a.grey-link:hover { color: $warm-grey-50; }
 // specific to the main page
 
 .introduction {
-  h1, h2, p {
-    text-align: center;
-  }
-
-  h1 {
-    font-family: "Droid Serif", Georgia, Times, serif;
-    font-size: 42px;
-    font-style: italic;
-	}
-
-	h2 {
-		font-size: 24px;
-		font-weight: normal;
-	}
-
   .pale-turquoise {
-    h2, p {
-      color: $dark-grape;
-    }
+    h2, p { color: $dark-grape; }
   }
 
   .hero {
@@ -115,9 +61,7 @@ a.grey-link:hover { color: $warm-grey-50; }
     }
   }
 
-  .icon {
-    margin: 50px;
-  }
+  .icon { margin: 50px; }
 }
 
 .container.packery {
@@ -126,10 +70,8 @@ a.grey-link:hover { color: $warm-grey-50; }
 }
 
 .contentbox {
-	h3 {
-		font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	.mashup {
 		font-size: 24px;
-		font-style: normal;
 		text-align: center;
 		color: $white;
 		position: relative;
@@ -183,257 +125,116 @@ a.grey-link:hover { color: $warm-grey-50; }
   }
 }
 
+// specific to detail pages
+
+.makingtime {
+  .bottom-links {
+    a { text-decoration: underline; }
+
+    .next-link {
+      padding: 0 0 10px 0;
+
+      font-family: "Noto Serif", Georgia, Times, serif;
+      font-style: italic;
+    }
+  }
+}
+
 // specific to each page
 
 .times {
-  h1 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 32px;
-    line-height: 38px;
+  .title, .subtitle {
+    font-family: "Barlow", Helvetica, Arial, sans-serif;
     font-style: normal;
+    font-weight: 400;
   }
 
-  h2 {
-    font-weight: bold;
-  }
-
-  h3 {
-    text-align: center;
-  }
-
-  h2, p {
-    text-align: left;
+  .title {
+    margin-top: 20px;
   }
 
   @media only screen and (min-device-width: 320px) {
     .app-logo {
       width: 40%;
-      margin-top: 0;
+      margin-top: 30%;
     }
   }
 
   @media only screen and (min-device-width: 768px) {
     .app-logo {
       width: 40%;
-      margin-top: 40%;
+      margin-top: 30%;
     }
   }
-
-  .description {
-    margin-top: 80px;
-  }
-
 }
 
 .intention {
-  h1 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  .title {
+    font-family: "Barlow", Helvetica, Arial, sans-serif;
     font-style: normal;
-  }
-
-  h2 {
-    font-weight: lighter;
+    font-weight: 400;
   }
 }
 
 .twimmer {
-  h1 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 26px;
+  .title, .subtitle {
+    font-family: "Barlow", Helvetica, Arial, sans-serif;
     font-style: normal;
-    text-align: center;
   }
-
-  h2 {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: lighter;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-  }
-
-  h4 {
-    font-size: 24px;
-    font-weight: normal;
-    text-align: left;
-  }
-
-  p {
-    color: $cool-grey-20;
-    text-align: left;
-  }
-
 }
 
 .artificialtimercc {
-  h1 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  .title, .subtitle {
+    font-family: "Barlow", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-size: 32px;
-    line-height: 36px;
-    text-align: center;
-  }
-
-  h2 {
-    font-family: "Droid Serif", Georgia, Times, serif;
-    font-size: 24px;
-    line-height: 32px;
-    font-style: italic;
-    text-align: center;
-  }
-
-  h4 {
-    font-size: 24px;
-    line-height: 32px;
   }
 }
 
 .keytime {
-  h1, h2 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  .title, .subtitle {
+    font-family: "Barlow", Helvetica, Arial, sans-serif;
     font-style: normal;
+  }
+  .title {
+    font-size: 48px;
     font-weight: lighter;
-    font-size: 54px;
-    text-align: center;
-  }
-
-  h2 {
-    color: $cool-grey-50;
-  }
-
-  h3, h4 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 32px;
-    line-height: 36px;
-  }
-
-  h3 {
-      text-align: center;
-  }
-
-  p {
-      font-size: 16px;
-      text-align: left;
   }
 }
 
 .timebot {
-  h1 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 40px;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 16px;
-    text-align: left;
-  }
-
-  p {
-    font-size: 14px;
-    text-align: left;
+  .small-statement {
+    font-weight: 700;
   }
 }
 
 .timebook {
-  h1, h2, p {
-    text-align: left;
-  }
-
-  h1 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  .title {
+    margin-top: 20px;
+    font-family: "Barlow", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 42px;
   }
 
-  h2 {
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 18px;
-  }
+ .small-statement {
+   font-weight: 700;
+ }
 }
 
 .timus {
-  h1 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  .title, .subtitle {
+    font-family: "Barlow", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 38px;
-    text-align: center;
   }
-
-  h2 {
-    font-weight: lighter;
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;
-  }
-
-  h3 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: normal;
-    text-transform: uppercase;
-  }
-
-  p {
-    text-align: left;
+  .title {
+    font-weight: 400;
   }
 }
 
 .itime {
-  h1, h2, h3 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-
-  h1 {
-    font-size: 36px;
-    line-height: 42px;
+  .title, .subtitle {
+    font-family: "Barlow", Helvetica, Arial, sans-serif;
     font-style: normal;
-    text-align: center;
   }
-  h2 {
-    font-size: 32px;
-    line-height: 36px;
-    font-weight: lighter;
-    text-align: center;
-  }
-  h3 {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: lighter;
-  }
-
-}
-
-// universal link
-.bottom-links {
-  h3 {
-    font-family: "Droid Serif", Georgia, Times, serif;
-    font-style: italic;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: none;
-  }
-  p {
-    font-weight: normal;
-    text-align: center;
-    text-decoration: underline;
+  .subtitle {
+    font-weight: 400;
   }
 }
