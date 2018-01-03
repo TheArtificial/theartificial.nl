@@ -106,7 +106,7 @@
 }
 
 #subnav {
-  background-color: $cool-grey-90;
+  background-color: $cool-grey-80;
   overflow: auto;
 
   .container {
@@ -187,7 +187,7 @@
 .cityguide_mumbai {
   .bleed.cover {
     background-image: url("../images/mumbai_cover.png");
-    h1, h3 { color: $pale-dandelion; }
+    h1, h3 { color: $palest-dandelion; }
   }
   .bleed.feature { background-image: url("../images/mumbai_feature.png"); }
 }
@@ -215,20 +215,6 @@
   }
   .bleed.feature { background-image: url("../images/shanghai_feature.png"); }
 }
-
-.bleed.dark-turquoise, .bleed.dark-pumpkin, .bleed.dark-dandelion, .bleed.dark-sapphire, .bleed.dark-grass, .bleed.dark-tulip, .bleed.dark-lime, .bleed.dark-grape, .bleed.cool-grey-80 { color: $white; }
-
-.bleed.dark-turquoise { background-color: $dark-turquoise;}
-.bleed.dark-grass { background-color: $dark-grass; }
-.bleed.dark-lime { background-color: $darkest-lime; }
-.bleed.dark-dandelion { background-color: $dark-dandelion; }
-.bleed.dark-pumpkin { background-color: $dark-pumpkin; }
-.bleed.dark-tulip { background-color: $dark-tulip; }
-.bleed.dark-grape { background-color: $dark-grape; }
-.bleed.dark-sapphire { background-color: $dark-sapphire; }
-.bleed.cool-grey-80 { background-color: $cool-grey-80; }
-
-.bleed.pale-lime { background-color: $pale-lime; }
 
 h2.turquoise-text { color: $turquoise; }
 h2.grass-text { color: $grass; }

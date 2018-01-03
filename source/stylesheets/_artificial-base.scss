@@ -22,13 +22,8 @@ body {
 		z-index: 100;
 
 		.topbar {
-			border-top-width: 8px;
+			border-top-width: 10px;
 			border-top-style: solid;
-		}
-
-		.flex.container {
-			border-bottom-width: 1px;
-			border-bottom-style: solid;
 		}
 
 		.padded-lr {
@@ -98,10 +93,11 @@ body {
 // tablet and desktop
 @media (min-device-width: 768px) {
 	#header {
-		height: 68px;
+		height: 70px;
 
 		#logo {
 			text-align: left;
+			margin-top: -4px;
 
 			img {
 				margin-left: 0;
@@ -188,12 +184,6 @@ body {
 	#footer {
 		width: 100%;
 		display: block;
-
-		.flex.container
-		{
-			border-top-width: 1px;
-			border-top-style: solid;
-		}
 
 		#artificial {
 			text-align: center;

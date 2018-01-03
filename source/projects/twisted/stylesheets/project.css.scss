@@ -7,9 +7,7 @@
 		color: white;
 		margin-bottom: 40px;
 
-		.container.packery {
-			margin-top: 0;
-		}
+		.container.packery { margin-top: 0; }
 	}
 }
 
@@ -17,13 +15,8 @@
 	padding-bottom: 40px;
   color: $white;
 
-	a {
-		color: $pumpkin;
-	}
-
-	a:hover {
-		color: $dark-pumpkin;
-	}
+	a { color: $pale-pumpkin; }
+	a:hover { color: $pumpkin; }
 }
 
 
@@ -51,7 +44,7 @@
 		opacity: 0;
 		transition: opacity .4s linear;
 
-		.small-copy {
+		.small-body {
 			color: white;
 			text-align: center;
 		}
@@ -95,34 +88,11 @@
 	}
 }
 
-.bg-pumpkin {
-	background-color: $pumpkin;
-}
-
-.bg-tulip {
-	background-color: $tulip;
-}
-
-.bg-grape {
-	background-color: $grape;
-}
-
-.bg-sapphire {
-	background-color: $sapphire;
-}
-
-.bg-turquoise {
-	background-color: $turquoise;
-}
-
-.bg-grass {
-	background-color: $grass;
-}
-
-.bg-lime {
-	background-color: $lime;
-}
-
-.bg-dandelion {
-	background-color: $dandelion;
-}
+.bg-pumpkin { background-color: $pumpkin; }
+.bg-tulip { background-color: $tulip; }
+.bg-grape { background-color: $grape; }
+.bg-sapphire { background-color: $sapphire; }
+.bg-turquoise { background-color: $turquoise; }
+.bg-grass { background-color: $grass; }
+.bg-lime { background-color: $lime; }
+.bg-dandelion { background-color: $dandelion; }

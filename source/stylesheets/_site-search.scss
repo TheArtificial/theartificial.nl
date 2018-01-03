@@ -1,0 +1,7 @@
+body.search {
+
+  // This is only necessary because _artificial-base is too aggressive
+  input {
+    background-color: $white;
+  }
+}

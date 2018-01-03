@@ -69,7 +69,7 @@ function scrollspy(selector, heightOffset, callback) {
 function updatePagination(menuItems, currentId) {
 	menuItems.parent().removeClass("active");
 	// find the item that is not .prev or .next and has the right href target
-	var currentMenuItem = menuItems.filter('a:not(.next,.prev)[href=#'+currentId+']');
+	var currentMenuItem = menuItems.filter('a:not(.next,.prev)[href=\'#'+currentId+'\']');
 	currentMenuItem.parent().addClass('active');
 	var prevMenuItem = currentMenuItem.parent().prev().find('a:not(.prev)');
 	if (prevMenuItem.length > 0) {
