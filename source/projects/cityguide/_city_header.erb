@@ -5,7 +5,6 @@
         <ul>
           <%
             project_folder = current_page.metadata[:project]
-            fix_resources = sitemap.resources.select{ |r| r.path[/#{project_folder}\/([^\/]*)/] && r.data.date }
             ['amsterdam', 'gdansk', 'losangeles', 'mexicocity', 'mumbai', 'saintlouis', 'seattle', 'shanghai'].each do |slug|
               target_resource = sitemap.find_resource_by_path("/#{project_folder}/#{slug}.html")
               target_name = target_resource.data.name
