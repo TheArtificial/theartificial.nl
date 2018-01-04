@@ -251,7 +251,7 @@
   author: shannon
   rating: 4
   html: |
-    <p>Part one of today's weather drinking game. A <a href="sgroppino.html">sgroppino</a> for those rare but loved sunny moments, and a Dutch twist on the Dark and stormy cocktail for the rest. </p>
+    <p>Part one of today's weather drinking game. A <a href="/cocktails/sgroppino.html">sgroppino</a> for those rare but loved sunny moments, and a Dutch twist on the Dark and stormy cocktail for the rest. </p>
     <ul>
       <li>1 part dark rum</li>
       <li>2 parts ginger beer</li>
@@ -368,7 +368,7 @@
   author: ariane
   rating: 3
   html: |
-    <p>Fresh out of our cocktail making class at <a href="https://www.vesperbar.nl" target="blank">Vesper</a>, we try out our new skills and some new ingredients.</p>
+    <p>Fresh out of our cocktail making class at <a href="https://www.vesperbar.nl/" target="blank">Vesper</a>, we try out our new skills and some new ingredients.</p>
     <p>2 parts gin<br>
     1 part chartreuse<br>
     0.5 part honey simple syrup<br>
@@ -774,7 +774,7 @@
   author: shannon
   rating: 4
   html: |
-    <p>To celebrate the launch of our <a href="http://theartificial.nl/pokemonicons/" target="blank">Pokémon icons</a>, we've created a Paras inspired cocktail. Cute, orange, and bubbly, this drink features two orange "Paras claws" that perch on the rim of the glass.</p>
+    <p>To celebrate the launch of our <a href="/pokemonicons/" target="blank">Pokémon icons</a>, we've created a Paras inspired cocktail. Cute, orange, and bubbly, this drink features two orange "Paras claws" that perch on the rim of the glass.</p>
     <ul>
       <li>1 part orange infused vodka</li>
       <li>1 part sprite</li>
@@ -927,7 +927,7 @@
   author: shannon
   rating: 4
   html: |
-    <p>Part two of today's weather drinking game. A sgroppino for those rare but loved sunny moments, and a <a href="dutchandstormy.html">Dutch twist on the Dark and Stormy</a> cocktail for the rest.</p>
+    <p>Part two of today's weather drinking game. A sgroppino for those rare but loved sunny moments, and a <a href="/cocktails/dutchandstormy.html">Dutch twist on the Dark and Stormy</a> cocktail for the rest.</p>
     <ul>
       <li>2 parts prosecco</li>
       <li>1 part Limoncello</li>
@@ -1261,7 +1261,7 @@
   author: kamila
   rating: 3
   html:
-    <p>If you like traditional mojitos and <a href="http://theartificial.nl/cocktails/moscowmule.html" target="blank">Moscow mules</a>, you’ll love this drink. We decided to make it in the middle of cold, rainy Dutch autumn to help us forget about it and pretend like it is summer for a moment. Like some say, if you <a href="https://www.youtube.com/watch?v=Ys-KP8oPdvg" target="blank">don’t complain about the weather</a>in this country you'll never truly fit in.</p>
+    <p>If you like traditional mojitos and <a href="/cocktails/moscowmule.html" target="blank">Moscow mules</a>, you’ll love this drink. We decided to make it in the middle of cold, rainy Dutch autumn to help us forget about it and pretend like it is summer for a moment. Like some say, if you <a href="https://www.youtube.com/watch?v=Ys-KP8oPdvg" target="blank">don’t complain about the weather</a>in this country you'll never truly fit in.</p>
     <ul>
       <li>2 parts fresh lime juice</li>
       <li>2 parts light rum</li>

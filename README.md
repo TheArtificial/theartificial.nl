@@ -6,7 +6,7 @@
       | | | | | |  __/  / ___ \| |  | |_| |  _| | (__| | (_| | |
       |_| |_| |_|\___| /_/   \_\_|   \__|_|_| |_|\___|_|\__,_|_|
 
-As seen at http://theartificial.nl/
+As seen at http://theartificial.com/ (and .nl, natuurlijk)
 
 ## Setup
 

@@ -20,7 +20,7 @@ We strive to create a diverse team in background and experience, which often mea
 
 So what do we look for? It starts with an ability to communicate. We enjoy organization, focus, and written communication, and the team suffers at the hands of somebody who has a chaotic and external process.
 
-Because CVs, portfolios, and letters of recommendation can be misleading in terms of a persons actual ability, we decided to add a [design test](http://theartificial.nl/blog/2017/04/11/design-test.html) to our hiring process. This test looks beyond the expected design skills to better understand a person's process, ensuring that those we hire can create and communicate with everyone else on the team.
+Because CVs, portfolios, and letters of recommendation can be misleading in terms of a persons actual ability, we decided to add a [design test](https://theartificial.com/blog/2017/04/11/design-test.html) to our hiring process. This test looks beyond the expected design skills to better understand a person's process, ensuring that those we hire can create and communicate with everyone else on the team.
 
 ## Proof Is More Important than Promises
 
