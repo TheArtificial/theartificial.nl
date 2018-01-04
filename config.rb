@@ -190,7 +190,8 @@ activate :search do |search|
     if author = resource.data.author
       to_store[:author] = to_index[:author] = person_name(author)
     else
-      puts "no author: #{resource.locals.inspect}"
+      puts "Not indexing #{resource.path}, no author found."
+      throw(:skip)
     end
   end
 end
