@@ -21,7 +21,7 @@
     { name: 'Ariane Garoff',      username: 'ariane' },
     { name: 'Natalia Bourges',    username: 'natalia' },
     { name: 'Katinka Berghuis',   username: 'katinka' },
-    { name: 'Nathalie de Graaf',   username: 'nathalie' },
+    { name: 'Nathalie de Graaf',  username: 'nathalie' },
     { name: 'Kamila Piątkowska',  username: 'kamila' },
     { name: 'Manjari Sahu',       username: 'manjari' }
   ]
@@ -33,7 +33,7 @@
       person[:svg] = file.read
     end
 
-    person[:url] = "//theartificial.nl/people/#{person[:username]}.html"
+    person[:url] = "https://theartificial.com/people/#{person[:username]}.html"
   end
 
   people.reject!{|p| p[:svg].nil?}
