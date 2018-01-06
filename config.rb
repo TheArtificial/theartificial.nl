@@ -31,51 +31,6 @@ helpers do
     link_to(link_text, url, options)
   end
 
-  def person_name(username)
-    if username.kind_of?(Array)
-      return username.map{|u| person_name u }.join(', ')
-    elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
-      return person_page.data.title
-    else
-      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
-      return "<span class=\"error\">#{username}</span>"
-    end
-  end
-
-
-  def link_to_person(username, options = {})
-    if username.kind_of?(Array)
-      return username.map{|u| link_to_person(u, options) }.join(', ')
-    elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
-      return link_to(person_page.data.title, person_page, options)
-    elsif username.include? ' '
-      # not really a username, but we'll forgive it for guest authors
-      return "<span>#{username}</span>"
-    else
-      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
-      return "<span>#{username.capitalize}</span>"
-    end
-  end
-
-  def link_to_person_logo(username, options = {})
-    if person_page = sitemap.find_resource_by_path("/people/#{username}.html")
-      return link_to(get_logo_svg(username), person_page, options)
-    else
-      puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
-      return "<span class=\"error\">#{username}</span>"
-    end
-  end
-
-  def get_logo_svg(name)
-    path = "images/logo-#{name}.svg"
-    if resource = sitemap.find_resource_by_path(path)
-      file = File.open(resource.source_file, 'r')
-      return file.read
-    else
-      return ''
-    end
-  end
-
   # this overrides the built-in helper
   # see https://github.com/middleman/middleman/issues/145
   def extra_page_classes
@@ -105,6 +60,11 @@ helpers do
       <path  d="M60,4c1.103,0,2,0.897,2,2v51.9c0,1.103-0.897,2-2,2H4c-1.103,0-2-0.897-2-2V6c0-1.103,0.897-2,2-2H60 M60,3	H4C2.343,3,1,4.343,1,6v51.9c0,1.657,1.343,3,3,3h56c1.657,0,3-1.343,3-3V6C63,4.343,61.657,3,60,3L60,3z"/>'
     end
   end
+
+  def mustache(path, locals)
+		template_contents = File.open("source/#{path}") { |f| f.read }
+		Mustache.render(template_contents, locals)
+	end
 
 end
 

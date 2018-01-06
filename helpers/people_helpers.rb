@@ -18,14 +18,15 @@ module PeopleHelpers
 
   def link_to_person(username, options = {})
     if username.kind_of?(Array)
-      return username.map{|u| link_to_person u }.join(', ')
+      return username.map{|u| link_to_person(u, options) }.join(', ')
     elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
       return link_to(person_page.data.title, person_page, options)
     elsif username.include? ' '
+      # not really a username, but we'll forgive it for guest authors
       return "<span>#{username}</span>"
     else
       puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"
-      return "<span>#{username}</span>"
+      return "<span>#{username.capitalize}</span>"
     end
   end
 
