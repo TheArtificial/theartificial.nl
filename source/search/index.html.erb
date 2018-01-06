@@ -48,13 +48,13 @@ title: Search
 		};
 
 		if (type == 'blog') {
-			date = new Date(page.date);
-			formatted_date = monthName(date.getMonth()) + ' ' + date.getDate() + ', ' + date.getFullYear();
+			post_date = new Date(page.date);
+			formatted_date = monthName(post_date.getMonth()) + ' ' + post_date.getDate() + ', ' + post_date.getFullYear();
 
 			template = "<%=escape_javascript( mustache_template('blog/_article_card.mustache') ) %>"
 
-			view.date = formatted_date;
-			view.category = "category",
+			view.date = page.date;
+			view.category = page.category,
 			view.summary = "SUMMARY HERE"
 		}
 

@@ -135,6 +135,9 @@ activate :search do |search|
     content: {boost: 50},
     url:     {index: false, store: true}
   }
+
+  blog_date = /(?'YYYY'\d{4})[\/-](?'MM'\d{2})[\/-](?'DD'\d{2})/
+
   search.before_index = Proc.new do |to_index, to_store, resource|
     # set type
     path = resource.path
@@ -144,9 +147,10 @@ activate :search do |search|
     to_store[:type] = type
 
     if type == 'blog'
-      # article = blog.convert_to_article(resource)
-      # date = resource.date
-      # to_store[:date] = date
+      date_match = blog_date.match(path)
+      to_store[:date] = "#{date_match[:YYYY]}-#{date_match[:MM]}-#{date_match[:DD]}"
+      to_store[:category] = resource.data.category
+#      to_store[:summary] = proper_blog_summary(resource, 180)
     end
 
     # prep author
