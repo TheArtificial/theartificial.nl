@@ -16,4 +16,6 @@ gem 'redcarpet'
 gem 'nokogiri'
 gem 'builder'
 
+gem 'tilt-mustache'
+
 gem 'middleman-search', git: 'https://github.com/passatgt/middleman-search.git', branch: 'master'

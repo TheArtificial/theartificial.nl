@@ -2,6 +2,14 @@
 title: The Artificial blog
 ---
 
+<%
+	def mustache(path, locals)
+		template_contents = File.open("source/#{path}") { |f| f.read }
+		Mustache.render(template_contents, locals)
+	end
+%>
+
+
 <section id="content">
 	<div class="flex container">
 			<div class="col-12 section-title">
@@ -15,9 +23,48 @@ title: The Artificial blog
 	</div>
 
   <div class="container packery padded-bottom">
-		<% page_articles.each do |article| %>
-			<%= partial('blog/article_card', locals: { article: article }) %>
-		<% end %>
+		<%
+			page_articles.each do |article|
+			  last_slash = article.path.rindex('/')
+			  base_path = article.path[0...last_slash]
+
+			  image_path = nil
+			  if article.data.preview
+			    if article.data.preview != 'none'
+			      image_path = article.data.preview
+			    end
+			  elsif article.data.masthead
+			    image_path = article.data.masthead
+			  end
+				if image_path
+					image = url_for(base_path + '/' + image_path)
+			%>
+				<%= mustache('blog/_article_card_image.mustache', {
+					article: article,
+					image: image,
+					url: article.url,
+					category: article.data.category,
+					title: article.title,
+					author: person_name(article.data.author),
+					date: article.date.strftime('%B %e, %Y'),
+					summary: proper_blog_summary(article, 180)
+				}) %>
+			<%
+				else
+			%>
+				<%= mustache('blog/_article_card.mustache', {
+					article: article,
+					url: article.url,
+					category: article.data.category,
+					title: article.title,
+					author: person_name(article.data.author),
+					date: article.date.strftime('%B %e, %Y'),
+					summary: proper_blog_summary(article, 180)
+				}) %>
+			<%
+				end
+			end
+		%>
 	</div>
 
 </section>
