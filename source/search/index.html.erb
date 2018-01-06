@@ -3,6 +3,7 @@ title: Search
 ---
 <% content_for :javascript_tags do %>
 	<%= javascript_include_tag 'lunr' %>
+	<%= javascript_include_tag 'mustache' %>
 <% end %>
 
 <section id="content">
@@ -18,11 +19,12 @@ title: Search
 						<input name="q" type="search">
 					</form>
 				</div>
-				<div class="padded center" id="results">
-
-				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="container -packery padded bottom" id="results">
+
 	</div>
 
 </section>
@@ -33,6 +35,32 @@ title: Search
     var results = new RegExp('[\\?&]' + query_param + '=([^&#]*)').exec(window.location.href);
     return results ? results[1] : false;
   }
+
+	function addCard(output, page) {
+		var type = page.type;
+
+		template = "<%=escape_javascript( mustache_template('search/_unknown_card.mustache') ) %>"
+
+		var view = {
+		  url: page.url,
+			title: page.title,
+			author: page.author
+		};
+
+		if (type == 'blog') {
+			date = new Date(page.date);
+			formatted_date = monthName(date.getMonth()) + ' ' + date.getDate() + ', ' + date.getFullYear();
+
+			template = "<%=escape_javascript( mustache_template('blog/_article_card.mustache') ) %>"
+
+			view.date = formatted_date;
+			view.category = "category",
+			view.summary = "SUMMARY HERE"
+		}
+
+
+		output.append(Mustache.render(template, view));
+	}
 
   var monthNames = new Array("January","February","March","April","May"," June","July","August","September","October","November","December");
   function monthName(n) {
@@ -69,23 +97,7 @@ title: Search
         $.each(results, function(index, result) {
           page = lunrMap[result.ref];
 					console.log('page ' + index, page);
-
-          var type = page.type;
-          var where = 'unknown';
-
-          if (type == 'blog') {
-            date = new Date(page.date);
-						where = page.date;
-            // where = monthName(date.getMonth()) + ' ' + date.getDate() + ', ' + date.getFullYear();
-          }
-
-          list.append('<li>' +
-							'<b>' + type + '</b>: ' +
-              '<a href="' + page.url + '">' +
-                '<span>' + page.title + '<\/span>' +
-              '<\/a>' +
-              ' (' + page.author + ')' +
-            '<\/li>');
+					addCard(list, page);
         });
         list.append('<\/ol>');
         if (results.length > 0) {

@@ -62,8 +62,11 @@ helpers do
   end
 
   def mustache(path, locals)
-		template_contents = File.open("source/#{path}") { |f| f.read }
-		Mustache.render(template_contents, locals)
+		Mustache.render(mustache_template(path), locals)
+	end
+
+  def mustache_template(path)
+		return File.open("source/#{path}") { |f| f.read }
 	end
 
 end
