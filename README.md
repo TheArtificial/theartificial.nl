@@ -54,17 +54,15 @@ When major code changes are made, you may have to `bundle install` again.
 
 The site is built using [Middleman](http://middlemanapp.com/). Essentially, it uses the files in the `source` folder to build the files that we will upload to the server.
 
-Usually, you will want to let it magically do this on the fly. Use this command:
+To test, you'll want it to run a local server that will magically update changes on the fly. Use this command:
 
-    $ bundle exec middleman server
+    $ script/server
 
-It should tell you this:
+When it's ready, it will say something like this
 
-    == The Middleman is standing watch at http://0.0.0.0:4567
+    == Inspect your site configuration at "http://localhost:4567/__middleman", "http://127.0.0.1:4567/__middleman"
 
-You may then visit that URL and see a live (local) build. But because we're using TypeKit for web fonts, you'll need to instead use `localhost` instead of `0.0.0.0`. So point your browser to: [localhost:4567](http://localhost:4567/)
-
-Changes you make to the `source` folder should be reflected as soon as you refresh any page on that local site.
+You may then visit http://localhost:4567/ and see a live (local) build. Changes you make to the `source` folder should be reflected as soon as you refresh any page on that local site.
 
 You may stop Middleman by closing that Terminal window or pressing control-C.
 
