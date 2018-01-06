@@ -2,14 +2,6 @@
 title: The Artificial blog
 ---
 
-<%
-	def mustache(path, locals)
-		template_contents = File.open("source/#{path}") { |f| f.read }
-		Mustache.render(template_contents, locals)
-	end
-%>
-
-
 <section id="content">
 	<div class="flex container">
 			<div class="col-12 section-title">
@@ -28,6 +20,16 @@ title: The Artificial blog
 			  last_slash = article.path.rindex('/')
 			  base_path = article.path[0...last_slash]
 
+				article_view = {
+					article: article,
+					url: article.url,
+					category: article.data.category,
+					title: article.title,
+					author: person_name(article.data.author),
+					date: article.date.strftime('%B %e, %Y'),
+					summary: proper_blog_summary(article, 180)
+				}
+
 			  image_path = nil
 			  if article.data.preview
 			    if article.data.preview != 'none'
@@ -37,32 +39,14 @@ title: The Artificial blog
 			    image_path = article.data.masthead
 			  end
 				if image_path
-					image = url_for(base_path + '/' + image_path)
-			%>
-				<%= mustache('blog/_article_card_image.mustache', {
-					article: article,
-					image: image,
-					url: article.url,
-					category: article.data.category,
-					title: article.title,
-					author: person_name(article.data.author),
-					date: article.date.strftime('%B %e, %Y'),
-					summary: proper_blog_summary(article, 180)
-				}) %>
-			<%
+					article_view[:image] = url_for(base_path + '/' + image_path)
+					template_path = 'blog/_article_card_image.mustache'
 				else
-			%>
-				<%= mustache('blog/_article_card.mustache', {
-					article: article,
-					url: article.url,
-					category: article.data.category,
-					title: article.title,
-					author: person_name(article.data.author),
-					date: article.date.strftime('%B %e, %Y'),
-					summary: proper_blog_summary(article, 180)
-				}) %>
-			<%
+					template_path = 'blog/_article_card.mustache'
 				end
+		%>
+				<%= mustache(template_path, article_view) %>
+		<%
 			end
 		%>
 	</div>
