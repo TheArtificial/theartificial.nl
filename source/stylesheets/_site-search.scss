@@ -1,7 +1,13 @@
 body.search {
 
+  #content {
+    background-color: $cool-grey-90;
+    color: $white;
+  }
+
   // This is only necessary because _artificial-base is too aggressive
   input {
     background-color: $white;
   }
+
 }
