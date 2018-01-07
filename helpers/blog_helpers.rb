@@ -1,21 +1,25 @@
 module BlogHelpers
 
-  # Middleman 4.1.14 is leaving the seperator in the summary
-  def proper_blog_summary(article, length=180)
-    text = Nokogiri::HTML(article.summary(length, '…')).css('p').text
-    return text.split(blog.options.summary_separator).first
+  require "html_truncator"
+
+  # Middleman 4.1.14 is leaving the seperator in the truncation
+  def proper_blog_summary(resource, length=180, seperator="READMORE", ellipsis="…")
+    rendered = resource.render(layout: false, keep_separator: true)
+    seperator_at = rendered.index(seperator)
+    length = seperator_at ? seperator_at : length
+    return HTML_Truncator.truncate(rendered, length, length_in_chars: true)
   end
 
-  def image_url_for_blog_article(article)
+  def image_url_for_blog_article(resource)
 
-    last_dot = article.url.rindex('.')
-    base_path = article.url[0...last_dot] + '/'
-    if article.data.preview
-      if article.data.preview != 'none'
-        return base_path + article.data.preview
+    last_dot = resource.url.rindex('.')
+    base_path = resource.url[0...last_dot] + '/'
+    if resource.data.preview
+      if resource.data.preview != 'none'
+        return base_path + resource.data.preview
       end
-    elsif article.data.masthead
-      return base_path + article.data.masthead
+    elsif resource.data.masthead
+      return base_path + resource.data.masthead
     end
     return nil
   end

@@ -19,3 +19,5 @@ gem 'builder'
 gem 'tilt-mustache'
 
 gem 'middleman-search', git: 'https://github.com/passatgt/middleman-search.git', branch: 'master'
+
+gem "html_truncator", "~>0.2"

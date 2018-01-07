@@ -132,7 +132,7 @@ activate :search do |search|
       to_store[:category] = resource.data.category
       puts "blog: #{resource.title}"
       to_store[:image] = image_url_for_blog_article(resource)
-      #      to_store[:summary] = proper_blog_summary(resource, 180)
+      to_store[:summary] = proper_blog_summary(resource, 180)
     end
 
     # prep author
