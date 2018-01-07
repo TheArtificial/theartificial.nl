@@ -22,7 +22,7 @@ title: Friday Cocktails
       <% data.cocktails.sort_by{|c| c.date}.reverse.each_with_index do |c, i| %>
       <div class="col-4 packed">
         <% link_to "#{c.slug}.html" do %>
-          <div class="card">
+          <div class="cocktail-preview">
             <div class="anchor">
               <div class="preview">
                 <img class="static" alt="<%= c.name %>" src="<%= "images/glass/#{c.glass}.png" %>">

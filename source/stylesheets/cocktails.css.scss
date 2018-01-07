@@ -58,9 +58,16 @@
   }
 }
 
-.card {
+.cocktail-preview {
   position: relative;
   height: 480px;
+
+  margin: 8px 8px 0 8px;
+  overflow: hidden;
+
+  .padded {
+    // padding: 14px;
+  }
 
   .anchor {
     position: absolute;
@@ -134,8 +141,14 @@
   .left { text-align: left; }
   .right { text-align: right; }
 
-  .card {
+  .cocktail-preview {
     height: 480px;
+
+		margin: 2px;
+
+		.padded {
+			padding: 14px;
+		}
 
     .anchor {
       .preview { width: 80%; }
@@ -158,5 +171,5 @@
 }
 
 @media (min-width: 960px) {
-  .card { height: 600px; }
+  .cocktail-preview { height: 600px; }
 }
