@@ -7,7 +7,11 @@ module BlogHelpers
     rendered = resource.render(layout: false, keep_separator: true)
     seperator_at = rendered.index(seperator)
     length = seperator_at ? seperator_at : length
-    return HTML_Truncator.truncate(rendered, length, length_in_chars: true)
+    doc = Nokogiri::HTML::DocumentFragment.parse(rendered)
+    anchors = doc.css('a')
+    anchors.each {|a| a.replace(a.children) }
+    options = HTML_Truncator::DEFAULT_OPTIONS.merge(length_in_chars: true)
+    return doc.truncate(length, options).first
   end
 
   def image_url_for_blog_article(resource)

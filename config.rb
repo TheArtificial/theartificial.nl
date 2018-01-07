@@ -104,7 +104,7 @@ set :markdown,  fenced_code_blocks: true,
                 footnotes: true
 
 activate :search do |search|
-  search.resources = ['blog/20', 'cocktails/']
+  search.resources = ['blog/20', 'cocktails/', 'ftfy/']
   search.index_path = 'search/index.json'
   search.fields = {
     title:   {boost: 100, store: true, required: true},
@@ -125,6 +125,8 @@ activate :search do |search|
     path_split = path.split('/',2)
     section = path_split.first
 
+    puts("Indexing: #{path}")
+
     if section == 'blog'
       to_store[:type] = 'article'
       date_match = blog_date.match(path)
@@ -134,11 +136,20 @@ activate :search do |search|
       to_store[:summary] = proper_blog_summary(resource, 180)
     elsif section == 'cocktails'
       to_store[:type] = 'cocktail'
-      if resource.data.cocktail.date
-        to_store[:date] = resource.data.cocktail.date.iso8601
+      if resource.data.cocktail.nil?
+        puts "Not indexing #{resource.path}, no cocktail data found."
+        throw(:skip)
       end
+      to_store[:date] = resource.data.cocktail.date.iso8601
       to_store[:glass] = "/cocktails/images/glass/#{resource.data.cocktail.glass}.png"
       to_store[:contents] = "/cocktails/images/contents/#{resource.data.cocktail.contents}.gif"
+    elsif section == 'ftfy'
+      to_store[:type] = 'ftfy'
+      if resource.data.date
+        to_store[:date] = resource.data.date.iso8601
+      end
+
+      to_store[:image] = "/ftfy/images#{path[/\/.*(?=\..+$)/]}/#{resource.data.thumbnail}"
     end
 
     # prep author

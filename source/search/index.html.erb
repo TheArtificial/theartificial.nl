@@ -70,6 +70,14 @@ title: Search
 			view.contents = page.contents;
 
 			template = "<%=escape_javascript( mustache_template('search/_cocktail_card.mustache') ) %>";
+		} else if (type == 'ftfy') {
+			post_date = new Date(page.date);
+			formatted_date = monthName(post_date.getMonth()) + ' ' + post_date.getDate() + ', ' + post_date.getFullYear();
+			view.date = formatted_date;
+
+			view.image = page.image;
+
+			template = "<%=escape_javascript( mustache_template('search/_ftfy_card.mustache') ) %>";
 		}
 
 		newEl = $(Mustache.render(template, view))
@@ -89,7 +97,7 @@ title: Search
   function lunrSearch(query, $el) {
 
     console.log('Requesting Lunr file');
-    $el.append('Loading...');
+    $el.html('Loading...');
 		$el.packery();
 
     $.ajax({
