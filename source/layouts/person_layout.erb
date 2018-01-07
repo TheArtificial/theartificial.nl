@@ -51,7 +51,7 @@
     </div>
     <div class="container packery padded-bottom">
       <% articles.each do |article, i| %>
-        <%= partial('blog/article_card', locals: { article: article }) %>
+        <%= partial('blog/article_preview', locals: { article: article }) %>
       <% end %>
     </div>
   <% else %>
