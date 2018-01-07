@@ -1,0 +1,18 @@
+<%
+article_view = {
+  url: article.url,
+  category: article.data.category,
+  title: article.title,
+  author: person_name(article.data.author),
+  date: article.date.strftime('%B %e, %Y'),
+  summary: proper_blog_summary(article, 180)
+}
+
+if image_url = image_url_for_blog_article(article)
+  article_view[:image] = image_url
+  template_path = 'search/_blog_article_card_image.mustache'
+else
+  template_path = 'search/_blog_article_card.mustache'
+end
+%>
+<%= mustache(template_path, article_view) %>

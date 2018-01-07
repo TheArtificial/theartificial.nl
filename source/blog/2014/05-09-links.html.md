@@ -3,7 +3,7 @@ title: "Mothers & Design"
 category: inspiration
 tags: mothers, women, pioneers, collaboration
 author: carol
-masthead: 05-09-links/main.png
+masthead: main.png
 ---
 
 This weekend we're honoring the most important women in our lives,our mothers.READMORE To celebrate, we're showcasing some other inspirational mothers who have established themselves in the creative and technology industries. We all know that it can be difficult as a woman to gain the respect and authority that some of these moms have managed to do.

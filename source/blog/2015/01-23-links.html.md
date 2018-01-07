@@ -3,10 +3,10 @@ title: "Light Therapy"
 category: inspiration
 tags: sun, light thearpy, winter, light
 author: carol
-masthead: 01-23-links/main.png
+masthead: main.png
 ---
 
-The sun plays a vital role in sustaining human life. READMORE It provides us with warmth, light, and energy. READMORE Our fundamental need for these elements has engendered technological substitutions for when we lack sun exposure. We brought warmth to cold buildings with central heating systems, light to shadowy roads with street lamps, and energy to factories with solar panels. 
+The sun plays a vital role in sustaining human life. READMORE It provides us with warmth, light, and energy. READMORE Our fundamental need for these elements has engendered technological substitutions for when we lack sun exposure. We brought warmth to cold buildings with central heating systems, light to shadowy roads with street lamps, and energy to factories with solar panels.
 
 But the more unfrequented technological developments concern the psychological effects of sunlight deficiency. Seasonal Affective Disorder (SAD) is a form of depression that some people experience during autumn and winter, when sunlight subsides. Most know this experience as the “winter blues”, but the effects of sunlight deficiency can be very hindering.
 

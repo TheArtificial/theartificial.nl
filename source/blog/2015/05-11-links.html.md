@@ -3,7 +3,7 @@ title: "OFFF 2015"
 category: inspiration
 tags: conference, barcelona, offf
 author: carol
-masthead: 05-11-links/main.png
+masthead: main.png
 ---
 
 We are only 16 days away to a weekend at OFFF Barcelona--an annual conference featuring innovative designers and artists from around the world. Here are a few artists we’re excited to see.

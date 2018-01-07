@@ -3,7 +3,7 @@ title: "Selecting the Optimal Prototyping Tool"
 category: process
 tags: prototype, tool, ux, comparison, review, program
 author: [carol, ariane]
-masthead: 11-23-prototyping/introduction.png
+masthead: introduction.png
 ---
 
 _Update: see [part 2](/blog/2016/05/04/prototyping2.html) for consideration of 7 more tools._

@@ -3,7 +3,7 @@ title: "Selecting the Optimal Prototyping Tool (Part 2)"
 category: process
 tags: prototype, tool, ux, comparison, review, program
 author: [ariane, carol]
-masthead: 05-04-prototyping2/introduction.png
+masthead: introduction.png
 ---
 
 As Paul Gubbay, vice president of Creative Cloud product management at Adobe, [put it](http://www.adobe.com/news-room/pressreleases/201603/031416AdobeExperienceDesignPreviewLaunch.html) “Designers have been waiting for the right UX tool to simplify app and web experience design.” As we mentioned in [**Selecting the optimal prototyping tool (part 1)**](/blog/2015/11/23/prototyping.html), when it comes to prototyping, there is not (yet) one right tool that unanimously reaches designers’ hearts. Indeed each prototyping tool is born in a particular environment and developed with a specific angle. Before picking a tool, you should determine your prototyping goals. You might choose different tools if you are trying to clarify an interaction model versus focusing on presenting the product's animation.

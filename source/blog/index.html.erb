@@ -15,39 +15,9 @@ title: The Artificial blog
 	</div>
 
   <div class="container packery padded-bottom">
-		<%
-			page_articles.each do |article|
-			  last_slash = article.path.rindex('/')
-			  base_path = article.path[0...last_slash]
-
-				article_view = {
-					url: article.url,
-					category: article.data.category,
-					title: article.title,
-					author: person_name(article.data.author),
-					date: article.date.strftime('%B %e, %Y'),
-					summary: proper_blog_summary(article, 180)
-				}
-
-			  image_path = nil
-			  if article.data.preview
-			    if article.data.preview != 'none'
-			      image_path = article.data.preview
-			    end
-			  elsif article.data.masthead
-			    image_path = article.data.masthead
-			  end
-				if image_path
-					article_view[:image] = url_for(base_path + '/' + image_path)
-					template_path = 'blog/_article_card_image.mustache'
-				else
-					template_path = 'blog/_article_card.mustache'
-				end
-		%>
-				<%= mustache(template_path, article_view) %>
-		<%
-			end
-		%>
+		<% page_articles.each do |article| %>
+			<%= partial('blog/article_preview', locals: { article: article }) %>
+		<% end %>
 	</div>
 
 </section>

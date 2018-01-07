@@ -3,8 +3,8 @@ title: 'Onboarding at Disney'
 category: thoughts
 tags: experience, design, UX, disney, princess
 author: shannon
-masthead: 12-22-onboarding-at-disney/masthead.jpg
-preview: 12-22-onboarding-at-disney/preview.png
+masthead: masthead.jpg
+preview: preview.png
 ---
 
 This year’s Artificial holiday trip was to Disneyland Paris. The Disney theme parks are more than simple fun – they provide many examples for experience designers to study and learn from.

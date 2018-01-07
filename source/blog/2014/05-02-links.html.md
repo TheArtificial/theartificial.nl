@@ -3,16 +3,16 @@ title: "The Pixel"
 category: inspiration
 tags: pixels, ppi, blocks
 author: carol
-masthead: 05-02-links/main.png
+masthead: main.png
 ---
 
 Pixels are at the core of all digital imaging, and often considered as a technical piece of a larger composition. But the pixel itself packs a lot of punch on its own, and can easily fill a spotlight. READMORE
 
-While we were designing our hundreds of 32 x 32px action icons, we focused a lot on pixel perfection. This involved not only learning more about the pixel in a technical aspect, but also really getting to know the pixel in all its interpretations. We looked to artists and technologists for inspiration and found a truly incredible spectrum of this tiny building block being manifested in a variety of materials, shapes, and sizes. 
+While we were designing our hundreds of 32 x 32px action icons, we focused a lot on pixel perfection. This involved not only learning more about the pixel in a technical aspect, but also really getting to know the pixel in all its interpretations. We looked to artists and technologists for inspiration and found a truly incredible spectrum of this tiny building block being manifested in a variety of materials, shapes, and sizes.
 
-We’re nearing the end of our Kickstarter and need your help for the final push! Head over to [toicon.com](http://www.toicon.com) to get a custom icon designed, an awesome poster, or a kickass sticker set! All while simultaneously helping to bring pixel perfect action icons free to the world. 
+We’re nearing the end of our Kickstarter and need your help for the final push! Head over to [toicon.com](http://www.toicon.com) to get a custom icon designed, an awesome poster, or a kickass sticker set! All while simultaneously helping to bring pixel perfect action icons free to the world.
 
-Here are a few pixels that inspired our action icon making. 
+Here are a few pixels that inspired our action icon making.
 
 ## Jonas Vorwerk’s Pixels 2.0
 Dutch multi-media designer Jonas Vorwerk created interactive pixels for the real world. These bright colorful blocks give participants the ability to create their own pixel compositions in a three dimensional space. Sensors enable people to rotate the pixel to change its color and intensity. Vorwerk’s pixels have been exhibited as a Pixelwall in Rotterdam's Image Festival and at Mutesounds on the beach in the Hague. [Watch the video from Imagine 2012.](http://vimeo.com/39435007)

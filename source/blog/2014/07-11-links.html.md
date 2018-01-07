@@ -3,16 +3,16 @@ title: "Pop Culture"
 category: inspiration
 tags: pop culture, movies, video games, tv, memes, mainstream
 author: carol
-masthead: 07-11-links/main.png
+masthead: main.png
 ---
 
 For the past two weeks I’ve had my head buried in all things pop cultureREADMORE, and not because of Game of Thrones withdrawals. After wrapping up a minimal monochromatic icon set for to [icon], I decided to challenge myself by venturing to the opposite side of the icon spectrum with a illustrative set inspired by pop culture. (Funny, because those who know me well would tell you I’m the least likely person to voluntarily design something pop culture related.)
 
-Wikipedia defines pop culture as “the entirety of ideas, perspectives, attitudes, memes, images, and other phenomena that are within the mainstream of a given culture, especially Western culture of the early to mid 20th century and the emerging global mainstream of the late 20th and early 21st century. Heavily influenced by mass media, this collection of ideas permeates the everyday lives of the society.” 
+Wikipedia defines pop culture as “the entirety of ideas, perspectives, attitudes, memes, images, and other phenomena that are within the mainstream of a given culture, especially Western culture of the early to mid 20th century and the emerging global mainstream of the late 20th and early 21st century. Heavily influenced by mass media, this collection of ideas permeates the everyday lives of the society.”
 
 In order to encompass “the entirety” of these ideas, I’ve had to do a bit of research and asking around to fill in the many gaps in my pop culture knowledge. Along the way, I’ve stumbled upon some inspiring work and interesting finds to share this week.
 
-## Geek Pride Day 
+## Geek Pride Day
 Leo Natsume created four illustrations that do a nice job of defining and depicting different types of “geek” to celebrate [Geek Pride Day](http://en.wikipedia.org/wiki/Geek_Pride_Day)--a holiday reserved on May 25th to celebrate the culture, complete with an official geek manifesto. Natsume’s unique and vibrant illustrations represent each distinct genre. [Which geek are you?](https://www.behance.net/gallery/17174585/Geek-Pride-Day)
 
 ## Movie Character Cameos

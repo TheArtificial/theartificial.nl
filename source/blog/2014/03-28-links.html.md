@@ -3,7 +3,7 @@ title: "Iconography"
 category: inspiration
 tags: icons, emoji, pixels, history
 author: carol
-masthead: 03-28-links/main.png
+masthead: main.png
 ---
 
 Our first Friday Inspiration theme is icons, celebrating the launch of our first Kickstarter,&nbsp;[to&nbsp;[icon]](http://toicon.com/). READMORE Our day to day work revolves around larger scale client projects, but we take joy in perfecting the little things as well. 

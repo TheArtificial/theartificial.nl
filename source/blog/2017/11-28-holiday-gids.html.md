@@ -3,8 +3,8 @@ title: 'Creating The Artificial City Guide'
 category: process
 tags: holiday, book, print, design
 author: shannon
-masthead: 11-28-holiday-gids/masthead.png
-preview: 11-28-holiday-gids/preview.png
+masthead: masthead.png
+preview: preview.png
 ---
 
 For the second year in a row, we decided to create a Sinterklaas book for our clients and partners. Last year the book was all about [cocktails](https://theartificial.com/blog/2017/01/16/sinterklaas-book.html). This year, we celebrated our many varied origins and influences by creating a city travel guide. Each of us selected a city we've called home, and we curated our top travel tips and food and drink recommendations.

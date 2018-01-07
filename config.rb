@@ -2,24 +2,12 @@ require "helpers/people_helpers"
 # "include" rather than "helpers" so we can use person_name in search prep
 include PeopleHelpers
 
-###
-# Helpers
-###
+require "helpers/blog_helpers"
+# in this case, we need image_for_blog_article during search indexing
+include BlogHelpers
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
-
-# Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
 
 ANSI_COLOR_RED = "\e[31m"
 ANSI_COLOR_RESET = "\e[0m"
@@ -106,14 +94,6 @@ activate :blog do |blog|
 #  }
 end
 
-helpers do
-  # Middleman 4.1.14 is leaving the seperator in the summary
-  def proper_blog_summary(article, length=180)
-    text = Nokogiri::HTML(article.summary(length, '…')).css('p').text
-    return text.split(blog.options.summary_separator).first
-  end
-end
-
 page "blog/feed.xml", layout: false
 
 set :markdown_engine, :redcarpet
@@ -150,7 +130,9 @@ activate :search do |search|
       date_match = blog_date.match(path)
       to_store[:date] = "#{date_match[:YYYY]}-#{date_match[:MM]}-#{date_match[:DD]}"
       to_store[:category] = resource.data.category
-#      to_store[:summary] = proper_blog_summary(resource, 180)
+      puts "blog: #{resource.title}"
+      to_store[:image] = image_url_for_blog_article(resource)
+      #      to_store[:summary] = proper_blog_summary(resource, 180)
     end
 
     # prep author

@@ -3,10 +3,10 @@ title: "Fun & Play"
 category: inspiration
 tags: play, games, experimentation
 author: carol
-masthead: 04-11-links/main.png
+masthead: main.png
 ---
 
-One of the most valuable lessons we took away from this year’s Resonate conference was the importance of play. READMORE More than just a trend, play has shown to lead to some of the most innovative projects, and is something we look forward to implementing more of here at The Artificial. 
+One of the most valuable lessons we took away from this year’s Resonate conference was the importance of play. READMORE More than just a trend, play has shown to lead to some of the most innovative projects, and is something we look forward to implementing more of here at The Artificial.
 
 ## Paula Scher on Serious Play
 Paula Scher, one of the leading designers of our time, shares her take on the importance of play in design. She talks about the beauty of the unexpected, and how the balance of play and solemnity leads to great work. [Watch her inspirational talk.](http://www.ted.com/talks/paula_scher_gets_serious?embed=true)
@@ -30,4 +30,3 @@ Do brain training games actually work? Most targeted at the younger generation h
 Lose/lose is a classic-style arcade game where you kill the oncoming aliens. The catch is that in doing so, you're randomly erasing files from your harddrive. Randomness aside, it sure beats dragging files to the trash!  [Play it here.](http://www.stfj.net/art/2009/loselose/)
 
 Tot Straks! _(Until next time!)_
- 

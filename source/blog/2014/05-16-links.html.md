@@ -3,15 +3,15 @@ title: "Screen Printing"
 category: inspiration
 tags: screen printing, silk screen, posters
 author: carol
-masthead: 05-16-links/main.png
+masthead: main.png
 ---
 
 The art of screen printing dates back to as early as 960 AD in Asia, but the rise of western screen printing is generally associated with the 1960's READMORE when Andy Warhol’s famous prints became iconic visuals representing the era.
 
-You might wonder what is a post about screen printing is doing on a digital agency’s blog. As makers and artists, we’re always looking back to our fine art roots for inspiration. Designers in all industries will often say there’s something uniquely fulfilling about producing physical work. We like to keep a balance of both in our daily lives. We’ve acquired a silk screen, some ink and squeegees, and have a plethora of ideas waiting to be printed. If anyone has DIY screen cleaning advice for a small studio with no power washer, we’re all ears! 
+You might wonder what is a post about screen printing is doing on a digital agency’s blog. As makers and artists, we’re always looking back to our fine art roots for inspiration. Designers in all industries will often say there’s something uniquely fulfilling about producing physical work. We like to keep a balance of both in our daily lives. We’ve acquired a silk screen, some ink and squeegees, and have a plethora of ideas waiting to be printed. If anyone has DIY screen cleaning advice for a small studio with no power washer, we’re all ears!
 
 ## Harmen Liemburg’s Sikkens Prize Invitation
-Dutch designer, artist, and screen printing maestro Harmen Liemburg designed the award-winning Sikkens Prize Invitation and program booklet in 2012. This piece is comprised of six 10 colour offset printed posters folded into a 24 page booklet. 
+Dutch designer, artist, and screen printing maestro Harmen Liemburg designed the award-winning Sikkens Prize Invitation and program booklet in 2012. This piece is comprised of six 10 colour offset printed posters folded into a 24 page booklet.
 
 Last summer, I visited the Gerrit Rietveld Academie for a tour and workshop with Liemburg, and got the opportunity to see the booklet in person. Its vibrant pages are filled with stunning colours and compositions that draw inspiration from glass prisms, rainbows, and lava lamps. It instantly became one of my favourite examples of screen printing as well as book design. [A must see, if you can manage to get your hands on one of the few 600!](http://www.harmenliemburg.nl/2012/11/02/sikkens-prize-2012-print/)
 

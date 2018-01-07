@@ -1,12 +1,12 @@
 ---
 title: "Chocolate"
 category: inspiration
-tags: easter, chocolate, confections 
+tags: easter, chocolate, confections
 author: carol
-masthead: 04-18-links/main.png
+masthead: main.png
 ---
 
-Chocolate in all shapes and colors has been integrated into Easter traditions since the 19th century, when the famous chocolate egg started being mass produced. READMORE Chocolate got its place in this holiday because of the many people who give up chocolate or sweets for Lent, and are finally able to relieve their cravings on Easter Sunday. 
+Chocolate in all shapes and colors has been integrated into Easter traditions since the 19th century, when the famous chocolate egg started being mass produced. READMORE Chocolate got its place in this holiday because of the many people who give up chocolate or sweets for Lent, and are finally able to relieve their cravings on Easter Sunday.
 
 I personally don’t have much of a sweet tooth, but I’ll definitely be indulging in a chocolate egg (or three…) this weekend.
 
@@ -34,8 +34,7 @@ Dutch designer Rosa de Jong’s project Chocography involves creating custom mol
 ## 3D Printed Chocolate Molds
 Want to make your own molded chocolate? Makerbot provides a handy instructional guide on how to 3D print then cast your own silicone chocolate molds. Just make sure you send some sample chocolates to our office. [See the tutorial.](http://www.makerbot.com/tutorials/making-chocolate-molds/)
 
-## Hershey with 3D Systems 
+## Hershey with 3D Systems
 Hershey has teamed up with 3D Systems to mainstream 3D printing and plan to produce 3D printed confectionary treats. [Read the article.](http://blogs.wsj.com/corporate-intelligence/2014/01/16/coming-soon-to-3d-printing-chocolate-bars/)
 
 Vrolijk Pasen! _(Happy Easter!)_
-

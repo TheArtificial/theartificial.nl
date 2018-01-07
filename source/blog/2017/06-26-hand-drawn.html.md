@@ -3,8 +3,8 @@ title: 'Hand-Drawn Icons Tutorial'
 category: process
 tags: tutorial, icons, iconography, sketch, hand-drawn
 author: shannon
-masthead: 06-26-hand-drawn/Masthead.png
-preview: 06-26-hand-drawn/Preview.png
+masthead: Masthead.png
+preview: Preview.png
 ---
 
 It’s been three years since we launched [to [icon]](http://www.toicon.com/). Since then, we’ve added new features like [collections](http://www.toicon.com/collections/), new series like [Hatch](http://www.toicon.com/series/hatch/) and [Feather](http://www.toicon.com/series/feather/), and even new artists like [Ariane](http://www.toicon.com/authors/ariane/) and [Katinka](http://www.toicon.com/authors/katinka/). But there’s one thing we’ve been putting off: a hand-drawn icon series.

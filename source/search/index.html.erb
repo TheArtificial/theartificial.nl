@@ -39,7 +39,7 @@ title: Search
 	function addCard(output, page) {
 		var type = page.type;
 
-		template = "<%=escape_javascript( mustache_template('search/_unknown_card.mustache') ) %>"
+		template = "<%=escape_javascript( mustache_template('search/_unknown_card.mustache') ) %>";
 
 		var view = {
 		  url: page.url,
@@ -51,11 +51,16 @@ title: Search
 			post_date = new Date(page.date);
 			formatted_date = monthName(post_date.getMonth()) + ' ' + post_date.getDate() + ', ' + post_date.getFullYear();
 
-			template = "<%=escape_javascript( mustache_template('blog/_article_card.mustache') ) %>"
+			if (page.image) {
+				template = "<%=escape_javascript( mustache_template('search/_blog_article_card_image.mustache') ) %>";
+				view.image = page.image;
+			} else {
+				template = "<%=escape_javascript( mustache_template('search/_blog_article_card.mustache') ) %>";
+			}
 
 			view.date = page.date;
-			view.category = page.category,
-			view.summary = "SUMMARY HERE"
+			view.category = page.category;
+			view.summary = "SUMMARY HERE";
 		}
 
 

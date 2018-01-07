@@ -3,7 +3,7 @@ title: "Orange"
 category: inspiration
 tags: orange, color, king's day
 author: carol
-masthead: 04-25-links/main.png
+masthead: main.png
 ---
 
 For those not in the Netherlands, you may be curious as to why we’re inspired by orange this week. READMORE It’s because we’re preparing to join the sea of orange that hits the streets on Saturday, when people from all over the Netherlands rush the streets and canals of Amsterdam to celebrate King Willem-Alexander’s birthday. Formerly known as Queen's Day, King’s Day (Koningsdag) is basically one massive block party complete with beer, boats, parties, festivals, yard sales, and of course, lots of orange.

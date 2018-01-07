@@ -3,7 +3,7 @@ title: "Massimo Vignelli"
 category: inspiration
 tags: massimo vignelli, modernism, tribute
 author: carol
-masthead: 05-30-links/main.png
+masthead: main.png
 ---
 
 Massimo Vignelli, a renowned modernist, designer, and teacher, passed away at the age of 83  this past Tuesday. READMORE As one of the true masters in design history, his teachings and work have inspired thousands and will continue for generations to&nbsp;come.   
@@ -24,7 +24,7 @@ This week we pay tribute to Massimo Vignelli's memory with a collection of his m
 >
 > --Massimo Vignelli
 
-> There are three investigations in design. The first is the search for structure. Its reward is discipline. The second is the search for specificity. This yields appropriateness. Finally, we search for fun, and we create ambiguity. 
+> There are three investigations in design. The first is the search for structure. Its reward is discipline. The second is the search for specificity. This yields appropriateness. Finally, we search for fun, and we create ambiguity.
 >
 > --Massimo Vignelli in <cite>[AIGA Graphic Design 4](http://www.aiga.org/medalist-massimoandlellavignelli/)</cite>, 1983
 

@@ -93,7 +93,7 @@ Create a file in `source/blog` with a `YYYY-MM-DD-slug.md` filename. The reuslti
     category: testing
     tags: one, two, three
     author: hans
-    masthead: MM-DD-slug/someimage.jpg
+    masthead: someimage.jpg
     ---
 
 N.B. titles don't have to have quotes but it's more reliable to include them, and author must match one of the files avaiable under `source/people`
