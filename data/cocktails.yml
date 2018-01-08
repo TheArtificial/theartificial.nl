@@ -259,6 +259,28 @@
     </ul>
     <p>Stir dark rum and ginger beer in a glass and add a dash of cherry bitters.</p>
 -
+  slug: fadeddreams
+  name: Faded Dreams
+  date: 2018-01-05
+  glass: fadeddreams
+  contents: vodka_lowball
+  author: natalia
+  rating: 2
+  html: |
+    <p>For us, 2017 was a great year. We welcomed many new clients with exciting new projects, and we added 3 new members to our team. Sadly we said good bye to Carol, but we are sure that she will do very well in London.</p>
+    <p>To kick off 2018 we decided to mix something with some of our favorite ingredients. Sadly our experiment wasn’t what we were expecting – way too fresh for the winter, and way too spicy for some of us. We will give it another shot soon.</p>
+    <ul>
+      <li>2 parts hibiscus syrup</li>
+      <li>1 part vodka</li>
+      <li>.5 parts lime juice</li>
+      <li>agave syrup</li>
+      <li>a lime slice</li>
+      <li>jalapeños</li>
+      <li>mint</li>
+    </ul>
+    <p>For the hibiscus syrup, in a pan add 4 cups of water and a cup of dried hibiscus flower, bring to a boil, and sweeten with agave. Remove from heat and let it steep for about 15 minutes. Strain and let it cool.</p>
+    <p>Mix the hibiscus syrup, vodka, and lime in a shaker with ice. In a low ball glass, add the sliced jalapeños, some ice and mint leaves, and use a lime wedge for garnish. Pour the mix in them and enjoy.</p>
+-
   slug: frankenmousse
   name: Franken Mousse
   date: 2017-06-16
