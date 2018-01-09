@@ -1,0 +1,49 @@
+---
+title: Feed
+---
+<% content_for :javascript_tags do %>
+	<%= javascript_include_tag 'lunr', 'mustache','search', defer: true %>
+<% end %>
+
+<section id="content">
+	<div class="container packery padded bottom" id="results">
+
+	</div>
+</section>
+
+<script>
+  $(document).ready(function() {
+		var $results = $('#results');
+		showEverything($results);
+  });
+
+	function showEverything($el) {
+	  console.log('Requesting Lunr file');
+	  $el.html('Loading...');
+	  $el.packery();
+
+	  $.ajax({
+	    dataType: "json",
+	    url: '/search/index.json',
+	    xhr: function() {
+	      var xhr = new window.XMLHttpRequest();
+	      //Download progress
+	      xhr.addEventListener("progress", function(evt){
+	        $el.append('.');
+	      }, false);
+	      return xhr;
+	    },
+	    success: function(data) {
+
+	      // lunrIndex = lunr.Index.load(data.index);
+	      lunrMap = data.docs;
+				for (var docId in lunrMap){
+					if (doc = lunrMap[docId]) {
+	        	setTimeout(addCard($el, doc), 100);
+	        }
+	      }
+	    }
+	  });
+	}
+
+</script>
