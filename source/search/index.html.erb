@@ -2,8 +2,7 @@
 title: Search
 ---
 <% content_for :javascript_tags do %>
-	<%= javascript_include_tag 'lunr' %>
-	<%= javascript_include_tag 'mustache' %>
+	<%= javascript_include_tag 'lunr', 'mustache','search', defer: true %>
 <% end %>
 
 <section id="content">
@@ -36,116 +35,19 @@ title: Search
     return results ? results[1] : false;
   }
 
-	function addCard(output, page) {
-		var type = page.type;
-
-		template = "<%=escape_javascript( mustache_template('search/_unknown_card.mustache') ) %>";
-
-		var view = {
-		  url: page.url,
-			title: page.title,
-			author: page.author
-		};
-
-		if (type == 'article') {
-			post_date = new Date(page.date);
-			formatted_date = monthName(post_date.getMonth()) + ' ' + post_date.getDate() + ', ' + post_date.getFullYear();
-			view.date = formatted_date;
-
-			if (page.image) {
-				template = "<%=escape_javascript( mustache_template('search/_article_card_image.mustache') ) %>";
-				view.image = page.image;
-			} else {
-				template = "<%=escape_javascript( mustache_template('search/_article_card.mustache') ) %>";
-			}
-
-			view.category = page.category;
-			view.summary = page.summary;
-		} else if (type == 'cocktail') {
-			post_date = new Date(page.date);
-			formatted_date = monthName(post_date.getMonth()) + ' ' + post_date.getDate() + ', ' + post_date.getFullYear();
-			view.date = formatted_date;
-
-			view.glass = page.glass;
-			view.contents = page.contents;
-
-			template = "<%=escape_javascript( mustache_template('search/_cocktail_card.mustache') ) %>";
-		} else if (type == 'ftfy') {
-			post_date = new Date(page.date);
-			formatted_date = monthName(post_date.getMonth()) + ' ' + post_date.getDate() + ', ' + post_date.getFullYear();
-			view.date = formatted_date;
-
-			view.image = page.image;
-
-			template = "<%=escape_javascript( mustache_template('search/_ftfy_card.mustache') ) %>";
-		}
-
-		newEl = $(Mustache.render(template, view))
-		output.append(newEl)
-	    // add and lay out newly appended items
-	    .packery( 'appended', newEl );
-	}
-
-  var monthNames = new Array("January","February","March","April","May"," June","July","August","September","October","November","December");
-  function monthName(n) {
-    return(monthNames[n]);
-  }
-
-  var lunrIndex;
-  var lunrMap;
-
-  function lunrSearch(query, $el) {
-
-    console.log('Requesting Lunr file');
-    $el.html('Loading...');
-		$el.packery();
-
-    $.ajax({
-      dataType: "json",
-      url: '/search/index.json',
-      xhr: function() {
-        var xhr = new window.XMLHttpRequest();
-        //Download progress
-        xhr.addEventListener("progress", function(evt){
-          $el.append('.');
-        }, false);
-        return xhr;
-      },
-      success: function(data) {
-
-        lunrIndex = lunr.Index.load(data.index);
-        lunrMap = data.docs;
-        var results = lunrIndex.search(query)
-        console.log('Found ' + results.length + ' results', results);
-
-				if (results.length > 0) {
-          $el.html(''); // clear loading indicator
-					$.each(results, function(index, result) {
-	          page = lunrMap[result.ref];
-						addCard($el, page);
-	        });
-        }
-        else {
-          $el.html('No results, sorry.');
-        }
-      }
-    });
-  }
-
   $(document).ready(function() {
 		var query;
-		var resultsEl = $('#results');
+		var $results = $('#results');
 		$("#search-form").submit(function(e){
 	    e.preventDefault();
 			query = $("input[type='search'][name='q']").val();
-	    lunrSearch(query, resultsEl);
+	    lunrSearch(query, $results);
 		});
 
 		query = paramValue('q');
 		if (query) {
 			$("input[type='search'][name='q']").val(query);
-			lunrSearch(query, resultsEl);
+			lunrSearch(query, $results);
 		}
   });
-
 </script>
