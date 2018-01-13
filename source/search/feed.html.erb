@@ -6,9 +6,21 @@ title: Feed
 <% end %>
 
 <section id="content">
+	<div class="bleed">
+		<div class="flex container">
+			<div class="col-10 left-1 right-1 section-title">
+				<div class="padded center">
+					<h1 class="title">Feed</h1>
+					<div class="small-body">This is the feed of Artificial everything.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="container packery padded bottom" id="results">
 
 	</div>
+
 </section>
 
 <script>
@@ -37,11 +49,30 @@ title: Feed
 
 	      // lunrIndex = lunr.Index.load(data.index);
 	      lunrMap = data.docs;
-				for (var docId in lunrMap){
-					if (doc = lunrMap[docId]) {
-	        	setTimeout(addCard($el, doc), 100);
-	        }
-	      }
+				var docs = [];
+				for (var docId in lunrMap) {
+    			docs.push(lunrMap[docId]);
+				}
+				console.log(docs);
+				// sort by date
+				docs.sort(function(a,b){
+					return (a.date < b.date);
+					// return a.date < b.date ? 1 : 0;
+				});
+				console.log("sorted", docs);
+				for (var index = 0; index < docs.length; ++index) {
+			    console.log(docs[index]);
+					addCard($el, docs[index]);
+				}
+
+				// var docIds = Object.keys(lunrMap);
+				// for (var i=0; i<docIds.length; i++) {
+				// 	docId = docIds[i];
+				//   console.log(docId);
+				// 	if (doc = lunrMap[docId]) {
+				// 		addCard($el, doc);
+ 	     //    }
+				// }
 	    }
 	  });
 	}
