@@ -107,13 +107,14 @@ activate :search do |search|
   search.resources = ['blog/20', 'cocktails/', 'work/', 'ftfy/']
   search.index_path = 'search/index.json'
   search.fields = {
-    title:   {boost: 100, store: true, required: true},
-    path:    {index: false, store: true},
-    tags:    {boost: 100},
-    author:  {boost: 100},
-    date:    {index: false, store: true},
-    content: {boost: 50},
-    url:     {index: false, store: true}
+    title:    {boost: 100, store: true, required: true},
+    path:     {index: false, store: true},
+    tags:     {boost: 100},
+    author:   {boost: 10},
+    username: {boost: 10},
+    date:     {index: false, store: true},
+    content:  {boost: 75},
+    url:      {index: false, store: true, required: true}
   }
 
   blog_date = /(?'YYYY'\d{4})[\/-](?'MM'\d{2})[\/-](?'DD'\d{2})/
@@ -131,6 +132,7 @@ activate :search do |search|
       to_store[:type] = 'article'
       date_match = blog_date.match(path)
       to_store[:date] = "#{date_match[:YYYY]}-#{date_match[:MM]}-#{date_match[:DD]}"
+      to_index[:username] = resource.data.author
       to_store[:author] = to_index[:author] = person_name(resource.data.author)
       to_store[:category] = resource.data.category
       to_store[:image] = image_url_for_blog_article(resource)
@@ -142,6 +144,7 @@ activate :search do |search|
         throw(:skip)
       end
       to_store[:date] = resource.data.cocktail.date.iso8601
+      to_index[:username] = resource.data.cocktail.author
       to_store[:author] = to_index[:author] = person_name(resource.data.cocktail.author)
       to_store[:glass] = "/cocktails/images/glass/#{resource.data.cocktail.glass}.png"
       to_store[:contents] = "/cocktails/images/contents/#{resource.data.cocktail.contents}.gif"
@@ -160,6 +163,7 @@ activate :search do |search|
       if resource.data.date
         to_store[:date] = resource.data.date.iso8601
       end
+      to_index[:username] = resource.data.author
       to_store[:author] = to_index[:author] = person_name(resource.data.author)
       to_store[:image] = "/ftfy/images#{path[/\/.*(?=\..+$)/]}/#{resource.data.thumbnail}"
     end

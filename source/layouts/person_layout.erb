@@ -1,10 +1,16 @@
-<% wrap_layout 'site_layout' do %>
+<% content_for :javascript_tags do %>
+	<%= javascript_include_tag 'lunr', 'mustache','feed','search', defer: true %>
+<% end %>
+<%
+wrap_layout 'site_layout' do
+  username = current_page.path.split('/').last.gsub(/.html$/, '')
+%>
 
 <section class="content">
   <div id="person" class="bleed turquoise-palegrass">
     <div class="flex container">
       <div class="col-4">
-        <div class="person-logo"><%= get_logo_svg(current_page.path.split('/').last.gsub(/.html$/, '')) %></div>
+        <div class="person-logo"><%= get_logo_svg(username) %></div>
       </div>
 
       <div class="col-7 left-1 section">
@@ -40,24 +46,24 @@
     </div>
   </div>
   <div class="section bleed darkest-grey">
-  <% articles = blog.articles.select {|a| (a.data.author == current_page.path.split('/').last.gsub(/.html$/, '')) and (a.data.category != 'links') } %>
-  <% if articles.length > 0 %>
     <div class="flex container">
       <div class="col-12">
         <div class="padded light-text center">
-          <h2 class="small-title">Blog posts by <%= current_page.data.title %></h2>
+          <h2 class="small-title">Posts by <%= current_page.data.title %></h2>
         </div>
       </div>
     </div>
-    <div class="container packery padded-bottom">
-      <% articles.each do |article, i| %>
-        <%= partial('blog/article_preview', locals: { article: article }) %>
-      <% end %>
-    </div>
-  <% else %>
-    <!-- no blog posts -->
-  <% end %>
-</div>
+    <div class="container packery padded-bottom" id="posts">
 
+    </div>
+</div>
 </section>
+
+<script>
+  $(document).ready(function() {
+    var $posts = $('#posts');
+    getQuery('username:<%= username %>', $posts);
+  });
+</script>
+
 <% end %>

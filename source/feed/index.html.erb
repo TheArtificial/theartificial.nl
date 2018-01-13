@@ -1,0 +1,31 @@
+---
+title: Feed
+---
+<% content_for :javascript_tags do %>
+	<%= javascript_include_tag 'lunr', 'mustache','feed', defer: true %>
+<% end %>
+
+<section id="content">
+	<div class="bleed">
+		<div class="flex container">
+			<div class="col-10 left-1 right-1 section-title">
+				<div class="padded center">
+					<h1 class="title">Feed</h1>
+					<div class="small-body">This is the feed of Artificial everything.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container packery padded bottom" id="results">
+
+	</div>
+
+</section>
+
+<script>
+  $(document).ready(function() {
+		var $results = $('#results');
+		getQuery('*', $results);
+  });
+</script>
