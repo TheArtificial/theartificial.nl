@@ -5,10 +5,9 @@ tags: cocktails, book, design, collage
 author: natalia
 ---
 
-This year we decided to treat our clients and friends to a very special [Sinterklaas](/blog/2014/12/05/stnicholasday.html) gift, a collection of our Friday cocktail recipes.
+This year we decided to treat our clients and friends to a very special [Sinterklaas](/blog/2014/12/05/stnicholasday.html) gift, a collection of our Friday cocktail recipes. READMORE
 
 ![Book Cover](01-16-sinterklaas-book/cover.jpg)
-
 
 ## Defining a Style
 
