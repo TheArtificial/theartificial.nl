@@ -1,16 +1,22 @@
 <% wrap_layout 'site_layout' do %>
 <% content_for :title, "#{current_page.title} - The Artificial" %>
+<% content_for :description, current_article.summary(180) %>
+<%
+  if image_url = blog_preview_path(current_article)
+    content_for :image, image_url
+  end
+%>
 
 <% content_for :feedlink_element do %>
 <link rel="alternate" type="application/atom+xml" title="The Artificial blog" href="/blog/feed.xml" />
 <% end %>
 
 <section id="content" class="<%= "with-masthead" if current_page.data.masthead %>">
-  <% if current_page.data.masthead %>
+  <% if masthead_path = blog_masthead_path(current_page) %>
   <div class="bleed">
       <div id="masthead"></div>
       <style>
-        #masthead { background-image: url('<%= image_path current_page.data.masthead %>'); }
+        #masthead { background-image: url('<%= masthead_path %>'); }
       </style>
   </div>
   <% end %>

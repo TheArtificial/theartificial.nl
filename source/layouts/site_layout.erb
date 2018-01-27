@@ -16,22 +16,12 @@
 	<meta name="theme-color" content="#CB2853">
 <% end %>
 
-<%# TODO add title %>
 <% content_for :title, "The Artificial" unless content_for?(:title) %>
-
-<%# TODO add description %>
-<% content_for :description, "The Artificial is a UX design agency that works on connected products around the world." %>
-
-<%# TODO add keywords %>
-<% content_for :keywords, "design" %>
-
-<%# TODO add URL for opengraph %>
+<% content_for :description, "The Artificial is a UX design agency that works on connected products around the world." unless content_for?(:description) %>
+<% content_for :keywords, "design, agency" %>
 <% content_for :url, "https://www.theartificial.com/" %>
+<% content_for :image, "https://www.theartificial.com/images/img_default.png" unless content_for?(:image) %>
 
-<%# TODO add image for opengraph %>
-<% content_for :image, "https://www.theartificial.com/images/img_default.png" %>
-
-<%# TODO add Google tracking ID %>
 <% content_for :google_tracking_id, "UA-41851947-1" %>
 
 <nav id="header">

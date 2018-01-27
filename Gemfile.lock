@@ -18,7 +18,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    backports (3.11.0)
+    backports (3.11.1)
     better_errors (2.4.0)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
@@ -46,8 +46,6 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.5.7)
-    html_truncator (0.4.2)
-      nokogiri (~> 1.5)
     i18n (0.7.0)
     kramdown (1.16.2)
     libv8 (3.16.14.19)
@@ -93,7 +91,7 @@ GEM
       tilt (~> 2.0)
       uglifier (~> 3.0)
     mini_portile2 (2.3.0)
-    minitest (5.11.1)
+    minitest (5.11.3)
     mustache (1.0.5)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
@@ -138,7 +136,6 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   builder
-  html_truncator (~> 0.2)
   middleman (~> 4.1.10)
   middleman-blog
   middleman-search!

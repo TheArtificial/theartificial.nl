@@ -135,8 +135,8 @@ activate :search do |search|
       to_index[:username] = resource.data.author
       to_store[:author] = to_index[:author] = person_name(resource.data.author)
       to_store[:category] = resource.data.category
-      to_store[:image] = image_url_for_blog_article(resource)
-      to_store[:summary] = proper_blog_summary(resource, 180)
+      to_store[:image] = blog_preview_path(resource)
+      to_store[:summary] = blog_article_for(resource).summary(180)
     elsif section == 'cocktails'
       to_store[:type] = 'cocktail'
       if resource.data.cocktail.nil?

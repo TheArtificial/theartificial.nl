@@ -5,10 +5,10 @@ article_view = {
   title: article.title,
   author: person_name(article.data.author),
   date: article.date.strftime('%B %e, %Y'),
-  summary: proper_blog_summary(article, 180)
+  summary: article.summary(180)
 }
 
-if image_url = image_url_for_blog_article(article)
+if image_url = blog_preview_path(article)
   article_view[:image] = image_url
   template_path = 'feed/_article_card_image.mustache'
 else
