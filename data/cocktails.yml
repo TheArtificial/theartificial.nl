@@ -976,6 +976,23 @@
     </ul>
     <p>Pour mezcal, aperol, and lemon or lime juice into a shaker with ice. Shake well then pour into a wide glass. Top with club soda, a dash of Angostura bitters, and garnish with a lemon peel.</p>
 -
+  slug: smokedstrawberry
+  name: Smoked Strawberry
+  date: 2018-01-12
+  glass: smokedstrawberry
+  contents: mezcal_lowball
+  author: shannon
+  rating: 4
+  html: |
+    <p>A few new icon series for <a href="http://www.toicon.com/" target="blank">to [icon]</a> are cooking and this Friday was time for the first review of Natalia’s colorful series. This was a great excuse for a Mexican theme and mixing a mezcal drink paired with Shannon’s veggie chili and nachos.</p>
+    <ul>
+      <li>2 parts mezcal</li>
+      <li>1 part strawberry purée</li>
+      <li>.5 parts agave syrup</li>
+      <li>mint</li>
+    </ul>
+    <p>Pour all the ingredients in a mixer and shake well. In a glass muddle some mint, top off with ice, pour the mix in and enjoy.</p>
+-
   slug: sparklinglemon
   name: Sparkling Lemon
   date: 2017-06-09
