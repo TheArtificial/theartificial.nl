@@ -46,7 +46,12 @@ module BlogHelpers
   end
 
   def blog_preview_url(resource)
-    URI.join(app.config[:site_url], blog_preview_path(resource)).to_s
+    image_path = blog_preview_path(resource)
+    if image_path
+      return URI.join(app.config[:site_url], image_path).to_s
+    else
+      return nil
+    end
   end
 
   def blog_masthead_path(resource)
