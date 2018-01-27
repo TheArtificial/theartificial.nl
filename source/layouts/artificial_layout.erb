@@ -32,6 +32,12 @@
 		<% end %>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<% if content_for?(:json_ld) %>
+		<script type="application/ld+json">
+			<%= yield_content :json_ld %>
+		</script>
+		<% end %>
+
 		<%= stylesheet_link_tag 'normalize', 'site' %>
 		<%= yield_content :stylesheet_tags %>
 
