@@ -8,7 +8,7 @@ article_view = {
   summary: article.summary(180)
 }
 
-if image_url = blog_preview_path(article)
+if image_url = blog_preview_url(article)
   article_view[:image] = image_url
   template_path = 'feed/_article_card_image.mustache'
 else

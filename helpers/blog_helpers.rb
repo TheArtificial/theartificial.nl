@@ -1,29 +1,5 @@
 module BlogHelpers
 
-  # require "html_truncator"
-
-  # Just for search, which can't cast the resource to an article?
-  # def blog_summary_html(resource, length=180, seperator="READMORE", ellipsis="…")
-  #   doc = blog_summary_nokogiri(resource, length, seperator)
-  #   # remove all anchors
-  #   anchors = doc.css('a')
-  #   anchors.each {|a| a.replace(a.children) }
-  #   options = HTML_Truncator::DEFAULT_OPTIONS.merge(length_in_chars: true, ellipsis: ellipsis)
-  #   return doc.truncate(length, options).first
-  # end
-
-  # def blog_summary(resource, length=180, seperator="READMORE")
-  #   doc = blog_summary_nokogiri(resource, length, seperator)
-  #   text_untrimmed = doc.inner_text
-  # end
-
-  # def blog_summary_nokogiri(resource, length, seperator)
-  #   rendered = resource.render(layout: false, keep_separator: true)
-  #   seperator_at = rendered.index(seperator)
-  #   length = seperator_at ? seperator_at : length
-  #   return Nokogiri::HTML::DocumentFragment.parse(rendered)
-  # end
-
   # because BlogData.convert_to_article is private
   def blog_article_for(resource)
     return resource if resource.is_a?( ::Middleman::Blog::BlogArticle )
@@ -32,34 +8,48 @@ module BlogHelpers
     return resource
   end
 
-  def blog_preview_path(resource)
-    last_dot = resource.url.rindex('.')
-    base_path = resource.url[0...last_dot] + '/'
+  def blog_preview_paths(resource)
     if resource.data.preview
       if resource.data.preview != 'none'
-        return base_path + resource.data.preview
+        return paths(resource, resource.data.preview)
       end
     elsif resource.data.masthead
-      return base_path + resource.data.masthead
+      return paths(resource, resource.data.masthead)
     end
-    return nil
   end
 
   def blog_preview_url(resource)
-    image_path = blog_preview_path(resource)
-    if image_path
-      return URI.join(app.config[:site_url], image_path).to_s
+    if image_paths = blog_preview_paths(resource)
+      return image_paths[:url]
     else
       return nil
     end
   end
 
-  def blog_masthead_path(resource)
-    last_dot = resource.url.rindex('.')
-    base_path = resource.url[0...last_dot] + '/'
+  def blog_masthead_url(resource)
     if resource.data.masthead
-      return base_path + resource.data.masthead
+      base_build_path = attachments_location(resource.url)
+      return base_build_path + resource.data.masthead
+    else
+      return nil
     end
-    return nil
   end
+
+private
+
+  def paths(resource, filename)
+    paths = {path: nil, built_path: nil, url: nil}
+    base_path = attachments_location('/' + resource.path)
+    base_build_path = attachments_location(resource.url)
+    paths[:path] = base_path + filename
+    paths[:build_path] = base_build_path + filename
+    paths[:url] = URI.join(app.config[:site_url], base_build_path + filename).to_s
+    return paths
+  end
+
+  def attachments_location(location)
+    last_dot = location.rindex('.')
+    return location[0...last_dot] + '/'
+  end
+
 end
