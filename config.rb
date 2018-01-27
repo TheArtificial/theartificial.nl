@@ -59,6 +59,8 @@ helpers do
 
 end
 
+set :site_url, 'https://theartifical.com/'
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'

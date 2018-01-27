@@ -2,7 +2,7 @@
 <% content_for :title, "#{current_page.title} - The Artificial" %>
 <% content_for :description, strip_tags(current_article.summary(180)) %>
 <%
-  if image_url = blog_preview_path(current_article)
+  if image_url = blog_preview_url(current_article)
     content_for :image, image_url
   end
 %>

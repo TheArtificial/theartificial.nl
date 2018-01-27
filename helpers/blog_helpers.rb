@@ -45,6 +45,10 @@ module BlogHelpers
     return nil
   end
 
+  def blog_preview_url(resource)
+    URI.join(app.config[:site_url], blog_preview_path(resource)).to_s
+  end
+
   def blog_masthead_path(resource)
     last_dot = resource.url.rindex('.')
     base_path = resource.url[0...last_dot] + '/'
