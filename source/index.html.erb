@@ -1,3 +1,19 @@
+<% content_for :json_ld do %>
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "The Artificial",
+  "url": "https://theartificial.com/",
+  "logo": "https://theartificial.com/images/img_default.png",
+  "sameAs": [
+    "https://twitter.com/VeryArtificial",
+    "https://www.facebook.com/veryartificial/",
+    "https://instagram.com/VeryArtificial/",
+    "https://www.linkedin.com/company/the-artificial/"
+  ]
+}
+<% end %>
+
 <script>
   $( document ).ready(function() {
     scrollspy('#nav-panels', $(window).height()/2, tweenGradient);
