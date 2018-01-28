@@ -1,4 +1,7 @@
+require 'memoist'
+
 module BlogHelpers
+  extend Memoist
 
   # because BlogData.convert_to_article is private
   def blog_article_for(resource)
@@ -28,7 +31,7 @@ module BlogHelpers
 
   def blog_masthead_url(resource)
     if resource.data.masthead
-      base_build_path = attachments_location(resource.url)
+      base_build_path = attachments_location(resource.destination_path)
       return base_build_path + resource.data.masthead
     else
       return nil
@@ -40,12 +43,13 @@ private
   def paths(resource, filename)
     paths = {path: nil, built_path: nil, url: nil}
     base_path = attachments_location('/' + resource.path)
-    base_build_path = attachments_location(resource.url)
+    base_build_path = attachments_location(resource.destination_path)
     paths[:path] = base_path + filename
     paths[:build_path] = base_build_path + filename
     paths[:url] = URI.join(app.config[:site_url], base_build_path + filename).to_s
     return paths
   end
+  memoize :paths
 
   def attachments_location(location)
     last_dot = location.rindex('.')
