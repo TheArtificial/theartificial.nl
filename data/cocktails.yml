@@ -804,6 +804,25 @@
     </ul>
     <p>Infuse sliced oranges in vodka for two weeks. Pour over ice, top with sprite and stir.</p>
 -
+  slug: partificial
+  name: Partificial
+  date: 2018-01-19
+  glass: partificial
+  contents: miscwhiskey_stemless
+  author: hans
+  rating: 5
+  html: |
+    <p>In order to celebrate Shannon's birthday, Hans mixed her favorite drink, the famous and delicious Manhattan. This time instead of using an orange peel like in <a href="https://theartificial.com/cocktails/manhattan.html" target="blank"> his previous experiment</a>, he used a cherry and some other great ingredients. What a way to start the party!</p>
+    <ul>
+      <li>4 parts rye whiskey</li>
+      <li>1 parts rosé vermouth</li>
+      <li>0.5 parts spiced maple syrup</li>
+      <li>2 splashes of Angostura bitters</li>
+      <li>cherry</li>
+    </ul>
+    <p>To make the spiced maple syrup, simply dilute some maple syrup and infuse it with cinnamon and cardamom.</p>
+    <p>Combine all the ingredients in a mixer and shake well. Pour the mixture in a glass and add a cherry for garnish. </p>
+-
   slug: pastelsummer
   name: Pastel Summer
   date: 2017-07-21
