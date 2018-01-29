@@ -1,6 +1,6 @@
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
-  site_url = "https://theartificial.com/"
+  site_url = app.config[:site_url]
   xml.title "The Artificial"
   xml.subtitle "Blog posts"
   xml.id URI.join(site_url, blog.options.prefix.to_s)
@@ -17,7 +17,7 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
       xml.published article.date.to_time.iso8601
       xml.updated File.mtime(article.source_file).iso8601
       xml.author { xml.name person_name(article.data.author) }
-      xml.summary proper_blog_summary(article), "type" => "html"
+      xml.summary article.summary(180), "type" => "html"
       # xml.content article.body, "type" => "html"
     end
   end

@@ -59,6 +59,8 @@ helpers do
 
 end
 
+set :site_url, 'https://theartificial.com/'
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -104,16 +106,17 @@ set :markdown,  fenced_code_blocks: true,
                 footnotes: true
 
 activate :search do |search|
-  search.resources = ['blog/20', 'cocktails/', 'ftfy/']
+  search.resources = ['blog/20', 'cocktails/', 'work/', 'ftfy/']
   search.index_path = 'search/index.json'
   search.fields = {
-    title:   {boost: 100, store: true, required: true},
-    path:    {index: false, store: true},
-    tags:    {boost: 100},
-    author:  {boost: 100},
-    date:    {index: false, store: true},
-    content: {boost: 50},
-    url:     {index: false, store: true}
+    title:    {boost: 100, store: true, required: true},
+    path:     {index: false, store: true},
+    tags:     {boost: 100},
+    author:   {boost: 10},
+    username: {boost: 10},
+    date:     {index: false, store: true},
+    content:  {boost: 75},
+    url:      {index: false, store: true, required: true}
   }
 
   blog_date = /(?'YYYY'\d{4})[\/-](?'MM'\d{2})[\/-](?'DD'\d{2})/
@@ -131,9 +134,11 @@ activate :search do |search|
       to_store[:type] = 'article'
       date_match = blog_date.match(path)
       to_store[:date] = "#{date_match[:YYYY]}-#{date_match[:MM]}-#{date_match[:DD]}"
+      to_index[:username] = resource.data.author
+      to_store[:author] = to_index[:author] = person_name(resource.data.author)
       to_store[:category] = resource.data.category
-      to_store[:image] = image_url_for_blog_article(resource)
-      to_store[:summary] = proper_blog_summary(resource, 180)
+      to_store[:image] = blog_preview_url(resource)
+      to_store[:summary] = blog_article_for(resource).summary(180)
     elsif section == 'cocktails'
       to_store[:type] = 'cocktail'
       if resource.data.cocktail.nil?
@@ -141,23 +146,28 @@ activate :search do |search|
         throw(:skip)
       end
       to_store[:date] = resource.data.cocktail.date.iso8601
+      to_index[:username] = resource.data.cocktail.author
+      to_store[:author] = to_index[:author] = person_name(resource.data.cocktail.author)
       to_store[:glass] = "/cocktails/images/glass/#{resource.data.cocktail.glass}.png"
       to_store[:contents] = "/cocktails/images/contents/#{resource.data.cocktail.contents}.gif"
+    elsif section == 'work'
+      to_store[:type] = 'work'
+      if resource.data.date.nil?
+        puts "Not indexing #{resource.path}, no date found."
+        throw(:skip)
+      end
+      to_store[:date] = resource.data.date.iso8601
+      to_store[:snippet] = resource.data.snippet
+      to_store[:color] = resource.data.color
+      to_store[:thumbnail] = "/work/images/#{resource.data.thumbnail}"
     elsif section == 'ftfy'
       to_store[:type] = 'ftfy'
       if resource.data.date
         to_store[:date] = resource.data.date.iso8601
       end
-
+      to_index[:username] = resource.data.author
+      to_store[:author] = to_index[:author] = person_name(resource.data.author)
       to_store[:image] = "/ftfy/images#{path[/\/.*(?=\..+$)/]}/#{resource.data.thumbnail}"
-    end
-
-    # prep author
-    if author = resource.data.author
-      to_store[:author] = to_index[:author] = person_name(author)
-    else
-      puts "Not indexing #{resource.path}, no author found."
-      throw(:skip)
     end
   end
 end

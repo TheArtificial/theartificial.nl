@@ -1,16 +1,53 @@
 <% wrap_layout 'site_layout' do %>
 <% content_for :title, "#{current_page.title} - The Artificial" %>
+<% content_for :description, strip_tags(current_article.summary(180)) %>
+<%
+  logo_url = "https://theartificial.com/images/img_default.png"
+  if preview_paths = blog_preview_paths(current_article)
+    image_url = preview_paths[:url]
+    image_sizes = image_sizes(preview_paths[:path])
 
+    content_for :image_url, image_url
+    content_for :image_width, image_sizes[:width].to_s
+    content_for :image_height, image_sizes[:height].to_s
+  else
+    image_url = logo_url
+  end
+%>
 <% content_for :feedlink_element do %>
 <link rel="alternate" type="application/atom+xml" title="The Artificial blog" href="/blog/feed.xml" />
 <% end %>
+<% content_for :json_ld do %>
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "<%= URI.join(config[:site_url], current_resource.url).to_s %>"
+    },
+    "headline": "<%= current_page.title %>",
+    "image": "<%= image_url %>",
+    "datePublished": "<%= current_article.date.iso8601 %>",
+    "author": {
+      "@type": "Person",
+      "name": "<%= person_name(current_page.data.author) %>"
+    }
+    ,
+     "publisher": {
+      "@type": "Organization",
+      "name": "The Artificial",
+      "logo": { "type": "ImageObject", "url": "<%= logo_url %>" }
+    },
+    "description": "<%= strip_tags(current_article.summary(180)) %>"
+  }
+<% end %>
 
 <section id="content" class="<%= "with-masthead" if current_page.data.masthead %>">
-  <% if current_page.data.masthead %>
+  <% if masthead_path = blog_masthead_url(current_page) %>
   <div class="bleed">
       <div id="masthead"></div>
       <style>
-        #masthead { background-image: url('<%= image_path current_page.data.masthead %>'); }
+        #masthead { background-image: url('<%= masthead_path %>'); }
       </style>
   </div>
   <% end %>

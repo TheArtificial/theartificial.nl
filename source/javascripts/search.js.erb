@@ -1,0 +1,43 @@
+// searching
+// depends on feed.js
+
+var lunrIndex;
+var lunrMap;
+
+function lunrSearch(query, $el) {
+
+  console.log('Requesting Lunr file');
+  $el.html('Loading...');
+  $el.packery();
+
+  $.ajax({
+    dataType: "json",
+    url: '/search/index.json',
+    xhr: function() {
+      var xhr = new window.XMLHttpRequest();
+      //Download progress
+      xhr.addEventListener("progress", function(evt){
+        $el.append('.');
+      }, false);
+      return xhr;
+    },
+    success: function(data) {
+
+      lunrIndex = lunr.Index.load(data.index);
+      lunrMap = data.docs;
+      var results = lunrIndex.search(query)
+      console.log('Found ' + results.length + ' results', results);
+
+      if (results.length > 0) {
+        $el.html(''); // clear loading indicator
+        $.each(results, function(index, result) {
+          page = lunrMap[result.ref];
+        setTimeout(addCard($el, page),100);
+        });
+      }
+      else {
+        $el.html('No results, sorry.');
+      }
+    }
+  });
+}
