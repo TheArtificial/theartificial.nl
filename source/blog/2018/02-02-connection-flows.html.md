@@ -3,7 +3,14 @@ title: 'A Connection Flow Analysis'
 category: process
 tags: review, connection, trends, Internet of things, IoT
 author: [ariane, manjari]
+published: false
 ---
+
+NOTE: Whenever you're writing a blog post and it's not ready to be published, make sure to use the metadata to specify. Otherwise when Hans pushes the site with the new cocktail, an incomplete blogpost will be published and automatically publicized on social media. Yikes!
+
+TODO: This intro sounds like it's trying to hard. Try less to speak for the agency (or to write as if you're me), and instead write from a voice that is authentic and using words and terminology that are natural. If this paragraph is intended to help the reader understand why this is interesting to you, it should sound like you.
+
+TODO: Use the introduction to establish a purpose. What should the reader expect to have gained by the time their at the end of this article?
 
 As a UX design agency, we love the era of IoT.  We had the opportunity to design for pioneering companies that created some great connected Things such as VanMoof, Philips Avent, Philips Male Grooming, Philips Sonicare, and more lately Roader. We thrive in these new objects and the service challenges that they bring to their users.
 
@@ -29,6 +36,8 @@ We identified four recurrent actors playing a role in the connections of Things.
 
 **The App:** In our framework, the App is separated from the OS, it is, in fact, residing within the OS. A Thing connecting to an OS, or to an App is different. While not all Things require an App to function, some do, especially in the case of a need to establish a communication between your Thing and your user account.
 
+TODO: Maintain authenticity. Could you have a conversation about every term mentioned in the paragraph below? It's likely you either need to use simpler language or that you need to read more about home automation or even more generally about the IOT.
+
 **The Wi-Fi:** A Wi-Fi infrastructure lives as a distinct actor because there are many homes connected Things that require a home Wi-Fi network. Though, aside from Things relating to the home automation, there are many connection flows which do not require the Wi-Fi to establish a connection.
 
 **The Account:** Not all connected Things require an account, but many services do follow the practice of requiring an account to connect to your Thing. An account can play the important role in associating your unique Thing with your name. There are many ways your Thing can connect to an account, through a wireless network at home or at your favorite coffee shop and through your device cellular data. Hence, we did not concentrate on how an App connects to an account, but only if it does or not.  
@@ -43,11 +52,14 @@ Now that you know our actors, here how you can identify them on stage. Each acto
 
 In the connection of Things, it is important to distinguish two different layers of connection: the protocol layer and the software layer.
 
+TODO: Why is this important? How does one go about establishing the difference between the protocol and software layers? Are there any misconceptions that need to be dispelled?
 
 **The protocol layer**
 
 
 ![protocol](02-02-connection-flows/protocolkey.png)  
+
+TODO: Make sure this is clear. What are the different protocol layers that we established and how are each use? Try leading with what it is, followed by how it's represented, and then adding detail — different types of, exceptions, how a designer can tell it's a protocol layer, etc.
 
 A Thing connects to the OS or to a Wi-Fi infrastructure through the protocol layer. In our framework, the protocol layer is represented by the grey color. A Thing can pair with a device on the protocol layer via Bluetooth but it can also authenticate at the protocol layer with other technologies like Wi-Fi ad hoc, or Wi-Fi direct. These connections at the protocol layer can be verified if the Thing is recognized as a unique item that can not be mistaken with another similar Thing and, for an authentication with the Wi-Fi if it is protected by a password.
 
