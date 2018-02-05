@@ -6,9 +6,6 @@ author: [ariane, manjari]
 published: false
 ---
 
-NOTE: Whenever you're writing a blog post and it's not ready to be published, make sure to use the metadata to specify. Otherwise when Hans pushes the site with the new cocktail, an incomplete blogpost will be published and automatically publicized on social media. Yikes!
-
-TODO: This intro sounds like it's trying to hard. Try less to speak for the agency (or to write as if you're me), and instead write from a voice that is authentic and using words and terminology that are natural. If this paragraph is intended to help the reader understand why this is interesting to you, it should sound like you.
 
 TODO: Double check that glossary. Some of the "official" terms are different than those we discussed, and as a result end up meaning a very different thing. For example – "wifi infrastructure" is something very different than "infrastructure wifi". Knowing the right words is probably even less important than being able to identify and discuss why the wrong terms are wrong.
 
@@ -16,60 +13,42 @@ You should also be able to identify industry terms versus those that we needed t
 
 Understanding a thing goes hand-in-hand with understanding how to talk about a thing. Do let your curiosity get the best of you!
 
-TODO: Use the introduction to establish a purpose. What should the reader expect to have gained by the time their at the end of this article?
 
+As designers in the Era of the Internet of Things, we worked for various connected objects accompanying users in their leisure time, with their city commutes, and with their health. We familiarized ourselves with the technical steps occurring when a user establishes a connection with a Thing while manipulating an interface or the object itself. To design magic connection experiences that seem extremely smooth and effortless to users, we believe that there is a value in understanding the technology running behind. Not only would this help us make better UX decisions, but also have us recommend best practices when choosing a way of connecting a product. As we were researching around twenty connected Things, we established a framework so we could communicate our understanding of connections flows and identify patterns. Hopefully this summary of findings creates more awareness about the technical details of a connected object and eventually inspire to design better connection experiences.
 
-As a UX design agency, we love the era of IoT.  We had the opportunity to design for pioneering companies that created some great connected Things such as VanMoof, Philips Avent, Philips Male Grooming, Philips Sonicare, and more lately Roader. We thrive in these new objects and the service challenges that they bring to their users.
-
-Technology can sometimes be seen as a secret magic portal to designers as well as to its users. We researched around twenty connected devices so that we can have a better technical understanding of connections flows and what implications they might have on UX decisions. Not only would this help us be more insightful when discussing connection flows with our clients but also with corresponding project teams. We explored various frameworks to help us create a mental model of connections that could help us identify patterns in connection practices.
-
-/ hero image goes here /
+/ hero image (of the matrix of framework) goes here /
 
 ---
 
-NOTE: Be aware of the semantics of headings: h1 is for the title (automatic), h2 is for primary headings, h3 for secondary headings, h4 for tertiary headings, etc. Always be consistent.
 
+## Actors
 
 ### Introducing the actors
-
 We identified four recurrent actors playing a role in the connections of Things.
 
 | | | |
 |-|-|-|
-| ![](02-02-connection-flows/ic_thing.png)| **The Thing:** Also known as the connected product, it is the new object you acquired and you are trying to connect |
-| ![](02-02-connection-flows/ic_os.png)| **The OS:** text below |
-| ![](02-02-connection-flows/ic_app.png)| **The App:** text below |
-| ![](02-02-connection-flows/ic_wifi.png)| **The Wi-Fi:** text below |
-| ![](02-02-connection-flows/ic_account.png)| **The Account:** text below |
+| ![](02-02-connection-flows/ic_thing.png)| **The Thing:** Also known as the connected product, it is the object the user is trying to connect to. It could be a camera, a speaker, a toothbrush, a bicycle, and many more other Things ... |
+| ![](02-02-connection-flows/ic_os.png)| **The OS:** In most cases it refers to the user smartphone, but it could also be a tablet or a desktop. The real actor is the operating system, either from Android or Apple that the Thing is speaking with. |
+| ![](02-02-connection-flows/ic_app.png)| **The App:** The App is separated from the OS, it is, in fact, residing within the OS. A Thing connecting to an OS, or to an App is different. While not all Things require an App to function, some do, especially in the case of a need to establish a communication between your Thing and your user account. |
+| ![](02-02-connection-flows/ic_wifi.png)| **The Wi-Fi:** Many homes connected Things require a Wi-Fi network. Though, aside from objects relating to the home automation, many connection flows do not require Wi-Fi to establish a connection. |
+| ![](02-02-connection-flows/ic_account.png)| **The Account:** Not all connected Things require a user account, but many services requires an account prior to a Thing connection. There are many ways your Thing can connect to an account, through a wireless network at home or at your favorite coffee shop and through your device cellular data. Hence, we did not concentrate on how an App connects to an account, but only if it does or not. |
 
-**The OS:** While the device is in most cases your smartphone, it could also be any equipment, such as your tablet or your desktop. It could also be an Android device, an Apple device or any others. The real actor is the operating system that your Thing is speaking with.
-
-**The App:** In our framework, the App is separated from the OS, it is, in fact, residing within the OS. A Thing connecting to an OS, or to an App is different. While not all Things require an App to function, some do, especially in the case of a need to establish a communication between your Thing and your user account.
-
-TODO: Maintain authenticity. Could you have a conversation about every term mentioned in the paragraph below? It's likely you either need to use simpler language or that you need to read more about home automation or even more generally about the IOT.
-
-**The Wi-Fi:** A Wi-Fi infrastructure lives as a distinct actor because there are many homes connected Things that require a home Wi-Fi network. Though, aside from Things relating to the home automation, there are many connection flows which do not require the Wi-Fi to establish a connection.
-
-**The Account:** Not all connected Things require an account, but many services do follow the practice of requiring an account to connect to your Thing. An account can play the important role in associating your unique Thing with your name. There are many ways your Thing can connect to an account, through a wireless network at home or at your favorite coffee shop and through your device cellular data. Hence, we did not concentrate on how an App connects to an account, but only if it does or not.  
-
-
-
-![stage](02-02-connection-flows/stage.gif)  
-Now that you know our actors, here how you can identify them on stage. Each actor has a unique static position. If the actor does not play a part in the connection flow of a Thing, we don’t show that actor.
 
 
 ### Setting the stage
+![stage](02-02-connection-flows/stage.gif)  
+Now that you know our actors, here how you can identify them on stage. Each actor has a unique static position so comparison between Things are scannable. If the actor does not play a part in the connection flow, it is not shown in the layout. From the bottom to the top, you'll find the Thing, the OS with the app, the Wi-Fi, and the account.
 
-In the connection of Things, it is important to distinguish two different layers of connection: the protocol layer and the software layer.
+## Layers
+Connecting a Thing can occur at the protocol layer and at the software layer. The distinction matters to designers because different layers of connections imply different steps in the connection process. Connecting at the protocol layer comes first in the play. This connection is exclusively between a device's OS and a Thing. You can easily identify it if you are able to find your Thing in the list of your Connected objects in the OS setting of your mobile. This connection can be an end by itself, but in most cases, where the Thing is aiming to connect to an app, this protocol layer connection can be the first act of the whole play. The second act of the play, after the intermission, is the connection at the software layer that can rarely occur before the protocol connection. To spot this connection, you can imagine any connected product that has an app. If we take VanMoof Electrified bicycle for instance, the fact that you can see the bike connected in the VanMoof app means you can probably guess it is connected both at the protocol layer and the software layer. To verify this second point, you'll probably see the bicycle in your Bluetooth paired objects in the OS settings. These two layers of connection sometimes seem to occur in one act on the UI but don't mix them up. To provide the right guidance to your user in an interface to connect a Thing to an OS or to an app, you will need to distinguish these two layers.
 
-TODO: Why is this important? How does one go about establishing the difference between the protocol and software layers? Are there any misconceptions that need to be dispelled?
-
-**The protocol layer**
-
-
+### The protocol layer
 ![protocol](02-02-connection-flows/protocolkey.png)  
 
 TODO: Make sure this is clear. What are the different protocol layers that we established and how are each use? Try leading with what it is, followed by how it's represented, and then adding detail — different types of, exceptions, how a designer can tell it's a protocol layer, etc.
+
+TODO: different step in the connection = different state for a Thing = different UI
 
 A Thing connects to the OS or to a Wi-Fi infrastructure through the protocol layer. In our framework, the protocol layer is represented by the grey color. A Thing can pair with a device on the protocol layer via Bluetooth but it can also authenticate at the protocol layer with other technologies like Wi-Fi ad hoc, or Wi-Fi direct. These connections at the protocol layer can be verified if the Thing is recognized as a unique item that can not be mistaken with another similar Thing and, for an authentication with the Wi-Fi if it is protected by a password.
 
@@ -80,9 +59,8 @@ For example in the above topology, we can see the Bose SoundLink II pairs with y
 
 An unverified protocol connection can be observed with the Philips Sonicare Diamond Clean toothbrush. If you have an app installed and logged in, it automatically detects a toothbrush in use when it is activated. The product nor the OS need to be paired with a connection, it just automatically does so.
 
-**The software layer**
 
-
+### The software layer
 ![thing](02-02-connection-flows/thingkey.png)
 
 When your Thing connects to an App, it does so through the software layer, which is indicated in purple in the framework. This connection can also be a verified connection, where your Thing or the App acknowledge the connection, or it can be an unverified connection, where either your Thing or the App do not acknowledge the connection.
@@ -107,23 +85,25 @@ For VanMoof, the user needs to have registered their bike frame number and IMEI 
 
 TODO: Continue the extended metaphor into this section.
 
-As we animated these Things connection flows, we saw patterns emerging. We know twenty products are a short list, but it is a start and we imagine the more connection flows we create, the more patterns we will find. What was satisfying to learn was that we could already identify certain connection patterns based on the type of the thing.
+As we animated our Things connection flows, we saw patterns of practices emerging. Twenty products make a short list, but it is a start and we imagine the more connection flows we create, the more patterns we will find. What was satisfying was that we could already identify certain connection patterns based on the type of the Thing.
 
 TODO: Write this section
 
-**When pairing and connection happen at the same time**
-(gif of UE mini boom, Bose Sound Link II, Spire Stone, Fitbit Flex 2)
-These Things need to be paired once to be able to connect automatically everytime the user uses the thing. For the speakers, there is no app connection, but for health wearables like Fitbit and Spire, the things will connect to the app everytime
-
 **When Things only require connection to an OS**
-(gif of UE mini boom, Bose sound link)
+/gif of UE mini boom, Bose sound link, Apple pen?/
+Contrary to the health wearables like Fitbit and Spire, the speakers do not connect to an app, but only to the protocol layer. They don't need an app to function. UE Mini Boom does require an app to play music on multiple speakers but not for one.
+
+**When Pairing occurs once and later allows faster connection**
+/gif of UE mini boom, Bose Sound Link II, Spire Stone, Fitbit Flex 2/
+UE mini boom, Bose Sound Link II, Spire Stone, and Fitbit Flex 2 only require to be paired once so they can connect automatically later. Though, when the first pairing was established, the Thing would just directly connect.
+TO DO : are these only Bluetooth? If so Why?
 
 **When Things require a Wi-Fi ad hoc connection**
-(gif of polaroid cube and Olympus)
-Because the data they send is heavier and a Bluetooth connection is slow.
+/gif of polaroid cube and Olympus/
+The two camera we looked at where using a Wi-Fi ad hoc connection because the data exchange is heavy and a Bluetooth connection would be to slow.
 
 **App is used to connect to products as well as to register the product to the user account**
-(fitbit, spire, apple watch)
+/fitbit, spire, apple watch/
 Health wearables connected to an account, so that a user can sync and access the data through any OS.
 
 **When an OS connection is required to give credentials to connect to a home Wi-Fi infrastructure**
