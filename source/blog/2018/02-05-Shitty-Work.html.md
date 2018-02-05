@@ -3,12 +3,9 @@ title: 'Artificial Conversations: Shitty Work'
 category: thoughts
 tags: monday, morning, conversation, portfolio
 author: shannon
-published: false
 ---
 
-Like many agencies, The Artificial starts every week with a meeting to preview the upcoming week. This meeting covers project status, BD, and important calendar events. It is accompanied by breakfast. This week, we added something new to accompany this meeting: a conversation.
-
-Conversations usually start with some sort of light reading; they range from tactical to philosophical in nature; and they usually meander to and from design as a central topic.
+Like many agencies, The Artificial starts every week with a meeting to preview the upcoming week. This meeting covers project status, BD, and important calendar events. It is accompanied by breakfast. This week, we added something new to accompany this meeting: a design-oriented conversation.
 
 This week's conversation was inspired by friend-of-a-friend Femke's blogpost about [shitty work](https://femke.co.nz/articles/shitty). The TL;DR is that designers publish too much perfect work. Rather than seeking critique, we seek validation, and even the platforms that were originally created with the idea of sharing work in progress have become places to share polished portfolio pieces with the hope of raking in the likes.
 
