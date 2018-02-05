@@ -10,7 +10,14 @@ NOTE: Whenever you're writing a blog post and it's not ready to be published, ma
 
 TODO: This intro sounds like it's trying to hard. Try less to speak for the agency (or to write as if you're me), and instead write from a voice that is authentic and using words and terminology that are natural. If this paragraph is intended to help the reader understand why this is interesting to you, it should sound like you.
 
+TODO: Double check that glossary. Some of the "official" terms are different than those we discussed, and as a result end up meaning a very different thing. For example – "wifi infrastructure" is something very different than "infrastructure wifi". Knowing the right words is probably even less important than being able to identify and discuss why the wrong terms are wrong.
+
+You should also be able to identify industry terms versus those that we needed to make up so we could do this exercise.
+
+Understanding a thing goes hand-in-hand with understanding how to talk about a thing. Do let your curiosity get the best of you!
+
 TODO: Use the introduction to establish a purpose. What should the reader expect to have gained by the time their at the end of this article?
+
 
 As a UX design agency, we love the era of IoT.  We had the opportunity to design for pioneering companies that created some great connected Things such as VanMoof, Philips Avent, Philips Male Grooming, Philips Sonicare, and more lately Roader. We thrive in these new objects and the service challenges that they bring to their users.
 
@@ -19,6 +26,9 @@ Technology can sometimes be seen as a secret magic portal to designers as well a
 / hero image goes here /
 
 ---
+
+NOTE: Be aware of the semantics of headings: h1 is for the title (automatic), h2 is for primary headings, h3 for secondary headings, h4 for tertiary headings, etc. Always be consistent.
+
 
 ### Introducing the actors
 
@@ -95,7 +105,11 @@ For VanMoof, the user needs to have registered their bike frame number and IMEI 
 
 ## Identifying patterns
 
+TODO: Continue the extended metaphor into this section.
+
 As we animated these Things connection flows, we saw patterns emerging. We know twenty products are a short list, but it is a start and we imagine the more connection flows we create, the more patterns we will find. What was satisfying to learn was that we could already identify certain connection patterns based on the type of the thing.
+
+TODO: Write this section
 
 **When pairing and connection happen at the same time**
 (gif of UE mini boom, Bose Sound Link II, Spire Stone, Fitbit Flex 2)
