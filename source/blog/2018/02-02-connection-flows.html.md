@@ -3,7 +3,10 @@ title: 'A Connection Flow Analysis'
 category: process
 tags: review, connection, trends, Internet of things, IoT
 author: [ariane, manjari]
+preview: preview.png
+masthead: preview.png
 published: false
+
 ---
 
 To design magical connection experiences that seem smooth and effortless to users, we believe that there is a value in understanding the technology running behind it. Not only would this help designer make better UX decisions, but also have us recommend best practices when choosing a way of connecting a product. Today, many network infrastructures and protocols exist to establish a connection. We wondered why certain products use a particular technology (such as Bluetooth over Wi-Fi) or why the experience of connecting some products seems easier as compared to others. So, we familiarized ourselves with the technical steps occurring when a user establishes a connection with a product while manipulating an interface or the product itself.
@@ -72,23 +75,23 @@ VanMoof created an electric city bike with location tracking and a connected loc
 
 Actors can follow different scripts to reach the end goal of connectivity. Twenty products are a short list, but it is a start to identifying similar practices in connections. We could already observe patterns emerging from our animations based on the technology, the type of the Thing and the data exchange. We imagine that the more connection flows we create, the more patterns we will observe.
 
-![basic connection](02-02-connection-flows/pattern_basic.gif)
+![basic connection](02-02-connection-flows/pattern_basic.jpg)
 **Basic Connection**
 Connected Things which do not any hold too sensible user data adopt a low-level security connection. Users perform least actions to establish a connection. These Things are also easily accessible to multiple users, as they do not require a code or password exchange. Entertainment objects like the Bose SoundLink II and the UE Mini Boom speakers, follow this play. They do add a level of verified connection security, by having the users manipulate the Thing as well as the App at the time of connection, ensuring that users are connecting to the right product and that their neighbors won't connect without warning them. The Apple Pencil needs to be physically plugged to the user iPad Pro before a Bluetooth connection at the software layer is established. The Lightning connector ensures that no other iPad accidentally connect to the Apple Pencil.
 
-![Secured data connection](02-02-connection-flows/pattern_data.gif)
+![Secured data connection](02-02-connection-flows/pattern_data.jpg)
 **Secured Data Connection**
  We were surprised to discover that the health monitoring wearables like Fitbit and Spire do not require to register to the user's account in order to send personal data to their respective App. This practice reveals a risk. Flex 2 bracelet and Spire Stone can connect to strangers account without asking any form of password or even deregistering the initial owner. To make it worst, when this happens, the previous user is not even informed that his or her Thing is used by a stranger. So if you forgot your Fitbit Flex 2 at the gym, whoever finds it can start using it without any hiccups.
 
-![Account connection](02-02-connection-flows/pattern_account.gif)
+![Account connection](02-02-connection-flows/pattern_account.jpg)
 **Account Connection**
 Some connected Things holding confidential data adopt a more rigorous connection process. A user needs to register their Thing to their account, so that their data is always secured, and also accessible from multiple devices. This practice was endorsed by some health wearables such as the Apple Watch, and by home products such as Amazon Echo Dot. VanMoof goes so far as to allow an unverified protocol connection because it establishes a secure account connection with the bike IMEI number and frame number. We recommend registering the connected Things to user's account because it associates the user with his Thing in a secure way. If a Thing gets lost or stolen, this best practice could help finding the Thing and or securing the data associated with it.
 
-![High bandwidth data connection](02-02-connection-flows/pattern_bandwidth.gif)
+![High bandwidth data connection](02-02-connection-flows/pattern_bandwidth.jpg)
 **High Bandwidth Data Connection**
 Polaroid Cube+ and Olympus EM10 are two cameras that happen to use a Wi-Fi ad-hoc to connect at the protocol layer. A camera would want a Wi-Fi connection rather than a Bluetooth connection as the former transfers heavy data faster, and more securely with an optional password exchange. While Wi-Fi ad hoc is an appropriate technology for image transfer, it disrupts both other apps running on the device and the connection flow because a device cannot be connected to Wi-Fi and the Thing's ad hoc Wi-Fi simultaneously. It means that the user would need to disconnect their OS from an existing Wi-Fi infrastructure network in order to connect to a Wi-Fi ad-hoc network.
 
-![Home connection](02-02-connection-flows/pattern_home.gif)
+![Home connection](02-02-connection-flows/pattern_home.jpg)
 **Home Connection**
 Connected home Things such Amazon's Echo Dot, Nokia's Withings Aura, and Thermo do not actually need to be connected to an OS for continued use. An OS and an App are used but only to set up a secured connection with a home Wi-Fi in order to register the Things with a user account. Once this connection and registration are established, a user can access their connected object via any OS that is logged into the same user account.
 
