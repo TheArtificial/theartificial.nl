@@ -6,7 +6,7 @@ author: [ariane, manjari]
 published: false
 ---
 
-To design magical connection experiences that seem extremely smooth and effortless to users, we believe that there is a value in understanding the technology running behind it. Not only would this help designer make better UX decisions, but also have us recommend best practices when choosing a way of connecting a product. Today, many network infrastructures and protocols exist to establish a connection. We wondered why certain products use a particular technology (such as Bluetooth over Wi-Fi) or why the experience of connecting some products seems easier as compared to others. So, we familiarized ourselves with the technical steps occurring when a user establishes a connection with a product while manipulating an interface or the product itself.
+To design magical connection experiences that seem smooth and effortless to users, we believe that there is a value in understanding the technology running behind it. Not only would this help designer make better UX decisions, but also have us recommend best practices when choosing a way of connecting a product. Today, many network infrastructures and protocols exist to establish a connection. We wondered why certain products use a particular technology (such as Bluetooth over Wi-Fi) or why the experience of connecting some products seems easier as compared to others. So, we familiarized ourselves with the technical steps occurring when a user establishes a connection with a product while manipulating an interface or the product itself.
 
 As we were researching around twenty connected products, we established a framework so we could communicate our understanding of connections flows and identify patterns. Hopefully, this summary of findings creates more awareness about the technical details of a connected product and eventually inspire other designers to design better connection experiences.
 
@@ -16,17 +16,44 @@ TODO: / hero image of the matrix of frameworks goes here /
 
 ## The actors
 ### Introducing the actors
-Searching for 'connection topology' online should bring up many technical diagrams. Very few of these are designer or user friendly, which could discourage anyone to pierce the mysteries of the black box of magic or of the floating cloud. When we began building our framework, we established who our actors were, but also when and how they were speaking to each other. After a few iterations on our framework, we reduced our actors to five essential ones.
+Searching for 'connection topology' online should bring up many technical diagrams. Very few of these are designer or user friendly, which could discourage anyone to pierce the mysteries of the black box of magic or of the floating cloud. When we began building our framework, we established who our actors were, but also when and how they were speaking to each other. After a few iterations on our system visualization, we reduced our actors to five essentials.
 
 | | |
 |-|-|
 |![things](02-02-connection-flows/ic_things.gif) | **The Thing:** Also known as the connected product, it is the object the user is trying to connect to. It could be a camera, a speaker, a toothbrush, a bicycle, a wearable, and many more other Things…
-|![os](02-02-connection-flows/ic_os.png)| **The OS:** Things need devices to connect, or to connect to. In most cases, it refers to the user's smartphone, but it could also be a tablet or a desktop. The real actor is the operating system (OS) that lives in these devices that the Thing is speaking with. |
+|![os](02-02-connection-flows/ic_os.png)| **The OS:** Sometimes, Things need devices to connect. In most cases, it refers to the user's smartphone, but it could also be a tablet or a desktop. The real actor is the operating system (OS) that lives in these devices that the Thing is speaking with. |
 |![app](02-02-connection-flows/ic_app.png) | **The App:** The App is separated from the OS, even though it is residing within the OS. There is a difference when a Thing connects to an OS, or to an App. While not all Things require an App to function, some do, especially when there is a need for a Thing to communicate to a user account. |
 |![wifi](02-02-connection-flows/ic_wifi.png) | **The Wi-Fi:** While we have chosen not to show which network an App uses to connect to an account, we did see the importance in showing when a Thing needs to establish a Wi-Fi network connection. With the smart home boom, more and more home connected Things require a Wi-Fi network to function. |
-|![account](02-02-connection-flows/ic_account.png)]]]]]]| **The Account:** Not all connected Things require a user account, but many services require an account prior to a Thing connection. There are many ways a Thing can connect to an account, through a wireless network at home or at a local coffee shop as well as through a device's cellular data. Hence, we did not concentrate on how an App connects to an account, but only if it does or not. |
+|![account](02-02-connection-flows/ic_account.png)]]]]]]| **The Account:** Not all connected Things really require a user account to function, but many services ask their user to create an account prior to a Thing connection. There are many ways a Thing can connect to an account, through a wireless network at home or at a local coffee shop as well as through a device's cellular data. Hence, we did not concentrate on how an App connects to an account, but only if it does or not. |
 
 TODO: Create a table for this list
+
+### The Things protagonists
+
+TODO: Describe in one sentence every actor we reviewed.
+
+* **Amazon Echo dot**
+* **Amazon Echo Show**
+* **Amazon Kindle**
+* **Apple Airpods**
+* **Apple Pencil**
+* **Apple TV**
+* **Apple Watch**
+* **Beasts of Balance**
+* **Bose SoundLink II**
+* **FitBit Flex 2**
+* **Foldio360**
+* **Nintendo Pokemon Go+**
+* **Nokia Thermo**
+* **Nokia Aura**
+* **Olympus EM10**
+* **Philips HUE**
+* **Philips Sonicare Diamond Clean**
+* **Polaroid Cube+**
+* **Spire**
+* **UE Mini Boom**
+* **VanMoof Electrified S**
+
 
 ### Setting the stage
 ![stage](02-02-connection-flows/stage.gif)  
@@ -95,9 +122,6 @@ Connected Things that hold valuable user data follow a more strict connection fl
 /gif of Echo dot, Aura, thermo/
 Connected home Things such as Echo dot, Withings Aura and Nokia thermo, do no actually need to be connected to an OS for continued use. They do use a OS and a App but only to set up a secure connection with a Wi-Fi network and to register with a user account. Once this connection is established, a user can use access these Things via any OS that is connected to the same Wi-Fi network and logged into the same user account.
 
-
-
-TODO : / Matrix of all stories together /
 
 
 
