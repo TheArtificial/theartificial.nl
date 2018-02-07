@@ -1,0 +1,10 @@
+sudo: false
+language: ruby
+# will use .ruby-version
+branches:
+  only: release
+cache: bundler
+script:
+- bundle exec middleman build
+after_success:
+- bundle exec s3_website push
