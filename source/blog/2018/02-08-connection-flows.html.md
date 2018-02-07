@@ -12,13 +12,78 @@ To design magical connection experiences that seem smooth and effortless to user
 
 As we were researching around twenty connected products, we established a framework so we could communicate our understanding of connections flows and identify patterns. Hopefully, this summary of findings creates more awareness about the technical details of a connected product and eventually inspire other designers to design better connection experiences.
 
-| | | | |
-|-|-|-|-|
-| <img style="width:20%">![UE Mini Boom](02-08-connection-flows/to_miniboom.gif) | <img style="width:20%">![Bose SoundLink II](02-08-connection-flows/to_soundlink2.gif) | <img style="width:20%">![Sensible Object Beast Of Balance](02-08-connection-flows/to_bob.gif) | <img style="width:20%">![Apple Pencil](02-08-connection-flows/to_pencil.gif) |
-| <img style="width:20%">![Polaroid Cube+](02-08-connection-flows/to_cubeplus.gif) | <img style="width:20%">![Olympus EM10 camera](02-08-connection-flows/to_em10.gif) | <img style="width:20%">![Philips HUE](02-08-connection-flows/to_hue.gif) | <img style="width:20%">![Apple airpods](02-08-connection-flows/to_airpods.gif) |
-| <img style="width:20%">![Philips Sonicare DiamondClean](02-08-connection-flows/to_diamondclean.gif) | <img style="width:20%">![Spire Stone](02-08-connection-flows/to_spire.gif)  | <img style="width:20%">![Niantic Pokemon Go Plus](02-08-connection-flows/to_pokemongoplus.gif) | <img style="width:20%">![Foldio360 turntable](02-08-connection-flows/to_foldio.gif) |
-| <img style="width:20%">![Amazon Kindle](02-08-connection-flows/to_kindle.gif) | <img style="width:20%">![Amazon Echo Show](02-08-connection-flows/to_echoshow.gif) | <img style="width:20%">![Apple Watch](02-08-connection-flows/to_watch.gif) | <img style="width:20%">![VanMoof Electrified S](02-08-connection-flows/to_electrifieds.gif) |
-| <img style="width:20%">![Apple TV](02-08-connection-flows/to_tv.gif) | <img style="width:20%">![Amazon Echo Dot](02-08-connection-flows/to_echodot.gif) | <img style="width:20%">![things](02-08-connection-flows/to_aura.gif) | <img style="width:20%">![things](02-08-connection-flows/to_thermo.gif) |
+
+
+<table>
+  <tr>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_miniboom.gif" alt="UE Mini Boom">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_soundlink2.gif" alt="Bose SoundLink II">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_bob.gif" alt="Sensible Object Beast Of Balance">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_pencil.gif" alt="Apple Pencil">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_cubeplus.gif" alt="Polaroid Cube+">
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_em10.gif" alt="Olympus EM10 Camera">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_hue.gif" alt="Philips HUE">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_airpods.gif" alt="Apple AirPods">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_diamondclean.gif" alt="Philips Sonicare DiamondClean">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_spire.gif" alt="Spire Stone">
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_pokemongoplus.gif" alt="Niantic Pokémon Go Plus">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_foldio.gif" alt="Foldio360 Turntable">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_kindle.gif" alt="Amazon Kindle">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_echoshow.gif" alt="Amazon Echo Show">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_watch.gif" alt="Apple Watch">
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_electrifieds.gif" alt="VanMoof Electrified S">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_tv.gif" alt="Apple TV">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_echodot.gif" alt="Amazon Echo Dot">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_aura.gif" alt="Nokia Withings Aura">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_thermo.gif" alt="Nokia Withings Thermo">
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -28,13 +93,49 @@ As we were researching around twenty connected products, we established a framew
 
 Searching for 'connection topology' online should bring up many technical diagrams. Very few of these are designer or user friendly, which could discourage anyone to pierce the mysteries of the black box of magic or of the floating cloud. When we began building our framework, we established who our actors were, but also when and how they were speaking to each other. After a few iterations on our system visualization, we reduced our actors to five essentials.
 
-| | |
-|-|-|
-| <img style="width:50px">![things](02-08-connection-flows/ic_things.gif)| **The Thing:** Also known as the connected product, it is the object the user is trying to connect to. It could be a camera, a speaker, a toothbrush, a bicycle, a wearable, and many more other Things…|
-| <img style="width:50px">![os](02-08-connection-flows/ic_os.png)| **The OS:** Sometimes, Things need devices to connect. In most cases, it refers to the user's smartphone, but it could also be a tablet or a desktop. The real actor is the operating system (OS) that lives in these devices that the Thing is speaking with.|
-| <img style="width:50px">![app](02-08-connection-flows/ic_app.png)| **The App:** The App is separated from the OS, even though it is residing within the OS. There is a difference when a Thing connects to an OS, or to an App. While not all Things require an App to function, some do, especially when there is a need for a Thing to communicate to a user account.|
-| <img style="width:50px">![wifi](02-08-connection-flows/ic_wifi.png)| **The Wi-Fi:** While we have chosen not to show which network an App uses to connect to an account, we did see the importance in showing when a Thing needs to establish a Wi-Fi network connection. With the smart home boom, more and more home connected Things require a Wi-Fi network to function.|
-| <img style="width:50px">![account](02-08-connection-flows/ic_account.png)| **The Account:** Not all connected Things really require a user account to function, but many services ask their user to create an account prior to a Thing connection. There are many ways a Thing can connect to an account, through a wireless network at home or at a local coffee shop as well as through a device's cellular data. Hence, we did not concentrate on how an App connects to an account, but only if it does or not.|
+
+<table>
+  <tr>
+    <td style="width: 50px">
+      <img src="/blog/2018/02/08/connection-flows/ic_things.gif" alt="Thing">
+    </td>
+    <td>
+      <strong>The Thing:</strong> Also known as the connected product, it is the object the user is trying to connect to. It could be a camera, a speaker, a toothbrush, a bicycle, a wearable, and many more other Things…
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 50px">
+      <img src="/blog/2018/02/08/connection-flows/ic_os.png" alt="OS">
+    </td>
+    <td>
+      <strong>The OS:</strong> Sometimes, Things need devices to connect. In most cases, it refers to the user's smartphone, but it could also be a tablet or a desktop. The real actor is the operating system (OS) that lives in these devices that the Thing is speaking with.
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 50px">
+      <img src="/blog/2018/02/08/connection-flows/ic_app.png" alt="App">
+    </td>
+    <td>
+      <strong>The App:</strong> The App is separated from the OS, even though it is residing within the OS. There is a difference when a Thing connects to an OS, or to an App. While not all Things require an App to function, some do, especially when there is a need for a Thing to communicate to a user account.
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 50px">
+      <img src="/blog/2018/02/08/connection-flows/ic_wifi.png" alt="WiFi">
+    </td>
+    <td>
+      <strong>The WiFi:</strong> While we have chosen not to show which network an App uses to connect to an account, we did see the importance in showing when a Thing needs to establish a Wi-Fi network connection. With the smart home boom, more and more home connected Things require a Wi-Fi network to function.
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 50px">
+      <img src="/blog/2018/02/08/connection-flows/ic_account.png" alt="Account">
+    </td>
+    <td>
+      <strong>The Account:</strong> Not all connected Things really require a user account to function, but many services ask their user to create an account prior to a Thing connection. There are many ways a Thing can connect to an account, through a wireless network at home or at a local coffee shop as well as through a device's cellular data. Hence, we did not concentrate on how an App connects to an account, but only if it does or not.
+    </td>
+  </tr>
+</table>
 
 
 ### Setting the stage
