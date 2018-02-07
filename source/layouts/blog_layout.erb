@@ -43,11 +43,11 @@
 <% end %>
 
 <section id="content" class="<%= "with-masthead" if current_page.data.masthead %>">
-  <% if masthead_path = blog_masthead_url(current_page) %>
+  <% if masthead_url = blog_masthead_url(current_page) %>
   <div class="bleed">
       <div id="masthead"></div>
       <style>
-        #masthead { background-image: url('<%= masthead_path %>'); }
+        #masthead { background-image: url('<%= masthead_url %>'); }
       </style>
   </div>
   <% end %>
