@@ -4,7 +4,7 @@ category: process
 tags: review, connection, trends, Internet of things, IoT
 author: [ariane, manjari]
 preview: preview.png
-masthead: preview.png
+masthead: mast.png
 published: false
 
 ---
@@ -13,7 +13,16 @@ To design magical connection experiences that seem smooth and effortless to user
 
 As we were researching around twenty connected products, we established a framework so we could communicate our understanding of connections flows and identify patterns. Hopefully, this summary of findings creates more awareness about the technical details of a connected product and eventually inspire other designers to design better connection experiences.
 
-TODO: / hero image of the matrix of frameworks goes here /
+
+
+| | | | |
+|-|-|-|-|
+| <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) |
+| <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) |
+| <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) |
+| <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) |
+| <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) |
+
 
 ---
 
@@ -21,18 +30,20 @@ TODO: / hero image of the matrix of frameworks goes here /
 ### Introducing the actors
 Searching for 'connection topology' online should bring up many technical diagrams. Very few of these are designer or user friendly, which could discourage anyone to pierce the mysteries of the black box of magic or of the floating cloud. When we began building our framework, we established who our actors were, but also when and how they were speaking to each other. After a few iterations on our system visualization, we reduced our actors to five essentials.
 
-|               |              |
-| :------------- |:-------------|
+| | |
+|-|-|
 | <img style="width:50px">![things](02-02-connection-flows/ic_things.gif)| **The Thing:** Also known as the connected product, it is the object the user is trying to connect to. It could be a camera, a speaker, a toothbrush, a bicycle, a wearable, and many more other Things…|
-| <img style="width:40px">![os](02-02-connection-flows/ic_os.png)| **The OS:** Sometimes, Things need devices to connect. In most cases, it refers to the user's smartphone, but it could also be a tablet or a desktop. The real actor is the operating system (OS) that lives in these devices that the Thing is speaking with.|
+| <img style="width:50px">![os](02-02-connection-flows/ic_os.png)| **The OS:** Sometimes, Things need devices to connect. In most cases, it refers to the user's smartphone, but it could also be a tablet or a desktop. The real actor is the operating system (OS) that lives in these devices that the Thing is speaking with.|
 | <img style="width:50px">![app](02-02-connection-flows/ic_app.png)| **The App:** The App is separated from the OS, even though it is residing within the OS. There is a difference when a Thing connects to an OS, or to an App. While not all Things require an App to function, some do, especially when there is a need for a Thing to communicate to a user account.|
 | <img style="width:50px">![wifi](02-02-connection-flows/ic_wifi.png)| **The Wi-Fi:** While we have chosen not to show which network an App uses to connect to an account, we did see the importance in showing when a Thing needs to establish a Wi-Fi network connection. With the smart home boom, more and more home connected Things require a Wi-Fi network to function.|
 | <img style="width:50px">![account](02-02-connection-flows/ic_account.png)| **The Account:** Not all connected Things really require a user account to function, but many services ask their user to create an account prior to a Thing connection. There are many ways a Thing can connect to an account, through a wireless network at home or at a local coffee shop as well as through a device's cellular data. Hence, we did not concentrate on how an App connects to an account, but only if it does or not.|
 
 
 ### Setting the stage
-![stage](02-02-connection-flows/stage.gif)  
+
+![stage](02-02-connection-flows/stage.gif)
 Now that you know our actors, here is how you can identify them on stage. Each actor has a unique static position so that it is easier to compare the connection flows. If the actor does not play a part in the connection flow, it is not shown in the layout. From the bottom to the top, you'll find the Thing, the OS with the App, the Wi-Fi, and the account.
+
 
 
 ## The two acts
@@ -73,31 +84,37 @@ VanMoof created an electric city bike with location tracking and a connected loc
 
 ### Understanding the script
 
-Actors can follow different scripts to reach the end goal of connectivity. Twenty products are a short list, but it is a start to identifying similar practices in connections. We could already observe patterns emerging from our animations based on the technology, the type of the Thing and the data exchange. We imagine that the more connection flows we create, the more patterns we will observe.
+Actors can follow different scripts to reach the end goal of connectivity. Twenty products are a short list, but it is a start to identifying similar practices. We could already observe patterns emerging from our animations based on the technology, the function of the objet and the data exchange. We imagine that the more connection flows we create, the more patterns we will spot.
+
+**Broadcasting to authenticate**
+![Broadcasting to authenticate](02-02-connection-flows/pattern_broadcasting.jpg)
+/add image/
+
+To connect, no matter the technology used, the Thing and the other concerned actor need to talk, one emits a signal and the other one listens. There are different methods to have a Thing to broadcast. The signal can be constant or triggered. Philips Sonicare smart toothbrush called DiamondClean wakes up when the handle is moved thanks to an accelerometer sensor. Apple Airpods wireless earplugs start emitting when their charging case opens. Some other products use a button like Polaroid Cube+ camera or UE MiniBoom portable speaker. On the other hand, some Things are constantly broadcasting if they have power. This is the case of Spire, a wearable that tracks the user breathing pace to reduce stress.
 
 ![basic connection](02-02-connection-flows/pattern_basic.jpg)
 **Basic Connection**
-Connected Things which do not any hold too sensible user data adopt a low-level security connection. Users perform least actions to establish a connection. These Things are also easily accessible to multiple users, as they do not require a code or password exchange. Entertainment objects like the Bose SoundLink II and the UE Mini Boom speakers, follow this play. They do add a level of verified connection security, by having the users manipulate the Thing as well as the App at the time of connection, ensuring that users are connecting to the right product and that their neighbors won't connect without warning them. The Apple Pencil needs to be physically plugged to the user iPad Pro before a Bluetooth connection at the software layer is established. The Lightning connector ensures that no other iPad accidentally connect to the Apple Pencil.
+Some connected Things which do not any hold sensible user data adopt a lower-level security connection. Here the Bose SoundLink II and the UE Mini Boom speakers, and the Apple Pencil allowing to sketch on an iPad Pro, are only connecting the object with the OS via Bluetooth. The main advantage is that users perform least actions to start playing or drawing. Another particularity of this simple connection on the protocol layer is that the product is easily accessible to multiple users, as they do not require a code or password exchange. To add a nuance to the simplicity, in these topologies, the connection is verified because the users manipulate the Thing as well as the OS at the time of connection, ensuring that users are connecting to the right product and that their neighbors won't connect without warning them. In facts, the Apple Pencil has to be plugged into the iPad before a Bluetooth connection at the software layer is established. The Lightning connector ensures that no other iPad accidentally connect to the Apple Pencil.
 
 ![Secured data connection](02-02-connection-flows/pattern_data.jpg)
 **Secured Data Connection**
- We were surprised to discover that the health monitoring wearables like Fitbit and Spire do not require to register to the user's account in order to send personal data to their respective App. This practice reveals a risk. Flex 2 bracelet and Spire Stone can connect to strangers account without asking any form of password or even deregistering the initial owner. To make it worst, when this happens, the previous user is not even informed that his or her Thing is used by a stranger. So if you forgot your Fitbit Flex 2 at the gym, whoever finds it can start using it without any hiccups.
+ We were surprised to discover that the health monitoring wearables like Fitbit and Spire do not require to register to the user's account in order to send personal data to their respective App. As shown above, the Things are not verified by the user account. This practice unveils a risk. Flex 2 bracelet and Spire Stone can connect to strangers account without asking any form of password or even deregistering the initial owner. To make it worst, when this happens, the previous user is not even informed that his or her Thing is used by a stranger. So if you forgot your Fitbit Flex 2 at the gym, whoever finds it can start using it without any hiccups.
 
 ![Account connection](02-02-connection-flows/pattern_account.jpg)
 **Account Connection**
-Some connected Things holding confidential data adopt a more rigorous connection process. A user needs to register their Thing to their account, so that their data is always secured, and also accessible from multiple devices. This practice was endorsed by some health wearables such as the Apple Watch, and by home products such as Amazon Echo Dot. VanMoof goes so far as to allow an unverified protocol connection because it establishes a secure account connection with the bike IMEI number and frame number. We recommend registering the connected Things to user's account because it associates the user with his Thing in a secure way. If a Thing gets lost or stolen, this best practice could help finding the Thing and or securing the data associated with it.
+Some services holding confidential data adopt a more intermingled connection system. In the above examples, users need to register their object to their account, so that their data is more secure, and also accessible from multiple devices. Product registration in the account was endorsed by some health wearables such as the Apple Watch, and by Amazon's voice assistant product like Echo Dot and Echo Show. VanMoof goes so far as to allow an unverified protocol connection because it establishes a secure account connection with the bike IMEI number and frame number. We recommend registering the connected Things to user account because it associates the user with his object. Then if a Thing gets lost or stolen, this best practice could help finding it and or securing the data associated with it.
 
 ![High bandwidth data connection](02-02-connection-flows/pattern_bandwidth.jpg)
 **High Bandwidth Data Connection**
-Polaroid Cube+ and Olympus EM10 are two cameras that happen to use a Wi-Fi ad-hoc to connect at the protocol layer. A camera would want a Wi-Fi connection rather than a Bluetooth connection as the former transfers heavy data faster, and more securely with an optional password exchange. While Wi-Fi ad hoc is an appropriate technology for image transfer, it disrupts both other apps running on the device and the connection flow because a device cannot be connected to Wi-Fi and the Thing's ad hoc Wi-Fi simultaneously. It means that the user would need to disconnect their OS from an existing Wi-Fi infrastructure network in order to connect to a Wi-Fi ad-hoc network.
+Polaroid Cube+ and Olympus EM10 are two cameras that happen to use a Wi-Fi ad-hoc to connect at the protocol and at the software layer. A camera would want a Wi-Fi connection rather than a Bluetooth connection as the former transfers heavy data faster, and more securely with an optional password exchange. While Wi-Fi ad hoc is an appropriate technology for image transfer, it disrupts both other apps running on the device and the connection flow because a device cannot be connected to Wi-Fi and the Thing's ad hoc Wi-Fi simultaneously. It means that the user would need to disconnect their OS from an existing Wi-Fi infrastructure network in order to connect to a Wi-Fi ad-hoc network.
 
 ![Home connection](02-02-connection-flows/pattern_home.jpg)
 **Home Connection**
-Connected home Things such Amazon's Echo Dot, Nokia's Withings Aura, and Thermo do not actually need to be connected to an OS for continued use. An OS and an App are used but only to set up a secured connection with a home Wi-Fi in order to register the Things with a user account. Once this connection and registration are established, a user can access their connected object via any OS that is logged into the same user account.
+Connected home Things such Amazon's Echo Dot, Nokia's Withings Aura, and Thermo do not actually need to be connected to an OS for continued use. An OS and an App are used but only to set up a secured connection with a home Wi-Fi in order to register the objects with a user account. Once this connection and registration are established, a user can access their connected object via any OS that is logged into the same user account.
 
 ## The End
 
-As we stumbled upon observations and patterns, we hope to study more products to analyze their connection flows. A study by Gartner claims that in 2017, the world was already counting 8.4 billion connected Things(1). With their number increasing, these products functions will hopefully evolve to become more and more meaningful to entertain us, facilitate communication, make our life more comfortable, diagnose us, cure us, help us to commute... etc. We hope that this framework raised awareness on the different choice of  connections for different products and the risk they imply and that it creates considerations to design smoother experience not only on the App but also on the connected Things.
+As we stumbled upon various observations and patterns, we hope to study more products to analyze their connection flows. A study by Gartner claims that in 2020, the number of connected Things would more than double from 2017 to reach over 20.4 billion objects (1). Hopefully, these products functions will evolve to become more and more meaningful to entertain us, facilitate communication, make our life more comfortable, diagnose us, cure us, help us to commute... etc. We hope that this framework raises awareness on the different choice of connections and the risk they imply, and that it creates considerations to design better experiences not only on the App but also on the connected Things.
 
 (1)http://www.zdnet.com/article/iot-devices-will-outnumber-the-worlds-population-this-year-for-the-first-time/
 
