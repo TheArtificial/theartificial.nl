@@ -17,11 +17,13 @@ As we were researching around twenty connected products, we established a framew
 
 | | | | |
 |-|-|-|-|
-| <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) |
-| <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) |
-| <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) |
-| <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) |
-| <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) | <img style="width:20%">![things](02-02-connection-flows/p_240-380.gif) |
+| <img style="width:20%">![UE Mini Boom](02-02-connection-flows/to_miniboom.gif) | <img style="width:20%">![Bose SoundLink II](02-02-connection-flows/to_soundlink2.gif) | <img style="width:20%">![Sensible Object Beast Of Balance](02-02-connection-flows/to_bob.gif) | <img style="width:20%">![Apple Pencil](02-02-connection-flows/to_pencil.gif) |
+| <img style="width:20%">![Polaroid Cube+](02-02-connection-flows/to_cubeplus.gif) | <img style="width:20%">![Olympus EM10 camera](02-02-connection-flows/to_em10.gif) | <img style="width:20%">![Philips HUE](02-02-connection-flows/to_hue.gif) | <img style="width:20%">![Apple airpods](02-02-connection-flows/to_airpods.gif) |
+| <img style="width:20%">![Philips Sonicare DiamondClean](02-02-connection-flows/to_diamondclean.gif) | <img style="width:20%">![Spire Stone](02-02-connection-flows/to_spire.gif)  | <img style="width:20%">![Niantic Pokemon Go Plus](02-02-connection-flows/to_pokemongoplus.gif) | <img style="width:20%">![Foldio360 turntable](02-02-connection-flows/to_foldio.gif) |
+| <img style="width:20%">![Amazon Kindle](02-02-connection-flows/to_kindle.gif) | <img style="width:20%">![Amazon Echo Show](02-02-connection-flows/to_echoshow.gif) | <img style="width:20%">![Apple Watch](02-02-connection-flows/to_watch.gif) | <img style="width:20%">![VanMoof Electrified S](02-02-connection-flows/to_electrifieds.gif) |
+| <img style="width:20%">![Apple TV](02-02-connection-flows/to_tv.gif) | <img style="width:20%">![Amazon Echo Dot](02-02-connection-flows/to_echodot.gif) | <img style="width:20%">![things](02-02-connection-flows/to_aura.gif) | <img style="width:20%">![things](02-02-connection-flows/to_thermo.gif) |
+
+
 
 
 ---
@@ -86,11 +88,9 @@ VanMoof created an electric city bike with location tracking and a connected loc
 
 Actors can follow different scripts to reach the end goal of connectivity. Twenty products are a short list, but it is a start to identifying similar practices. We could already observe patterns emerging from our animations based on the technology, the function of the objet and the data exchange. We imagine that the more connection flows we create, the more patterns we will spot.
 
+![Broadcasting to authenticate](02-02-connection-flows/pattern_broadcasting.gif)
 **Broadcasting to authenticate**
-![Broadcasting to authenticate](02-02-connection-flows/pattern_broadcasting.jpg)
-/add image/
-
-To connect, no matter the technology used, the Thing and the other concerned actor need to talk, one emits a signal and the other one listens. There are different methods to have a Thing to broadcast. The signal can be constant or triggered. Philips Sonicare smart toothbrush called DiamondClean wakes up when the handle is moved thanks to an accelerometer sensor. Apple Airpods wireless earplugs start emitting when their charging case opens. Some other products use a button like Polaroid Cube+ camera or UE MiniBoom portable speaker. On the other hand, some Things are constantly broadcasting if they have power. This is the case of Spire, a wearable that tracks the user breathing pace to reduce stress.
+To connect, no matter the technology used, the Thing and the other concerned actor need to talk, one emits a signal and the other one listens. There are different methods to have a Thing to broadcast. The signal can be constant or triggered. Philips Sonicare smart toothbrush called DiamondClean wakes up when the handle is moved thanks to an accelerometer sensor. Apple Airpods wireless earplugs start emitting when their charging case opens. Some other products use a button like Polaroid Cube+ camera or UE MiniBoom portable speaker. On the other hand, some Things are constantly broadcasting if they have power. This is the case of Spire, a wearable that tracks the user breathing pace to reduce stress, that does not need an action from the user to broadcast. For the topology to feel lighter, we just show when broadcasting is relevant to the story. For the same reason, we don't show either that home Wi-Fi also constantly broadcasts.
 
 ![basic connection](02-02-connection-flows/pattern_basic.jpg)
 **Basic Connection**
