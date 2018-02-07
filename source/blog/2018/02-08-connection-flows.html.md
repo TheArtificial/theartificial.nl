@@ -6,14 +6,11 @@ author: [ariane, manjari]
 preview: preview.png
 masthead: mast.png
 published: false
-
 ---
 
 To design magical connection experiences that seem smooth and effortless to users, we believe that there is a value in understanding the technology running behind it. Not only would this help designer make better UX decisions, but also have us recommend best practices when choosing a way of connecting a product. Today, many network infrastructures and protocols exist to establish a connection. We wondered why certain products use a particular technology (such as Bluetooth over Wi-Fi) or why the experience of connecting some products seems easier as compared to others. So, we familiarized ourselves with the technical steps occurring when a user establishes a connection with a product while manipulating an interface or the product itself.
 
 As we were researching around twenty connected products, we established a framework so we could communicate our understanding of connections flows and identify patterns. Hopefully, this summary of findings creates more awareness about the technical details of a connected product and eventually inspire other designers to design better connection experiences.
-
-
 
 | | | | |
 |-|-|-|-|
@@ -23,13 +20,12 @@ As we were researching around twenty connected products, we established a framew
 | <img style="width:20%">![Amazon Kindle](02-02-connection-flows/to_kindle.gif) | <img style="width:20%">![Amazon Echo Show](02-02-connection-flows/to_echoshow.gif) | <img style="width:20%">![Apple Watch](02-02-connection-flows/to_watch.gif) | <img style="width:20%">![VanMoof Electrified S](02-02-connection-flows/to_electrifieds.gif) |
 | <img style="width:20%">![Apple TV](02-02-connection-flows/to_tv.gif) | <img style="width:20%">![Amazon Echo Dot](02-02-connection-flows/to_echodot.gif) | <img style="width:20%">![things](02-02-connection-flows/to_aura.gif) | <img style="width:20%">![things](02-02-connection-flows/to_thermo.gif) |
 
-
-
-
 ---
 
 ## The actors
+
 ### Introducing the actors
+
 Searching for 'connection topology' online should bring up many technical diagrams. Very few of these are designer or user friendly, which could discourage anyone to pierce the mysteries of the black box of magic or of the floating cloud. When we began building our framework, we established who our actors were, but also when and how they were speaking to each other. After a few iterations on our system visualization, we reduced our actors to five essentials.
 
 | | |
@@ -44,19 +40,22 @@ Searching for 'connection topology' online should bring up many technical diagra
 ### Setting the stage
 
 ![stage](02-02-connection-flows/stage.gif)
+
 Now that you know our actors, here is how you can identify them on stage. Each actor has a unique static position so that it is easier to compare the connection flows. If the actor does not play a part in the connection flow, it is not shown in the layout. From the bottom to the top, you'll find the Thing, the OS with the App, the Wi-Fi, and the account.
 
 
 
 ## The two acts
+
 Things connect at two distinct layers - the protocol layer and the software layer. A connection at each layer implies different steps that happen over time in the connection process.
 
 ### The protocol layer
-![protocol](02-02-connection-flows/key_protocol.png)  
+
+![protocol](02-02-connection-flows/key_protocol.png)
 
 Connecting at the protocol layer usually comes first in the play. This connection is between a device's OS and a Thing that can happen over Bluetooth or a Wireless network such as Wi-Fi ad hoc. To check if a Thing is connected at the protocol layer, just head to the Bluetooth accessories or to the Wi-Fi settings in the OS. Here you will find the name of your Thing and its paired and connection status. During a Bluetooth connection, if the OS asks the user to confirm the pairing, it leads to a verified connection. An unverified connection occurs when the OS and Thing connect without the user's permission. With a Wi-Fi and a Wi-Fi ad hoc connection, if a password is exchanged, a verified connection is established leading to a thick solid grey line in our framework. If no password or code is exchanged, an unverified connection is established, which is represented by the dotted grey line in our framework.
 
-![protocol](02-02-connection-flows/protocol.gif)  
+![protocol](02-02-connection-flows/protocol.gif)
 
 For example in the above topology, we can view the connection flow of Bose SoundLink II, a portable Bluetooth speaker by Bose. It pairs with the mobile's OS to form a verified connection. We know it is verified because the speaker gives a light feedback indicating that it is connected and it also tells out loud that it is now associated with your device by naming it. You can also see the name of your SoundLink II under 'paired devices' in your OS.
 
@@ -64,6 +63,7 @@ An unverified protocol connection can be observed with the Philips Sonicare Diam
 
 
 ### The software layer
+
 ![thing](02-02-connection-flows/key_thing.png)
 
 A software connection is built upon a protocol connection. Only after a protocol handshake, does a Thing connect to an App. A software layer connection can also be a verified connection, where the Thing or the App acknowledge the connection, or it can be an unverified connection, where either the Thing or the App do not acknowledge the connection.
@@ -80,6 +80,7 @@ When a user account connects to an App, or when it registers the uniqueness of t
 
 
 ![examples](02-02-connection-flows/user.gif)
+
 VanMoof created an electric city bike with location tracking and a connected lock to give riders a peace of mind and to dodge thieves. On the left, we can see that the user needs to be securely logged into their account on the App in order to access their Bike. The riders' profile contains the unique IMEI and frame number of their bike, making the connection secured. On the right, we can see a part of Nokia Thermo topology. Nokia Thermo measure temperature from user's forehead and automatically syncs readings with the dedicated app. In this section of the animation, the user is already logged in to his account in the Nokia app, and Thermo registers to the user account through home Wi-Fi.
 
 ## The play
@@ -114,8 +115,8 @@ Connected home Things such Amazon's Echo Dot, Nokia's Withings Aura, and Thermo 
 
 ## The End
 
-As we stumbled upon various observations and patterns, we hope to study more products to analyze their connection flows. A study by Gartner claims that in 2020, the number of connected Things would more than double from 2017 to reach over 20.4 billion objects (1). Hopefully, these products functions will evolve to become more and more meaningful to entertain us, facilitate communication, make our life more comfortable, diagnose us, cure us, help us to commute... etc. We hope that this framework raises awareness on the different choice of connections and the risk they imply, and that it creates considerations to design better experiences not only on the App but also on the connected Things.
+As we stumbled upon various observations and patterns, we hope to study more products to analyze their connection flows. A study by Gartner claims that in 2020, the number of connected Things would more than double from 2017 to reach over 20.4 billion objects[^gartner]. Hopefully, these products functions will evolve to become more and more meaningful to entertain us, facilitate communication, make our life more comfortable, diagnose us, cure us, help us to commute... etc. We hope that this framework raises awareness on the different choice of connections and the risk they imply, and that it creates considerations to design better experiences not only on the App but also on the connected Things.
 
-(1)http://www.zdnet.com/article/iot-devices-will-outnumber-the-worlds-population-this-year-for-the-first-time/
+[^gartner]: http://www.zdnet.com/article/iot-devices-will-outnumber-the-worlds-population-this-year-for-the-first-time/
 
 ---
