@@ -32,7 +32,7 @@ module BlogHelpers
   def blog_masthead_url(resource)
     if resource.data.masthead
       base_build_path = attachments_location(resource.destination_path)
-      return base_build_path + resource.data.masthead
+      return '/' + base_build_path + resource.data.masthead
     else
       return nil
     end
@@ -46,7 +46,8 @@ private
     base_build_path = attachments_location(resource.destination_path)
     paths[:path] = base_path + filename
     paths[:build_path] = base_build_path + filename
-    paths[:url] = URI.join(app.config[:site_url], base_build_path + filename).to_s
+    paths[:url] = '/' + base_build_path + filename
+    paths[:absolute_url] = URI.join(app.config[:site_url], base_build_path + filename).to_s
     return paths
   end
   memoize :paths
