@@ -2,12 +2,7 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
-# faster than Ruby Sass
-gem 'sassc'
-
-gem "middleman", "~>4.1.10"
-
-gem "better_errors"
+gem "middleman", "~>4.1"
 
 # bloggity-blog
 gem 'middleman-blog'
