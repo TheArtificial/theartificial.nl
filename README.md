@@ -6,7 +6,9 @@
       | | | | | |  __/  / ___ \| |  | |_| |  _| | (__| | (_| | |
       |_| |_| |_|\___| /_/   \_\_|   \__|_|_| |_|\___|_|\__,_|_|
 
-As seen at http://theartificial.com/ (and .nl, natuurlijk)
+As seen at https://theartificial.com/ (and .nl, natuurlijk)
+
+[![build status](https://api.travis-ci.org/TheArtificial/theartificial.nl.svg?branch=release)](https://travis-ci.org/TheArtificial/theartificial.nl)
 
 ## Setup
 
