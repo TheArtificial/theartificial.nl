@@ -180,12 +180,6 @@ redirect "3dsystems.html", to: "/work/3DSystems-consumer.html"
 redirect "designfordeath.html", to: "/laboratory/futureofdeath.html"
 redirect "travelguide/index.html", to: "/cityguide/"
 
-# Build-specific configuration
-configure :development do
-  require "better_errors"
-  use BetterErrors::Middleware
-  BetterErrors.application_root = __dir__
-end
 configure :build do
   activate :minify_css
   activate :minify_javascript, ignore: 'jquery.artificial.logo.js'
