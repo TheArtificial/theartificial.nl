@@ -5,7 +5,6 @@ tags: review, connection, trends, Internet of things, IoT
 author: [ariane, manjari]
 preview: preview.png
 masthead: masthead.jpg
-published: false
 ---
 
 To design magical connection experiences that seem smooth and effortless to users, we believe that there is a value in understanding the technology running behind it. Not only would this help designer make better UX decisions, but also have us recommend best practices when choosing a way of connecting a product. Today, many network infrastructures and protocols exist to establish a connection. We wondered why certain products use a particular technology (such as Bluetooth versus Wi-Fi) or why the experience of connecting some products seems easier than others. So, we familiarized ourselves with the technical steps that occur when a user establishes a connection with a product while they manipulate an interface or the product itself.
