@@ -11,18 +11,24 @@ module BlogHelpers
     return resource
   end
 
-  def blog_preview_paths(resource)
+  def blog_preview_meta(resource, use_placeholders = false)
     if resource.data.preview
-      if resource.data.preview != 'none'
-        return paths(resource, resource.data.preview)
+      if resource.data.preview == 'none'
+        return nil
+      else
+        return image_meta(resource, resource.data.preview)
       end
     elsif resource.data.masthead
-      return paths(resource, resource.data.masthead)
+      return image_meta(resource, resource.data.masthead)
+    elsif use_placeholders
+      return placeholder_meta()
+    else
+      return nil
     end
   end
 
   def blog_preview_url(resource)
-    if image_paths = blog_preview_paths(resource)
+    if image_paths = blog_preview_meta(resource)
       return image_paths[:url]
     else
       return nil
@@ -40,17 +46,49 @@ module BlogHelpers
 
 private
 
-  def paths(resource, filename)
-    paths = {path: nil, built_path: nil, url: nil}
+  def placeholder_meta()
+    meta = {}
+    base_path = 'images/sharing/'
+    # base_build_path = '/images/sharing/'
+
+    placeholders = sitemap.resources.select{ |r| r.path[/#{base_path}.*/] }
+    resource = placeholders.sample
+
+    meta[:path] = resource.path
+    meta[:build_path] = resource.path
+    meta[:url] = resource.url.to_s
+    meta[:absolute_url] = URI.join(app.config[:site_url], resource.url)
+    meta[:width] = 940
+    meta[:height] = 492
+
+    return meta
+  end
+
+  def image_meta(resource, filename)
+    meta = {}
     base_path = attachments_location('/' + resource.path)
     base_build_path = attachments_location(resource.destination_path)
-    paths[:path] = base_path + filename
-    paths[:build_path] = base_build_path + filename
-    paths[:url] = '/' + base_build_path + filename
-    paths[:absolute_url] = URI.join(app.config[:site_url], base_build_path + filename).to_s
-    return paths
+    begin
+      sizes = image_sizes(base_path + filename)
+      meta[:path] = base_path + filename
+      meta[:build_path] = base_build_path + filename
+      meta[:url] = '/' + base_build_path + filename
+      meta[:absolute_url] = URI.join(app.config[:site_url], base_build_path + filename).to_s
+      meta[:width] = sizes[:width]
+      meta[:height] = sizes[:height]
+    rescue # probably image_sizes can't find a file
+      base_path = '/images/'
+      base_build_path = '/images/'
+      meta[:path] = base_path + filename
+      meta[:build_path] = base_build_path + filename
+      meta[:url] = '/' + base_build_path + filename
+      meta[:absolute_url] = URI.join(app.config[:site_url], base_build_path + filename).to_s
+      meta[:width] = 172
+      meta[:height] = 136
+    end
+    return meta
   end
-  memoize :paths
+  memoize :image_meta
 
   def attachments_location(location)
     last_dot = location.rindex('.')
