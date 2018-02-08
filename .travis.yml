@@ -1,6 +1,6 @@
 sudo: false
 language: ruby
-# will use .ruby-version
+rvm: 2.3.4 # pre-installed
 branches:
   only: release
 cache: bundler
