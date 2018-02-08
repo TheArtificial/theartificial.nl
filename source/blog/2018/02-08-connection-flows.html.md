@@ -15,70 +15,70 @@ While researching around twenty connected products, we established a framework s
 <table>
   <tr>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_miniboom.gif" alt="UE Mini Boom">
+      <img src="connection-flows/to_miniboom.gif" alt="UE Mini Boom">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_soundlink2.gif" alt="Bose SoundLink II">
+      <img src="connection-flows/to_soundlink2.gif" alt="Bose SoundLink II">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_pencil.gif" alt="Apple Pencil">
+      <img src="connection-flows/to_pencil.gif" alt="Apple Pencil">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_airpods.gif" alt="Apple AirPods">
+      <img src="connection-flows/to_airpods.gif" alt="Apple AirPods">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_bob.gif" alt="Sensible Object Beast Of Balance">
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_cubeplus.gif" alt="Polaroid Cube+">
-    </td>
-    <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_em10.gif" alt="Olympus EM10 Camera">
-    </td>
-    <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_hue.gif" alt="Philips HUE">
-    </td>
-    <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_kindle.gif" alt="Amazon Kindle">
-    </td>
-    <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_echoshow.gif" alt="Amazon Echo Show">
+      <img src="connection-flows/to_bob.gif" alt="Sensible Object Beast Of Balance">
     </td>
   </tr>
   <tr>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_diamondclean.gif" alt="Philips Sonicare DiamondClean">
+      <img src="connection-flows/to_cubeplus.gif" alt="Polaroid Cube+">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_spire.gif" alt="Spire Stone">
+      <img src="connection-flows/to_em10.gif" alt="Olympus EM10 Camera">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_pokemongoplus.gif" alt="Niantic Pokémon Go Plus">
+      <img src="connection-flows/to_hue.gif" alt="Philips HUE">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="connection-flows/to_kindle.gif" alt="Amazon Kindle">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="connection-flows/to_echoshow.gif" alt="Amazon Echo Show">
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="connection-flows/to_diamondclean.gif" alt="Philips Sonicare DiamondClean">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="connection-flows/to_spire.gif" alt="Spire Stone">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="connection-flows/to_pokemongoplus.gif" alt="Niantic Pokémon Go Plus">
     </td>  
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_foldio.gif" alt="Foldio360 Turntable">
+      <img src="connection-flows/to_foldio.gif" alt="Foldio360 Turntable">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_watch.gif" alt="Apple Watch">
+      <img src="connection-flows/to_watch.gif" alt="Apple Watch">
     </td>
   </tr>
   <tr>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_electrifieds.gif" alt="VanMoof Electrified S">
+      <img src="connection-flows/to_electrifieds.gif" alt="VanMoof Electrified S">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_aura.gif" alt="Nokia Withings Aura">
+      <img src="connection-flows/to_aura.gif" alt="Nokia Withings Aura">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_thermo.gif" alt="Nokia Withings Thermo">
+      <img src="connection-flows/to_thermo.gif" alt="Nokia Withings Thermo">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_tv.gif" alt="Apple TV">
+      <img src="connection-flows/to_tv.gif" alt="Apple TV">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_echodot.gif" alt="Amazon Echo Dot">
+      <img src="connection-flows/to_echodot.gif" alt="Amazon Echo Dot">
     </td>
   </tr>
 </table>
@@ -94,7 +94,7 @@ Searching for 'connection topology' or related terms online brings up many techn
 <table>
   <tr>
     <td style="width: 50px">
-      <img src="/blog/2018/02/08/connection-flows/ic_things.gif" alt="Thing">
+      <img src="connection-flows/ic_things.gif" alt="Thing">
     </td>
     <td>
       <strong>The Thing</strong>: Also known as the connected product, it is the object the user is trying to connect to. It could be a camera, a speaker, a toothbrush, a bicycle, a wearable, or many other Things…
@@ -102,7 +102,7 @@ Searching for 'connection topology' or related terms online brings up many techn
   </tr>
   <tr>
     <td style="width: 50px">
-      <img src="/blog/2018/02/08/connection-flows/ic_os.png" alt="OS">
+      <img src="connection-flows/ic_os.png" alt="OS">
     </td>
     <td>
       <strong>The OS</strong>: Sometimes, Things need devices to connect. In most cases, this refers to the user's smartphone, but it could also be a tablet or a desktop. The real actor is the operating system (OS) that lives in these devices that the Thing is speaking with.
@@ -110,7 +110,7 @@ Searching for 'connection topology' or related terms online brings up many techn
   </tr>
   <tr>
     <td style="width: 50px">
-      <img src="/blog/2018/02/08/connection-flows/ic_app.png" alt="App">
+      <img src="connection-flows/ic_app.png" alt="App">
     </td>
     <td>
       <strong>The App</strong>: The App is separated from the OS, even though it is residing within the OS. There is a difference when a Thing connects to an OS, or to an App. While not all Things require an App to function, some do, especially when there is a need for a Thing to communicate to a user account.
@@ -118,7 +118,7 @@ Searching for 'connection topology' or related terms online brings up many techn
   </tr>
   <tr>
     <td style="width: 50px">
-      <img src="/blog/2018/02/08/connection-flows/ic_wifi.png" alt="WiFi">
+      <img src="connection-flows/ic_wifi.png" alt="WiFi">
     </td>
     <td>
       <strong>The Wi-Fi</strong>: While we have chosen not to show which network an App uses to connect to an account, we did see the importance in showing when a Thing needs to establish a Wi-Fi network connection. With the smart home boom, more and more home connected Things require a Wi-Fi network to function.
@@ -126,7 +126,7 @@ Searching for 'connection topology' or related terms online brings up many techn
   </tr>
   <tr>
     <td style="width: 50px">
-      <img src="/blog/2018/02/08/connection-flows/ic_account.png" alt="Account">
+      <img src="connection-flows/ic_account.png" alt="Account">
     </td>
     <td>
       <strong>The Account</strong>: Not all connected Things really require a user account to function, but many services ask their user to create an account prior to a Thing connection. There are many ways a Thing can connect to an account, through a wireless network at home or at a local coffee shop as well as through a device's cellular data. Hence, we did not concentrate on how an App connects to an account, but only if it does or not.
