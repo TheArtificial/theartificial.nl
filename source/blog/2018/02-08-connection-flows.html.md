@@ -4,15 +4,13 @@ category: process
 tags: review, connection, trends, Internet of things, IoT
 author: [ariane, manjari]
 preview: preview.png
-masthead: mast.png
+masthead: masthead.jpg
 published: false
 ---
 
 To design magical connection experiences that seem smooth and effortless to users, we believe that there is a value in understanding the technology running behind it. Not only would this help designer make better UX decisions, but also have us recommend best practices when choosing a way of connecting a product. Today, many network infrastructures and protocols exist to establish a connection. We wondered why certain products use a particular technology (such as Bluetooth over Wi-Fi) or why the experience of connecting some products seems easier as compared to others. So, we familiarized ourselves with the technical steps occurring when a user establishes a connection with a product while manipulating an interface or the product itself.
 
 As we were researching around twenty connected products, we established a framework so we could communicate our understanding of connections flows and identify patterns. Hopefully, this summary of findings creates more awareness about the technical details of a connected product and eventually inspire other designers to design better connection experiences.
-
-
 
 <table>
   <tr>
@@ -23,16 +21,19 @@ As we were researching around twenty connected products, we established a framew
       <img src="/blog/2018/02/08/connection-flows/to_soundlink2.gif" alt="Bose SoundLink II">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_bob.gif" alt="Sensible Object Beast Of Balance">
-    </td>
-    <td style="width: 20%; border: 1px solid #C8CCCB">
       <img src="/blog/2018/02/08/connection-flows/to_pencil.gif" alt="Apple Pencil">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_cubeplus.gif" alt="Polaroid Cube+">
+      <img src="/blog/2018/02/08/connection-flows/to_airpods.gif" alt="Apple AirPods">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_bob.gif" alt="Sensible Object Beast Of Balance">
     </td>
   </tr>
   <tr>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_cubeplus.gif" alt="Polaroid Cube+">
+    </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
       <img src="/blog/2018/02/08/connection-flows/to_em10.gif" alt="Olympus EM10 Camera">
     </td>
@@ -40,27 +41,24 @@ As we were researching around twenty connected products, we established a framew
       <img src="/blog/2018/02/08/connection-flows/to_hue.gif" alt="Philips HUE">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_airpods.gif" alt="Apple AirPods">
+      <img src="/blog/2018/02/08/connection-flows/to_kindle.gif" alt="Amazon Kindle">
     </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_echoshow.gif" alt="Amazon Echo Show">
+    </td>
+  </tr>
+  <tr>
     <td style="width: 20%; border: 1px solid #C8CCCB">
       <img src="/blog/2018/02/08/connection-flows/to_diamondclean.gif" alt="Philips Sonicare DiamondClean">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
       <img src="/blog/2018/02/08/connection-flows/to_spire.gif" alt="Spire Stone">
     </td>
-  </tr>
-  <tr>
     <td style="width: 20%; border: 1px solid #C8CCCB">
       <img src="/blog/2018/02/08/connection-flows/to_pokemongoplus.gif" alt="Niantic Pokémon Go Plus">
-    </td>
+    </td>  
     <td style="width: 20%; border: 1px solid #C8CCCB">
       <img src="/blog/2018/02/08/connection-flows/to_foldio.gif" alt="Foldio360 Turntable">
-    </td>
-    <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_kindle.gif" alt="Amazon Kindle">
-    </td>
-    <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_echoshow.gif" alt="Amazon Echo Show">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
       <img src="/blog/2018/02/08/connection-flows/to_watch.gif" alt="Apple Watch">
@@ -71,16 +69,16 @@ As we were researching around twenty connected products, we established a framew
       <img src="/blog/2018/02/08/connection-flows/to_electrifieds.gif" alt="VanMoof Electrified S">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_tv.gif" alt="Apple TV">
-    </td>
-    <td style="width: 20%; border: 1px solid #C8CCCB">
-      <img src="/blog/2018/02/08/connection-flows/to_echodot.gif" alt="Amazon Echo Dot">
-    </td>
-    <td style="width: 20%; border: 1px solid #C8CCCB">
       <img src="/blog/2018/02/08/connection-flows/to_aura.gif" alt="Nokia Withings Aura">
     </td>
     <td style="width: 20%; border: 1px solid #C8CCCB">
       <img src="/blog/2018/02/08/connection-flows/to_thermo.gif" alt="Nokia Withings Thermo">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_tv.gif" alt="Apple TV">
+    </td>
+    <td style="width: 20%; border: 1px solid #C8CCCB">
+      <img src="/blog/2018/02/08/connection-flows/to_echodot.gif" alt="Amazon Echo Dot">
     </td>
   </tr>
 </table>
