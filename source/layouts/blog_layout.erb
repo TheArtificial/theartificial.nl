@@ -6,7 +6,7 @@
   share_meta = blog_preview_meta(current_article, true)
   image_url = share_meta[:url]
 
-  content_for :image_url, share_meta[:absolute_url]
+  content_for :image_url, share_meta[:absolute_url].to_s
   content_for :image_width, share_meta[:width].to_s
   content_for :image_height, share_meta[:height].to_s
 %>
