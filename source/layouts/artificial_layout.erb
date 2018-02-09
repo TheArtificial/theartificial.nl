@@ -41,11 +41,11 @@
 		<%= stylesheet_link_tag 'normalize', 'site' %>
 		<%= yield_content :stylesheet_tags %>
 
-		<script
+		<script async
 		  src="https://code.jquery.com/jquery-3.2.1.min.js"
 		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 		  crossorigin="anonymous"></script>
-	  <%= javascript_include_tag 'jquery.artificial', 'imagesloaded.pkgd.min', 'packery.pkgd.min', 'imgLiquid-min', 'artificial' %>
+	  <%= javascript_include_tag 'jquery.artificial', 'imagesloaded.pkgd.min', 'packery.pkgd.min', 'imgLiquid-min', 'artificial', async: true %>
 		<%= yield_content :javascript_tags %>
 	</head>
 
