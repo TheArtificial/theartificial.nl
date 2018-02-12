@@ -3,7 +3,6 @@ title: 'Artificial Conversations: Technology and the Scope of Design'
 category: thoughts
 tags: monday, morning, conversation, technology, design
 author: shannon
-published: false
 ---
 
 This week's Monday morning conversation was inspired by our recently published [connection flows](/blog/2018/02/08/connection-flows.html) blogpost. We began by discussing the article itself, and then the reasons why the article was important. We wondered why designers so often didn't seem interested in the technology behind connections, and Natalia brought up that she always felt that those sorts of technical decisions were out of scope.
