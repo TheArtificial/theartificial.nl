@@ -5,8 +5,9 @@
   logo_url = "https://theartificial.com/images/img_default.png"
   share_meta = blog_preview_meta(current_article, true)
   image_url = share_meta[:url]
+  image_absolute_url = share_meta[:absolute_url]
 
-  content_for :image_url, share_meta[:absolute_url].to_s
+  content_for :image_url, image_absolute_url
   content_for :image_width, share_meta[:width].to_s
   content_for :image_height, share_meta[:height].to_s
 %>
@@ -22,7 +23,7 @@
       "@id": "<%= URI.join(config[:site_url], current_resource.url).to_s %>"
     },
     "headline": "<%= current_page.title %>",
-    "image": "<%= image_url %>",
+    "image": "<%= image_absolute_url %>",
     "datePublished": "<%= current_article.date.iso8601 %>",
     "author": {
       "@type": "Person",
