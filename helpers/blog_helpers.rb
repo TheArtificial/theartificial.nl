@@ -65,11 +65,8 @@ private
   end
 
   def image_meta(resource, filename)
-    # ANSI_COLOR_RED = "\e[31m"
-    # ANSI_COLOR_RESET = "\e[0m"
-
     meta = {}
-    base_path = attachments_location('/' + resource.path)
+    base_path = attachments_location('source/' + resource.path)
     base_build_path = attachments_location(resource.destination_path)
     begin
       sizes = image_sizes(base_path + filename)
@@ -79,9 +76,9 @@ private
       meta[:absolute_url] = URI.join(app.config[:site_url], base_build_path + filename).to_s
       meta[:width] = sizes[:width]
       meta[:height] = sizes[:height]
-    rescue # probably image_sizes can't find a file
-      puts "🚨 File not found '#{filename}' for #{resource.path} (looked in #{base_path})"
-      base_path = '/images/'
+    rescue FastImage::ImageFetchFailure => e # image_sizes can't find a file
+      warn "🚨 File not found '#{filename}' for #{resource.path} (looked in #{Dir.pwd}/#{base_path})"
+      base_path = 'source/images/'
       base_build_path = '/images/'
       meta[:path] = base_path + filename
       meta[:build_path] = base_build_path + filename

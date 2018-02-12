@@ -3,8 +3,10 @@ require "helpers/people_helpers"
 include PeopleHelpers
 
 require "helpers/blog_helpers"
+require "helpers/image_helpers"
 # in this case, we need image_for_blog_article during search indexing
 include BlogHelpers
+include ImageHelpers
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
