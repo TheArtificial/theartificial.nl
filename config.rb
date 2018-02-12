@@ -106,6 +106,11 @@ set :markdown,  fenced_code_blocks: true,
                 footnotes: true
 
 activate :search do |search|
+
+  require 'padrino-helpers'
+  include Padrino::Helpers::FormatHelpers
+  include Padrino::Helpers::TagHelpers
+
   search.resources = ['blog/20', 'cocktails/', 'work/', 'ftfy/']
   search.index_path = 'search/index.json'
   search.fields = {
@@ -138,7 +143,7 @@ activate :search do |search|
       to_store[:author] = to_index[:author] = person_name(resource.data.author)
       to_store[:category] = resource.data.category
       to_store[:image] = blog_preview_url(resource)
-      to_store[:summary] = blog_article_for(resource).summary(180)
+      to_store[:summary] = simple_format(strip_tags(blog_article_for(resource).summary(180)))
     elsif section == 'cocktails'
       to_store[:type] = 'cocktail'
       if resource.data.cocktail.nil?

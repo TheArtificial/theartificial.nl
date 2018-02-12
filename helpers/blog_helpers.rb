@@ -65,6 +65,9 @@ private
   end
 
   def image_meta(resource, filename)
+    # ANSI_COLOR_RED = "\e[31m"
+    # ANSI_COLOR_RESET = "\e[0m"
+
     meta = {}
     base_path = attachments_location('/' + resource.path)
     base_build_path = attachments_location(resource.destination_path)
@@ -77,6 +80,7 @@ private
       meta[:width] = sizes[:width]
       meta[:height] = sizes[:height]
     rescue # probably image_sizes can't find a file
+      puts "🚨 File not found '#{filename}' for #{resource.path} (looked in #{base_path})"
       base_path = '/images/'
       base_build_path = '/images/'
       meta[:path] = base_path + filename

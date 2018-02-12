@@ -5,7 +5,7 @@ article_view = {
   title: article.title,
   author: person_name(article.data.author),
   date: article.date.strftime('%B %e, %Y'),
-  summary: article.summary(180)
+  summary: simple_format(strip_tags(article.summary(180)))
 }
 
 if image_url = blog_preview_url(article)
