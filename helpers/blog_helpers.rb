@@ -29,7 +29,7 @@ module BlogHelpers
 
   def blog_preview_url(resource)
     if image_paths = blog_preview_meta(resource)
-      return image_paths[:url]
+      return image_paths[:absolute_url]
     else
       return nil
     end
@@ -57,7 +57,7 @@ private
     meta[:path] = resource.path
     meta[:build_path] = resource.path
     meta[:url] = resource.url.to_s
-    meta[:absolute_url] = URI.join(app.config[:site_url], resource.url)
+    meta[:absolute_url] = URI.join(app.config[:site_url], resource.url).to_s
     meta[:width] = 940
     meta[:height] = 492
 
