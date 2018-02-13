@@ -46,6 +46,11 @@ body {
     padding-bottom: 10px;
   }
 
+  .preview-link {
+    font-size: 16px;
+    text-align: center;
+  }
+
   ul {
     padding-left: 0;
   }
@@ -63,8 +68,15 @@ body {
   }
 
   .card {
-    background-color: $cool-grey-80;
+    background-color: $cool-grey-70;
     border-radius: 4px;
+    color: $white;
+    transition: .5s;
+  }
+
+  .card:hover {
+    background-color: $cool-grey-80;
+    color: $cool-grey-10;
   }
 
   .bleed.walkthrough {
@@ -84,7 +96,7 @@ body {
     .thing-space, .flow-space, .screen-space {
       text-align: center;
       margin: auto;
-      
+
       img {
         width: auto;
       }
