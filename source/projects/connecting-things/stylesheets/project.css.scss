@@ -1,0 +1,74 @@
+@import "../../../stylesheets/_artificial-colors.scss";
+
+body {
+  height: 100%;
+}
+
+.connecting-things {
+  background-color: $cool-grey-80;
+}
+
+.connecting-things #content {
+
+  h1, h2 {
+    font-family: "Barlow", Helvetica, Arial, sans-serif;
+  }
+
+  #intro {
+    margin-bottom: 40px;
+  }
+
+  .title, .subtitle {
+    font-style: normal;
+  }
+
+  .title, .step-count {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 42px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 32px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+
+  span.sentence {
+    font-weight: normal;
+  }
+
+  .heading {
+    padding-bottom: 10px;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  .previous-button {
+    text-align: left;
+  }
+
+  .current-step {
+    text-align: center;
+  }
+
+  .next-button {
+    text-align: right;
+  }
+
+  .card {
+    background-color: $cool-grey-80;
+    border-radius: 4px;
+  }
+
+  .packery {
+    margin-bottom: 120px;
+  }
+
+}
