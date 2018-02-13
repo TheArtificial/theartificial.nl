@@ -67,6 +67,31 @@ body {
     border-radius: 4px;
   }
 
+  .bleed.walkthrough {
+  	background-color: $cool-grey-50;
+  	background: linear-gradient(to right, $cool-grey-30 50%, $cool-grey-70 51%);
+
+    .thing-space {
+      background-color: $cool-grey-30;
+    }
+    .flow-space {
+      background-color: $white;
+    }
+    .screen-space {
+      background-color: $cool-grey-70;
+    }
+
+    .thing-space, .flow-space, .screen-space {
+      text-align: center;
+      margin: auto;
+      
+      img {
+        width: auto;
+      }
+    }
+
+  }
+
   .packery {
     margin-bottom: 120px;
   }
