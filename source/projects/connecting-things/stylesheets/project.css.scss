@@ -89,12 +89,29 @@ body {
     }
     .flow-space {
       background-color: $white;
+      position: relative;
+
+      img{
+      width: 360px;
+      }
+
     }
+
+    .image1 {
+      position: relative;
+      top:0;
+    }
+
+    .image2, .image3, .image4, .image5, .image6 {
+      position: absolute;
+      top:16px;
+    }
+
     .screen-space {
       background-color: $cool-grey-70;
     }
 
-    .thing-space, .flow-space, .screen-space {
+    .thing-space, .screen-space {
       text-align: center;
       margin: auto;
 
