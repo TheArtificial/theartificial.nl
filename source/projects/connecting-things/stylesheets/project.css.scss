@@ -77,6 +77,7 @@ body {
   .card:hover {
     background-color: $cool-grey-80;
     color: $cool-grey-10;
+    transition: .5s;
   }
 
   .bleed.walkthrough {
@@ -101,11 +102,55 @@ body {
         width: auto;
       }
     }
-
   }
 
-  .packery {
-    margin-bottom: 120px;
+  .walkthrough-controls {
+    padding-top: 10px;
+
+    a {
+      color: $white;
+      svg *.arrow {
+        fill: $white;
+      }
+    }
+
+    a:hover {
+      color: $cool-grey-10;
+      svg *.arrow {
+        fill: $cool-grey-10;
+      }
+    }
+
+    .previous-button {
+      p, svg {
+        float: left;
+      }
+    }
+
+    .next-button {
+      p, svg {
+        float: right;
+      }
+    }
+
+    svg {
+      padding: 2px 4px 0 4px;
+    }
   }
 
+  .container.extra-bottom {
+    padding-bottom: 120px;
+  }
+
+  .project-nav {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    a {
+      color: $white;
+    }
+    a:hover {
+      color: $cool-grey-10;
+    }
+  }
 }
