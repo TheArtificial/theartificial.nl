@@ -139,6 +139,8 @@ activate :search do |search|
 
     if section == 'blog'
       to_store[:type] = 'article'
+      card = Cards::BlogArticleCard.new(sitemap.app, resource)
+
       date_match = blog_date.match(path)
       to_store[:date] = "#{date_match[:YYYY]}-#{date_match[:MM]}-#{date_match[:DD]}"
       to_index[:username] = resource.data.author

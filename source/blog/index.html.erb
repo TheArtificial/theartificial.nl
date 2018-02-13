@@ -1,7 +1,6 @@
 ---
 title: The Artificial blog
 ---
-
 <section id="content">
 	<div class="flex container">
 			<div class="col-12 section-title">
@@ -16,7 +15,7 @@ title: The Artificial blog
 
   <div class="container packery padded-bottom">
 		<% page_articles.each do |article| %>
-			<%= partial('blog/article_preview', locals: { article: article }) %>
+			<%= render_card(article) %>
 		<% end %>
 	</div>
 

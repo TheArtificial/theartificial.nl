@@ -1,4 +1,4 @@
-var $placeholderCard = $("<%=escape_javascript( mustache_template('feed/_placeholder_card.html') ) %>"); // displaying // returns a jQuery element for a given lunr.js-style document object function renderCard(doc) { var type = doc.type; template = "<%=escape_javascript( mustache_template('feed/_unknown_card.mustache') ) %>";
+var $placeholderCard = $("<%=escape_javascript( mustache_template('templates/_placeholder_card.html') ) %>"); // displaying // returns a jQuery element for a given lunr.js-style document object function renderCard(doc) { var type = doc.type; template = "<%=escape_javascript( mustache_template('templates/_unknown_card.mustache') ) %>";
 
 function renderCard(doc) {
   var type = doc.type;
@@ -12,10 +12,10 @@ function renderCard(doc) {
   if (type == 'article') {
     view.author = doc.author;
     if (doc.image) {
-      template = "<%=escape_javascript( mustache_template('feed/_article_card_image.mustache') ) %>";
+      template = "<%=escape_javascript( mustache_template('templates/_article_card_image.mustache') ) %>";
       view.image = doc.image;
     } else {
-      template = "<%=escape_javascript( mustache_template('feed/_article_card.mustache') ) %>";
+      template = "<%=escape_javascript( mustache_template('templates/_article_card.mustache') ) %>";
     }
     view.category = doc.category;
     view.summary = doc.summary;
@@ -23,17 +23,17 @@ function renderCard(doc) {
     view.author = doc.author;
     view.glass = doc.glass;
     view.contents = doc.contents;
-    template = "<%=escape_javascript( mustache_template('feed/_cocktail_card.mustache') ) %>";
+    template = "<%=escape_javascript( mustache_template('templates/_cocktail_card.mustache') ) %>";
   } else if (type == 'work') {
     view.color = doc.color;
     view.thumbnail = doc.thumbnail;
-    template = "<%=escape_javascript( mustache_template('feed/_work_card.mustache') ) %>";
+    template = "<%=escape_javascript( mustache_template('templates/_work_card.mustache') ) %>";
   } else if (type == 'ftfy') {
     view.author = doc.author;
     view.image = doc.image;
-    template = "<%=escape_javascript( mustache_template('feed/_ftfy_card.mustache') ) %>";
+    template = "<%=escape_javascript( mustache_template('templates/_ftfy_card.mustache') ) %>";
   } else {
-    template = "<%=escape_javascript( mustache_template('feed/_unknown_card.mustache') ) %>";
+    template = "<%=escape_javascript( mustache_template('templates/_unknown_card.mustache') ) %>";
   }
   return $(Mustache.render(template, view));
 }
