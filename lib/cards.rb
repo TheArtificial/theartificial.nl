@@ -5,6 +5,13 @@ require_relative 'cards/work'
 
 module Cards
 
+  TYPES = [
+    'blog',
+    'cocktail',
+    'ftfy',
+    'work'
+  ]
+
   def self.card_for_resource(app, resource)
     path = resource.path
     path_split = path.split('/',2)

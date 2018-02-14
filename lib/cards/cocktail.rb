@@ -24,9 +24,6 @@ class Cocktail < Mustache
     context[:author] = person_name(resource.data.cocktail.author, @app.sitemap)
     context[:glass_url] = "/cocktails/images/glass/#{resource.data.cocktail.glass}.png"
     context[:contents_url] = "/cocktails/images/contents/#{resource.data.cocktail.contents}.gif"
-
-warn "set glass_url to #{context[:glass_url]}"
-
   end
 
   def values_hash

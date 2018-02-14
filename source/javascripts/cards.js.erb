@@ -1,5 +1,6 @@
-var $placeholderCard = $("<%=escape_javascript( mustache_template('templates/_placeholder_card.html') ) %>"); // displaying // returns a jQuery element for a given lunr.js-style document object function renderCard(doc) { var type = doc.type; template = "<%=escape_javascript( mustache_template('templates/_unknown_card.mustache') ) %>";
+var $placeholderCard = $("<%=escape_javascript( mustache_template('templates/_placeholder_card.html') ) %>");
 
+// returns a jQuery element for a given lunr.js-style document object
 function renderCard(doc) {
   var type = doc.type;
   var view = {};

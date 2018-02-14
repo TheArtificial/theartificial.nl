@@ -130,12 +130,6 @@ activate :search do |search|
 
     to_store[:path] = path
 
-    path_split = path.split('/',2)
-    type = path_split.first
-    type = 'cocktail' if type == 'cocktails'
-
-    to_store[:type] = type
-
     begin
       card = Cards.card_for_resource(sitemap.app, resource)
     rescue Exception => e
@@ -143,6 +137,8 @@ activate :search do |search|
       throw(:skip)
     end
     to_store.merge! card.values_hash
+
+    to_store[:type] = card.class.name.split('::').last.downcase
 
     # to_index[:username] = card[:username]
     # to_index[:author] = card[:author]
