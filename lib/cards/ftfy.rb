@@ -19,10 +19,10 @@ class Ftfy < Mustache
     @app = app
     self.template_file = "source/#{TEMPLATE_PATH}"
 
-    context[:date] = resource.data.date.iso8601
+    context[:date] = resource.data.date.strftime('%B %e, %Y')
     context[:username] = resource.data.author
-    context[:author] = person_name(resource.data.author)
-    context[:image_url] = "/ftfy/images#{path[/\/.*(?=\..+$)/]}/#{resource.data.thumbnail}"
+    context[:author] = person_name(resource.data.author, @app.sitemap)
+    context[:image_url] = "/ftfy/images#{resource.path[/\/.*(?=\..+$)/]}/#{resource.data.thumbnail}"
   end
 
   def values_hash

@@ -9,6 +9,9 @@ module Cards
     path = resource.path
     path_split = path.split('/',2)
     type = path_split.first
+
+    type = 'cocktail' if type == 'cocktails'
+
     Mustache.view_namespace = Cards
     card_class = Mustache.view_class(type)
     warn "🚨 can't find card for type #{type}" if (card_class == Mustache)

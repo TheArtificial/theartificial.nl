@@ -136,18 +136,16 @@ activate :search do |search|
 
     to_store[:type] = type
 
-    if type == 'blog' || type == 'cocktails' || type == 'ftfy' || type == 'work'
-      begin
-        card = Cards.card_for_resource(sitemap.app, resource)
-      rescue Exception => e
-        warn "Error creating card: #{e.message}"
-        throw(:skip)
-      end
-      to_store.merge! card.values_hash
-
-      # to_index[:username] = card[:username]
-      # to_index[:author] = card[:author]
+    begin
+      card = Cards.card_for_resource(sitemap.app, resource)
+    rescue Exception => e
+      warn "Error creating card: #{e.message}"
+      throw(:skip)
     end
+    to_store.merge! card.values_hash
+
+    # to_index[:username] = card[:username]
+    # to_index[:author] = card[:author]
   end
 end
 

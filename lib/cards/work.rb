@@ -19,7 +19,7 @@ class Work < Mustache
     @app = app
     self.template_file = "source/#{TEMPLATE_PATH}"
 
-    context[:date] = resource.data.date.iso8601
+    context[:date] = resource.data.date.strftime('%B %e, %Y')
     context[:snippet] = resource.data.snippet
     context[:color] = resource.data.color
     context[:thumbnail_url] = "/work/images/#{resource.data.thumbnail}"

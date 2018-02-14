@@ -19,10 +19,14 @@ class Cocktail < Mustache
     @app = app
     self.template_file = "source/#{TEMPLATE_PATH}"
 
-    context[:date] = resource.data.cocktail.date.iso8601
-    context[:author] = person_name(resource.data.cocktail.author)
+    context[:date] = resource.data.cocktail.date.strftime('%B %e, %Y')
+    context[:title] = resource.data.title
+    context[:author] = person_name(resource.data.cocktail.author, @app.sitemap)
     context[:glass_url] = "/cocktails/images/glass/#{resource.data.cocktail.glass}.png"
     context[:contents_url] = "/cocktails/images/contents/#{resource.data.cocktail.contents}.gif"
+
+warn "set glass_url to #{context[:glass_url]}"
+
   end
 
   def values_hash
