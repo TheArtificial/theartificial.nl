@@ -10,15 +10,14 @@ function renderCard(doc) {
   var formatted_date = monthName(post_date.getMonth()) + ' ' + post_date.getDate() + ', ' + post_date.getFullYear();
   view.date = formatted_date;
   if (type == 'blog') {
-    view.author = doc.author;
-    if (doc.image) {
-      template = "<%=escape_javascript( mustache_template('templates/_article_card_image.mustache') ) %>";
-      view.image = doc.image;
-    } else {
-      template = "<%=escape_javascript( mustache_template('templates/_article_card.mustache') ) %>";
-    }
-    view.category = doc.category;
-    view.summary = doc.summary;
+    view = doc
+    template = "<%=escape_javascript( mustache_template(Cards.template_for_type('blog')) ) %>";
+    //   view.image = doc.image;
+    // } else {
+    //   template = "<%=escape_javascript( mustache_template('templates/_blog_card.mustache') ) %>";
+    // }
+    // view.category = doc.category;
+    // view.summary = doc.summary;
   } else if (type == 'cocktail') {
     view.author = doc.author;
     view.glass = doc.glass;
