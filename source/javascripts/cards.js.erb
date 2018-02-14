@@ -11,28 +11,18 @@ function renderCard(doc) {
   view.date = formatted_date;
   if (type == 'blog') {
     view = doc
-    template = "<%=escape_javascript( mustache_template(Cards.template_for_type('blog')) ) %>";
-    //   view.image = doc.image;
-    // } else {
-    //   template = "<%=escape_javascript( mustache_template('templates/_blog_card.mustache') ) %>";
-    // }
-    // view.category = doc.category;
-    // view.summary = doc.summary;
+    template = "<%=escape_javascript(Cards.template_for_type('blog')) %>";
   } else if (type == 'cocktail') {
-    view.author = doc.author;
-    view.glass = doc.glass;
-    view.contents = doc.contents;
-    template = "<%=escape_javascript( mustache_template('templates/_cocktail_card.mustache') ) %>";
+    view = doc
+    template = "<%=escape_javascript(Cards.template_for_type('cocktail')) %>";
   } else if (type == 'work') {
-    view.color = doc.color;
-    view.thumbnail = doc.thumbnail;
-    template = "<%=escape_javascript( mustache_template('templates/_work_card.mustache') ) %>";
+    view = doc
+    template = "<%=escape_javascript(Cards.template_for_type('work')) %>";
   } else if (type == 'ftfy') {
-    view.author = doc.author;
-    view.image = doc.image;
-    template = "<%=escape_javascript( mustache_template('templates/_ftfy_card.mustache') ) %>";
+    view = doc
+    template = "<%=escape_javascript(Cards.template_for_type('ftfy')) %>";
   } else {
-    template = "<%=escape_javascript( mustache_template('templates/_unknown_card.mustache') ) %>";
+    template = "<%#=escape_javascript( mustache_template('templates/_unknown_card.mustache') ) %>";
   }
   return $(Mustache.render(template, view));
 }
