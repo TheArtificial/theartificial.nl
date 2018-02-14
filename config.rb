@@ -132,13 +132,12 @@ activate :search do |search|
 
     begin
       card = Cards.card_for_resource(sitemap.app, resource)
+      to_store[:type] = card.class.name.split('::').last.downcase
+      to_store.merge! card.values_hash
     rescue Exception => e
       warn "Error creating card: #{e.message}"
       throw(:skip)
     end
-    to_store.merge! card.values_hash
-
-    to_store[:type] = card.class.name.split('::').last.downcase
 
     # to_index[:username] = card[:username]
     # to_index[:author] = card[:author]
