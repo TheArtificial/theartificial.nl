@@ -8,7 +8,7 @@ require 'helpers/people_helpers'
 include PeopleHelpers
 
 module Cards
-class BlogArticleCard < Mustache
+class Blog < Mustache
 
   def initialize(app, resource = nil)
     @app = app

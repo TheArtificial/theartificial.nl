@@ -9,7 +9,7 @@ function renderCard(doc) {
   var post_date = new Date(doc.date);
   var formatted_date = monthName(post_date.getMonth()) + ' ' + post_date.getDate() + ', ' + post_date.getFullYear();
   view.date = formatted_date;
-  if (type == 'article') {
+  if (type == 'blog') {
     view.author = doc.author;
     if (doc.image) {
       template = "<%=escape_javascript( mustache_template('templates/_article_card_image.mustache') ) %>";
@@ -65,48 +65,4 @@ function addCard($container, doc) {
 var monthNames = new Array("January","February","March","April","May"," June","July","August","September","October","November","December");
 function monthName(n) {
   return(monthNames[n]);
-}
-
-function getQuery(query, $el) {
-
-  $el.html('Loading...');
-  $el.packery();
-
-  $.ajax({
-    dataType: "json",
-    url: '/search/index.json',
-    xhr: function() {
-      var xhr = new window.XMLHttpRequest();
-      //Download progress
-      xhr.addEventListener("progress", function(evt){
-        $el.append('.');
-      }, false);
-      return xhr;
-    },
-    success: function(data) {
-
-      lunrIndex = lunr.Index.load(data.index);
-      lunrMap = data.docs;
-      var results = lunrIndex.search(query)
-      console.log('Found ' + results.length + ' results', results);
-
-      if (results.length > 0) {
-
-        var docs = [];
-        $.each(results, function(index, result) {
-          docs.push(lunrMap[result.ref]);
-        });
-				docs.sort(function(a,b){
-					return (a.date < b.date);
-				});
-        $el.html(''); // clear loading indicator
-        for (var index = 0; index < docs.length; ++index) {
-          addCard($el, docs[index]);
-        }
-      }
-      else {
-        $el.html('No results, sorry.');
-      }
-    }
-  });
 }
