@@ -11,14 +11,14 @@ function renderCard(doc) {
   view.date = formatted_date;
   if (type == 'blog') {
     view.author = doc.author;
-    if (doc.image) {
-      template = "<%=escape_javascript( mustache_template('templates/_article_card_image.mustache') ) %>";
-      view.image = doc.image;
-    } else {
-      template = "<%=escape_javascript( mustache_template('templates/_article_card.mustache') ) %>";
-    }
     view.category = doc.category;
     view.summary = doc.summary;
+    template = "<%=escape_javascript( mustache_template('templates/_card_blog.mustache') ) %>";
+  } else if (type == 'blog_image') {
+    view.author = doc.author;
+    view.image_url = doc.image_url;
+    view.category = doc.category;
+    template = "<%=escape_javascript( mustache_template('templates/_card_blog_image.mustache') ) %>";
   } else if (type == 'cocktail') {
     view.author = doc.author;
     view.glass = doc.glass;

@@ -10,6 +10,10 @@ include PeopleHelpers
 module Cards
 class Blog < Mustache
 
+  def type
+    @preview_image_name ? 'blog_image' : 'blog'
+  end
+
   def initialize(app, resource = nil)
     @app = app
 
@@ -18,14 +22,9 @@ class Blog < Mustache
     @article = resource
 
     @preview_image_name = resource.data.preview || resource.data.masthead
-
     if @preview_image_name
-      @template_path = 'templates/_article_card_image.mustache'
       context[:image_url] = image_url()
-    else
-      @template_path = 'templates/_article_card.mustache'
     end
-    self.template_file = "source/#{@template_path}"
 
     context[:url] = @article.url
     context[:category] = @article.data.category
@@ -34,6 +33,9 @@ class Blog < Mustache
     context[:author] = person_name(@article.data.author, @app.sitemap)
     context[:date] = @article.date.strftime('%B %e, %Y')
     context[:summary] = simple_format(strip_tags(@article.summary(180)))
+
+    @template_path = "templates/_card_#{self.type}.mustache"
+    self.template_file = "source/#{@template_path}"
   end
 
 private

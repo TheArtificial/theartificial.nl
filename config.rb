@@ -139,14 +139,16 @@ activate :search do |search|
 
     if type == 'blog'
       card = Cards.card_for_resource(sitemap.app, resource)
-      to_store[:type] = type
+      to_store[:type] = card.type
+
+      to_store[:image_url] = card.context[:image_url]
 
       date_match = blog_date.match(path)
       to_store[:date] = "#{date_match[:YYYY]}-#{date_match[:MM]}-#{date_match[:DD]}"
       to_index[:username] = resource.data.author
       to_store[:author] = to_index[:author] = person_name(resource.data.author)
       to_store[:category] = resource.data.category
-      to_store[:image] = blog_preview_url(resource)
+      # to_store[:image] = blog_preview_url(resource)
       to_store[:summary] = simple_format(strip_tags(blog_article_for(resource).summary(180)))
     elsif type == 'cocktails'
       to_store[:type] = 'cocktail'
