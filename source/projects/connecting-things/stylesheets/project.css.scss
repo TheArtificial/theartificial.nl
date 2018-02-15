@@ -81,82 +81,88 @@ body {
   }
 
   .bleed.walkthrough {
-  	background-color: $cool-grey-50;
-  	background: linear-gradient(to right, $cool-grey-30 50%, $cool-grey-70 51%);
+  background-color: $cool-grey-50;
+  background: linear-gradient(to right, $cool-grey-30 50%, $cool-grey-70 51%);
 
-    .thing-space {
-      background-color: $cool-grey-30;
-    }
-    .flow-space {
-      background-color: $tulip;
-      position:absolute;
-    }
-    .screen-space {
-      background-color: $cool-grey-70;
-    }
+  .thing-space {
+    background-color: $cool-grey-30;
+  }
 
-    .thing-space, .flow-space, .screen-space {
-      text-align: center;
-      margin: auto;
-      img {
-        width: 100%;
-      }
+  .screen-space {
+    background-color: $cool-grey-70;
+  }
+
+  .thing-space, .screen-space {
+    text-align: center;
+    margin: auto;
+
+    img {
+      width: auto;
     }
   }
 
-  #actors, #step1, #step2, #step3, #step4{
-
-    position: absolute;
-    top: -20px;
+  .flow-space {
+    background-color: $white;
+    text-align: center;
+    margin: auto;
+    position:relative;
+    height:600px;
   }
 
-  .walkthrough-controls {
-    padding-top: 10px;
+  #actors, #step1, #step2, #step3, #step4, #step5, #step {
+  position: absolute;
+  top:0px;
+  }
 
-    a {
-      color: $white;
-      svg *.arrow {
-        fill: $white;
-      }
-    }
+}
 
-    a:hover {
-      color: $cool-grey-10;
-      svg *.arrow {
-        fill: $cool-grey-10;
-      }
-    }
+.walkthrough-controls {
+  padding-top: 10px;
 
-    .previous-button {
-      p, svg {
-        float: left;
-      }
-    }
-
-    .next-button {
-      p, svg {
-        float: right;
-      }
-    }
-
-    svg {
-      padding: 2px 4px 0 4px;
+  a {
+    color: $white;
+    svg *.arrow {
+      fill: $white;
     }
   }
 
-  .container.extra-bottom {
-    padding-bottom: 120px;
-  }
-
-  .project-nav {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    a {
-      color: $white;
-    }
-    a:hover {
-      color: $cool-grey-10;
+  a:hover {
+    color: $cool-grey-10;
+    svg *.arrow {
+      fill: $cool-grey-10;
     }
   }
+
+  .previous-button {
+    p, svg {
+      float: left;
+    }
+  }
+
+  .next-button {
+    p, svg {
+      float: right;
+    }
+  }
+
+  svg {
+    padding: 2px 4px 0 4px;
+  }
+  }
+
+.container.extra-bottom {
+padding-bottom: 120px;
+}
+
+.project-nav {
+padding-top: 60px;
+padding-bottom: 60px;
+
+a {
+  color: $white;
+}
+a:hover {
+  color: $cool-grey-10;
+}
+}
 }
