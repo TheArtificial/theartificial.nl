@@ -13,7 +13,13 @@ module Cards
     return card_class.new(app, resource)
   end
 
-  def types
-    ['blog', 'blog_image']
+  def template_for_type(type)
+    Mustache.view_namespace = Cards
+    card_class = Mustache.view_class(type)
+    warn "🚨 can't find template for type '#{type}'" if (card_class == Mustache)
+
+# TODO: Gah, how do we get a template for blog_image without app context?
+
+    return card_class.template
   end
 end

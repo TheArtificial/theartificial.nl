@@ -31,7 +31,8 @@ class Blog < Mustache
     context[:title] = @article.title
     context[:username] = @article.data.author
     context[:author] = person_name(@article.data.author, @app.sitemap)
-    context[:date] = @article.date.strftime('%B %e, %Y')
+    context[:date] = @article.date.iso8601
+    context[:human_date] = @article.date.strftime('%B %e, %Y')
     context[:summary] = simple_format(strip_tags(@article.summary(180)))
 
     @template_path = "templates/_card_#{self.type}.mustache"

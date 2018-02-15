@@ -143,8 +143,9 @@ activate :search do |search|
 
       to_store[:image_url] = card.context[:image_url]
 
-      date_match = blog_date.match(path)
-      to_store[:date] = "#{date_match[:YYYY]}-#{date_match[:MM]}-#{date_match[:DD]}"
+      # date_match = blog_date.match(path)
+      to_store[:date] = card.context[:date]
+      to_store[:human_date] = card.context[:human_date]
       to_index[:username] = resource.data.author
       to_store[:author] = to_index[:author] = person_name(resource.data.author)
       to_store[:category] = resource.data.category
