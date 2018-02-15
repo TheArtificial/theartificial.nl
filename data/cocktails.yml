@@ -7,9 +7,11 @@
   author: manjari
   rating: 4
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>As an ode to the long-gone summer days, Manjari mixed a cocktail that had anything but tea. The cocktail was based on the famous Long Island Ice Tea, but better.</p>
     <p>It was just perfect! Why? Because, it hides the many alcohol flavors, and it tricks you into thinking you are drinking some cola.</p>
     <p>It even got Ariane drunk, which is always a good surprise.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>5 parts cola</li>
       <li>1 part gin</li>
@@ -20,6 +22,7 @@
       <li>lime slice</li>
       <li>lots of ice</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Mix all the alcohol and the lime juice in a shaker. Pour it over some ice in a high ball glass. Top it off with cola and a lime slice. Stir and serve immediately.</p>
 -
   slug: aperolspritz
@@ -30,12 +33,15 @@
   author: susana
   rating: 3
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>Last Tuesday, we threw a big King’s night party to kick off King Willem-Alexander’s birthday. Of course, this means orange drinks, orange snacks, and even more orange drinks. Were we sick of the color orange? Most definitely. But that didn’t stop us from more Aperol Spritz’s today!</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 parts Aperol</li>
       <li>3 parts prosecco</li>
       <li>sliced orange</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Pour Aperol over a half-full glass of chilled prosecco. Garnish with some slices of fresh orange.</p>
 -
   slug: applebrother

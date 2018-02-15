@@ -1,110 +1,82 @@
 @import "_artificial-colors.scss";
 
 .cocktails {
-  background-color: #fddbd1;
-  width: 100%;
+  background-color: $palest-lime;
 
   #content {
     padding-bottom: 0;
 
-    a { text-decoration: underline; }
-    a:hover, a:hover * { text-decoration: none; }
+    p, h1, h2, h3, h4, li, a { color: $darkest-grass; }
 
-    p, h1, h2, h3, h4, li, a { color: #f14a23; }
-
-    p, h3, li { font-family: "Nota Serif", Georgia, Times, serif; }
-    h1, h3 { font-style: normal; }
-    h1, h2, h4 { font-family: "Barlow", Helvetica, Arial, sans-serif; }
-    h2 { text-decoration: underline; }
+    .title, .drinkname, .bartender, .recipe-section { font-family: "Noto Serif", Georgia, Times, serif; }
+    .date { font-family: "Barlow", Helvetica, Arial, sans-serif; }
     h3 { font-weight: 300; }
 
-    h1 { font-size: 48px; }
-    h2 { font-size: 28px; }
-    h3 { font-size: 16px; }
+    .title {
+      font-size: 54px;
+      font-style: normal;
+    }
+
+    .recipe-section {
+      text-transform: uppercase;
+      margin-top: 40px;
+    }
+
+    .rating {
+      width: 100px;
+      margin: 10px 0 20px 0;
+    }
+
+    h2 { font-size: 20px; }
+    h3, p, li { font-size: 16px; }
     h4 { font-size: 14px; }
 
-    p, li { font-size: 16px; }
   }
 
-  .fridaycocktails { padding-bottom: 20px; }
-  .drinkname { padding-top: 10px; }
-
   #header {
-    background-color: #FDDBD1;
+    background-color: $palest-lime;
 
-    .topbar { border-top-color: #F14A23; }
+    .topbar { border-top-color: $darkest-grass; }
 
-    #logo a { color: #F14A23; }
+    #logo a { color: $darkest-grass; }
     #nav-primary {
       ul {
         li {
-          a { color: #F14A23; }
-          a:hover { color: #9B1600; }
+          a { color: $darkest-grass; }
+          a:hover { color: $dark-grass; }
         }
       }
     }
   }
 
   #footer {
-    background-color: #F14A23;
+    background-color: $darkest-grass;
 
-    p, h3, a { color: $white; }
-    a:hover { color: #FDDBD1; }
-  }
-
-  .rating {
-    width: 100px;
-    margin: 10px 0 20px 0;
+    #artificial a svg path, #artificial a svg polygon, #artificial a svg rect { fill: $palest-lime; }
+    p, .small-title { color: $pale-lime; }
+    a { color: $palest-lime; }
+    a:hover { color: $pale-lime; }
   }
 }
 
 .cocktail-preview {
-  position: relative;
-  height: 480px;
+  .glass {
+    margin-bottom: 40px;
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
 
-  margin: 8px 8px 0 8px;
-  overflow: hidden;
-
-  .padded {
-    // padding: 14px;
-  }
-
-  .anchor {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-    .preview {
-      position: relative;
-      width: 70%;
-      margin: auto;
-
-      .static {
-        position: absolute;
-        bottom: 0;
-      }
-
-      .animated {
-        position: absolute;
-        bottom: 0;
-        opacity: 0;
-        transition: opacity .2s linear;
-      }
-    }
-
-    .details {
-      height: 140px;
-      padding-top: 30px;
+    .contents {
+      opacity: .5;
+      transition: opacity .2s linear;
     }
   }
 
   &:hover {
-    .anchor {
-      .preview {
-        .animated {
-          opacity: 1;
-          transition: opacity .2s linear;
-        }
+    .composite {
+      .contents {
+        opacity: 1;
+        transition: opacity .2s linear;
       }
     }
   }
@@ -121,7 +93,6 @@
   height: 400px;
 
   img {
-    position: absolute;
     bottom: 0;
   }
 }
@@ -129,7 +100,8 @@
 .recipe {
   padding-bottom: 40px;
 
-  ul { padding: 30px 0 40px 0; }
+  ul { padding-left: 0; }
+
 }
 
 
@@ -142,34 +114,24 @@
   .right { text-align: right; }
 
   .cocktail-preview {
-    height: 480px;
-
-		margin: 2px;
-
-		.padded {
-			padding: 14px;
-		}
+    border: 10px solid $lime;
+    border-radius: 2px;
 
     .anchor {
-      .preview { width: 80%; }
+      .preview {
+      }
     }
   }
 
-  .name { margin-top: 40px; }
-  .recipe { padding-bottom: 100px; }
+  .cocktail-preview:hover {
+    border: 10px solid $darkest-grass;
+  }
 
   .drinkcontainer{
-    position: relative;
     height: 450px;
 
     img {
-      position: absolute;
       bottom: 0;
-      width: 70%;
     }
   }
-}
-
-@media (min-width: 960px) {
-  .cocktail-preview { height: 600px; }
 }

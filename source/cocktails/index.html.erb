@@ -7,12 +7,10 @@ title: Friday Cocktails
   <section id="content">
 
     <div class="flex container">
-      <div class="col-8 right-2 left-2 introduction center">
-        <div class="padded">
-            <h1 class="fridaycocktails">Friday Cocktails</h1>
-            <p>On Fridays, we welcome any excuse to practice our mixology
-            skills. Here's a collection of our successes, trials, and
-            errors.</p>
+      <div class="col-8 right-2 left-2 section-title">
+        <div class="padded center">
+            <h1 class="title">Friday Cocktails</h1>
+            <p>On Fridays, we welcome any excuse to practice our mixology skills. Here's a collection of our successes, trials, and errors.</p>
             <p>Cheers, proost, and enjoy!</p>
           </div>
       </div>
@@ -22,16 +20,15 @@ title: Friday Cocktails
       <% data.cocktails.sort_by{|c| c.date}.reverse.each_with_index do |c, i| %>
       <div class="col-4 packed">
         <% link_to "#{c.slug}.html" do %>
-          <div class="cocktail-preview">
-            <div class="anchor">
-              <div class="preview">
-                <img class="static" alt="<%= c.name %>" src="<%= "images/glass/#{c.glass}.png" %>">
-                <img class="animated" src="<%= "images/contents/#{c.contents}.gif" %>">
+          <div class="card cocktail-preview">
+            <div class="padded">
+              <div class="glass" style="background-image: url(<%= "images/glass/#{c.glass}.png" %>);">
+                <img class="contents" src="<%= "images/contents/#{c.contents}.gif" %>">
               </div>
 
-              <div class="details padded center">
-                <h3><%= c.date.strftime('%B %e, %Y') %></h3>
+              <div class="details center">
                 <h2 class="drinkname"><%= c.name %></h2>
+                <p class="date"><%= c.date.strftime('%B %e, %Y') %></p>
               </div>
             </div>
           </div>

@@ -4,10 +4,12 @@
   <section id="content">
 
     <div class="flex container">
-      <div class="col-10 left-1 right-1 center name">
-        <div class="padded">
-          <h3><%= cocktail.date.strftime('%B %e, %Y') %></h3>
-          <h1><%= cocktail.name %></h1>
+      <div class="col-10 left-1 right-1 section-title">
+        <div class="padded center">
+        <h1 class="title"><%= cocktail.name %></h1>
+        <p class="date"><%= cocktail.date.strftime('%B %e, %Y') %></p>
+        <h3 class="bartender">Mixed by <%= link_to_person cocktail.author %></h3>
+        <img class="rating" src="images/rating<%= cocktail.rating %>.png">
         </div>
       </div>
     </div>
@@ -22,9 +24,6 @@
 
       <div class="col-6">
         <div class="padded">
-          <h3>Mixed by <%= link_to_person cocktail.author %></h3>
-          <img class="rating" src="images/rating<%= cocktail.rating %>.png">
-
           <%= cocktail.html.html_safe %>
         </div>
       </div>
