@@ -52,7 +52,9 @@
   author: nathalie
   rating: 3
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>Our newest bartender makes her first drink! Nathalie's learning the in's and out's of our office, as well as our tastes in cocktails.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>1 part Licor 43 </li>
       <li>1 part apple juice</li>
@@ -60,6 +62,7 @@
       <li>fresh mint</li>
       <li>apple slice for garnish</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Pour Licor 43 and apple juice into a shaker with ice a mint. Shake well, and pour into a glass. Top with ginger beer and garnish with a slice of apple and mint leaves.</p>
 -
   slug: baltimorebang
@@ -514,13 +517,16 @@
   author: shannon
   rating: 3
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>The Last of the Oaxacans, the Artificial edition is a variation on <a href="http://www.seriouseats.com/recipes/2014/04/last-of-the-oaxacans-mezcal-last-word-variation-cocktail-recipe.html" target="blank">Serious Eat's</a> variantion on Last Word. We subbed the chartreuse for a splash of absinthe to give it an herby flavor.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>1 part mezcal</li>
       <li>1 part maraschino liquor</li>
       <li>.5 parts lime juice</li>
       <li>a splash of absinthe</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Combine all ingredients into a cocktail shaker. Fill with ice and shake vigorously. Pour over ice and serve.</p>
 -
   slug: lemondrop
@@ -531,12 +537,15 @@
   author: kamila
   rating: 4
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>A classic simple Lemon Drop. Serve with an extra shot of vodka on the side, if you're lucky enough to have some smooth <a href="https://en.wikipedia.org/wiki/Wódka_Żołądkowa_Gorzka" target="blank">Polish vodka</a> handy.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 parts vodka</li>
       <li>2 parts lemon juice</li>
       <li>1 part simple syrup</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Combine all ingredients into a cocktail shaker. Fill with ice and shake vigorously. Pour over ice and serve.</p>
 -
   slug: lumpyspacepumpkin
@@ -1009,14 +1018,16 @@
   author: manjari
   rating: 4
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>Hoping to add some spiced warmth to our Friday cocktails, Manjari decided to try a garam-masala apple cider experiment. To her surprise (and that of all non-US team members) apple cider is not the same as hard cider thanks to Shannon this was quickly clarified and we did not end up with a burned garam-masala.</p>
-
     <p>The final result was a bit more smokey than it should have been, because we toasted the spices a bit too much and we used a scotch that was meant for sipping and not for mixing, oops! We also had to add a little more alcohol than recommended so that the flavor really came into action. In the end, the drinks were a success with our visiting clients and we all learned a valuable lesson.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>3 parts bourbon</li>
       <li>2 parts garam masala-spiced apple syrup</li>
       <li>1 parts single malt scotch</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>For the garam masala-spiced apple syrup, mix 30 gr of whole coriander seeds, 15 gr of whole cumin seeds, 2 cardamom pods, 10 gr of mustard seeds, 10 gr of black peppercorn, 5 gr of whole cloves, 2 cinnamon sticks and 2 bay leaves.  Toast them over low heat in a saucepan for around 1-2 minutes. In a pot, pour 440 ml of fresh apple sider and the spices, stir and bring to a boil, add 350 gr of brown sugar. Keep stirring until the cider has absorbed all the flavor. Remove from heat, strain the cider and let it cool.</p>
 
     <p>For the cocktails, pour the bourbon, the garam masala-spiced apple syrup and the scotch in a shaker over ice and shake well. Pour in a glass filled with ice and stir until well chilled.</p>
@@ -1225,13 +1236,16 @@
   author: ariane
   rating: 4
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>Haunted by the memory of the <a href="https://theartificial.com/cocktails/frankenmousse.html" target="blank">Franken Mousse</a>, Ariane wanted to make it up to her co-workers. She played it safe by making one of her favorite cocktails, a variation of the Americano that is said to be invented in Florence, Italy. Great way to help us warming up in this wave of cold.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>1 part gin</li>
       <li>1 part vermouth rosso </li>
       <li>1 part Campari</li>
       <li>Orange slice</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Fill a shaker with ice cubes, add Gin, Martini rosso and Campari.Stir gently, pour in a tumbler glass and garnish with a thinly sliced slice of orange.</p>
 -
   slug: theshannon

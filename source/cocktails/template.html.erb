@@ -15,10 +15,11 @@
     </div>
 
     <div class="flex container padded-bottom recipe">
-      <div class="col-6">
-        <div class="padded drinkcontainer">
-          <img class="static" alt="<%= cocktail.name %>" src="<%= "images/glass/#{cocktail.glass}.png" %>">
-          <img class="animated" src="<%= "images/contents/#{cocktail.contents}.gif" %>">
+      <div class="col-5 right-1">
+        <div class="padded">
+          <div class="glass" style="background-image: url(<%= "images/glass/#{cocktail.glass}.png" %>);">
+            <img class="contents" src="<%= "images/contents/#{cocktail.contents}.gif" %>">
+          </div>
         </div>
       </div>
 
@@ -39,27 +40,27 @@
     %>
 
     <div class="flex container local-nav">
-      <div class="col-4 left">
+      <div class="col-2 right-3">
         <% if prev_drink %>
         <div class="padded">
-          <% link_to "#{prev_drink.slug}.html" do %>
-            <h4>Newer cocktail</h4>
+          <% link_to "#{prev_drink.slug}.html", class: "nav-links" do %>
+            <p>Previous</p>
           <% end %>
         </div>
         <% end %>
       </div>
-      <div class="col-4">
+      <div class="col-2">
         <div class="padded">
-          <a href=".">
-            <h4>Overview</h4>
+          <a href="." class="nav-links">
+            <p>Overview</p>
           </a>
         </div>
       </div>
-      <div class="col-4 right">
+      <div class="col-2 left-3">
         <% if next_drink %>
         <div class="padded">
-          <% link_to "#{next_drink.slug}.html" do %>
-            <h4>Older cocktail</h4>
+          <% link_to "#{next_drink.slug}.html", class: "nav-links" do %>
+            <p>Next</p>
           <% end %>
         </div>
         <% end %>
