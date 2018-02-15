@@ -37,8 +37,7 @@ class Blog < Mustache
     context[:human_date] = @article.date.strftime('%B %e, %Y')
     context[:summary] = simple_format(strip_tags(@article.summary(180)))
 
-    @template_path = "templates/_card_#{self.type}.mustache"
-    self.template_file = "source/#{@template_path}"
+    self.template_file = "source/#{TEMPLATE_PATH}"
   end
 
   def values_hash
