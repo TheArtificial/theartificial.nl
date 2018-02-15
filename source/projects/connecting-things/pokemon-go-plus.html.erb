@@ -1,112 +1,20 @@
 <script src="js/lottie.js"> </script>
 
-<script src='js/Actors.js'></script>
-<script src='js/AppCloud.js'></script>
-<script src='js/Thing_broadcasts.js'></script>
-<script src='js/OS_listens.js'></script>
-<script src='js/ThingOS_pairs.js'></script>
-<script src='js/ThingOS_verified.js'></script>
-<script src='js/ThingApp_unverified.js'></script>
-
 <div class="bleed walkthrough">
   <div class="flex container">
     <div class="col-4 thing-space">
       <div class="padded">
-        <img src="images/pokemongoplus/thing.png">
+        <img id="thing" src="images/pokemongoplus/thing.png">
       </div>
     </div>
     <div class="col-4 flow-space">
       <div class="padded">
-
-        <div id="actors"></div>
-        <div id="step1"></div>
-        <div id="step2"></div>
-        <div id="step3"></div>
-        <div id="step4"></div>
-        <div id="step5"></div>
-        <div id="step6"></div>
-
-        <script>
-        var layout = {
-            container: document.getElementById('actors'),
-            renderer: 'svg',
-            loop: false,
-            autoplay: true,
-            animationData: Actors,
-        };
-
-        var anim1 = {
-            container: document.getElementById('step1'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            animationData: AppCloud,
-        };
-
-        var anim2 = {
-            container: document.getElementById('step2'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: false,
-            animationData: ThingBroadcasts,
-        };
-
-        var anim3 = {
-            container: document.getElementById('step3'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: false,
-            animationData: OSListens,
-        };
-
-        var anim4 = {
-            container: document.getElementById('step4'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: false,
-            animationData: ThingOSPairs,
-        };
-
-        var anim5 = {
-            container: document.getElementById('step5'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: false,
-            animationData: ThingOSVerified,
-        };
-        var anim6 = {
-            container: document.getElementById('step6'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: false,
-            animationData: ThingAppUnverified,
-        };
-
-        var anim;
-         anim = lottie.loadAnimation(layout);
-         anim = lottie.loadAnimation(anim1);
-        // anim = lottie.loadAnimation(anim2);
-        // anim = lottie.loadAnimation(anim3);
-        // anim = lottie.loadAnimation(anim4);
-        //anim = lottie.loadAnimation(anim5);
-        //anim = lottie.loadAnimation(anim6);
-
-        $(document).ready(function() {
-          $('#nextButton').on('click',function(){
-            console.log("forward");
-          });
-          $('#prevButton').on('click',function(){
-            console.log("backward");
-          });
-        });
-
-        </script>
-
+        <div id="network" style="position: relative;"></div>
       </div>
     </div>
     <div class="col-4 screen-space">
       <div class="padded">
-        <img src="images/pokemongoplus/screen.png">
+        <img id="screen" src="images/pokemongoplus/screen.png">
       </div>
     </div>
   </div>
@@ -172,5 +80,91 @@
     </div>
   </div>
 </div>
+
+<script>
+
+// some variables so we don't waste cycles looking for elements over and over
+var $thing = $('#thing');
+var $network = $('#network');
+var $ui = $('ui');
+
+// this is our script
+var flowSteps = [
+  {
+    thingImg: "images/pokemongoplus/thing.png",
+    networkAnimations: ["Actors.json", "AppCloud.json"],
+    screenImg: "images/pokemongoplus/screen.png"
+  },
+  {
+    thingImg: "images/pokemongoplus/thing.png",
+    networkAnimations: ["Actors.json", "Thing_broadcasts.json"],
+    screenImg: "images/pokemongoplus/screen.png"
+  },
+  {
+    thingImg: "images/pokemongoplus/thing.png",
+    networkAnimations: ["Actors.json", "OS_listens.json"],
+    screenImg: "images/pokemongoplus/screen.png"
+  },
+  {
+    thingImg: "images/pokemongoplus/thing.png",
+    networkAnimations: ["Actors.json", "ThingOS_pairs.json"],
+    screenImg: "images/pokemongoplus/screen.png"
+  },
+  {
+    thingImg: "images/pokemongoplus/thing.png",
+    networkAnimations: ["Actors.json", "ThingOS_verified.json"],
+    screenImg: "images/pokemongoplus/screen.png"
+  },
+  {
+    thingImg: "images/pokemongoplus/thing.png",
+    networkAnimations: ["Actors.json", "ThingApp_unverified.json"],
+    screenImg: "images/pokemongoplus/screen.png"
+  },
+]
+
+function setAnimationLayers(layers) {
+  if (typeof layers !== 'undefined' && layers.length > 0) {
+    $network.empty(); // clear previous layers
+
+    for (var i = 0; i < layers.length; i++) {
+      var filename = layers[i];
+      var $layer = $('<div></div>');
+      $layer.css({
+        position: 'absolute',
+        top: '0'
+      });
+      var layerElement = $layer.get(0);
+      lottie.loadAnimation({
+        container: layerElement,
+        renderer: 'svg',
+        loop: true,
+        autoplay: false,
+        path: 'animations/' + filename
+      });
+      $network.append($layer);
+    }
+
+    lottie.play();
+  }
+};
+
+// make one happen
+function renderStep(number) {
+  var step = flowSteps[number];
+  // TODO: set thing image
+  setAnimationLayers(step.networkAnimations);
+  // TODO: set screen image
+}
+
+$(document).ready(function() {
+  $('#nextButton').on('click',function(){
+    console.log("forward");
+  });
+  $('#prevButton').on('click',function(){
+    console.log("backward");
+  });
+});
+
+</script>
 
 <%= partial 'things_footer' %>
