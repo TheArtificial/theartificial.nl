@@ -92,31 +92,37 @@ var currentStep = 0;
 // this is our script
 var flowSteps = [
   {
+    caption: "App logs in to account on Cloud",
     thingImg: "images/pokemongoplus/thing.png",
     networkAnimations: ["Actors.json", "AppCloud.json"],
     screenImg: "images/pokemongoplus/screen.png"
   },
   {
+    caption: "Thing begins broadcasting Bluetooth",
     thingImg: "images/pokemongoplus/thing.png",
     networkAnimations: ["Actors.json", "Thing_broadcasts.json"],
     screenImg: "images/pokemongoplus/screen.png"
   },
   {
+    caption: "OS listens for Bluetooth",
     thingImg: "images/pokemongoplus/thing.png",
     networkAnimations: ["Actors.json", "OS_listens.json"],
     screenImg: "images/pokemongoplus/screen.png"
   },
   {
+    caption: "Thing and OS pair with Bluetooth",
     thingImg: "images/pokemongoplus/thing.png",
     networkAnimations: ["Actors.json", "ThingOS_pairs.json"],
     screenImg: "images/pokemongoplus/screen.png"
   },
   {
+    caption: "Thing and OS connect",
     thingImg: "images/pokemongoplus/thing.png",
     networkAnimations: ["Actors.json", "ThingOS_verified.json"],
     screenImg: "images/pokemongoplus/screen.png"
   },
   {
+    caption: "App and Thing open software connection",
     thingImg: "images/pokemongoplus/thing.png",
     networkAnimations: ["Actors.json", "ThingApp_unverified.json"],
     screenImg: "images/pokemongoplus/screen.png"
@@ -157,7 +163,7 @@ function renderStep(number) {
   // TODO: set thing image
   setAnimationLayers(step.networkAnimations);
   // TODO: set screen image
-  var displayCaption = (currentStep+1)+'/'+totalSteps;
+  var displayCaption = (currentStep+1)+'/'+totalSteps+' '+step.caption;
   $caption.text(displayCaption);
 }
 
