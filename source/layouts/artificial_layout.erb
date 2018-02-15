@@ -21,6 +21,9 @@
 		<meta property="twitter:description" content="<%=  yield_content :description %>" />
 
 		<!-- Facebook OpenGraph -->
+		<% if content_for?(:facebook_id) %>
+		<meta property="fb:app_id" content="<%= yield_content :facebook_id %>" />
+		<% end %>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="<%= yield_content :url %>" />
 		<meta property="og:title" content="<%=  yield_content :title %>" />
