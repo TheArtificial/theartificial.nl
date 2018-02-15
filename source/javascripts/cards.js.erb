@@ -1,43 +1,30 @@
-var $placeholderCard = $("<%=escape_javascript( mustache_template('templates/_placeholder_card.html') ) %>"); // displaying // returns a jQuery element for a given lunr.js-style document object function renderCard(doc) { var type = doc.type; template = "<%=escape_javascript( mustache_template('templates/_unknown_card.mustache') ) %>";
+var $placeholderCard = $("<%=escape_javascript( mustache_template('templates/_placeholder_card.html') ) %>");
 
+// returns a jQuery element for a given lunr.js-style document object
 function renderCard(doc) {
   var type = doc.type;
-  var view = {
-    url: doc.url,
-    title: doc.title
-  };
-  var post_date = new Date(doc.date);
-  var formatted_date = monthName(post_date.getMonth()) + ' ' + post_date.getDate() + ', ' + post_date.getFullYear();
-  view.date = formatted_date;
+  var view = {};
+  //   url: doc.url,
+  //   title: doc.title
+  // };
+  // var post_date = new Date(doc.date);
+  // var formatted_date = monthName(post_date.getMonth()) + ' ' + post_date.getDate() + ', ' + post_date.getFullYear();
+  // view.date = formatted_date;
   if (type == 'blog') {
-    view = doc;
-    // view.human_date = doc.human_date
-    // view.author = doc.author;
-    // view.category = doc.category;
-    // view.summary = doc.summary;
-    template = "<%=escape_javascript( mustache_template('templates/_card_blog.mustache') ) %>";
-  } else if (type == 'blog_image') {
-    view = doc;
-    // view.human_date = doc.human_date
-    // view.author = doc.author;
-    // view.image_url = doc.image_url;
-    // view.category = doc.category;
-    template = "<%=escape_javascript( mustache_template('templates/_card_blog_image.mustache') ) %>";
+    view = doc
+    template = "<%=escape_javascript(Cards.template_for_type('blog')) %>";
   } else if (type == 'cocktail') {
-    view.author = doc.author;
-    view.glass = doc.glass;
-    view.contents = doc.contents;
-    template = "<%=escape_javascript( mustache_template('templates/_cocktail_card.mustache') ) %>";
+    view = doc
+console.log('view for cocktail', view);
+    template = "<%=escape_javascript(Cards.template_for_type('cocktail')) %>";
   } else if (type == 'work') {
-    view.color = doc.color;
-    view.thumbnail = doc.thumbnail;
-    template = "<%=escape_javascript( mustache_template('templates/_work_card.mustache') ) %>";
+    view = doc
+    template = "<%=escape_javascript(Cards.template_for_type('work')) %>";
   } else if (type == 'ftfy') {
-    view.author = doc.author;
-    view.image = doc.image;
-    template = "<%=escape_javascript( mustache_template('templates/_ftfy_card.mustache') ) %>";
+    view = doc
+    template = "<%=escape_javascript(Cards.template_for_type('ftfy')) %>";
   } else {
-    template = "<%=escape_javascript( mustache_template('templates/_unknown_card.mustache') ) %>";
+    template = "<%#=escape_javascript( mustache_template('templates/_unknown_card.mustache') ) %>";
   }
   return $(Mustache.render(template, view));
 }
@@ -65,8 +52,8 @@ function addCard($container, doc) {
     $newCard = renderCard(doc);
   }, 1);
 }
-
-var monthNames = new Array("January","February","March","April","May"," June","July","August","September","October","November","December");
-function monthName(n) {
-  return(monthNames[n]);
-}
+//
+// var monthNames = new Array("January","February","March","April","May"," June","July","August","September","October","November","December");
+// function monthName(n) {
+//   return(monthNames[n]);
+// }

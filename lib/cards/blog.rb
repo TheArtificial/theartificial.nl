@@ -10,12 +10,11 @@ include PeopleHelpers
 module Cards
 class Blog < Mustache
 
-  def type
-    @preview_image_name ? 'blog_image' : 'blog'
-  end
+  TEMPLATE_PATH = 'templates/_blog_card.mustache'
 
   def initialize(app, resource = nil)
     @app = app
+    self.template_file = "source/#{TEMPLATE_PATH}"
 
     @article = resource if resource.is_a?( ::Middleman::Blog::BlogArticle )
     resource.extend ::Middleman::Blog::BlogArticle
@@ -23,7 +22,10 @@ class Blog < Mustache
 
     @preview_image_name = resource.data.preview || resource.data.masthead
     if @preview_image_name
+      context[:has_image?] = true
       context[:image_url] = image_url()
+    else
+      context[:has_image?] = false
     end
 
     context[:url] = @article.url
@@ -37,6 +39,21 @@ class Blog < Mustache
 
     @template_path = "templates/_card_#{self.type}.mustache"
     self.template_file = "source/#{@template_path}"
+  end
+
+  def values_hash
+    hash = {}
+    [ :has_image?,
+      :image_url,
+      :url,
+      :category,
+      :title,
+      :username,
+      :author,
+      :date,
+      :summary
+    ].each{|key| hash[key] = context[key]}
+    return hash
   end
 
 private
