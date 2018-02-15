@@ -24,7 +24,7 @@
   <div class="flex container walkthrough-controls">
     <div class="col-2">
       <div class="padded">
-        <a id="prev-button">
+        <a href="#" id="prev-button">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
           <path class="arrow" d="M17,9H4.414l6.293-6.293c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0l-8,8c0,0,0,0-0.001,0.001
@@ -37,12 +37,12 @@
     </div>
     <div class="col-8">
       <div class="padded">
-        <p class="current-step">1/6 App and account connect.</p>
+        <p class="current-step" id="caption">1/6 App and account connect.</p>
       </div>
     </div>
     <div class="col-2">
       <div class="padded">
-        <a id="next-button">
+        <a href="#" id="next-button">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
           <path class="arrow" d="M18.708,10.706L19.414,10l-0.706-0.706c-0.001-0.001-0.001-0.001-0.002-0.002l-7.999-7.999
@@ -84,7 +84,10 @@
 // some variables so we don't waste cycles looking for elements over and over
 var $thing = $('#thing');
 var $network = $('#network');
-var $ui = $('ui');
+var $ui = $('#ui');
+var $caption = $('#caption');
+
+var currentStep = 0;
 
 // this is our script
 var flowSteps = [
@@ -120,6 +123,8 @@ var flowSteps = [
   },
 ]
 
+var totalSteps = flowSteps.length;
+
 function setAnimationLayers(layers) {
   if (typeof layers !== 'undefined' && layers.length > 0) {
     $network.empty(); // clear previous layers
@@ -152,15 +157,28 @@ function renderStep(number) {
   // TODO: set thing image
   setAnimationLayers(step.networkAnimations);
   // TODO: set screen image
+  var displayCaption = (currentStep+1)+'/'+totalSteps;
+  $caption.text(displayCaption);
 }
 
 $(document).ready(function() {
-  $('#nextButton').on('click',function(){
-    console.log("forward");
+
+  $('#prev-button').on('click', function(){
+    if (currentStep > 0) {
+      currentStep--;
+      renderStep(currentStep);
+      // TODO: if at last step, disable button
+    }
   });
-  $('#prevButton').on('click',function(){
-    console.log("backward");
+  $('#next-button').on('click', function(){
+    if (currentStep < totalSteps-1) {
+      currentStep++;
+      renderStep(currentStep);
+      // TODO: if at last step, disable button
+    }
   });
+
+  renderStep(0);
 });
 
 </script>
