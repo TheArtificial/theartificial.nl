@@ -1,4 +1,9 @@
 
+<script src='js/Thing_broadcasts.js'></script>
+<script src='js/AppCloud.js'></script>
+<script src='js/Actors.js'></script>
+<script src="js/lottie.js"> </script>
+
 <div class="bleed walkthrough">
   <div class="flex container">
     <div class="col-4 thing-space">
@@ -8,8 +13,41 @@
     </div>
     <div class="col-4 flow-space">
       <div class="padded">
-        <img class="image1" src="images/layout.png">
-        <img class="image2"src="images/pokemongoplus/flow/App-Cloud.gif">
+
+        <div id="actors"></div>
+        <div id="step1"></div>
+        <div id="step2"></div>
+
+        <script>
+            var layout = {
+                container: document.getElementById('actors'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                animationData: Actors,
+            };
+
+            var anim1 = {
+                container: document.getElementById('step1'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                animationData: AppCloud,
+            };
+
+            var anim2 = {
+                container: document.getElementById('step2'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                animationData: ThingBroadcasts,
+            };
+
+            var anim;
+            anim = lottie.loadAnimation(layout);
+            anim = lottie.loadAnimation(anim1);
+            anim = lottie.loadAnimation(anim2);
+        </script>
 
       </div>
     </div>
