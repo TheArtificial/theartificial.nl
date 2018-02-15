@@ -1,7 +1,5 @@
 <script src="js/lottie.js"> </script>
 
-<script src="js/index.js"> </script>
-
 <script src='js/Actors.js'></script>
 <script src='js/AppCloud.js'></script>
 <script src='js/Thing_broadcasts.js'></script>
@@ -41,7 +39,7 @@
             container: document.getElementById('step1'),
             renderer: 'svg',
             loop: true,
-            autoplay: false,
+            autoplay: true,
             animationData: AppCloud,
         };
 
@@ -73,19 +71,35 @@
             container: document.getElementById('step5'),
             renderer: 'svg',
             loop: true,
-            autoplay: true,
+            autoplay: false,
             animationData: ThingOSVerified,
         };
-
+        var anim6 = {
+            container: document.getElementById('step6'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            animationData: ThingAppUnverified,
+        };
 
         var anim;
+         anim = lottie.loadAnimation(layout);
+         anim = lottie.loadAnimation(anim1);
+        // anim = lottie.loadAnimation(anim2);
+        // anim = lottie.loadAnimation(anim3);
+        // anim = lottie.loadAnimation(anim4);
+        //anim = lottie.loadAnimation(anim5);
+        //anim = lottie.loadAnimation(anim6);
 
-        anim = lottie.loadAnimation(layout);
-        anim = lottie.loadAnimation(anim1);
-        anim = lottie.loadAnimation(anim2);
-        anim = lottie.loadAnimation(anim3);
-        anim = lottie.loadAnimation(anim4);
-        anim = lottie.loadAnimation(anim5);
+        $(document).ready(function() {
+          $('#nextButton').on('click',function(){
+            console.log("forward");
+          });
+          $('#prevButton').on('click',function(){
+            console.log("backward");
+          });
+        });
+
         </script>
 
       </div>
@@ -102,7 +116,7 @@
   <div class="flex container walkthrough-controls">
     <div class="col-2">
       <div class="padded">
-        <a class="previous-button" href="#">
+        <button id="prevButton" class="previous-button">Previous </button>
           <?xml version="1.0" encoding="utf-8"?>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
@@ -121,7 +135,7 @@
     </div>
     <div class="col-2">
       <div class="padded">
-        <a class="next-button" href="pokemon-go-plus2.html">
+        <button id="nextButton" class="next-button">Next </button>
           <?xml version="1.0" encoding="utf-8"?>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
