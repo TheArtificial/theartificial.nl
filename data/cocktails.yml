@@ -1386,6 +1386,47 @@
     </ul>
     <p>In a pitcher, mash some of the mint leaves and lime slices to make them more aromatic. Add the rest of the ingredients and stir well, top it off with some ice. Garnish with mint leaves and lime slices and serve.</p>
 -
+  slug: winterbreak
+  name: Winter Break
+  date: 2018-02-16
+  glass: winterbreak
+  contents: winterbreak.svg
+  author: kamila
+  rating: 3
+  html:
+        <h4 class="recipe-section">Story</h4>
+        <p>If you like traditional mojitos and <a href="/cocktails/moscowmule.html" target="blank">Moscow mules</a>, you’ll love this drink. We decided to make it in the middle of cold, rainy Dutch autumn to help us forget about it and pretend like it is summer for a moment. Like some say, if you <a href="https://www.youtube.com/watch?v=Ys-KP8oPdvg" target="blank">don’t complain about the weather</a>in this country you'll never truly fit in.</p>
+    <h4 class="recipe-section">Ingredients</h4>
+      <ul>
+      <li>2 parts fresh lime juice</li>
+      <li>2 parts light rum</li>
+      <li>4 parts ginger beer</li>
+      <li>lime slices</li>
+      <li>mint leaves</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>In a pitcher, mash some of the mint leaves and lime slices to make them more aromatic. Add the rest of the ingredients and stir well, top it off with some ice. Garnish with mint leaves and lime slices and serve.</p>
+-
+  slug: thecarol
+  name: The Carol
+  date: 2018-02-01
+  glass: thecarol
+  contents: thecarol.svg
+  author: carol
+  rating: 3
+  html:
+    <h4 class="recipe-section">Story</h4>
+    <p>This week we're testing three out of five mixology self portraits for our July summer party. Stay tuned for Susana and Ariane's comming up in a few weeks!</p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>2 parts mango purée</li>
+      <li>1 part dark rum</li>
+      <li>sliced chilly peppers</li>
+      <li>lime wedge</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>  
+    <p>Blend fresh or frozen mango with water to create a thin purée. Pour into a shaker with ice, dark rum, and slices of chili peppers. Shake, strain, and serve with a squeeze of lime and extra peppers.</p>
+-
   slug: wg
   name: "W&G"
   date: 2016-04-08
