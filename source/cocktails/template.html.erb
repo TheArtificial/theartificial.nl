@@ -3,41 +3,44 @@
   <% end %>
   <section id="content">
 
-    <div class="flex container">
-      <div class="col-10 left-1 right-1 section-title">
-        <div class="padded center">
-        <h1 class="title"><%= cocktail.name %></h1>
-        <p class="date"><%= cocktail.date.strftime('%B %e, %Y') %></p>
-        <h3 class="bartender">Mixed by <%= link_to_person cocktail.author %></h3>
-        <img class="rating" src="images/rating<%= cocktail.rating %>.svg">
-        </div>
-      </div>
-    </div>
-
-    <div class="flex container padded-bottom recipe">
-      <div class="col-5 right-1">
-        <div class="padded">
-          <div class="glass" style="background-image: url(<%= "images/glass/#{cocktail.glass}.svg" %>);">
-            <img class="contents" src="<%= "images/contents/#{cocktail.contents}.gif" %>">
+    <div class="bleed bartender <%= cocktail.author %>">
+      <div class="flex container">
+        <div class="col-10 left-1 right-1 section-title">
+          <div class="padded center">
+          <h1 class="title"><%= cocktail.name %></h1>
+          <p class="date"><%= cocktail.date.strftime('%B %e, %Y') %></p>
+          <h3 class="bartender">Mixed by <%= link_to_person cocktail.author %></h3>
+          <img class="rating" src="images/rating<%= cocktail.rating %>.svg">
           </div>
         </div>
       </div>
 
-      <div class="col-6">
-        <div class="padded">
-          <%= cocktail.html.html_safe %>
+      <div class="flex container padded-bottom recipe">
+        <div class="col-5 right-1">
+          <div class="padded">
+            <div class="glass" style="background-image: url(<%= "images/glass/#{cocktail.glass}.svg" %>);">
+              <img class="contents" src="<%= "images/contents/#{cocktail.contents}.gif" %>">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="padded">
+            <%= cocktail.html.html_safe %>
+          </div>
         </div>
       </div>
+
+      <%
+        this_date = cocktail.date
+        this_name = cocktail.name
+        older_drinks = data.cocktails.select{ |c| (c.date <= this_date) && (c.date == this_date ? c.name < this_name : true) }
+        next_drink = older_drinks.max_by{ |c| [c.date, c.name] }
+        younger_drinks = data.cocktails.select{ |c| (c.date >= this_date) && (c.date == this_date ? c.name > this_name : true) }
+        prev_drink = younger_drinks.min_by{ |c| [c.date, c.name] }
+      %>
     </div>
 
-    <%
-      this_date = cocktail.date
-      this_name = cocktail.name
-      older_drinks = data.cocktails.select{ |c| (c.date <= this_date) && (c.date == this_date ? c.name < this_name : true) }
-      next_drink = older_drinks.max_by{ |c| [c.date, c.name] }
-      younger_drinks = data.cocktails.select{ |c| (c.date >= this_date) && (c.date == this_date ? c.name > this_name : true) }
-      prev_drink = younger_drinks.min_by{ |c| [c.date, c.name] }
-    %>
 
     <div class="flex container local-nav">
       <div class="col-2 right-3">

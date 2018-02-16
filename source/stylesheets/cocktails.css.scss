@@ -144,3 +144,20 @@
     border-image: url(/cocktails/images/frame-hover.svg) 30 30 30 30 fill stretch;
   }
 }
+
+.bleed.kamila { background-image: url(/cocktails/images/bartenders/kamila.png); }
+.bleed.natalia { background-image: url(/cocktails/images/bartenders/natalia.png); }
+.bleed.hans { background-image: url(/cocktails/images/bartenders/hans.png); }
+.bleed.ariane { background-image: url(/cocktails/images/bartenders/ariane.png); }
+.bleed.manjari { background-image: url(/cocktails/images/bartenders/manjari.png); }
+.bleed.nathalie { background-image: url(/cocktails/images/bartenders/nathalie.png); }
+.bleed.shannon { background-image: url(/cocktails/images/bartenders/shannon.png); }
+.bleed.carol { background-image: url(/cocktails/images/bartenders/carol.png); }
+.bleed.susana { background-image: url(/cocktails/images/bartenders/susana.png); }
+.bleed.katinka { background-image: url(/cocktails/images/bartenders/katinka.png); }
+
+.bleed.bartender {
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
