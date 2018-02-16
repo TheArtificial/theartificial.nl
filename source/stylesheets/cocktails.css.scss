@@ -125,8 +125,8 @@
 @media only screen and (min-device-width: 768px) {
 
   .legend {
-    border: 10px solid $lime;
-    border-radius: 2px;
+    border-image: url(/cocktails/images/frame.svg) 30 30 30 30 fill stretch;
+    border-width: 30px;
 
     td {
       padding: 8px;
@@ -136,11 +136,11 @@
   }
 
   .cocktail-preview {
-    border: 10px solid $lime;
-    border-radius: 2px;
+    border-image: url(/cocktails/images/frame.svg) 30 30 30 30 fill stretch;
+    border-width: 30px;
   }
 
   .cocktail-preview:hover {
-    border: 10px solid $darkest-grass;
+    border-image: url(/cocktails/images/frame-hover.svg) 30 30 30 30 fill stretch;
   }
 }
