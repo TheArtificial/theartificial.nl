@@ -109,9 +109,31 @@
   ul { padding-left: 0; }
 }
 
+.legend {
+  .line {
+    clear: both;
+    img {
+      display: inline-block;
+    }
+    p { display: inline-block;
+    }
+  }
+}
+
 /*media queries*/
 
 @media only screen and (min-device-width: 768px) {
+
+  .legend {
+    border: 10px solid $lime;
+    border-radius: 2px;
+
+    td {
+      padding: 8px;
+      color: $darkest-grass;
+    }
+
+  }
 
   .cocktail-preview {
     border: 10px solid $lime;

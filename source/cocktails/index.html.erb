@@ -17,6 +17,47 @@ title: Friday Cocktails
     </div>
 
     <div class="container packery">
+      <div class="col-4 packed">
+        <div class="card legend">
+          <div class="padded">
+            <table>
+              <tr>
+                <td><img src="images/legend/gin.png"></td>
+                <td>Gin</td>
+              </tr>
+              <tr>
+                <td><img src="images/legend/rum.png"></td>
+                <td>Rum</td>
+              </tr>
+              <tr>
+                <td><img src="images/legend/whiskey.png"></td>
+                <td>Whiskey</td>
+              </tr>
+              <tr>
+                <td><img src="images/legend/mezcal.png"></td>
+                <td>Mezcal</td>
+              </tr>
+              <tr>
+                <td><img src="images/legend/vodka.png"></td>
+                <td>Vodka</td>
+              </tr>
+              <tr>
+                <td><img src="images/legend/tequila.png"></td>
+                <td>Tequila</td>
+              </tr>
+              <tr>
+                <td><img src="images/legend/bubbles.png"></td>
+                <td>Bubbles</td>
+              </tr>
+              <tr>
+                <td><img src="images/legend/misc.png"></td>
+                <td>Everything else</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
       <% data.cocktails.sort_by{|c| c.date}.reverse.each_with_index do |c, i| %>
       <div class="col-4 packed">
         <% link_to "#{c.slug}.html" do %>
