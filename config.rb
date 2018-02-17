@@ -51,14 +51,9 @@ helpers do
     end
   end
 
-  def mustache(path, locals)
-		Mustache.render(mustache_template(path), locals)
-	end
-
   def mustache_template(path)
 		return File.open("source/#{path}") { |f| f.read }
 	end
-
 end
 
 set :site_url, 'https://theartificial.com/'
@@ -129,53 +124,23 @@ activate :search do |search|
   blog_date = /(?'YYYY'\d{4})[\/-](?'MM'\d{2})[\/-](?'DD'\d{2})/
 
   search.before_index = Proc.new do |to_index, to_store, resource|
-    # set section
+    # discern type by path
     path = resource.path
-    to_store[:path] = path
-    path_split = path.split('/',2)
-    section = path_split.first
-
     puts("Indexing: #{path}")
 
-    if section == 'blog'
-      to_store[:type] = 'article'
-      date_match = blog_date.match(path)
-      to_store[:date] = "#{date_match[:YYYY]}-#{date_match[:MM]}-#{date_match[:DD]}"
-      to_index[:username] = resource.data.author
-      to_store[:author] = to_index[:author] = person_name(resource.data.author)
-      to_store[:category] = resource.data.category
-      to_store[:image] = blog_preview_url(resource)
-      to_store[:summary] = simple_format(strip_tags(blog_article_for(resource).summary(180)))
-    elsif section == 'cocktails'
-      to_store[:type] = 'cocktail'
-      if resource.data.cocktail.nil?
-        puts "Not indexing #{resource.path}, no cocktail data found."
-        throw(:skip)
-      end
-      to_store[:date] = resource.data.cocktail.date.iso8601
-      to_index[:username] = resource.data.cocktail.author
-      to_store[:author] = to_index[:author] = person_name(resource.data.cocktail.author)
-      to_store[:glass] = "/cocktails/images/glass/#{resource.data.cocktail.glass}.png"
-      to_store[:contents] = "/cocktails/images/contents/#{resource.data.cocktail.contents}.gif"
-    elsif section == 'work'
-      to_store[:type] = 'work'
-      if resource.data.date.nil?
-        puts "Not indexing #{resource.path}, no date found."
-        throw(:skip)
-      end
-      to_store[:date] = resource.data.date.iso8601
-      to_store[:snippet] = resource.data.snippet
-      to_store[:color] = resource.data.color
-      to_store[:thumbnail] = "/work/images/#{resource.data.thumbnail}"
-    elsif section == 'ftfy'
-      to_store[:type] = 'ftfy'
-      if resource.data.date
-        to_store[:date] = resource.data.date.iso8601
-      end
-      to_index[:username] = resource.data.author
-      to_store[:author] = to_index[:author] = person_name(resource.data.author)
-      to_store[:image] = "/ftfy/images#{path[/\/.*(?=\..+$)/]}/#{resource.data.thumbnail}"
+    to_store[:path] = path
+
+    begin
+      card = Cards.card_for_resource(sitemap.app, resource)
+      to_store[:type] = card.class.name.split('::').last.downcase
+      to_store.merge! card.values_hash
+    rescue Exception => e
+      warn "Error creating card: #{e.message}"
+      throw(:skip)
     end
+
+    # to_index[:username] = card[:username]
+    # to_index[:author] = card[:author]
   end
 end
 

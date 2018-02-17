@@ -1,0 +1,59 @@
+var $placeholderCard = $("<%=escape_javascript( mustache_template('templates/_placeholder_card.html') ) %>");
+
+// returns a jQuery element for a given lunr.js-style document object
+function renderCard(doc) {
+  var type = doc.type;
+  var view = {};
+  //   url: doc.url,
+  //   title: doc.title
+  // };
+  // var post_date = new Date(doc.date);
+  // var formatted_date = monthName(post_date.getMonth()) + ' ' + post_date.getDate() + ', ' + post_date.getFullYear();
+  // view.date = formatted_date;
+  if (type == 'blog') {
+    view = doc
+    template = "<%=escape_javascript(Cards.template_for_type('blog')) %>";
+  } else if (type == 'cocktail') {
+    view = doc
+console.log('view for cocktail', view);
+    template = "<%=escape_javascript(Cards.template_for_type('cocktail')) %>";
+  } else if (type == 'work') {
+    view = doc
+    template = "<%=escape_javascript(Cards.template_for_type('work')) %>";
+  } else if (type == 'ftfy') {
+    view = doc
+    template = "<%=escape_javascript(Cards.template_for_type('ftfy')) %>";
+  } else {
+    template = "<%#=escape_javascript( mustache_template('templates/_unknown_card.mustache') ) %>";
+  }
+  return $(Mustache.render(template, view));
+}
+
+// add a card to a container
+function addCard($container, doc) {
+  var $newCard = $placeholderCard.clone();
+  var $newCard = renderCard(doc);
+
+  $container.append($newCard)
+    // add and layout newly appended items
+    .packery('appended', $newCard)
+    .packery('layout');
+  // re-layout on image load
+  $newCard.imagesLoaded().done( function( instance, image ) {
+    console.log("Image loaded", instance)
+    $container.packery('layout');
+  });
+  $container.packery();
+  console.log("Started card", doc.url);
+
+  // render card async
+  setTimeout(function(){
+    console.log("Rendered card", doc.url);
+    $newCard = renderCard(doc);
+  }, 1);
+}
+//
+// var monthNames = new Array("January","February","March","April","May"," June","July","August","September","October","November","December");
+// function monthName(n) {
+//   return(monthNames[n]);
+// }
