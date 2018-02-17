@@ -1211,6 +1211,23 @@
     </ul>
     <p>Fill a low glass with ice and add vodka and coffee liquor. Give the mixture a stir to combine the ingredients before adding the cream on top. Serve immediately to keep the layered effect.</p>
 -
+  slug: theredemtion
+  name: The Redemption
+  date: 2018-02-09
+  glass: theredemption
+  contents: miscgin_stemless
+  author: ariane
+  rating: 4
+  html: |
+    <p>Haunted by the memory of the <a href="https://theartificial.com/cocktails/frankenmousse.html" target="blank">Franken Mousse</a>, Ariane wanted to make it up to her co-workers. She played it safe by making one of her favorite cocktails, a variation of the Americano that is said to be invented in Florence, Italy. Great way to help us warming up in this wave of cold.</p>
+    <ul>
+      <li>1 part gin</li>
+      <li>1 part vermouth rosso </li>
+      <li>1 part Campari</li>
+      <li>Orange slice</li>
+    </ul>
+    <p>Fill a shaker with ice cubes, add Gin, Martini rosso and Campari.Stir gently, pour in a tumbler glass and garnish with a thinly sliced slice of orange.</p>
+-
   slug: theshannon
   name: The Shannon
   date: 2016-07-01
