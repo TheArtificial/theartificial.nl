@@ -14,6 +14,9 @@
 		<!-- basic SEO -->
 		<meta name="keywords" content="<%= yield_content :keywords %>" />
 		<meta name="description" content="<%= yield_content :description %>" />
+		<% if current_page.data.noindex == true %>
+    <meta name="robots" content="noindex">
+    <% end %>
 
 		<!-- Twitter summary card -->
 		<meta property="twitter:creator:id" content="1382202606" /> <!-- this is @veryartificial -->

@@ -124,7 +124,8 @@ activate :search do |search|
   blog_date = /(?'YYYY'\d{4})[\/-](?'MM'\d{2})[\/-](?'DD'\d{2})/
 
   search.before_index = Proc.new do |to_index, to_store, resource|
-    # discern type by path
+    throw(:skip) if resource.data.noindex == true
+
     path = resource.path
     puts("Indexing: #{path}")
 
