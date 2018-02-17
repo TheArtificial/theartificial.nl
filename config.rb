@@ -108,7 +108,7 @@ activate :search do |search|
   include Padrino::Helpers::FormatHelpers
   include Padrino::Helpers::TagHelpers
 
-  search.resources = ['blog/20', 'cocktails/', 'work/', 'ftfy/']
+  search.resources = ['blog/', 'cocktails/', 'work/', 'ftfy/']
   search.index_path = 'search/index.json'
   search.fields = {
     title:    {boost: 100, store: true, required: true},
@@ -120,8 +120,6 @@ activate :search do |search|
     content:  {boost: 75},
     url:      {index: false, store: true, required: true}
   }
-
-  blog_date = /(?'YYYY'\d{4})[\/-](?'MM'\d{2})[\/-](?'DD'\d{2})/
 
   search.before_index = Proc.new do |to_index, to_store, resource|
     throw(:skip) if resource.data.noindex == true
