@@ -2,14 +2,16 @@
   <a href="{{url}}">
     <div class="card unknown">
       <div class="meta center">
-        <div class="label">MYSTERY CONTENT</div>
+        <div class="label">unknown</div>
+{{#title}}
         <div class="small-title">{{title}}</div>
+{{/title}}
 {{#author}}
         <div class="small-body author">{{author}}</div>
 {{/author}}
-{{#date}}
-        <div class="small-body date">{{date}}</div>
-{{/date}}
+{{#human_date}}
+        <div class="small-body date">{{human_date}}</div>
+{{/human_date}}
       </div>
     </div>
   </a>

@@ -19,7 +19,9 @@ class Cocktail < Mustache
     @app = app
     self.template_file = "source/#{TEMPLATE_PATH}"
 
-    context[:date] = resource.data.cocktail.date.strftime('%B %e, %Y')
+    context[:url] = resource.url
+    context[:date] = resource.data.cocktail.date.iso8601
+    context[:human_date] = resource.data.cocktail.date.strftime('%B %e, %Y')
     context[:title] = resource.data.title
     context[:author] = person_name(resource.data.cocktail.author, @app.sitemap)
     context[:glass_url] = "/cocktails/images/glass/#{resource.data.cocktail.glass}.png"

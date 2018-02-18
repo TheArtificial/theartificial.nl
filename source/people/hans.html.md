@@ -2,6 +2,7 @@
 layout: person_layout
 current: true
 title: Hans Gerwitz
+date: 2013-04-08
 linkedin: gerwitz
 twitter: gerwitz
 personal: http://hans.gerwitz.com/

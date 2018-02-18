@@ -2,9 +2,6 @@
 title: Feed
 noindex: true
 ---
-<% content_for :javascript_tags do %>
-	<%= javascript_include_tag 'lunr', 'mustache','cards', 'search', defer: true %>
-<% end %>
 
 <section id="content">
 	<div class="bleed">
@@ -19,14 +16,7 @@ noindex: true
 	</div>
 
 	<div class="container packery padded bottom" id="results">
-
+		<%= render_cards(all_the_cards) %>
 	</div>
 
 </section>
-
-<script>
-  $(document).ready(function() {
-		var $results = $('#results');
-		getQuery('*', $results);
-  });
-</script>
