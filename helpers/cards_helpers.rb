@@ -6,6 +6,12 @@ module CardsHelpers
   end
 
   def render_cards(cards, sort_by = :date)
+
+    if config[:environment] != :development
+      # Modifying in-place like this is bad form, but oh well
+      cards.reject!{|c| c.class != Cards::Unknown}
+    end
+
     case sort_by
     when :date
       cards.sort_by{|c| c.context[:date]}.collect{|c| c.render}.reverse.join.html_safe
