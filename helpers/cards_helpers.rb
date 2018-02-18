@@ -9,7 +9,7 @@ module CardsHelpers
 
     if config[:environment] != :development
       # Modifying in-place like this is bad form, but oh well
-      cards.reject!{|c| c.class != Cards::Unknown}
+      cards.reject!{|c| c.class == Cards::Unknown}
     end
 
     case sort_by
