@@ -1143,13 +1143,16 @@
   author: hans
   rating: 5
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>This week we're testing three out of five mixology self portraits for our July summer party. Stay tuned for Susana and Ariane's comming up in a few weeks!</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>1 part dry gin</li>
       <li>2 parts ginger beer</li>
       <li>.5 parts lime juice</li>
       <li>fresh mint</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Mix a dry gin with muddled mint and ice. Top with ginger beer and add lime juice to tase, then garnish with a fresh spring of mint.</p>
 -
   slug: thekatinka
@@ -1160,7 +1163,9 @@
   author: katinka
   rating: 5
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>I wanted to create something fresh yet nostalgic. Being reminded of my childhood where my friends and I sat out in the sun eating fruits and having no care in the world, drawing on the peels and giving them faces, I searched for something watermelon-y. This led me to finding this lovely cocktail, 'The Merchant's Wife', which I like to believe is based on the poem "The River-Merchant’s Wife: A Letter”, by Ezra Pound. In this poem the character looks back to the past with fond memories in a sweet and charming way.</p><p>What’s not to love?</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 chunks watermelon</li>
       <li>1 part gin</li>
@@ -1169,6 +1174,7 @@
       <li>.5 parts Aperol </li>
       <li>.5 parts lemon juice</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Muddle the watermelon chunks and simple syrup together in a cocktail shaker. Add the remaining ingredients, fill shaker with ice, and shake vigorously. Strain over into a wine glass filled with crushed ice and serve garnished with a wedge of watermelon.</p>
 -
   slug: thenatalia
@@ -1179,7 +1185,10 @@
   author: natalia
   rating: 5
   html: |
-    <p></p>
+    <h4 class="recipe-section">Story</h4>
+    <p>Every opportunity I have I try to convince people to try mezcal. Many have the idea that it tastes like tequila, and that's why they are not interested. Who does not have a bad memory (or lack of) with tequila? The big difference is that mezcal has a smoky taste and you drink it slow. Some hate it but some really fall in love with the taste.</p>
+    <p>Chili is something you grow up with in México and although we do not eat as many jalapeños as people think it's what you can get here, that still gives it a spicy and rich flavor to the drink.</p>
+    <h4 class="recipe-section">ingredients</h4>
     <ul>
       <li>1 part mezcal </li>
       <li>1 part ginger ale</li>
@@ -1189,6 +1198,7 @@
       <li>jalapeño pepper </li>
       <li>cilantro or mint</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Grill the pineapple on a pan flipping once, until charred on both sides. Remove from pan and let cool. <br><br>
     Place the grilled pineapple, jalapeño, and cilantro in a pitcher and using a muddler, crush fruit and herbs until broken down. <br><br>
     Add mezcal, lime juice, and syrup. Stir well and pour into glasses filled with ice, to serve.</p>
@@ -1201,7 +1211,9 @@
   author: [ariane, "Parizad Saremi"]
   rating: 4
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>A collaboration between Ariane and Parizad equals the Pariane! It's a strong drink, but the pear juice makes it easy to drink.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 parts bourbon</li>
       <li>2 parts pear juice</li>
@@ -1210,6 +1222,7 @@
       <li>a few dashes of The Bitter Housewife Cardamom Bitters</li>
       <li>a pear slice for garnish</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Stir all ingredients in a mixing glass filled with ice. Strain into a glass and serve with a slice of fresh pear.</p>
 -
   slug: theparizad
@@ -1220,12 +1233,15 @@
   author: "Parizad Saremi"
   rating: 4
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>A good chunk of our tiny office is out today, so we're making it a point to try the Parizad again in the near future! This drink is based on the classic White Russian. Proportions are vital, but the ingredients themselves can be swapped out for different variations.</p>
+    <h4 class="recipe-section">ingredients</h4>
     <ul>
       <li>2 parts vodka</li>
       <li>1 part coffee liquor</li>
       <li>1 part cream</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Fill a low glass with ice and add vodka and coffee liquor. Give the mixture a stir to combine the ingredients before adding the cream on top. Serve immediately to keep the layered effect.</p>
 -
   slug: theredemtion
@@ -1256,13 +1272,16 @@
   author: shannon
   rating: 5
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>This week we're testing three out of five mixology self portraits for our July summer party. Stay tuned for Susana and Ariane's comming up in a few weeks!</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 parts scotch whiskey</li>
       <li>1 part maraschino liquor</li>
       <li>1 dash of angostura bitters</li>
       <li>cherry for garnish</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Combine all ingredients in a chilled glass. garnish with a fresh cherry before serving.</p>
 -
   slug: thesusana
@@ -1273,13 +1292,16 @@
   author: susana
   rating: 5
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>What started as a brandy based drink only became more delicious with a switch to amaretto. A typical Susana drink will always make you wonder if it’s a cocktail or really just dessert. Cheers!</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 parts amaretto</li>
       <li>1 part Bailey’s Chocolat Luxe</li>
       <li>1 part cream</li>
       <li>Pocky stick for garnish</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Combine amaretto, Bailey’s, and cream. Shake with ice. Pour over ice and garnish with a Pocky stick. Infuse amaretto with vanilla beans for extra flavor.</p>
 -
   slug: thetrudeau
@@ -1290,12 +1312,15 @@
   author: shannon
   rating: 5
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>For a drink so strong, spicy, and Canadian, we had to name this drink after <a href="http://www.telegraph.co.uk/news/2017/03/01/photos-young-shirtless-justin-trudeau-send-internet-frenzy/" target="blank">Justin Trudeau</a>.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 parts whiskey</li>
       <li>.5 parts maple syrup</li>
       <li>a splash of firewater bitters</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Stir maple syrup into whiskey until well combined. Pour into a chilled glass and drop a few splashes of firewater bitters in.</p>
 -
   slug: tipsyandtangy
@@ -1306,7 +1331,9 @@
   author: shannon
   rating: 5
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>We tried an amazing drink at the Pulitzer bar yesterday that got us inspired. Disguised as a light, refreshing drink, this one got us all pretty tipsy with just one (or half) cocktail!</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>1 part Tanqueray Gin</li>
       <li>1 part triple sec</li>
@@ -1314,6 +1341,7 @@
       <li>orange slices</li>
       <li>a fresh sprig of mint</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Pour gin, triple sec, and soda water over ice. Squeeze in some fresh orange juice and stir with mint.</p>
 -
   slug: twistedamberdream
@@ -1324,7 +1352,9 @@
   author: nathalie
   rating: 2
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>A drink that's easier on the eyes than on the tongue. This variation on the Amber Dream makes a beautiful gradient, but unless you're a mint and absinthe fan, perhaps not our top recommendation.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>1 part Bols peppermint green liqueur</li>
       <li>2 parts whiskey</li>
@@ -1332,7 +1362,8 @@
       <li>a splash of absinthe</li>
       <li>a fresh sprig of mint</li>
     </ul>
-    <p>Put fresh mint in a tall glass with ice. Add peppermint liqueur, whiskey, ginger ale, and absinth in that order for a nice gradient. Stir with mint before drinking.</p>
+    <h4 class="recipe-section">Method</h4>
+      <p>Put fresh mint in a tall glass with ice. Add peppermint liqueur, whiskey, ginger ale, and absinth in that order for a nice gradient. Stir with mint before drinking.</p>
 -
   slug: vitaminc
   name: Vitamin C
@@ -1342,13 +1373,16 @@
   author: ariane
   rating: 4
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>Medication and doctor visits couldn't cure Ariane of her untimely summer cold, but maybe whiskey and citrus juices will!</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 parts bourbon whiskey</li>
       <li>1 part lemon lime juice</li>
       <li>1.5 parts orange juice</li>
       <li>.5 parts tangerine juice</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Shake all ingredients together with ice. Strain and pour into a wide glass and garnish with a citrus slice.</p>
 -
   slug: watermelonsangria
@@ -1358,24 +1392,27 @@
   contents: misc_tonic
   author: carol
   rating: 4
-  html:
+  html: |
+    <h4 class="recipe-section">Story</h4>
     <p>A drink on the lighter side compared to our usual cocktails in preparation for next week's color party! Spoiler, we're planning a cocktail for each color of the rainbow. Stay tuned!</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>3 parts white wine</li>
       <li>1 part triple sec</li>
       <li>fresh watermelon</li>
       <li>fresh limes</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Pour ingredients into a pitcher with ice. Chop watermelon and limes and mix well.</p>
 -
   slug: winterbreak
   name: Winter Break
-  date: 2018-02-16
+  date: 2018-01-17
   glass: winterbreak
   contents: winterbreak
   author: kamila
   rating: 3
-  html:
+  html: |
     <h4 class="recipe-section">Story</h4>
     <p>If you like traditional mojitos and <a href="/cocktails/moscowmule.html" target="blank">Moscow mules</a>, you’ll love this drink. We decided to make it in the middle of cold, rainy Dutch autumn to help us forget about it and pretend like it is summer for a moment. Like some say, if you <a href="https://www.youtube.com/watch?v=Ys-KP8oPdvg" target="blank">don’t complain about the weather</a>in this country you'll never truly fit in.</p>
     <h4 class="recipe-section">Ingredients</h4>
@@ -1388,26 +1425,7 @@
     </ul>
     <h4 class="recipe-section">Method</h4>
     <p>In a pitcher, mash some of the mint leaves and lime slices to make them more aromatic. Add the rest of the ingredients and stir well, top it off with some ice. Garnish with mint leaves and lime slices and serve.</p>
--
-  slug: thecarol
-  name: The Carol
-  date: 2018-02-01
-  glass: thecarol
-  contents: thecarol
-  author: carol
-  rating: 3
-  html:
-    <h4 class="recipe-section">Story</h4>
-    <p>This week we're testing three out of five mixology self portraits for our July summer party. Stay tuned for Susana and Ariane's comming up in a few weeks!</p>
-    <h4 class="recipe-section">Ingredients</h4>
-    <ul>
-      <li>2 parts mango purée</li>
-      <li>1 part dark rum</li>
-      <li>sliced chilly peppers</li>
-      <li>lime wedge</li>
-    </ul>
-    <h4 class="recipe-section">Method</h4>
-    <p>Blend fresh or frozen mango with water to create a thin purée. Pour into a shaker with ice, dark rum, and slices of chili peppers. Shake, strain, and serve with a squeeze of lime and extra peppers.</p>
+
 -
   slug: wg
   name: "W&G"
@@ -1417,10 +1435,13 @@
   author: carol
   rating: 3
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>A simple whiskey and ginger ale, with a dash of honey chamomile bitters from my lovely Dram Apothecary bitters set. Yes, I know, mixing whiskey and ginger ale is blasphemy in the cocktail making world, but it will always have a special place in my heart (stomach).</p>
-    <ul>
+    <h4 class="recipe-section">Ingredients</h4>
+      <ul>
       <li>1 part whiskey</li>
       <li>2 parts ginger ale</li>
       <li>a dash of honey chamomile bitters</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Pour ingredients in a glass with ice and stir. A couple drops of honey chamomile bitters gives the drink a slightly herby taste.</p>
