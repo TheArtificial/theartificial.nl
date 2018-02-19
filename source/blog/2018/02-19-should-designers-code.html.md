@@ -3,7 +3,6 @@ title: 'Artificial Conversations: Should Designers Code'
 category: thoughts
 tags: monday, morning, conversation, code, design
 author: shannon
-published: false
 ---
 
 This week's Monday morning conversation revolved around Alan Cooper's four-part article: [Should Designers Code?](https://medium.com/@MrAlanCooper/should-designers-code-f7b745b8cd03)
