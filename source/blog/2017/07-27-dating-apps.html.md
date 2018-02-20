@@ -3,6 +3,8 @@ title: 'A Dating App Analysis'
 category: process
 tags: review, dating, trends
 author: [natalia, ariane]
+preview: preview@2x.png
+masthead: masthead.png
 ---
 
 In this day and age, digital products help us to be more efficient, more social, more self-promoting, and more informed. We can hop online to find everything from the best-performing power drill to the perfect piece of pre-loved furniture. With our always-connected, always-needing culture, it’s no surprise the number of products and services that are devoted to finding the right person for the right relationship has increased.
