@@ -62,15 +62,13 @@ title: Friday Cocktails
       <div class="col-4 packed">
         <% link_to "#{c.slug}.html" do %>
           <div class="card cocktail-preview">
-            <div class="padded">
-              <div class="glass" style="background-image: url(<%= "images/glass/#{c.glass}.svg" %>);">
-                <img class="contents" src="<%= "images/contents/#{c.contents}.gif" %>">
-              </div>
+            <div class="glass" style="background-image: url(<%= "images/glass/#{c.glass}.svg" %>);">
+              <img class="contents" src="<%= "images/contents/#{c.contents}.gif" %>">
+            </div>
 
-              <div class="details center">
-                <h2 class="drinkname"><%= c.name %></h2>
-                <p class="date"><%= c.date.strftime('%B %e, %Y') %></p>
-              </div>
+            <div class="details center">
+              <h2 class="drinkname"><%= c.name %></h2>
+              <p class="date"><%= c.date.strftime('%B %e, %Y') %></p>
             </div>
           </div>
         <% end %>
