@@ -3,6 +3,8 @@ title: 'Thoughts That Resonate'
 category: thoughts
 tags: resonate, conference
 author: shannon
+preview: preview@2x.png
+masthead: masthead.png
 ---
 
 We've just wrapped up a week in Belgrade, a majority of which was spent at [Resonate](http://resonate.io/2017/). Aside from the meta-thoughts about how to run a conference – presentation synopses are helpful, panelists should at least appear to be aware of the panel's topic, and venues should have ample space and WiFi – there were a number of fun facts and provocations that we'll be taking home with us.
