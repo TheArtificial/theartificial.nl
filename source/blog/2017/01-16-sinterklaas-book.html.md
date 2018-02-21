@@ -3,6 +3,8 @@ title: "The Artificial Book of Cocktails"
 category: process
 tags: cocktails, book, design, collage
 author: natalia
+preview: preview@2x.png
+masthead: masthead.png 
 ---
 
 This year we decided to treat our clients and friends to a very special [Sinterklaas](/blog/2014/12/05/stnicholasday.html) gift, a collection of our Friday cocktail recipes. READMORE
