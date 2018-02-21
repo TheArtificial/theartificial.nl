@@ -28,8 +28,8 @@
   slug: aperolspritz
   name: Aperol Spritz
   date: 2016-04-29
-  glass: nederlandseoranje
-  contents: champagnemisc_wine
+  glass: aperolspritz
+  contents: aperolspritz
   author: susana
   rating: 3
   html: |
@@ -785,7 +785,7 @@
   name: Milky Sticks
   date: 2016-02-19
   glass: milkysticks
-  contents: miscrum_lowball
+  contents: milkysticks
   author: susana
   rating: 3
   html: |
@@ -998,7 +998,7 @@
   name: Pastel Summer
   date: 2017-07-21
   glass: pastelsummer
-  contents: tequila_martini
+  contents: pastelsummer
   author: ariane
   rating: 4
   html: |
@@ -1102,7 +1102,9 @@
   author: kamila
   rating: 3
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>To welcome our new intern, we put Kamila to the bartending test, and what we got was shots of straight vodka paired with an amazing homemade lemonade! Na zdrowie!</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>1 part pure vodka</li>
       <li>For the lemonade:</li>
@@ -1110,6 +1112,7 @@
       <li>2 chopped lemons</li>
       <li>a few dashes of sugar</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Pour vodka into a shot glass. Don't mix with anything, and drink all at once. Be bold, as this is the only ingredient. We are no strangers to vodka flavor, but we also know that shots of pureness can be difficult, so it's nice to have something on the side. To change the taste and hydrate, always have a tall glass of lemonade on hand for when your vodka shot arrives. Mix and don't make it too sweet.</p>
 -
   slug: rootbeerfloat
@@ -1120,12 +1123,15 @@
   author: shannon
   rating: 4
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>We're introducing Ariane to the sweet, sweet taste of spiked ice cream cocktails. Needless to say, the ice cream part was our favorite.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>1 part vanilla vodka</li>
       <li>2 parts root beer</li>
       <li>2 heaping scoops of vanilla ice cream</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Fill a tall glass with ice cream. Pour vanilla vodka in and top with root beer. Mix with a straw and serve immediately!</p>
 -
   slug: sazerac
@@ -1136,7 +1142,9 @@
   author: hans
   rating: 3
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>This classic drink is originally from New Orleans and uses bitters from one of our favorite sources – Scrappy's bitters.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>1 part rye whiskey</li>
       <li>a dash of simple syrup</li>
@@ -1144,6 +1152,7 @@
       <li>lemon for garnish</li>
       <li>absinthe for glass rinse</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Rinse glass with absinthe for aroma. Stir and strain contents into the glass and garnish with a lemon peel.</p>
 -
   slug: sgroppino
@@ -1154,12 +1163,15 @@
   author: shannon
   rating: 4
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>Part two of today's weather drinking game. A sgroppino for those rare but loved sunny moments, and a <a href="/cocktails/dutchandstormy.html">Dutch twist on the Dark and Stormy</a> cocktail for the rest.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 parts prosecco</li>
       <li>1 part Limoncello</li>
       <li>1 scoop lemon sorbet</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Pour prosecco and limoncello in a wide glass and stir. Drop a generous scoop of lemon sorbet on top and wait for sun!</p>
 -
   slug: smokeandspritz
@@ -1170,7 +1182,9 @@
   author: natalia
   rating: 4
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>This deliciously smokey drink is nicely balanced with the taste of Aperol. A great way to kick off a cold weekend!</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>1 part mezcal</li>
       <li>1 part Aperol</li>
@@ -1179,6 +1193,7 @@
       <li>2 parts of club soda</li>
       <li>lemon peel for garnish</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Pour mezcal, aperol, and lemon or lime juice into a shaker with ice. Shake well then pour into a wide glass. Top with club soda, a dash of Angostura bitters, and garnish with a lemon peel.</p>
 -
   slug: smokednotspiced
@@ -1230,13 +1245,16 @@
   author: shannon
   rating: 4
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>A light and summery drink before we head off to a sunny weekend. If you're looking for the quicker drink option, we tried round two with just lemonade and it still turns out pretty nice.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 parts Prosecco</li>
       <li>1 fresh lemon</li>
       <li>0.5 part sugar</li>
       <li>A splash of Angostura bitters</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Muddle lemons, sugar, and bitters in a glass until lemon is soft. Pour in a wine glass and top with prosecco.</p>
 -
   slug: sweetmidnight
@@ -1247,11 +1265,14 @@
   author: shannon
   rating: 3
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>It's our first drink of the new year together, so we decided to start off with an experiment. This dark and sweet drink inspired many gory names (some insisted bloody was the best adjective), but we decided to keep it clean and so we present to you, Sweet Midnight.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <p>1 part gin<br>
         1 part blueberry blackcurrant cordial<br>
         1 splash simple syrup<br>
         1 dash cinnamon</p><br>
+    <h4 class="recipe-section">Method</h4>
     <p>Combine all ingredients in a shaker and pour over ice.<br> Garnish with berries.</p>
 -
   slug: theariane
@@ -1262,7 +1283,9 @@
   author: ariane
   rating: 5
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>Today we’re testing out Ariane’s party cockail, and what says Ariane more than tequila on a Wednesday afternoon? The good news is we had plenty of delicious grilled corn, cheese, and veggies to get us through the rest of the workday.</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 parts strawberry and basil infused tequila</li>
       <li>1 part orange liqueur</li>
@@ -1270,6 +1293,7 @@
       <li>a squeeze of lime</li>
       <li>basil for garnish</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Infuse tequila with strawberries and basil for two days. Blend infused tequila with orange liqueur, lime, simple syrup, and ice. Garnish with basil and a strawberry.</p>
 -
   slug: thecarol
@@ -1280,13 +1304,16 @@
   author: carol
   rating: 5
   html: |
+    <h4 class="recipe-section">Story</h4>
     <p>This week we're testing three out of five mixology self portraits for our July summer party. Stay tuned for Susana and Ariane's comming up in a few weeks!</p>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 parts mango purée</li>
       <li>1 part dark rum</li>
       <li>sliced chili peppers</li>
       <li>lime wedge</li>
     </ul>
+    <h4 class="recipe-section">Method</h4>
     <p>Blend fresh or frozen mango with water to create a thin purée. Pour into a shaker with ice, dark rum, and slices of chili peppers. Shake, strain, and serve with a squeeze of lime and extra peppers.</p>
 -
   slug: lavenderpearlemonade
@@ -1524,7 +1551,7 @@
   name: Twisted Amber Dream
   date: 2017-07-14
   glass: twistedamberdream
-  contents: miscwhiskey_highball
+  contents: twistedamberdream
   author: nathalie
   rating: 2
   html: |
