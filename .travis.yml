@@ -6,11 +6,15 @@ rvm: 2.3.4 # pre-installed
 cache: bundler
 jobs:
   include:
-    - script:
+    - stage: staging
+      if: branch = master
+      script:
       - bundle exec middleman build
-    - if: branch = master
+      after_success:
+      - bundle exec s3_website push --config-dir=.s3_website-staging
+    - stage: release
+      if: branch = release
       script:
-      - bundle exec s3_website push --config-dir=.s3_website-stage
-    - if: branch = release
-      script:
+      - bundle exec middleman build
+      after_success:
       - bundle exec s3_website push --config-dir=.s3_website-release
