@@ -8,7 +8,9 @@
 
 As seen at https://theartificial.com/ (and .nl, natuurlijk)
 
-[![build status](https://api.travis-ci.org/TheArtificial/theartificial.nl.svg?branch=release)](https://travis-ci.org/TheArtificial/theartificial.nl)
+`master` branch status: [![build Status](https://api.travis-ci.org/TheArtificial/theartificial.nl.svg?branch=master)](https://travis-ci.org/TheArtificial/theartificial.nl)
+
+`release` branch status: [![build status](https://api.travis-ci.org/TheArtificial/theartificial.nl.svg?branch=release)](https://travis-ci.org/TheArtificial/theartificial.nl)
 
 ## Setup
 
