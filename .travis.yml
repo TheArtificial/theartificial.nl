@@ -12,8 +12,8 @@ deploy:
   on:
     branch: master
   provider: s3
-  access_key_id: $AWS_S3_ACCESS_KEY_ID
-  secret_access_key: $AWS_S3_SECRET_ACCESS_KEY
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: "staging.theartificial.com"
   region: eu-west-1
   local-dir: build
