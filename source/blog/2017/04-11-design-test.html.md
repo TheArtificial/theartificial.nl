@@ -3,6 +3,8 @@ title: 'Creating a Design Test for Prospective Candidates'
 category: process
 tags: agency, design, test, interview, hiring
 author: carol
+preview: preview@2x.png 
+masthead: masthead.png
 ---
 
 For a single design position, it’s not unusual to look through a hundred candidates’ portfolios and résumés just to get to five interviews. Even with strong candidates, making the step from serious candidate to full-time hire can still be an intimidating decision to make. How does a company decide that a person has the right skills and a process that will work with the rest of the team? We decided to create a design test to better analyze the candidates we like to make sure they’re a good fit for us…and that we’re a good fit for them!
