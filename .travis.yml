@@ -4,17 +4,16 @@ rvm: 2.3.4 # pre-installed
 # branches:
 #   only: release
 cache: bundler
-script:
-- bundle exec middleman build
-after_success:
-- bundle exec s3_website push
-deploy:
-  on:
-    branch: master
-  provider: s3
-  access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
-  bucket: "staging.theartificial.com"
-  region: eu-west-1
-  local-dir: build
-  skip_cleanup: true
+jobs:
+  include:
+    - stage: build
+      script:
+      - bundle exec middleman build
+    - stage: stage
+      if: branch = master
+      script:
+      - bundle exec s3_website push --config-dir=.s3_website-stage
+    - stage: release
+      if: branch = release
+      script:
+      - bundle exec s3_website push --config-dir=.s3_website-release

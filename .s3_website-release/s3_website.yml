@@ -5,8 +5,8 @@ redirects:
   designfordeath.html: /laboratory/futureofdeath.html
   travelguide/: /cityguide/
 
-# s3_id: AWS_S3_ACCESS_KEY_ID
-# s3_secret: AWS_S3_SECRET_ACCESS_KEY
+# s3_id: AWS_ACCESS_KEY_ID
+# s3_secret: AWS_SECRET_ACCESS_KEY
 
 s3_bucket: theartificial.com
 s3_endpoint: eu-west-1
