@@ -1,19 +1,15 @@
 sudo: false
 language: ruby
 rvm: 2.3.4 # pre-installed
-# branches:
-#   only: release
 cache: bundler
 jobs:
   include:
-    - stage: staging
-      if: branch = master
+    - if: branch = master
       script:
       - bundle exec middleman build
       after_success:
       - bundle exec s3_website push --config-dir=.s3_website-staging
-    - stage: release
-      if: branch = release
+    - if: branch = release
       script:
       - bundle exec middleman build
       after_success:
