@@ -1,4 +1,4 @@
-site: build
+site: ../build
 
 concurrency_level: 5
 

@@ -1,4 +1,4 @@
-site: build
+site: ../build
 
 redirects:
   3dsystems.html: /work/3DSystems-consumer.html
