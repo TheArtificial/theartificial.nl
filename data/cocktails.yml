@@ -188,7 +188,7 @@
   name: Bubbles
   date: 2017-04-13
   glass: bubbles
-  contents: champagnegin_champagne
+  contents: bubbles
   author: shannon
   rating: 3
   html: |
@@ -278,7 +278,7 @@
   html: |
     <h4 class="recipe-section">Story</h4>
     <p>To celebrate that the print proof of The Artificial City Guide (stay tuned) arrived on time, and that we were all feeling better after a week of the horrible flu. We decided to make grapefruit juice more drinkable by mixing it with bubbles and mezcal, what a great source of vitamin c! </p>
-    <h4 class="recipe-section">Ingredients/h4>
+    <h4 class="recipe-section">Ingredients</h4>
     <ul>
       <li>2 parts sparkling wine or champagne</li>
       <li>1 part mezcal</li>
@@ -312,7 +312,7 @@
   name: Faded Dreams
   date: 2018-01-05
   glass: fadeddreams
-  contents: vodka_lowball
+  contents: fadeddreams
   author: natalia
   rating: 2
   html: |
@@ -519,7 +519,7 @@
   name: Hot or Not
   date: 2017-11-23
   glass: hotornot
-  contents: miscwhiskey_mug
+  contents: hotornot
   author: natalia
   rating: 3
   html: |
@@ -976,7 +976,7 @@
   name: Partificial
   date: 2018-01-19
   glass: partificial
-  contents: miscwhiskey_stemless
+  contents: partificial
   author: hans
   rating: 5
   html: |
@@ -1200,7 +1200,7 @@
   name: Smoked not Spiced
   date: 2018-01-26
   glass: smokednotspiced
-  contents: misc_lowball
+  contents: smokednotspiced
   author: manjari
   rating: 4
   html: |
@@ -1221,7 +1221,7 @@
   name: Smoked Strawberry
   date: 2018-01-12
   glass: smokedstrawberry
-  contents: mezcal_lowball
+  contents: smokedstrawberry
   author: shannon
   rating: 4
   html: |
@@ -1447,11 +1447,11 @@
     <h4 class="recipe-section">Method</h4>
     <p>Fill a low glass with ice and add vodka and coffee liquor. Give the mixture a stir to combine the ingredients before adding the cream on top. Serve immediately to keep the layered effect.</p>
 -
-  slug: theredemtion
+  slug: theredemption
   name: The Redemption
   date: 2018-02-09
   glass: theredemption
-  contents: miscgin_stemless
+  contents: theredemption
   author: ariane
   rating: 4
   html: |
