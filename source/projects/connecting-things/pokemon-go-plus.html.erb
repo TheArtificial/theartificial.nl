@@ -68,6 +68,7 @@
 
     <div class="col-10 right-1 left-1">
       <div class="padded">
+        <p> Pokémon GO Plus is an optional peripheral for the famous augmented reality game Pokémon GO. The accessory looks like a map pin in the shape of a Pokéball. Thanks to a button and lights feedback, the object allows the user to catch Pokémons, check in at Pokéstops, and gain steps to hatch eggs, all of these without using the phone's screen.</p>
         <h2 class="subtitle"><span class="sentence">The connection process is </span>easy</h2>
         <p> The trickiest part for the user is to navigate to the Pokémon GO Plus section that is a little hidden in the settings of the app, accessible from the Poké ball icon. Once in the Pokémon GO Plus menu, pressing the button on the object will make a blue light pulse to indicate that the object broadcasts and it will appear under available devices in the app. To pair and connect simultaneously the user just needs to tap one more time, but this time in the app, on the item in the list. So enjoying catching Pokémon with this gadget is just 5 taps away.</p>
         <h2 class="subtitle"><span class="sentence">The security is </span>more than enough</h2>
@@ -86,44 +87,44 @@ var $thing = $('#thing');
 var $network = $('#network');
 var $ui = $('#ui');
 var $caption = $('#caption');
-
+// variable that will increment through the steps
 var currentStep = 0;
 
 // this is our script
 var flowSteps = [
   {
     caption: "App logs in to account on Cloud",
-    thingImg: "images/pokemongoplus/thing.png",
+    thingImg: "images/pokemongoplus/thing/blue.png",
     networkAnimations: ["Actors.json", "AppCloud.json"],
     screenImg: "images/pokemongoplus/screen.png"
   },
   {
     caption: "Thing begins broadcasting Bluetooth",
-    thingImg: "images/pokemongoplus/thing.png",
+    thingImg:  "images/pokemongoplus/thing/blue.png",
     networkAnimations: ["Actors.json", "Thing_broadcasts.json"],
     screenImg: "images/pokemongoplus/screen.png"
   },
   {
     caption: "OS listens for Bluetooth",
-    thingImg: "images/pokemongoplus/thing.png",
+    thingImg:  "images/pokemongoplus/thing/off.png",
     networkAnimations: ["Actors.json", "OS_listens.json"],
     screenImg: "images/pokemongoplus/screen.png"
   },
   {
     caption: "Thing and OS pair with Bluetooth",
-    thingImg: "images/pokemongoplus/thing.png",
+    thingImg:  "images/pokemongoplus/thing/blue.png",
     networkAnimations: ["Actors.json", "ThingOS_pairs.json"],
     screenImg: "images/pokemongoplus/screen.png"
   },
   {
     caption: "Thing and OS connect",
-    thingImg: "images/pokemongoplus/thing.png",
+    thingImg:  "images/pokemongoplus/thing/blue.png",
     networkAnimations: ["Actors.json", "ThingOS_verified.json"],
     screenImg: "images/pokemongoplus/screen.png"
   },
   {
     caption: "App and Thing open software connection",
-    thingImg: "images/pokemongoplus/thing.png",
+    thingImg:  "images/pokemongoplus/thing/blue.png",
     networkAnimations: ["Actors.json", "ThingApp_unverified.json"],
     screenImg: "images/pokemongoplus/screen.png"
   },
@@ -160,12 +161,24 @@ function setAnimationLayers(layers) {
 // make one happen
 function renderStep(number) {
   var step = flowSteps[number];
+  var currentImage = step.thingImg;
+
   // TODO: set thing image
+  function setThingImg () {
+      $thing.src = currentImage.src;
+      console.log(currentImage);
+  };
+
+  setThingImg();
+  console.log($thing.src);
+
+
   setAnimationLayers(step.networkAnimations);
   // TODO: set screen image
   var displayCaption = (currentStep+1)+'/'+totalSteps+' '+step.caption;
   $caption.text(displayCaption);
-}
+
+};
 
 $(document).ready(function() {
 
