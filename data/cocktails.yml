@@ -400,6 +400,25 @@
     orange bitters</p><br>
     <p>Rim the glass with sugar. Pour the rest of the ingredients in a shaker with ice and shake vigorously. Pour into the glass and garnish with thyme.</p>
 -
+  slug: hetdonkerlebowski
+  name: Het Donker Lebowski
+  date: 2018-02-16
+  glass: hetdonkerlebowski
+  contents: vodka_lowball
+  author: nathalie
+  rating: 2
+  html: |
+    <p>Like Dude, Nathalie is a big fan of the White Russian so she decided to experiment with a fun spin off, for all of us who don’t like coffee or enjoy heavy dairy. The taste of this experiment was good but the aesthetics not so much.</p>
+    <ul>
+      <li>2 parts vodka</li>
+      <li>2 parts soy cream mix</li>
+      <li>1 part chocolate Baileys</li>
+      <li>cherry for garnish</li>
+    </ul>
+    <p>For the soy cream mix, mix 50 ml of soy cream and 5gr of powder sugar to hide the soy taste.</p>
+    <p>Fill a shaker with ice cubes, add the chocolate Baileys and the vodka and shake well. Pour it over a glass with ice and top it off with the soy cream mix over the back of a spoon to create a layered effect. Add a cherry for garnish.</p>
+    <p>We recommend serving this drink stirred not layered to avoid the unappetizing marbling of soy cream and alcohol. </p>
+-
   slug: hotananaslove
   name: Hot Ananas Love
   date: 2016-03-04
