@@ -3,7 +3,7 @@
   name: Anything But Tea
   date: 2017-10-27
   glass: anythingbuttea
-  contents: misc_highball
+  contents: anythingbuttea
   author: manjari
   rating: 4
   html: |
@@ -272,7 +272,7 @@
   name: Doodles and Bubbles
   date: 2017-11-10
   glass: doodlesandbubbles
-  contents: miscchampagne_coupe
+  contents: doodlesandbubbles
   author: natalia
   rating: 4
   html: |
