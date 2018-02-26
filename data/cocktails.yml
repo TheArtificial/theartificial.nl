@@ -995,6 +995,24 @@
     </ul>
     <p>Pour prosecco and limoncello in a wide glass and stir. Drop a generous scoop of lemon sorbet on top and wait for sun!</p>
 -
+  slug: sickday
+  name: Sickday
+  date: 2018-02-23
+  glass: sickday
+  contents: whiskey_martini
+  author: shannon
+  rating: 4
+  html: |
+    <p>The sick hit our office, and two Artificers, including our intended Friday bartender, ended up sick at home. So Shannon came up with a last minute cocktail to fit the mood. Taking inspiration from the penicillin, the cocktail’s primary flavors were lemon, ginger, and honey – the perfect pick-me-up for anyone feeling under the weather.</p>
+    <ul>
+      <li>2 parts scotch</li>
+      <li>1 part lemon ginger tea with lots of honey</li>
+      <li>0.5 parts lemon juice</li>
+      <li>lemon twist for garnish</li>
+    </ul>
+    <p>Brew the lemon ginger tea and mix in the honey – we did 1 part honey for 4 parts tea. Let the mixture cool.</p>
+    <p>Fill a shaker with ice cubes, pour in the scotch, the tea with honey, and the lemon juice. Shake, shake, shake it. Pour into a martini glass and garnish with the lemon twist.</p> <p>Drink up and feel better!</p>    
+-
   slug: smokeandspritz
   name: Smoke and Spritz
   date: 2016-12-02
