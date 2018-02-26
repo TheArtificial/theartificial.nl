@@ -48,7 +48,7 @@
   name: Apple Brother
   date: 2017-06-30
   glass: applebrother
-  contents: misc_hurricane
+  contents: applebrother
   author: nathalie
   rating: 3
   html: |
@@ -337,7 +337,7 @@
   name: Franken Mousse
   date: 2017-06-16
   glass: frankenmousse
-  contents: misc_wine
+  contents: frankenmousse
   author: ariane
   rating: 1
   html: |
@@ -767,7 +767,7 @@
   name: Mezcal Mule
   date: 2017-06-23
   glass: mezcalmule
-  contents: mezcal_coppermug
+  contents: mezcalmule
   author: natalia
   rating: 4
   html: |
@@ -1120,7 +1120,7 @@
   name: Polish Water
   date: 2017-07-07
   glass: polishwater
-  contents: vodka_shot
+  contents: polishwater
   author: kamila
   rating: 3
   html: |
@@ -1344,7 +1344,7 @@
   name: The Carol
   date: 2016-07-01
   glass: thecarol
-  contents: rum_hurricane
+  contents: thecarol
   author: carol
   rating: 5
   html: |
@@ -1386,7 +1386,7 @@
   name: The Hans
   date: 2016-07-01
   glass: thehans
-  contents: gin_highball
+  contents: thehans
   author: hans
   rating: 5
   html: |
@@ -1515,7 +1515,7 @@
   name: The Shannon
   date: 2016-07-01
   glass: theshannon
-  contents: miscwhiskey_martini
+  contents: theshannon
   author: shannon
   rating: 5
   html: |
