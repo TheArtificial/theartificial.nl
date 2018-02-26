@@ -251,7 +251,7 @@
   name: DT Ginger
   date: 2017-04-07
   glass: dtginger
-  contents: rum_goblet
+  contents: dtginger
   author: natalia
   rating: 3
   html: |
@@ -584,7 +584,7 @@
   name: Komkommer Tonic
   date: 2016-07-08
   glass: komkommertonic
-  contents: vodka_tonic-tall
+  contents: komkommertonic
   author: shannon
   rating: 3
   html: |
@@ -604,7 +604,7 @@
   name: Konings Spritz
   date: 2017-04-26
   glass: koningsspritz
-  contents: champagnemiscwhiskey_tonic
+  contents: koningsspritz
   author: shannon
   rating: 4
   html: |
@@ -1323,7 +1323,7 @@
   name: The Ariane
   date: 2016-07-13
   glass: theariane
-  contents: misctequila_margarita
+  contents: theariane
   author: ariane
   rating: 5
   html: |
@@ -1535,7 +1535,7 @@
   name: The Susana
   date: 2016-07-21
   glass: thesusana
-  contents: misc_short
+  contents: thesusana
   author: susana
   rating: 5
   html: |
@@ -1574,7 +1574,7 @@
   name: Tipsy and Tangy
   date: 2017-06-02
   glass: tipsyandtangy
-  contents: miscgin_highball
+  contents: tipsyandtangy
   author: shannon
   rating: 5
   html: |
