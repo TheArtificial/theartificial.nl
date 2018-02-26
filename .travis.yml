@@ -6,11 +6,11 @@ jobs:
   include:
     - if: branch = master
       script:
-      - bundle exec middleman build
+      - NO_CONTRACTS=true bundle exec middleman build --no-clean
       after_success:
       - bundle exec s3_website push --config-dir=.s3_website-staging
     - if: branch = release
       script:
-      - bundle exec middleman build
+      - NO_CONTRACTS=true bundle exec middleman build --no-clean
       after_success:
       - bundle exec s3_website push --config-dir=.s3_website-release
