@@ -477,6 +477,28 @@
     <h4 class="recipe-section">Method</h4>
     <p>Rim the glass with sugar. Pour the rest of the ingredients in a shaker with ice and shake vigorously. Pour into the glass and garnish with thyme.</p>
 -
+  slug: hetdonkerlebowski
+  name: Het Donker Lebowski
+  date: 2018-02-16
+  glass: hetdonkerlebowski
+  contents: ginmisc_martini
+  author: nathalie
+  rating: 2
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>Like Dude, Nathalie is a big fan of the White Russian so she decided to experiment with a fun spin off, for all of us who don’t like coffee or enjoy heavy dairy. The taste of this experiment was good but the aesthetics not so much.</p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>2 parts vodka</li>
+      <li>2 parts soy cream mix</li>
+      <li>1 part chocolate Baileys</li>
+      <li>a cherry for garnish</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>For the soy cream mix, mix 50 ml of soy cream and 5gr of powder sugar to hide the soy taste.</p>
+    <p>Fill a shaker with ice cubes, add the chocolate Baileys and the vodka and shake well. Pour it over a glass with ice and top it off with the soy cream mix over the back of a spoon to create a layered effect. Add a cherry for garnish.</p>
+    <p>We recommend serving this drink stirred not layered to avoid the unappetizing marbling of soy cream and alcohol.</p>
+-
   slug: hotananaslove
   name: Hot Ananas Love
   date: 2016-03-04
@@ -1173,6 +1195,28 @@
     </ul>
     <h4 class="recipe-section">Method</h4>
     <p>Pour prosecco and limoncello in a wide glass and stir. Drop a generous scoop of lemon sorbet on top and wait for sun!</p>
+-
+  slug: sickday
+  name: Sick Day
+  date: 2018-02-23
+  glass: sickday
+  contents: miscchampagne_margarita
+  author: shannon
+  rating: 4
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>The sick hit our office, and two Artificers, including our intended Friday bartender, ended up sick at home. So Shannon came up with a last minute cocktail to fit the mood. Taking inspiration from the penicillin, the cocktail’s primary flavors were lemon, ginger, and honey – the perfect pick-me-up for anyone feeling under the weather.</p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>2 parts scotch</li>
+      <li>1 part lemon ginger tea with lots of honey</li>
+      <li>1/2 parts lemon juice</li>
+      <li>lemon twist for garnish</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>Brew the lemon ginger tea and mix in the honey – we did 1 part honey for 4 parts tea. Let the mixture cool.</p>
+    <p>Fill a shaker with ice cubes, pour in the scotch, the tea with honey, and the lemon juice. Shake, shake, shake it. Pour into a martini glass and garnish with the lemon twist.</p>
+    <p>Drink up and feel better!</p>
 -
   slug: smokeandspritz
   name: Smoke and Spritz
