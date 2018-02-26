@@ -109,7 +109,7 @@
   name: Basil Smash V2
   date: 2017-10-13
   glass: basilsmash
-  contents: gin_lowball
+  contents: basilsmashv2
   author: carol
   rating: 5
   html: |
@@ -129,7 +129,7 @@
   name: Bee's Knees
   date: 2016-01-22
   glass: beesknees
-  contents: gin_coupe
+  contents: beesknees
   author: shannon
   rating: 4
   html: |
@@ -149,7 +149,7 @@
   name: "Blossom 开花 (Kāihuā)"
   date: 2016-02-12
   glass: blossom
-  contents: miscvodka_coupe
+  contents: blossom
   author: ariane
   rating: 5
   html: |
@@ -293,7 +293,7 @@
   name: Dutch and Stormy
   date: 2016-06-24
   glass: dutchandstormy
-  contents: rum_highball
+  contents: dutchandstormy
   author: shannon
   rating: 4
   html: |
@@ -418,7 +418,7 @@
   name: Grown-up Cherry Coke
   date: 2017-10-06
   glass: grownupcherrycoke
-  contents: miscrum_lowball
+  contents: grownupcherrycoke
   author: nathalie
   rating: 3
   html: |
@@ -437,7 +437,7 @@
   name: Grapefruit Torpedo
   date: 2016-03-24
   glass: grapefruittorpedo
-  contents: miscchampagne_champagne
+  contents: grapefruittorpedo
   author: carol
   rating: 4
   html: |
@@ -458,7 +458,7 @@
   name: Herbal Citrus
   date: 2017-08-18
   glass: herbalcitrus
-  contents: ginmisc_martini
+  contents: herbalcitrus
   author: ariane
   rating: 3
   html: |
@@ -481,7 +481,7 @@
   name: Het Donker Lebowski
   date: 2018-02-16
   glass: hetdonkerlebowski
-  contents: ginmisc_martini
+  contents: hetdonkerlebowski
   author: nathalie
   rating: 2
   html: |
@@ -503,7 +503,7 @@
   name: Hot Ananas Love
   date: 2016-03-04
   glass: hotananaslove
-  contents: vodka_hurricane
+  contents: hotananaslove
   author: shannon
   rating: 4
   html: |
@@ -522,7 +522,7 @@
   name: Hot Chai Buttered Rum
   date: 2017-09-22
   glass: hotchaibutteredrum
-  contents: rum_mug
+  contents: hotchaibutteredrum
   author: shannon
   rating: 3
   html: |
@@ -563,7 +563,7 @@
   name: Just Peachy
   date: 2016-02-26
   glass: justpeachy
-  contents: whiskey_snifter
+  contents: justpeachy
   author: carol
   rating: 3
   html: |
@@ -647,7 +647,7 @@
   name: Lemon Drop
   date: 2017-08-25
   glass: lemondrop
-  contents: vodka_martini
+  contents: lemondrop
   author: kamila
   rating: 4
   html: |
@@ -666,7 +666,7 @@
   name: LSP (Lumpy Space Pumpkin)
   date: 2017-11-17
   glass: lumpyspacepumpkin
-  contents: misc_lowball
+  contents: lsp
   author: shannon
   rating: 3
   html: |
@@ -707,7 +707,7 @@
   name: Manhattan
   date: 2016-03-11
   glass: manhattan
-  contents: miscwhiskey_martini
+  contents: manhattan
   author: hans
   rating: 4
   html: |
@@ -727,7 +727,7 @@
   name: The Amsterdam
   date: 2017-09-15
   glass: theamsterdam
-  contents: ginmisc_martini
+  contents: theamsterdam
   author: carol
   rating: 3
   html: |
@@ -747,7 +747,7 @@
   name: The Flaming Peach
   date: 2016-05-27
   glass: theflamingpeach
-  contents: whiskey_goblet
+  contents: theflamingpeach
   author: shannon
   rating: 4
   html: |
@@ -868,7 +868,7 @@
   name: Moscow Mule
   date: 2016-02-05
   glass: moscowmule
-  contents: vodka_mug
+  contents: moscowmule
   author: shannon
   rating: 5
   html: |
@@ -888,7 +888,7 @@
   name: Mouthwash
   date: 2016-03-18
   glass: mouthwash
-  contents: misc_margarita
+  contents: mouthwash
   author: shannon
   rating: 2
   html: |
@@ -905,7 +905,7 @@
   name: Nederlandse Oranje
   date: 2016-01-29
   glass: nederlandseoranje
-  contents: champagnemisc_wine
+  contents: nederlandseoranje
   author: "Roos de Bildt"
   rating: 3
   html: |
@@ -941,7 +941,7 @@
   name: Nutella Martini
   date: 2016-05-20
   glass: nutellamartini
-  contents: misc_martini
+  contents: nutellamartini
   author: shannon
   rating: 4
   html: |
@@ -1040,7 +1040,7 @@
   name: PB&amp;J
   date: 2017-09-01
   glass: pbj
-  contents: whiskey_martini
+  contents: pbj
   author: hans
   rating: 4
   html: |
@@ -1102,7 +1102,7 @@
   name: Pink Paradise
   date: 2016-04-01
   glass: pinkparadise
-  contents: vodka_tonic
+  contents: pinkparadise
   author: susana
   rating: 3
   html: |
@@ -1181,7 +1181,7 @@
   name: Sgroppino
   date: 2016-06-24
   glass: sgroppino
-  contents: miscchampagne_margarita
+  contents: sgroppino
   author: shannon
   rating: 4
   html: |
@@ -1305,7 +1305,7 @@
   name: Sweet Midnight
   date: 2016-01-08
   glass: sweetmidnight
-  contents: gin_goblet
+  contents: sweetmidnight
   author: shannon
   rating: 3
   html: |
@@ -1364,7 +1364,7 @@
   name: Lavender Pear Lemonade
   date: 2016-06-03
   glass: lavenderpearlemonade
-  contents: vodka_highball
+  contents: lavenderpearlemonade
   author: carol
   rating: 4
   html: |
@@ -1636,7 +1636,7 @@
   name: Watermelon Sangria
   date: 2017-07-28
   glass: watermelonsangria
-  contents: misc_tonic
+  contents: watermelonsangria
   author: carol
   rating: 4
   html: |
@@ -1678,7 +1678,7 @@
   name: "W&G"
   date: 2016-04-08
   glass: wg
-  contents: whiskey_snifter-short
+  contents: wg
   author: carol
   rating: 3
   html: |
