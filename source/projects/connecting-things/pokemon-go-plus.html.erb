@@ -1,96 +1,20 @@
-<script src="js/lottie.js"> </script>
+---
+layout: projects/connecting-things/_thing_layout
+title: Pokémon Go Plus
+---
 
-<div class="bleed walkthrough">
-  <div class="flex container">
-    <div class="col-4 thing-space">
-      <div class="padded">
-        <img id="thing" src="images/pokemongoplus/thing/off.png">
-      </div>
-    </div>
-    <div class="col-4 flow-space">
-      <div class="padded">
-        <div id="network" style="position: relative;"></div>
-      </div>
-    </div>
-    <div class="col-4 screen-space">
-      <div class="padded">
-        <img id="screen" src="images/pokemongoplus/screens/settings.png">
-      </div>
-    </div>
-  </div>
-</div>
+<p> Pokémon GO Plus is an optional peripheral for the famous augmented reality game Pokémon GO. The accessory looks like a map pin in the shape of a Pokéball. Thanks to a button and lights feedback, the object allows the user to catch Pokémons, check in at Pokéstops, and gain steps to hatch eggs, all of these without using the phone's screen.</p>
 
-<div class="bleed cool-grey-80">
-  <div class="flex container walkthrough-controls">
-    <div class="col-2">
-      <div class="padded">
-        <a href="#" id="prev-button">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
-          <path class="arrow" d="M17,9H4.414l6.293-6.293c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0l-8,8c0,0,0,0-0.001,0.001
-          	L0.586,10l0.707,0.707c0,0,0,0,0.001,0.001l8,8C9.488,18.902,9.744,19,10,19s0.512-0.098,0.707-0.293
-          	c0.391-0.391,0.391-1.023,0-1.414L4.414,11H17c0.552,0,1-0.448,1-1S17.552,9,17,9z"/>
-          </svg>
-          <p>previous</p>
-        </a>
-      </div>
-    </div>
-    <div class="col-8">
-      <div class="padded">
-        <p class="current-step" id="caption">1/6 App and account connect.</p>
-      </div>
-    </div>
-    <div class="col-2">
-      <div class="padded">
-        <a href="#" id="next-button">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
-          <path class="arrow" d="M18.708,10.706L19.414,10l-0.706-0.706c-0.001-0.001-0.001-0.001-0.002-0.002l-7.999-7.999
-            c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414L15.586,9H3c-0.553,0-1,0.448-1,1s0.447,1,1,1h12.586l-6.293,6.293
-            c-0.391,0.391-0.391,1.023,0,1.414C9.488,18.902,9.744,19,10,19s0.512-0.098,0.707-0.293l7.999-7.999
-            C18.707,10.707,18.707,10.707,18.708,10.706z"/>
-          </svg>
-          <p>next</p>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+<h2 class="subtitle"><span class="sentence">The connection process is </span>easy</h2>
+<p> The trickiest part for the user is to navigate to the Pokémon GO Plus section that is a little hidden in the settings of the app, accessible from the Poké ball icon. Once in the Pokémon GO Plus menu, pressing the button on the object will make a blue light pulse to indicate that the object broadcasts and it will appear under available devices in the app. To pair and connect simultaneously the user just needs to tap one more time, but this time in the app, on the item in the list. So enjoying catching Pokémon with this gadget is just 5 taps away.</p>
 
-<div class="bleed cool-grey-10">
-  <div class="flex container extra-bottom">
-    <div class="col-12">
-      <div class="padded">
-        <h1 class="title">Pokémon GO Plus</h1>
-        <h3 class="step-count">6 Steps</h3>
-      </div>
-    </div>
+<h2 class="subtitle"><span class="sentence">The security is </span>more than enough</h2>
+<p>Pokémon GO Plus uses a relatively secured connection for a game. It feels reassuring for a gameplay based on the user location. As we can see in the topology, Bluetooth allows verified connections both at the protocol layer and at the software layer to happened. For the Thing to connect with the App, we suspect that the cloud sends tokens to enable the connection from a single user account. If Pokémon GO plus is associated with another account, the objet needs to reset to able to connect with the app. The fact that Pokémon GO Plus pairs with a single smartphone at the time also makes it more secured.</p>
 
-    <div class="col-10 right-1 left-1">
-      <div class="padded">
-        <p> Pokémon GO Plus is an optional peripheral for the famous augmented reality game Pokémon GO. The accessory looks like a map pin in the shape of a Pokéball. Thanks to a button and lights feedback, the object allows the user to catch Pokémons, check in at Pokéstops, and gain steps to hatch eggs, all of these without using the phone's screen.</p>
-        <h2 class="subtitle"><span class="sentence">The connection process is </span>easy</h2>
-        <p> The trickiest part for the user is to navigate to the Pokémon GO Plus section that is a little hidden in the settings of the app, accessible from the Poké ball icon. Once in the Pokémon GO Plus menu, pressing the button on the object will make a blue light pulse to indicate that the object broadcasts and it will appear under available devices in the app. To pair and connect simultaneously the user just needs to tap one more time, but this time in the app, on the item in the list. So enjoying catching Pokémon with this gadget is just 5 taps away.</p>
-        <h2 class="subtitle"><span class="sentence">The security is </span>more than enough</h2>
-        <p>Pokémon GO Plus uses a relatively secured connection for a game. It feels reassuring for a gameplay based on the user location. As we can see in the topology, Bluetooth allows verified connections both at the protocol layer and at the software layer to happened. For the Thing to connect with the App, we suspect that the cloud sends tokens to enable the connection from a single user account. If Pokémon GO plus is associated with another account, the objet needs to reset to able to connect with the app. The fact that Pokémon GO Plus pairs with a single smartphone at the time also makes it more secured.</p>
-        <h2 class="subtitle"><span class="sentence">The resiliance is </span>terrible</h2>
-        <p>How frustrating would it be to take a long walk expecting to fill your Pokédex with many new species of Pokémon and to hatch this cool egg, but to realize at the end of the walk that your Pokémon GO Plus was disconnected from your mobile and that you missed the warning feedback. Unfortunately, Pokémon GO Plus connection is not very robust and there are a few reasons that can cause its disconnection. First, if Pokémon GO and the connected mobile are too far away, the Bluetooth connection can be interrupted. Second, if the GPS loses track of where the user is, the Pokémon GO Plus will disconnect and not automatically reconnect when the signal is back.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<h2 class="subtitle"><span class="sentence">The resiliance is </span>terrible</h2>
+<p>How frustrating would it be to take a long walk expecting to fill your Pokédex with many new species of Pokémon and to hatch this cool egg, but to realize at the end of the walk that your Pokémon GO Plus was disconnected from your mobile and that you missed the warning feedback. Unfortunately, Pokémon GO Plus connection is not very robust and there are a few reasons that can cause its disconnection. First, if Pokémon GO and the connected mobile are too far away, the Bluetooth connection can be interrupted. Second, if the GPS loses track of where the user is, the Pokémon GO Plus will disconnect and not automatically reconnect when the signal is back.</p>
 
 <script>
-
-// some variables so we don't waste cycles looking for elements over and over
-var $thing = $('#thing');
-var $network = $('#network');
-var $ui = $('#ui');
-var $caption = $('#caption');
-// variable that will increment through the steps
-var currentStep = 0;
-
-// this is our script
 var flowSteps = [
   {
     caption: "App logs in to account on Cloud",
@@ -129,77 +53,4 @@ var flowSteps = [
     screenImg: "images/pokemongoplus/screen.png"
   },
 ]
-
-var totalSteps = flowSteps.length;
-
-function setAnimationLayers(layers) {
-  if (typeof layers !== 'undefined' && layers.length > 0) {
-    $network.empty(); // clear previous layers
-
-    for (var i = 0; i < layers.length; i++) {
-      var filename = layers[i];
-      var $layer = $('<div></div>');
-      $layer.css({
-        position: 'absolute',
-        top: '0'
-      });
-      var layerElement = $layer.get(0);
-      lottie.loadAnimation({
-        container: layerElement,
-        renderer: 'svg',
-        loop: true,
-        autoplay: false,
-        path: 'animations/' + filename
-      });
-      $network.append($layer);
-    }
-
-    lottie.play();
-  }
-};
-
-// make one happen
-function renderStep(number) {
-  var step = flowSteps[number];
-  var currentImage = step.thingImg;
-
-  // TODO: set thing image
-  function setThingImg () {
-      $thing.src = currentImage.src;
-      console.log(currentImage);
-  };
-
-  setThingImg();
-  console.log($thing.src);
-
-
-  setAnimationLayers(step.networkAnimations);
-  // TODO: set screen image
-  var displayCaption = (currentStep+1)+'/'+totalSteps+' '+step.caption;
-  $caption.text(displayCaption);
-
-};
-
-$(document).ready(function() {
-
-  $('#prev-button').on('click', function(){
-    if (currentStep > 0) {
-      currentStep--;
-      renderStep(currentStep);
-      // TODO: if at last step, disable button
-    }
-  });
-  $('#next-button').on('click', function(){
-    if (currentStep < totalSteps-1) {
-      currentStep++;
-      renderStep(currentStep);
-      // TODO: if at last step, disable button
-    }
-  });
-
-  renderStep(0);
-});
-
 </script>
-
-<%= partial 'things_footer' %>

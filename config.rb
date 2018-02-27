@@ -222,11 +222,14 @@ class Projects < Middleman::Extension
     projects = resources.select{ |r| r.path =~ /^projects\// }
     projects.each do |r|
       project_name = r.path.match(/projects\/([^\/]*)\/.*/)[1]
-      # puts "Moving #{project_name}: #{r.path}"
+      puts "Moving #{project_name}: #{r.path}"
       r.destination_path.gsub!(/^projects\//, "")
       if r.ext == '.html'
+        puts "#{r.metadata}"
         r.add_metadata project: project_name
-        r.add_metadata options: { layout: 'project_layout' }
+        if !r.options.has_key?(:layout)
+          r.add_metadata options: { layout: 'project_layout' }
+        end
       end
     end
     return resources
