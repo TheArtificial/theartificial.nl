@@ -2,16 +2,10 @@ require_relative 'cards/blog'
 require_relative 'cards/cocktail'
 require_relative 'cards/ftfy'
 require_relative 'cards/work'
+require_relative 'cards/thing'
 require_relative 'cards/unknown'
 
 module Cards
-
-  TYPES = [
-    'blog',
-    'cocktail',
-    'ftfy',
-    'work'
-  ]
 
   def self.card_for_resource(app, resource)
     path = resource.path
@@ -19,6 +13,7 @@ module Cards
     type = path_split.first
 
     type = 'cocktail' if type == 'cocktails'
+    type = 'thing' if type == 'connecting-things'
 
     Mustache.view_namespace = Cards
     card_class = Mustache.view_class(type)
