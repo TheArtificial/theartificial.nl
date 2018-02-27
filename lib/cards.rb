@@ -1,3 +1,4 @@
+require_relative 'cards/basic'
 require_relative 'cards/blog'
 require_relative 'cards/cocktail'
 require_relative 'cards/ftfy'
@@ -8,12 +9,15 @@ require_relative 'cards/unknown'
 module Cards
 
   def self.card_for_resource(app, resource)
-    path = resource.path
-    path_split = path.split('/',2)
-    type = path_split.first
+    type = resource.data.card_type
+    if type.blank?
+      path = resource.path
+      path_split = path.split('/',2)
+      type = path_split.first
 
-    type = 'cocktail' if type == 'cocktails'
-    type = 'person' if type == 'people'
+      type = 'cocktail' if type == 'cocktails'
+      type = 'person' if type == 'people'
+    end
 
     Mustache.view_namespace = Cards
     card_class = Mustache.view_class(type)
