@@ -93,9 +93,16 @@ var $nextButton = $('#next-button');
 
 // variable that will increment through the steps
 var currentStep = 0;
-
-
 var totalSteps = flowSteps.length;
+
+function swapImage($el, newSrc) {
+  $el.fadeTo(200,0.50, function(){
+  $el.attr("src",newSrc);
+  $el.on('load', function(){
+    $el.fadeTo(200,1);
+  });
+ });
+}
 
 function setAnimationLayers(layers) {
   if (typeof layers !== 'undefined' && layers.length > 0) {
@@ -137,7 +144,7 @@ function renderStep(number) {
   // set thing image
 
   if (thingPath) {
-    $thing.attr('src', thingPath);
+    swapImage($thing, thingPath);
   }
   // set and start animation
   if (networkPath) {
@@ -145,7 +152,7 @@ function renderStep(number) {
   }
   // set screen image
   if (screenPath) {
-    $screen.attr('src', screenPath);
+    swapImage($screen, screenPath);
   }
 
   // manage button visibility
