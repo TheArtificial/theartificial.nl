@@ -1,5 +1,5 @@
 <% wrap_layout :project_layout do %>
-<script src="js/lottie.js"> </script>
+<script src="../js/lottie.js"> </script>
 
 <div class="bleed walkthrough">
   <div class="flex container">
@@ -111,7 +111,7 @@ function setAnimationLayers(layers) {
         renderer: 'svg',
         loop: true,
         autoplay: false,
-        path: 'animations/' + filename
+        path: '../animations/' + filename
       });
       $network.append($layer);
     }
@@ -169,6 +169,6 @@ $(document).ready(function() {
 
 </script>
 
-<%= partial 'things_footer' %>
+<%= partial '../things_footer' %>
 
 <% end # project_layout %>
