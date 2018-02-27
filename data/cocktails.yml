@@ -400,6 +400,25 @@
     orange bitters</p><br>
     <p>Rim the glass with sugar. Pour the rest of the ingredients in a shaker with ice and shake vigorously. Pour into the glass and garnish with thyme.</p>
 -
+  slug: hetdonkerlebowski
+  name: Het Donker Lebowski
+  date: 2018-02-16
+  glass: hetdonkerlebowski
+  contents: vodka_lowball
+  author: nathalie
+  rating: 2
+  html: |
+    <p>Like Dude, Nathalie is a big fan of the White Russian so she decided to experiment with a fun spin off, for all of us who don’t like coffee or enjoy heavy dairy. The taste of this experiment was good but the aesthetics not so much.</p>
+    <ul>
+      <li>2 parts vodka</li>
+      <li>2 parts soy cream mix</li>
+      <li>1 part chocolate Baileys</li>
+      <li>cherry for garnish</li>
+    </ul>
+    <p>For the soy cream mix, mix 50 ml of soy cream and 5gr of powder sugar to hide the soy taste.</p>
+    <p>Fill a shaker with ice cubes, add the chocolate Baileys and the vodka and shake well. Pour it over a glass with ice and top it off with the soy cream mix over the back of a spoon to create a layered effect. Add a cherry for garnish.</p>
+    <p>We recommend serving this drink stirred not layered to avoid the unappetizing marbling of soy cream and alcohol. </p>
+-
   slug: hotananaslove
   name: Hot Ananas Love
   date: 2016-03-04
@@ -976,6 +995,24 @@
     </ul>
     <p>Pour prosecco and limoncello in a wide glass and stir. Drop a generous scoop of lemon sorbet on top and wait for sun!</p>
 -
+  slug: sickday
+  name: Sickday
+  date: 2018-02-23
+  glass: sickday
+  contents: whiskey_martini
+  author: shannon
+  rating: 4
+  html: |
+    <p>The sick hit our office, and two Artificers, including our intended Friday bartender, ended up sick at home. So Shannon came up with a last minute cocktail to fit the mood. Taking inspiration from the penicillin, the cocktail’s primary flavors were lemon, ginger, and honey – the perfect pick-me-up for anyone feeling under the weather.</p>
+    <ul>
+      <li>2 parts scotch</li>
+      <li>1 part lemon ginger tea with lots of honey</li>
+      <li>0.5 parts lemon juice</li>
+      <li>lemon twist for garnish</li>
+    </ul>
+    <p>Brew the lemon ginger tea and mix in the honey – we did 1 part honey for 4 parts tea. Let the mixture cool.</p>
+    <p>Fill a shaker with ice cubes, pour in the scotch, the tea with honey, and the lemon juice. Shake, shake, shake it. Pour into a martini glass and garnish with the lemon twist.</p> <p>Drink up and feel better!</p>    
+-
   slug: smokeandspritz
   name: Smoke and Spritz
   date: 2016-12-02
@@ -1210,6 +1247,23 @@
       <li>1 part cream</li>
     </ul>
     <p>Fill a low glass with ice and add vodka and coffee liquor. Give the mixture a stir to combine the ingredients before adding the cream on top. Serve immediately to keep the layered effect.</p>
+-
+  slug: theredemtion
+  name: The Redemption
+  date: 2018-02-09
+  glass: theredemption
+  contents: miscgin_stemless
+  author: ariane
+  rating: 4
+  html: |
+    <p>Haunted by the memory of the <a href="https://theartificial.com/cocktails/frankenmousse.html" target="blank">Franken Mousse</a>, Ariane wanted to make it up to her co-workers. She played it safe by making one of her favorite cocktails, a variation of the Americano that is said to be invented in Florence, Italy. Great way to help us warming up in this wave of cold.</p>
+    <ul>
+      <li>1 part gin</li>
+      <li>1 part vermouth rosso </li>
+      <li>1 part Campari</li>
+      <li>Orange slice</li>
+    </ul>
+    <p>Fill a shaker with ice cubes, add Gin, Martini rosso and Campari.Stir gently, pour in a tumbler glass and garnish with a thinly sliced slice of orange.</p>
 -
   slug: theshannon
   name: The Shannon

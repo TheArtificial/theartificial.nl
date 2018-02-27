@@ -1,5 +1,5 @@
 // searching
-// depends on feed.js
+// depends on cards.js for rendering
 
 var lunrIndex;
 var lunrMap;
@@ -34,6 +34,51 @@ function lunrSearch(query, $el) {
           page = lunrMap[result.ref];
         setTimeout(addCard($el, page),100);
         });
+      }
+      else {
+        $el.html('No results, sorry.');
+      }
+    }
+  });
+}
+
+
+function getQuery(query, $el) {
+
+  $el.html('Loading...');
+  $el.packery();
+
+  $.ajax({
+    dataType: "json",
+    url: '/search/index.json',
+    xhr: function() {
+      var xhr = new window.XMLHttpRequest();
+      //Download progress
+      xhr.addEventListener("progress", function(evt){
+        $el.append('.');
+      }, false);
+      return xhr;
+    },
+    success: function(data) {
+
+      lunrIndex = lunr.Index.load(data.index);
+      lunrMap = data.docs;
+      var results = lunrIndex.search(query)
+      console.log('Found ' + results.length + ' results', results);
+
+      if (results.length > 0) {
+
+        var docs = [];
+        $.each(results, function(index, result) {
+          docs.push(lunrMap[result.ref]);
+        });
+				docs.sort(function(a,b){
+					return (a.date < b.date);
+				});
+        $el.html(''); // clear loading indicator
+        for (var index = 0; index < docs.length; ++index) {
+          addCard($el, docs[index]);
+        }
       }
       else {
         $el.html('No results, sorry.');

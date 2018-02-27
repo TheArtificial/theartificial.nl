@@ -2,6 +2,7 @@
 layout: person_layout
 current: true
 title: Nathalie de Graaf
+date: 2017-06-19
 linkedin: nathalie-de-graaf-1a1a59146
 logo-story: "I created logo with a solid font carved from building blocks while the graphs shows not just my position but also what I see in the Artificial: statistics.
 This time however it’s not numbers, calendar sheets, cells, or paragraphs in documents but personal data of yours truly.

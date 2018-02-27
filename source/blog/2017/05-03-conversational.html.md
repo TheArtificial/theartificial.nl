@@ -3,6 +3,8 @@ title: 'Join the Conversational Interface'
 category: process
 tags: UI, design, chatbot, AI, interface
 author: shannon
+preview: preview@2x.png
+masthead: masthead.png
 ---
 
 For the past six months, we’ve been designing an app for a product that doesn’t already exist on the market, and that likely won’t be ready for consumers for another year or two. The product itself is understandably super secret, but the story is interesting even if you don’t know the details of the main character.
