@@ -89,7 +89,7 @@
   name: Basil Smash
   date: 2016-11-18
   glass: basilsmash
-  contents: gin_lowball
+  contents: basilsmash
   author: carol
   rating: 5
   html: |
@@ -627,7 +627,7 @@
   name: Last of the Oaxacans
   date: 2017-01-06
   glass: lastoftheoaxacans
-  contents: misctequilla_coupe
+  contents: lastoftheoaxacans
   author: shannon
   rating: 3
   html: |
@@ -686,7 +686,7 @@
   name: Mandarin Mule
   date: 2016-11-25
   glass: mandarinmule
-  contents: vodka_highball
+  contents: mandarinmule
   author: shannon
   rating: 4
   html: |
@@ -1223,7 +1223,7 @@
   name: Smoke and Spritz
   date: 2016-12-02
   glass: smokeandspritz
-  contents: misc_tonic
+  contents: smokeandspritz
   author: natalia
   rating: 4
   html: |
@@ -1407,7 +1407,7 @@
   name: The Katinka
   date: 2016-10-21
   glass: thekatinka
-  contents: miscgin_wine
+  contents: thekatinka
   author: katinka
   rating: 5
   html: |
@@ -1455,7 +1455,7 @@
   name: The Pariane
   date: 2017-01-13
   glass: thepariane
-  contents: miscwhiskey_goblet
+  contents: thepariane
   author: [ariane, "Parizad Saremi"]
   rating: 4
   html: |
@@ -1477,7 +1477,7 @@
   name: The Parizad
   date: 2016-10-28
   glass: theparizad
-  contents: miscvodka_lowball
+  contents: theparizad
   author: "Parizad Saremi"
   rating: 4
   html: |
