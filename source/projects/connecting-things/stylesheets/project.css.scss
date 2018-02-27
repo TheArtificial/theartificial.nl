@@ -55,16 +55,44 @@ body {
     padding-left: 0;
   }
 
-  .previous-button {
-    text-align: left;
-  }
-
   .current-step {
-    text-align: center;
+    .step-counter {
+      display: inline-block;
+      width: 80px;
+      text-align: right;
+    }
+    .step-description {
+      display: inline-block;
+      text-align: left;
+    }
   }
 
-  .next-button {
+  #prev-button {
+    text-align: left;
+    p, svg {
+      float: left;
+    }
+    &.disabled * {
+      opacity: 0;
+      cursor: default;
+    }
+    * {
+      transition: opacity 0.5s ease-out;
+    }
+  }
+
+  #next-button {
     text-align: right;
+    p, svg {
+      float: right;
+    }
+    &.disabled * {
+      opacity: 0;
+      cursor: default;
+    }
+    * {
+      transition: opacity 0.5s ease-out;
+    }
   }
 
   .card {
@@ -131,18 +159,6 @@ body {
       color: $cool-grey-10;
       svg *.arrow {
         fill: $cool-grey-10;
-      }
-    }
-
-    .previous-button {
-      p, svg {
-        float: left;
-      }
-    }
-
-    .next-button {
-      p, svg {
-        float: right;
       }
     }
 

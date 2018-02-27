@@ -25,7 +25,7 @@
   <div class="flex container walkthrough-controls">
     <div class="col-2">
       <div class="padded">
-        <a href="#" id="prev-button">
+        <a href="#" id="prev-button" class="disabled">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
           <path class="arrow" d="M17,9H4.414l6.293-6.293c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0l-8,8c0,0,0,0-0.001,0.001
@@ -38,7 +38,7 @@
     </div>
     <div class="col-8">
       <div class="padded">
-        <p class="current-step" id="caption"><span class="counter"></span> <span class="step-description"></span></p>
+        <p class="current-step" id="caption"><span class="step-counter"></span> <span class="step-description"></span></p>
       </div>
     </div>
     <div class="col-2">
@@ -86,8 +86,11 @@
 var $thing = $('#thing');
 var $network = $('#network');
 var $screen = $('#screen');
-var $counter = $('#caption .counter');
+var $counter = $('#caption .step-counter');
 var $caption = $('#caption .step-description');
+var $prevButton = $('#prev-button');
+var $nextButton = $('#next-button');
+
 // variable that will increment through the steps
 var currentStep = 0;
 
@@ -145,22 +148,32 @@ function renderStep(number) {
     $screen.attr('src', screenPath);
   }
 
+  // manage button visibility
+  if (currentStep == 0) {
+    $prevButton.addClass('disabled');
+  } else {
+    $prevButton.removeClass('disabled');
+  }
+  if (currentStep == totalSteps-1) {
+    $nextButton.addClass('disabled');
+  } else {
+    $nextButton.removeClass('disabled');
+  }
+
 };
 
 $(document).ready(function() {
 
-  $('#prev-button').on('click', function(){
+  $prevButton.on('click', function(){
     if (currentStep > 0) {
       currentStep--;
       renderStep(currentStep);
-      // TODO: if at last step, disable button
     }
   });
-  $('#next-button').on('click', function(){
+  $nextButton.on('click', function(){
     if (currentStep < totalSteps-1) {
       currentStep++;
       renderStep(currentStep);
-      // TODO: if at last step, disable button
     }
   });
 
