@@ -69,7 +69,7 @@
   name: Baltimore Bang
   date: 2017-03-10
   glass: baltimorebang
-  contents: miscwhiskey_martini
+  contents: baltimorebang
   author: shannon
   rating: 3
   html: |
@@ -168,7 +168,7 @@
   name: Bright and Strong
   date: 2017-01-20
   glass: brightandstrong
-  contents: whiskey_lowball
+  contents: brightandstrong
   author: shannon
   rating: 4
   html: |
@@ -209,7 +209,7 @@
   name: Campari Orange
   date: 2017-02-10
   glass: campariorange
-  contents: miscvodka_lowball
+  contents: campariorange
   author: shannon
   rating: 4
   html: |
@@ -230,7 +230,7 @@
   name: Creature of the Mist
   date: 2017-03-24
   glass: creatureofthemist
-  contents: miscvodka_coupe2
+  contents: creatureofthemist
   author: shannon
   rating: 5
   html: |
@@ -356,7 +356,7 @@
   name: French Bull
   date: 2016-08-19
   glass: frenchbull
-  contents: miscchampagne_champagne
+  contents: frenchbull
   author: carol
   rating: 3
   html: |
@@ -376,7 +376,7 @@
   name: Fuzzy Smash
   date: 2017-02-03
   glass: fuzzysmash
-  contents: gin_lowball
+  contents: fuzzysmash
   author: carol
   rating: 4
   html: |
@@ -399,7 +399,7 @@
   name: Ginger Smash
   date: 2017-03-17
   glass: gingersmash
-  contents: gin_highball
+  contents: gingersmash
   author: carol
   rating: 3
   html: |
@@ -787,7 +787,7 @@
   name: Mezcal Old-Fashioned
   date: 2017-01-27
   glass: mezcaloldfashioned
-  contents: misctequillawhiskey_lowball
+  contents: mezcaloldfashioned
   author: natalia
   rating: 3
   html: |
@@ -828,7 +828,7 @@
   name: Mint Julep
   date: 2016-08-19
   glass: mintjulep
-  contents: whiskey_highball
+  contents: mintjulep
   author: "Abdul Nabi"
   rating: 4
   html: |
@@ -848,7 +848,7 @@
   name: Monkey Guts
   date: 2016-09-02
   glass: monkeyguts
-  contents: miscgin_highball
+  contents: monkeyguts
   author: shannon
   rating: 1
   html: |
@@ -921,8 +921,9 @@
   name: Negroni
   date: 2016-10-07
   glass: negroni
-  contents: miscgin_lowball
+  contents: negroni
   author: ariane
+  rating: 4
   html: |
     <h4 class="recipe-section">Story</h4>
     <p>We enjoyed some fancy Negronis today! Natalia and Shannon helped with designing our garnishes. They made a mint leave in a butt of a mandarin orange (two segments of mandarin orange. It looked like a funny feather cabaret outfit.</p>
@@ -960,7 +961,7 @@
   name: Nutella Martini v2
   date: 2016-10-14
   glass: nutellamartini
-  contents: misc_martini
+  contents: nutellamartini
   author: shannon
   rating: 4
   html: |
@@ -979,7 +980,7 @@
   name: Paras
   date: 2016-09-30
   glass: paras
-  contents: vodka_lowball
+  contents: paras
   author: shannon
   rating: 4
   html: |
@@ -1064,7 +1065,7 @@
   name: Pineapple Sake and Spice
   date: 2017-03-31
   glass: pineapplesakeandspice
-  contents: misc_tonic
+  contents: pineapplesakeandspice
   author: shannon
   rating: 4
   html: |
@@ -1083,7 +1084,7 @@
   name: Pinkies Out
   date: 2017-02-24
   glass: pinkiesout
-  contents: misc_mug
+  contents: pinkiesout
   author: shannon
   rating: 4
   html: |
@@ -1141,7 +1142,7 @@
   name: Root Beer Float
   date: 2016-08-12
   glass: rootbeerfloat
-  contents: vodka_highball
+  contents: rootbeerfloat
   author: shannon
   rating: 4
   html: |
@@ -1160,7 +1161,7 @@
   name: Sazerac
   date: 2016-09-23
   glass: sazerac
-  contents: whiskey_lowball
+  contents: sazerac
   author: hans
   rating: 3
   html: |
@@ -1200,7 +1201,7 @@
   name: Sick Day
   date: 2018-02-23
   glass: sickday
-  contents: miscchampagne_margarita
+  contents: sickday
   author: shannon
   rating: 4
   html: |
@@ -1285,7 +1286,7 @@
   name: Sparkling Lemon
   date: 2017-06-09
   glass: sparklinglemon
-  contents: misc_wine
+  contents: sparklinglemon
   author: shannon
   rating: 4
   html: |
@@ -1428,7 +1429,7 @@
   name: The Natalia
   date: 2016-10-13
   glass: thenatalia
-  contents: misc_lowball
+  contents: thenatalia
   author: natalia
   rating: 5
   html: |
@@ -1555,7 +1556,7 @@
   name: The Trudeau
   date: 2017-03-03
   glass: thetrudeau
-  contents: whiskey_martini
+  contents: thetrudeau
   author: shannon
   rating: 5
   html: |
@@ -1616,7 +1617,7 @@
   name: Vitamin C
   date: 2016-09-16
   glass: vitaminC
-  contents: whiskey_snifter
+  contents: vitaminc
   author: ariane
   rating: 4
   html: |
