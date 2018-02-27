@@ -1,6 +1,3 @@
-<% content_for :javascript_tags do %>
-	<%= javascript_include_tag 'lunr', 'mustache','feed','search', defer: true %>
-<% end %>
 <%
 wrap_layout 'site_layout' do
   username = current_page.path.split('/').last.gsub(/.html$/, '')
@@ -54,16 +51,9 @@ wrap_layout 'site_layout' do
       </div>
     </div>
     <div class="container packery padded-bottom" id="posts">
-
+			<%= render_cards(cards_for_author(username)) %>
     </div>
 </div>
 </section>
-
-<script>
-  $(document).ready(function() {
-    var $posts = $('#posts');
-    getQuery('username:<%= username %>', $posts);
-  });
-</script>
 
 <% end %>

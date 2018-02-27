@@ -2,6 +2,7 @@
 layout: person_layout
 current: true
 title: Shannon E Thomas
+date: 2013-04-08
 linkedin: shannonethomas
 twitter: shannonethomas
 personal: http://www.shannonethomas.com/

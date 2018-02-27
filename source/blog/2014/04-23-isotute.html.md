@@ -3,6 +3,8 @@ title: "Isometric Sketching Tutorial"
 category: process
 tags: icons, isometric, tutorial, how-to, hands-on, illustration
 author: jo
+preview: preview@2x.png
+masthead: masthead.png
 ---
 
 To celebrate all of your support for our first Kickstarter,&nbsp;[to&nbsp;[icon]](http://toicon.com/), we've decided to share with you some of the techniques behind the icons.READMORE In this case we will study the methods behind the all-demanding Isometric icon. The goal of this tutorial is to introduce you to the basics of isometric sketching in Illustrator CC (without the fancy 3D extrusion features).

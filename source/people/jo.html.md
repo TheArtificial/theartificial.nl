@@ -2,6 +2,7 @@
 layout: person_layout
 current: false
 title: Jo Szczepanska
+date: 2013-08-01
 linkedin: joszczepanska
 twitter: szczpanks
 personal: http://joszczepanska.com/

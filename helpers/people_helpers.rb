@@ -5,10 +5,10 @@ module PeopleHelpers
   ANSI_BOLD_ON = "\e[1m"
   ANSI_BOLD_OFF = "\e[22m"
 
-  def person_name(username)
+  def person_name(username, with_sitemap = sitemap)
     if username.kind_of?(Array)
-      return username.map{|u| person_name u }.join(', ')
-    elsif person_page = sitemap.find_resource_by_path("/people/#{username}.html")
+      return username.map{|u| person_name(u, with_sitemap) }.join(', ')
+    elsif person_page = with_sitemap.find_resource_by_path("/people/#{username}.html")
       return person_page.data.title
     else
       puts "#{ANSI_COLOR_RED}Unknown person '#{username}'#{ANSI_COLOR_RESET}"

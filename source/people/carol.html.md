@@ -2,6 +2,7 @@
 layout: person_layout
 current: false
 title: Carol Liao
+date: 2014-03-03
 linkedin: cliao90
 twitter: thecarolizer
 personal: http://carolliao.com/

@@ -2,6 +2,7 @@
 layout: person_layout
 current: false
 title: Susana Passinhas
+date: 2014-11-03
 linkedin: susanapassinhas
 twitter: susanapassinhas
 personal: http://susanapassinhas.com/

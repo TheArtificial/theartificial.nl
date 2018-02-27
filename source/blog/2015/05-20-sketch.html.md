@@ -3,6 +3,8 @@ title: "Why We Won’t Sketch in Sketch"
 category: process
 tags: tools, illustrator, sketch
 author: shannon
+preview: preview@2x.png
+masthead: masthead.png
 ---
 
 ## About The Artificial
@@ -10,7 +12,7 @@ At The Artificial we create beautiful and intuitive designs by organizing inform
 
 
 ## Our Tools
-We currently find that Adobe Illustrator provides a workflow that allows us to achieve this balance. For exploration, it pairs a vast tool set with a large canvas. For organization, we use palettes, symbols, and paste-in-place, but mostly we rely on a good deal of self-discipline and communication. 
+We currently find that Adobe Illustrator provides a workflow that allows us to achieve this balance. For exploration, it pairs a vast tool set with a large canvas. For organization, we use palettes, symbols, and paste-in-place, but mostly we rely on a good deal of self-discipline and communication.
 
 Of course we’d like our tools to better support our minds in keeping things organized. We’d love to see an Adobe Illustrator with an infinite canvas and unlimited artboards, with symbols that work cross-document, and with grids that can be adjusted at a finer level than top-level preferences. Linking could be improved by giving artboards unique identifiers (names) rather than numbers, and PDF saves would be better if we had more control over layers and artboards in the process. Sure, there are coping mechanisms (scripts) for many of these pain points, but they take up the precious brainspace we’d rather be using to push our designs to be that much better.
 
@@ -20,7 +22,7 @@ Last week, we branched out from our Adobe safe-place and tried the increasingly 
 
 
 ## Why The Artificial will not be moving to Sketch
-There was a general frustration period of getting used to the new keyboard shortcuts, and a lot of cursing as v behaved as the pen tool instead of a selection tool. But keyboard shortcuts are easy to relearn, and adapting didn't take long. But one thing we couldn’t shake was the feeling that the tool had a point of view. We all felt the pressure to design flat, boxy interfaces without exploration. 
+There was a general frustration period of getting used to the new keyboard shortcuts, and a lot of cursing as v behaved as the pen tool instead of a selection tool. But keyboard shortcuts are easy to relearn, and adapting didn't take long. But one thing we couldn’t shake was the feeling that the tool had a point of view. We all felt the pressure to design flat, boxy interfaces without exploration.
 
 Can an interface promote exploration? Absolutely. This is what Adobe’s toolset does so well. Designers are confronted with more tools and palettes than they could ever use, and every designer has his or her preferences. In the same way that designers’ desks vary wildly, designers’ palettes and tool preferences vary as well.
 

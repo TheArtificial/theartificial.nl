@@ -2,6 +2,7 @@
 layout: person_layout
 current: true
 title: Ariane Garoff
+date: 2015-04-07
 linkedin: arianegaroff
 twitter: agaroff
 logo-story: " My logo is inspired from the omnipresence of Art Nouveau and Art Deco in Amsterdam, especially typographies on bridges, and architectures near our office located in Herengracht, in which merchants and regents lived in the XIIe century.

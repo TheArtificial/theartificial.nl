@@ -3,6 +3,8 @@ title: "Designing a Conceptual Model"
 category: process
 tags: interaction, usability, design, process
 author: shannon
+preview: preview@2x.png
+masthead: masthead.png
 ---
 
 Designers love systems. We love creating architectures to organize features, wireframes to provide access to functionality, and flows to provide a sense of navigation. We create guidelines and principles to ensure consistency across screens, platforms, and versions. We document transitions, we inventory the competition, and we define our audience.
