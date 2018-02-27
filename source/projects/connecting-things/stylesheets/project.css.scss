@@ -10,10 +10,6 @@ body {
 
 .connecting-things #content {
 
-  .walkthrough {
-    height: 600px;
-  }
-
   h1, h2 {
     font-family: "Barlow", Helvetica, Arial, sans-serif;
   }
@@ -84,95 +80,90 @@ body {
     transition: .5s;
   }
 
-  .bleed.walkthrough {
-  background-color: $cool-grey-50;
-  background: linear-gradient(to right, $cool-grey-30 50%, $cool-grey-70 51%);
+  .walkthrough {
+    height: 600px;
 
-  .thing-space {
-    background-color: $cool-grey-30;
-  }
+    background-color: $cool-grey-50;
+    background: linear-gradient(to right, $cool-grey-30 50%, $cool-grey-70 51%);
 
-  .screen-space {
-    background-color: $cool-grey-70;
-  }
+    .thing-space {
+      background-color: $cool-grey-30;
+    }
 
-  .thing-space, .screen-space {
-    text-align: center;
-    margin: auto;
+    .screen-space {
+      background-color: $cool-grey-70;
+    }
 
-    img {
-      width: auto;
+    .thing-space, .screen-space {
+      text-align: center;
+      margin: auto;
+
+      img {
+        width: auto;
+      }
+    }
+
+    .flow-space {
+      background-color: $white;
+      text-align: center;
+      margin: auto;
+      position: relative;
+      height:600px;
     }
   }
 
-  .flow-space {
-    background-color: $white;
-    text-align: center;
-    margin: auto;
-    position:relative;
-    height:600px;
+  .navigation{
+    background-color: $pale-tulip;
+    height:200px;
   }
 
-  #actors, #step1, #step2, #step3, #step4, #step5, #step {
-  position: absolute;
-  top:0px;
-  }
+  .walkthrough-controls {
+    padding-top: 10px;
 
-}
+    a {
+      color: $white;
+      svg *.arrow {
+        fill: $white;
+      }
+    }
 
-.navigation{
-  background-color: $pale-tulip;
-  height:200px;
-}
+    a:hover {
+      color: $cool-grey-10;
+      svg *.arrow {
+        fill: $cool-grey-10;
+      }
+    }
 
+    .previous-button {
+      p, svg {
+        float: left;
+      }
+    }
 
-.walkthrough-controls {
-  padding-top: 10px;
+    .next-button {
+      p, svg {
+        float: right;
+      }
+    }
 
-  a {
-    color: $white;
-    svg *.arrow {
-      fill: $white;
+    svg {
+      padding: 2px 4px 0 4px;
     }
   }
 
-  a:hover {
-    color: $cool-grey-10;
-    svg *.arrow {
-      fill: $cool-grey-10;
+  .container.extra-bottom {
+    padding-bottom: 120px;
+  }
+
+  .project-nav {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    a {
+      color: $white;
+    }
+    a:hover {
+      color: $cool-grey-10;
     }
   }
-
-  .previous-button {
-    p, svg {
-      float: left;
-    }
-  }
-
-  .next-button {
-    p, svg {
-      float: right;
-    }
-  }
-
-  svg {
-    padding: 2px 4px 0 4px;
-  }
-  }
-
-.container.extra-bottom {
-padding-bottom: 120px;
-}
-
-.project-nav {
-padding-top: 60px;
-padding-bottom: 60px;
-
-a {
-  color: $white;
-}
-a:hover {
-  color: $cool-grey-10;
-}
-}
 }
