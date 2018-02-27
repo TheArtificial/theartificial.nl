@@ -85,7 +85,7 @@
 // some variables so we don't waste cycles looking for elements over and over
 var $thing = $('#thing');
 var $network = $('#network');
-var $ui = $('#ui');
+var $screen = $('#screen');
 var $counter = $('#caption .counter');
 var $caption = $('#caption .step-description');
 // variable that will increment through the steps
@@ -142,7 +142,7 @@ function renderStep(number) {
   }
   // set screen image
   if (screenPath) {
-    $ui.attr('src', screenPath);
+    $screen.attr('src', screenPath);
   }
 
 };
