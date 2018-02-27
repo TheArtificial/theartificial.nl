@@ -96,12 +96,44 @@ var currentStep = 0;
 var totalSteps = flowSteps.length;
 
 function swapImage($el, newSrc) {
-  $el.fadeTo(200,0.50, function(){
-  $el.attr("src",newSrc);
-  $el.on('load', function(){
-    $el.fadeTo(200,1);
-  });
- });
+  if ($el.attr('src') != newSrc) {
+    $el.fadeTo(200,0.50, function(){
+    $el.attr("src",newSrc);
+    $el.on('load', function(){
+      $el.fadeTo(200,1);
+    });
+   });
+ }
+}
+
+function findLastThingPath(number) {
+  if (flowSteps[number].thingImg) {
+    return flowSteps[number].thingImg;
+  } else if (number > 0) {
+    return findLastThingPath(number-1);
+  } else {
+    return "";
+  }
+}
+
+function findLastNetworkAnimations(number) {
+  if (flowSteps[number].networkAnimations) {
+    return flowSteps[number].networkAnimations;
+  } else if (number > 0) {
+    return findLastNetworkAnimations(number-1);
+  } else {
+    return [];
+  }
+}
+
+function findLastScreenPath(number) {
+  if (flowSteps[number].screenImg) {
+    return flowSteps[number].screenImg;
+  } else if (number > 0) {
+    return findLastScreenPath(number-1);
+  } else {
+    return "";
+  }
 }
 
 function setAnimationLayers(layers) {
@@ -132,28 +164,20 @@ function setAnimationLayers(layers) {
 
 // make one happen
 function renderStep(number) {
-  var step = flowSteps[number];
-  var caption = step.caption;
-  var thingPath = step.thingImg;
-  var networkPath = step.networkAnimations;
-  var screenPath = step.screenImg;
+  var caption = flowSteps[number].caption;
+  var thingPath = findLastThingPath(number);
+  var networkAnimations = findLastNetworkAnimations(number);
+  var screenPath = findLastScreenPath(number);
 
   // set caption
   $counter.text((currentStep+1)+'/'+totalSteps);
   $caption.text(caption);
   // set thing image
-
-  if (thingPath) {
-    swapImage($thing, thingPath);
-  }
+  swapImage($thing, thingPath);
   // set and start animation
-  if (networkPath) {
-    setAnimationLayers(networkPath);
-  }
+  setAnimationLayers(networkAnimations);
   // set screen image
-  if (screenPath) {
-    swapImage($screen, screenPath);
-  }
+  swapImage($screen, screenPath);
 
   // manage button visibility
   if (currentStep == 0) {
