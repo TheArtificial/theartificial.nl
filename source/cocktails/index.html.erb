@@ -54,21 +54,8 @@ noindex: true
         </div>
       </div>
 
-      <% data.cocktails.sort_by{|c| c.date}.reverse.each_with_index do |c, i| %>
-      <div class="col-4 packed">
-        <% link_to "#{c.slug}.html" do %>
-          <div class="card cocktail-preview">
-            <div class="glass" style="background-image: url(<%= "images/glass/#{c.glass}.svg" %>);">
-              <img class="contents" src="<%= "images/contents/#{c.contents}.gif" %>">
-            </div>
-
-            <div class="details center">
-              <h2 class="drinkname"><%= c.name %></h2>
-              <p class="date"><%= c.date.strftime('%B %e, %Y') %></p>
-            </div>
-          </div>
-        <% end %>
-      </div>
+      <% current_resource.children.sort_by{|c| c.data.date}.reverse.each do |cocktail| %>
+        <%= render_card(cocktail) %>
       <% end %>
     </div>
 
