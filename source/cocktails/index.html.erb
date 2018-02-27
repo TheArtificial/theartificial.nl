@@ -54,7 +54,7 @@ noindex: true
         </div>
       </div>
 
-      <% current_resource.children.sort_by{|c| c.data.date}.reverse.each do |cocktail| %>
+      <% current_resource.children.sort_by{|c| c.data.cocktail.date}.reverse.each do |cocktail| %>
         <%= render_card(cocktail) %>
       <% end %>
     </div>
