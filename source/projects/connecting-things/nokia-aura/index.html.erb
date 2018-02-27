@@ -1,0 +1,40 @@
+---
+layout: projects/connecting-things/_thing_layout
+title: Nokia Aura
+preview: thing/thing.png
+date: 2018-02-27
+---
+<p>
+Aura is a 25-cm tall alarm clock with built-in speakers and a bedside lamp. It was designed by Withings that has been bought over by Nokia. The Aura clock also comes with an additional sensor that sits under the mattress to track sleep. Both accessories connect to the home Wi-Fi. The purpose of this clock is to help users waking up and falling asleep more smoothly. The products have to be configured with Nokia Health app, but then they can be used as stand-alone products.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The connection process is </span>easy
+</h2>
+<p>
+To start, the user needs to download the Nokia App, to create and account or log in, and to connect Aura to a power supply. As Nokia app groups various connected products, the user can choose which product to install. The app automatically starts searching for the Aura. When found, it appears in an OS overlay in the Nokia app. The user selects the Withings Aura from the list, and the next screen shows that the Aura is paired. Then, the app asks to choose a Wi-Fi network. If the smartphone is already connected to a Wi-Fi network  and if the permission is granted by the user, finishing the setup is simpler because the device gives Wi-Fi credentials to Aura. After showing an indeterminate progress indicator, the app asks if the user would like to setup an Aura sleep sensor. At last, a product tour explains gestures to control Aura and some UI shows that the connected alarm clock is set.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The security is </span>worrying
+</h2>
+<p>
+The pairing process is not verified because the user is not identifying their alarm. During the pairing process, the device could pair to another alarm without the user noticing it. In the Android flow, it is interesting to notice that an OS alert asks the user to enter a pairing code, but that no pairing code is given… Privacy does not seem to be taken too seriously when a user doesn’t get informed that someone else connected to the user's Aura and had access to their sleeping related data. It is even more worrying knowing that any hacker breaking into the home network could potentially access these personal data.</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The resilience is </span>good
+</h2>
+<p>
+Unverified Bluetooth connections are used from the product to the device OS and app, so the home Wi-Fi credentials can be shared with the Aura. Aura then connects to the home Wi-Fi and registers to the Nokia account. The Aura does not require any smartphone to function once it has been configured.
+</p>
+
+<script>
+var flowSteps = [
+  {
+    caption: "App logs in to account on Cloud",
+    thingImg: "thing/thing.png",
+    networkAnimations: ["Actors.json", "AppCloud.json"],
+    screenImg: "screens/login.png"
+  }
+]
+</script>

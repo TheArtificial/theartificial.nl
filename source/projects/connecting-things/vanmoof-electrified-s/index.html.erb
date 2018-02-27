@@ -1,0 +1,41 @@
+---
+layout: projects/connecting-things/_thing_layout
+title: VanMoof Electrified S
+preview: thing/thing.png
+date: 2018-02-27
+---
+<p>
+Electrified S is an electric and connected bike launched by the Dutch company VanMoof in 2017. A notable specificity aside from a continuous power help, is a power boost button on the bike that gives a smooth increase of power to assist pedaling. The bike also uses a smart lock that can be unlocked from a remote or from a smartphone via the VanMoof app.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The connection process is </span>easy
+</h2>
+<p>
+When connecting the bike for the first time, the user has to make sure the bike is charged, and that the VanMoof app is downloaded on their smartphone. The user starts setting up the bike by logging in or creating a VanMoof account. The account creation include indicating the IMEI and the unique frame number of the bike and therefore registering a bike to a user account. It also include confirming a valid email address. The user should then log in the VanMoof app. To connect to their bike, the only thing the user should do is get closer to the bike with their device. If auto-unlock is activated, the user has a few seconds to unlock the bike chain before it locks again.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The security is </span>good
+</h2>
+<p>
+The topology of connections is atypical. Here, the account of the user plays an important role in the security as it is holding the unique identifying numbers of the bike. The bike connects with the VanMoof account. The bike then also pairs and connect to the device’s OS in an unverified connection to allow a verified to connection to occur from the bike to the App. This verification is possible because the bike is registered to the user account. The user can also decide if he allows or not the auto-unlock functionality, and if so he can adjust the range of unlocking. Unlocking is possible from the bike display, from the app, and from a remote. Another great feature gives the user a peace of mind even if it’s not directly link to the connection flow. If the bike is stolen, a team of bike hunter will try to get it back for their user.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The resilience is </span>terrible
+</h2>
+<p>
+A few early release bikes have been victim of software bugs killing the power assist, and the battery of the bike. The issue is that the smart lock requires electrical power to lock and unlock. The only solution to have the bike and the lock to function again, is to reset it thanks to a Mini USB service port. Luckily VanMoof worked on fixing the issues on this model and came up with new models that replaced the lock by an alarm. Aside from this bug, the bluetooth works fine if the user device has an access to the Internet.
+</p>
+
+<script>
+var flowSteps = [
+  {
+    caption: "App logs in to account on Cloud",
+    thingImg: "thing/thing.png",
+    networkAnimations: ["Actors.json", "AppCloud.json"],
+    screenImg: "screens/login.png"
+  }
+]
+</script>

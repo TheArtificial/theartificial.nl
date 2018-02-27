@@ -1,0 +1,41 @@
+---
+layout: projects/connecting-things/_thing_layout
+title: Foldio 360
+preview: thing/thing.png
+date: 2018-02-27
+---
+<p>
+Foldio360 is a Bluetooth connected turntable to create 360 images of small objects in a simple way from a smartphone or a camera. It was created by OrangeMonkie and launched in 2016. The rotating platform connects with Bluetooth and IR sensors.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The connection process is </span>quick and easy
+</h2>
+<p>
+To connect the turntable, the user must plug the platform into a power source, download Foldio360 app and log in. The app shows the camera view of the user’s phone and a banner indicating the status of the turntable. On the first launch, the banner shows that Foldio360 is not connected. If the user taps on the button ‘select device’, an overlay card shows up in the app and displays the available turntable. The user taps on the turntable in the list and after a few seconds, the pop up overlay disappears to reveal the same screen as before but without the banner. The user can now control the turntable from the app. Easy!
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The security is </span>low
+</h2>
+<p>
+The connections at the OS and at the software are not verified. The connection process is very easy and quick, but if a user would have two turntables, it would be easy to connect one instead of the other by mistake.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The resilience is </span>okay
+</h2>
+<p>
+The connection between the app and the turntable is stable if the user’s phone is connected to the internet and if the user stays within the Bluetooth range.
+</p>
+
+<script>
+var flowSteps = [
+  {
+    caption: "App logs in to account on Cloud",
+    thingImg: "thing/thing.png",
+    networkAnimations: ["Actors.json", "AppCloud.json"],
+    screenImg: "screens/login.png"
+  }
+]
+</script>

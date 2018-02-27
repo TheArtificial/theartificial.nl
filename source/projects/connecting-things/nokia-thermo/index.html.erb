@@ -1,0 +1,41 @@
+---
+layout: projects/connecting-things/_thing_layout
+title: Nokia Thermo
+preview: thing/thing.png
+date: 2018-02-27
+---
+<p>
+Nokia Thermo measure temperature from the user’s forehead and automatically syncs readings with the dedicated app via Bluetooth.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The connection process is </span>clear
+</h2>
+<p>
+To connect to Nokia Thermo, the user needs to download the Nokia Thermo app and to log in. The user taps on ‘Install’ within the Thermo app to connect the smart thermometer. Then the app instructs the user to press and hold the button on the Thermo until the display shows ‘SETUP’. The user presses “next” in the app, initiating the search for the product. An OS overlay pops up and reveals the available accessories. The user selects in the list the connected Thermo that appeared. The app shows an indeterminate progress indicator. It is connecting to the product. Then the user needs to chose a Wi-Fi network to setup the device. If the user selects a home Wi-Fi that the device is elated connected to, the setup is quicker as the password can be shared from the device. The app is busy again with an indeterminate progress indicator displaying that the app is configuring, and activating the Thermometer. A last setup screen shows that the Thermometer is activated. To finish, the app shows a tutorial to teach the user how to scan the forehead for a reading.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The security is </span>good
+</h2>
+<p>
+Thermo’s OS and software connections are both verified thanks to physical button on the device and to a Wi-Fi connection protected by a password. Thermo registers to the user account through the home Wi-Fi that makes it pretty secure.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The resilience is </span>good
+</h2>
+<p>
+Thermo does not need to be connected to a device for continued used, but just for the setup and syncing data. Thermo uses Wi-Fi or bluetooth to sync the user data with the Thermo app.
+</p>
+
+<script>
+var flowSteps = [
+  {
+    caption: "App logs in to account on Cloud",
+    thingImg: "thing/thing.png",
+    networkAnimations: ["Actors.json", "AppCloud.json"],
+    screenImg: "screens/login.png"
+  }
+]
+</script>

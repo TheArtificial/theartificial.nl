@@ -1,0 +1,41 @@
+---
+layout: projects/connecting-things/_thing_layout
+title: Amazon Echo Dot
+preview: thing/thing.png
+date: 2018-02-27
+---
+<p>
+Echo dot is a voice-controlled device using Amazon’s Alexa assistant. The product is capable of basic skills such as providing weather forecast or news, playing the radio, calling or messaging the user’s contacts, setting timers, but also more elaborated skills involving peripherals or other services. For instance, Echo dot could control other smart objects in the user's house like turning on Netflix on TV or controlling lighting and heating.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The connection process is </span>energy consuming
+</h2>
+<p>
+Echo dot should first be plugged into a power outlet. Then it should connect to Wi-Fi. To do so, the user has to download the Alexa app. After agreeing to the Terms and Conditions, choosing a device to set up, and picking a language, the user must wait until a light ring turns orange on the Echo dot. The orange light indicates that the product created an Ad Hoc network. In some cases, the light ring stays blue and does not immediately turn to orange. If this happens to be the case, the user should press and hold the Action button on the Echo dot for five seconds. Once the orange light appears, the user needs to select the new Amazon Echo ad hoc network from the list of available products in their mobile Wi-Fi settings. Finally, the user can connect their smartphone back to the infrastructure Wi-Fi network, this will disconnect the device from the ad hoc network as it is not needed anymore.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The security is </span>poor
+</h2>
+<p>
+The temporary network created by the Echo dot appears as unsecured in the mobile settings, indeed it is not protected by a password. This connection at the protocol layer allows a verified connection at the app layer. The Echo dot receives the Wi-Fi credentials and is then able to connect to the Wi-Fi network as a standalone product. Despite the fact that a speakable confirmation code can be required for purchases and voice purchasing can be turned off. All the household / office members are able to view the purchase of the current user’s account. This has lead to some unwanted situations, where children access adult content without their permission for instance.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The resilience is </span>terrible
+</h2>
+<p>
+Without an access to a Wi-Fi network, Echo loses its smartness. The issue is that to add new skills to the Echo Dot, the user needs the Alexa app. There were some complaints about the app beeing buggy. Sometimes it tells it is not connected to the Internet when it actually is. Another issue is that two Alexas too close to each other can both reply to the wake word, instead of the one hearing the user the best just replying (Echo spatial perception feature).
+</p>
+
+<script>
+var flowSteps = [
+  {
+    caption: "App logs in to account on Cloud",
+    thingImg: "thing/thing.png",
+    networkAnimations: ["Actors.json", "AppCloud.json"],
+    screenImg: "screens/login.png"
+  }
+]
+</script>
