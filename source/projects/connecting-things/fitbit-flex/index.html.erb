@@ -33,27 +33,136 @@ Every time the user opens Fitbit app, if the tracker is paired and the device is
 <script>
 var flowSteps = [
   {
-    caption: "App launches",
+    caption: "User launches App",
     thingImg: "thing/off.png",
     networkAnimations: ["Actors.json"],
     screenImg: "screens/01_join.png"
   },
   {
-    caption: "Thing begins broadcasting Bluetooth",
-    thingImg:  "thing/off.png",
+    caption: "User logs in App",
+    networkAnimations: ["Actors.json","AppCloud.json"],
+    screenImg: "screens/02_login.png"
+  },
+  {
+    caption: "User is logged in App",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/03_home.png"
+  },
+  {
+    caption: "User adds a new product",
+    screenImg: "screens/04_add.png"
+  },
+  {
+    caption: "Thing begins broadcasting Bluetooth; User sees list of Fitbit products",
+    thingImg: "thing/blue.png",
     networkAnimations: ["Actors.json", "Thing_broadcasts.json"],
-    screenImg: "screens/01_join.png"
+    screenImg: "screens/05_trackers.png"
+  },
+  {
+    caption: "User selects Flex 2",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/06_flex2.png"
+  },
+  {
+    caption: "User agrees to terms",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/07_terms.png"
+  },
+  {
+    caption: "User discovers items in the box",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/08_meet.png"
+  },
+  {
+    caption: "User charges Flex 2",
+    thingImg: "thing/white.png",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/09_power.png"
+  },
+  {
+    caption: "User insert Flex 2 in wristband",
+    thingImg: "thing/blue.png",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/10_insert.png"
+  },
+  {
+    caption: "User puts on wristband",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/11_on.png"
   },
   {
     caption: "OS listens for Bluetooth",
     networkAnimations: ["Actors.json", "OS_listens.json"],
-    screenImg: "screens/01_join.png"
+    screenImg: "screens/12_searching.png"
   },
   {
-    caption: "App logs in to account on Cloud",
+    caption: "User taps trackers",
+    thingImg: "thing/pair.png",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/13_taptracker.png"
+  },
+  {
+    caption: "Thing and OS pair with Bluetooth; User verifies battery",
+    networkAnimations: ["Actors.json", "ThingOS_pairs.json"],
+    screenImg: "screens/14_searching.png"
+  },
+  {
+    caption: "Thing and OS connect; User sees walkthrough",
+    thingImg: "thing/blue.png",
+    networkAnimations: ["Actors.json", "ThingOS_verified.json"],
+    screenImg: "screens/15_howto.png"
+  },
+  {
+    caption: "App and Thing open software connection; User sees walkthrough",
+    thingImg: "thing/blue.png",
+    networkAnimations: ["Actors.json", "ThingApp_unverified.json"],
+    screenImg: "screens/16_basics.png"
+  },
+  {
+    caption: "User sees walkthrough",
     thingImg: "thing/off.png",
-    networkAnimations: ["Actors.json", "AppCloud.json"],
-    screenImg: "screens/01_join.png"
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/17_progress.png"
+  },
+  {
+    caption: "User sees walkthrough",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/18_calls.png"
+  },
+  {
+    caption: "User sees walkthrough",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/19_sleep.png"
+  },
+  {
+    caption: "User sees walkthrough",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/20_notifications.png"
+  },
+  {
+    caption: "User sees walkthrough",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/21_exercice.png"
+  },
+  {
+    caption: "User sees walkthrough",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/22_customize.png"
+  },
+  {
+    caption: "User sees walkthrough",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/23_care.png"
+  },
+  {
+    caption: "User sees walkthrough",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/24_set.png"
+  },
+  {
+    caption: "User sees walkthrough",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/25_connected.png"
   }
 ]
 </script>
