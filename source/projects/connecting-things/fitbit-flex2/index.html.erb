@@ -1,7 +1,7 @@
 ---
 layout: projects/connecting-things/_thing_layout
 title: Fitbit Flex 2
-preview: thing/thing.png
+preview: thing/off.png
 date: 2018-02-27
 ---
 
@@ -33,10 +33,27 @@ Every time the user opens Fitbit app, if the tracker is paired and the device is
 <script>
 var flowSteps = [
   {
+    caption: "App launches",
+    thingImg: "thing/off.png",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/01_join.png"
+  },
+  {
+    caption: "Thing begins broadcasting Bluetooth",
+    thingImg:  "thing/off.png",
+    networkAnimations: ["Actors.json", "Thing_broadcasts.json"],
+    screenImg: "screens/01_join.png"
+  },
+  {
+    caption: "OS listens for Bluetooth",
+    networkAnimations: ["Actors.json", "OS_listens.json"],
+    screenImg: "screens/01_join.png"
+  },
+  {
     caption: "App logs in to account on Cloud",
-    thingImg: "thing/thing.png",
+    thingImg: "thing/off.png",
     networkAnimations: ["Actors.json", "AppCloud.json"],
-    screenImg: "screens/login.png"
+    screenImg: "screens/01_join.png"
   }
 ]
 </script>
