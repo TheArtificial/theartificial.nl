@@ -1,7 +1,7 @@
 ---
 layout: projects/connecting-things/_thing_layout
 title: Polaroid Cube Plus
-preview: thing/thing.png
+preview: thing/off.png
 date: 2018-02-27
 ---
 <p>
@@ -32,10 +32,49 @@ If the camera and the device stay close to each other, the connection function.
 <script>
 var flowSteps = [
   {
-    caption: "App logs in to account on Cloud",
-    thingImg: "thing/thing.png",
-    networkAnimations: ["Actors.json", "AppCloud.json"],
-    screenImg: "screens/login.png"
+    caption: "User launches App",
+    thingImg: "thing/off.png",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/01_hello.png"
+  },
+  {
+    caption: "User turns Thing on",
+    thingImg: "thing/on.png",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/02_on.png"
+  },
+  {
+    caption: "Thing starts ad-hoc Wi-Fi connection",
+    thingImg: "thing/wifi.png",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/03_wifi.png"
+  },
+  {
+    caption: "User is instructed to visit OS settings",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/04_gotosettings.png"
+  },
+  {
+    caption: "OS searches for Wi-Fi networks",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/05_settings-progress.png"
+  },
+  {
+    caption: "Thing and OS connect",
+    networkAnimations: ["Actors.json", "ThingOS_verified.json"],
+    screenImg: "screens/06_settings-done.png"
+  },
+  {
+    caption: "App and Thing open software connection",
+    networkAnimations: ["Actors.json", "ThingApp_unverified.json"],
+    screenImg: "screens/07_allset.png"
   }
+  {
+    caption: "App and Thing open software connection",
+    thingImg: "thing/on.png",
+    networkAnimations: ["Actors.json", "ThingApp_unverified.json"],
+    screenImg: "screens/08_working.png"
+  }
+
 ]
 </script>
