@@ -46,7 +46,7 @@ var flowSteps = [
   {
     caption: "Thing starts ad-hoc Wi-Fi connection",
     thingImg: "thing/wifi.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors.json", "Thing_broadcasts.json"],
     screenImg: "screens/03_wifi.png"
   },
   {
@@ -56,7 +56,7 @@ var flowSteps = [
   },
   {
     caption: "OS searches for Wi-Fi networks",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors.json", "OS_listens.json"],
     screenImg: "screens/05_settings-progress.png"
   },
   {
@@ -66,15 +66,14 @@ var flowSteps = [
   },
   {
     caption: "App and Thing open software connection",
-    networkAnimations: ["Actors.json", "ThingApp_unverified.json"],
+    networkAnimations: ["Actors.json", "ThingApp_verified.json"],
     screenImg: "screens/07_allset.png"
-  }
+  },
   {
     caption: "App and Thing open software connection",
     thingImg: "thing/on.png",
-    networkAnimations: ["Actors.json", "ThingApp_unverified.json"],
+    networkAnimations: ["Actors.json"],
     screenImg: "screens/08_working.png"
   }
-
 ]
 </script>
