@@ -32,10 +32,103 @@ Thermo does not need to be connected to a device for continued used, but just fo
 <script>
 var flowSteps = [
   {
-    caption: "App logs in to account on Cloud",
+    caption: "User launches App",
     thingImg: "thing/off.png",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/01_hello.png"
+  },
+  {
+    caption: "App logs in to account on Cloud",
     networkAnimations: ["Actors.json", "AppCloud.json"],
-    screenImg: "screens/login.png"
+    screenImg: "screens/02_login.png"
+  },
+  {
+    caption: "User view profiles in App",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/03_profiles.png"
+  },
+  {
+    caption: "User adds new Thing in App settings",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/04_settings.png"
+  },
+  {
+    caption: "User starts walkthrough in App settings",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/05_setup1.png"
+  },
+  {
+    caption: "Thing begins broadcasting Bluetooth; User presses next in App",
+    thingImg:  "thing/setup.png",
+    networkAnimations: ["Actors.json", "Thing_broadcasts.json"],
+    screenImg: "screens/06_setup2.png",
+  },
+  {
+    caption: "OS listens for Bluetooth",
+    networkAnimations: ["Actors.json", "OS_listens.json"],
+    screenImg: "screens/08_setup3.png"
+  },
+  {
+    caption: "Thing and OS pair with Bluetooth",
+    networkAnimations: ["Actors.json", "ThingOS_pairs.json"],
+    screenImg: "screens/09_setup3b.png"
+  },
+  {
+    caption: "Thing and OS connect",
+    thingImg:  "thing/off.png",
+    networkAnimations: ["Actors.json", "ThingOS_verified.json"],
+    screenImg: "screens/10_setup4.png"
+  },
+  {
+    caption: "App and Thing open software connection",
+    networkAnimations: ["Actors.json", "ThingApp_verified.json"],
+    screenImg: "screens/10_setup4.png"
+  },
+  {
+    caption: "User selects home Wi-Fi network",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/11_setup5.png"
+  },
+  {
+    caption: "User grants permission to share Wi-Fi network credentials",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/12_setup6.png"
+  },
+  {
+    caption: "Thing and home Wi-Fi connect",
+    thingImg:  "thing/setup.png",
+    networkAnimations: ["Actors.json", "ThingWifi_wifi.json"],
+    screenImg: "screens/13_setup7.png"
+  },
+  {
+    caption: "Thing registers to Cloud",
+    thingImg:  "thing/checkmark.png",
+    networkAnimations: ["Actors.json", "ThingWifiCloud_thing.json"],
+    screenImg: "screens/14_setup8.png"
+  },
+  {
+    caption: "User sees tutorial in App",
+    thingImg:  "thing/off.png",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/15_tuto1.png"
+  },
+  {
+    caption: "User sees tutorial in App",
+    thingImg:  "thing/off.png",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/16_tuto2.png"
+  },
+  {
+    caption: "User sees tutorial in App",
+    thingImg:  "thing/off.png",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/17_tuto3.png"
+  },
+  {
+    caption: "User sees tutorial in App",
+    thingImg:  "thing/off.png",
+    networkAnimations: ["Actors.json"],
+    screenImg: "screens/18_tuto4.png"
   }
 ]
 </script>
