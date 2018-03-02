@@ -24,7 +24,7 @@ class Cocktail < Mustache
     context[:human_date] = resource.data.cocktail.date.strftime('%B %e, %Y')
     context[:title] = resource.data.title
     context[:author] = person_name(resource.data.cocktail.author, @app.sitemap)
-    context[:glass_url] = "/cocktails/images/glass/#{resource.data.cocktail.glass}.png"
+    context[:glass_url] = "/cocktails/images/glass/#{resource.data.cocktail.glass}.svg"
     context[:contents_url] = "/cocktails/images/contents/#{resource.data.cocktail.contents}.gif"
   end
 
