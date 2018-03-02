@@ -15,7 +15,6 @@ function renderCard(doc) {
     template = "<%=escape_javascript(Cards.template_for_type('blog')) %>";
   } else if (type == 'cocktail') {
     view = doc
-console.log('view for cocktail', view);
     template = "<%=escape_javascript(Cards.template_for_type('cocktail')) %>";
   } else if (type == 'work') {
     view = doc
@@ -23,8 +22,11 @@ console.log('view for cocktail', view);
   } else if (type == 'ftfy') {
     view = doc
     template = "<%=escape_javascript(Cards.template_for_type('ftfy')) %>";
+  } else if (type == 'basic') {
+    view = doc
+    template = "<%=escape_javascript(Cards.template_for_type('basic')) %>";
   } else {
-    template = "<%#=escape_javascript( mustache_template('templates/_unknown_card.mustache') ) %>";
+    template = "<%#=escape_javascript(Cards.template_for_type('unknown')) %>";
   }
   return $(Mustache.render(template, view));
 }
