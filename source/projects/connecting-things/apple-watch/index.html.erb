@@ -13,7 +13,7 @@ Apple Watch is a series of smart wearables designed by Apple to enhance the iPho
   <span class="sentence">The connection process is </span>a little long but celebratory
 </h2>
 <p>
-After choosing a language on the watch screen, the user taps 'pair' on the watch face and the watch displays a sort of ball made of particles animation that acts as a QR code to pair with an iPhone. An iOS instruction sheet pops up to tell to continue the setup from the iPhone. Tapping 'continue' on the smartphone switches to a camera mode allowing the user to scan the animation occurring on the screen of the watch. If the user places the watch displaying the animation in the field of visibility of the phone camera, pairing occurs. The user is finally asked either to restore the App from a backup or to set up a new watch. Follows a number of screens to adjust the watch to the user preference such as choosing on which wrist to wear it, to which Apple ID it should be registered… etc. An alternative method for pairing exists instead of scanning the animation on the watch. It is to manually enter a 6-digit code to authenticate the watch with the iPhone.
+After choosing a language on the watch screen, the user taps 'pair' on the watch face and the watch displays a sort of ball made of particles animation that acts as a QR code to pair with an iPhone. An iOS instruction sheet pops up to tell to continue the setup from the iPhone. Tapping 'continue' on the smartphone switches to a camera mode allowing the user to scan the animation occurring on the screen of the watch. If the user places the watch displaying the animation in the field of visibility of the phone camera, pairing occurs. Thanks to this secured connection at the OS level, the app and the watch also connect. The iPhone will be able to share credential so the watch connects to the iCloud account of the user. The user is finally asked either to restore the Watch from a backup or to set up a new watch. Follows a number of screens to adjust the watch to the user preference such as choosing on which wrist to wear it, to set up a passcode, to watch a small tutorial… etc. An alternative method for pairing exists instead of scanning the animation on the watch. It is to manually enter a 6-digit code to authenticate the watch with the iPhone.
 </p>
 
 <h2 class="subtitle">
@@ -34,136 +34,135 @@ var flowSteps = [
   {
     caption: "User turns Thing on",
     thingImg: "thing/01_on.png",
-    networkAnimations: ["Actors.json", "AppCloud.json"],
+    networkAnimations: ["Actors_noWifi.json", "AppCloud.json"],
   },
   {
     caption: "User choose language on Thing",
     thingImg: "thing/02_languagea.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
   },
   {
     caption: "User choose region on Thing",
     thingImg: "thing/02_languageb.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
   },
   {
     caption: "User confirms language on Thing",
     thingImg: "thing/02_languagec.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
   },
   {
     caption: "Thing is setting up language",
     thingImg: "thing/02_languaged.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
   },
   {
     caption: "Thing begins broadcasting Bluetooth; Thing tells User to open App",
     thingImg: "thing/03_open-app.png",
-    networkAnimations: ["Actors.json", "Thing_broadcasts.json"],
+    networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json"],
   },
   {
     caption: "OS listens for Bluetooth; OS prompts User to open App",
     thingImg: "thing/03_open-app.png",
-    networkAnimations: ["Actors.json", "OS_listens.json"],
+    networkAnimations: ["Actors_noWifi.json", "OS_listens.json"],
     screenImg: "screens/00.png"
   },
   {
     caption: "User launches App",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/01.png"
   },
   {
     caption: "User scans Thing",
     thingImg: "thing/04_animation.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/02.png"
   },
   {
     caption: "Thing and OS pair with Bluetooth",
     thingImg: "thing/05_illustration.png",
-    networkAnimations: ["Actors.json", "ThingOS_pairs.json"],
+    networkAnimations: ["Actors_noWifi.json", "ThingOS_pairs.json"],
     screenImg: "screens/03.png"
   },
   {
     caption: "Thing and OS connect; User choose preference on Thing",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/04.png"
   },
   {
     caption: "App and Thing open software connection",
-    networkAnimations: ["Actors.json", "ThingApp_verified.json"],
+    networkAnimations: ["Actors_noWifi.json", "ThingApp_verified.json"],
     screenImg: "screens/05.png"
   },
   {
     caption: "User agrees to terms in App",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/06.png"
   },
   {
     caption: "OS prompts user to agree to terms",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/07.png"
   },
   {
     caption: "Thing and account connect",
-    networkAnimations: ["Actors.json", "ThingCloud_user.json"],
+    networkAnimations: ["Actors_noWifi.json", "ThingCloud_user.json"],
     screenImg: "screens/08.png"
   },
   {
     caption: "User chooses Watch Analytics preference in App",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/09.png"
   },
   {
     caption: "User chooses Shared Settings preference in App",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/10.png"
   },
   {
     caption: "User chooses passcode preference in App",
-    //thingImg: "thing/0.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/11.png"
   },
   {
     caption: "User creates a passcode on the Thing",
-    networkAnimations: ["Actors.json"],
+    thingImg: "thing/06_code.png",
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/12.png"
   },
   {
-    caption: "User chooses Unlock preference in App",
-    networkAnimations: ["Actors.json"],
+    caption: "User chooses Unlock preference on the Thing",
+    networkAnimations: ["Actors_noWifi.json"],
     thingImg: "thing/07_unlock.png",
     screenImg: "screens/13.png"
   },
   {
     caption: "User sees how to use in case of Emergency",
-    thingImg: "thing/06_code.png",
-    networkAnimations: ["Actors.json"],
+    thingImg: "thing/05_illustration.png",
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/14.png"
   },
   {
     caption: "User chooses to install Apps on Thing with App",
-    thingImg: "thing/09_home.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/15.png"
   },
   {
     caption: "Thing and App are syncing",
-    thingImg: "thing/08_apple.png",
-    networkAnimations: ["Actors.json"],
+    thingImg: "thing/08_syncing.png",
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/16.png"
   },
   {
     caption: "Thing is set up",
     thingImg: "thing/09_home.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/17.png"
   },
   {
     caption: "Thing and App function",
     thingImg: "thing/09_home.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/18.png"
   }
 ]
