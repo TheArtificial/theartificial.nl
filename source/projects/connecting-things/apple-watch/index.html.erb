@@ -32,17 +32,22 @@ Even though some models of the Apple Watch Series 3 are equipped with a cellular
 <script>
 var flowSteps = [
   {
-    caption: "User turns Thing on",
-    thingImg: "thing/01_on.png",
+    caption: "OS and Cloud connect",
+    thingImg: "thing/01_off.png",
     networkAnimations: ["Actors_noWifi.json", "AppCloud.json"],
   },
   {
-    caption: "User choose language on Thing",
+    caption: "User turns Thing on",
+    thingImg: "thing/01_on.png",
+    networkAnimations: ["Actors_noWifi.json"],
+  },
+  {
+    caption: "User chooses language on Thing",
     thingImg: "thing/02_languagea.png",
     networkAnimations: ["Actors_noWifi.json"],
   },
   {
-    caption: "User choose region on Thing",
+    caption: "User chooses region on Thing",
     thingImg: "thing/02_languageb.png",
     networkAnimations: ["Actors_noWifi.json"],
   },
@@ -52,20 +57,20 @@ var flowSteps = [
     networkAnimations: ["Actors_noWifi.json"],
   },
   {
-    caption: "Thing is setting up language",
+    caption: "Thing sets up language",
     thingImg: "thing/02_languaged.png",
     networkAnimations: ["Actors_noWifi.json"],
   },
   {
-    caption: "Thing begins broadcasting Bluetooth; Thing tells User to open App",
-    thingImg: "thing/03_open-app.png",
+    caption: "Thing broadcasts Bluetooth",
+    thingImg: "thing/01_near.png",
     networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json"],
   },
   {
-    caption: "OS listens for Bluetooth; OS prompts User to open App",
+    caption: "OS listens for Bluetooth",
     thingImg: "thing/03_open-app.png",
     networkAnimations: ["Actors_noWifi.json", "OS_listens.json"],
-    screenImg: "screens/00.png"
+    screenImg: "screens/00.png",
   },
   {
     caption: "User launches App",
@@ -85,7 +90,7 @@ var flowSteps = [
     screenImg: "screens/03.png"
   },
   {
-    caption: "Thing and OS connect; User choose preference on Thing",
+    caption: "Thing and OS connect",
     networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/04.png"
   },

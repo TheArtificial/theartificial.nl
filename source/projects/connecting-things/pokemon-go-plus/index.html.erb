@@ -10,17 +10,17 @@ Pokémon GO Plus is an optional peripheral for the famous augmented reality game
 </p>
 
 <h2 class="subtitle">
-  <span class="sentence">The connection process is </span>easy
+  <span class="sentence">The connection process is </span>not very intuitive
 </h2>
 <p>
-First, the user requires to log in Pokémon Go App. The trickiest part for the user is to navigate to the Pokémon GO Plus section that is a little hidden in the settings of the app, accessible from the Pokéball icon. Once in the Pokémon GO Plus menu, pressing the button on the object will make a blue light pulse to indicate that the object broadcasts and it will appear under available devices in the app. To pair and connect simultaneously the user just needs to tap one more time, but this time in the app, on the item in the list.
+First, the user has to log in Pokémon Go App. For iOS users, pairing and connecting occurs in two different places: the OS settings of the smartphone and the settings of the Pokémon GO app. To make the Pokémon GO Plus discoverable, the user presses the button on the Pokémon GO Plus. The light pulses blue to indicate that the object is broadcasting. The User selects the item under available devices in the OS app. In a second time, the user should repeat the actions to connect the Pokémon GO Plus from the Pokémon GO app. The user has to tap the button on the accessory a second time to make it discoverable again. Then, the user navigates to the Pokémon GO Plus section that is a little hidden in the settings of the Pokémon GO app, accessible from the Pokéball icon. To pair and connect simultaneously the user finally needs to tap one more time on the name of accessory that appeared in the list. Pokémon GO Plus vibrates to indicate its connected. In the home screen of the Pokémon GO app, a new icon appears to indicate the status of the Pokémon GO Plus.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The security is </span>more than enough
 </h2>
 <p>
-  Pokémon GO Plus uses a relatively secured connection for a game. It feels reassuring for a gameplay based on the user location. As we can see in the topology, Bluetooth allows verified connections both at the protocol layer and at the software layer to happened. For the Thing to connect with the App, we suspect that the cloud sends tokens to enable the connection from a single user account. If Pokémon GO plus is associated with another user account, the object needs to reset before connecting to a new one. The fact that Pokémon GO Plus pairs with a single smartphone at the time also makes it more secured.
+  Pokémon GO Plus uses a relatively secured connection for a game. It feels reassuring for a gameplay based on the user location. As we can see in the topology, Bluetooth allows verified connections both at the protocol layer and at the software layer to happened. For the Thing to connect with the App, we suspect that the cloud sends tokens to enable the connection from a single user account. If Pokémon GO Plus is associated with another user account, the object needs to reset before connecting to a new one. The fact that Pokémon GO Plus pairs with a single smartphone at the time also makes it more secured.
 </p>
 
 <h2 class="subtitle">
@@ -33,37 +33,79 @@ First, the user requires to log in Pokémon Go App. The trickiest part for the u
 <script>
 var flowSteps = [
   {
-    caption: "App logs in to account on Cloud",
+    caption: "User launches App",
     thingImg: "thing/off.png",
-    networkAnimations: ["Actors_noWifi.json", "AppCloud.json"],
-    screenImg: "screens/login.png"
+    networkAnimations: ["Actors_noWifi.json"],
+    screenImg: "screens/06.png"
   },
   {
-    caption: "Thing begins broadcasting Bluetooth",
+    caption: "User signs up in App",
+    networkAnimations: ["Actors_noWifi.json"],
+    screenImg: "screens/00.png"
+  },
+  {
+    caption: "App logs in to account on Cloud; User enters login credentials",
+    networkAnimations: ["Actors_noWifi.json", "AppCloud.json"],
+    screenImg: "screens/01.png"
+  },
+  {
+    caption: "Thing broadcasts Bluetooth",
     thingImg:  "thing/white.png",
-    screenImg: "screens/discover.png",
     networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json"],
+    screenImg: "screens/03.png"
   },
   {
     caption: "OS listens for Bluetooth",
     networkAnimations: ["Actors_noWifi.json", "OS_listens.json"],
-    screenImg: "screens/discover.png"
+    screenImg: "screens/04.png"
   },
   {
     caption: "Thing and OS pair with Bluetooth",
     networkAnimations: ["Actors_noWifi.json", "ThingOS_pairs.json"],
-    screenImg: "screens/pair.png"
+    screenImg: "screens/05.png"
+  },
+  {
+    caption: "User opens App",
+    thingImg:  "thing/off.png",
+    networkAnimations: ["Actors_noWifi.json"],
+    screenImg: "screens/07.png"
+  },
+  {
+    caption: "User opens Settings in App",
+    networkAnimations: ["Actors_noWifi.json"],
+    screenImg: "screens/08.png"
+  },
+  {
+    caption: "User opens Things Settings in App",
+    networkAnimations: ["Actors_noWifi.json"],
+    screenImg: "screens/09.png"
+  },
+  {
+    caption: "Thing broadcasts Bluetooth",
+    thingImg:  "thing/white.png",
+    networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json"],
+    screenImg: "screens/10.png"
+  },
+  {
+    caption: "OS listens for Bluetooth",
+    networkAnimations: ["Actors_noWifi.json", "OS_listens.json"],
+    screenImg: "screens/11.png"
+  },
+  {
+    caption: "Thing and OS pair with Bluetooth",
+    networkAnimations: ["Actors_noWifi.json", "ThingOS_pairs.json"],
+    screenImg: "screens/12.png"
   },
   {
     caption: "Thing and OS connect",
     thingImg:  "thing/off.png",
     networkAnimations: ["Actors_noWifi.json", "ThingOS_verified.json"],
-    screenImg: "screens/connect.png"
+    screenImg: "screens/13.png"
   },
   {
     caption: "App and Thing open software connection",
     networkAnimations: ["Actors_noWifi.json", "ThingApp_unverified.json"],
-    screenImg: "screens/play.png"
+    screenImg: "screens/14.png"
   }
 ]
 </script>
