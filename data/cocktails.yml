@@ -395,6 +395,26 @@
     <h4 class="recipe-section">Method</h4>
     <p>Muddle the sage and blackberries in gin. Pour into a shaker with icee, lemon juice, and agave syrup. Shake well and pour into a glass with ice and top with club soda. To candy the sage, soak in simple syrup then toss in sugar. Put the candied sage and halved blackberries on a toothpick to serve on top of the cocktail.</p>
 -
+  slug: goingeast
+  name: Going East
+  date: 2018-03-02
+  glass: goingeast
+  contents: goingeast
+  author: natalia
+  rating: 4
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>To celebrate Natalia’s move to the east side of town, she decided to mix something unfamiliar to her, a daiquiri. Due to the illness of the previous Friday, our mango infused rum was sitting in the fridge for a week, which turned out to be perfect for sucking up all the flavor. The result of this experiment was a great way to help us get through the coldest weekend of the year and to remind us that the spring is approaching.</p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>2 parts mango infused rum</li>
+      <li>1 part lime juice</li>
+      <li>0.5 parts agave syrup</li>
+      <li>a lime slice for garnish</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>Add all the ingredients to a shaker with ice, shake well, and pour into a chilled glass. Garnish with a lime slice and enjoy!</p>
+-
   slug: gingersmash
   name: Ginger Smash
   date: 2017-03-17
