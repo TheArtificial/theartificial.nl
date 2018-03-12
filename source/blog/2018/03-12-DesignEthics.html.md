@@ -36,10 +36,10 @@ I mentioned how every hospital was likely to be slightly different, and how desi
 
 Natalia brought up how important testing is so that design can refine a product alongside the input of actual users.
 
-Manjari, again struggling design's box of specific responsibilities, mentioned that design would be stronger as a discipline if we insisted that it continue beyond the delivery of the design itself. We have a responsibility for the things we put into the world, and we shouldn't wipe our hands clean once we've captured our intentions via documentation.
+Manjari, again struggling with the specificity around design's responsibilities, mentioned that design would be stronger as a discipline if we insisted that it continue beyond the delivery of the design itself. We have a responsibility for the things we put into the world, and we shouldn't wipe our hands clean once we've captured our intentions via documentation.
 
 This point is an important one to the ethics to design, mostly because it means disrupting our usual way of working. Creating a design is not enough. Shipping a design is not enough. As designers, we need to follow through to see how our intentions (which are at best design hypotheses) are used, misused, and appropriated by users.
 
 ---
 
-Did this conversation change anything for The Artificial? We are opinionated, and have strong points of view about how to ethically approach design, but we are also young, and so many of those views remain untested. As an agency, we will continue to seek work and to structure projects in ways that prioritize the user's relationship to the things we design. And we will continue to iterate on our process so that we can be more conscientious in our approach, more thorough in our execution, and more ethical as an agency.
+Did this conversation change anything for The Artificial? We are opinionated and have strong points of view about how to ethically approach design, but we are also young, and so many of those views remain untested. As an agency, we will continue to seek work and to structure projects in ways that prioritize the user's relationship to the things we design. And we will continue to iterate on our process so that we can be more conscientious in our approach, more thorough in our execution, and more ethical as an agency.
