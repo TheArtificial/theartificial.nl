@@ -1423,6 +1423,27 @@
     <h4 class="recipe-section">Method</h4>
     <p>Mix a dry gin with muddled mint and ice. Top with ginger beer and add lime juice to tase, then garnish with a fresh spring of mint.</p>
 -
+  slug: theherbyoldorleans
+  name: The Herby Old Orleans
+  date: 2018-03-09
+  glass: theherbyoldorleans
+  contents: theherbyoldorleans
+  author: shannon
+  rating: 4
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>To celebrate Hans completing yet another trip around the sun, we created a simple concoction that was one third sazerac, one third old fashioned, and one third herby goodness. This alcohol-heavy mixture made breaking the t-rex piñata all the more fun (and challenging).</p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>1 part herby simple syrup</li>
+      <li>3 parts rye whiskey</li>
+      <li>1 splash of peychaud’s bitters</li>
+      <li>rosemary and thyme for garnish</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>To make the herby simple syrup, mix 400 ml sugar with 600 ml water in a large saucepan. Add sage, rosemary, and thyme. Boil for 10 – 15 minutes. Inhale deeply. Remove from the heat and let cool before straining into a bottle for serving.</p>
+    <p>Measure and pour the whiskey and simple syrup into a glass with ice. Add the splash of bitters and stir. Garnish with the rosemary and thyme and drink up!</p>
+-
   slug: thekatinka
   name: The Katinka
   date: 2016-10-21
