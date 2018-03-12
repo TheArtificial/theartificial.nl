@@ -38,7 +38,7 @@ Natalia brought up how important testing is so that design can refine a product 
 
 Manjari, again struggling with the specificity around design's responsibilities, mentioned that design would be stronger as a discipline if we insisted that it continue beyond the delivery of the design itself. We have a responsibility for the things we put into the world, and we shouldn't wipe our hands clean once we've captured our intentions via documentation.
 
-This point is an important one to the ethics to design, mostly because it means disrupting our usual way of working. Creating a design is not enough. Shipping a design is not enough. As designers, we need to follow through to see how our intentions (which are at best design hypotheses) are used, misused, and appropriated by users.
+This point is an important one to the ethics of design, mostly because it means disrupting our usual way of working. Creating a design is not enough. Shipping a design is not enough. As designers, we need to follow through to see how our intentions (which are at best design hypotheses) are used, misused, and appropriated by users.
 
 ---
 
