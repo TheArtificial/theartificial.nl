@@ -33,13 +33,8 @@ First, the user has to log in Pokémon Go App. For iOS users, pairing and connec
 <script>
 var flowSteps = [
   {
-    caption: "User launches App",
+    caption: "User signs in in App",
     thingImg: "thing/off.png",
-    networkAnimations: ["Actors_noWifi.json"],
-    screenImg: "screens/06.png"
-  },
-  {
-    caption: "User signs up in App",
     networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/00.png"
   },
@@ -51,61 +46,60 @@ var flowSteps = [
   {
     caption: "Thing broadcasts Bluetooth",
     thingImg:  "thing/white.png",
-    networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json"],
-    screenImg: "screens/03.png"
+    networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json"]
   },
   {
     caption: "OS listens for Bluetooth",
     networkAnimations: ["Actors_noWifi.json", "OS_listens.json"],
-    screenImg: "screens/04.png"
+    screenImg: "screens/02.gif"
   },
   {
     caption: "Thing and OS pair with Bluetooth",
     networkAnimations: ["Actors_noWifi.json", "ThingOS_pairs.json"],
-    screenImg: "screens/05.png"
+    screenImg: "screens/03.gif"
   },
   {
     caption: "User opens App",
     thingImg:  "thing/off.png",
     networkAnimations: ["Actors_noWifi.json"],
-    screenImg: "screens/07.png"
+    screenImg: "screens/04.png"
   },
   {
     caption: "User opens Settings in App",
     networkAnimations: ["Actors_noWifi.json"],
-    screenImg: "screens/08.png"
+    screenImg: "screens/05.png"
   },
   {
     caption: "User opens Things Settings in App",
     networkAnimations: ["Actors_noWifi.json"],
-    screenImg: "screens/09.png"
+    screenImg: "screens/06.png"
   },
   {
     caption: "Thing broadcasts Bluetooth",
     thingImg:  "thing/white.png",
     networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json"],
-    screenImg: "screens/10.png"
+    screenImg: "screens/07.png"
   },
   {
     caption: "OS listens for Bluetooth",
     networkAnimations: ["Actors_noWifi.json", "OS_listens.json"],
-    screenImg: "screens/11.png"
+    screenImg: "screens/08.png"
   },
   {
     caption: "Thing and OS pair with Bluetooth",
     networkAnimations: ["Actors_noWifi.json", "ThingOS_pairs.json"],
-    screenImg: "screens/12.png"
+    screenImg: "screens/09.png"
   },
   {
     caption: "Thing and OS connect",
     thingImg:  "thing/off.png",
     networkAnimations: ["Actors_noWifi.json", "ThingOS_verified.json"],
-    screenImg: "screens/13.png"
+    screenImg: "screens/10.gif"
   },
   {
     caption: "App and Thing open software connection",
     networkAnimations: ["Actors_noWifi.json", "ThingApp_unverified.json"],
-    screenImg: "screens/14.png"
+    screenImg: "screens/11.png"
   }
 ]
 </script>

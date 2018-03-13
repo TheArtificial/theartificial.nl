@@ -32,7 +32,7 @@ The Stone successfully sends data to the app via Bluetooth as long as the device
 <script>
 var flowSteps = [
   {
-    caption: "Thing begins broadcasting Bluetooth; User launches App",
+    caption: "Thing begins broadcasting Bluetooth",
     thingImg: "thing/on.png",
     networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts"],
     screenImg: "screens/01_login.png"
@@ -63,25 +63,20 @@ var flowSteps = [
   {
     caption: "OS listens for Bluetooth",
     networkAnimations: ["Actors_noWifi.json", "OS_listens.json"],
-    screenImg: "screens/06_search.png"
+    screenImg: "screens/06_search.gif"
   },
   {
-    caption: "User selects Thing in available Bluetooth products",
-    networkAnimations: ["Actors_noWifi.json"],
-    screenImg: "screens/07_select.png"
-  },
-  {
-    caption: "User confirm Thing vibrated",
+    caption: "Thing and OS pair with Bluetooth; User confirm Thing vibrated",
     networkAnimations: ["Actors_noWifi.json", "ThingOS_pairs.json"],
     screenImg: "screens/08_pair.png"
   },
   {
-    caption: "Thing and OS pair with Bluetooth",
+    caption: "Thing and App connect",
     networkAnimations: ["Actors_noWifi.json", "ThingApp_unverified.json"],
     screenImg: "screens/09_connected.png"
   },
   {
-    caption: "Thing and OS pair with Bluetooth",
+    caption: "Thing and App function",
     networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/10_home-connected.png"
   }
