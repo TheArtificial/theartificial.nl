@@ -33,72 +33,73 @@ First, the user has to log in Pokémon Go App. For iOS users, pairing and connec
 <script>
 var flowSteps = [
   {
-    caption: "User signs in in App",
+    caption: "Thing is off - No connection is established - User chooses log in method in App",
     thingImg: "thing/off.png",
     networkAnimations: ["Actors_noWifi.json"],
     screenImg: "screens/00.png"
   },
   {
-    caption: "App logs in to account on Cloud; User enters login credentials",
+    caption: "Thing is off - App logs in to account on Cloud - User enters account credentials in App",
     networkAnimations: ["Actors_noWifi.json", "AppCloud.json"],
     screenImg: "screens/01.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth",
+    caption: "User presses on Thing - App is logged in to account on Cloud - User navigates to OS settings",
     thingImg:  "thing/white.png",
-    networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json"]
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "Thing_broadcasts.json"],
+    screenImg: "screens/01_home.png"
   },
   {
-    caption: "OS listens for Bluetooth",
-    networkAnimations: ["Actors_noWifi.json", "OS_listens.json"],
+    caption: "Thing broadcasts Bluetooth - OS listens for Bluetooth - OS settings search for Thing",
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "OS_listens.json"],
     screenImg: "screens/02.gif"
   },
   {
-    caption: "Thing and OS pair with Bluetooth",
-    networkAnimations: ["Actors_noWifi.json", "ThingOS_pairs.json"],
+    caption: "Thing broadcasts Bluetooth - Thing and OS pair with Bluetooth - OS show connection to Thing",
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "ThingOS_pairs.json"],
     screenImg: "screens/03.gif"
   },
   {
-    caption: "User opens App",
+    caption: "Thing light is off - Thing and OS connect - User navigates back to App",
     thingImg:  "thing/off.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "ThingOS_verified.json"],
     screenImg: "screens/04.png"
   },
   {
-    caption: "User opens Settings in App",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "Thing light is off - Thing and OS are connected - User opens App settings",
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json"],
     screenImg: "screens/05.png"
   },
   {
-    caption: "User opens Things Settings in App",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "Thing light is off - Thing and OS are connected - User navigate to Thing settings",
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json"],
     screenImg: "screens/06.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth",
+    caption: "User presses on Thing - Thing broadcasts Bluetooth - App shows Thing setting",
     thingImg:  "thing/white.png",
-    networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "Thing_broadcasts.json"],
     screenImg: "screens/07.png"
   },
   {
-    caption: "OS listens for Bluetooth",
-    networkAnimations: ["Actors_noWifi.json", "OS_listens.json"],
+    caption: "Thing broadcasts Bluetooth - OS listens for Bluetooth - App finds Thing from OS",
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "OS_listens.json"],
     screenImg: "screens/08.png"
   },
   {
-    caption: "Thing and OS pair with Bluetooth",
-    networkAnimations: ["Actors_noWifi.json", "ThingOS_pairs.json"],
+    caption: "Thing broadcasts Bluetooth - Thing and OS pair with Bluetooth - User grants pairing permission in OS pop in App",
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "ThingOS_pairs.json"],
     screenImg: "screens/09.png"
   },
   {
-    caption: "Thing and OS connect",
+    caption: "Thing broadcasts Bluetooth - Thing and OS connect - App shows Thing and OS connect",
     thingImg:  "thing/off.png",
-    networkAnimations: ["Actors_noWifi.json", "ThingOS_verified.json"],
+    networkAnimations: ["Actors_noWifi.json","stills/AppCloud.json", "ThingOS_verified.json"],
     screenImg: "screens/10.gif"
   },
   {
-    caption: "App and Thing open software connection",
-    networkAnimations: ["Actors_noWifi.json", "ThingApp_unverified.json"],
+    caption: "Thing broadcasts Bluetooth - App and Thing connect - App show Thing and OS are connected",
+    networkAnimations: ["Actors_noWifi.json","stills/AppCloud.json", "stills/ThingOS_verified.json", "ThingApp_unverified.json"],
     screenImg: "screens/11.png"
   }
 ]
