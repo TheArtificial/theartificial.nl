@@ -32,102 +32,102 @@ Thermo does not need to be connected to a device for continued used, but just fo
 <script>
 var flowSteps = [
   {
-    caption: "User launches App",
+    caption: "Thing is off - OS is connected to home Wi-Fi - User launches App",
     thingImg: "thing/off.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors.json", "stills/OSWifi.json"],
     screenImg: "screens/01_hello.gif"
   },
   {
-    caption: "App logs in to account on Cloud",
-    networkAnimations: ["Actors.json", "AppCloud.json"],
+    caption: "Thing is off - App logs in to account on Cloud - User enters account credentials in App",
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "AppCloud.json"],
     screenImg: "screens/02_login.png"
   },
   {
-    caption: "User view profiles in App",
-    networkAnimations: ["Actors.json"],
+    caption: "Thing is off - App is logged in to account on Cloud - User navigates to App settings",
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json"],
     screenImg: "screens/03_profiles.png"
   },
   {
-    caption: "User adds new Thing in App settings",
-    networkAnimations: ["Actors.json"],
+    caption: "Thing is off - App is logged in to account on Cloud - User installs new Thing in App settings",
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json"],
     screenImg: "screens/04_settings.png"
   },
   {
-    caption: "User starts walkthrough in App settings",
-    networkAnimations: ["Actors.json"],
+    caption: "Thing is off - App is logged in to account on Cloud - User follows App instructions",
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json"],
     screenImg: "screens/05_setup1.png"
   },
   {
-    caption: "Thing begins broadcasting Bluetooth; User presses next in App",
+    caption: "User presses and holds the Thing button - Thing broadcasts Bluetooth - User follows App instructions",
     thingImg:  "thing/setup.png",
-    networkAnimations: ["Actors.json", "Thing_broadcasts.json"],
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "Thing_broadcasts.json"],
     screenImg: "screens/06_setup2.png",
   },
   {
-    caption: "OS listens for Bluetooth",
-    networkAnimations: ["Actors.json", "OS_listens.json"],
+    caption: "Thing is in Setup mode - OS listens for Bluetooth - User selects Thing in App",
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "OS_listens.json"],
     screenImg: "screens/08_setup3.png"
   },
   {
-    caption: "Thing and OS pair with Bluetooth",
-    networkAnimations: ["Actors.json", "ThingOS_pairs.json"],
-    screenImg: "screens/09_setup3b.png"
+    caption: "Thing is in Setup mode - Thing and OS pair with Bluetooth -  App shows indeterminate progress indicator",
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "ThingOS_pairs.json"],
+    screenImg: "screens/10_setup4.png"
   },
   {
-    caption: "Thing and OS connect",
+    caption: "Thing is off - Thing and OS connect - App shows indeterminate progress indicator",
     thingImg:  "thing/off.png",
-    networkAnimations: ["Actors.json", "ThingOS_verified.json"],
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "ThingOS_verified.json"],
     screenImg: "screens/10_setup4.png"
   },
   {
-    caption: "App and Thing open software connection",
-    networkAnimations: ["Actors.json", "ThingApp_verified.json"],
+    caption: "Thing is off - Thing and App connect - App shows indeterminate progress indicator",
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "ThingApp_verified.json"],
     screenImg: "screens/10_setup4.png"
   },
   {
-    caption: "User selects home Wi-Fi network",
-    networkAnimations: ["Actors.json"],
+    caption: "Thing is off - Thing and App are connected - User selects home Wi-Fi network",
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json"],
     screenImg: "screens/11_setup5.png"
   },
   {
-    caption: "User grants permission to share Wi-Fi network credentials",
-    networkAnimations: ["Actors.json"],
+    caption: "Thing is off - Thing and App are connected - User grants permission to share Wi-Fi network credentials",
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json"],
     screenImg: "screens/12_setup6.png"
   },
   {
-    caption: "Thing and home Wi-Fi connect",
+    caption: "Thing is off - Thing and home Wi-Fi connect - App shows indeterminate progress indicator",
     thingImg:  "thing/setup.png",
-    networkAnimations: ["Actors.json", "ThingWifi_wifi.json"],
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json", "ThingWifi_wifi.json"],
     screenImg: "screens/13_setup7.png"
   },
   {
-    caption: "Thing registers to Cloud",
+    caption: "Thing shows checkmark - Thing registers to Cloud - App shows setup is complete",
     thingImg:  "thing/checkmark.png",
-    networkAnimations: ["Actors.json", "ThingWifiCloud_thing.json"],
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json", "stills/ThingWifi_wifi.json", "ThingWifiCloud_user.json"],
     screenImg: "screens/14_setup8.png"
   },
   {
-    caption: "User sees tutorial in App",
+    caption: "Thing is off - Thing and home Wi-Fi are connected - User sees tutorial in App",
     thingImg:  "thing/off.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json", "stills/ThingWifi_wifi.json", "stills/ThingWiFiCloud_user.json"],
     screenImg: "screens/15_tuto1.png"
   },
   {
-    caption: "User sees tutorial in App",
+    caption: "Thing is off - Thing and home Wi-Fi are connected - User sees tutorial in App",
     thingImg:  "thing/off.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json", "stills/ThingWifi_wifi.json", "stills/ThingWiFiCloud_user.json"],
     screenImg: "screens/16_tuto2.png"
   },
   {
-    caption: "User sees tutorial in App",
+    caption: "Thing is off - Thing and home Wi-Fi are connected - User sees tutorial in App",
     thingImg:  "thing/off.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json", "stills/ThingWifi_wifi.json", "stills/ThingWiFiCloud_user.json"],
     screenImg: "screens/17_tuto3.png"
   },
   {
-    caption: "User sees tutorial in App",
+    caption: "Thing is off - Thing and home Wi-Fi are connected - User sees tutorial in App",
     thingImg:  "thing/off.png",
-    networkAnimations: ["Actors.json"],
+    networkAnimations: ["Actors.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json", "stills/ThingWifi_wifi.json", "stills/ThingWiFiCloud_user.json"],
     screenImg: "screens/18_tuto4.png"
   }
 ]

@@ -32,52 +32,52 @@ The Stone successfully sends data to the app via Bluetooth as long as the device
 <script>
 var flowSteps = [
   {
-    caption: "Thing begins broadcasting Bluetooth",
+    caption: "Thing broadcasts Bluetooth - Thing broadcasts Bluetooth - User launches App",
     thingImg: "thing/on.png",
-    networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts"],
+    networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json"],
     screenImg: "screens/01_login.png"
   },
   {
-    caption: "Users logs in",
+    caption: "Thing broadcasts Bluetooth - Thing broadcasts Bluetooth - User choose log in method in App",
     thingImg: "thing/on.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/Thing_broadcasts.json"],
     screenImg: "screens/02_quicklogin.png"
   },
   {
-    caption: "User enters credentials",
+    caption: "Thing broadcasts Bluetooth - App logs in to account on Cloud - User enters account credentials in App",
     thingImg: "thing/on.png",
-    networkAnimations: ["Actors_noWifi.json", "AppCloud.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/Thing_broadcasts.json", "AppCloud.json"],
     screenImg: "screens/03_login.png"
   },
   {
-    caption: "App asks user to turn on notifications",
+    caption: "Thing broadcasts Bluetooth - App is logged in to account on Cloud - User enables push notifications in App",
     thingImg: "thing/on.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/Thing_broadcasts.json", "stills/AppCloud.json"],
     screenImg: "screens/04_notifications.png"
   },
   {
-    caption: "App asks user to pair Thing",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "Thing broadcasts Bluetooth - OS listens for Bluetooth - App suggests user to pair Thing",
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "OS_listens.json"],
     screenImg: "screens/05_home-pair.png"
   },
   {
-    caption: "OS listens for Bluetooth",
-    networkAnimations: ["Actors_noWifi.json", "OS_listens.json"],
+    caption: "Thing broadcasts Bluetooth - OS listens for Bluetooth - User selects Thing in App",
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "ThingOS_pairs.json"],
     screenImg: "screens/06_search.gif"
   },
   {
-    caption: "Thing and OS pair with Bluetooth; User confirm Thing vibrated",
-    networkAnimations: ["Actors_noWifi.json", "ThingOS_pairs.json"],
+    caption: "Thing broadcasts Bluetooth - Thing and OS pair with Bluetooth -  User confirms Thing vibrated",
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "ThingOS_verified.json"],
     screenImg: "screens/08_pair.png"
   },
   {
-    caption: "Thing and App connect",
-    networkAnimations: ["Actors_noWifi.json", "ThingApp_unverified.json"],
+    caption: "Thing broadcasts Bluetooth - Thing and App connect - User navigates back to home",
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "ThingApp_unverified.json"],
     screenImg: "screens/09_connected.png"
   },
   {
-    caption: "Thing and App function",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "Thing broadcasts Bluetooth - Thing and App are connected - App shows user's breath visualization",
+networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_unverified.json"],
     screenImg: "screens/10_home-connected.png"
   }
 ]
