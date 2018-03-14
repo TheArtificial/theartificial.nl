@@ -1,7 +1,7 @@
 ---
 layout: projects/connecting-things/_thing_layout
 title: Apple Watch
-preview: thing/01_off.png
+preview: thing/00_off.png
 date: 2018-02-27
 ---
 
@@ -32,142 +32,143 @@ Even though some models of the Apple Watch Series 3 are equipped with a cellular
 <script>
 var flowSteps = [
   {
-    caption: "OS and Cloud connect",
-    thingImg: "thing/01_off.png",
+    caption: "Thing is off - OS logs in to account on Cloud - OS logs in to user account",
+    thingImg: "thing/00_off.png",
     networkAnimations: ["Actors_noWifi.json", "AppCloud.json"],
+    screenImg: "screens/00_os-settings.png",
   },
   {
-    caption: "User turns Thing on",
-    thingImg: "thing/01_on.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "User turns Thing on - OS is logged in to account on Cloud - OS shows home",
+    thingImg: "thing/00_on.png",
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json"],
+    screenImg: "screens/00_home.png",
   },
   {
-    caption: "User chooses language on Thing",
+    caption: "User chooses language on Thing - OS is logged in to account on Cloud - OS shows home ",
     thingImg: "thing/02_languagea.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json"],
   },
   {
-    caption: "User chooses region on Thing",
+    caption: "User chooses region on Thing - OS is logged in to account on Cloud - OS shows home",
     thingImg: "thing/02_languageb.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json"],
   },
   {
-    caption: "User confirms language on Thing",
+    caption: "User confirms language on Thing - OS is logged in to account on Cloud - OS shows home",
     thingImg: "thing/02_languagec.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json"],
   },
   {
-    caption: "Thing sets up language",
+    caption: "Thing sets up language - OS is logged in to account on Cloud - OS shows home",
     thingImg: "thing/02_languaged.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json"],
   },
   {
-    caption: "Thing broadcasts Bluetooth",
-    thingImg: "thing/01_near.png",
-    networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json"],
+    caption: "Thing asks user to bring near a phone - Thing broadcasts Bluetooth - OS shows home",
+    thingImg: "thing/03_near.png",
+    networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json", "stills/AppCloud.json"],
   },
   {
-    caption: "OS listens for Bluetooth",
-    thingImg: "thing/03_open-app.png",
-    networkAnimations: ["Actors_noWifi.json", "OS_listens.json"],
-    screenImg: "screens/00.png",
+    caption: "Thing asks user to bring an iPhone near - OS listens for Bluetooth - User taps continue in OS overlay",
+    networkAnimations: ["Actors_noWifi.json", "OS_listens.json", "stills/AppCloud.json"],
+    screenImg: "screens/00_home-overlay.png",
   },
   {
-    caption: "User launches App",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "Thing asks user to bring near a phone - Thing and OS are in discovery mode - User taps start pairing in App",
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_discovery.json", "stills/AppCloud.json"],
     screenImg: "screens/01.png"
   },
   {
-    caption: "User scans Thing",
+    caption: "Thing shows animation - Thing and OS are in discovery mode - User scans Thing animation from App",
     thingImg: "thing/04_animation.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_discovery.json", "stills/AppCloud.json"],
     screenImg: "screens/02.png"
   },
   {
-    caption: "Thing and OS pair with Bluetooth",
+    caption: "Thing shows visualization - Thing and OS pair with Bluetooth - User taps Set Up as New Apple Watch in App",
     thingImg: "thing/05_illustration.png",
-    networkAnimations: ["Actors_noWifi.json", "ThingOS_pairs.json"],
+    networkAnimations: ["Actors_noWifi.json", "ThingOS_pair.json", "stills/AppCloud.json"],
     screenImg: "screens/03.png"
   },
   {
-    caption: "Thing and OS connect",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "Thing shows preferences options - Thing and OS connect with Bluetooth - User selects Wrist Preference in App",
+    networkAnimations: ["Actors_noWifi.json", "ThingOS_verified.json", "stills/AppCloud.json"],
     screenImg: "screens/04.png"
   },
   {
-    caption: "App and Thing open software connection",
-    networkAnimations: ["Actors_noWifi.json", "ThingApp_verified.json"],
+    caption: "Thing shows visualization - Thing and App connect - App shows indeterminate progress indicator",
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "ThingApp_verified.json"],
     screenImg: "screens/05.png"
   },
   {
-    caption: "User agrees to terms in App",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "Thing shows visualization - Thing and App are connected - User agrees to terms in App",
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json"],
     screenImg: "screens/06.png"
   },
   {
-    caption: "OS prompts user to agree to terms",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "Thing shows visualization - Thing and App are connected - User double confirms agreement to terms in OS pop up",
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json"],
     screenImg: "screens/07.png"
   },
   {
-    caption: "Thing and account connect",
-    networkAnimations: ["Actors_noWifi.json", "ThingCloud_user.json"],
+    caption: "Thing shows visualization - Thing and account connect - App shows indeterminate progress indicator",
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "ThingCloud_user.json"],
     screenImg: "screens/08.png"
   },
   {
-    caption: "User chooses Watch Analytics preference in App",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "Thing shows visualization - Thing and account are connected - User chooses Watch Analytics preference in App",
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/09.png"
   },
   {
-    caption: "User chooses Shared Settings preference in App",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "Thing shows visualization - Thing and account are connected - User chooses Shared Settings preference in App",
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/10.png"
   },
   {
-    caption: "User chooses passcode preference in App",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "Thing shows visualization - Thing and account are connected - User taps Create a Passcode in App",
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/11.png"
   },
   {
-    caption: "User creates a passcode on the Thing",
+    caption: "User creates a passcode on Thing - Thing and account are connected - App instructs user to create a passcode on Thing",
     thingImg: "thing/06_code.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/12.png"
   },
   {
-    caption: "User chooses Unlock preference on the Thing",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "User chooses Unlock preference on the Thing - Thing and account are connected - App instructs user on unlocking Thing with iPhone",
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     thingImg: "thing/07_unlock.png",
     screenImg: "screens/13.png"
   },
   {
-    caption: "User sees how to use in case of Emergency",
+    caption: "Thing shows visualization - Thing and account are connected - App instructs user on how to use in case of Emergency",
     thingImg: "thing/05_illustration.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/14.png"
   },
   {
-    caption: "User chooses to install Apps on Thing with App",
-    networkAnimations: ["Actors_noWifi.json"],
+    caption: "Thing shows visualization - Thing and account are connected - User taps Install All Apps on Thing on App",
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/15.png"
   },
   {
-    caption: "Thing and App are syncing",
+    caption: "Thing shows progress indicator - Thing and App are syncing - App instructs user that Thing is syncing",
     thingImg: "thing/08_syncing.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/16.png"
   },
   {
-    caption: "Thing is set up",
+    caption: "Thing shows home - Thing and App are connected - App instructs user that Thing is set up",
     thingImg: "thing/09_home.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/17.png"
   },
   {
-    caption: "Thing and App function",
+    caption: "Thing shows home - Thing and App are connected - App Settings shows new Thing",
     thingImg: "thing/09_home.png",
-    networkAnimations: ["Actors_noWifi.json"],
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/18.png"
   }
 ]
