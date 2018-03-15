@@ -18,7 +18,7 @@ noindex: true
     thing_folders = sitemap.resources.select{ |r| r.path[/#{project_folder}\/([^\/]*)\/index.html/] }
     thing_folders.sort_by!{ |r| [r.data.date, r.data.title] }.reverse!
 
-    thing_folders.each_with_index do |thing, i|
+    thing_folders.reject{|thing| thing.data.published == false}.each_with_index do |thing, i|
       title = thing.data.title
       preview = "#{thing.url}#{thing.data.preview}"
   %>
