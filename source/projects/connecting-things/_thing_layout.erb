@@ -56,6 +56,13 @@
       </div>
     </div>
   </div>
+  <div class="walkthrough-transcript">
+    <div class="col-12">
+      <div class="padded" id="transcript">
+        <!-- will have transcript written by script -->
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="bleed cool-grey-10">
@@ -88,6 +95,7 @@ var $network = $('#network');
 var $screen = $('#screen');
 var $counter = $('#caption .step-counter');
 var $caption = $('#caption .step-description');
+var $transcript = $('#transcript');
 var $prevButton = $('#prev-button');
 var $nextButton = $('#next-button');
 
@@ -190,10 +198,30 @@ function renderStep(number) {
   } else {
     $nextButton.removeClass('disabled');
   }
-
 };
 
+function renderTranscript() {
+  var list = $('<ol></ol>');
+  for (var i = 0; i < flowSteps.length; i++) {
+    step = flowSteps[i];
+    var li = $('<li>'+step.caption+'</li>').addClass('transcript-step').data('step',i);
+    list.append(li);
+  }
+  $transcript.append(list);
+  $('.transcript-step').each(function() {
+    var $this = $(this);
+    $this.on("click", function () {
+      currentStep = $(this).data('step')
+      renderStep(currentStep);
+    });
+  });
+}
+
 $(document).ready(function() {
+
+  $caption.on('click', function(){
+    $transcript.slideToggle();
+  })
 
   $prevButton.on('click', function(){
     if (currentStep > 0) {
@@ -209,6 +237,8 @@ $(document).ready(function() {
   });
 
   renderStep(0);
+
+  renderTranscript();
 });
 
 </script>

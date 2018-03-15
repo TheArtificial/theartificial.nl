@@ -95,6 +95,11 @@ body {
     }
   }
 
+  #transcript {
+    // collapsed by default
+    display: none;
+  }
+
   .card {
     background-color: $cool-grey-70;
     border-radius: 4px;
