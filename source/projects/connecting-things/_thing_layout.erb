@@ -238,12 +238,14 @@ $(document).ready(function() {
   })
 
   $prevButton.on('click', function(){
+    event.preventDefault();
     if (currentStep > 0) {
       currentStep--;
       renderCurrentStep();
     }
   });
   $nextButton.on('click', function(){
+    event.preventDefault();
     if (currentStep < totalSteps-1) {
       currentStep++;
       renderCurrentStep();
