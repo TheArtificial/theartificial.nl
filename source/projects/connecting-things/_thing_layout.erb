@@ -170,8 +170,37 @@ function setAnimationLayers(layers) {
   }
 };
 
-// make one happen
-function renderStep(number) {
+function renderTranscript() {
+  var list = $('<ol></ol>');
+  for (var i = 0; i < flowSteps.length; i++) {
+    step = flowSteps[i];
+    var li = $('<li>'+step.caption+'</li>').addClass('transcript-step').data('step',i);
+    list.append(li);
+  }
+  $transcript.append(list);
+  $('.transcript-step').each(function() {
+    var $this = $(this);
+    $this.on("click", function () {
+      currentStep = $(this).data('step')
+      renderCurrentStep();
+    });
+  });
+}
+
+function markTranscript() {
+  $('.transcript-step').each(function() {
+    var $this = $(this);
+    if ($this.data('step') == currentStep) {
+      $this.addClass('current');
+    } else {
+      $this.removeClass('current');
+    }
+  });
+}
+
+// make it happen
+function renderCurrentStep() {
+  number = currentStep;
   var caption = flowSteps[number].caption;
   var thingPath = findLastThingPath(number);
   var networkAnimations = findLastNetworkAnimations(number);
@@ -198,24 +227,9 @@ function renderStep(number) {
   } else {
     $nextButton.removeClass('disabled');
   }
-};
 
-function renderTranscript() {
-  var list = $('<ol></ol>');
-  for (var i = 0; i < flowSteps.length; i++) {
-    step = flowSteps[i];
-    var li = $('<li>'+step.caption+'</li>').addClass('transcript-step').data('step',i);
-    list.append(li);
-  }
-  $transcript.append(list);
-  $('.transcript-step').each(function() {
-    var $this = $(this);
-    $this.on("click", function () {
-      currentStep = $(this).data('step')
-      renderStep(currentStep);
-    });
-  });
-}
+  markTranscript();
+};
 
 $(document).ready(function() {
 
@@ -226,19 +240,20 @@ $(document).ready(function() {
   $prevButton.on('click', function(){
     if (currentStep > 0) {
       currentStep--;
-      renderStep(currentStep);
+      renderCurrentStep();
     }
   });
   $nextButton.on('click', function(){
     if (currentStep < totalSteps-1) {
       currentStep++;
-      renderStep(currentStep);
+      renderCurrentStep();
     }
   });
 
-  renderStep(0);
-
   renderTranscript();
+
+  currentStep = 0;
+  renderCurrentStep();
 });
 
 </script>
