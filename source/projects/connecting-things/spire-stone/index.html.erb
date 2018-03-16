@@ -33,25 +33,22 @@ The stone connects to the app via Bluetooth, as long as the stone and the device
 var flowSteps = [
   {
     caption: "Thing broadcasts Bluetooth - Thing broadcasts Bluetooth - User launches App",
-    thingImg: "thing/on.png",
+    thingImg: "thing/charging.gif",
     networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json"],
     screenImg: "screens/01_login.png"
   },
   {
     caption: "Thing broadcasts Bluetooth - Thing broadcasts Bluetooth - User chooses log in method in App",
-    thingImg: "thing/on.png",
     networkAnimations: ["Actors_noWifi.json", "stills/Thing_broadcasts.json"],
     screenImg: "screens/02_quicklogin.png"
   },
   {
     caption: "Thing broadcasts Bluetooth - App logs in to account on Cloud - User enters account credentials in App",
-    thingImg: "thing/on.png",
     networkAnimations: ["Actors_noWifi.json", "stills/Thing_broadcasts.json", "AppCloud.json"],
     screenImg: "screens/03_login.png"
   },
   {
     caption: "Thing broadcasts Bluetooth - App is logged in to account on Cloud - User enables push notifications in App",
-    thingImg: "thing/on.png",
     networkAnimations: ["Actors_noWifi.json", "stills/Thing_broadcasts.json", "stills/AppCloud.json"],
     screenImg: "screens/04_notifications.png"
   },
@@ -67,11 +64,13 @@ var flowSteps = [
   },
   {
     caption: "Thing broadcasts Bluetooth - Thing and OS pair with Bluetooth -  User confirms Thing vibrated",
+    thingImg: "thing/pair.gif",
     networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json", "ThingOS_verified.json"],
     screenImg: "screens/08_pair.png"
   },
   {
     caption: "Thing broadcasts Bluetooth - Thing and App connect - User navigates back to home",
+    thingImg: "thing/charging.gif",    
     networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "ThingApp_unverified.json"],
     screenImg: "screens/09_connected.png"
   },
