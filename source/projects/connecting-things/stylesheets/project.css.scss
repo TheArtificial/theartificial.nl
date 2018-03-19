@@ -58,9 +58,10 @@ body {
   .current-step {
     .step-counter {
       display: inline-block;
-      width: 80px;
-      text-align: right;
+      width: 40px;
+      padding-right: 10px;
     }
+
     .step-description {
       display: inline-block;
       text-align: left;
