@@ -203,7 +203,16 @@ body {
     .walkthrough-controls {
       .col-2 {
         width: 25%;
+
+        #prev-button p {
+          visibility: hidden;
+        }
+
+        #next-button p {
+          visibility: hidden;
+        }
       }
+
       .col-8 {
         width: 50%;
       }
@@ -224,6 +233,15 @@ body {
 
       .flow-space {
         height: 600px;
+      }
+    }
+    .walkthrough-controls {
+      .col-2 #prev-button p {
+        visibility: visible;
+      }
+
+      .col-2 #next-button p {
+        visibility: visible;
       }
     }
   }
