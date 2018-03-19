@@ -118,13 +118,18 @@ body {
   }
 
   .walkthrough {
-    height: 800px;
+    height: 600px;
+    overflow: hidden;
 
     background-color: $cool-grey-50;
     background: linear-gradient(to right, $cool-grey-30 50%, $cool-grey-70 51%);
 
     .thing-space {
       background-color: $cool-grey-30;
+
+      img {
+        max-height: 568px;
+      }
     }
 
     .screen-space {
@@ -145,13 +150,12 @@ body {
       text-align: center;
       margin: auto;
       position: relative;
-      height:800px;
+      height: 600px;
     }
   }
 
   .navigation{
     background-color: $pale-tulip;
-    height:200px;
   }
 
   .walkthrough-controls {
