@@ -38,7 +38,7 @@
     </div>
     <div class="col-8">
       <div class="padded">
-        <p class="current-step" id="caption"><span class="step-counter"></span> <span class="step-description"></span></p>
+        <p class="current-step" id="stepcount"></p>
       </div>
     </div>
     <div class="col-2">
@@ -53,6 +53,12 @@
           </svg>
           <p>next</p>
         </a>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="padded">
+        <p class="current-step" id="caption"></p>
       </div>
     </div>
   </div>
@@ -93,8 +99,8 @@
 var $thing = $('#thing');
 var $network = $('#network');
 var $screen = $('#screen');
-var $counter = $('#caption .step-counter');
-var $caption = $('#caption .step-description');
+var $counter = $('#stepcount');
+var $caption = $('#caption');
 var $transcript = $('#transcript');
 var $prevButton = $('#prev-button');
 var $nextButton = $('#next-button');

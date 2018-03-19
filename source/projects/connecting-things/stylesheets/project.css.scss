@@ -56,16 +56,7 @@ body {
   }
 
   .current-step {
-    .step-counter {
-      display: inline-block;
-      width: 40px;
-      padding-right: 10px;
-    }
-
-    .step-description {
-      display: inline-block;
-      text-align: left;
-    }
+    text-align: center;
   }
 
   #prev-button {
@@ -118,19 +109,16 @@ body {
     transition: .5s;
   }
 
-  .walkthrough {
-    height: 600px;
-    overflow: hidden;
+  .navigation{
+    background-color: $pale-tulip;
+  }
 
+  .walkthrough {
     background-color: $cool-grey-50;
     background: linear-gradient(to right, $cool-grey-30 50%, $cool-grey-70 51%);
 
     .thing-space {
       background-color: $cool-grey-30;
-
-      img {
-        max-height: 568px;
-      }
     }
 
     .screen-space {
@@ -151,12 +139,7 @@ body {
       text-align: center;
       margin: auto;
       position: relative;
-      height: 600px;
     }
-  }
-
-  .navigation{
-    background-color: $pale-tulip;
   }
 
   .walkthrough-controls {
@@ -194,6 +177,54 @@ body {
     }
     a:hover {
       color: $cool-grey-10;
+    }
+  }
+}
+
+@media only screen {
+  .connecting-things #content {
+    .walkthrough {
+      height: 240px;
+    	.container {
+    		.col-4 {
+          width: 33%;
+        }
+      }
+      .thing-space img {
+        width: 100%;
+      }
+      .screen-space img {
+        width: 100%;
+      }
+      .flow-space {
+        height: 240px;
+      }
+    }
+    .walkthrough-controls {
+      .col-2 {
+        width: 25%;
+      }
+      .col-8 {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (min-device-width: 768px) {
+  .connecting-things #content {
+    .walkthrough {
+      height: 600px;
+
+      .thing-space {
+        img {
+          max-height: 568px;
+        }
+      }
+
+      .flow-space {
+        height: 600px;
+      }
     }
   }
 }
