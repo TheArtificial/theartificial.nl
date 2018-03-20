@@ -783,6 +783,29 @@
     <h4 class="recipe-section">Method</h4>
     <p>Pour whiskey and peach iced tea in a shaker and shake with ice. Serve with a stem of rosemary and a splash of firewater bitters. Two splashes for the brave, three splashes for enemies.</p>
 -
+  slug: mamouche
+  name: Mamouche
+  date: 2018-03-16
+  glass: mamouche
+  contents: mamouche
+  author: ariane
+  rating: 5
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>Ariane wanted to make a floral cocktail inspired by a drink she had in a Moroccan restaurant in Amsterdam. She also was desperately trying to pretend it’s already spring. We loved it</p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>2 parts gin</li>
+      <li>1 part vermouth</li>
+      <li>0.5 parts elderflower sirup</li>
+      <li>0.5 parts lime juice</li>
+      <li>4 dashes of rose water</li>
+      <li>1 pinch of cardamon</li>
+      <li>1 sprig of thyme</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>Muddle cucumber in the bottom of a cocktail shaker. Shake all ingredients with ice. Strain into a martini glass and garnish with cucumber and thyme.</p>
+-
   slug: mezcalmule
   name: Mezcal Mule
   date: 2017-06-23
@@ -798,7 +821,7 @@
       <li>1 part jalapeño-infused mezcal</li>
       <li>2 parts ginger beer</li>
       <li>a splash of lime juice</li>
-      <li>  jalapeños and cucumbers for garnish</li>
+      <li>jalapeños and cucumbers for garnish</li>
     </ul>
     <h4 class="recipe-section">Method</h4>
     <p>Combine all ingredients and stir with ice. Pour into a copper mug and go crazy with your garnishes.</p>
