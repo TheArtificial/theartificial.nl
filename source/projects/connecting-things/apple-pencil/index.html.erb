@@ -3,7 +3,7 @@ layout: projects/connecting-things/_thing_layout
 title: Apple Pencil
 preview: thing/close.png
 date: 2018-02-27
-published: false
+published: true
 ---
 <p>
 Apple Pencil is a pressure-sensitive stylus to write, sketch, paint, draw and complete basic gestures such as tap or swipe on an iPad Pro. The Bluetooth Pencil works with a variety of apps such as Evernote, Adobe Apps, Sketch, LiquidText, Apple Photos and more. It has been released by Apple in 2015.
@@ -33,42 +33,28 @@ Sometimes, the Apple Pencil just turns out to be disconnecting without notifying
 <script>
 var flowSteps = [
   {
-    caption: "Thing is not connected - Thing broadcasts Bluetooth - Device shows home screen",
+    caption: "Thing cap is closed - Thing and OS are in discovery mode - Device shows home screen",
     thingImg: "thing/close.png",
-    networkAnimations: ["Actors_noCloud_noWifi_noApp.json", "Thing_broadcasts.json"],
-    screenImg: "screens/xxx.png"
+    networkAnimations: ["Actors_noCloud_noWifi_noApp.json", "OS_listens.json"],
+    screenImg: "screens/1_home.png"
   },
   {
-    caption: "User plugs Thing to iPad - Thing broadcasts Bluetooth - x",
+    caption: "User plugs Thing into device - Thing and OS physically connect - OS requests pairing permission",
     thingImg: "thing/open.png",
-    networkAnimations: ["Actors_noCloud_noWifi_noApp.json", "stills/Thing_broadcasts.json", "ThingOS_physical.json"],
-    screenImg: "screens/xxx.png"
+    networkAnimations: ["Actors_noCloud_noWifi_noApp.json", "stills/ThingOS_discovery.json", "ThingOS_physical.json"],
+    screenImg: "screens/2_pair.png"
   },
   {
-    caption: "Thing is plugged into iPad - Thing broadcasts Bluetooth - OS request pairing permission",
-    thingImg: "thing/open.png",
-    networkAnimations: ["Actors_noCloud_noWifi_noApp.json", "stills/Thing_broadcasts.json", "stills/ThingOS_physical.json"],
-    screenImg: "screens/xxx.png"
-  },
-  {
-    caption: "Thing is plugged into iPad - Thing and OS are in dicovery mode - User grants permission for Thing and OS to pair",
-    thingImg: "thing/open.png",
-    networkAnimations: ["Actors_noCloud_noWifi_noApp.json", "stills/ThingOS_physical.json", "OS_listens.json"],
-    screenImg: "screens/xxx.png"
-  },
-  {
-    caption: "User unplugs Thing to iPad - Thing and OS pair - x",
+    caption: "User unplugs Thing to iPad - Thing and OS pair - Device shows home screen",
     thingImg: "thing/close.png",
     networkAnimations: ["Actors_noCloud_noWifi_noApp.json", "ThingOS_pair.json"],
-    screenImg: "screens/xxx.png"
+    screenImg: "screens/1_home.png"
   },
   {
-    caption: "Thing is connected - Thing and OS connect - x",
+    caption: "Thing broadcasts Bluetooth - Thing and OS connect - OS settings ",
     thingImg: "thing/close.png",
     networkAnimations: ["Actors_noCloud_noWifi_noApp.json", "ThingOS_verified.json"],
-    screenImg: "screens/xxx.png"
-  },
-
-
+    screenImg: "screens/3_connected.png"
+  }
 ]
 </script>

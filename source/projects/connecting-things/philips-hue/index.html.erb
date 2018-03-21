@@ -1,9 +1,9 @@
 ---
 layout: projects/connecting-things/_thing_layout
 title: Philips Hue
-preview: thing/thing.png
+preview: thing/off.png
 date: 2018-02-27
-published: false
+published: true
 ---
 <p>
 Philips Hue is a light eco-system that include light bulbs and lamps, a bridge, a remote, a portal, and an app. The wireless light bulbs can change color, dim, flash, and pulse. LED technology makes them eco-friendly. They work with any standard light sockets.
@@ -33,10 +33,22 @@ The app functions well if it is connected to the same local network as the bridg
 <script>
 var flowSteps = [
   {
-    caption: "App logs in to account on Cloud",
-    thingImg: "thing/thing.png",
-    networkAnimations: ["Actors.json", "AppCloud.json"],
-    screenImg: "screens/login.png"
-  }
+    caption: "x - OS connects to home Wi-Fi - x",
+    thingImg: "thing/off.png",
+    networkAnimations: ["Actors_noWifi.json", "stills/OSWifi.json"],
+    screenImg: "screens/01.png"
+  },
+  {
+    caption: "x",
+    thingImg: "thing/off.png",
+    networkAnimations: ["Actors_noWifi.json", "stills/OSWifi.json", "ThingWifi_physical.json"],
+    screenImg: "screens/02.png"
+  },
+  {
+    caption: "x",
+    thingImg: "thing/off.png",
+    networkAnimations: ["Actors_noWifi.json", "stills/OSWifi.json", "stills/ThingWifi_physical.json", "Thing_broadcasts.json"],
+    screenImg: "screens/03.png"
+  },
 ]
 </script>
