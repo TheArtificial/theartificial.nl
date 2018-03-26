@@ -7,7 +7,7 @@ author: shannon
 
 This week we discussed [this article](https://www.thnk.org/insights/the-other-side-of-the-stick-how-to-receive-feedback/) on receiving creative feedback.
 
-Critique is an important part of any design process, yet it's not something we're formally taught to do, and it's something we're often quite bad at. Critiques cause anxiety, they seem to encourage reactiveness, and they can even result in rifts amongst design teams.
+Critique is an important part of any design process, yet it's not something we're formally taught to do, and it's something many companies don't take seriously. Critiques can cause anxiety, they seem to encourage reactiveness, and they might even result in rifts amongst design teams.
 
 ## Get feedback early and often.
 Manjari brought up how important it is to get critique when you're able to do something about it. As the maker of the thing being critiqued, it's your responsibility to solicit feedback so that you have time to incorporate feedback. If you're not getting feedback, be afraid. It's likely that the feedback is still there, waiting to be uncovered.
