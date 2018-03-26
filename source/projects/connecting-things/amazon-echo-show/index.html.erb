@@ -1,8 +1,8 @@
 ---
 layout: projects/connecting-things/_thing_layout
 title: Echo Show
-preview: thing/thing.png
-date: 2018-02-27
+preview: thing/off.png
+date: 2018-03-26
 published: false
 ---
 <p>
@@ -33,10 +33,54 @@ Just like the Echo Dot, the Echo Show cannot perform any actions without an acce
 <script>
 var flowSteps = [
   {
-    caption: "App logs in to account on Cloud",
-    thingImg: "thing/thing.png",
-    networkAnimations: ["Actors.json", "AppCloud.json"],
-    screenImg: "screens/login.png"
+    caption: "Thing is off - No connection is established ",
+    thingImg: "thing/off.png",
+    networkAnimations: ["Actors.json"]
+  },
+  {
+    caption: "User selects language - No connection is established ",
+    thingImg: "thing/01.png",
+    networkAnimations: ["Actors.json"]
+  },
+  {
+    caption: "User enters log in credential - App and cloud connect",
+    thingImg:"thing/02.png",
+    networkAnimations:["Actors.json", "AppCloud.json"]
+  },
+  {
+    caption: "Thing says Welcome - App and cloud are connected",
+    thingImg:"thing/03.png",
+    networkAnimations:["Actors.json", "stills/AppCloud.json"]
+  },
+  {
+    caption:"User connects to Home Wi-Fi - Thing and home Wi-Fi connect",
+    thingImg:"thing/04.png",
+    networkAnimations:[ "Actors.json","ThingWifi_wifi.json"]
+  },
+  {
+    caption: "User goes to register settings - Thing and home Wi-Fi are connected",
+    thingImg: "thing/05.png",
+    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json"]
+  },
+  {
+    caption:"User Registers Kindle to Amazon Account - Thing and home Wi-Fi are connected",
+    thingImg: "thing/06.png",
+    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json"]
+  },
+  {
+    caption:"Thing is connected - Thing registers to Cloud",
+    thingImg: "thing/07.png",
+    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json","ThingWifiCloud_both.json"]
+  },
+  {
+    caption:"Thing is connected - Thing registers to Cloud",
+    thingImg: "thing/08.png",
+    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json","stills/ThingWifiCloud_user.json"]
+  },
+  {
+    caption:"Thing is connected - Thing registers to Cloud",
+    thingImg: "thing/09.png",
+    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json","stills/ThingWifiCloud_user.json"]
   }
 ]
 </script>
