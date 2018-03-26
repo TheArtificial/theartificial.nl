@@ -32,7 +32,7 @@ Ariane mentioned how critiques provide an opportunity for discussion, and how im
 ## Be considerate when providing feedback.
 One of my favorite quotes about critique comes from the Pixar movie _Ratatouille_.
 
-_In many ways, the work of a critic is easy. We risk very little, yet enjoy a position over those who offer up their work and their selves to our judgment. We thrive on negative criticism, which is fun to write and to read. But the bitter truth we critics must face, is that in the grand scheme of things, the average piece of junk is probably more meaningful than our criticism designating it so._
+> _In many ways, the work of a critic is easy. We risk very little, yet enjoy a position over those who offer up their work and their selves to our judgment. We thrive on negative criticism, which is fun to write and to read. But the bitter truth we critics must face, is that in the grand scheme of things, the average piece of junk is probably more meaningful than our criticism designating it so._
 
 As someone offering critique, it is important to remember that the person being critiqued has likely thought about the work more than you. Your critique is not only of the thing you're looking at, but also the intentions behind it. For this reason, it's important to seek an understanding of their reasons when providing feedback.
 
