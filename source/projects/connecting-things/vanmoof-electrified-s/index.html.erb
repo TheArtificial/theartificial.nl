@@ -1,9 +1,9 @@
 ---
 layout: projects/connecting-things/_thing_layout
 title: VanMoof Electrified S
-preview: thing/thing.png
-date: 2018-02-27
-published: false
+preview: thing/bike.png
+date: 2018-03-26
+published: true
 ---
 <p>
 Electric S is a connected electric bike launched by the Dutch company VanMoof is 2007. Aside from the great power boost button on the bike that assists with pedaling, the bike has several notable features, such as the smart lock. The smart lock can be unlocked from a remote or from a smartphone via the VanMoof app.
@@ -13,7 +13,7 @@ Electric S is a connected electric bike launched by the Dutch company VanMoof is
   <span class="sentence">The connection process is </span>easy
 </h2>
 <p>
-To connect the bike for the first time, the bike has to be charged and the VanMoof app is required on a smartphone. In order to create an account on the app, the bike’s IMEI and frame number are required, which registers the bike to a particular user. Once the email confirmation is approved, the user can log into their VanMoof account. Once logged into the app, the user only needs to be in close proximity to their bike for the device to connect to the bike. If auto-lock is activated, the user has a few seconds to unlock the bike chain before it locks again.  
+To connect the bike for the first time, the bike has to be charged and the VanMoof app is required on a smartphone. In order to create an account on the app, the bike’s IMEI and frame number are required, which registers the bike to a particular user. Once the email confirmation is approved, the user can log into their VanMoof account. Once logged into the app, the user only needs to be in close proximity to their bike for the device to connect to the bike. If auto-lock is activated, the user has a few seconds to unlock the bike chain before it locks again.
 </p>
 
 <h2 class="subtitle">
@@ -33,10 +33,46 @@ A few of the previous bike releases have been victims of software bugs that kill
 <script>
 var flowSteps = [
   {
-    caption: "App logs in to account on Cloud",
-    thingImg: "thing/thing.png",
-    networkAnimations: ["Actors.json", "AppCloud.json"],
-    screenImg: "screens/login.png"
+    caption: "User gets closer to Thing - Thing is broadcasting - User selects register in App",
+    thingImg: "thing/bike.png",
+    networkAnimations: ["Actors.json", "Thing_broadcasts.json"],
+    screenImg: "screens/01_login.png"
+  },
+  {
+    caption: "Thing is on - Thing and OS are in discovery mode - User creates account on Cloud",
+    thingImg: "thing/bike.png",
+    networkAnimations: ["Actors.json", "OS_listens.json"],
+    screenImg: "screens/02_register.png"
+  },
+  {
+    caption: "Thing is on - Thing and OS are in discovery mode - User confirms email address",
+    thingImg: "thing/bike.png",
+    networkAnimations: ["Actors.json", "stills/ThingOS_discovery.json"],
+    screenImg: "screens/03_register.png"
+  },
+  {
+    caption: "Thing is on - Thing registers to Cloud - User registers Thing to cloud",
+    thingImg: "thing/bike.png",
+    networkAnimations: ["Actors.json", "stills/ThingOS_discovery.json", "ThingCloud_thing.json"],
+    screenImg: "screens/04_register.png"
+  },
+  {
+    caption: "Thing is on -  App logs in to account on Cloud - User enters account credentials in App",
+    thingImg: "thing/bike.png",
+    networkAnimations: ["Actors.json", "stills/ThingOS_discovery.json", "stills/ThingCloud_thing.json", "AppCloud.json"],
+    screenImg: "screens/05_login.png"
+  },
+  {
+    caption: "Thing is on - OS and Thing pair - App shows home",
+    thingImg: "thing/bike.png",
+    networkAnimations: ["Actors.json", "ThingOS_pair.json","stills/ThingCloud_thing.json", "stills/AppCloud.json"],
+    screenImg: "screens/06_home.png"
+  },
+  {
+    caption: "Thing ready for use - Thing and App connect - App shows Thing is connected",
+    thingImg: "thing/bike.png",
+    networkAnimations: ["Actors.json", "stills/ThingOS_unverified.json", "stills/ThingCloud_thing.json", "stills/AppCloud.json", "ThingApp_verified.json"],
+    screenImg: "screens/07_connected.png"
   }
 ]
 </script>
