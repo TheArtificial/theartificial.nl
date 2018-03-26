@@ -28,7 +28,6 @@ body {
 
   .title {
     font-size: 42px;
-    padding-top: 80px;
     padding-bottom: 20px;
   }
 
@@ -145,6 +144,10 @@ body {
   .walkthrough-controls {
     padding-top: 10px;
 
+    .padded-caption {
+      padding: 0 16px 16px 16px;
+    }
+
     a {
       color: $white;
       svg *.arrow {
@@ -183,6 +186,11 @@ body {
 
 @media only screen {
   .connecting-things #content {
+
+    .title {
+      padding-top: 40px;
+    }
+
     .walkthrough {
       height: 240px;
     	.container {
@@ -222,6 +230,11 @@ body {
 
 @media (min-device-width: 768px) {
   .connecting-things #content {
+
+    .title {
+      padding-top: 80px;
+    }
+
     .walkthrough {
       height: 600px;
 
