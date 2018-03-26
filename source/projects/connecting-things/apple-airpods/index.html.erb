@@ -1,9 +1,9 @@
 ---
 layout: projects/connecting-things/_thing_layout
 title: Apple AirPods
-preview: thing/thing.png
-date: 2018-02-27
-published: false
+preview: thing/airpods.png
+date: 2018-03-26
+published: true
 ---
 <p>
 AirPods are cord-free Bluetooth earbuds. They come with a charging case. They were released in 2016 and designed by Apple. Audio plays as soon as a user places the AirPods in their ears and stops when the user removes them thanks to an accelerometer. AirPods allow listening to audio content, changing songs, making calls, talking to Siri or get directions.
@@ -33,10 +33,32 @@ The connection is flawless. The earphones are working within a range of up to 50
 <script>
 var flowSteps = [
   {
-    caption: "App logs in to account on Cloud",
-    thingImg: "thing/thing.png",
-    networkAnimations: ["Actors.json", "AppCloud.json"],
-    screenImg: "screens/login.png"
+    caption: "Thing's case chargor is closed - App is logged in to Cloud - App shows that user is logged into iCloud on iPhone",
+    thingImg: "thing/front.png",
+    networkAnimations: ["Actors_noWifi.json", "AppCloud.json"],
+    screenImg: "screens/00.png"
+  },
+  {
+    caption: "User opens Thing's case - Thing broadcasts Bluetooth - Device shows home",
+    thingImg: "thing/top_green.png",
+    networkAnimations: ["Actors_noWifi_noApp.json", "Thing_broadcasts.json", "stills/AppCloud.json"],
+    screenImg: "screens/01.png"
+  },
+  {
+    caption: "User presses button on Thing - Thing and OS are in discovery mode - OS overlays indicates to press button on Thing",
+    thingImg: "thing/back.png",
+    networkAnimations: ["Actors_noWifi_noApp.json", "OS_listens.json", "stills/AppCloud.json"],
+    screenImg: "screens/02.png"
+  },
+  {
+    caption: "Thing case is open - Thing and OS are pairing - OS overlay indicates that Thing is connecting",
+    networkAnimations: ["Actors_noWifi_noApp.json", "ThingOS_pair.json", "stills/AppCloud.json"],
+    screenImg: "screens/03.png"
+  },
+  {
+    caption: "Thing case is open - Thing and OS pair , and Thing registers to Cloud - OS overlay shows battery levels",
+    networkAnimations: ["Actors_noWifi_noApp.json", "ThingOS_verified.json", "ThingCloud_thing.json", "stills/AppCloud.json"],
+    screenImg: "screens/04.png"
   }
 ]
 </script>
