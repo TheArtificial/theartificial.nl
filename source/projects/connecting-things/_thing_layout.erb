@@ -109,18 +109,33 @@ var $nextButton = $('#next-button');
 var currentStep = 0;
 var totalSteps = flowSteps.length;
 
-function swapImage($el, newSrc) {
-  if ($el.attr('src') != newSrc) {
-    $el.fadeTo(200,0.50, function(){
-    $el.attr("src",newSrc);
-    $el.on('load', function(){
-      $el.fadeTo(200,1);
+// THING
+
+function renderCurrentThing() {
+  step = currentStep
+  // repeating check in case currentStep changed during fade out
+  newSrc = findLastThingPath(step);
+  if ($thing.attr('src') != newSrc) {
+    $thing.attr('src', newSrc);
+    $thing.on('load', function() {
+      $thing.fadeTo(200,1);
     });
-   });
- }
+  } else {
+    $thing.fadeTo(0,1);
+  }
+  $thing.data('step', step);
+  $thing.attr('title', 'step ' + (step+1));
+}
+
+function swapThing() {
+  newSrc = findLastThingPath(currentStep);
+  if ($thing.attr('src') != newSrc) {
+    $thing.fadeTo(50,0.0, renderCurrentThing);
+  }
 }
 
 function findLastThingPath(number) {
+  // console.log('looking for thing image', number);
   if (flowSteps[number].thingImg) {
     return flowSteps[number].thingImg;
   } else if (number > 0) {
@@ -130,13 +145,28 @@ function findLastThingPath(number) {
   }
 }
 
-function findLastNetworkAnimations(number) {
-  if (flowSteps[number].networkAnimations) {
-    return flowSteps[number].networkAnimations;
-  } else if (number > 0) {
-    return findLastNetworkAnimations(number-1);
+// SCREEN (same as thing, not very DRY)
+
+function renderCurrentScreen() {
+  step = currentStep
+  // repeating check in case currentStep changed during fade out
+  newSrc = findLastScreenPath(step);
+  if ($screen.attr('src') != newSrc) {
+    $screen.attr('src', newSrc);
+    $screen.on('load', function() {
+      $screen.fadeTo(200,1);
+    });
   } else {
-    return [];
+    $screen.fadeTo(0,1);
+  }
+  $screen.data('step', step);
+  $screen.attr('title', 'step ' + (step+1));
+}
+
+function swapScreen() {
+  newSrc = findLastScreenPath(currentStep);
+  if ($screen.attr('src') != newSrc) {
+    $screen.fadeTo(50,0.0, renderCurrentScreen);
   }
 }
 
@@ -147,6 +177,18 @@ function findLastScreenPath(number) {
     return findLastScreenPath(number-1);
   } else {
     return "";
+  }
+}
+
+// NETWORK
+
+function findLastNetworkAnimations(number) {
+  if (flowSteps[number].networkAnimations) {
+    return flowSteps[number].networkAnimations;
+  } else if (number > 0) {
+    return findLastNetworkAnimations(number-1);
+  } else {
+    return [];
   }
 }
 
@@ -175,6 +217,8 @@ function setAnimationLayers(layers) {
     lottie.play();
   }
 };
+
+// TRANSCRIPT
 
 function renderTranscript() {
   var list = $('<ol></ol>');
@@ -205,22 +249,20 @@ function markTranscript() {
 }
 
 // make it happen
+
 function renderCurrentStep() {
   number = currentStep;
   var caption = flowSteps[number].caption;
-  var thingPath = findLastThingPath(number);
+  // var thingPath = findCurrentThingPath();
   var networkAnimations = findLastNetworkAnimations(number);
   var screenPath = findLastScreenPath(number);
 
   // set caption
   $counter.text((currentStep+1)+'/'+totalSteps);
   $caption.text(caption);
-  // set thing image
-  swapImage($thing, thingPath);
-  // set and start animation
+  swapThing();
   setAnimationLayers(networkAnimations);
-  // set screen image
-  swapImage($screen, screenPath);
+  swapScreen();
 
   // manage button visibility
   if (currentStep == 0) {

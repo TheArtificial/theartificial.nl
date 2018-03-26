@@ -1,9 +1,8 @@
 ---
 layout: projects/connecting-things/_thing_layout
 title: Amazon Kindle Voyage
-preview: thing/thing.png
+preview: thing/00_off.png
 date: 2018-02-27
-published: false
 ---
 <p>
 Kindle Voyage is an E-reader marketed by Amazon and released in 2014 in the US. It is equipped to wirelessly connect. Some new generations readers are 3G enabled  The screen uses electronic ink and adaptive light sensor to adjust brightness to provide a comfortable reading experience. The e-reader allows reading, storing e-books, newspapers, magazines and other content but also buying new content.
@@ -33,10 +32,44 @@ Without an access to a Wi-Fi network nor to 3G, no more content can be purchased
 <script>
 var flowSteps = [
   {
-    caption: "App logs in to account on Cloud",
-    thingImg: "thing/thing.png",
-    networkAnimations: ["Actors.json", "AppCloud.json"],
-    screenImg: "screens/login.png"
+    caption: "Thing is off",
+    thingImg: "thing/00_off.png",
+    networkAnimations: ["Actors.json"]
+  },
+  {
+    caption: "Thing is on",
+    thingImg: "thing/01_home.png",
+    networkAnimations: ["Actors.json"]
+  },
+  {
+    caption: "User goes to App settings",
+    thingImg:"thing/02_settings.png",
+    networkAnimations:["Actors.json"]
+  },
+  {
+    caption: "User selects Wi-Fi settings",
+    thingImg:"thing/03_wi-fi_settings.png",
+    networkAnimations:["Actors.json"]
+  },
+  {
+    caption:"User connects to Home Wi-Fi - Thing and home Wi-Fi connect",
+    thingImg:"thing/04_wi-fi_network.png",
+    networkAnimations:[ "Actors.json","ThingWifi_wifi.json"]
+  },
+  {
+    caption: "User goes to register settings - Thing and home Wi-Fi are connected",
+    thingImg: "thing/05_amazon_login.png",
+    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json"]
+  },
+  {
+    caption:"User Registers Kindle to Amazon Account - Thing and home Wi-Fi are connected",
+    thingImg: "thing/06_register_kindle.png",
+    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json"]
+  },
+  {
+    caption:"Thing is connected - Thing registers to Cloud",
+    thingImg: "thing/07_settings.png",
+    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json","ThingWifiCloud_user.json"]
   }
 ]
 </script>

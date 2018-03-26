@@ -6,171 +6,189 @@ date: 2018-03-15
 ---
 
 <p>
-Apple Watch is a part of the smart wearable series designed by Apple. Along with improving the experience of their iPhone's app, users may track their activity, measure their workouts and monitor their health. The first model, Series 1, was launched in 2015 in the US. The watch face is available in two sizes 38 mm and 42 mm, and there is a variety of bracelet materials and colors to choose from.
+  Apple Watch is a part of the smart wearable series designed by Apple. Along with improving the experience of iPhone apps, users may track their activity, measure their workouts, and monitor their health. We analyzed the Series 3 model with LTE connectivity.
 </p>
 
 <h2 class="subtitle">
-  <span class="sentence">The connection process is </span>a little long but celebratory
+  <span class="sentence">The connection process is</span> a little long but celebratory
 </h2>
 <p>
-After turning on the watch, the user has to select a language. Then, if the watch detects an iPhone nearby, an iOS instruction screen pops up informing the user to continue the setup from the iPhone. Tapping the ‘Start pairing' button on the phone displays an animation of particles on the watch. The smartphone switches to a camera mode allowing the user to scan the animation on the watch that acts likes a QR code. When the user places the watch displaying the animation in the field of visibility of the phone camera, pairing occurs. Thanks to this secured connection at the OS level, the app, and the watch also connect. The iPhone shares credentials so the watch connects to the iCloud account of the user. The user is then asked either to restore the Watch from a backup or to set up a new watch. What follows is a number of screens to adjust the watch to the user preference such as choosing on which wrist to wear it, to set up a passcode, to watch a small tutorial… etc. An alternative method of manually entering a 6-digit code to authenticate pairing exists instead of scanning the animation on the watch.
+  After prompting the user to select a language, a new Watch immediately broadcasts a pairing request. Because it is a priviledged member of the iOS system, a nearby iPhone will pop up an instruction screen guiding the user to continue the setup from the iPhone. As the user progresses, the Watch displays a particle animation and the iPhone switches to a camera mode allowing the user to scan this animation (as with a QR code). When this optical recognition verifies the Watch, it is paired.
+</p><p>
+  An alternative method of manually entering a 6-digit code to verify pairing is also available.
+</p><p>
+  The iPhone shares the user's iCloud credentials so the Watch can connect directly. The user is then asked either to restore the Watch from a backup or to set up a new watch. What follows is a number of screens to adjust the watch to the user's preferences.
 </p>
 
 <h2 class="subtitle">
-  <span class="sentence">The security is </span>exemplary
+  <span class="sentence">The security is</span> exemplary
 </h2>
 <p>
-The topology shows that the Apple Watch uses a verified Bluetooth connection both at the protocol and software levels. The watch asks the user to input their password matching their Apple ID. On top of this, it is impossible to pair one watch with two iPhones at the same time. The setup would fail on one phone and process on the other phone. Furthermore, if a watch was already associated with an iPhone and is connected to iCloud via an Apple ID, it is impossible for a new user to associate with the watch. It would need to be reset to factory settings first. This prevents data leakage.
+  The Apple Watch uses a verified Bluetooth protocol connection and also authenticates at the software layer. The iCloud registration adds even another layer of protection, and the one-to-one pairing model means even if hijacking became possible it would be quickly noticed by the user. Even with full physical access, using someone else's Watch requires a full reset, preventing leakage of personal data.
+</p><p>
+  The inner workings of watchOS and iOS and the Secure Enclave features of modern Apple processors are beyond the scope of this analysis, but they appear to be best of class.
 </p>
 
 <h2 class="subtitle">
-  <span class="sentence">The resilience is </span>improving
+  <span class="sentence">The resilience is</span> complicated
 </h2>
 <p>
-Even though some models of the Apple Watch Series 3 are equipped with a cellular 3G connection, most Apple watch models are dependent on the iPhone they are connected to. Most functionalities only work when connected and in range with a phone that has an internet access.
-<p>
+  This is a product with many functions, many of which do not require a connection at all or deal gracefully with unreliable connections while others might depend on the iPhone in ways not clear to the user. There are other UX problems around media services, such as the storage location or streaming flow of music.
+</p><p>
+  Generally, though, the inclusion of both Wi-Fi and LTE to augment the Watch's reliance on the iPhone mean the user experiences a highly connection-resiliant device. The use of iCloud Keychain so the Watch can securely learn how to connect directly to known Wi-Fi networks is helpful.
 </p>
 
 <script>
 var flowSteps = [
   {
-    caption: "Thing is off - OS logs in to account on Cloud - OS logs in to user account",
+    // Thing is off - OS logs in to account on Cloud - OS logs in to user account
+    caption: "User is logged into iCloud account on iPhone",
     thingImg: "thing/00_off.png",
     networkAnimations: ["Actors_noWifi.json", "AppCloud.json"],
     screenImg: "screens/00_os-settings.png",
   },
   {
-    caption: "User turns Thing on - OS is logged in to account on Cloud - OS shows home",
+    // User turns Thing on - OS is logged in to account on Cloud - OS shows home
+    caption: "Watch is powered on",
     thingImg: "thing/01_on.png",
     networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json"],
     screenImg: "screens/00_home.png",
   },
   {
-    caption: "User chooses language on Thing - OS is logged in to account on Cloud - OS shows home ",
+    // User chooses language on Thing - OS is logged in to account on Cloud - OS shows home
+    caption: "Watch prompts for language selection",
     thingImg: "thing/02_languagea.png",
-    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json"],
   },
   {
-    caption: "User chooses region on Thing - OS is logged in to account on Cloud - OS shows home",
+    // User chooses region on Thing - OS is logged in to account on Cloud - OS shows home
+    caption: "Watch prompts for region selection",
     thingImg: "thing/02_languageb.png",
-    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json"],
   },
   {
-    caption: "User confirms language on Thing - OS is logged in to account on Cloud - OS shows home",
+    // User confirms language on Thing - OS is logged in to account on Cloud - OS shows home
+    caption: "User confirms language choice",
     thingImg: "thing/02_languagec.png",
-    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json"],
   },
   {
-    caption: "Thing sets up language - OS is logged in to account on Cloud - OS shows home",
+    // Thing sets up language - OS is logged in to account on Cloud - OS shows home
+    caption: "Watch commits lanugage choice",
     thingImg: "thing/02_languaged.png",
-    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json"],
   },
   {
-    caption: "Thing asks user to bring near a phone - Thing broadcasts Bluetooth - OS shows home",
+    // Thing asks user to bring near a phone - Thing broadcasts Bluetooth - OS shows home
+    caption: "Watch prompts user to bring iPhone nearby, begins broadcasting for Bluetooth discovery",
     thingImg: "thing/03_near.png",
     networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json", "stills/AppCloud.json"],
   },
   {
-    caption: "Thing asks user to bring an iPhone near - OS listens for Bluetooth - User taps continue in OS overlay",
+    // Thing asks user to bring an iPhone near - OS listens for Bluetooth - User taps continue in OS overlay
+    caption: "iPhone discovers Watch, user confirms",
     networkAnimations: ["Actors_noWifi.json", "OS_listens.json", "stills/AppCloud.json"],
     screenImg: "screens/00_home-overlay.png",
   },
   {
-    caption: "Thing asks user to bring near a phone - Thing and OS are in discovery mode - User taps start pairing in App",
+    // Thing asks user to bring near a phone - Thing and OS are in discovery mode - User taps start pairing in App
+    caption: "iPhone launches Watch app, user initiates pairing process",
     networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_discovery.json", "stills/AppCloud.json"],
     screenImg: "screens/01.png"
   },
   {
-    caption: "Thing shows animation - Thing and OS are in discovery mode - User scans Thing animation from App",
+    // Thing shows animation - Thing and OS are in discovery mode - User scans Thing animation from App
+    caption: "Watch shows animation, app guides while user performs optical verification with iPhone camera",
     thingImg: "thing/04_animation.png",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_discovery.json", "stills/AppCloud.json"],
+    networkAnimations: ["Actors_noWifi.json", "ThingOS_pair.json", "stills/AppCloud.json"],
     screenImg: "screens/02.png"
   },
   {
-    caption: "Thing shows visualization - Thing and OS pair with Bluetooth - User taps Set Up as New Apple Watch in App",
+    // Thing shows visualization - Thing and OS pair with Bluetooth - User taps Set Up as New Apple Watch in App
+    caption: "Watch and iPhone are paired, Watch changes to static visual, while user chooses to set up new watch in the app",
     thingImg: "thing/05_visualization.png",
-    networkAnimations: ["Actors_noWifi.json", "ThingOS_pair.json", "stills/AppCloud.json"],
+    networkAnimations: ["Actors_noWifi.json", "ThingOS_verified.json", "stills/AppCloud.json"],
     screenImg: "screens/03.png"
   },
   {
-    caption: "Thing shows preferences options - Thing and OS connect with Bluetooth - User selects Wrist Preference in App",
-    networkAnimations: ["Actors_noWifi.json", "ThingOS_verified.json", "stills/AppCloud.json"],
+    // Thing shows visualization - Thing and OS connect with Bluetooth - User selects Wrist Preference in App
+    caption: "User selects wrist preference in app, app opens data connection with Watch",
+    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json"],
     screenImg: "screens/04.png"
   },
   {
-    caption: "Thing shows visualization - Thing and App connect - App shows indeterminate progress indicator",
+    // Thing shows visualization - Thing and App connect - App shows indeterminate progress indicator
+    caption: "Watch and app verify data connection",
     networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "ThingApp_verified.json"],
     screenImg: "screens/05.png"
   },
   {
-    caption: "Thing shows visualization - Thing and App are connected - User agrees to terms in App",
+    // Thing shows visualization - Thing and App are connected - User agrees to terms in App
+    caption: "App presents terms for user acceptance",
     networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json"],
     screenImg: "screens/06.png"
   },
   {
-    caption: "Thing shows visualization - Thing and App are connected - User double confirms agreement to terms in OS pop up",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json"],
+    // Thing shows visualization - Thing and App are connected - User double confirms agreement to terms in OS pop up
+    caption: "App confirms user acceptance of terms",
     screenImg: "screens/07.png"
   },
   {
-    caption: "Thing shows visualization - Thing and account connect - App shows indeterminate progress indicator",
+    // Thing shows visualization - Thing and account connect - App shows indeterminate progress indicator
+    caption: "Watch authenticates with iCloud",
     networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "ThingCloud_user.json"],
     screenImg: "screens/08.png"
   },
   {
-    caption: "Thing shows visualization - Thing and account are connected - User chooses Watch Analytics preference in App",
+    // hing shows visualization - Thing and account are connected - User chooses Watch Analytics preference in App
+    caption: "App prompts for analytics preference",
     networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/09.png"
   },
   {
-    caption: "Thing shows visualization - Thing and account are connected - User chooses Shared Settings preference in App",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
+    // Thing shows visualization - Thing and account are connected - User chooses Shared Settings preference in App
+    caption: "App informs user of shared settings",
     screenImg: "screens/10.png"
   },
   {
-    caption: "Thing shows visualization - Thing and account are connected - User taps Create a Passcode in App",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
+    // Thing shows visualization - Thing and account are connected - User taps Create a Passcode in App
+    caption: "App instructs user to choose a passcode",
     screenImg: "screens/11.png"
   },
   {
-    caption: "User creates a passcode on Thing - Thing and account are connected - App instructs user to create a passcode on Thing",
+    // User creates a passcode on Thing - Thing and account are connected - App instructs user to create a passcode on Thing
+    caption: "Watch prompts for new passcode",
     thingImg: "thing/06_code.png",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/12.png"
   },
   {
-    caption: "User chooses Unlock preference on the Thing - Thing and account are connected - App instructs user on unlocking Thing with iPhone",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
+    // User chooses Unlock preference on the Thing - Thing and account are connected - App instructs user on unlocking Thing with iPhone
+    caption: "Watch prompts for unlock preference, app provides additional guidance",
     thingImg: "thing/07_unlock.png",
     screenImg: "screens/13.png"
   },
   {
-    caption: "Thing shows visualization - Thing and account are connected - App instructs user on how to use in case of Emergency",
+    // Thing shows visualization - Thing and account are connected - App instructs user on how to use in case of Emergency
+    caption: "Watch returns to static visual, app instructs user on Emergency SOS",
     thingImg: "thing/05_visualization.png",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/14.png"
   },
   {
-    caption: "Thing shows visualization - Thing and account are connected - User taps Install All Apps on Thing on App",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
+    // Thing shows visualization - Thing and account are connected - User taps Install All Apps on Thing on App
+    caption: "App prompts for Watch app installation",
     screenImg: "screens/15.png"
   },
   {
-    caption: "Thing shows progress indicator - Thing and App are syncing - App instructs user that Thing is syncing",
+    // Thing shows progress indicator - Thing and App are syncing - App instructs user that Thing is syncing
+    caption: "Watch shows progress indicator, app provides explanation",
     thingImg: "thing/08_syncing.png",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/16.png"
   },
   {
-    caption: "Thing shows home - Thing and App are connected - App instructs user that Thing is set up",
+    // Thing shows home - Thing and App are connected - App instructs user that Thing is set up
+    caption: "Watch shows home screen, app displays final guidance",
     thingImg: "thing/09_home.png",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/17.png"
   },
   {
-    caption: "Thing shows home - Thing and App are connected - App Settings shows new Thing",
-    thingImg: "thing/09_home.png",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
+    // Thing shows home - Thing and App are connected - App Settings shows new Thing
+    caption: "App shows Watch is paired",
     screenImg: "screens/18.png"
   }
 ]
