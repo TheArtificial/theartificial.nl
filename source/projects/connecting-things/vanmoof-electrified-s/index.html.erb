@@ -33,45 +33,41 @@ A few of the previous bike releases have been victims of software bugs that kill
 <script>
 var flowSteps = [
   {
-    caption: "User gets closer to Thing - Thing is broadcasting - User selects register in App",
-    thingImg: "thing/bike.png",
-    networkAnimations: ["Actors.json", "Thing_broadcasts.json"],
+    caption: "Thing is off - No connection is estabished - User selects register in App",
+    thingImg: "thing/screen_off.png",
+    networkAnimations: ["Actors.json"],
     screenImg: "screens/01_login.png"
   },
   {
-    caption: "Thing is on - Thing and OS are in discovery mode - User creates account on Cloud",
-    thingImg: "thing/bike.png",
+    caption: "User gets closer to Thing - Thing and OS are in discovery mode - User creates account on Cloud",
+    thingImg: "thing/hello.gif",
     networkAnimations: ["Actors.json", "OS_listens.json"],
     screenImg: "screens/02_register.png"
   },
   {
     caption: "Thing is on - Thing and OS are in discovery mode - User confirms email address",
-    thingImg: "thing/bike.png",
+    thingImg: "thing/screen_on.png",
     networkAnimations: ["Actors.json", "stills/ThingOS_discovery.json"],
     screenImg: "screens/03_register.png"
   },
   {
     caption: "Thing is on - Thing registers to Cloud - User registers Thing to cloud",
-    thingImg: "thing/bike.png",
     networkAnimations: ["Actors.json", "stills/ThingOS_discovery.json", "ThingCloud_thing.json"],
     screenImg: "screens/04_register.png"
   },
   {
     caption: "Thing is on -  App logs in to account on Cloud - User enters account credentials in App",
-    thingImg: "thing/bike.png",
     networkAnimations: ["Actors.json", "stills/ThingOS_discovery.json", "stills/ThingCloud_thing.json", "AppCloud.json"],
     screenImg: "screens/05_login.png"
   },
   {
     caption: "Thing is on - OS and Thing pair - App shows home",
-    thingImg: "thing/bike.png",
     networkAnimations: ["Actors.json", "ThingOS_pair.json","stills/ThingCloud_thing.json", "stills/AppCloud.json"],
     screenImg: "screens/06_home.png"
   },
   {
     caption: "Thing ready for use - Thing and App connect - App shows Thing is connected",
-    thingImg: "thing/bike.png",
-    networkAnimations: ["Actors.json", "stills/ThingOS_unverified.json", "stills/ThingCloud_thing.json", "stills/AppCloud.json", "ThingApp_verified.json"],
+    networkAnimations: ["Actors.json", "ThingOS_unverified.json", "stills/ThingCloud_thing.json", "stills/AppCloud.json", "ThingApp_verified.json"],
     screenImg: "screens/07_connected.png"
   }
 ]
