@@ -5,7 +5,7 @@ tags: monday, morning, conversation, critique, feedback, design
 author: shannon
 ---
 
-This week we discussed [this article](https://www.thnk.org/insights/the-other-side-of-the-stick-how-to-receive-feedback/) on receiving creative feedback.
+This week we discussed [this article](https://www.thnk.org/insights/the-other-side-of-the-stick-how-to-receive-feedback/) from [THNK School of Creative Leadership](https://www.thnk.org) on receiving creative feedback.
 
 Critique is an important part of any design process, yet it's not something we're formally taught to do, and it's something many companies don't take seriously. Critiques can cause anxiety, they seem to encourage reactiveness, and they might even result in rifts amongst design teams.
 
