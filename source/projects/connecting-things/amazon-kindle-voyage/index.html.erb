@@ -2,7 +2,7 @@
 layout: projects/connecting-things/_thing_layout
 title: Amazon Kindle Voyage
 preview: thing/00_off.png
-date: 2018-02-27
+date: 2018-03-26
 ---
 <p>
 Kindle Voyage is an E-reader marketed by Amazon and released in 2014 in the US. It is equipped to wirelessly connect. Some new generations readers are 3G enabled  The screen uses electronic ink and adaptive light sensor to adjust brightness to provide a comfortable reading experience. The e-reader allows reading, storing e-books, newspapers, magazines and other content but also buying new content.
@@ -39,17 +39,14 @@ var flowSteps = [
   {
     caption: "Thing is on - No connection is established ",
     thingImg: "thing/01_home.png",
-    networkAnimations: ["actors/noApp_noOS.json"]
   },
   {
     caption: "User goes to App settings - No connection is established ",
     thingImg:"thing/02_settings.png",
-    networkAnimations:["actors/noApp_noOS.json"]
   },
   {
     caption: "User selects Wi-Fi settings - No connection is established ",
     thingImg:"thing/03_wi-fi_settings.png",
-    networkAnimations:["actors/noApp_noOS.json"]
   },
   {
     caption:"User connects to Home Wi-Fi - Thing and home Wi-Fi connect",
@@ -64,7 +61,6 @@ var flowSteps = [
   {
     caption:"User Registers Kindle to Amazon Account - Thing and home Wi-Fi are connected",
     thingImg: "thing/06_register_kindle.png",
-    networkAnimations:["actors/noApp_noOS.json","stills/ThingWifi_wifi.json"]
   },
   {
     caption:"Thing is connected - Thing and User register to Cloud",
