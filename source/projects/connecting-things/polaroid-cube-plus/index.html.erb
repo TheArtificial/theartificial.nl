@@ -34,55 +34,55 @@ var flowSteps = [
   {
     caption: "Thing is off - No connection is established - User launches App",
     thingImg: "thing/off.png",
-    networkAnimations: ["Actors_noCloud_noWifi.json"],
+    networkAnimations: ["actors/noCloud_noWifi.json"],
     screenImg: "screens/01_hello.png"
   },
   {
     caption: "User turns Thing on - No connection is established - App instructs to press power button",
     thingImg: "thing/on.png",
-    networkAnimations: ["Actors_noCloud_noWifi.json"],
+    networkAnimations: ["actors/noCloud_noWifi.json"],
     screenImg: "screens/02_on.png"
   },
   {
     caption: "User presses Wi-Fi button on Thing - Thing starts ad hoc Wi-Fi connection - App instructs to press connection button",
     thingImg: "thing/wifi-fast.gif",
-    networkAnimations: ["Actors_noCloud_noWifi.json", "Thing_broadcastsAdHoc.json"],
+    networkAnimations: ["actors/noCloud_noWifi.json", "Thing_broadcastsAdHoc.json"],
     screenImg: "screens/03_wifi.png"
   },
   {
     caption: "Thing emits ad hoc Wi-Fi connection  - Thing emits ad hoc Wi-Fi connection - App instructs to visit OS settings",
-    networkAnimations: ["Actors_noCloud_noWifi.json", "stills/Thing_broadcastsAdHoc.json"],
+    networkAnimations: ["actors/noCloud_noWifi.json", "stills/Thing_broadcastsAdHoc.json"],
     screenImg: "screens/04_gotosettings.png"
   },
   {
     caption: "Thing emits ad hoc Wi-Fi connection - OS searches for Wi-Fi networks - User selects Thing's network in OS settings",
-    networkAnimations: ["Actors_noCloud_noWifi.json", "OS_listensAdHoc.json"],
+    networkAnimations: ["actors/noCloud_noWifi.json", "OS_listensAdHoc.json"],
     screenImg: "screens/05_settings-choose.png"
   },
   {
     caption: "Thing emits ad hoc Wi-Fi connection - OS and Thing are in discovery mode - OS is connecting to Thing's network",
-    networkAnimations: ["Actors_noCloud_noWifi.json", "stills/ThingOS_discoveryAdHoc.json"],
+    networkAnimations: ["actors/noCloud_noWifi.json", "stills/ThingOS_discoveryAdHoc.json"],
     screenImg: "screens/05_settings-progress.png"
   },
   {
     caption: "Thing emits ad hoc Wi-Fi connection - OS and Thing are in discovery mode - User enters Thing's network password",
-    networkAnimations: ["Actors_noCloud_noWifi.json", "stills/ThingOS_discoveryAdHoc.json"],
+    networkAnimations: ["actors/noCloud_noWifi.json", "stills/ThingOS_discoveryAdHoc.json"],
     screenImg: "screens/06_settings-password.png"
   },
   {
     caption: "Thing emits ad hoc Wi-Fi connection - Thing and OS are connecting - Thing and OS are connecting in OS Settings",
-    networkAnimations: ["Actors_noCloud_noWifi.json", "ThingOS_verifiedAdHoc.json"],
+    networkAnimations: ["actors/noCloud_noWifi.json", "ThingOS_verifiedAdHoc.json"],
     screenImg: "screens/07_settings.gif"
   },
   {
     caption: "Thing emits ad hoc Wi-Fi connection - Thing and App connect - App shows all is set",
-    networkAnimations: ["Actors_noCloud_noWifi.json", "stills/ThingOS_verifiedAdHoc.json", "ThingApp_verified.json"],
+    networkAnimations: ["actors/noCloud_noWifi.json", "stills/ThingOS_verifiedAdHoc.json", "ThingApp_verified.json"],
     screenImg: "screens/09_allset.png"
   },
   {
     caption: "Thing emits ad hoc Wi-Fi connection - Thing and App are connected - User swipes to reveal camera view",
     thingImg: "thing/wifi-slow.gif",
-    networkAnimations: ["Actors_noCloud_noWifi.json", "stills/ThingOS_verifiedAdHoc.json", "stills/ThingApp_verified.json"],
+    networkAnimations: ["actors/noCloud_noWifi.json", "stills/ThingOS_verifiedAdHoc.json", "stills/ThingApp_verified.json"],
     screenImg: "screens/10_done.png"
   }
 ]

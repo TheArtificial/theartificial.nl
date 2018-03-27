@@ -44,14 +44,14 @@ var flowSteps = [
     // Thing is off - OS logs in to account on Cloud - OS logs in to user account
     caption: "User is logged into iCloud account on iPhone",
     thingImg: "thing/00_off.png",
-    networkAnimations: ["Actors_noWifi.json", "AppCloud.json"],
+    networkAnimations: ["actors/noWifi.json", "AppCloud.json"],
     screenImg: "screens/00_os-settings.png",
   },
   {
     // User turns Thing on - OS is logged in to account on Cloud - OS shows home
     caption: "Watch is powered on",
     thingImg: "thing/01_on.png",
-    networkAnimations: ["Actors_noWifi.json", "stills/AppCloud.json"],
+    networkAnimations: ["actors/noWifi.json", "stills/AppCloud.json"],
     screenImg: "screens/00_home.png",
   },
   {
@@ -78,50 +78,50 @@ var flowSteps = [
     // Thing asks user to bring near a phone - Thing broadcasts Bluetooth - OS shows home
     caption: "Watch prompts user to bring iPhone nearby, begins broadcasting for Bluetooth discovery",
     thingImg: "thing/03_near.png",
-    networkAnimations: ["Actors_noWifi.json", "Thing_broadcasts.json", "stills/AppCloud.json"],
+    networkAnimations: ["actors/noWifi.json", "Thing_broadcasts.json", "stills/AppCloud.json"],
   },
   {
     // Thing asks user to bring an iPhone near - OS listens for Bluetooth - User taps continue in OS overlay
     caption: "iPhone discovers Watch, user confirms",
-    networkAnimations: ["Actors_noWifi.json", "OS_listens.json", "stills/AppCloud.json"],
+    networkAnimations: ["actors/noWifi.json", "OS_listens.json", "stills/AppCloud.json"],
     screenImg: "screens/00_home-overlay.png",
   },
   {
     // Thing asks user to bring near a phone - Thing and OS are in discovery mode - User taps start pairing in App
     caption: "iPhone launches Watch app, user initiates pairing process",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_discovery.json", "stills/AppCloud.json"],
+    networkAnimations: ["actors/noWifi.json", "stills/ThingOS_discovery.json", "stills/AppCloud.json"],
     screenImg: "screens/01.png"
   },
   {
     // Thing shows animation - Thing and OS are in discovery mode - User scans Thing animation from App
     caption: "Watch shows animation, app guides while user performs optical verification with iPhone camera",
     thingImg: "thing/04_animation.png",
-    networkAnimations: ["Actors_noWifi.json", "ThingOS_pair.json", "stills/AppCloud.json"],
+    networkAnimations: ["actors/noWifi.json", "ThingOS_pair.json", "stills/AppCloud.json"],
     screenImg: "screens/02.png"
   },
   {
     // Thing shows visualization - Thing and OS pair with Bluetooth - User taps Set Up as New Apple Watch in App
     caption: "Watch and iPhone are paired, Watch changes to static visual, while user chooses to set up new watch in the app",
     thingImg: "thing/05_visualization.png",
-    networkAnimations: ["Actors_noWifi.json", "ThingOS_verified.json", "stills/AppCloud.json"],
+    networkAnimations: ["actors/noWifi.json", "ThingOS_verified.json", "stills/AppCloud.json"],
     screenImg: "screens/03.png"
   },
   {
     // Thing shows visualization - Thing and OS connect with Bluetooth - User selects Wrist Preference in App
     caption: "User selects wrist preference in app, app opens data connection with Watch",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json"],
+    networkAnimations: ["actors/noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json"],
     screenImg: "screens/04.png"
   },
   {
     // Thing shows visualization - Thing and App connect - App shows indeterminate progress indicator
     caption: "Watch and app verify data connection",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "ThingApp_verified.json"],
+    networkAnimations: ["actors/noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "ThingApp_verified.json"],
     screenImg: "screens/05.png"
   },
   {
     // Thing shows visualization - Thing and App are connected - User agrees to terms in App
     caption: "App presents terms for user acceptance",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json"],
+    networkAnimations: ["actors/noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json"],
     screenImg: "screens/06.png"
   },
   {
@@ -132,13 +132,13 @@ var flowSteps = [
   {
     // Thing shows visualization - Thing and account connect - App shows indeterminate progress indicator
     caption: "Watch authenticates with iCloud",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "ThingCloud_user.json"],
+    networkAnimations: ["actors/noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "ThingCloud_user.json"],
     screenImg: "screens/08.png"
   },
   {
     // hing shows visualization - Thing and account are connected - User chooses Watch Analytics preference in App
     caption: "App prompts for analytics preference",
-    networkAnimations: ["Actors_noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
+    networkAnimations: ["actors/noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_verified.json", "stills/ThingCloud_user.json"],
     screenImg: "screens/09.png"
   },
   {

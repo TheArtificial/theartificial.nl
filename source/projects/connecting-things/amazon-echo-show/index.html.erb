@@ -3,7 +3,6 @@ layout: projects/connecting-things/_thing_layout
 title: Echo Show
 preview: thing/off.png
 date: 2018-03-26
-published: false
 ---
 <p>
 Echo Show is a voice-controlled device with a display and powerful speakers using Amazon’s Alexa assistant. Released in 2017 in the US, the product is capable of basic skills based on voice interactions such as showing or reading an article, showing videos or security cameras, video-calling the user’s contacts, setting and viewing timers, but also more elaborated skills involving peripherals or other services. For instance, Echo Show could turn on Netflix on TV, or control lighting and heating.
@@ -33,54 +32,68 @@ Just like the Echo Dot, the Echo Show cannot perform any actions without an acce
 <script>
 var flowSteps = [
   {
-    caption: "Thing is off - No connection is established ",
-    thingImg: "thing/off.png",
-    networkAnimations: ["Actors.json"]
+    caption: "User plugs Thing to power - No connection is established",
+    thingImg: "thing/00.gif",
+    networkAnimations: ["actors/noApp_noOS.json"]
   },
   {
-    caption: "User selects language - No connection is established ",
+    caption: "User selects language - No connection is established",
     thingImg: "thing/01.png",
-    networkAnimations: ["Actors.json"]
+    networkAnimations: ["actors/noApp_noOS.json"]
   },
   {
-    caption: "User enters log in credential - App and cloud connect",
+    caption: "User selects Wi-Fi network -  No connection is established",
     thingImg:"thing/02.png",
-    networkAnimations:["Actors.json", "AppCloud.json"]
+    networkAnimations:["actors/noApp_noOS.json"]
   },
   {
-    caption: "Thing says Welcome - App and cloud are connected",
+    caption: "User enters Wi-Fi password - Thing connect to Wi-Fi",
     thingImg:"thing/03.png",
-    networkAnimations:["Actors.json", "stills/AppCloud.json"]
+    networkAnimations:["actors/noApp_noOS.json", "ThingWifi_wifi.json"]
   },
   {
-    caption:"User connects to Home Wi-Fi - Thing and home Wi-Fi connect",
+    caption: "Thing tell user to enter Amazon account credentials",
     thingImg:"thing/04.png",
-    networkAnimations:[ "Actors.json","ThingWifi_wifi.json"]
+    networkAnimations:["actors/noApp_noOS.json", "stills/ThingWifi_wifi.json"]
   },
   {
-    caption: "User goes to register settings - Thing and home Wi-Fi are connected",
-    thingImg: "thing/05.png",
-    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json"]
+    caption:"User enters Amazon account log in detail",
+    thingImg:"thing/05.png",
+    networkAnimations:[ "actors/noApp_noOS.json", "stills/ThingWifi_wifi.json"]
   },
   {
-    caption:"User Registers Kindle to Amazon Account - Thing and home Wi-Fi are connected",
+    caption: "User enters Amazon account password - Thing and user register to Amazon Account",
     thingImg: "thing/06.png",
-    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json"]
+    networkAnimations:["actors/noApp_noOS.json", "stills/ThingWifi_wifi.json", "ThingWiFiCloud_both.json"]
   },
   {
-    caption:"Thing is connected - Thing registers to Cloud",
+    caption:"Thing welcome user",
     thingImg: "thing/07.png",
-    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json","ThingWifiCloud_both.json"]
+    networkAnimations:["actors/noApp_noOS.json", "stills/ThingWifi_wifi.json", "stills/ThingWiFiCloud_both.json"]
   },
   {
-    caption:"Thing is connected - Thing registers to Cloud",
+    caption:"User selects Time Zone",
     thingImg: "thing/08.png",
-    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json","stills/ThingWifiCloud_user.json"]
   },
   {
-    caption:"Thing is connected - Thing registers to Cloud",
+    caption:"User chose Thing Name",
     thingImg: "thing/09.png",
-    networkAnimations:["Actors.json","stills/ThingWifi_wifi.json","stills/ThingWifiCloud_user.json"]
+  },
+  {
+    caption:"Thing is loading",
+    thingImg: "thing/10.png",
+  },
+  {
+    caption:"Thing shows product tour video",
+    thingImg: "thing/11.png",
+  },
+  {
+    caption:"Thing advertise Amazon prime",
+    thingImg: "thing/12.png",
+  },
+  {
+    caption:"Thing is ready for use",
+    thingImg: "thing/13.png",
   }
 ]
 </script>
