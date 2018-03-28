@@ -674,3 +674,98 @@ svg *.content{ fill: $cool-grey-40; }
 		}
 	}
 }
+
+#svg-holistic {
+	margin: 0 auto;
+	position: relative;
+	svg {
+		animation-name: holistic;
+	  animation-duration: 12s;
+		animation-iteration-count: infinite;
+		transform-origin: 50% 50%;
+		animation-timing-function: linear;
+	}
+}
+
+@keyframes holistic {
+	0% {
+		transform: rotate(0deg);
+	}
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#svg-integrated {
+	margin: 0 auto;
+	position: relative;
+
+	svg {
+		g * {
+			animation-duration: 12s;
+			animation-iteration-count: infinite;
+			transform-origin: 50% 50%;
+			animation-timing-function: linear;
+		}
+		.first { animation-name: integrated-first; }
+		.second { animation-name: integrated-second; }
+		.third {animation-name: integrated-third; }
+		.fourth {animation-name: integrated-fourth; }
+		.fifth {animation-name: integrated-fifth; }
+		.sixth {animation-name: integrated-sixth; }
+	}
+}
+
+@keyframes integrated-first {
+	0% { opacity: 0.0; }
+	16% { opacity: 0.0; }
+  24% { opacity: 1.0; }
+	88% { opacity: 1.0; }
+	96% { opacity: 0.0 }
+	100% { opacity: 0.0; }
+}
+
+@keyframes integrated-second {
+	0% { opacity: 1.0; }
+	8% { opacity: 1.0; }
+	16% { opacity: 0.0 }
+	32% { opacity: 0.0; }
+  40% { opacity: 1.0; }
+	100% { opacity: 1.0; }
+}
+
+@keyframes integrated-third {
+	0% { opacity: 1.0; }
+	24% { opacity: 1.0; }
+	32% { opacity: 0.0 }
+	48% { opacity: 0.0; }
+	56% { opacity: 1.0; }
+	100% {opacity: 1.0; }
+}
+
+@keyframes integrated-fourth {
+	0% { opacity: 1.0; }
+	40% { opacity: 1.0; }
+	48% { opacity: 0.0 }
+	64% { opacity: 0.0; }
+	72% { opacity: 1.0; }
+	100% {opacity: 1.0; }
+}
+
+@keyframes integrated-fifth {
+	0% { opacity: 1.0; }
+	56% { opacity: 1.0; }
+	64% { opacity: 0.0 }
+	80% { opacity: 0.0; }
+	88% { opacity: 1.0; }
+	100% {opacity: 1.0; }
+}
+
+@keyframes integrated-sixth {
+	0% { opacity: 1.0; }
+	8% { opacity: 1.0; }
+	72% { opacity: 1.0; }
+	80% { opacity: 0.0 }
+	96% { opacity: 0.0; }
+	100% {opacity: 1.0; }
+}
