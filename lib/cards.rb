@@ -4,6 +4,7 @@ require_relative 'cards/cocktail'
 require_relative 'cards/ftfy'
 require_relative 'cards/work'
 require_relative 'cards/person'
+require_relative 'cards/thing'
 require_relative 'cards/unknown'
 
 module Cards

@@ -24,6 +24,8 @@ class Thing < Mustache
     context[:date] = resource.data.date.iso8601
     context[:human_date] = resource.data.date.strftime('%B %e, %Y')
     context[:image_url] = "#{resource.url}#{resource.data.preview}"
+
+    @unpublished = resource.data.published ? false : true
   end
 
   def values_hash
@@ -32,6 +34,10 @@ class Thing < Mustache
       :date
     ].each{|key| hash[key] = context[key]}
     return hash
+  end
+
+  def unpublished?
+    @unpublished
   end
 
 end

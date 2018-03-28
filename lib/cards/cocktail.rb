@@ -38,5 +38,9 @@ class Cocktail < Mustache
     return hash
   end
 
+  def unpublished?
+    false
+  end
+
 end
 end

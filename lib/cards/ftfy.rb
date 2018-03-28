@@ -36,5 +36,9 @@ class Ftfy < Mustache
     return hash
   end
 
+  def unpublished?
+    false
+  end
+
 end
 end

@@ -189,7 +189,6 @@ class Projects < Middleman::Extension
       puts "Moving #{project_name}: #{r.path}"
       r.destination_path.gsub!(/^projects\//, "")
       if r.ext == '.html'
-        puts "#{r.metadata}"
         r.add_metadata project: project_name
         if !r.options.has_key?(:layout)
           r.add_metadata options: { layout: 'project_layout' }

@@ -28,6 +28,8 @@ class Blog < Mustache
       context[:has_image?] = false
     end
 
+    @unpublished = resource.data.published ? false : true
+
     context[:url] = @article.url
     context[:category] = @article.data.category
     context[:title] = @article.title
@@ -53,6 +55,10 @@ class Blog < Mustache
       :summary
     ].each{|key| hash[key] = context[key]}
     return hash
+  end
+
+  def unpublished?
+    @unpublished
   end
 
 private

@@ -42,6 +42,10 @@ class Basic < Mustache
     return hash
   end
 
+  def unpublished?
+    false
+  end
+
 private
 
 def image_url(resource)
