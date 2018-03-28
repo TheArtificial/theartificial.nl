@@ -22,6 +22,9 @@ function renderCard(doc) {
   } else if (type == 'ftfy') {
     view = doc
     template = "<%=escape_javascript(Cards.template_for_type('ftfy')) %>";
+  } else if (type == 'thing') {
+    view = doc
+    template = "<%=escape_javascript(Cards.template_for_type('thing')) %>";
   } else if (type == 'basic') {
     view = doc
     template = "<%=escape_javascript(Cards.template_for_type('basic')) %>";

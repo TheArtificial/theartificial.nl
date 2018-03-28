@@ -1,0 +1,60 @@
+---
+layout: projects/connecting-things/_thing_layout
+title: Apple Pencil
+preview: thing/close.png
+date: 2018-02-27
+published: false
+---
+<p>
+Apple Pencil is a pressure-sensitive stylus to write, sketch, paint, draw and complete basic gestures such as tap or swipe on an iPad Pro. The Bluetooth Pencil works with a variety of apps such as Evernote, Adobe Apps, Sketch, LiquidText, Apple Photos and more. It has been released by Apple in 2015.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The connection process is </span>effortless
+</h2>
+<p>
+To use the Apple Pencil for the first time, it needs to pair with an iPad Pro. This is done by plugging the pencil into the Lighting port of the iPad. Great surprise, to connect this product, the user just has to tap the pair button popping up in an OS alert and does not need to visit the Settings App.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The security is </span>fine
+</h2>
+<p>
+A physical connection between the Pencil and the iPad ensures that the user is connecting the desired items together. As Apple Pencil is not holding confidential user’s data, we can say that a basic Bluetooth connection is secured enough for the purpose.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The resilience is </span>okay
+</h2>
+<p>
+Sometimes, the Apple Pencil just turns out to be disconnecting without notifying their user. This can be caused if the battery is low or if the connection is lost. Otherwise, the Pencil works really smoothly. A great touch system in the iPad Pro allows the user to rest their palm on the screen without affecting their artwork or note, similarly, the user can use simultaneously the stylus and their finger. The iPad Pro will differentiate the two.
+</p>
+
+<script>
+var flowSteps = [
+  {
+    caption: "Thing cap is closed - Thing and OS are in discovery mode - Device shows home screen",
+    thingImg: "thing/close.png",
+    networkAnimations: ["actors/noCloud_noWifi_noApp.json", "OS_listens.json"],
+    screenImg: "screens/1_home.png"
+  },
+  {
+    caption: "User plugs Thing into device - Thing and OS physically connect - OS requests pairing permission",
+    thingImg: "thing/open.png",
+    networkAnimations: ["actors/noCloud_noWifi_noApp.json", "stills/ThingOS_discovery.json", "ThingOS_physical.json"],
+    screenImg: "screens/2_pair.png"
+  },
+  {
+    caption: "User unplugs Thing to iPad - Thing and OS pair - Device shows home screen",
+    thingImg: "thing/close.png",
+    networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_pair.json"],
+    screenImg: "screens/1_home.png"
+  },
+  {
+    caption: "Thing broadcasts Bluetooth - Thing and OS connect - OS settings ",
+    thingImg: "thing/close.png",
+    networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_verified.json"],
+    screenImg: "screens/3_connected.png"
+  }
+]
+</script>

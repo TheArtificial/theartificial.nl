@@ -1,0 +1,126 @@
+---
+layout: projects/connecting-things/_thing_layout
+title: Nokia Thermo
+preview: thing/off.png
+date: 2018-03-15
+published: false
+---
+<p>
+Nokia Thermo measures temperature from the user’s forehead and automatically syncs readings with the dedicated app via Bluetooth. Thermo is also equipped with a LED display that gives readings directly on the object. It measures temperature from the blood circulating in the temporal artery thanks to 16 infrared sensors. A color-coded indicator informs the user if the temperature taken is normal, elevated, or high while taking into consideration the age of the patient. The object is white, has a LED screen, one button, and one green and soft part to apply on the forehead. Thermo app allows logging comments, medications, and photos. These pieces of data can easily be shared with a doctor. All members of the family can create their own profile.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The connection process is </span>clear
+</h2>
+<p>
+To connect to Nokia Thermo, the user needs to download the Nokia Thermo app and to log in. Tapping on ‘Install’ within the Thermo app shows a walkthrough that instructs the user to press and hold the button on the Thermo until the LEDs display ‘SETUP’. The user presses “Next” in the app, initiating the search for the product. An OS overlay pops up and reveals the available accessory. Then, the user selects in the list the connected Thermo that appeared. An indeterminate progress indicator in the app shows that it is connecting to the product. The app proceeds to ask the user to connect to a Wi-Fi network. If the user selects a home Wi-Fi that the device is already connected to, the setup is quicker as the home Wi-Fi password can be shared from the device. The app is busy again with an indeterminate progress indicator displaying that the app is configuring, and activating the Thermometer. The last setup screen shows that the Thermometer is activated. To finish, the app shows a tutorial that teaches the user how to scan the forehead for a reading.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The security is </span>okay
+</h2>
+<p>
+Thermo’s OS and software connections are both verified thanks to a physical button on the device and by a password protected Wi-Fi connection. Thermo registers to the user account through the home Wi-Fi which makes it pretty secure.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The resilience is </span>good
+</h2>
+<p>
+Thermo only needs to be connected to a device for setup and data syncing, and not for continued use. Thermo uses Wi-Fi or Bluetooth to sync the user data with the Thermo app. In fact, during the setup, if the user does not have access to a Wi-Fi network, they can use Bluetooth to configure the device instead. The configuration of the Thermo should be updated in case the Wi-Fi network has had a change in name or password, or the user would like to use a different network, or, if the user would like to switch from a Bluetooth configuration to a Wi-Fi configuration.
+
+<script>
+var flowSteps = [
+  {
+    caption: "Thing is off - OS connects to home Wi-Fi - User launches App",
+    thingImg: "thing/off.png",
+    networkAnimations: ["stills/OSWifi.json", "actors/all.json"],
+    screenImg: "screens/01_hello.gif"
+  },
+  {
+    caption: "Thing is off - App logs in to account on Cloud - User enters account credentials in App",
+    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "AppCloud.json"],
+    screenImg: "screens/02_login.png"
+  },
+  {
+    caption: "Thing is off - App is logged in to account on Cloud - User navigates to App settings",
+    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json"],
+    screenImg: "screens/03_profiles.png"
+  },
+  {
+    caption: "Thing is off - App is logged in to account on Cloud - User installs new Thing in App settings",
+    screenImg: "screens/04_settings.png"
+  },
+  {
+    caption: "Thing is off - App is logged in to account on Cloud - User follows App instructions",
+    screenImg: "screens/05_setup1.png"
+  },
+  {
+    caption: "User presses and holds the Thing button - Thing broadcasts Bluetooth - User follows App instructions",
+    thingImg:  "thing/setup.png",
+    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json", "Thing_broadcasts.json"],
+    screenImg: "screens/06_setup2.png",
+  },
+  {
+    caption: "Thing is in Setup mode - OS listens for Bluetooth - User selects Thing in App",
+    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json", "OS_listens.json"],
+    screenImg: "screens/08_setup3.png"
+  },
+  {
+    caption: "Thing is in Setup mode - Thing and OS pair with Bluetooth -  App shows indeterminate progress indicator",
+    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json", "ThingOS_pair.json"],
+    screenImg: "screens/10_setup4.png"
+  },
+  {
+    caption: "Thing is in Setup mode - Thing and OS connect - App shows indeterminate progress indicator",
+    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json", "ThingOS_verified.json"],
+    screenImg: "screens/10_setup4.png"
+  },
+  {
+    caption: "Thing is in Setup mode - Thing and App connect - App shows indeterminate progress indicator",
+    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "ThingApp_verified.json"],
+    screenImg: "screens/10_setup4.png"
+  },
+  {
+    caption: "Thing is in Setup mode - Thing and App are connected - User selects home Wi-Fi network",
+    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json"],
+    screenImg: "screens/11_setup5.png"
+  },
+  {
+    caption: "Thing is off - Thing and App are connected - User grants permission to share Wi-Fi network credentials",
+    screenImg: "screens/12_setup6.png"
+  },
+  {
+    caption: "Thing is in Setup mode - Thing and home Wi-Fi connect - App shows indeterminate progress indicator",
+    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json", "ThingWifi_wifi.json"],
+    screenImg: "screens/13_setup7.png"
+  },
+  {
+    caption: "Thing shows checkmark - Thing registers to Cloud - App shows setup is complete",
+    thingImg:  "thing/checkmark.png",
+    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json", "stills/ThingWifi_wifi.json", "ThingWifiCloud_user.json"],
+    screenImg: "screens/14_setup8.png"
+  },
+  {
+    caption: "Thing is connected - Thing and home Wi-Fi are connected - User sees tutorial in App",
+    thingImg:  "thing/off.png",
+    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json", "stills/ThingWifi_wifi.json", "stills/ThingWiFiCloud_user.json"],
+    screenImg: "screens/15_tuto1.png"
+  },
+  {
+    caption: "Thing is connected - Thing and home Wi-Fi are connected - User sees tutorial in App",
+    thingImg:  "thing/off.png",
+    screenImg: "screens/16_tuto2.png"
+  },
+  {
+    caption: "Thing is connected - Thing and home Wi-Fi are connected - User sees tutorial in App",
+    thingImg:  "thing/off.png",
+    screenImg: "screens/17_tuto3.png"
+  },
+  {
+    caption: "Thing is connected - Thing and home Wi-Fi are connected - User sees tutorial in App",
+    thingImg:  "thing/off.png",
+    screenImg: "screens/18_tuto4.png"
+  }
+]
+</script>

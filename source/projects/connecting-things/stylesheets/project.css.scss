@@ -1,0 +1,267 @@
+@import "../../../stylesheets/_artificial-colors.scss";
+
+body {
+  height: 100%;
+}
+
+.connecting-things {
+  background-color: $cool-grey-80;
+}
+
+.connecting-things #content {
+
+  h1, h2 {
+    font-family: "Barlow", Helvetica, Arial, sans-serif;
+  }
+
+  #intro {
+    margin-bottom: 40px;
+  }
+
+  .title, .subtitle {
+    font-style: normal;
+  }
+
+  .title, .step-count {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 42px;
+    padding-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 32px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+
+  span.sentence {
+    font-weight: normal;
+  }
+
+  .heading {
+    padding-bottom: 10px;
+  }
+
+  .preview-link {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  .current-step {
+    text-align: center;
+  }
+
+  #prev-button {
+    text-align: left;
+    p, svg {
+      float: left;
+    }
+    &.disabled * {
+      opacity: 0;
+      cursor: default;
+    }
+    * {
+      transition: opacity 0.5s ease-out;
+    }
+  }
+
+  #next-button {
+    text-align: right;
+    p, svg {
+      float: right;
+    }
+    &.disabled * {
+      opacity: 0;
+      cursor: default;
+    }
+    * {
+      transition: opacity 0.5s ease-out;
+    }
+  }
+
+  #transcript {
+    // collapsed by default
+    display: none;
+
+    li.current {
+      font-weight: bold;
+    }
+  }
+
+  .card {
+    background-color: $cool-grey-70;
+    border-radius: 4px;
+    color: $white;
+    transition: .5s;
+  }
+
+  .card:hover {
+    background-color: $cool-grey-80;
+    color: $cool-grey-10;
+    transition: .5s;
+  }
+
+  .navigation{
+    background-color: $pale-tulip;
+  }
+
+  .walkthrough {
+    background-color: $cool-grey-50;
+    background: linear-gradient(to right, $cool-grey-30 50%, $cool-grey-70 51%);
+
+    .thing-space {
+      background-color: $cool-grey-30;
+    }
+
+    .screen-space {
+      background-color: $cool-grey-70;
+    }
+
+    .thing-space, .screen-space {
+      text-align: center;
+      margin: auto;
+
+      img {
+        width: auto;
+      }
+    }
+
+    .flow-space {
+      background-color: $white;
+      text-align: center;
+      margin: auto;
+      position: relative;
+    }
+  }
+
+  .walkthrough-controls {
+    padding-top: 10px;
+
+    .padded-caption {
+      padding: 0 16px 16px 16px;
+    }
+
+    a {
+      color: $white;
+      svg *.arrow {
+        fill: $white;
+      }
+    }
+
+    a:hover {
+      color: $cool-grey-10;
+      svg *.arrow {
+        fill: $cool-grey-10;
+      }
+    }
+
+    svg {
+      padding: 2px 4px 0 4px;
+    }
+  }
+
+  .container.extra-bottom {
+    padding-bottom: 120px;
+  }
+
+  .project-nav {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    a {
+      color: $white;
+    }
+    a:hover {
+      color: $cool-grey-10;
+    }
+  }
+}
+
+@media only screen {
+  .connecting-things #content {
+
+    .title {
+      padding-top: 40px;
+    }
+
+    .walkthrough {
+      height: 240px;
+    	.container {
+    		.col-4 {
+          width: 33%;
+        }
+      }
+      .thing-space img {
+        max-height: 176px;
+        max-width: 100%;
+      }
+      .screen-space img {
+        max-width: 100%;
+      }
+      .flow-space {
+        height: 240px;
+      }
+    }
+    .walkthrough-controls {
+      .col-2 {
+        width: 25%;
+
+        #prev-button p {
+          visibility: hidden;
+        }
+
+        #next-button p {
+          visibility: hidden;
+        }
+      }
+
+      .col-8 {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (min-device-width: 768px) {
+  .connecting-things #content {
+
+    .title {
+      padding-top: 80px;
+    }
+
+    .walkthrough {
+      height: 600px;
+
+      .thing-space {
+        img {
+          max-height: 566px;
+          width: auto;
+        }
+      }
+
+      .flow-space {
+        height: 600px;
+      }
+
+      .screen-space img {
+        width: auto;
+      }
+    }
+    .walkthrough-controls {
+      .col-2 #prev-button p {
+        visibility: visible;
+      }
+
+      .col-2 #next-button p {
+        visibility: visible;
+      }
+    }
+  }
+}

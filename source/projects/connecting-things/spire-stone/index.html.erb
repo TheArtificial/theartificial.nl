@@ -1,0 +1,84 @@
+---
+layout: projects/connecting-things/_thing_layout
+title: Spire Stone
+preview: thing/off.png
+date: 2018-03-15
+published: false
+---
+<p>
+Spire Stone is a wearable tracker that monitors a user’s breathing patterns in order to help reduce stress. It detects moments of calm, tension, focus, and activity. The stone vibrates when it senses an abnormality in a user's breathing patterns, which might be brought on by stress or tension. Shaped like a grey pebble, it is made of foam and has a metallic clip. It is designed to be clipped on to a waistband of pants or skirts, or to a bra - anyplace where it can be in contact with the user's skin. The stone connects via Bluetooth to the Spire app, which collects and displays the user’s health data. The stone is sold with a charging pad and a USB cable.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The connection process is </span>easy
+</h2>
+<p>
+There are no buttons on the stone, and hence, when charged, it is always broadcasting to connect. The user needs to create, or log in an account on the Spire app to begin the connection process. The app asks the user if they have a Spire stone, and once confirmed, starts searching for it. The app asks the user to select their Spire stone from a list of Spire sones they have found in close proximity. Once the user selects, the stone vibrates to indicate the app is requesting to pair. The app asks the user to confirm that the right stone vibrated, and then pairs with the Spire Stone. That’s it the user can already observe their breathing movements on the app.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The security is </span>okay
+</h2>
+<p>
+Pairing the device is verified because the user identifies their stone once it vibrates. The vibration confirms that the app did not detect another Spire Stone nearby.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The resilience is </span>well thought
+</h2>
+<p>
+The stone connects to the app via Bluetooth, as long as the stone and the device is within 9 meters of range. The device needs an internet connection for the app to be connected the account. The stone itself stores up to 6 hours of the user's most recent data, which it uploads to the device when it is connected and in range. Notifications on the stone and the app only work when they are in range. The stone also works with the app installed on a tablet supporting Bluetooth 4.0.
+</p>
+
+<script>
+var flowSteps = [
+  {
+    caption: "Thing broadcasts Bluetooth - Thing broadcasts Bluetooth - User launches App",
+    thingImg: "thing/charging.gif",
+    networkAnimations: ["actors/noWifi.json", "Thing_broadcasts.json"],
+    screenImg: "screens/01_login.png"
+  },
+  {
+    caption: "Thing broadcasts Bluetooth - Thing broadcasts Bluetooth - User chooses log in method in App",
+    networkAnimations: ["actors/noWifi.json", "stills/Thing_broadcasts.json"],
+    screenImg: "screens/02_quicklogin.png"
+  },
+  {
+    caption: "Thing broadcasts Bluetooth - App logs in to account on Cloud - User enters account credentials in App",
+    networkAnimations: ["actors/noWifi.json", "stills/Thing_broadcasts.json", "AppCloud.json"],
+    screenImg: "screens/03_login.png"
+  },
+  {
+    caption: "Thing broadcasts Bluetooth - App is logged in to account on Cloud - User enables push notifications in App",
+    networkAnimations: ["actors/noWifi.json", "stills/Thing_broadcasts.json", "stills/AppCloud.json"],
+    screenImg: "screens/04_notifications.png"
+  },
+  {
+    caption: "Thing broadcasts Bluetooth - OS listens for Bluetooth - App suggests user to pair Thing",
+    networkAnimations: ["actors/noWifi.json", "OS_listens.json", "stills/AppCloud.json"],
+    screenImg: "screens/05_home-pair.png"
+  },
+  {
+    caption: "Thing broadcasts Bluetooth - Thing and OS are pairing with Bluetooth - User selects Thing in App",
+    networkAnimations: ["actors/noWifi.json", "ThingOS_pair.json", "stills/AppCloud.json" ],
+    screenImg: "screens/06_search.gif"
+  },
+  {
+    caption: "Thing broadcasts Bluetooth - Thing and OS pair with Bluetooth -  User confirms Thing vibrated",
+    thingImg: "thing/pair.gif",
+    networkAnimations: ["actors/noWifi.json", "ThingOS_verified.json", "stills/AppCloud.json"],
+    screenImg: "screens/08_pair.png"
+  },
+  {
+    caption: "Thing broadcasts Bluetooth - Thing and App connect - User navigates back to home",
+    thingImg: "thing/charging.gif",
+    networkAnimations: ["actors/noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "ThingApp_unverified.json" ],
+    screenImg: "screens/09_connected.png"
+  },
+  {
+    caption: "Thing broadcasts Bluetooth - Thing and App are connected - App shows user's breath visualization",
+networkAnimations: ["actors/noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_unverified.json"],
+    screenImg: "screens/10_home-connected.png"
+  }
+]
+</script>

@@ -14,7 +14,7 @@ module Cards
       path = resource.path
       path_split = path.split('/',2)
       type = path_split.first
-
+      type = 'thing' if type == 'connecting-things'
       type = 'cocktail' if type == 'cocktails'
       type = 'person' if type == 'people'
     end

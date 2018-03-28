@@ -1,0 +1,40 @@
+---
+noindex: true
+---
+<div class="bleed cool-grey-70">
+
+  <div id="intro" class="flex container">
+    <div class="col-8 left-2 right-2">
+      <div class="padded">
+        <h1 class="title">Connecting Things</h1>
+        <p>To design magical connection experiences that seem smooth and effortless to users, it's imperative that designers understand not only the best practices in design, but also in technology.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container extra-bottom packery">
+  <%
+    # we know this is "connecting-things" but let's be formal
+    project_folder = current_page.metadata[:project]
+    # get all the nested index.html
+    thing_folders = sitemap.resources.select{ |r| r.path[/#{project_folder}\/([^\/]*)\/index.html/] }
+    thing_folders.sort_by!{ |r| [r.data.date, r.data.title] }.reverse!
+
+    thing_folders.reject{|thing| thing.data.published == false}.each_with_index do |thing, i|
+      title = thing.data.title
+      preview = "#{thing.url}#{thing.data.preview}"
+  %>
+    <div class="col-3 packed">
+      <% link_to thing do %>
+        <div class="card">
+          <div class="padded">
+            <img src="<%= preview %>">
+            <h3 class="preview-link"><%= title %></h3>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+  </div>
+
+</div>

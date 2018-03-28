@@ -1,0 +1,94 @@
+---
+layout: projects/connecting-things/_thing_layout
+title: Pokémon Go Plus
+preview: thing/off.png
+date: 2018-03-15
+published: false
+---
+
+<p>
+Pokémon GO Plus is an optional peripheral for the famous augmented reality game Pokémon GO. The accessory looks like a map pin in the shape of a Pokéball. Thanks to a button and light feedback, the object allows the user to catch Pokémon's, check in at Pokéstop's, and gain steps to hatch eggs - all of these without having to use the phone's screen.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The connection process is </span>easy
+</h2>
+<p>
+To connect the Pokémon GO Plus to the Pokémon GO app, the user needs to log in the app. Then, the users have to navigate over to the Pokémon GO Plus section in app settings. The user has to press the button on the Pokémon GO Plus to make it visible in the app. The light on the Pokémon GO Plus pulses white to indicate that the object is broadcasting Bluetooth. The user taps on the new accessory that appears in the list of available devices in the app. On a successful pairing, the Pokémon GO Plus vibrates and an eject icon appears in the app. On the home screen of the app, a new icon appears, indicating the status of the Pokémon GO Plus.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The security is </span>more than enough
+</h2>
+<p>
+Pokémon GO Plus uses a relatively secured connection for a game. It feels reassuring for a gameplay based on the user's location. As we can see in the topology, Bluetooth allows verified connections both at the protocol layer and at the software layer. For the Thing to connect with the App, we suspect that the cloud sends tokens to enable the connection from a single user account. If Pokémon GO Plus is associated with another user account, the object has to be reset before connecting to a new one. The fact that Pokémon GO Plus pairs with a single smartphone at a time also makes it more secured.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The resilience is </span>terrible
+</h2>
+<p>
+How frustrating would it be for a user to take a long walk expecting to fill their Pokédex with many new species of Pokémon and to hatch a cool egg, only to realize at the end of the walk that their Pokémon GO Plus was disconnected from their smartphone? The user just missed the haptic and light warning on the Pokémon Go Plus. Unfortunately, Pokémon GO Plus connection is not very robust and there are a few reasons that can cause its disconnection. First, if Pokémon GO and the connected mobile are too far away, the Bluetooth connection can be interrupted. Second, if the GPS loses track of where the user is, the Pokémon GO Plus will disconnect and not automatically reconnect when the signal is back.
+</p>
+
+<script>
+var flowSteps = [
+  {
+    caption: "Thing is off - No connection is established - User chooses log in method in App",
+    thingImg: "thing/off.png",
+    networkAnimations: ["actors/noWifi.json"],
+    screenImg: "screens/00_login.png"
+  },
+  {
+    caption: "Thing is off - App logs in to account on Cloud - User enters account credentials",
+    networkAnimations: ["actors/noWifi.json", "AppCloud.json"],
+    screenImg: "screens/01_login.png"
+  },
+  {
+    caption: "Thing is off - App is logged in to account on Cloud - User opens main menu in app",
+    networkAnimations: ["actors/noWifi.json", "stills/AppCloud.json"],
+    screenImg: "screens/02_home.png"
+  },
+  {
+    caption: "Thing is off - App is logged in to account on Cloud - User navigates to Settings",
+    screenImg: "screens/03_menu.png"
+  },
+  {
+    caption: "Thing is off - App is logged in to account on Cloud - User navigates to Thing Settings",
+    screenImg: "screens/04_settings.png"
+  },
+  {
+    caption: "User presses button on Thing - Thing broadcasts Bluetooth - App shows Thing Settings",
+    thingImg:  "thing/white.gif",
+    networkAnimations: ["actors/noWifi.json", "Thing_broadcasts.json", "stills/AppCloud.json",],
+    screenImg: "screens/05_goplus.png"
+  },
+  {
+    caption: "Thing light blinks white - OS listens for Bluetooth - User taps on Thing in App",
+    networkAnimations: ["actors/noWifi.json", "OS_listens.json", "stills/AppCloud.json"],
+    screenImg: "screens/06_goplus-find.png"
+  },
+  {
+    caption: "Thing light blinks white - Thing and OS are in discovery mode - User grants permission for pairing in App",
+    networkAnimations: ["actors/noWifi.json", "stills/ThingOS_discovery.json", "stills/AppCloud.json",],
+    screenImg: "screens/07_goplus-permission.png"
+  },
+  {
+    caption: "Thing vibrates and light is off - Thing and OS pair - App shows Thing and OS pair",
+    thingImg: "thing/buzz.gif",
+    networkAnimations: ["actors/noWifi.json", "ThingOS_pair.json", "stills/AppCloud.json"],
+    screenImg: "screens/08_goplus-pair.gif"
+  },
+  {
+    caption: "Thing light is off - Thing and App connect - App show Thing and OS connect",
+    thingImg: "thing/off.png",
+    networkAnimations: ["actors/noWifi.json", "ThingOS_verified.json", "stills/AppCloud.json"],
+    screenImg: "screens/09_goplus-connect.png"
+  },
+  {
+    caption: "Thing light is off - App and Thing are connected - App show Thing and OS are connected",
+    networkAnimations: ["actors/noWifi.json","stills/ThingOS_verified.json", "ThingApp_unverified.json", "stills/AppCloud.json"],
+    screenImg: "screens/10_home.png"
+  }
+]
+</script>

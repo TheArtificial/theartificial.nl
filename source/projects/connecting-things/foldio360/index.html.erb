@@ -1,0 +1,91 @@
+---
+layout: projects/connecting-things/_thing_layout
+title: Foldio 360
+preview: thing/off.png
+date: 2018-02-27
+published: false
+---
+<p>
+Foldio360 is a Bluetooth connected turntable to create 360 images of small objects in a simple way from a smartphone or a camera. It was created by OrangeMonkie and launched in 2016. The rotating platform connects with Bluetooth and IR sensors.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The connection process is </span>quick and easy
+</h2>
+<p>
+To connect the turntable, the user must plug the platform into a power source, download Foldio360 app and log in. The app shows the camera view of the user’s phone and a banner indicating the status of the turntable. On the first launch, the banner shows that Foldio360 is not connected. If the user taps on the button ‘select device’, an overlay card shows up in the app and displays the available turntable. The user taps on the turntable in the list and after a few seconds, the pop up overlay disappears to reveal the same screen as before but without the banner. The user can now control the turntable from the app. Easy!
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The security is </span>low
+</h2>
+<p>
+The connections at the OS and at the software are not verified. The connection process is very easy and quick, but if a user would have two turntables, it would be easy to connect one instead of the other by mistake.
+</p>
+
+<h2 class="subtitle">
+  <span class="sentence">The resilience is </span>okay
+</h2>
+<p>
+The connection between the app and the turntable is stable if the user’s phone is connected to the internet and if the user stays within the Bluetooth range.
+</p>
+
+<script>
+var flowSteps = [
+  {
+    caption: "Thing is off - no connection is established - User launches app",
+    thingImg: "thing/off.png",
+    networkAnimations: ["actors/noWifi.json"],
+    screenImg: "screens/01_signin.png"
+  },
+  {
+    caption: "Thing is off - App logs in to account on Cloud - User enters account credentials in App",
+    thingImg: "thing/off.png",
+    networkAnimations: ["actors/noWifi.json","AppCloud.json"],
+    screenImg: "screens/02_login.png"
+  },
+  {
+    caption: "Thing is off - App is logged in to account on Cloud - User is logged in",
+    thingImg: "thing/off.png",
+    networkAnimations: ["actors/noWifi.json","stills/AppCloud.json"],
+    screenImg: "screens/03_loggedin.png"
+  },
+  {
+    caption: "User plugs in Foldio Turntable to power - Thing is broadcasting - App informs user to connect with Foldio360",
+    thingImg: "thing/blue_short.gif",
+    networkAnimations: ["actors/noWifi.json","Thing_broadcasts.json","stills/AppCloud.json"],
+    screenImg: "screens/04_home.png"
+  },
+  {
+    caption: "Thing is On - Thing is broadcasting - User taps on 'Select Device'",
+    thingImg: "thing/blue_short.gif",
+    networkAnimations: ["actors/noWifi.json","stills/Thing_broadcasts.json","stills/AppCloud.json"],
+    screenImg: "screens/04_home.png"
+  },
+  {
+    caption: "Thing is On - App is searching - App shows things list",
+    thingImg: "thing/blue_short.gif",
+    networkAnimations: ["actors/noWifi.json","OS_listens.json","stills/AppCloud.json"],
+    screenImg: "screens/05_select_device.png"
+  },
+  {
+    caption: "Thing is blinking blue lights - Thing and OS pair - User selects thing",
+    thingImg: "thing/blue_short.gif",
+    networkAnimations: ["actors/noWifi.json","ThingOS_pair.json","stills/AppCloud.json"],
+    screenImg: "screens/05_select_device.png"
+  },
+  {
+    caption: "Thing is blinking blue lights - Thing and OS connect - App shows indeterminate progress indicator",
+    thingImg: "thing/blue_short.gif",
+    networkAnimations: ["actors/noWifi.json","ThingOS_unverified.json","stills/AppCloud.json"],
+    screenImg: "screens/05_select_device.png"
+  },
+  {
+    caption: "TThing is blinking blue lights - Thing and App connect - App shows it is connected",
+    thingImg: "thing/blue_long.gif",
+    networkAnimations: ["actors/noWifi.json","stills/ThingOS_unverified.json","stills/AppCloud.json", "ThingApp_unverified.json"],
+    screenImg: "screens/06_connected.png"
+  },
+
+]
+</script>
