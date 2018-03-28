@@ -39,9 +39,9 @@ module PeopleHelpers
     end
   end
 
-  def get_logo_svg(name)
+  def get_logo_svg(name, with_sitemap = sitemap)
     path = "images/logo-#{name}.svg"
-    if resource = sitemap.find_resource_by_path(path)
+    if resource = with_sitemap.find_resource_by_path(path)
       file = File.open(resource.source_file, 'r')
       return file.read
     else

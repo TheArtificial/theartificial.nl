@@ -25,8 +25,11 @@ function renderCard(doc) {
   } else if (type == 'thing') {
     view = doc
     template = "<%=escape_javascript(Cards.template_for_type('thing')) %>";
+  } else if (type == 'basic') {
+    view = doc
+    template = "<%=escape_javascript(Cards.template_for_type('basic')) %>";
   } else {
-    template = "<%#=escape_javascript( mustache_template('templates/_unknown_card.mustache') ) %>";
+    template = "<%#=escape_javascript(Cards.template_for_type('unknown')) %>";
   }
   return $(Mustache.render(template, view));
 }

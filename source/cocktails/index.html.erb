@@ -2,42 +2,60 @@
 title: Friday Cocktails
 noindex: true
 ---
-  <% content_for :stylesheet_tags do %>
-    <%= stylesheet_link_tag "cocktails.css" %>
-  <% end %>
   <section id="content">
 
     <div class="flex container">
-      <div class="col-8 right-2 left-2 introduction center">
-        <div class="padded">
-            <h1 class="fridaycocktails">Friday Cocktails</h1>
-            <p>On Fridays, we welcome any excuse to practice our mixology
-            skills. Here's a collection of our successes, trials, and
-            errors.</p>
+      <div class="col-8 right-2 left-2 section-title">
+        <div class="padded center">
+            <h1 class="title">Friday Cocktails</h1>
+            <p>On Fridays, we welcome any excuse to practice our mixology skills. Here's a collection of our successes, trials, and errors.</p>
             <p>Cheers, proost, and enjoy!</p>
           </div>
       </div>
     </div>
 
     <div class="container packery">
-      <% data.cocktails.sort_by{|c| c.date}.reverse.each_with_index do |c, i| %>
       <div class="col-4 packed">
-        <% link_to "#{c.slug}.html" do %>
-          <div class="cocktail-preview">
-            <div class="anchor">
-              <div class="preview">
-                <img class="static" alt="<%= c.name %>" src="<%= "images/glass/#{c.glass}.png" %>">
-                <img class="animated" src="<%= "images/contents/#{c.contents}.gif" %>">
-              </div>
-
-              <div class="details padded center">
-                <h3><%= c.date.strftime('%B %e, %Y') %></h3>
-                <h2 class="drinkname"><%= c.name %></h2>
-              </div>
-            </div>
-          </div>
-        <% end %>
+        <div class="card legend">
+            <table>
+              <tr>
+                <td class="clip"><img src="images/legend/gin.gif"></td>
+                <td>Gin</td>
+              </tr>
+              <tr>
+                <td class="clip"><img src="images/legend/rum.gif"></td>
+                <td>Rum</td>
+              </tr>
+              <tr>
+                <td class="clip"><img src="images/legend/whiskey.gif"></td>
+                <td>Whiskey</td>
+              </tr>
+              <tr>
+                <td class="clip"><img src="images/legend/mezcal.gif"></td>
+                <td>Mezcal</td>
+              </tr>
+              <tr>
+                <td class="clip"><img src="images/legend/vodka.gif"></td>
+                <td>Vodka</td>
+              </tr>
+              <tr>
+                <td class="clip"><img src="images/legend/tequila.gif"></td>
+                <td>Tequila</td>
+              </tr>
+              <tr>
+                <td class="clip"><img src="images/legend/bubbles.gif"></td>
+                <td>Bubbles</td>
+              </tr>
+              <tr>
+                <td class="clip"><img src="images/legend/misc.gif"></td>
+                <td>Everything else</td>
+              </tr>
+            </table>
+        </div>
       </div>
+
+      <% current_resource.children.sort_by{|c| c.data.cocktail.date}.reverse.each do |cocktail| %>
+        <%= render_card(cocktail) %>
       <% end %>
     </div>
 

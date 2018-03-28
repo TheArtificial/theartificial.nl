@@ -1,16 +1,13 @@
 <div class="col-4 packed">
   <a href="{{url}}">
-    <div class="card cocktail">
-      <div class="anchor">
-        <div class="preview">
-          <img class="static" src="{{glass_url}}">
-          <img class="animated" src="{{contents_url}}">
-        </div>
+    <div class="card cocktail-preview">
+      <div class="glass" style="background-image: url({{glass_url}});">
+        <img class="contents" src="{{contents_url}}">
       </div>
-      <div class="meta center">
-        <div class="label">cocktails</div>
-        <div class="small-title">{{{title}}}</div>
-        <div class="small-body date">{{human_date}}</div>
+
+      <div class="details center">
+        <h2 class="drinkname">{{{title}}}</h2>
+        <p class="date">{{human_date}}</p>
       </div>
     </div>
   </a>
