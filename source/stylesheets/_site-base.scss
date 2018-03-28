@@ -225,11 +225,24 @@ svg *.content{ fill: $cool-grey-40; }
 		margin: auto;
 		background-position: top center;
 	}
+	.bleed.service-bg {
+		background-image: url(/services/images/studio.jpg);
+		min-height: 160px;
+		margin: auto;
+		background-position: bottom center;
+		color: $white;
+	}
 }
 
 @media only screen and (min-device-width: 768px) {
 	.bleed.about-us {
 		min-height: 360px;
+	}
+	.bleed.service-bg {
+		background-image: url(/services/images/studio.jpg);
+		min-height: 360px;
+		margin: auto;
+		background-position: bottom center;
 	}
 }
 
