@@ -64,13 +64,13 @@
         $('#artificial').artificialLogo();
 
 				// apply packery
-				var $packeryContainer = $('.packery');
-				$packeryContainer.packery({
+				var $packeryContainer = $('.packery').packery({
 				  itemSelector: '.packed'
 				});
 				// and re-flow when images within are loaded
 				$packeryContainer.imagesLoaded(function(){
 					$packeryContainer.packery();
+
 				});
 
   			$(".square").imgLiquid({
