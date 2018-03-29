@@ -28,8 +28,6 @@ class Blog < Mustache
       context[:has_image?] = false
     end
 
-    @unpublished = resource.data.published ? false : true
-
     context[:url] = @article.url
     context[:category] = @article.data.category
     context[:title] = @article.title
@@ -58,7 +56,7 @@ class Blog < Mustache
   end
 
   def unpublished?
-    @unpublished
+    !@article.published?
   end
 
 private
