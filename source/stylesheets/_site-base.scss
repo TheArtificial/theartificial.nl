@@ -500,7 +500,7 @@ svg *.content{ fill: $cool-grey-40; }
 .sapphire-palegrape {
 	background-color: $sapphire;
 	background: linear-gradient(to bottom, $pale-grape, $sapphire);
-	.statement, .statement:hover, .label, .description { color: $white; }
+	.subtitle, .statement, .statement:hover, .label, .description, .large-body { color: $white; }
 }
 
 .sapphire-paleturquoise {

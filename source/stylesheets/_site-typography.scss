@@ -4,10 +4,10 @@
 
 p, ul, li, h1, h2, h3, h4, h5 { margin: 0; }
 
-#logo, .title, .small-title, .subtitle, .letters { font-family: "Noto Serif", Georgia, Times, serif; }
+#logo, .title, .small-title, .letters { font-family: "Noto Serif", Georgia, Times, serif; }
 #logo, .title, .small-title, .subtitle, .small-subtitle, .letters, .label, .metadata { font-weight: 700; }
 .description, .statement, .small-statement { font-weight: 300; }
-#logo, .title, .subtitle, .small-title { font-style: italic; }
+#logo, .title, .small-title { font-style: italic; }
 
 .small-statement p { padding-bottom: 24px; }
 .small-body { font-weight: 500; }

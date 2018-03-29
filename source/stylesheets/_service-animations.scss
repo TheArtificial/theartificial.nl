@@ -23,7 +23,6 @@
 		animation-iteration-count: infinite;
 		transform-origin: 50% 50%;
 		animation-timing-function: linear;
-
 			g * {
 				animation-name: holistic;
 				animation-duration: 12s;
@@ -115,64 +114,89 @@
 		.int-01 { animation-name: int-01; }
 		.int-02 { animation-name: int-02; }
 		.int-03 {animation-name: int-03; }
-		.int04 {animation-name: int-04; }
+		.int-04 {animation-name: int-04; }
 		.int-05 {animation-name: int-05; }
 		.int-06 {animation-name: int-06; }
+		.int-07 { animation-name: int-07; }
+		.int-08 { animation-name: int-08; }
+		.int-09 {animation-name: int-09; }
+		.int-10 {animation-name: int-10; }
+		.int-11 {animation-name: int-11; }
+		.int-12 {animation-name: int-12; }
 	}
 }
 
 @keyframes int-01 {
 	0% { opacity: 0.0; }
-	16% { opacity: 0.0; }
-  24% { opacity: 1.0; }
-	88% { opacity: 1.0; }
-	96% { opacity: 0.0 }
-	100% { opacity: 0.0; }
-}
-
-@keyframes int-02 {
-	0% { opacity: 1.0; }
 	8% { opacity: 1.0; }
-	16% { opacity: 0.0 }
-	32% { opacity: 0.0; }
-  40% { opacity: 1.0; }
-	100% { opacity: 1.0; }
+	92% { opacity: 1.0; }
+	100% { opacity: 0.0; }
 }
 
 @keyframes int-03 {
 	0% { opacity: 1.0; }
-	24% { opacity: 1.0; }
-	32% { opacity: 0.0 }
-	48% { opacity: 0.0; }
-	56% { opacity: 1.0; }
-	100% {opacity: 1.0; }
-}
-
-@keyframes int-04 {
-	0% { opacity: 1.0; }
-	40% { opacity: 1.0; }
-	48% { opacity: 0.0 }
-	64% { opacity: 0.0; }
-	72% { opacity: 1.0; }
-	100% {opacity: 1.0; }
+	8% { opacity: 0.0; }
+	16% { opacity: 1.0; }
 }
 
 @keyframes int-05 {
-	0% { opacity: 1.0; }
-	56% { opacity: 1.0; }
-	64% { opacity: 0.0 }
-	80% { opacity: 0.0; }
-	88% { opacity: 1.0; }
-	100% {opacity: 1.0; }
+	8% { opacity: 1.0; }
+	16% { opacity: 0.0; }
+	25% { opacity: 1.0; }
+}
+
+@keyframes int-07 {
+	16% { opacity: 1.0; }
+	25% { opacity: 0.0; }
+	33% { opacity: 1.0; }
+}
+
+@keyframes int-09 {
+	25% { opacity: 1.0; }
+	33% { opacity: 0.0; }
+	41% { opacity: 1.0; }
+}
+
+@keyframes int-11 {
+	33% { opacity: 1.0; }
+	41% { opacity: 0.0; }
+	50% { opacity: 1.0; }
+}
+
+@keyframes int-02 {
+	41% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	58% { opacity: 1.0; }
+}
+
+@keyframes int-04 {
+	50% { opacity: 1.0; }
+	58% { opacity: 0.0; }
+	66% { opacity: 1.0; }
 }
 
 @keyframes int-06 {
-	0% { opacity: 1.0; }
-	8% { opacity: 1.0; }
-	72% { opacity: 1.0; }
-	80% { opacity: 0.0 }
-	96% { opacity: 0.0; }
-	100% {opacity: 1.0; }
+	58% { opacity: 1.0; }
+	66% { opacity: 0.0; }
+	75% { opacity: 1.0; }
+}
+
+@keyframes int-08 {
+	66% { opacity: 1.0; }
+	75% { opacity: 0.0; }
+	83% { opacity: 1.0; }
+}
+
+@keyframes int-10 {
+	75% { opacity: 1.0; }
+	83% { opacity: 0.0; }
+	91% { opacity: 1.0; }
+}
+
+@keyframes int-12 {
+	83% { opacity: 1.0; }
+	91% { opacity: 0.0; }
+	100% { opacity: 1.0; }
 }
 
 #svg-focused {
