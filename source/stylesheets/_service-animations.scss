@@ -1,23 +1,19 @@
 
 @import "_artificial-colors.scss";
 
-#svg-holistic, #svg-integrated, #svg-focused, #svg-generative {
-	.st0 {
-		fill:none;stroke: $cool-grey-50;
-		stroke-miterlimit:10;
-	}
-	.st1 {
-		fill:none;stroke: $white;
-		stroke-miterlimit:10;
-	}
+.svg-transparent {
+	fill:none;stroke: $white;
+	opacity: 0.25;
+	stroke-miterlimit:10;
+}
+
+.svg-opaque {
+	fill:none;stroke: $white;
+	stroke-miterlimit:10;
 }
 
 #svg-holistic {
-	margin: 0 auto;
-	position: relative;
-
 	svg {
-
 		animation-name: holistic;
 	  animation-duration: 12s;
 		animation-iteration-count: infinite;
@@ -37,7 +33,6 @@
 	.hol-04 { animation-name: hol-04; }
 	.hol-05 { animation-name: hol-05; }
 	.hol-06 { animation-name: hol-06; }
-	.hol-07 { animation-name: hol-07; }
 }
 
 @keyframes holistic {
@@ -47,66 +42,61 @@
 
 @keyframes hol-01 {
 	0% { opacity: 0.0; }
-	10% { opacity: 1.0; }
-	90% { opacity: 1.0; }
+	4% { opacity: 0.3; }
+	58% { opacity: 1.0; }
+	72% {opacity: 0.0; }
 	100% {opacity: 0.0; }
 }
 
 @keyframes hol-02 {
 	0% { opacity: 0.0; }
-	10% { opacity: 0.0; }
-	20% { opacity: 1.0; }
-	90% { opacity: 1.0; }
+	2% { opacity: 0.0; }
+	8% { opacity: 0.3; }
+	66% { opacity: 1.0; }
+	78% {opacity: 0.0; }
 	100% {opacity: 0.0; }
 }
 
 @keyframes hol-03 {
 	0% { opacity: 0.0; }
-	20% { opacity: 0.0; }
-	30% { opacity: 1.0; }
-	90% { opacity: 1.0; }
+	5% { opacity: 0.0; }
+	13% { opacity: 0.3; }
+	73% { opacity: 1.0; }
+	83% {opacity: 0.0; }
 	100% {opacity: 0.0; }
 }
 
 @keyframes hol-04 {
 	0% { opacity: 0.0; }
-	30% { opacity: 0.0; }
-	40% { opacity: 1.0; }
-	90% { opacity: 1.0; }
+	9% { opacity: 0.0; }
+	19% { opacity: 0.3; }
+	79% { opacity: 1.0; }
+	87% {opacity: 0.0; }
 	100% {opacity: 0.0; }
 }
 
 @keyframes hol-05 {
 	0% { opacity: 0.0; }
-	40% { opacity: 0.0; }
-	50% { opacity: 1.0; }
-	90% { opacity: 1.0; }
+	14% { opacity: 0.0; }
+	26% { opacity: 0.3; }
+	84% { opacity: 1.0; }
+	90% { opacity: 0.0; }
 	100% {opacity: 0.0; }
 }
 
 @keyframes hol-06 {
 	0% { opacity: 0.0; }
-	50% { opacity: 0.0; }
-	60% { opacity: 1.0; }
-	90% { opacity: 1.0; }
-	100% {opacity: 0.0; }
-}
-
-@keyframes hol-07 {
-	0% { opacity: 0.0; }
-	60% { opacity: 0.0; }
-	70% { opacity: 1.0; }
-	90% { opacity: 1.0; }
+	20% { opacity: 0.0; }
+	34% { opacity: 0.3; }
+	88% { opacity: 1.0; }
+	92% { opacity: 0.0; }
 	100% {opacity: 0.0; }
 }
 
 #svg-integrated {
-	margin: 0 auto;
-	position: relative;
-
 	svg {
 		g * {
-			animation-duration: 12s;
+			animation-duration: 6s;
 			animation-iteration-count: infinite;
 			transform-origin: 50% 50%;
 			animation-timing-function: linear;
@@ -127,82 +117,99 @@
 }
 
 @keyframes int-01 {
-	0% { opacity: 0.0; }
+	0% { opacity: 0.3; }
 	8% { opacity: 1.0; }
 	92% { opacity: 1.0; }
-	100% { opacity: 0.0; }
+	100% { opacity: 0.3; }
 }
 
 @keyframes int-03 {
 	0% { opacity: 1.0; }
-	8% { opacity: 0.0; }
+	8% { opacity: 0.3; }
 	16% { opacity: 1.0; }
+	100% { opacity: 1.0; }
 }
 
 @keyframes int-05 {
+	0% { opacity: 1.0; }
 	8% { opacity: 1.0; }
-	16% { opacity: 0.0; }
+	16% { opacity: 0.3; }
 	25% { opacity: 1.0; }
+	100% { opacity: 1.0; }
 }
 
 @keyframes int-07 {
+	0% { opacity: 1.0; }
 	16% { opacity: 1.0; }
-	25% { opacity: 0.0; }
+	25% { opacity: 0.3; }
 	33% { opacity: 1.0; }
+	100% { opacity: 1.0; }
 }
 
 @keyframes int-09 {
+	0% { opacity: 1.0; }
 	25% { opacity: 1.0; }
-	33% { opacity: 0.0; }
+	33% { opacity: 0.3; }
 	41% { opacity: 1.0; }
+	100% { opacity: 1.0; }
 }
 
 @keyframes int-11 {
+	0% { opacity: 1.0; }
 	33% { opacity: 1.0; }
-	41% { opacity: 0.0; }
+	41% { opacity: 0.3; }
 	50% { opacity: 1.0; }
+	100% { opacity: 1.0; }
 }
 
 @keyframes int-02 {
+	0% { opacity: 1.0; }
 	41% { opacity: 1.0; }
-	50% { opacity: 0.0; }
+	50% { opacity: 0.3; }
 	58% { opacity: 1.0; }
+	100% { opacity: 1.0; }
 }
 
 @keyframes int-04 {
+	0% { opacity: 1.0; }
 	50% { opacity: 1.0; }
-	58% { opacity: 0.0; }
+	58% { opacity: 0.3; }
 	66% { opacity: 1.0; }
+	100% { opacity: 1.0; }
 }
 
 @keyframes int-06 {
+	0% { opacity: 1.0; }
 	58% { opacity: 1.0; }
-	66% { opacity: 0.0; }
+	66% { opacity: 0.3; }
 	75% { opacity: 1.0; }
+	100% { opacity: 1.0; }
 }
 
 @keyframes int-08 {
+	0% { opacity: 1.0; }
 	66% { opacity: 1.0; }
-	75% { opacity: 0.0; }
+	75% { opacity: 0.3; }
 	83% { opacity: 1.0; }
+	100% { opacity: 1.0; }
 }
 
 @keyframes int-10 {
+	0% { opacity: 1.0; }
 	75% { opacity: 1.0; }
-	83% { opacity: 0.0; }
+	83% { opacity: 0.3; }
 	91% { opacity: 1.0; }
+	100% { opacity: 1.0; }
 }
 
 @keyframes int-12 {
+	0% { opacity: 1.0; }
 	83% { opacity: 1.0; }
-	91% { opacity: 0.0; }
+	91% { opacity: 0.3; }
 	100% { opacity: 1.0; }
 }
 
 #svg-focused {
-	margin: 0 auto;
-	position: relative;
-
 	svg {
 		g * {
 			animation-duration: 12s;
@@ -258,9 +265,6 @@
 }
 
 #svg-generative {
-	margin: 0 auto;
-	position: relative;
-
 	svg {
 		g * {
 			animation-duration: 12s;
@@ -483,4 +487,202 @@
 	6% { opacity: 0.0; }
 	90% { opacity: 0.0; }
 	100% {opacity: 1.0; }
+}
+
+
+#svg-strategy {
+	svg * {
+	  animation-duration: 3s;
+		animation-iteration-count: infinite;
+		transform-origin: 50% 50%;
+		}
+	.str-01 { animation-name: str-01; }
+	.str-04 { animation-name: str-04; }
+}
+
+@keyframes str-01 {
+	0% { transform: translateX(0px); }
+	25% { transform: translateX(-20px); }
+	50% { transform: translateX(0px); }
+}
+
+@keyframes str-04 {
+	50% { transform: translateX(0px); }
+	75% { transform: translateX(20px); }
+	100% { transform: translateX(0px); }
+}
+
+#svg-brand {
+	svg * {
+	  animation-duration: 6s;
+		animation-iteration-count: infinite;
+		}
+	.bra-01 {
+		transform-origin: 30px 30px;
+		animation-name: bra-01;
+	}
+	.bra-02 {
+		transform-origin: 70px 30px;
+		animation-name: bra-02;
+	}
+	.bra-03 {
+		transform-origin: 50px 50px;
+		animation-name: bra-03;
+	}
+	.bra-04 {
+		transform-origin: 90px 50px;
+		animation-name: bra-04;
+	}
+	.bra-05 {
+		transform-origin: 30px 70px;
+		animation-name: bra-05;
+	}
+	.bra-06 {
+		transform-origin: 70px 70px;
+		animation-name: bra-06;
+	}
+	.bra-07 {
+		transform-origin: 50px 90px;
+		animation-name: bra-07;
+	}
+	.bra-08 {
+		transform-origin: 90px 90px;
+		animation-name: bra-08;
+	}
+	.bra-09 {
+		transform-origin: 50px 30px;
+		animation-name: bra-09;
+	}
+	.bra-10 {
+		transform-origin: 90px 30px;
+		animation-name: bra-10;
+	}
+	.bra-11 {
+		transform-origin: 30px 50px;
+		animation-name: bra-11;
+	}
+	.bra-12 {
+		transform-origin: 70px 50px;
+		animation-name: bra-12;
+	}
+	.bra-13 {
+		transform-origin: 50px 70px;
+		animation-name: bra-13;
+	}
+	.bra-14 {
+		transform-origin: 90px 70px;
+		animation-name: bra-14;
+	}
+	.bra-15 {
+		transform-origin: 30px 90px;
+		animation-name: bra-15;
+	}
+	.bra-16 {
+		transform-origin: 70px 90px;
+		animation-name: bra-16;
+	}
+}
+
+@keyframes bra-01 {
+	0%  { transform: scale(1.0); }
+	25% { transform: scale(1.5); }
+	50% { transform: scale(1.0); }
+}
+
+@keyframes bra-02 {
+	0%  { transform: scale(1.0); }
+	25% { transform: scale(1.5); }
+	50% { transform: scale(1.0); }
+}
+
+@keyframes bra-03 {
+	0%  { transform: scale(1.0); }
+	25% { transform: scale(1.5); }
+	50% { transform: scale(1.0); }
+}
+
+@keyframes bra-04 {
+	0%  { transform: scale(1.0); }
+	25% { transform: scale(1.5); }
+	50% { transform: scale(1.0); }
+}
+
+@keyframes bra-05 {
+	0%  { transform: scale(1.0); }
+	25% { transform: scale(1.5); }
+	50% { transform: scale(1.0); }
+}
+
+@keyframes bra-06 {
+	0%  { transform: scale(1.0); }
+	25% { transform: scale(1.5); }
+	50% { transform: scale(1.0); }
+}
+
+@keyframes bra-07 {
+	0%  { transform: scale(1.0); }
+	25% { transform: scale(1.5); }
+	50% { transform: scale(1.0); }
+}
+
+@keyframes bra-08 {
+	0%  { transform: scale(1.0); }
+	25% { transform: scale(1.5); }
+	50% { transform: scale(1.0); }
+}
+
+@keyframes bra-09 {
+	0%  { transform: scale(1.0); }
+	50% { transform: scale(1.0); }
+	75% { transform: scale(1.5); }
+	100% { transform: scale(1.0); }
+}
+
+@keyframes bra-10 {
+	0%  { transform: scale(1.0); }
+	50% { transform: scale(1.0); }
+	75% { transform: scale(1.5); }
+	100% { transform: scale(1.0); }
+}
+
+@keyframes bra-11 {
+	0%  { transform: scale(1.0); }
+	50% { transform: scale(1.0); }
+	75% { transform: scale(1.5); }
+	100% { transform: scale(1.0); }
+}
+
+@keyframes bra-12 {
+	0%  { transform: scale(1.0); }
+	50% { transform: scale(1.0); }
+	75% { transform: scale(1.5); }
+	100% { transform: scale(1.0); }
+}
+
+@keyframes bra-13 {
+	0%  { transform: scale(1.0); }
+	50% { transform: scale(1.0); }
+	75% { transform: scale(1.5); }
+	100% { transform: scale(1.0); }
+}
+
+@keyframes bra-14 {
+	0%  { transform: scale(1.0); }
+	50% { transform: scale(1.0); }
+	75% { transform: scale(1.5); }
+	100% { transform: scale(1.0); }
+}
+
+@keyframes bra-15 {
+	0%  { transform: scale(1.0); }
+	50% { transform: scale(1.0); }
+	75% { transform: scale(1.5); }
+	100% { transform: scale(1.0); }
+}
+
+@keyframes bra-16 {
+	0%  { transform: scale(1.0); }
+	50% { transform: scale(1.0); }
+	75% { transform: scale(1.5); }
+	100% { transform: scale(1.0); }
 }

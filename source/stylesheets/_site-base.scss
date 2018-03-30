@@ -405,6 +405,17 @@ svg *.content{ fill: $cool-grey-40; }
 	margin-top: 100px;
 }
 
+
+.service-box {
+	border: 1px solid $cool-grey-80;
+	border-radius: 2px
+}
+
+.service-box:hover {
+	border: 1px solid $cool-grey-70;
+
+}
+
 // card gradient colors
 .case-study {
 	color: $white;
