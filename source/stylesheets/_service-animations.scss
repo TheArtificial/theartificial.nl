@@ -928,3 +928,189 @@
 	95% {opacity: 0.0; }
 	100% {opacity: 0.0; }
 }
+
+#svg-system {
+	svg * {
+	  animation-duration: 12s;
+		animation-iteration-count: infinite;
+		transform-origin: 50% 50%;
+		animation-timing-function: linear;
+		}
+	.sys-01 { animation-name: sys-01; }
+	.sys-02 { animation-name: sys-02; }
+	.sys-03 { animation-name: sys-03; }
+	.sys-04 { animation-name: sys-04; }
+	.sys-05 { animation-name: sys-05; }
+	.sys-06 { animation-name: sys-06; }
+	.sys-07 { animation-name: sys-07; }
+	.sys-08 { animation-name: sys-08; }
+	.sys-09 { animation-name: sys-09; }
+	.sys-10 { animation-name: sys-10; }
+	.sys-11 { animation-name: sys-11; }
+	.sys-12 { animation-name: sys-12; }
+	.sys-13 { animation-name: sys-13; }
+	.sys-14 { animation-name: sys-14; }
+	.sys-15 { animation-name: sys-15; }
+}
+
+@keyframes sys-01 {
+	0% { opacity: 0.3; }
+	10% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-02 {
+	0% { opacity: 0.3; }
+	5% { opacity: 0.3; }
+	15% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-03 {
+	0% { opacity: 0.3; }
+	10% { opacity: 0.3; }
+	20% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-04 {
+	0% { opacity: 0.3; }
+	15% { opacity: 0.3; }
+	25% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-05 {
+	0% { opacity: 0.3; }
+	20% { opacity: 0.3; }
+	30% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-06 {
+	0% { opacity: 0.3; }
+	25% { opacity: 0.3; }
+	35% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-07 {
+	0% { opacity: 0.3; }
+	30% { opacity: 0.3; }
+	40% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-08 {
+	0% { opacity: 0.3; }
+	35% { opacity: 0.3; }
+	45% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-09 {
+	0% { opacity: 0.3; }
+	40% { opacity: 0.3; }
+	50% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-10 {
+	0% { opacity: 0.3; }
+	45% { opacity: 0.3; }
+	55% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-11 {
+	0% { opacity: 0.3; }
+	50% { opacity: 0.3; }
+	60% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-12 {
+	0% { opacity: 0.3; }
+	55% { opacity: 0.3; }
+	65% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-13 {
+	0% { opacity: 0.3; }
+	60% { opacity: 0.3; }
+	70% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-14 {
+	0% { opacity: 0.3; }
+	65% { opacity: 0.3; }
+	75% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+@keyframes sys-15 {
+	0% { opacity: 0.3; }
+	70% { opacity: 0.3; }
+	80% { opacity: 1.0; }
+	90% { opacity: 1.0;}
+	100% { opacity: 0.3; }
+}
+
+#svg-launch {
+	svg * {
+	  animation-duration: 6s;
+		animation-iteration-count: infinite;
+		transform-origin: 50% 50%;
+		}
+	.ls-01 { animation-name: ls-01; }
+	.ls-02 { animation-name: ls-02; }
+	.ls-03 { animation-name: ls-03; }
+	.ls-04 { animation-name: ls-04; }
+}
+
+@keyframes ls-01 {
+	0% { transform: scale(0.75); }
+	30% { transform: scale(1.5); }
+	80% { transform: scale(1.5); }
+	100% { transform: scale(0.75); }
+}
+
+@keyframes ls-02 {
+	0% { transform: scale(0.75); }
+	10% { transform: scale(0.75); }
+	40% { transform: scale(1.5); }
+	85% { transform: scale(1.5); }
+	100% { transform: scale(0.75); }
+}
+
+@keyframes ls-03 {
+	0% { transform: scale(0.75); }
+	20% { transform: scale(0.75); }
+	50% { transform: scale(1.5); }
+	90% { transform: scale(1.5); }
+	100% { transform: scale(0.75); }
+}
+
+@keyframes ls-04 {
+	0% { transform: scale(0.75); }
+	30% { transform: scale(0.75); }
+	60% { transform: scale(1.5); }
+	95% { transform: scale(1.5); }
+	100% { transform: scale(0.75); }
+}

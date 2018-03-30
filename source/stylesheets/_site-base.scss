@@ -273,6 +273,14 @@ svg *.content{ fill: $cool-grey-40; }
 	color: $white;
 }
 
+.services-button {
+	border: 1px solid $cool-grey-90;
+	border-radius: 5px;
+	text-align: center;
+	padding: 12px;
+	color: $cool-grey-90;
+}
+
 .job-requirements {
 	color: $cool-grey-40;
 	ul {
