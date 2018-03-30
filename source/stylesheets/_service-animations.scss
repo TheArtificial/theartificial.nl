@@ -20,7 +20,6 @@
 		transform-origin: 50% 50%;
 		animation-timing-function: linear;
 			g * {
-				animation-name: holistic;
 				animation-duration: 12s;
 				animation-iteration-count: infinite;
 				transform-origin: 50% 50%;
@@ -212,7 +211,7 @@
 #svg-focused {
 	svg {
 		g * {
-			animation-duration: 12s;
+			animation-duration: 6s;
 			animation-iteration-count: infinite;
 			transform-origin: 50% 50%;
 			animation-timing-function: linear;
@@ -227,39 +226,39 @@
 
 @keyframes foc-01 {
 	0% { transform: scale(1.0); }
-  5% { transform: scale(1.25); }
+  10% { transform: scale(1.25); }
   80% { transform: scale(1.0); }
 	100% { transform: scale(1.0); }
 }
 
 @keyframes foc-02 {
 	0% { transform: scale(1.0); }
-	5% { transform: scale(1.0); }
-	10% { transform: scale(1.2); }
+	10% { transform: scale(1.0); }
+	20% { transform: scale(1.2); }
   85% { transform: scale(1.0); }
 	100% { transform: scale(1.0); }
 }
 
 @keyframes foc-03 {
 	0% { transform: scale(1.0); }
-	10% { transform: scale(1.0); }
-  15% { transform: scale(1.15); }
+	20% { transform: scale(1.0); }
+  30% { transform: scale(1.15); }
   90% { transform: scale(1.0); }
 	100% { transform: scale(1.0); }
 }
 
 @keyframes foc-04 {
 	0% { transform: scale(1.0); }
-	15% { transform: scale(1.0); }
-  20% { transform: scale(1.1); }
+	30% { transform: scale(1.0); }
+  40% { transform: scale(1.1); }
   95% { transform: scale(1.0); }
 	100% { transform: scale(1.0); }
 }
 
 @keyframes foc-05 {
 	0% { transform: scale(1.0); }
-	20% { transform: scale(1.0); }
-  25% { transform: scale(1.05); }
+	40% { transform: scale(1.0); }
+  50% { transform: scale(1.05); }
   100% { transform: scale(1.0); }
 	100% { transform: scale(1.0); }
 }
@@ -584,105 +583,348 @@
 }
 
 @keyframes bra-01 {
-	0%  { transform: scale(1.0); }
-	25% { transform: scale(1.5); }
-	50% { transform: scale(1.0); }
+	0%  { transform: scale(0.75); }
+	50% { transform: scale(1.25); }
+	100% { transform: scale(0.75); }
 }
 
 @keyframes bra-02 {
-	0%  { transform: scale(1.0); }
-	25% { transform: scale(1.5); }
-	50% { transform: scale(1.0); }
+	0%  { transform: scale(0.75); }
+	50% { transform: scale(1.25); }
+	100% { transform: scale(0.75); }
 }
 
 @keyframes bra-03 {
-	0%  { transform: scale(1.0); }
-	25% { transform: scale(1.5); }
-	50% { transform: scale(1.0); }
+	0%  { transform: scale(0.75); }
+	50% { transform: scale(1.25); }
+	100% { transform: scale(0.75); }
 }
 
 @keyframes bra-04 {
-	0%  { transform: scale(1.0); }
-	25% { transform: scale(1.5); }
-	50% { transform: scale(1.0); }
+	0%  { transform: scale(0.75); }
+	50% { transform: scale(1.25); }
+	100% { transform: scale(0.75); }
 }
 
 @keyframes bra-05 {
-	0%  { transform: scale(1.0); }
-	25% { transform: scale(1.5); }
-	50% { transform: scale(1.0); }
+	0%  { transform: scale(0.75); }
+	50% { transform: scale(1.25); }
+	100% { transform: scale(0.75); }
 }
 
 @keyframes bra-06 {
-	0%  { transform: scale(1.0); }
-	25% { transform: scale(1.5); }
-	50% { transform: scale(1.0); }
+	0%  { transform: scale(0.75); }
+	50% { transform: scale(1.25); }
+	100% { transform: scale(0.75); }
 }
 
 @keyframes bra-07 {
-	0%  { transform: scale(1.0); }
-	25% { transform: scale(1.5); }
-	50% { transform: scale(1.0); }
+	0%  { transform: scale(0.75); }
+	50% { transform: scale(1.25); }
+	100% { transform: scale(0.75); }
 }
 
 @keyframes bra-08 {
-	0%  { transform: scale(1.0); }
-	25% { transform: scale(1.5); }
-	50% { transform: scale(1.0); }
+	0%  { transform: scale(0.75); }
+	50% { transform: scale(1.25); }
+	100% { transform: scale(0.75); }
 }
 
 @keyframes bra-09 {
-	0%  { transform: scale(1.0); }
-	50% { transform: scale(1.0); }
-	75% { transform: scale(1.5); }
-	100% { transform: scale(1.0); }
+	0%  { transform: scale(1.25); }
+	50% { transform: scale(0.75); }
+	100% { transform: scale(1.25); }
 }
 
 @keyframes bra-10 {
-	0%  { transform: scale(1.0); }
-	50% { transform: scale(1.0); }
-	75% { transform: scale(1.5); }
-	100% { transform: scale(1.0); }
+	0%  { transform: scale(1.25); }
+	50% { transform: scale(0.75); }
+	100% { transform: scale(1.25); }
 }
 
 @keyframes bra-11 {
-	0%  { transform: scale(1.0); }
-	50% { transform: scale(1.0); }
-	75% { transform: scale(1.5); }
-	100% { transform: scale(1.0); }
+	0%  { transform: scale(1.25); }
+	50% { transform: scale(0.75); }
+	100% { transform: scale(1.25); }
 }
 
 @keyframes bra-12 {
-	0%  { transform: scale(1.0); }
-	50% { transform: scale(1.0); }
-	75% { transform: scale(1.5); }
-	100% { transform: scale(1.0); }
+	0%  { transform: scale(1.25); }
+	50% { transform: scale(0.75); }
+	100% { transform: scale(1.25); }
 }
 
 @keyframes bra-13 {
-	0%  { transform: scale(1.0); }
-	50% { transform: scale(1.0); }
-	75% { transform: scale(1.5); }
-	100% { transform: scale(1.0); }
+	0%  { transform: scale(1.25); }
+	50% { transform: scale(0.75); }
+	100% { transform: scale(1.25); }
 }
 
 @keyframes bra-14 {
-	0%  { transform: scale(1.0); }
-	50% { transform: scale(1.0); }
-	75% { transform: scale(1.5); }
-	100% { transform: scale(1.0); }
+	0%  { transform: scale(1.25); }
+	50% { transform: scale(0.75); }
+	100% { transform: scale(1.25); }
 }
 
 @keyframes bra-15 {
-	0%  { transform: scale(1.0); }
-	50% { transform: scale(1.0); }
-	75% { transform: scale(1.5); }
-	100% { transform: scale(1.0); }
+	0%  { transform: scale(1.25); }
+	50% { transform: scale(0.75); }
+	100% { transform: scale(1.25); }
 }
 
 @keyframes bra-16 {
-	0%  { transform: scale(1.0); }
-	50% { transform: scale(1.0); }
-	75% { transform: scale(1.5); }
-	100% { transform: scale(1.0); }
+	0%  { transform: scale(1.25); }
+	50% { transform: scale(0.75); }
+	100% { transform: scale(1.25); }
+}
+
+#svg-org {
+	svg * {
+	  animation-duration: 6s;
+		animation-iteration-count: infinite;
+		transform-origin: 50% 50%;
+		}
+	.org-01 { animation-name: org-01; }
+	.org-02 { animation-name: org-02; }
+	.org-03 { animation-name: org-03; }
+	.org-04 { animation-name: org-04; }
+	.org-05 { animation-name: org-05; }
+	.org-06 { animation-name: org-06; }
+	.org-07 { animation-name: org-07; }
+	.org-08 { animation-name: org-08; }
+}
+
+@keyframes org-02 {
+	0% { transform: translateX(0); }
+	15% { transform: translateX(-20px); }
+	65% { transform: translateX(-20px); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes org-03 {
+	0% { transform: translateX(0); }
+	15% { transform: translateX(0); }
+	30% { transform: translateX(20px); }
+	70% { transform: translateX(20px); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes org-06 {
+	0% { transform: translateX(0); }
+	30% { transform: translateX(0); }
+	45% { transform: translateX(-20px); }
+	75% { transform: translateX(-20px); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes org-07 {
+	0% { transform: translateX(0); }
+	45% { transform: translateX(0); }
+	60% { transform: translateX(20px); }
+	80% { transform: translateX(20px); }
+	100% { transform: translateX(0); }
+}
+
+#svg-ux {
+	svg * {
+	  animation-duration: 6s;
+		animation-iteration-count: infinite;
+		transform-origin: 50% 50%;
+		}
+	.ux-01 { animation-name: ux-01; }
+	.ux-02 { animation-name: ux-02; }
+	.ux-03 { animation-name: ux-03; }
+	.ux-04 { animation-name: ux-04; }
+	.ux-05 { animation-name: ux-05; }
+	.ux-06 { animation-name: ux-06; }
+	.ux-07 { animation-name: ux-07; }
+}
+
+@keyframes ux-01 {
+	0% { transform: translateY(0) scale(0.75); }
+	20% { transform: translateY(20px) scale(1.0); }
+	90% { transform: translateY(20px) scale(1.0); }
+	100% { transform: translateY(0) scale(0.75); }
+}
+
+@keyframes ux-02 {
+	0% { transform: translateY(0) scale(0.75); }
+	10% { transform: translateY(0) scale(0.75); }
+	30% { transform: translateY(10px) scale(1.0); }
+	90% { transform: translateY(10px) scale(1.0); }
+	100% { transform: translateY(0) scale(0.75); }
+}
+
+@keyframes ux-03 {
+	0% { transform: translateY(0) scale(0.75); }
+	20% { transform: translateY(0) scale(0.75); }
+	40% { transform: translateY(-20px) scale(1.0); }
+	90% { transform: translateY(-20px) scale(1.0); }
+	100% { transform: translateY(0) scale(0.75) }
+}
+
+@keyframes ux-04 {
+	0% { transform: translateY(0) scale(0.75) ; }
+	30% { transform: translateY(0) scale(0.75) ; }
+	50% { transform: translateY(20px) scale(1.0) ; }
+	90% { transform: translateY(20px) scale(1.0) ; }
+	100% { transform: translateY(0) scale(0.75) ; }
+}
+
+@keyframes ux-05 {
+	0% { transform: translateY(0) scale(0.75) ; }
+	40% { transform: translateY(0) scale(0.75) ; }
+	60% { transform: translateY(-10px) scale(1.0) ; }
+	90% { transform: translateY(-10px) scale(1.0) ; }
+	100% { transform: translateY(0) scale(0.75) ; }
+}
+
+@keyframes ux-06 {
+	0% { transform: translateY(0) scale(0.75) ; }
+	50% { transform: translateY(0) scale(0.75) ; }
+	70% { transform: translateY(10px) scale(1.0) ; }
+	90% { transform: translateY(10px) scale(1.0) ; }
+	100% { transform: translateY(0) scale(0.75) ; }
+}
+
+@keyframes ux-07 {
+	0% { transform: translateY(0) scale(0.75) ; }
+	60% { transform: translateY(0) scale(0.75) ; }
+	80% { transform: translateY(20px) scale(1.0) ; }
+	90% { transform: translateY(20px) scale(1.0) ; }
+	100% { transform: translateY(0) scale(0.75) ; }
+}
+
+#svg-research {
+	svg * {
+	  animation-duration: 6s;
+		animation-iteration-count: infinite;
+		transform-origin: 50% 50%;
+		animation-timing-function: linear;
+		}
+	.res-01 { animation-name: res-01; }
+	.res-02 { animation-name: res-02; }
+	.res-03 { animation-name: res-03; }
+	.res-04 { animation-name: res-04; }
+	.res-05 { animation-name: res-05; }
+	.res-06 { animation-name: res-06; }
+	.res-07 { animation-name: res-07; }
+	.res-08 { animation-name: res-08; }
+	.res-09 { animation-name: res-09; }
+}
+
+@keyframes res-01 {
+	0% { transform: scale(1.0); opacity: 0.3; }
+	10% { transform: scale(1.0); opacity: 0.3; }
+	80% { transform: scale(2.0); opacity: 1.0;}
+	100% { transform: scale(1.0); opacity: 0.3; }
+}
+
+@keyframes res-02 {
+	0% { transform: translateY(0); opacity: 1.0; }
+	20% { transform: translateY(30px); opacity: 0; }
+	90% { transform: translateY(30px); opacity: 0; }
+	100% { transform: translateY(0); opacity: 1.0; }
+}
+
+@keyframes res-03 {
+	0% { transform: translateY(0) translateX(0); opacity: 1.0; }
+	5% { transform: translateY(0) translateX(0); opacity: 1.0; }
+	25% { transform: translateY(30px) translateX(-30px); opacity: 0; }
+	90% { transform: translateY(30px) translateX(-30px); opacity: 0; }
+	100% { transform: translateY(0) translateX(0); opacity: 1.0; }
+}
+
+@keyframes res-04 {
+	0% { transform: translateX(0); opacity: 1.0; }
+	10% { transform: translateX(0); opacity: 1.0; }
+	30% { transform: translateX(-30px); opacity: 0; }
+	90% { transform: translateX(-30px); opacity: 0; }
+	100% { transform: translateX(0); opacity: 1.0; }
+}
+
+@keyframes res-05 {
+	0% { transform: translateY(0) translateX(0); opacity: 1.0; }
+	15% { transform: translateY(0) translateX(0); opacity: 1.0; }
+	35% { transform: translateY(-30px) translateX(-30px); opacity: 0; }
+	90% { transform: translateY(-30px) translateX(-30px); opacity: 0; }
+	100% { transform: translateY(0) translateX(0); opacity: 1.0; }
+}
+
+@keyframes res-06 {
+	0% { transform: translateY(0); opacity: 1.0; }
+	20% { transform: translateY(0); opacity: 1.0; }
+	40% { transform: translateY(-30px); opacity: 0; }
+	90% { transform: translateY(-30px); opacity: 0; }
+	100% { transform: translateY(0); opacity: 1.0; }
+}
+
+@keyframes res-07 {
+	0% { transform: translateY(0) translateX(0); opacity: 1.0; }
+	25% { transform: translateY(0) translateX(0); opacity: 1.0; }
+	45% { transform: translateY(-30px) translateX(30px); opacity: 0; }
+	90% { transform: translateY(-30px) translateX(30px); opacity: 0; }
+	100% { transform: translateY(0) translateX(0); opacity: 1.0; }
+}
+
+@keyframes res-08 {
+	0% { transform: translateX(0); opacity: 1.0; }
+	30% { transform: translateX(0); opacity: 1.0; }
+	50% { transform: translateX(30px); opacity: 0; }
+	90% { transform: translateX(30px); opacity: 0; }
+	100% { transform: translateX(0); opacity: 1.0; }
+}
+
+@keyframes res-09 {
+	0% { transform: translateY(0) translateX(0); opacity: 1.0; }
+	35% { transform: translateY(0) translateX(0); opacity: 1.0; }
+	55% { transform: translateY(30px) translateX(30px); opacity: 0; }
+	90% { transform: translateY(30px) translateX(30px); opacity: 0; }
+	100% { transform: translateY(0) translateX(0); opacity: 1.0; }
+}
+
+#svg-product {
+	svg * {
+	  animation-duration: 9s;
+		animation-iteration-count: infinite;
+		transform-origin: 50% 50%;
+		animation-timing-function: linear;
+	}
+	g.ps-rotate {
+		animation-name: ps-rotate;
+		animation-duration: 18s;
+	 }
+	.ps-01 { animation-name: ps-01; }
+	.ps-02 { animation-name: ps-02; }
+}
+
+@keyframes ps-rotate {
+	0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes ps-01 {
+	0% { opacity: 1.0; }
+	5% { opacity: 1.0; }
+	20% { opacity: 0.0; }
+	30% { opacity: 0.0; }
+	45% {opacity: 1.0; }
+	55% {opacity: 1.0; }
+	70% { opacity: 0.0; }
+	80% { opacity: 0.0; }
+	95% {opacity: 1.0; }
+	100% {opacity: 1.0; }
+}
+
+@keyframes ps-02 {
+	0% { opacity: 0.0; }
+	5% { opacity: 0.0; }
+	20% { opacity: 1.0; }
+	30% { opacity: 1.0; }
+	45% {opacity: 0.0; }
+	55% {opacity: 0.0; }
+	70% { opacity: 1.0; }
+	80% { opacity: 1.0; }
+	95% {opacity: 0.0; }
+	100% {opacity: 0.0; }
 }
