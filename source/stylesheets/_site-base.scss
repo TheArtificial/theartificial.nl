@@ -217,7 +217,7 @@ svg *.content{ fill: $cool-grey-40; }
 	}
 }
 
-// about styles
+// image bg styles
 @media only screen and (min-device-width: 320px) {
 	.bleed.about-us {
 		background-image: url(/about/images/us.jpg);
@@ -226,8 +226,8 @@ svg *.content{ fill: $cool-grey-40; }
 		background-position: top center;
 	}
 	.bleed.service-bg {
-		background-image: url(/services/images/studio.jpg);
-		min-height: 700px;
+		background-color: $cool-grey-90;
+		padding-top: 0px;
 		margin: auto;
 		background-position: bottom center;
 		color: $white;
@@ -240,15 +240,16 @@ svg *.content{ fill: $cool-grey-40; }
 	}
 	.bleed.service-bg {
 		background-image: url(/services/images/studio.jpg);
-		min-height: 360px;
-		margin: auto;
-		background-position: bottom center;
+		padding-top: 100px;
 	}
 }
 
 @media only screen and (min-width: 960px) {
 	.bleed.about-us {
 		min-height: 480px;
+	}
+	.bleed.service-bg {
+		padding-top: 300px;
 	}
 }
 
