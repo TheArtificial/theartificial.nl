@@ -217,7 +217,7 @@ svg *.content{ fill: $cool-grey-40; }
 	}
 }
 
-// about styles
+// image bg styles
 @media only screen and (min-device-width: 320px) {
 	.bleed.about-us {
 		background-image: url(/about/images/us.jpg);
@@ -225,17 +225,31 @@ svg *.content{ fill: $cool-grey-40; }
 		margin: auto;
 		background-position: top center;
 	}
+	.bleed.service-bg {
+		background-color: $cool-grey-90;
+		padding-top: 0px;
+		margin: auto;
+		background-position: bottom center;
+		color: $white;
+	}
 }
 
 @media only screen and (min-device-width: 768px) {
 	.bleed.about-us {
 		min-height: 360px;
 	}
+	.bleed.service-bg {
+		background-image: url(/services/images/studio.jpg);
+		padding-top: 100px;
+	}
 }
 
 @media only screen and (min-width: 960px) {
 	.bleed.about-us {
 		min-height: 480px;
+	}
+	.bleed.service-bg {
+		padding-top: 300px;
 	}
 }
 
@@ -258,6 +272,14 @@ svg *.content{ fill: $cool-grey-40; }
 	text-align: center;
 	padding: 12px;
 	color: $white;
+}
+
+.services-button {
+	border: 1px solid $cool-grey-90;
+	border-radius: 5px;
+	text-align: center;
+	padding: 12px;
+	color: $cool-grey-90;
 }
 
 .job-requirements {
@@ -392,6 +414,17 @@ svg *.content{ fill: $cool-grey-40; }
 	margin-top: 100px;
 }
 
+
+.service-box {
+	border: 1px solid $cool-grey-80;
+	border-radius: 2px
+}
+
+.service-box:hover {
+	border: 1px solid $cool-grey-70;
+
+}
+
 // card gradient colors
 .case-study {
 	color: $white;
@@ -487,7 +520,7 @@ svg *.content{ fill: $cool-grey-40; }
 .sapphire-palegrape {
 	background-color: $sapphire;
 	background: linear-gradient(to bottom, $pale-grape, $sapphire);
-	.statement, .statement:hover, .label, .description { color: $white; }
+	.subtitle, .statement, .statement:hover, .label, .description, .large-body { color: $white; }
 }
 
 .sapphire-paleturquoise {

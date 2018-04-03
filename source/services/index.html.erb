@@ -1,0 +1,795 @@
+---
+title: Services
+nofeed: true
+---
+<% content_for :javascript_tags do %>
+	<%= javascript_include_tag 'jquery.color-2.1.2' %>
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.13.1/mapbox-gl.js'></script>
+<% end %>
+
+<% content_for :stylesheet_tags do %>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.13.1/mapbox-gl.css' rel='stylesheet' />
+<% end %>
+<section id="content">
+
+<!-- page content -->
+	<div class="bleed service-bg">
+		<div class="flex container">
+			<div class="col-10 left-1 right-1 section-title">
+				<div class="padded center">
+					<h1 class="title">Our Process</h1>
+				</div>
+				<div class="padded center">
+					<h2 class="subtitle">To create exceptional work, we start with exceptional people.</h2>
+					<p class="large-body">The Artificial was founded in the hope of allowing talented, curious designers to flourish. Through the years, this orientation has produced a team that works a little differently than others, with some key benefits for our&nbsp;clients.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section bleed cool-grey-80">
+		<div class="flex container">
+			<div class="col-3">
+				<div class="padded">
+					<div id="svg-holistic">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 width="124px" height="124px" viewBox="0 0 124 124" style="enable-background:new 0 0 124 124;" xml:space="preserve">
+							<g>
+								<circle class="svg-transparent hol-01" cx="62" cy="38" r="36"/>
+								<circle class="svg-transparent hol-04" cx="62" cy="86" r="36"/>
+								<circle class="svg-transparent hol-02" cx="41.215" cy="50" r="36"/>
+								<circle class="svg-transparent hol-05" cx="82.785" cy="74" r="36"/>
+								<circle class="svg-transparent hol-03" cx="41.215" cy="74" r="36"/>
+								<circle class="svg-transparent hol-06" cx="82.785" cy="50" r="36"/>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="padded">
+					<h2 class="subtitle">Holistic</h2>
+					<p class="large-body">No individual Artificer has a narrowly scoped title like "visual designer" or "interaction designer". We recognize that our skills vary and collaborate accordingly while avoiding rigid roles. This keeps our perspective broad and means "how it works" and "how it feels" are both everyone's concern, so stay in harmony.</p>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="padded">
+					<div id="svg-integrated">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 width="124px" height="124px" viewBox="0 0 124 124" style="enable-background:new 0 0 124 124;" xml:space="preserve">
+							<g>
+								<circle class="svg-transparent int-01" cx="62" cy="7" r="5"/>
+								<circle class="svg-transparent int-02" cx="62" cy="117" r="5"/>
+								<circle class="svg-transparent int-03" cx="34.5" cy="14.369" r="5"/>
+								<circle class="svg-transparent int-04" cx="89.5" cy="109.631" r="5"/>
+								<circle class="svg-transparent int-05" cx="14.369" cy="34.5" r="5"/>
+								<circle class="svg-transparent int-06" cx="109.631" cy="89.5" r="5"/>
+								<circle class="svg-transparent int-07" cx="7" cy="62" r="5"/>
+								<circle class="svg-transparent int-08" cx="117" cy="62" r="5"/>
+								<circle class="svg-transparent int-09" cx="14.369" cy="89.5" r="5"/>
+								<circle class="svg-transparent int-10" cx="109.631" cy="34.5" r="5"/>
+								<circle class="svg-transparent int-11" cx="34.5" cy="109.631" r="5"/>
+								<circle class="svg-transparent int-12" cx="89.5" cy="14.369" r="5"/>
+								<line class="svg-transparent int-01" x1="62" y1="12" x2="62" y2="42"/>
+								<line class="svg-transparent int-02" x1="62" y1="82.679" x2="62" y2="112.679"/>
+								<line class="svg-transparent int-03" x1="36.83" y1="18.744" x2="51.83" y2="44.725"/>
+								<line class="svg-transparent int-04" x1="72.17" y1="79.954" x2="87.17" y2="105.935"/>
+								<line class="svg-transparent int-05" x1="18.405" y1="37.17" x2="44.386" y2="52.17"/>
+								<line class="svg-transparent int-06" x1="79.614" y1="72.509" x2="105.595" y2="87.509"/>
+								<line class="svg-transparent int-07" x1="11.661" y1="62.339" x2="41.661" y2="62.339"/>
+								<line class="svg-transparent int-08" x1="82.339" y1="62.339" x2="112.339" y2="62.339"/>
+								<line class="svg-transparent int-09" x1="18.405" y1="87.509" x2="44.386" y2="72.509"/>
+								<line class="svg-transparent int-10" x1="79.614" y1="52.17" x2="105.595" y2="37.17"/>
+								<line class="svg-transparent int-11" x1="36.83" y1="105.935" x2="51.83" y2="79.954"/>
+								<line class="svg-transparent int-12" x1="72.17" y1="44.725" x2="87.17" y2="18.744"/>
+								<circle class="svg-opaque" cx="62" cy="62" r="20"/>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="padded">
+					<h2 class="subtitle">Integrated</h2>
+					<p class="large-body">As a boutique, we cannot pretend to bring 100% of the knowledge and skills needed for end-to-end product development. Fortunately, our value derives from our skills, experience, and approach, not from magic, so there is no need to hide the process. We even enjoy having clients and partners contribute to our work so we can learn together.</p>
+					<p class="large-body">It can be a challenge to mesh design processes with lean businesses, agile software teams, or careful risk-reducing large-scale bureaucracies. We enjoy taking on these challenges to show how design can contribute to everyone's success.</p>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="padded">
+					<div id="svg-focused">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 width="140px" height="140px" viewBox="0 0 140 140" style="enable-background:new 0 0 140 140;" xml:space="preserve">
+							<g>
+								<circle class="svg-opaque" cx="70" cy="70" r="10"/>
+								<circle class="svg-transparent foc-01" cx="70" cy="70" r="20"/>
+								<circle class="svg-transparent foc-02" cx="70" cy="70" r="30"/>
+								<circle class="svg-transparent foc-03" cx="70" cy="70" r="40"/>
+								<circle class="svg-transparent foc-04" cx="70" cy="70" r="50"/>
+								<circle class="svg-transparent foc-05" cx="70" cy="70" r="60"/>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="padded">
+					<h2 class="subtitle">Focused</h2>
+					<p class="large-body">To really design a system with purpose, a level of obsession is needed. Working for only a few hours and then shifting context to another project or a meeting costs much more than time spent. We strive to keep every team member focused on one product each day, so when we are riding a bike to work we can collect our thoughts about it.</p>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="padded">
+					<div id="svg-generative">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 width="140px" height="140px" viewBox="0 0 140 140" style="enable-background:new 0 0 140 140;" xml:space="preserve">
+							<g>
+								<circle class="svg-opaque gen-01" cx="100" cy="70" r="5"/>
+								<circle class="svg-opaque gen-02" cx="70" cy="70" r="5"/>
+								<circle class="svg-opaque gen-03" cx="40" cy="70" r="5"/>
+								<circle class="svg-opaque gen-04" cx="10" cy="70" r="5"/>
+								<circle class="svg-opaque gen-05" cx="100" cy="100" r="5"/>
+								<circle class="svg-opaque gen-06" cx="70" cy="100" r="5"/>
+								<circle class="svg-opaque gen-07" cx="70" cy="130" r="5"/>
+								<circle class="svg-opaque gen-08" cx="70" cy="10" r="5"/>
+								<circle class="svg-opaque gen-09" cx="40" cy="100" r="5"/>
+								<circle class="svg-opaque gen-10" cx="100" cy="40" r="5"/>
+								<circle class="svg-opaque gen-11" cx="70" cy="40" r="5"/>
+								<circle class="svg-opaque gen-12" cx="40" cy="40" r="5"/>
+								<circle class="svg-opaque gen-13" cx="130" cy="70" r="5"/>
+								<circle class="svg-opaque gen-14" cx="85" cy="55" r="5"/>
+								<circle class="svg-opaque gen-15" cx="55" cy="55" r="5"/>
+								<circle class="svg-opaque gen-16" cx="85" cy="25" r="5"/>
+								<circle class="svg-opaque gen-17" cx="55" cy="25" r="5"/>
+								<circle class="svg-opaque gen-18" cx="85" cy="115" r="5"/>
+								<circle class="svg-opaque gen-19" cx="55" cy="115" r="5"/>
+								<circle class="svg-opaque gen-20" cx="25" cy="55" r="5"/>
+								<circle class="svg-opaque gen-21" cx="115" cy="55" r="5"/>
+								<circle class="svg-opaque gen-22" cx="85" cy="85" r="5"/>
+								<circle class="svg-opaque gen-23" cx="55" cy="85" r="5"/>
+								<circle class="svg-opaque gen-24" cx="25" cy="85" r="5"/>
+								<circle class="svg-opaque gen-25" cx="115" cy="85" r="5"/>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="padded">
+					<h2 class="subtitle">Generative and Reductive</h2>
+					<p class="large-body">Everybody knows that design is a process of generating new solutions, synthesizing for direction, learning, and repeating it all. Yet while "design thinking" has become very popular to say, it is rarely performed. We believe in this process at large and small scales.</p>
+					<p class="large-body">It sounds simple, but requires quickly generating many solutions of useful fidelity and embracing that finding the right one means "throwing away" others. Only with our holistic approach have we seen the efficiency needed to do this affordably, and it requires a broad perspective to move fearlessly forward.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section bleed sapphire-palegrape">
+		<div class="flex container">
+			<div class="col-12">
+				<div class="padded">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 960 200" style="enable-background:new 0 0 960 200;" xml:space="preserve">
+						<g>
+							<path class="svg-opaque" d="M163.085,118.762c0.338,7.978-11.988,12.115-17.313,6.166s-1.555-16.791,6.023-19.307
+								c7.578-2.516,16.356,2.522,19.353,9.923c2.997,7.401,0.903,16.197-3.919,22.562c-13.56,17.9-46.893,11.773-54.14-9.482
+								c-7.247-21.255,13.79-46.109,36.095-43.506s37.214,30.098,28.224,50.677c-10.272,23.516-43.692,29.972-66.056,17.386
+								C88.196,140.149,76.651,106.382,92.955,85.4c15.844-20.392,47.289-19.453,71.55-10.606c14.08,5.135,27.779,12.53,37.36,24.054
+								s14.411,27.758,9.574,41.942c-4.784,14.029-18.412,23.94-32.975,26.703c-14.563,2.763-29.782-0.851-43.03-7.498
+								c-31.188-15.649-52.978-50.094-50.356-84.889s31.679-66.722,66.466-69.461c4.988-0.393,10.528-0.037,14.154,3.411
+								c3.222,3.063,4.111,7.779,4.821,12.168c3.868,23.885,7.413,48.221,4.088,72.187s-14.469,47.896-34.54,61.408
+								c-20.071,13.512-49.808,13.707-66.84-3.479c-6.76-6.821-11.268-16.453-9.935-25.964c2.112-15.065,17.218-24.496,31.343-30.144
+								c18.513-7.402,38.13-12.034,57.999-13.695c17.675-1.477,36.581-0.281,51.265,9.667c14.684,9.948,22.964,30.947,13.957,46.226
+								c-6.526,11.07-20.257,16.326-33.101,15.92c-12.844-0.407-25.032-5.559-36.576-11.203c-23.067-11.277-55.498-25.892-67.501-50.485
+								c-19.671-40.304,50.851-55.005,77.421-59.26c10.845-1.737,21.897-2.587,32.822-1.463c30.934,3.182,59.594,23.284,73.119,51.286
+								c13.525,28.002,11.453,62.948-5.285,89.156c-6.123,9.586-16.629,18.847-27.59,15.808c-6.316-1.751-10.926-7.282-13.765-13.19
+								c-11.008-22.909,0.75-51.779,20.879-67.296s46.406-20.378,71.736-22.469c5.706-0.471,11.663-0.789,16.947,1.416
+								c15.272,6.373,15.425,27.642,13.011,44.014c-0.575,3.898-1.56,8.387-5.096,10.126c-3.197,1.572-6.997,0.123-10.207-1.423
+								c-25.116-12.092-47.226-30.371-63.823-52.767c-1.934-2.609-3.872-5.511-3.843-8.759c0.055-6.126,6.686-9.816,12.465-11.849
+								c24.567-8.642,51.736-11.224,76.791-4.119c25.055,7.105,47.649,24.573,58.036,48.455c3.791,8.716,5.79,19.267,0.889,27.41
+								c-3.514,5.838-9.9,9.281-16.207,11.863c-25.474,10.428-54.826,11.035-80.709,1.668c-9.674-3.501-20.555-12.29-16.771-21.857
+								c1.793-4.532,6.389-7.222,10.747-9.404c24.284-12.159,51.932-19.273,78.742-14.943c25.368,4.097,63.251,24.045,57.824,55.166
+								c-1.575,9.031-7.738,17.376-16.319,20.602s-19.284,0.634-24.703-6.76c-2.751-3.754-4.047-8.355-5.151-12.876
+								c-0.975-3.992-1.848-8.039-1.957-12.147c-0.26-9.817,4.001-19.501,10.798-26.588c18.19-18.967,52.076-24.272,76.912-26.085
+								c6.762-0.493,13.919-0.576,19.875,2.664c12.045,6.555,13.141,25.658,3.335,35.243c-9.807,9.585-26.637,9.404-37.917,1.607
+								c-11.281-7.797-17.326-21.617-18.391-35.288c-0.252-3.234-0.211-6.671,1.43-9.469c2.335-3.981,7.254-5.607,11.829-6.209
+								c27.245-3.59,54.19,22.784,51.185,50.1c-0.286,2.603-0.849,5.295-2.486,7.339c-1.685,2.103-4.339,3.258-7.009,3.623
+								c-11.184,1.53-20.895-11.871-17.041-22.48c3.854-10.61,18.26-15.154,28.202-9.809c9.942,5.346,14.336,18.459,11.014,29.247
+								c-0.65,2.112-1.596,4.21-3.229,5.699c-4.529,4.125-12.528,1.373-15.428-4.023c-2.901-5.396-1.91-12.073,0.205-17.822
+								c5.958-16.193,20.671-28.855,37.571-32.333c16.9-3.478,35.418,2.345,47.285,14.87c6.214,6.558,10.767,15.869,8.198,24.53
+								c-2.57,8.661-14.886,13.868-21.212,7.418c-5.485-5.593-2.667-15.824,3.775-20.28c4.827-3.339,11.443-4.91,17.256-4.183
+								c2.936,0.368,5.906,1.226,7.421,3.872c1.894,3.307,3.527,6.955,3.394,10.847c-0.175,5.11-4.858,10.356-9.806,9.069
+								c-2.365-0.615-4.19-2.53-5.443-4.627c-9.621-16.111,12.967-35.362,28.247-26.949c6.842,3.767,10.089,13.623,5.567,19.99
+								c-1.076,1.516-2.641,2.834-4.492,3.001c-2.954,0.266-5.47-2.644-5.706-5.6c-0.236-2.956,1.231-5.788,2.992-8.174
+								c2.042-2.768,4.642-5.264,7.88-6.425c5.459-1.959,12.283-0.036,16.747-3.74c4.624-3.838,2.54-12.787-3.304-14.187
+								c-5.844-1.4-11.757,5.634-9.373,11.15c1.393,3.225,4.642,5.167,7.641,6.996c3.919,2.389,7.851,5.048,10.348,8.899
+								c2.497,3.85,3.231,9.187,0.624,12.964c-2.607,3.777-9.038,4.614-11.729,0.897c-2.493-3.444-0.674-8.485,2.391-11.432
+								c5.436-5.226,14.533-6.11,20.873-2.028c6.34,4.081,9.302,12.728,6.796,19.84c-2.67,2.598-7.807,0.415-8.59-3.228
+								c-2.672-12.443,12.594-8.223,17.672-5.929c9.488,4.286,15.737,9.365,27.039,8.824c4.882-0.234,10.188-1.66,12.923-5.711
+								c2.734-4.051,0.826-11.019-4.039-11.486c-4.532-0.435-7.831,5.371-6.134,9.596c1.696,4.225,6.665,6.374,11.215,6.192
+								c4.55-0.182,8.798-2.199,12.898-4.178c3.979-1.92,7.959-3.841,11.938-5.761c6.533-3.153,13.587-6.391,20.754-5.264
+								s13.704,8.754,10.869,15.432c-2.182,2.848-7.432,0.564-7.86-2.997c-0.428-3.562,2.538-6.772,5.876-8.086
+								c3.338-1.314,7.028-1.263,10.592-1.665c5.45-0.616,12.139-5.677,9.003-10.176c-2.762-3.961-9.992,0.268-9.162,5.025
+								s6.544,7.258,11.32,6.544c4.776-0.714,8.868-3.648,13.02-6.113c4.152-2.466,8.992-4.588,13.687-3.46
+								c8.559,2.056,12.439,13.724,21.151,14.991c8.284,1.204,14.101-7.466,20.689-12.63c9.645-7.561,24.415-7.676,34.178-0.267"/>
+							<path class="svg-opaque" d="M125.182,66.582c-6.651-6.348-18.661-2.179-23.216,5.807s-3.716,17.865-2.21,26.935
+								c2.855,17.195,7.627,34.071,14.198,50.215c3.027,7.437,6.713,15.063,13.268,19.7c5.912,4.183,13.562,5.391,20.752,4.513
+								c25.801-3.151,42.075-29.861,48.038-55.161c4.376-18.565,4.792-39.843-7.013-54.824c-10.613-13.469-28.546-18.651-45.512-21.141
+								c-4.39-0.644-9.14-1.101-13.024,1.045c-3.591,1.983-5.722,5.806-7.45,9.526c-6.756,14.54-10.229,30.594-10.086,46.626
+								c0.044,4.936,0.572,10.245,3.784,13.993c2.804,3.272,7.14,4.738,11.311,5.818c26.038,6.746,54.486,3.722,78.524-8.347
+								c2.244-1.127,4.577-2.453,5.741-4.679c1.786-3.416,0.185-7.6-1.831-10.885c-12.846-20.943-39.952-28.134-64.513-28.747
+								c-7.936-0.198-16.425,0.273-22.849,4.935c-6.881,4.994-9.882,13.686-11.888,21.949c-3.812,15.696-5.457,31.917-4.876,48.058
+								c0.43,11.949,2.314,24.455,9.536,33.985c9.705,12.807,26.883,17.432,42.925,18.363c40.02,2.322,80.734-14.189,107.832-43.731
+								c5.885-6.416,11.261-13.615,13.651-21.986c2.391-8.371,1.335-18.129-4.465-24.622c-5.972-6.686-15.587-8.713-24.547-9.02
+								c-7.124-0.244-14.621,0.472-20.579,4.385c-5.958,3.913-9.776,11.798-7.117,18.412c2.31,5.746,8.645,8.908,14.767,9.845
+								c20.796,3.183,41.08-16.011,41.883-37.034c0.804-21.023-15.271-40.564-35.312-46.965c-10.554-3.371-23.46-3.035-31.119,4.971
+								c-3.823,3.997-5.829,9.364-7.436,14.656c-3.338,10.995-5.376,22.384-6.059,33.855c-0.727,12.207,0.637,25.778,9.492,34.212
+								c10.709,10.2,30.84,7.319,38.093-5.569c7.253-12.889-0.94-31.735-15.355-35.039c-2.13-0.488-4.643-0.578-6.207,0.949
+								c-0.8,0.781-1.216,1.868-1.56,2.932c-5.129,15.892,2.153,34.881,16.592,43.269c14.439,8.388,34.542,5.307,45.807-7.02
+								c9.913-10.848,12.489-26.717,11.034-41.339c-0.444-4.456-1.283-9.045-3.851-12.713c-6.658-9.508-22.791-7.798-29.933,1.353
+								s-6.597,22.443-2.042,33.119c3.005,7.044,7.91,13.686,14.951,16.697c11.348,4.853,24.293-0.911,34.772-7.43
+								c11.272-7.013,23.265-18.677,19.457-31.394c-2.683-8.96-13.444-14.116-22.494-11.757c-9.05,2.36-15.685,11.047-16.948,20.314
+								c-1.995,14.641,10.373,30.045,25.149,29.94c14.776-0.105,27.06-17.351,21.207-30.919s-28.454-15.521-35.613-2.595
+								c-6.134,11.074,0.973,25.959,12.216,31.777c11.243,5.818,24.879,4.533,37.043,1.029c4.928-1.419,10.094-3.427,12.95-7.686
+								c2.455-3.66,2.747-8.319,2.757-12.726c0.04-17.51-3.169-35.023-9.414-51.381c-2.636-6.905-6.704-14.38-13.887-16.123
+								c-10.407-2.526-19.28,9.071-20.209,19.741c-0.782,8.984,1.714,17.927,4.783,26.408c3.307,9.14,7.486,18.284,14.56,24.95
+								c7.074,6.666,17.628,10.389,26.778,7.109c9.15-3.281,15.07-14.952,10.363-23.456c-5.252-9.49-21.173-8.953-27.076,0.147
+								s-1.579,22.548,7.752,28.077c9.331,5.529,21.843,3.773,30.625-2.592s14.152-16.603,16.634-27.161
+								c2.482-10.558,2.352-21.538,1.999-32.379c-0.165-5.046-1.238-11.286-6.062-12.775c-2.207-0.681-4.598-0.077-6.763,0.727
+								c-18.144,6.74-28.597,27.437-27.391,46.754c1.206,19.318,12.134,36.939,25.99,50.454c3.952,3.855,8.364,7.558,13.706,8.954
+								c4.109,1.073,8.51,0.682,12.561-0.592c10.953-3.443,19.551-14.086,19.557-25.568s-9.373-22.527-20.82-23.404
+								c-11.448-0.878-22.754,9.566-21.876,21.014c1.089,14.194,17.74,22.298,31.951,21.465c11.702-0.686,23.429-5.737,30.673-14.953
+								c8.056-10.25,9.606-25.196,3.824-36.881c-5.782-11.685-18.604-19.519-31.64-19.333c-2.748,0.039-5.72,0.516-7.627,2.494
+								c-2.174,2.256-2.312,5.755-2.019,8.875c0.726,7.718,3.582,15.641,9.648,20.468c6.066,4.827,15.791,5.447,21.222-0.085
+								c4.214-4.292,4.931-10.968,4.069-16.92c-1.318-9.108-8.364-19.079-17.432-17.512c-5.485,0.948-9.41,5.849-11.857,10.849
+								c-7.244,14.802-5.563,33.565,4.196,46.844c5.696,7.751,14.486,13.797,24.104,13.914c8.459,0.103,16.354-4.297,22.928-9.622
+								c5.84-4.731,11.159-10.55,13.396-17.725c2.237-7.175,0.728-15.888-5.14-20.585c-8.41-6.732-22.178-1.886-27.298,7.592
+								c-5.12,9.478-3.277,21.378,1.386,31.088c2.909,6.057,7.377,12.008,13.868,13.748c3.256,0.873,6.744,0.586,9.982-0.351
+								c11.733-3.392,20.009-16.037,18.422-28.147c-1.587-12.11-12.841-22.196-25.051-22.451c-4.445-0.093-9.557,1.525-11.129,5.685
+								c-0.755,1.998-0.54,4.224-0.149,6.323c3.965,21.318,27.23,36.967,48.47,32.603c21.24-4.365,36.449-27.92,31.686-49.074
+								c-1.163-5.164-3.735-10.515-8.561-12.688c-6.416-2.889-14.236,1.29-17.816,7.347c-3.58,6.057-4.002,13.405-4.333,20.433
+								c-0.11,2.328-0.115,4.947,1.515,6.612c1.267,1.294,3.193,1.645,4.993,1.831c8.836,0.917,18.5-0.864,24.729-7.196
+								c6.229-6.333,7.313-17.934,0.624-23.78c-6.512-5.691-17.865-3.14-22.417,4.213s-2.61,17.619,3.367,23.87
+								c5.976,6.251,15.169,8.746,23.781,7.951c5.26-0.485,10.682-2.27,14.115-6.285c3.433-4.014,4.124-10.625,0.477-14.445
+								c-6.047-6.334-18.117,1.365-17.385,10.091c0.732,8.726,9.68,14.753,18.364,15.877c6.335,0.82,13.596-1.309,17.263-6.966
+								c2.603-4.016,1.32-10.731-3.358-11.741c-5.507-1.189-9.176,5.915-8.933,11.543c0.081,1.885,0.373,3.797,1.216,5.485
+								c1.954,3.915,6.607,5.914,10.982,5.855c4.375-0.059,8.537-1.82,12.454-3.77c5.314-2.645,11.231-7.44,9.751-13.189
+								c-1.086-4.22-6.418-6.502-10.471-4.903c-4.053,1.6-6.4,6.302-5.892,10.63c0.239,2.04,1.045,4.038,2.435,5.549
+								c2.839,3.089,7.431,3.645,11.611,4.005c4.18,0.36,8.771,0.908,11.618,3.99c2.848,3.081,1.875,9.473-2.301,9.881
+								c-2.44,0.239-4.701-1.785-5.337-4.152c-0.636-2.367,0.056-4.916,1.224-7.072c4.536-8.376,16.864-11.242,24.63-5.727
+								c2.479,1.76,4.432,4.15,6.702,6.171c6.482,5.774,15.695,8.336,24.227,6.739c8.532-1.597,16.194-7.32,20.149-15.047"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="padded center">
+					<h2 class="subtitle">Define</h2>
+					<p class="large-body">We begin projects by understanding the context we’re designing for. We seek to discover the desires of the business, the needs of our users, and the constraints of the technologies we’re working with.</p>
+				</div>
+			</div>
+				<div class="col-4">
+					<div class="padded center">
+						<h2 class="subtitle">Design</h2>
+						<p class="large-body">Design synthesizes the findings from the design phase into designs that can be seen and understood. We begin with low fidelity sketches and moodboards before moving into full-fledged comps, videos, and motion studies.</p>
+					</div>
+				</div>
+					<div class="col-4">
+						<div class="padded center">
+							<h2 class="subtitle">Refine</h2>
+							<p class="large-body">The refine phase of work focuses on details, communication, and validation. This is typically the longest, extending through initial implementation and into product or service iterations.</p>
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<div class="section bleed cool-grey-90">
+			<div class="flex container">
+				<div class="col-10 left-1 right-1">
+					<div class="padded center">
+						<h3 class="subtitle">Our services are not one-size-fits-all. We work closely with our clients to find the approach that works best.</h3>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card center">
+						<div class="padded service-box">
+							<div id="svg-strategy">
+								<svg version="1.1" id="content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 width="120px" height="120px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+		 							<circle class="svg-opaque str-01" cx="30" cy="60" r="10"/>
+									<circle class="svg-opaque str-02" cx="50" cy="60" r="10"/>
+									<circle class="svg-opaque str-03" cx="70" cy="60" r="10"/>
+									<circle class="svg-opaque str-04" cx="90" cy="60" r="10"/>
+								</svg>
+							</div>
+							<h2 class="small-subtitle">Design <br/> Strategy</h2>
+							<p class="small-body">To make a thing, you must first understand its context.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card center">
+						<div class="padded service-box">
+							<div id="svg-brand">
+								<svg version="1.1" id="content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 width="120px" height="120px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+									<circle class="svg-opaque bra-01" cx="30" cy="30" r="5"/>
+									<circle class="svg-opaque bra-02" cx="70" cy="30" r="5"/>
+									<circle class="svg-opaque bra-03" cx="50" cy="50" r="5"/>
+									<circle class="svg-opaque bra-04" cx="90" cy="50" r="5"/>
+									<circle class="svg-opaque bra-05" cx="30" cy="70" r="5"/>
+									<circle class="svg-opaque bra-06" cx="70" cy="70" r="5"/>
+									<circle class="svg-opaque bra-07" cx="50" cy="90" r="5"/>
+									<circle class="svg-opaque bra-08" cx="90" cy="90" r="5"/>
+									<circle class="svg-opaque bra-09" cx="50" cy="30" r="5"/>
+									<circle class="svg-opaque bra-10" cx="90" cy="30" r="5"/>
+									<circle class="svg-opaque bra-11" cx="30" cy="50" r="5"/>
+									<circle class="svg-opaque bra-12" cx="70" cy="50" r="5"/>
+									<circle class="svg-opaque bra-13" cx="50" cy="70" r="5"/>
+									<circle class="svg-opaque bra-14" cx="90" cy="70" r="5"/>
+									<circle class="svg-opaque bra-15" cx="30" cy="90" r="5"/>
+									<circle class="svg-opaque bra-16" cx="70" cy="90" r="5"/>
+								</svg>
+							</div>
+							<h2 class="small-subtitle">Brand <br/> Experience</h2>
+							<p class="small-body">A brand is as meaningful as the experience it provides.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card center">
+						<div class="padded service-box">
+							<div id="svg-org">
+								<svg version="1.1" id="content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 width="120px" height="120px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+									<circle class="svg-opaque org-01" cx="50" cy="30" r="6"/>
+									<circle class="svg-opaque org-02" cx="90" cy="30" r="6"/>
+									<circle class="svg-opaque org-03" cx="30" cy="50" r="6"/>
+									<circle class="svg-opaque org-04" cx="70" cy="50" r="6"/>
+									<circle class="svg-opaque org-05" cx="50" cy="70" r="6"/>
+									<circle class="svg-opaque org-06" cx="90" cy="70" r="6"/>
+									<circle class="svg-opaque org-07" cx="30" cy="90" r="6"/>
+									<circle class="svg-opaque org-08" cx="70" cy="90" r="6"/>
+								</svg>
+							</div>
+							<h2 class="small-subtitle">Organizational <br/> Change</h2>
+							<p class="small-body">Experiences reflect the organizations they are born from.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card center">
+						<div class="padded service-box">
+							<div id="svg-ux">
+								<svg version="1.1" id="content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 width="120px" height="120px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+									<circle class="svg-opaque ux-01" cx="18" cy="60" r="6"/>
+									<circle class="svg-opaque ux-04" cx="60" cy="60" r="6"/>
+									<circle class="svg-opaque ux-03" cx="46" cy="60" r="6"/>
+									<circle class="svg-opaque ux-02" cx="32" cy="60" r="6"/>
+									<circle class="svg-opaque ux-05" cx="74" cy="60" r="6"/>
+									<circle class="svg-opaque ux-06" cx="88" cy="60" r="6"/>
+									<circle class="svg-opaque ux-07" cx="102" cy="60" r="6"/>
+								</svg>
+							</div>
+							<h2 class="small-subtitle">User <br/> Experience</h2>
+							<p class="small-body">Innovation is nothing without humanity.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card center">
+						<div class="padded service-box">
+							<div id="svg-research">
+								<svg version="1.1" id="content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 width="120px" height="120px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+		 							<circle class="svg-opaque res-01" cx="60" cy="60" r="5"/>
+									<circle class="svg-transparent res-02" cx="60" cy="20" r="2"/>
+									<circle class="svg-transparent res-03" cx="88.284" cy="31.716" r="2"/>
+									<circle class="svg-transparent res-04" cx="100" cy="60" r="2"/>
+									<circle class="svg-transparent res-05" cx="88.284" cy="88.284" r="2"/>
+									<circle class="svg-transparent res-06" cx="60" cy="100" r="2"/>
+									<circle class="svg-transparent res-07" cx="31.716" cy="88.284" r="2"/>
+									<circle class="svg-transparent res-08" cx="20" cy="60" r="2"/>
+									<circle class="svg-transparent res-09" cx="31.716" cy="31.716" r="2"/>
+								</svg>
+							</div>
+							<h2 class="small-subtitle">User Research & Validation</h2>
+							<p class="small-body">Involve actual users early and often.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card center">
+						<div class="padded service-box">
+							<div id="svg-product">
+								<svg version="1.1" id="content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 width="120px" height="120px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+									 <g class="ps-rotate">
+										 <circle class="svg-opaque" cx="90" cy="90" r="2"/>
+										 <circle class="svg-opaque" cx="30" cy="90" r="2"/>
+										 <circle class="svg-opaque" cx="70" cy="70" r="2"/>
+										 <circle class="svg-opaque" cx="50" cy="70" r="2"/>
+										 <circle class="svg-opaque" cx="50" cy="50" r="2"/>
+										 <circle class="svg-opaque" cx="30" cy="30" r="2"/>
+										 <circle class="svg-opaque" cx="90" cy="30" r="2"/>
+										 <circle class="svg-opaque" cx="70" cy="50" r="2"/>
+										 <line class="svg-opaque" x1="31.333" y1="31.333" x2="48.625" y2="48.625"/>
+										 <line class="svg-opaque" x1="88.833" y1="31.167" x2="71.583" y2="48.417"/>
+										 <line class="svg-opaque" x1="48.542" y1="71.458" x2="31.458" y2="88.542"/>
+										 <line class="svg-opaque" x1="71.333" y1="71.333" x2="88.625" y2="88.625"/>
+									</g>
+									<circle class="svg-transparent ps-01" cx="30" cy="60" r="5"/>
+									<circle class="svg-transparent ps-01" cx="90" cy="60" r="5"/>
+		 						 <circle class="svg-transparent ps-01" cx="60" cy="30" r="5"/>
+		 						 <circle class="svg-transparent ps-01" cx="60" cy="90" r="5"/>
+								 <circle class="svg-transparent ps-02" cx="38.787" cy="38.787" r="5"/>
+								 <circle class="svg-transparent ps-02" cx="81.213" cy="81.213" r="5"/>
+								 <circle class="svg-transparent ps-02" cx="38.787" cy="81.213" r="5"/>
+								 <circle class="svg-transparent ps-02" cx="81.213" cy="38.787" r="5"/>
+								</svg>
+							</div>
+							<h2 class="small-subtitle">Product & Service Design</h2>
+							<p class="small-body">Balance business, behavior, beauty, and technology.</p>
+					</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card center">
+						<div class="padded service-box">
+							<div id="svg-system">
+								<svg version="1.1" id="content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 width="120px" height="120px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+									<circle class="svg-transparent sys-01" cx="50" cy="30" r="5"/>
+		 							<line class="svg-transparent sys-02" x1="45" y1="30" x2="35" y2="30"/>
+		 							<circle class="svg-transparent sys-03" cx="30" cy="30" r="5"/>
+		 							<line class="svg-transparent sys-04" x1="30" y1="35" x2="30" y2="45"/>
+		 							<circle class="svg-transparent sys-05" cx="30" cy="50" r="5"/>
+		 							<line class="svg-transparent sys-06" x1="35" y1="50" x2="45" y2="50"/>
+		 							<circle class="svg-transparent sys-07" cx="50" cy="50" r="5"/>
+		 							<line class="svg-transparent sys-08" x1="50" y1="65" x2="50" y2="55"/>
+		 							<circle class="svg-transparent sys-09" cx="50" cy="70" r="5"/>
+		 							<line class="svg-transparent sys-10" x1="55" y1="70" x2="65" y2="70"/>
+		 							<circle class="svg-transparent sys-11" cx="70" cy="70" r="5"/>
+		 							<line class="svg-transparent sys-12" x1="75" y1="70" x2="85" y2="70"/>
+		 							<circle class="svg-transparent sys-13" cx="90" cy="70" r="5"/>
+		 							<line class="svg-transparent sys-14" x1="90" y1="75" x2="90" y2="85"/>
+		 							<circle class="svg-transparent sys-15" cx="90" cy="90" r="5"/>
+									<line class="svg-transparent" x1="70" y1="85" x2="70" y2="75"/>
+									<line class="svg-transparent" x1="30" y1="75" x2="30" y2="85"/>
+									<line class="svg-transparent" x1="45" y1="70" x2="35" y2="70"/>
+									<line class="svg-transparent" x1="65" y1="50" x2="55" y2="50"/>
+									<line class="svg-transparent" x1="85" y1="50" x2="75" y2="50"/>
+									<line class="svg-transparent" x1="90" y1="35" x2="90" y2="45"/>
+									<line class="svg-transparent" x1="90" y1="55" x2="90" y2="65"/>
+									<circle class="svg-transparent" cx="70" cy="90" r="5"/>
+									<circle class="svg-transparent" cx="30" cy="90" r="5"/>
+									<circle class="svg-transparent" cx="90" cy="50" r="5"/>
+									<circle class="svg-transparent" cx="30" cy="70" r="5"/>
+									<circle class="svg-transparent" cx="90" cy="30" r="5"/>
+									<circle class="svg-transparent" cx="70" cy="50" r="5"/>
+								</svg>
+							</div>
+							<h2 class="small-subtitle">System <br/> Design</h2>
+							<p class="small-body">Systems don't happen by accident.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card center">
+						<div class="padded service-box">
+							<div id="svg-launch">
+								<svg version="1.1" id="content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 width="120px" height="120px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+		 							<circle class="svg-opaque ls-01" cx="50" cy="50" r="16"/>
+		 							<circle class="svg-opaque ls-02" cx="50" cy="70" r="16"/>
+									<circle class="svg-opaque ls-03" cx="70" cy="50" r="16"/>
+									<circle class="svg-opaque ls-04" cx="70" cy="70" r="16"/>
+								</svg>
+							</div>
+							<h2 class="small-subtitle">Launch and Support Scaling</h2>
+							<p class="small-body">Making experiences real takes more than great design.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section bleed cool-grey-80">
+			<div class="flex container">
+				<div class="col-10 left-1 right-1">
+					<div class="padded center">
+						<h2 class="subtitle">You can count on us to bring expertise in design. We're particularly proud of our accomplishments in the following industries:</h2>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="padded center">
+						<svg version="1.1" id="DESIGNS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 width="64px" height="64px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+							<g>
+								<path class="flatshadows_twee" d="M28,13h-1c0-3.314-2.686-6-6-6h-0.587C19.226,4.069,16.357,2,13,2c-4.418,0-8,3.582-8,8v1
+									c-2.209,0-4,1.791-4,4c0,2.209,1.791,4,4,4h23c1.657,0,3-1.343,3-3S29.657,13,28,13z"/>
+								<polygon class="flatshadows_drie" points="14,9 24,19 11,19 11,17 8,17"/>
+								<polygon class="flatshadows_een" points="8,17 14,9 20,17 17,17 17,30 11,30 11,17"/>
+							</g>
+						</svg>
+					</div>
+				</div>
+				<div class="col-10">
+					<div class="padded">
+						<h2 class="small-subtitle">IOT</h2>
+						<p class="large-body">We pair a passion for technology with a love for exceptional UX to connect real-world products and services with digital experiences. From laser sintering machines to bicycles, we’ve created digital interfaces that improve experiences, not just complicate them.</p>
+					</div>
+			</div>
+			<div class="col-2">
+				<div class="padded center">
+					<svg version="1.1" id="DESIGNS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="64px" height="64px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+						<g>
+							<path class="flatshadows_een" d="M7.031,8l-1.25-5H0v2h4.219l5,20H28v-2H10.781l-0.75-3H29l3-12H7.031z M11,13
+								c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C12,12.552,11.552,13,11,13z M13,16c-0.552,0-1-0.448-1-1
+								c0-0.552,0.448-1,1-1s1,0.448,1,1C14,15.552,13.552,16,13,16z M15,13c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1
+								C16,12.552,15.552,13,15,13z M17,16c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C18,15.552,17.552,16,17,16z M19,13
+								c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C20,12.552,19.552,13,19,13z M21,16c-0.552,0-1-0.448-1-1
+								c0-0.552,0.448-1,1-1s1,0.448,1,1C22,15.552,21.552,16,21,16z M23,13c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1
+								C24,12.552,23.552,13,23,13z M25,16c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C26,15.552,25.552,16,25,16z M27,13
+								c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1C28,12.552,27.552,13,27,13z"/>
+							<circle class="flatshadows_vier" cx="12" cy="28" r="2"/>
+							<path class="flatshadows_vijf" d="M12,26c-0.552,0-1.052,0.224-1.414,0.586l2.828,2.828C13.776,29.052,14,28.552,14,28
+								C14,26.895,13.105,26,12,26z"/>
+							<circle class="flatshadows_een" cx="12" cy="28" r="1"/>
+							<path class="flatshadows_twee" d="M12,27c-0.276,0-0.526,0.112-0.707,0.293l1.414,1.414C12.888,28.526,13,28.276,13,28
+								C13,27.448,12.552,27,12,27z"/>
+							<circle class="flatshadows_vier" cx="25" cy="28" r="2"/>
+							<path class="flatshadows_vijf" d="M25,26c-0.552,0-1.052,0.224-1.414,0.586l2.828,2.828C26.776,29.052,27,28.552,27,28
+								C27,26.895,26.105,26,25,26z"/>
+							<circle class="flatshadows_een" cx="25" cy="28" r="1"/>
+							<path class="flatshadows_twee" d="M25,27c-0.276,0-0.526,0.112-0.707,0.293l1.414,1.414C25.888,28.526,26,28.276,26,28
+								C26,27.448,25.552,27,25,27z"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<div class="col-10">
+				<div class="padded">
+					<h2 class="small-subtitle">Consumer Products and Services</h2>
+					<p class="large-body">From onboarding experiences to long-term engagement, we work with brands to meaningfully engage consumers in their everyday lives. We’ve designed experiences that encourage confidence, that inspire adventure, and sometimes that just get out of the way so the user can enjoy life.</p>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="padded center">
+					<svg version="1.1" id="DESIGNS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="64px" height="64px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+						<g>
+							<path class="flatshadows_twee" d="M28.973,16.973L16,4h-5L7,0L0,7l4,4v5l12.973,12.973c0.386,0.401,0.926,0.652,1.527,0.652
+								c1.174,0,2.125-0.951,2.125-2.125c0-0.573-0.229-1.091-0.598-1.473c0.382,0.369,0.9,0.598,1.473,0.598
+								c1.174,0,2.125-0.951,2.125-2.125c0-0.573-0.229-1.091-0.598-1.473c0.382,0.369,0.9,0.598,1.473,0.598
+								c1.174,0,2.125-0.951,2.125-2.125c0-0.573-0.229-1.091-0.598-1.473c0.382,0.369,0.9,0.598,1.473,0.598
+								c1.174,0,2.125-0.951,2.125-2.125C29.625,17.899,29.373,17.359,28.973,16.973z"/>
+							<path class="flatshadows_een" d="M17.5,23.5c-0.821-0.822-2.147-0.827-2.978-0.022c0.805-0.831,0.8-2.157-0.022-2.978
+								c-0.821-0.822-2.147-0.827-2.978-0.022c0.805-0.831,0.8-2.157-0.022-2.978c-0.821-0.822-2.147-0.827-2.978-0.022
+								c0.805-0.831,0.8-2.157-0.022-2.978c-0.829-0.83-2.176-0.83-3.005,0l-2.498,2.498c-0.83,0.83-0.83,2.175,0,3.005
+								c0.415,0.415,0.958,0.623,1.502,0.623c0.533,0,1.064-0.202,1.476-0.601c-0.805,0.831-0.8,2.157,0.022,2.978
+								c0.415,0.415,0.958,0.623,1.502,0.623c0.533,0,1.064-0.202,1.476-0.601c-0.805,0.831-0.8,2.157,0.022,2.978
+								c0.415,0.415,0.958,0.623,1.502,0.623c0.533,0,1.064-0.202,1.476-0.601c-0.805,0.831-0.8,2.157,0.022,2.978
+								c0.415,0.415,0.958,0.623,1.502,0.623s1.088-0.208,1.502-0.623l2.498-2.498C18.33,25.675,18.33,24.329,17.5,23.5z"/>
+							<path class="flatshadows_drie" d="M20.027,26.027c0.001,0.001,0.002,0.001,0.002,0.002L17.5,23.5c0.83,0.83,0.83,2.175,0,3.005
+								l-1.498,1.498l0.971,0.971c0.386,0.401,0.926,0.652,1.527,0.652c1.174,0,2.125-0.951,2.125-2.125
+								C20.625,26.927,20.396,26.409,20.027,26.027z"/>
+							<path class="flatshadows_een" d="M25,0l-4,4h-5l-4.515,4.515c-0.82,0.82-0.82,2.15,0,2.97l0.03,0.03c0.82,0.82,2.15,0.82,2.97,0
+								L19,7l9,9v-5l4-4L25,0z"/>
+							<path class="flatshadows_drie" d="M16.485,13.515L21,9l-2-2l-4.515,4.515c-0.82,0.82-2.15,0.82-2.97,0l1.97,1.97l0.03,0.03
+								C14.335,14.335,15.665,14.335,16.485,13.515z"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<div class="col-10">
+				<div class="padded">
+					<h2 class="small-subtitle">Social Causes</h2>
+					<p class="large-body">We work with social causes to bring thoughtful experiences to the people that need it most. Most recently, we worked with Corrio to design a brand and messaging strategy that reaches inmates and helps lower recidivism by providing connection with the outside world.</p>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="padded center">
+					<svg version="1.1" id="DESIGNS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="64px" height="64px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+						<g>
+							<path class="flatshadows_vier" d="M25,14c1.657,0,2,1.343,2,3c0,1.304-2,5-2,5h-2c0,0,0-3.696,0-5v-3H25z M7,14
+								c-1.657,0-2,1.343-2,3c0,1.304,2,5,2,5h2c0,0,0-3.696,0-5v-3H7z"/>
+							<path class="flatshadows_twee" d="M25,13c0,5-2.373,7-9,7s-9-2-9-7c0-6.627,6-13,9-13S25,6.373,25,13z"/>
+							<path class="flatshadows_drie" d="M25,13c0,2.451-0.575,4.178-1.938,5.305l-9.184-9.184c-1.172-1.172-1.172-3.071,0-4.243
+								s3.071-1.172,4.243,0l6.797,6.797C24.969,12.115,25,12.557,25,13z M17.394,19.967c1.545-0.074,2.715-0.272,3.781-0.634
+								l-3.781-3.781L17.394,19.967z"/>
+							<path class="flatshadows_vier" d="M19,7c0,1.657-1.343,3-3,3s-3-1.343-3-3s1.343-3,3-3S19,5.343,19,7z M18,18c0-1.657-0.343-3-2-3
+								s-2,1.343-2,3c0,1.304,1,5,1,5h2C17,23,18,19.304,18,18z"/>
+							<path class="flatshadows_een" d="M16,25c-2,0-3,1.343-3,3c0,1.981,3,4,3,4s3-2,3-4C19,26.343,18,25,16,25z"/>
+							<circle class="flatshadows_een" cx="16" cy="7" r="2"/>
+							<path class="flatshadows_twee" d="M16,25c-1.805,0-2,1.399-2,2c0,0.88,1.129,2.042,2.002,2.753C16.873,29.047,18,27.889,18,27
+								C18,26.399,17.805,25,16,25z"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<div class="col-10">
+				<div class="padded">
+					<h2 class="small-subtitle">Emerging Technologies</h2>
+					<p class="large-body">Designing intuitive interfaces for new technologies poses an exciting challenge. We’ve created experiences to make 3D printing and scanning more accessible to consumers and to replace human services with self-guided robotic tools.</p>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="padded center">
+					<svg version="1.1" id="DESIGNS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="64px" height="64px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+						<g>
+							<path class="flatshadows_drie" d="M4.757,3.243L3.243,4.757c-2.343,2.343-2.343,6.142,0,8.485l15.515,15.515
+								c2.343,2.343,6.142,2.343,8.485,0l1.515-1.515c2.343-2.343,2.343-6.142,0-8.485L13.243,3.243C10.899,0.899,7.101,0.899,4.757,3.243
+								z"/>
+							<path class="flatshadows_twee" d="M3.243,27.243l1.515,1.515c2.343,2.343,6.142,2.343,8.485,0l15.515-15.515
+								c2.343-2.343,2.343-6.142,0-8.485l-1.515-1.515c-2.343-2.343-6.142-2.343-8.485,0L3.243,18.757
+								C0.899,21.101,0.899,24.899,3.243,27.243z"/>
+
+								<rect x="14.429" y="20.793" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 51.9056 21.5)" class="flatshadows_vier" width="14.142" height="1.414"/>
+							<path class="flatshadows_drie" d="M17,22c0,0.552-0.448,1-1,1c-0.552,0-1-0.448-1-1s0.448-1,1-1C16.552,21,17,21.448,17,22z M19,18
+								c-0.552,0-1,0.448-1,1s0.448,1,1,1s1-0.448,1-1S19.552,18,19,18z M22,15c-0.552,0-1,0.448-1,1c0,0.552,0.448,1,1,1s1-0.448,1-1
+								C23,15.448,22.552,15,22,15z M19,12c-0.552,0-1,0.448-1,1s0.448,1,1,1s1-0.448,1-1S19.552,12,19,12z M16,9c-0.552,0-1,0.448-1,1
+								s0.448,1,1,1c0.552,0,1-0.448,1-1S16.552,9,16,9z M13,12c-0.552,0-1,0.448-1,1s0.448,1,1,1s1-0.448,1-1S13.552,12,13,12z M16,15
+								c-0.552,0-1,0.448-1,1c0,0.552,0.448,1,1,1c0.552,0,1-0.448,1-1C17,15.448,16.552,15,16,15z M10,15c-0.552,0-1,0.448-1,1
+								c0,0.552,0.448,1,1,1s1-0.448,1-1C11,15.448,10.552,15,10,15z M13,18c-0.552,0-1,0.448-1,1s0.448,1,1,1s1-0.448,1-1
+								S13.552,18,13,18z"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<div class="col-10">
+				<div class="padded">
+					<h2 class="small-subtitle">Healthcare</h2>
+					<p class="large-body">We’ve worked with partners to bring to life healthcare solutions in both personal and professional contexts. We’ve designed systems that ensure the healthy development of babies, that encourage the maintenance of good oral health, and that improve the efficiency of operating rooms.</p>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="padded center">
+					<svg version="1.1" id="DESIGNS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="64px" height="64px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+						<g>
+							<path class="flatshadows_een" d="M16,5l-9,9v18h18V14L16,5z M16,12c-0.552,0-1-0.448-1-1c0-0.552,0.448-1,1-1s1,0.448,1,1
+								C17,11.552,16.552,12,16,12z"/>
+							<circle class="flatshadows_drie" cx="16" cy="11" r="2"/>
+							<path class="flatshadows_vijf" d="M19,18h-6v-1h6V18z M19,19h-6v1h6V19z M19,21h-6v1h6V21z M16,0c-3.314,0-6,2.686-6,6
+								c0,1.402,0.485,2.688,1.29,3.71l1.43-1.43C12.269,7.632,12,6.848,12,6c0-2.206,1.794-4,4-4s4,1.794,4,4s-1.794,4-4,4
+								c-0.552,0-1,0.448-1,1c0,0.552,0.448,1,1,1c3.314,0,6-2.686,6-6S19.314,0,16,0z"/>
+							<path class="flatshadows_vier" d="M16,12c-0.276,0-0.526-0.112-0.707-0.293l1.219,1.219c0.627-0.167,1.133-0.628,1.359-1.227
+								C17.281,11.892,16.654,12,16,12z"/>
+							<path class="flatshadows_twee" d="M20.71,9.71c-0.742,0.941-1.762,1.647-2.932,2.012c0.03-0.009,0.063-0.013,0.093-0.023
+								c-0.226,0.599-0.731,1.06-1.359,1.227L25,21.414V14L20.71,9.71z"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<div class="col-10">
+				<div class="padded">
+					<h2 class="small-subtitle">Retail</h2>
+					<p class="large-body">We’ve designed experiences that bring rich data and artificial intelligence to brick and mortar stores, and others that bring the rich feel of the dressing room into the user’s living room.</p>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="padded center">
+					<svg version="1.1" id="DESIGNS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="64px" height="64px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+						<g>
+							<circle class="flatshadows_twee" cx="16" cy="16" r="14"/>
+							<path class="flatshadows_drie" d="M29.566,12.595l-5.08-5.08l-0.592,0.592l-2.988-2.988l-1.686,1.686l-2.5-2.5l-2.524,2.524
+								l-1.657-1.657l-7.363,7.363l1.657,1.657L4.303,16.72l2.5,2.5l-1.684,1.684l2.988,2.988l-0.593,0.593l5.08,5.08
+								C13.687,29.839,14.823,30,16,30c7.732,0,14-6.268,14-14C30,14.823,29.839,13.687,29.566,12.595z"/>
+							<path class="flatshadows_vier" d="M15,27v-1c0-0.552,0.448-1,1-1h0c0.552,0,1,0.448,1,1v1c0,0.552-0.448,1-1,1h0
+								C15.448,28,15,27.552,15,27z M20.592,27.087L20.592,27.087c0.51-0.211,0.753-0.796,0.541-1.307l-0.383-0.924
+								c-0.211-0.51-0.796-0.753-1.307-0.541l0,0c-0.51,0.211-0.753,0.796-0.541,1.307l0.383,0.924
+								C19.497,27.056,20.082,27.298,20.592,27.087z M24.485,24.485L24.485,24.485c0.391-0.391,0.391-1.024,0-1.414l-0.707-0.707
+								c-0.391-0.391-1.024-0.391-1.414,0l0,0c-0.391,0.391-0.391,1.024,0,1.414l0.707,0.707C23.462,24.876,24.095,24.876,24.485,24.485z
+								 M27.087,20.592L27.087,20.592c0.211-0.51-0.031-1.095-0.541-1.307l-0.924-0.383c-0.51-0.211-1.095,0.031-1.307,0.541l0,0
+								c-0.211,0.51,0.031,1.095,0.541,1.307l0.924,0.383C26.29,21.345,26.875,21.102,27.087,20.592z"/>
+							<path class="flatshadows_een" d="M6,17H5c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h1c0.552,0,1,0.448,1,1v0
+								C7,16.552,6.552,17,6,17z M28,16L28,16c0-0.552-0.448-1-1-1h-1c-0.552,0-1,0.448-1,1v0c0,0.552,0.448,1,1,1h1
+								C27.552,17,28,16.552,28,16z M16,7L16,7c0.552,0,1-0.448,1-1V5c0-0.552-0.448-1-1-1h0c-0.552,0-1,0.448-1,1v1
+								C15,6.552,15.448,7,16,7z M12.556,7.685L12.556,7.685c0.51-0.211,0.753-0.796,0.541-1.307l-0.383-0.924
+								c-0.211-0.51-0.796-0.753-1.307-0.541l0,0c-0.51,0.211-0.753,0.796-0.541,1.307l0.383,0.924
+								C11.461,7.654,12.046,7.896,12.556,7.685z M9.636,9.636L9.636,9.636c0.391-0.391,0.391-1.024,0-1.414L8.929,7.515
+								c-0.391-0.391-1.024-0.391-1.414,0l0,0c-0.391,0.391-0.391,1.024,0,1.414l0.707,0.707C8.612,10.027,9.246,10.027,9.636,9.636z
+								 M7.685,12.556L7.685,12.556c0.211-0.51-0.031-1.095-0.541-1.307L6.22,10.867c-0.51-0.211-1.095,0.031-1.307,0.541l0,0
+								c-0.211,0.51,0.031,1.095,0.541,1.307l0.924,0.383C6.889,13.308,7.474,13.066,7.685,12.556z M7.685,19.444L7.685,19.444
+								c-0.211-0.51-0.796-0.753-1.307-0.541l-0.924,0.383c-0.51,0.211-0.753,0.796-0.541,1.307l0,0c0.211,0.51,0.796,0.753,1.307,0.541
+								l0.924-0.383C7.654,20.539,7.896,19.954,7.685,19.444z M27.087,11.408L27.087,11.408c-0.211-0.51-0.796-0.753-1.307-0.541
+								l-0.924,0.383c-0.51,0.211-0.753,0.796-0.541,1.307l0,0c0.211,0.51,0.796,0.753,1.307,0.541l0.924-0.383
+								C27.056,12.503,27.298,11.918,27.087,11.408z M9.636,22.364L9.636,22.364c-0.391-0.391-1.024-0.391-1.414,0l-0.707,0.707
+								c-0.391,0.391-0.391,1.024,0,1.414l0,0c0.391,0.391,1.024,0.391,1.414,0l0.707-0.707C10.027,23.388,10.027,22.754,9.636,22.364z
+								 M24.485,7.515L24.485,7.515c-0.391-0.391-1.024-0.391-1.414,0l-0.707,0.707c-0.391,0.391-0.391,1.024,0,1.414l0,0
+								c0.391,0.391,1.024,0.391,1.414,0l0.707-0.707C24.876,8.538,24.876,7.905,24.485,7.515z M12.556,24.315L12.556,24.315
+								c-0.51-0.211-1.095,0.031-1.307,0.541l-0.383,0.924c-0.211,0.51,0.031,1.095,0.541,1.307l0,0c0.51,0.211,1.095-0.031,1.307-0.541
+								l0.383-0.924C13.308,25.111,13.066,24.526,12.556,24.315z M20.592,4.913L20.592,4.913c-0.51-0.211-1.095,0.031-1.307,0.541
+								l-0.383,0.924c-0.211,0.51,0.031,1.095,0.541,1.307l0,0c0.51,0.211,1.095-0.031,1.307-0.541l0.383-0.924
+								C21.345,5.71,21.102,5.125,20.592,4.913z"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<div class="col-10">
+				<div class="padded">
+					<h2 class="small-subtitle">Smart Home</h2>
+					<p class="large-body">We’ve worked with large corporates and small startups to improve the places we live and work. Beyond the typical automations, deploying sensors helps users track and understand their environmental conditions. Precise but simple air quality optimization makes the home more comfortable, without making it feel more high-tech.</p>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="padded center">
+					<svg version="1.1" id="DESIGNS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="64px" height="64px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+						<g>
+							<g>
+								<rect y="4" class="flatshadows_vijf" width="32" height="24"/>
+								<g>
+									<rect x="2" y="22" class="flatshadows_vijf" width="2" height="4"/>
+									<rect x="4" y="18" class="flatshadows_vijf" width="2" height="8"/>
+									<rect x="8" y="12" class="flatshadows_vijf" width="2" height="14"/>
+									<rect x="10" y="15" class="flatshadows_vijf" width="2" height="11"/>
+									<rect x="14" y="10" class="flatshadows_vijf" width="2" height="16"/>
+									<rect x="16" y="12" class="flatshadows_vijf" width="2" height="14"/>
+									<rect x="20" y="10" class="flatshadows_vijf" width="2" height="16"/>
+									<rect x="22" y="6" class="flatshadows_vijf" width="2" height="20"/>
+									<rect x="26" y="8" class="flatshadows_vijf" width="2" height="18"/>
+									<rect x="28" y="10" class="flatshadows_vijf" width="2" height="16"/>
+								</g>
+								<polygon class="flatshadows_vijf" points="8,28 4,28 2,26 6,26"/>
+								<polygon class="flatshadows_vijf" points="14,28 10,28 8,26 12,26"/>
+								<polygon class="flatshadows_vijf" points="20,28 16,28 14,26 18,26"/>
+								<polygon class="flatshadows_vijf" points="26,28 22,28 20,26 24,26"/>
+								<polygon class="flatshadows_vijf" points="32,28 28,28 26,26 30,26"/>
+							</g>
+							<g>
+								<rect y="4" class="flatshadows_een" width="32" height="24"/>
+								<g>
+									<rect x="2" y="22" class="flatshadows_drie" width="2" height="4"/>
+									<rect x="4" y="18" class="flatshadows_vier" width="2" height="8"/>
+									<rect x="8" y="12" class="flatshadows_drie" width="2" height="14"/>
+									<rect x="10" y="15" class="flatshadows_vier" width="2" height="11"/>
+									<rect x="14" y="10" class="flatshadows_drie" width="2" height="16"/>
+									<rect x="16" y="12" class="flatshadows_vier" width="2" height="14"/>
+									<rect x="20" y="10" class="flatshadows_drie" width="2" height="16"/>
+									<rect x="22" y="6" class="flatshadows_vier" width="2" height="20"/>
+									<rect x="26" y="8" class="flatshadows_drie" width="2" height="18"/>
+									<rect x="28" y="10" class="flatshadows_vier" width="2" height="16"/>
+								</g>
+								<polygon class="flatshadows_twee" points="8,28 4,28 2,26 6,26"/>
+								<polygon class="flatshadows_twee" points="14,28 10,28 8,26 12,26"/>
+								<polygon class="flatshadows_twee" points="20,28 16,28 14,26 18,26"/>
+								<polygon class="flatshadows_twee" points="26,28 22,28 20,26 24,26"/>
+								<polygon class="flatshadows_twee" points="32,28 28,28 26,26 30,26"/>
+							</g>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<div class="col-10">
+				<div class="padded">
+					<h2 class="small-subtitle">Business Solutions</h2>
+					<p class="large-body">Designing business to business solutions requires organizational empathy. We’ve designed solutions for businesses to increase and promote internal knowledge sharing, to optimize sales based on customer analytics, and to capture and communicate decisions through long development processes.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section bleed turquoise-palegrass">
+		<div class="flex container">
+			<div class="col-10 left-1 right-1">
+				<div class="padded center">
+					<h2 class="subtitle">Have a project or an idea you'd like to collaborate with us on? Interested in what we can do for you?</h2>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="padded">
+					<a class="emaillink" href="mailto:collaborate@theartificial.nl">
+						<p class="services-button">Get in Touch</p>
+					</a>
+				</div>
+			</div>
+
+
+</section>
