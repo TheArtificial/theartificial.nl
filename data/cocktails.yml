@@ -1467,6 +1467,29 @@
     <p>To make the herby simple syrup, mix 400 ml sugar with 600 ml water in a large saucepan. Add sage, rosemary, and thyme. Boil for 10 – 15 minutes. Inhale deeply. Remove from the heat and let cool before straining into a bottle for serving.</p>
     <p>Measure and pour the whiskey and simple syrup into a glass with ice. Add the splash of bitters and stir. Garnish with the rosemary and thyme and drink up!</p>
 -
+  slug: theorangegraveyard
+  name: The Orange Graveyard
+  date: 2018-03-29
+  glass: theorangegraveyard
+  contents: theorangegraveyard
+  author: shannon
+  rating: 4
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>With Easter approaching and our basket of fruits not decreasing in volume, we decided to mix a delicious cocktail with enough vitamin C to get us through the weekend without getting sick. Yes! Again, there are germs hanging around the office we hope that spring arrives soon so that this is over…a little bit of sun is all we need.</p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>2 parts citrus juice</li>
+      <li>2 parts mezcal</li>
+      <li>1 part apricot jam</li>
+      <li>a splash of firewater bitters</li>
+      <li>warm salt (optional)</li>
+      <li>chilly powder</li>            
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>To make the citrus juice, squeeze some oranges, limes, lemons, and mandarins in a pitcher until you have enough to mix the cocktails.</p> <p>Dip the edge of the into the chilly powder and warm salt and move it slowly in a circle to make sure you are getting good coverage on the rim.</p>
+    <p>In a cocktail shaker with ice, mix the citrus juice, mezcal, apricot jam, and bitters. Pour over the glass with chilly rim and enjoy!</p>
+-
   slug: thekatinka
   name: The Katinka
   date: 2016-10-21
