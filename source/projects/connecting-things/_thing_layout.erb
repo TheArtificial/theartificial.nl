@@ -118,10 +118,10 @@ function renderCurrentThing() {
   if ($thing.attr('src') != newSrc) {
     $thing.attr('src', newSrc);
     $thing.on('load', function() {
-      $thing.fadeTo(200,1);
+      $thing.stop().fadeTo(200,1);
     });
   } else {
-    $thing.fadeTo(0,1);
+    $thing.stop().fadeTo(0,1);
   }
   $thing.data('step', step);
   $thing.attr('title', 'step ' + (step+1));
@@ -130,7 +130,7 @@ function renderCurrentThing() {
 function swapThing() {
   newSrc = findLastThingPath(currentStep);
   if ($thing.attr('src') != newSrc) {
-    $thing.fadeTo(50,0.0, renderCurrentThing);
+    $thing.stop().fadeTo(50,0.0, renderCurrentThing);
   }
 }
 
@@ -154,10 +154,10 @@ function renderCurrentScreen() {
   if ($screen.attr('src') != newSrc) {
     $screen.attr('src', newSrc);
     $screen.on('load', function() {
-      $screen.fadeTo(200,1);
+      $screen.stop().fadeTo(200,1);
     });
   } else {
-    $screen.fadeTo(0,1);
+    $screen.stop().fadeTo(0,1);
   }
   $screen.data('step', step);
   $screen.attr('title', 'step ' + (step+1));
@@ -166,7 +166,7 @@ function renderCurrentScreen() {
 function swapScreen() {
   newSrc = findLastScreenPath(currentStep);
   if ($screen.attr('src') != newSrc) {
-    $screen.fadeTo(50,0.0, renderCurrentScreen);
+    $screen.stop().fadeTo(50,0.0, renderCurrentScreen);
   }
 }
 
