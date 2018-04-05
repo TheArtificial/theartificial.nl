@@ -3,7 +3,7 @@ layout: projects/connecting-things/_thing_layout
 title: Apple Pencil
 preview: thing/close.png
 date: 2018-02-27
-published: false
+published: true
 ---
 <p>
 Apple Pencil is a pressure-sensitive stylus to write, sketch, paint, draw and complete basic gestures such as tap or swipe on an iPad Pro. The Bluetooth Pencil works with a variety of apps such as Evernote, Adobe Apps, Sketch, LiquidText, Apple Photos and more. It has been released by Apple in 2015.
@@ -47,13 +47,12 @@ var flowSteps = [
   {
     caption: "User unplugs Thing to iPad - Thing and OS pair - Device shows home screen",
     thingImg: "thing/close.png",
-    networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_pair.json"],
+    networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_pair.json", "ThingOS_physical_break.json"],
     screenImg: "screens/1_home.png"
   },
   {
     caption: "Thing broadcasts Bluetooth - Thing and OS connect - OS settings ",
-    thingImg: "thing/close.png",
-    networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_verified.json"],
+    networkAnimations: ["ThingOS_verified.json", "actors/noCloud_noWifi_noApp.json"],
     screenImg: "screens/3_connected.png"
   }
 ]
