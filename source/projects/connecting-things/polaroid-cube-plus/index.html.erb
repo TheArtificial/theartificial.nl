@@ -55,14 +55,9 @@ var flowSteps = [
     screenImg: "screens/04_gotosettings.png"
   },
   {
-    caption: "Thing emits ad hoc Wi-Fi connection - OS searches for Wi-Fi networks - User selects Thing's network in OS settings",
+    caption: "Thing emits ad hoc Wi-Fi connection - OS and Thing are in discovery mode - User selects Thing's network in OS settings",
     networkAnimations: ["actors/noCloud_noWifi.json", "OS_listensAdHoc.json"],
     screenImg: "screens/05_settings-choose.png"
-  },
-  {
-    caption: "Thing emits ad hoc Wi-Fi connection - OS and Thing are in discovery mode - OS is connecting to Thing's network",
-    networkAnimations: ["actors/noCloud_noWifi.json", "stills/ThingOS_discoveryAdHoc.json"],
-    screenImg: "screens/05_settings-progress.png"
   },
   {
     caption: "Thing emits ad hoc Wi-Fi connection - OS and Thing are in discovery mode - User enters Thing's network password",
@@ -72,7 +67,7 @@ var flowSteps = [
   {
     caption: "Thing emits ad hoc Wi-Fi connection - Thing and OS are connecting - Thing and OS are connecting in OS Settings",
     networkAnimations: ["actors/noCloud_noWifi.json", "ThingOS_verifiedAdHoc.json"],
-    screenImg: "screens/07_settings.gif"
+    screenImg: "screens/07_settings-connect.gif"
   },
   {
     caption: "Thing emits ad hoc Wi-Fi connection - Thing and App connect - App shows all is set",
