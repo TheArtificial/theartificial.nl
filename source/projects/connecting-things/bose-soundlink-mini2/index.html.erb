@@ -1,7 +1,7 @@
 ---
 layout: projects/connecting-things/_thing_layout
 title: Bose SoundLink Mini II
-preview: thing/thing.png
+preview: thing/front.png
 date: 2018-02-27
 published: false
 ---
@@ -33,10 +33,22 @@ The speaker is working steadily if the device is located within less than 9 mete
 <script>
 var flowSteps = [
   {
-    caption: "App logs in to account on Cloud",
-    thingImg: "thing/thing.png",
-    networkAnimations: ["Actors.json", "AppCloud.json"],
-    screenImg: "screens/login.png"
+    caption: "User presses Bluetooth button on Thing - Thing and OS are in discovery mode - OS settings finds Thing",
+    thingImg: "thing/top_blink.gif",
+    networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_dscovery.json"],
+    screenImg: "screens/01.gif"
+  },
+  {
+    caption: "Thing LED turns white - Thing and OS pair - User selects Thing in OS settings list",
+    thingImg: "thing/top_white.png",
+    networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_pair.json"],
+    screenImg: "screens/02.gif"
+  },
+  {
+    caption: "Thing LED turns off - Thing and OS connect - OS settings show Thing in connected devices",
+    thingImg: "thing/top_off.png",
+    networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_verified.json"],
+    screenImg: "screens/03.png"
   }
 ]
 </script>
