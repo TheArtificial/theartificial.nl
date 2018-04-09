@@ -33,25 +33,25 @@ Sometimes, the Apple Pencil just turns out to be disconnecting without notifying
 <script>
 var flowSteps = [
   {
-    caption: "Thing cap is closed - Thing and OS are in discovery mode - Device shows home screen",
+    caption:"Pen cap is closed, Pen and iPad are in discovery mode",
     thingImg: "thing/close.png",
     networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_dscovery.json"],
     screenImg: "screens/1_home.png"
   },
   {
-    caption: "User plugs Thing into device - Thing and OS physically connect - OS requests pairing permission",
+    caption:"User plugs Pen in iPad, user confirms pairing request",
     thingImg: "thing/open.png",
     networkAnimations: ["actors/noCloud_noWifi_noApp.json", "stills/ThingOS_discovery.json", "ThingOS_physical.json"],
     screenImg: "screens/2_pair.png"
   },
   {
-    caption: "User unplugs Thing to iPad - Thing and OS pair - Device shows home screen",
+    caption: "User unplugs Pen from iPad, Pen and iPad are paired",
     thingImg: "thing/close.png",
     networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_pair.json", "ThingOS_physical_break.json"],
     screenImg: "screens/1_home.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - Thing and OS connect - OS settings ",
+    caption: "Pen and iPad are connected",
     networkAnimations: ["ThingOS_verified.json", "actors/noCloud_noWifi_noApp.json"],
     screenImg: "screens/3_connected.png"
   }
