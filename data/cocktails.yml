@@ -826,6 +826,28 @@
     <h4 class="recipe-section">Method</h4>
     <p>Combine all ingredients and stir with ice. Pour into a copper mug and go crazy with your garnishes.</p>
 -
+  slug: mezcaloni
+  name: Mezcaloni
+  date: 2018-04-06
+  glass: mezcaloni
+  contents: mezcaloni
+  author: natalia,ariane
+  rating: 3
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>All of us have favorite drinks and we also like to try new things, after Shannon tried a Negroni made with mezcal instead of gin she challenged Ariane and Natalia to try to replicate it and since Ariane was in a no-gin spree they decided to give it a go.</p> 
+    <p>The result was good but we thought the taste of alcohol was too strong and the smokiness of the mezcal was brought down by the bitterness of the Campari, no one messes with Natalia’s love for mezcal.</p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>1 part mezcal</li>
+      <li>1 part vermouth</li>
+      <li>1 part Campari</li>
+      <li>a splash of firewater bitters</li>
+      <li>an orange slice </li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>Stir into a glass over ice and mix well, garnish with an orange slice.</p>
+-
   slug: mezcaloldfashioned
   name: Mezcal Old-Fashioned
   date: 2017-01-27

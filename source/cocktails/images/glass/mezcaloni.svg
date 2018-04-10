@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="800px"
+	 height="870px" viewBox="0 0 800 870" style="enable-background:new 0 0 800 870;" xml:space="preserve">
+<style type="text/css">
+	.Yellow{fill:#F2F230;}
+	.Green{fill:#3F7F19;}
+	.st0{fill:#1A1A1A;}
+	.st1{fill:#FFFFFF;}
+	.st2{opacity:0.21;fill:#DE0E00;}
+	.st3{fill:#3F7F19;}
+	.st4{fill:#F2F230;}
+	.st5{fill:none;stroke:#F2F230;stroke-width:16;stroke-linecap:round;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#F2F230;stroke-width:22;stroke-linecap:round;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#3F7F19;stroke-width:26;stroke-linecap:round;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#3F7F19;stroke-width:16;stroke-linecap:round;stroke-miterlimit:10;}
+	.st9{fill:none;stroke:#F2F230;stroke-width:20;stroke-linecap:round;stroke-miterlimit:10;}
+	.st10{opacity:0.2;}
+	.st11{fill:none;}
+</style>
+<g id="directions">
+</g>
+<g id="vectors">
+	<circle class="Green" cx="575.653" cy="280.822" r="160"/>
+	<circle class="Yellow" cx="575.653" cy="280.822" r="140"/>
+	<path class="Green" d="M508.019,235.344c-5.657-5.657-5.655-16.968,0.002-22.625s16.968-5.659,22.625-0.002
+		c9.186,9.186,10.914,25.831,11.238,31.766c0.065,1.189-0.91,2.165-2.1,2.1C533.85,246.257,517.205,244.53,508.019,235.344z
+		 M611.521,315.062c-1.189-0.065-2.165,0.91-2.099,2.1c0.325,5.935,2.052,22.58,11.238,31.766
+		c5.657,5.657,16.968,5.655,22.625-0.002s5.659-16.968,0.002-22.625C634.102,317.114,617.457,315.387,611.521,315.062z
+		 M609.893,244.954c-0.065,1.189,0.91,2.165,2.099,2.1c5.935-0.325,22.58-2.052,31.766-11.238
+		c5.657-5.657,5.655-16.968-0.002-22.625c-5.657-5.657-16.968-5.659-22.625-0.002C611.945,222.374,610.218,239.019,609.893,244.954z
+		"/>
+	<path class="Yellow" d="M583.468,278.865c-0.974-5.152-5.472-8.865-10.716-8.865H227.248c-5.244,0-9.742,3.713-10.716,8.865
+		c-7.943,42.02-36.579,251.951-50.013,351.385c-5.717,42.319,2.514,85.33,23.446,122.551c26.454,47.04,61.715,97.314,72.584,112.559
+		c2.078,2.915,5.436,4.639,9.015,4.639h256.869c3.58,0,6.937-1.724,9.016-4.639c10.869-15.245,46.131-65.519,72.584-112.559
+		c20.932-37.222,29.163-80.232,23.446-122.551C620.047,530.817,591.411,320.885,583.468,278.865z"/>
+</g>
+<g id="masks">
+</g>
+<g id="guides">
+</g>
+</svg>
