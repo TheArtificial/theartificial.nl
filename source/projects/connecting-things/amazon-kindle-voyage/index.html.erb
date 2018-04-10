@@ -6,65 +6,65 @@ date: 2018-03-26
 published: false
 ---
 <p>
-Kindle Voyage is an E-reader marketed by Amazon and released in 2014 in the US. It is equipped to wirelessly connect. Some new generations readers are 3G enabled  The screen uses electronic ink and adaptive light sensor to adjust brightness to provide a comfortable reading experience. The e-reader allows reading, storing e-books, newspapers, magazines and other content but also buying new content.
+Kindle Voyage is an E-reader marketed by Amazon and released in 2014 in the US. It is equipped to wirelessly connect. Some new generations readers are 3G enabled. The screen uses electronic ink and adaptive light sensor to adjust brightness to provide a comfortable reading experience. The e-reader allows reading, storing e-books, newspapers, magazines and other content but also buying new content.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The connection process is </span>easy
 </h2>
 <p>
-Connecting a Kindle is fairly straightforward thanks to the display of the product itself, as opposed to some other products needing to be configured from another device. From the settings of the Kindle, the user first must connect to a wireless Wi-Fi network. Second, from the same settings menu, the user has to log in, or create an Amazon account. Inputting credential while loging in automatically register the Kindle to the user’s Amazon account.
+Connecting a Kindle is fairly straightforward thanks to the display of the product itself, as opposed to some other products needing to be configured from another device. From the settings of the Kindle, the user must first connect to a wireless Wi-Fi network. Then, from the same settings menu, the user has to log in or create an Amazon account. logging in automatically registers the Kindle to the user’s Amazon account.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The security is </span>okay
 </h2>
 <p>
-When the network is protected by a password, it is asked to connect. Amazon accounts are also protected by a password. As the Kindle is not protected by a password, anyone could grab the user’s e-reader and start reading without their permission. However, de-registering a Kindle is possible from the Kindle, a mobile, a computer, or any other device.
+When the home Wi-Fi network is protected by a password, the connection is more secured. An Amazon account is also protected by a password. As the Kindle is not protected by a password, anyone could grab the user’s e-reader and start reading without their permission. De-registering a Kindle is possible from the Kindle, a mobile, a computer, or any other device.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The resilience is </span>okay
 </h2>
 <p>
-Without an access to a Wi-Fi network nor to 3G, no more content can be purchased directly from the Kindle. However, all items previously purchased are accessible offline. Airplane mode preserves battery by preventing the Kindle to connect to the internet.
+Without an access to a Wi-Fi network nor to 3G, no more content can be purchased directly from the Kindle or synced from the cloud. However, all items previously purchased or downloaded are accessible offline. The airplane mode preserves battery by preventing the Kindle to connect to the internet. Kindle remembers several Wi-Fi passwords. Kindle automatically connects to a previous network when in range. If more than one network is in range, Kindle connects to the last one used.
 </p>
 
 <script>
 var flowSteps = [
   {
-    caption: "Thing is off - No connection is established ",
+    caption: "User turns Kindle on",
     thingImg: "thing/00_off.png",
     networkAnimations: ["actors/noApp_noOS.json"]
   },
   {
-    caption: "Thing is on - No connection is established ",
+    caption: "Kindle shows home screen",
     thingImg: "thing/01_home.png",
   },
   {
-    caption: "User goes to App settings - No connection is established ",
+    caption: "User navigates to app settings",
     thingImg:"thing/02_settings.png",
   },
   {
-    caption: "User selects Wi-Fi settings - No connection is established ",
+    caption: "User navigates to Wi-Fi networks",
     thingImg:"thing/03_wi-fi_settings.png",
   },
   {
-    caption:"User connects to Home Wi-Fi - Thing and home Wi-Fi connect",
+    caption:"Kindle and Home Wi-Fi are connected",
     thingImg:"thing/04_wi-fi_network.png",
     networkAnimations:[ "actors/noApp_noOS.json","ThingWifi_wifi.json"]
   },
   {
-    caption: "User goes to register settings - Thing and home Wi-Fi are connected",
+    caption: "User navigates to register settings",
     thingImg: "thing/05_amazon_login.png",
     networkAnimations:["actors/noApp_noOS.json","stills/ThingWifi_wifi.json"]
   },
   {
-    caption:"User Registers Kindle to Amazon Account - Thing and home Wi-Fi are connected",
+    caption:"User registers Kindle to Amazon Account",
     thingImg: "thing/06_register_kindle.png",
   },
   {
-    caption:"Thing is connected - Thing and User register to Cloud",
+    caption:"Kindle authenticates with Amazon Cloud",
     thingImg: "thing/07_settings.png",
     networkAnimations:["actors/noApp_noOS.json","stills/ThingWifi_wifi.json", "ThingWiFiCloud_both.json"]
   }
