@@ -6,91 +6,91 @@ date: 2018-03-26
 published: false
 ---
 <p>
-Echo Show is a voice-controlled device with a display and powerful speakers using Amazon’s Alexa assistant. Released in 2017 in the US, the product is capable of basic skills based on voice interactions such as showing or reading an article, showing videos or security cameras, video-calling the user’s contacts, setting and viewing timers, but also more elaborated skills involving peripherals or other services. For instance, Echo Show could turn on Netflix on TV, or control lighting and heating.
+Echo Show is a voice-controlled device with a display and speakers using Amazon’s Alexa assistant. Released in 2017 in the US, the product is capable of basic skills based on voice interactions such as showing or reading an article, showing videos or security cameras, video-calling the user’s contacts, setting and viewing timers, but also more elaborated skills involving peripherals or other services. For instance, Echo Show could turn on Netflix on TV, or control lighting and heating.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The connection process is </span>easy
 </h2>
 <p>
-Echo Show’s screen simplifies the connection process compared to other Amazon’s Echo products that don’t have a built-in display. After the product is plugged into a power source, the user needs to connect it to a Wi-Fi network. The user logs in, or create an Amazon account. This step automatically approves the terms and registers the Echo Show to the user’s Amazon account. The Echo Show is ready for use.
+Echo Show’s screen simplifies the connection process compared to other Amazon’s Echo products that don’t have a built-in display. After the product is plugged into a power source, the user needs to connect it to a Wi-Fi network. Then, the user should log in, or create an Amazon account. Loging in automatically approves the terms and registers the Echo Show to the user’s Amazon account. The Echo Show is ready for use.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The security is </span>worrying
 </h2>
 <p>
-If the Wi-Fi network is protected by a password, it will be asked prior to connecting. Amazon accounts are also protected by a password. A worrying feature (that is turned off by default) is the ‘drop in’ video calls, basically allowing video-calling an Echo Show without requiring the user to answer the call. This instant communication feature could simplify children or older relatives calls, but can lead to serious privacy issues. What if a hacker is watching and hearing the entire family in their living room?
+If the Wi-Fi network is protected by a password, it will be asked prior to connecting. Amazon accounts are also protected by a password. A worrying feature (that is turned off by default) is the ‘drop in’ video calls, basically allowing video-calling an Echo Show without requiring the user to answer the call. This instant communication feature could simplify children or older relatives calls but can lead to serious privacy issues. What if a hacker is watching and hearing the entire family in their living room?
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The resilience is </span>fine
 </h2>
 <p>
-Just like the Echo Dot, the Echo Show cannot perform any actions without an access to the internet. It is supposed to be sitting on a piece of furniture. That makes it a poor device for resilience. When connected, the Echo Show is pretty stable and the video calls tested well.
+Just like the Echo Dot, the Echo Show cannot perform any actions without an access to the internet. It is supposed to be sitting on a piece of furniture in a house that has a Wi-Fi network. That makes it a poor device for resilience out of this home context. When connected, the Echo Show is pretty stable and the video calls tested well.
 </p>
 
 <script>
 var flowSteps = [
   {
-    caption: "User plugs Thing to power - No connection is established",
+    caption: "Echo show is plugged into power",
     thingImg: "thing/00.gif",
     networkAnimations: ["actors/noApp_noOS.json"]
   },
   {
-    caption: "User selects language - No connection is established",
+    caption: "Echo show prompts for language selection",
     thingImg: "thing/01.png",
   },
   {
-    caption: "User selects Wi-Fi network -  No connection is established",
+    caption: "Echo show prompts for Wi-Fi network",
     thingImg:"thing/02.png",
   },
   {
-    caption: "User enters Wi-Fi password - Thing connect to Wi-Fi",
+    caption: "User enters Wi-Fi network password, Echo show is connected to Wi-Fi",
     thingImg:"thing/03.png",
     networkAnimations:["actors/noApp_noOS.json", "ThingWifi_wifi.json"]
   },
   {
-    caption: "Thing tell user to enter Amazon account credentials",
+    caption: "Echo show prompts user to enter Amazon account credentials",
     thingImg:"thing/04.png",
     networkAnimations:["actors/noApp_noOS.json", "stills/ThingWifi_wifi.json"]
   },
   {
-    caption:"User enters Amazon account log in detail",
+    caption:"User enters Amazon account login details",
     thingImg:"thing/05.png",
   },
   {
-    caption: "User enters Amazon account password - Thing and user register to Amazon Account",
+    caption: "User enters Amazon account password, Echo Show and the user authenticate with the Amazon Account",
     thingImg: "thing/06.png",
     networkAnimations:["actors/noApp_noOS.json", "stills/ThingWifi_wifi.json", "ThingWiFiCloud_both.json"]
   },
   {
-    caption:"Thing welcome user",
+    caption:"Echo show welcomes user",
     thingImg: "thing/07.png",
     networkAnimations:["actors/noApp_noOS.json", "stills/ThingWifi_wifi.json", "stills/ThingWiFiCloud_both.json"]
   },
   {
-    caption:"User selects Time Zone",
+    caption:"Echo show prompts for time zone selection",
     thingImg: "thing/08.png",
   },
   {
-    caption:"User choose Thing Name",
+    caption:"Echo show prompts for naming product",
     thingImg: "thing/09.png",
   },
   {
-    caption:"Thing is loading",
+    caption:"Echo show displays indeterminate progress indicator",
     thingImg: "thing/10.png",
   },
   {
-    caption:"Thing shows product tour video",
+    caption:"Echo show displays product tour video",
     thingImg: "thing/11.png",
   },
   {
-    caption:"Thing advertise Amazon prime",
+    caption:"Echo show advertises Amazon prime",
     thingImg: "thing/12.png",
   },
   {
-    caption:"Thing is ready for use",
+    caption:"Echo show is ready for use",
     thingImg: "thing/13.png",
   }
 ]

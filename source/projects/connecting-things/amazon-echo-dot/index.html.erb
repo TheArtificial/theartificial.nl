@@ -6,171 +6,168 @@ date: 2018-02-27
 published: false
 ---
 <p>
-Echo dot is a voice-controlled device using Amazon’s Alexa assistant. The product is capable of basic skills such as providing weather forecast or news, playing the radio, calling or messaging the user’s contacts, setting timers, but also more elaborated skills involving peripherals or other services. For instance, Echo dot could control other smart objects in the user's house like turning on Netflix on TV or controlling lighting and heating.
+Echo dot is a voice-controlled device using Amazon’s Alexa assistant. The second generation model we reviewed was released in the US in 2016. The product is capable of basic skills such as providing weather forecast or news, playing the radio, calling or messaging the user’s contacts, setting timers, but also more elaborated skills involving peripherals or other services. For instance, Echo dot could control other smart objects in the house like turning on Netflix on TV or controlling lighting and heating.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The connection process is </span>energy consuming
 </h2>
 <p>
-Echo dot should first be plugged into a power outlet. Then it should connect to Wi-Fi. To do so, the user has to download the Alexa app. After agreeing to the Terms and Conditions, choosing a device to set up, and picking a language, the user must wait until a light ring turns orange on the Echo dot. The orange light indicates that the product created an Ad Hoc network. In some cases, the light ring stays blue and does not immediately turn to orange. If this happens to be the case, the user should press and hold the Action button on the Echo dot for five seconds. Once the orange light appears, the user needs to select the new Amazon Echo ad hoc network from the list of available products in their mobile Wi-Fi settings. Finally, the user can connect their smartphone back to the infrastructure Wi-Fi network, this will disconnect the device from the ad hoc network as it is not needed anymore.
+To start the setup, Echo dot should be plugged into a power outlet. The Alexa app guides the user through the configuration. The setup is fairly long and counterintuitive because it requires navigating back and forth between Alexa's app settings and the phone Wi-Fi settings. After agreeing to the Terms and Conditions, choosing a device to set up, and picking a language in the Alexa app, the user must have the Echo dot to broadcast an ad hoc Wi-Fi network. In some cases, the Echo dot does not turn to broadcasting mode automatically. The user needs to press and hold the Action button on the Echo dot for five seconds until an orange light ring appears. When the Echo is ready, the user should select its ad hoc network from the list of available Wi-Fi networks in the phone settings. This ad hoc connection allows the Echo dot and the Alexa app to connect. Finally, the user can connect their phone back to the infrastructure Wi-Fi.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The security is </span>poor
 </h2>
 <p>
-The temporary network created by the Echo dot appears as unsecured in the mobile settings, indeed it is not protected by a password. This connection at the protocol layer allows a verified connection at the app layer. The Echo dot receives the Wi-Fi credentials and is then able to connect to the Wi-Fi network as a standalone product. Despite the fact that a speakable confirmation code can be required for purchases and voice purchasing can be turned off. All the household / office members are able to view the purchase of the current user’s account. This has lead to some unwanted situations, where children access adult content without their permission for instance.
+The temporary network created by the Echo dot appears as unsecured in the mobile settings, indeed it is not protected by a password. Though, the connection between Echo dot and Alexa app is verified because it is physically confirmed on the product and in the App by the user. The Echo dot receives the home Wi-Fi credentials from the smartphone and is then able to connect to the Wi-Fi network as a standalone product. Registering the Echo dot to the Amazon cloud is a secure practice. Although another concern with the Amazon products is the leakage of the sensitive data they hold. The Echo listens and records voices in the user house. If an ill-intentioned person manages to hack the user's Amazon account or house Wi-Fi, the data could leak and lead to dramatic scenarios. A speakable confirmation code is required for purchases but it can be turned off. Wether the code is activated or not, all the household members are able to view the purchases of the current user’s account. This has lead to some unwanted situations, where children access adult content without their consent for instance. 
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The resilience is </span>terrible
 </h2>
 <p>
-Without an access to a Wi-Fi network, Echo loses its smartness. The issue is that to add new skills to the Echo Dot, the user needs the Alexa app. There were some complaints about the app beeing buggy. Sometimes it tells it is not connected to the Internet when it actually is. Another issue is that two Alexas too close to each other can both reply to the wake word, instead of the one hearing the user the best just replying (Echo spatial perception feature).
+Without an access to a Wi-Fi network, Echo is pretty dumb. Furthermore, users complaint about app bugs. Sometimes the app tells it is not connected to the Internet when it actually is. Another issue is that when two Alexas are too close to each other, they can both reply to the wake word, instead of the one hearing the user the best just replying (Echo spatial perception feature).
 </p>
 
 <script>
 var flowSteps = [
   {
-    caption: "Thing is plugged into power - OS is connected to home Wi-Fi - User enters account credentials in App",
+    caption: "Echo dot is plugged into power, smartphone is connected to home Wi-Fi,  user enters Amazon account credentials in App",
     thingImg: "thing/off.png",
     networkAnimations: ["stills/OSWifi.json", "actors/all.json"],
     screenImg: "screens/01.png"
   },
   {
-    caption: "Thing is plugged into power - App logs in to account on Cloud - User enters account credentials in App",
+    caption: "User is logged into Amazon account on iPhone, user initiates set up in App",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "AppCloud.json"],
+	screenImg: "screens/02.gif"
   },
   {
-    caption: "Thing is plugged into power - App is logged in to account on Cloud - User initiates set up in App",
-    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json"],
-    screenImg: "screens/02.gif"
-  },
-  {
-    caption: "Thing is plugged into power - App is logged in to account on Cloud - User selects profile in App",
+    caption: "App prompts to select profile",
+	  networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json"],
     screenImg: "screens/03.png"
   },
   {
-    caption: "Thing is plugged into power - App is logged in to account on Cloud - User grants permissions in App",
+    caption: "App presents terms for user acceptance",
     screenImg: "screens/04.png"
   },
   {
-    caption: "Thing is plugged into power - App is logged in to account on Cloud - User navigates to main menu in App",
+    caption: "App shows welcome screen",
     screenImg: "screens/05.png"
   },
   {
-    caption: "Thing is plugged into power - App is logged in to account on Cloud - User navigates to Settings in App",
+    caption: "User navigates to app settings",
     screenImg: "screens/06.png"
   },
   {
-    caption: "Thing is plugged into power - App is logged in to account on Cloud - User taps Set Up a New Device in App",
+    caption: "App settings offer to set up a new device",
     screenImg: "screens/07.png"
   },
   {
-    caption: "Thing is plugged into power - App is logged in to account on Cloud - User selects a device to set up in App",
+    caption: "App prompts user to choose a device model",
     screenImg: "screens/08.png"
   },
   {
-    caption: "Thing is plugged into power - App is logged in to account on Cloud - User selects a language in App",
+    caption: "App prompts for language selection",
     screenImg: "screens/09.png"
   },
   {
-    caption: "Thing is plugged into power - App is logged in to account on Cloud - User follows instructions in App",
+    caption: "App prompts for Echo dot Wi-Fi connection",
     screenImg: "screens/10.png"
   },
   {
-    caption: "User waits for Thing to emit orange light - App is logged in to account on Cloud - User presses continue in App",
+    caption: "App instructs user to wait for Echo dot to emit an orange light",
     screenImg: "screens/11.png"
   },
   {
-    caption: "User presses action button on Thing - Thing broadcasts ad hoc Wi-Fi - User presses continue in App",
-    thingImg: "thing/orange.gif",
-    networkAnimations: ["actors/all.json", "stills/OSWifi.json", "Thing_broadcastsAdHoc.json", "stills/AppCloud.json"],
+    caption: "App instructs user to press button on Echo dot, user presses button on Echo dot, Echo dot emits orange light, begins broadcasting ad hoc Wi-Fi for discovery",
+	networkAnimations: ["actors/all.json", "stills/OSWifi.json", "Thing_broadcastsAdHoc.json", "stills/AppCloud.json"],
+	thingImg: "thing/orange.gif",	  
     screenImg: "screens/12.png"
   },
   {
-    caption: "Thing emits orange light - Thing broadcasts ad hoc Wi-Fi - User navigates to OS settings",
+    caption: "App instructs to connect iPhone to Echo dot ad hoc Wi-Fi",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/Thing_broadcastsAdHoc.json", "stills/AppCloud.json"],
     screenImg: "screens/13.png"
   },
   {
-    caption: "Thing emits orange light - Thing and OS are in discovery mode - User navigates to OS settings",
+    caption: "User navigates to OS Wi-Fi settings, OS listens for Wi-Fi networks",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "OS_listensAdHoc.json", "stills/AppCloud.json"],
     screenImg: "screens/14.png"
   },
   {
-    caption: "Thing emits orange light - Thing and OS disconnect from home Wi-Fi - User selects Thing ad hoc Wi-Fi in App",
+    caption: "User selects Echo dot ad hoc Wi-Fi in OS settings, OS disconnects from home Wi-Fi",
     networkAnimations: ["actors/all.json", "OSWifi_break.json", "stills/ThingOS_discoveryAdHoc.json", "stills/AppCloud.json"],
     screenImg: "screens/15.gif"
   },
   {
-    caption: "Thing emits orange light - Thing and OS connect with ad hoc Wi-Fi - User selects Thing ad hoc Wi-Fi in App",
+    caption: "Echo dot and OS are connected via ad hoc Wi-Fi",
     networkAnimations: ["actors/all.json", "ThingOS_unverifiedAdHoc.json", "stills/AppCloud.json"],
   },
   {
-    caption: "Thing emits orange light - Thing and App connect with ad hoc Wi-Fi - User select Thing ad hoc Wi-Fi in OS settings",
-    networkAnimations: ["actors/all.json", "stills/ThingOS_unverifiedAdHoc.json", "stills/AppCloud.json"],
+    caption: "Echo dot and app are connected",
+    networkAnimations: ["actors/all.json", "stills/ThingOS_unverifiedAdHoc.json", "stills/AppCloud.json", "ThingApp_verified.json"],
     screenImg: "screens/16.png"
   },
   {
-    caption: "Thing emits orange light - Thing and App are connected with ad hoc Wi-Fi - User presses continue in App",
-    networkAnimations: ["actors/all.json", "stills/ThingOS_unverifiedAdHoc.json", "stills/AppCloud.json", "ThingApp_verified.json"],
+    caption: "App suggests available infrastruture Wi-Fi connection",
+	networkAnimations: ["actors/all.json", "stills/ThingOS_unverifiedAdHoc.json", "stills/AppCloud.json", "stills/ThingApp_verified.json"],
     screenImg: "screens/17.png"
   },
   {
-    caption: "Thing emits orange light - Thing and App are connected with ad hoc Wi-Fi - User selects Wi-Fi network in App",
-    networkAnimations: ["actors/all.json", "stills/ThingOS_unverifiedAdHoc.json", "stills/AppCloud.json", "stills/ThingApp_verified.json"],
+    caption: "App confirms Wi-Fi network connection",
     screenImg: "screens/18.png"
   },
   {
-    caption: "Thing emits orange light - Thing and App are connected with ad hoc Wi-Fi - App instructs to reconnect to Wi-Fi in OS settings",
+    caption: "App shows progress indicator and instructs to re-connect to Wi-Fi, Echo dot is disconnected from OS and App", 
+	networkAnimations: ["actors/all.json", "ThingOS_unverified_ThingApp_verified_break.json", "stills/AppCloud.json"],
     screenImg: "screens/19.gif"
   },
   {
-    caption: "Thing emits orange light - Thing disconnect from OS and App ad hoc Wi-Fi - User selects home Wi-Fi in OS settings",
-    networkAnimations: ["actors/all.json", "ThingOS_unverified_ThingApp_verified_break.json", "stills/AppCloud.json"],
+    caption: "User selects home Wi-Fi in OS settings, Echo dot and home Wi-Fi are connected",
+	networkAnimations: ["actors/all.json", "ThingWifi_wifi.json", "stills/AppCloud.json"],
     screenImg: "screens/20.gif"
   },
   {
-    caption: "Thing emits blue light - Thing and home Wi-Fi connect - User presses Continue in App",
+    caption: "App shows Echo dot and home Wi-Fi are connected, Echo dot emits blue lights",
+	networkAnimations: ["actors/all.json", "stills/ThingWifi_wifi.json", "stills/AppCloud.json"],
     thingImg: "thing/blue.gif",
-    networkAnimations: ["actors/all.json", "ThingWifi_wifi.json", "stills/AppCloud.json"],
     screenImg: "screens/21.png"
   },
   {
-    caption: "Thing emits blue light - Thing and Cloud connect via home Wi-Fi - User selects Thing setup preference",
+    caption: "Echo dot authenticates to Amazon cloud through home Wi-Fi, app prompts for Echo dot setup preference",
     thingImg: "thing/off.png",
     networkAnimations: ["actors/all.json", "stills/ThingWifi_wifi.json", "stills/AppCloud.json", "ThingWifiCloud_user.json"],
     screenImg: "screens/22.png"
   },
   {
-    caption: "Thing light is off  - Thing and Cloud are connected via home Wi-Fi",
+    caption: "App prompts to choose a paired device",
     networkAnimations: ["actors/all.json", "stills/ThingWifi_wifi.json", "stills/AppCloud.json", "stills/ThingWiFiCloud_user.json"],
     screenImg: "screens/23.png"
   },
   {
-    caption: "Thing light is off  - Thing and Cloud are connected via home Wi-Fi",
+    caption: "App prompts user to watch instructional video",
     screenImg: "screens/24.png"
   },
   {
-    caption: "Thing light is off  - Thing and Cloud are connected via home Wi-Fi - User starts video",
+    caption: "App prompts user to continue",
     screenImg: "screens/25.png"
   },
   {
-    caption: "Thing light is off  - Thing and Cloud are connected via home Wi-Fi - User presses Next in App",
+    caption: "App provides guidance to use Echo dot",
     screenImg: "screens/26.png"
   },
   {
-    caption: "Thing light is off  - Thing and Cloud are connected via home Wi-Fi - User reads walkthrough in App",
+    caption: "App provides additional guidance",
     screenImg: "screens/27.png"
   },
   {
-    caption: "Thing light is off  - Thing and Cloud are connected via home Wi-Fi - User reads walkthrough in App",
+    caption: "App provides additional guidance",
     screenImg: "screens/28.png"
   },
   {
-    caption: "Thing light is off  - Thing and Cloud are connected via home Wi-Fi - User reads walkthrough in App",
+    caption: "App provides additional guidance",
     screenImg: "screens/29.png"
   },
 ]

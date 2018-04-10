@@ -14,7 +14,7 @@ Flex 2 is a waterproof activity and sleep tracker launched by Fitbit in 2016. It
   <span class="sentence">The connection process is </span>a little long but celebratory
 </h2>
 <p>
-Once the user has downloaded the Fitbit app, completed their profile, logged in or created a user account, and accepted the terms and condition, the app asks which Fitbit tracker to set up. When the user selects a model, the app starts searching for the nearby tracker. If the tracker is found, the LEDs on the Flex 2 perform a colorful dance and the app asks the user to double tap on the tracker to confirm the pairing. After the pairing is established, the app shows a walk-through to learn the basics about the Flex 2. The long pairing flow might feel a little frustrating to users that are impatient to test their tracker as soon as possible.
+Once the user has downloaded the Fitbit app, completed their profile, logged in or created a user account, and accepted the terms and condition, the app asks which Fitbit tracker to set up. When the user selects a model, the app starts searching for the nearby tracker. If the tracker is found, the LEDs on the Flex 2 perform a colorful dance and the app asks the user to double tap on the tracker to confirm the pairing. After the pairing is established, the app shows a walk-through to learn the basics about the Flex 2. The long pairing flow might feel a little frustrating to users that are impatient to test their tracker as soon as possible. Most of Fitbit trackers can also be configured from a computer.
 </p>
 
 <h2 class="subtitle">
@@ -25,122 +25,122 @@ The connection at the OS level is verified because the user confirms the right t
 </p>
 
 <h2 class="subtitle">
-  <span class="sentence">The resilience is </span>well thought
+  <span class="sentence">The resilience is </span>well-thought
 </h2>
 <p>
-When a user opens the Fitbit app, if the tracker is paired and the device is connected to the Internet, the data collected by the tracker is transferred to the account via Bluetooth. For heavy users, there’s also an 'all-day sync' option to sync data periodically through the day. Syncing can also be done manually by the user. Flex 2 and all other Fitbit trackers have the ability to store up to 7 days of minute-by-minute data. If a user waits for longer than 7 days before syncing data with a device, they may lose some data and only see the most recent week’s detailed data. However, summary data, including calories, distance, steps, floors, and heart rate for equipped trackers is stored for 30 days.
+When a user opens the Fitbit app, if the tracker is paired and in Bluetooth range, and if the device is connected to the Internet, the data collected by the tracker is transferred to the account. For heavy users, there’s also an 'all-day sync' option to sync data periodically through the day. Syncing can also be done manually by the user. Flex 2 and all other Fitbit trackers have the ability to store up to 7 days of minute-by-minute data. If a user waits for longer than 7 days before syncing data with a device, they may lose some data and only see the most recent week’s detailed data. However, summary data, including calories, distance, steps, floors, and heart rate for equipped trackers is stored for 30 days.
 </p>
 
 <script>
 var flowSteps = [
   {
-    caption: "Thing broadcasts Bluetooth - Thing broadcasts Bluetooth - User launches App",
+    caption: "Fitbit Flex broadcasts Bluetooth, user logs in Fitbit account",
     thingImg: "thing/blue.gif",
     networkAnimations: ["actors/noWifi.json", "Thing_broadcasts.json"],
     screenImg: "screens/01_join.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - App logs in to account on Cloud - User enters account credentials in App",
+    caption: "User is logged into Fitbit account on iPhone",
     networkAnimations: ["actors/noWifi.json", "stills/Thing_broadcasts.json", "AppCloud.json"],
     screenImg: "screens/02_login.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - App is logged in to account on Cloud - User navigates to App settings",
+    caption: "User navigates to app settings",
     networkAnimations: ["actors/noWifi.json", "stills/Thing_broadcasts.json", "stills/AppCloud.json"],
     screenImg: "screens/03_home.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - App is logged in to account on Cloud - User adds a new Thing in App",
+    caption: "App settings offer to set up a new device",
     screenImg: "screens/04_add.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - App is logged in to account on Cloud - User selects model of Thing in App",
+    caption: "App prompts user to choose a device model",
     screenImg: "screens/05_trackers.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - App is logged in to account on Cloud - User confirms model of Thing in App",
+    caption: "App prompts user to initiate setup",
     screenImg: "screens/06_flex2.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - App is logged in to account on Cloud - User agrees to terms in App",
+    caption: "App presents terms for user acceptance",
     screenImg: "screens/07_terms.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - App is logged in to account on Cloud - User follows tour in App",
+    caption: "App presents different parts of Fitbit Flex",
     screenImg: "screens/08_meet.png"
   },
   {
-    caption: "Thing charges - App is logged in to account on Cloud - User follows tour in App",
+    caption: "App instructs to charge tracker, user puts Fitbit Flex to charge",
     thingImg: "thing/charge.gif",
     screenImg: "screens/09_power.png"
   },
   {
-    caption: "Thing charges - App is logged in to account on Cloud - User follows tour in App",
+    caption: "App instructs to insert tracker in bracelet",
     thingImg: "thing/blue.gif",
     screenImg: "screens/10_insert.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - App is logged in to account on Cloud - User follows tour in App",
+    caption: "App instructs to put Fitbit Flex on wrist",
     screenImg: "screens/11_on.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - OS listens for Bluetooth - OS searches for Thing",
+    caption: "App searches for Fitbit tracker, OS listens for Bluetooth",
     networkAnimations: ["actors/noWifi.json", "ThingOS_dscovery.json", "stills/AppCloud.json"],
     screenImg: "screens/12_searching.png"
   },
   {
-    caption: "User taps on Thing - Thing and OS are pairing with Bluetooth - User follows instructions in App",
+    caption: "App discovers Fitbit tracker and instructs to tap tracker, user taps on tracker, Fitbit Flex and OS pair",
     thingImg: "thing/pair.gif",
     networkAnimations: ["actors/noWifi.json", "ThingOS_pair.json", "stills/AppCloud.json"],
     screenImg: "screens/13_taptracker.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - Thing and OS pair with Bluetooth - User reads walkthrough in App",
+    caption: "Fitbit Flex and OS are paired, app provides guidance",
     thingImg: "thing/blue.gif",
     networkAnimations: ["actors/noWifi.json", "ThingOS_verified.json", "stills/AppCloud.json"],
     screenImg: "screens/14_howto.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - Thing and App connect - User reads walkthrough in App",
+    caption: "Fitbit Flex and app are connected, app provides additional guidance",
     networkAnimations: ["actors/noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "ThingApp_unverified.json"],
     screenImg: "screens/15_basics.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - Thing and App are connected - User reads walkthrough in App",
+    caption: "App provides additional guidance",
     networkAnimations: ["actors/noWifi.json", "stills/ThingOS_verified.json", "stills/AppCloud.json", "stills/ThingApp_unverified.json"],
     screenImg: "screens/16_progress.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - Thing and App are connected - User reads walkthrough in App",
+    caption: "App provides additional guidance",
     thingImg: "thing/off.png",
     screenImg: "screens/17_calls.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - Thing and App are connected - User reads walkthrough in App",
+    caption: "App provides additional guidance",
     screenImg: "screens/18_sleep.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - Thing and App are connected - User reads walkthrough in App",
+    caption: "App provides additional guidance",
     screenImg: "screens/19_notifications.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - Thing and App are connected - User reads walkthrough in App",
+    caption: "App provides additional guidance",
     screenImg: "screens/20_exercice.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - Thing and App are connected - User reads walkthrough in App",
+    caption: "App provides additional guidance",
     screenImg: "screens/21_customize.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - Thing and App are connected - User reads walkthrough in App",
+    caption: "App provides additional guidance",
     screenImg: "screens/22_care.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - Thing and App are connected - App tells user Thing is setup",
+    caption: "App shows Fitbit is set up",
     screenImg: "screens/23_set.png"
   },
   {
-    caption: "Thing broadcasts Bluetooth - Thing and App are connected - App settings show Thing is connected",
+    caption: "App settings show Fitbit is connected",
     screenImg: "screens/24_syncing.gif"
   },
 ]
