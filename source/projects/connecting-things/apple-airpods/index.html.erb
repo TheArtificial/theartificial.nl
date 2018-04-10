@@ -10,53 +10,53 @@ AirPods are cord-free Bluetooth earbuds. They come with a charging case. They we
 </p>
 
 <h2 class="subtitle">
-  <span class="sentence">The connection process is </span>effortless
+  <span class="sentence">The connection process is </span>effortless and </span>exemplary
 </h2>
 <p>
-Apple came up with this ‘One-tap’ setup for all Apple devices. On the first use, when the user pulls the AirPods out of the charging case, they instantly turn on and instructions for pairing appear on the nearest Apple device such as an iPhone, iPad, or Mac. The user has to press and hold the button on the charging case in order to pair. Then, the user sees their AirPods and charging case battery levels, pressing ‘Done’ on the device indicates that the connection is successful. Nothing more is required to enjoy the AirPods. This connecting experience is an inspiration for all complex and non-user friendly flows.
+Apple came up with this ‘One-tap’ setup for all Apple devices. On the first use, when the user pulls the AirPods out of the charging case, instructions for pairing appear on the nearest Apple device such as an iPhone, iPad, or Mac. The user has to press and hold the button on the charging case in order to pair. Nothing more is required to enjoy the AirPods. This connecting experience is an inspiration for all complex and non-user friendly flows.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The security is </span>fine
 </h2>
 <p>
-Once set-up, the AirPods connect to the user’s Apple ID and therefore to any other devices on the same iCloud account. iCloud accounts are protected by a password. In case the AirPods get lost, Find my iPhone can help the user locate a missing earplug. If someone is trying to connect to another user’s AirPods. An OS overlay informs that these are “Not your AirPods”. The new user is still able to establish a connection to use them.
+The Airpods pairing to the iPhone OS is authenticated because the user confirms pairing on both the iPhone and the Airpods. During the set-up, the AirPods also connect to the user’s Apple ID and therefore to any other devices on the same iCloud account. iCloud accounts are protected by a password. In case the AirPods get lost, Find my iPhone can help the user locate a missing earplug. If someone is trying to connect to another user’s AirPods. An OS overlay informs that these are “Not your AirPods”. However, the new user is still able to establish a connection to use them.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The resilience is </span>good
 </h2>
 <p>
-The connection is flawless. The earphones are working within a range of up to 50 meters. So a user could easily use them at home while their phone is charging. The only problem is that Siri requires an internet connection. If the user double taps on the earphones to talk to Siri and that there is no access, it becomes useless. The AirPods's battery counts about 24-hour listening time and up to 11 hours talk time. The ultimate test for these earbuds connection would be an entire plane of AirPods users, using their earbuds while flying. Would this work as well?
+The earphones connection is flawless within a range of up to 50 meters. They could be used at home in a room, while the connected phone is charging in another room. The ultimate test for these earbuds connection would be to see if they function if an entire plane would be flying and all passengers would use AirPods. The only problem is that Siri requires an internet connection. If the user double taps on the earphones to talk to Siri and that there is no access, the voice assistant won't be helpful. The AirPods's battery counts about 24-hour listening time and up to 11 hours talk time.
 </p>
 
 <script>
 var flowSteps = [
   {
-    caption: "Thing's case chargor is closed - App is logged in to Cloud - App shows that user is logged into iCloud on iPhone",
+    caption: "Airpods's charging case is closed, user is logged into iCloud account on iPhone",
     thingImg: "thing/front.png",
     networkAnimations: ["actors/noWifi.json", "AppCloud.json"],
     screenImg: "screens/00.png"
   },
   {
-    caption: "User opens Thing's case - Thing broadcasts Bluetooth - Device shows home",
+    caption: "User opens charging case, begins broadcasting for Bluetooth discovery",
     thingImg: "thing/top_green.png",
     networkAnimations: ["actors/noWifi_noApp.json", "Thing_broadcasts.json", "stills/AppCloud.json"],
     screenImg: "screens/01.png"
   },
   {
-    caption: "User presses button on Thing - Thing and OS are in discovery mode - OS overlays indicates to press button on Thing",
+    caption: "iPhone discovers Airpods and prompts user to press button on charging case",
     thingImg: "thing/back.png",
     networkAnimations: ["actors/noWifi_noApp.json", "ThingOS_dscovery.json", "stills/AppCloud.json"],
     screenImg: "screens/02.png"
   },
   {
-    caption: "Thing case is open - Thing and OS are pairing - OS overlay indicates that Thing is connecting",
+    caption: "User presses button on charging case, Airpods and OS are paired",
     networkAnimations: ["actors/noWifi_noApp.json", "ThingOS_pair.json", "stills/AppCloud.json"],
     screenImg: "screens/03.png"
   },
   {
-    caption: "Thing case is open - Thing and OS pair , and Thing registers to Cloud - OS overlay shows battery levels",
+    caption: "Airpods authenticates with iCloud",
     networkAnimations: ["actors/noWifi_noApp.json", "ThingOS_verified.json", "stills/AppCloud.json", "ThingCloud_thing.json"],
     screenImg: "screens/04.png"
   }
