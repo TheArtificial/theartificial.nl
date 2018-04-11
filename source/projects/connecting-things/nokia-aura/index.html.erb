@@ -6,123 +6,123 @@ date: 2018-02-27
 published: false
 ---
 <p>
-Aura is a 25-cm tall alarm clock and a bedside lamp. It was designed by Withings that has been bought over by Nokia. The Aura clock also comes with an additional sensor that sits under the mattress to track sleep. Both accessories connect to the home Wi-Fi. The purpose of this clock is to help users waking up and falling asleep more smoothly. Users interact with Aura with quite novel gestures, like swiping on the right side of the device to adjust light or volume and pressing the side of the alarm for 2 seconds to stop the alarm. The products have to be configured with Nokia Health app.
+Aura is a 25-cm tall alarm clock and a bedside lamp launched in 2014. It was designed by Withings that has been bought over by Nokia. The Aura clock comes with an additional sensor that sits under the mattress to track sleep. Both accessories connect to the home Wi-Fi. The purpose of this clock is to help users waking up and falling asleep smoothly. Users interact with Aura with quite novel gestures, like swiping on the right side of the device to adjust light or volume and pressing the side of the alarm for 2 seconds to stop the alarm. The clock is configured with Nokia Health app.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The connection process is </span>easy but long
 </h2>
 <p>
-To start, the user needs to download the Nokia App, to create and account or log in, and to connect Aura to a power supply. As Nokia app groups various connected products, the user can choose which product to install. The app automatically starts searching for the Aura. When found, it appears in an OS overlay in the Nokia app. The user selects the Withings Aura from the list, and the next screen shows that the Aura is paired. Then, the app asks to choose a Wi-Fi network. If the smartphone is already connected to a Wi-Fi network  and if the permission is granted by the user, finishing the setup is simpler because the device gives Wi-Fi credentials to Aura. After showing an indeterminate progress indicator, the app asks if the user would like to setup an Aura sleep sensor. At last, a product tour explains gestures to control Aura and some UI shows that the connected alarm clock is set.
+To start, the user needs to download the Nokia App, to create and account or log in, and to connect Aura to a power supply. As Nokia app groups various connected products, the user can choose which product to install. The app automatically starts searching for the Aura. When found, it appears in an OS overlay in the Nokia app. The user selects the Withings Aura from the list, and the next screen shows that the Aura is paired. Then, the app asks to choose a Wi-Fi network. If the smartphone is already connected to a Wi-Fi network  and if the permission is granted by the user, finishing the setup is simpler because the device gives Wi-Fi credentials to Aura. After showing an indeterminate progress indicator, the app asks if the user would like to install an Aura sleep sensor. At last, a product tour explains gestures to control Aura and some UI shows that the connected alarm clock is set.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The security is </span>worrying
 </h2>
 <p>
-The pairing process is not verified because the user is not identifying their alarm. During the pairing process, the device could pair to another alarm without the user noticing it. In the Android flow, it is interesting to notice that an OS alert asks the user to enter a pairing code, but that no pairing code is given… Privacy does not seem to be taken too seriously when a user doesn’t get informed that someone else connected to the user's Aura and had access to their sleeping related data. It is even more worrying knowing that any guests surfing on the home network could potentially access these personal data.</p>
+Aura has unverified connections to the phone OS and to the Nokia app. The pairing process is not verified because the user is not precisely identifying their alarm. During the pairing process, the device could pair to another alarm without the user noticing it. In the Android flow, it is interesting to notice that an OS alert asks the user to enter a pairing code, but that no pairing code is given… Aura registers to the user's Nokia account via Wi-fi. This practice is secured but privacy does not seem to be taken too seriously when a user doesn’t get informed that someone else connected to the user's Aura and had access to their sleeping related data. It is even more worrying knowing that any guests surfing on the home network could potentially access these personal data.</p>
 
 <h2 class="subtitle">
   <span class="sentence">The resilience is </span>okay
 </h2>
 <p>
-Unverified Bluetooth connections are used from the product to the device OS and app, so the home Wi-Fi credentials can be shared with the Aura. Aura then connects to the home Wi-Fi and registers to the Nokia account. The Aura does not require any smartphone to function once it has been configured. Some bugs are reported since Nokia took over Withings. Some functionalities also went missing like luminosity, noise, and temperature for the Aura.
+The Aura just requires a phone for the setup but once the home Wi-Fi is connected, the clock functions as a standalone device. Some bugs are reported since Nokia took over Withings. Some functionalities also went missing like luminosity, noise, and temperature for the Aura. Without a Wi-Fi connection, some functionalities stop working. To change Wi-Fi network, a quick configuration exists in the app settings.
 </p>
 
 <script>
 var flowSteps = [
   {
-    caption: "Thing is off - OS connects to home Wi-Fi - User launches App",
+    caption: "Phone is connected to home Wi-Fi",
     thingImg: "thing/off.png",
     networkAnimations: ["stills/OSWifi.json", "actors/all.json"],
     screenImg: "screens/01.png"
   },
   {
-    caption: "Thing is off - App logs in to account on Cloud - User enters account credentials in App",
+    caption: "User enters account credentials in app",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "AppCloud.json"],
     screenImg: "screens/02.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - App shows welcome message",
+    caption: "App welcomes user",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/AppCloud.json"],
     screenImg: "screens/03.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User selects 'Set up my Device'",
+    caption: "App prompts user to initiate set up",
     screenImg: "screens/04.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User selects Aura from list",
+    caption: "App prompts user to choose a device model",
     screenImg: "screens/05.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User teps 'Install'",
+    caption: "App prompts user to initiate setup",
     screenImg: "screens/06.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User gives permissions in App",
+    caption: "App presents location permission for user acceptance",
     screenImg: "screens/07.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User gives permissions in App in OS overlay",
+    caption: "App confirms user acceptance of terms",
     screenImg: "screens/08.png"
   },
   {
-    caption: "User plugs in Thing to power source - Thing broadcasts Bluetooth - User follows App instructions",
+    caption: "App instructs user to plug Aura into power, begins Bluetooth broadcasting",
     thingImg:  "thing/setup.png",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "Thing_broadcasts.json", "stills/AppCloud.json"],
     screenImg: "screens/09.png",
   },
   {
-    caption: "Thing is in Setup mode - OS listens for Bluetooth - App shows indeterminate progress indicator",
+    caption: "App searches for Aura, OS listens for Bluetooth products",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "ThingOS_dscovery.json", "stills/AppCloud.json"],
     screenImg: "screens/10.png"
   },
   {
-    caption: "Thing is in Setup mode - Thing and OS pair with Bluetooth -  App shows indeterminate progress indicator",
+    caption: "Aura and OS are pairing with Bluetooth, app shows indeterminate progress indicator",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "ThingOS_pair.json", "stills/AppCloud.json"],
     screenImg: "screens/11.png"
   },
   {
-    caption: "Thing is in Setup mode - Thing and OS connect - App shows indeterminate progress indicator",
+    caption: "Aura and OS are paired, app prompts user for pairing confirmation",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "ThingOS_unverified.json", "stills/AppCloud.json"],
     screenImg: "screens/12.png"
   },
   {
-    caption: "Thing is in Setup mode - Thing and App connect - App shows indeterminate progress indicator",
+    caption: "Aura and App are connected, app shows Aura is detected",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/ThingOS_unverified.json",  "stills/AppCloud.json", "ThingApp_unverified.json"],
     screenImg: "screens/13.png"
   },
   {
-    caption: "Thing is in Setup mode - Thing and App are connected - User selects home Wi-Fi network",
+    caption: "App prompts user to select a home Wi-Fi network",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/ThingOS_unverified.json", "stills/AppCloud.json", "stills/ThingApp_unverified.json"],
     screenImg: "screens/14.gif"
   },
   {
-    caption: "Thing is in Setup mode - Thing and App are connected - User enters Wi-Fi network password in App",
+    caption: "User enters Wi-Fi network password in App",
     screenImg: "screens/15.png"
   },
   {
-    caption: "Thing is in Setup mode - Thing and home Wi-Fi connect - App shows indeterminate progress indicator",
+    caption: "Aura and home Wi-Fi are connected, app shows indeterminate progress indicator",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/ThingOS_unverified.json", "stills/AppCloud.json", "ThingWifi_wifi.json", "stills/ThingApp_unverified.json"],
     screenImg: "screens/16.png"
   },
   {
-    caption: "Thing is connected - Thing and home Wi-Fi are connected - User setups Sleep sensor",
+    caption: "App prompts user for sleep sensor setup",
     thingImg:  "thing/time.png",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/ThingOS_unverified.json", "stills/AppCloud.json", "stills/ThingWifi_wifi.json", "stills/ThingApp_unverified.json"],
     screenImg: "screens/17.png"
   },
   {
-    caption: "Thing is connected - Thing and home Wi-Fi are connected - User setups Sleep sensor",
+    caption: "App instructs user to set up sleep sensor",
     screenImg: "screens/18.png"
   },
   {
-    caption: "Thing is connected - Thing and home Wi-Fi are connected - User setups Sleep sensor",
+    caption: "App shows indeterminate progress indicator",
     screenImg: "screens/19.png"
   },
   {
-    caption: "Thing is connected - Thing registers to Cloud - App shows setup is complete",
+    caption: "Aura authenticates with cloud, app shows setup is complete",
     networkAnimations: ["actors/all.json", "stills/OSWifi.json", "stills/ThingOS_unverified.json", "stills/AppCloud.json", "stills/ThingWifi_wifi.json", "stills/ThingApp_unverified.json", "ThingWifiCloud_user.json"],
     screenImg: "screens/20.png"
   }
