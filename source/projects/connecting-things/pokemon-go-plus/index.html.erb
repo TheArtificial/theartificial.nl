@@ -7,7 +7,7 @@ published: false
 ---
 
 <p>
-Pokémon GO Plus is an optional peripheral for the famous augmented reality game Pokémon GO. The accessory looks like a map pin in the shape of a Pokéball. Thanks to a button and light feedback, the object allows the user to catch Pokémon's, check in at Pokéstop's, and gain steps to hatch eggs - all of these without having to use the phone's screen.
+Pokémon GO Plus is an optional peripheral for the famous augmented reality game Pokémon GO. Launched in 2016 by Nintendo and The Pokémon Company, the accessory looks like a map pin in the shape of a Pokéball. Thanks to a button and light feedback, the object allows the user to catch Pokémons, check in at Pokéstops, and gain steps to hatch eggs - all of these without having to use the phone's screen.
 </p>
 
 <h2 class="subtitle">
@@ -21,7 +21,7 @@ To connect the Pokémon GO Plus to the Pokémon GO app, the user needs to log in
   <span class="sentence">The security is </span>more than enough
 </h2>
 <p>
-Pokémon GO Plus uses a relatively secured connection for a game. It feels reassuring for a gameplay based on the user's location. As we can see in the topology, Bluetooth allows verified connections both at the protocol layer and at the software layer. For the Thing to connect with the App, we suspect that the cloud sends tokens to enable the connection from a single user account. If Pokémon GO Plus is associated with another user account, the object has to be reset before connecting to a new one. The fact that Pokémon GO Plus pairs with a single smartphone at a time also makes it more secured.
+Pokémon GO Plus uses a relatively secured connection for a game. It feels reassuring for a gameplay based on the user's location. As we can see in the topology, Bluetooth allows verified connections both at the protocol layer and at the software layer. For the Thing to connect with the App, we suspect that the cloud sends tokens to enable the connection from a single user account. If Pokémon GO Plus is associated with another user account, the object has to be reset before connecting to a new one. The fact that Pokémon GO Plus pairs with a single smartphone at a time also makes it more secured. However, the popularity of the game also caught the attention of hackers. A Trojan version of the Pokémon GO app was available online and causing to compromise Android devices. Similarlry, we could imagine a catastrophic scenario in which hackers illegally track user's location thanks to the accessory.
 </p>
 
 <h2 class="subtitle">
@@ -34,60 +34,60 @@ How frustrating would it be for a user to take a long walk expecting to fill the
 <script>
 var flowSteps = [
   {
-    caption: "Thing is off - No connection is established - User chooses log in method in App",
+    caption: "User selects login method in app",
     thingImg: "thing/off.png",
     networkAnimations: ["actors/noWifi.json"],
     screenImg: "screens/00_login.png"
   },
   {
-    caption: "Thing is off - App logs in to account on Cloud - User enters account credentials",
+    caption: "User enters account credentials in app",
     networkAnimations: ["actors/noWifi.json", "AppCloud.json"],
     screenImg: "screens/01_login.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User opens main menu in app",
+    caption: "User is logged into Pokémon GO account, user navigates to main menu",
     networkAnimations: ["actors/noWifi.json", "stills/AppCloud.json"],
     screenImg: "screens/02_home.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User navigates to Settings",
+    caption: "User navigates to app settings",
     screenImg: "screens/03_menu.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User navigates to Thing Settings",
+    caption: "User navigates to Pokémon GO Plus settings in app",
     screenImg: "screens/04_settings.png"
   },
   {
-    caption: "User presses button on Thing - Thing broadcasts Bluetooth - App shows Thing Settings",
+    caption: "User presses button on Pokémon GO Plus, begins Bluetooth broadcasting, Pokémon GO Plus emits blinking light",
     thingImg:  "thing/white.gif",
     networkAnimations: ["actors/noWifi.json", "Thing_broadcasts.json", "stills/AppCloud.json",],
     screenImg: "screens/05_goplus.png"
   },
   {
-    caption: "Thing light blinks white - OS listens for Bluetooth - User taps on Thing in App",
+    caption: "OS listens for Bluetooth products and discovers Pokémon GO plus, user selects Pokémon GO Plus in app",
     networkAnimations: ["actors/noWifi.json", "ThingOS_dscovery.json", "stills/AppCloud.json"],
     screenImg: "screens/06_goplus-find.png"
   },
   {
-    caption: "Thing light blinks white - Thing and OS are in discovery mode - User grants permission for pairing in App",
+    caption: "App prompts user for pairing confirmation in app",
     networkAnimations: ["actors/noWifi.json", "stills/ThingOS_discovery.json", "stills/AppCloud.json",],
     screenImg: "screens/07_goplus-permission.png"
   },
   {
-    caption: "Thing vibrates and light is off - Thing and OS pair - App shows Thing and OS pair",
+    caption: "Pokémon GO Plus vibrates and light turns off, app shows Pokémon GO Plus and OS are pairing",
     thingImg: "thing/buzz.gif",
     networkAnimations: ["actors/noWifi.json", "ThingOS_pair.json", "stills/AppCloud.json"],
     screenImg: "screens/08_goplus-pair.gif"
   },
   {
-    caption: "Thing light is off - Thing and App connect - App show Thing and OS connect",
+    caption: "Pokémon GO Plus and OS are paired, app shows Pokémon GO Plus and App are connected",
     thingImg: "thing/off.png",
-    networkAnimations: ["actors/noWifi.json", "ThingOS_verified.json", "stills/AppCloud.json"],
+    networkAnimations: ["actors/noWifi.json", "ThingOS_verified.json", "ThingApp_unverified.json", "stills/AppCloud.json"],
     screenImg: "screens/09_goplus-connect.png"
   },
   {
-    caption: "Thing light is off - App and Thing are connected - App show Thing and OS are connected",
-    networkAnimations: ["actors/noWifi.json","stills/ThingOS_verified.json", "ThingApp_unverified.json", "stills/AppCloud.json"],
+    caption: "App home shows Pokémon GO Plus is set up",
+    networkAnimations: ["actors/noWifi.json","stills/ThingOS_verified.json", "stills/ThingApp_unverified.json", "stills/AppCloud.json"],
     screenImg: "screens/10_home.png"
   }
 ]

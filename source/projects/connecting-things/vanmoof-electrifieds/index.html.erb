@@ -6,18 +6,18 @@ date: 2018-03-26
 published: false
 ---
 <p>
-Electric S is a connected electric bike launched by the Dutch company VanMoof is 2007. Aside from the great power boost button on the bike that assists with pedaling, the bike has several notable features, such as the smart lock. The smart lock can be unlocked from a remote or from a smartphone via the VanMoof app.
+Electric S is a connected electric bike launched by the Dutch company VanMoof in 2007. Aside from the great power boost button on the bike that assists with pedaling, the bike has several notable features, such as the smart lock. The smart lock can be unlocked from a remote or from a smartphone via the VanMoof app.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The connection process is </span>easy
 </h2>
 <p>
-To connect the bike for the first time, the bike has to be charged and the VanMoof app is required on a smartphone. In order to create an account on the app, the bike’s IMEI and frame number are required, which registers the bike to a particular user. Once the email confirmation is approved, the user can log into their VanMoof account. Once logged into the app, the user only needs to be in close proximity to their bike for the device to connect to the bike. If auto-lock is activated, the user has a few seconds to unlock the bike chain before it locks again.
+To connect the bike for the first time, the bike has to be charged and the VanMoof app is required on a smartphone. In order to create an account on the app, the bike’s IMEI and frame number are required. These two unique numbers associate the bike to a particular user. If the email confirmation is approved, the user can log into their VanMoof account. Once logged into the app, the user only needs to be in close proximity to their bike for the device to connect to the bike. If auto-lock is activated, the user has a few seconds to unlock the bike chain before it locks again.
 </p>
 
 <h2 class="subtitle">
-  <span class="sentence">The security is </span>good
+  <span class="sentence">The security is </span>unusual but strong
 </h2>
 <p>
 The topology of connections is atypical. Here, the account of the user plays an important role in the security as it is holding the unique identifying numbers of the bike. The bike connects with the VanMoof account, but also pairs and connects to the device’s OS. The connection at the OS level is unverified, but because of the bike registration with the account, the connection from the bike to the account is verified. The user can also decide if they want to activate the auto-unlock functionality. If so they can adjust the range of unlocking. Unlocking is possible from the bike display, from the app, and from a remote.  A great service that VanMoof offers is a bike hunter who will track down the user bike if it ever gets stolen. This isn’t in anyway associated with our connection flow, but we think its a pretty nifty service offering.
@@ -27,46 +27,46 @@ The topology of connections is atypical. Here, the account of the user plays an 
   <span class="sentence">The resilience is </span>terrible
 </h2>
 <p>
-A few of the previous bike releases have been victims of software bugs that killed their power assist functionality or drained the bike’s battery. Another big issue in earlier models is that the smart lock requires electrical power to lock and unlock the bike. The only solution, to make the bike and the lock to work again, is to reset the bike with a Mini USB service port. Luckily, VanMoof worked on fixing the issues with their newer models and replaced the bike lock with an alarm. Aside from this bug, the Bluetooth connectivity works fine.
+A few of the previous bike releases have been victims of software bugs that killed their power assist functionality or drained the bike’s battery. Another big issue in earlier models is that the smart lock requires electrical power to lock and unlock the bike. The only solution, to make the bike and the lock to work again, is to reset the bike with a Mini USB service port. Luckily, VanMoof worked on fixing the issues with their newer models and replaced the bike lock with an alarm. Aside from this bug, the Bluetooth connectivity works fine when the bike and the app are in range.
 </p>
 
 <script>
 var flowSteps = [
   {
-    caption: "Thing is off - No connection is estabished - User selects register in App",
+    caption: "User taps link to register bike",
     thingImg: "thing/screen_off.png",
     networkAnimations: ["actors/noWifi.json"],
     screenImg: "screens/01_login.png"
   },
   {
-    caption: "User gets closer to Thing - Thing and OS are in discovery mode - User creates account on Cloud",
+    caption: "User gets closer to bike, bike and OS are in discovery mode, user creates VanMoof accounts",
     thingImg: "thing/hello.gif",
     networkAnimations: ["actors/noWifi.json", "ThingOS_dscovery.json"],
     screenImg: "screens/02_register.png"
   },
   {
-    caption: "Thing is on - Thing and OS are in discovery mode - User confirms email address",
+    caption: "User confirms email address",
     thingImg: "thing/screen_on.png",
     networkAnimations: ["actors/noWifi.json", "stills/ThingOS_discovery.json"],
     screenImg: "screens/03_register.png"
   },
   {
-    caption: "Thing is on - Thing registers to Cloud - User registers Thing to cloud",
+    caption: "Biycle authenticates with VanMoof Cloud",
     networkAnimations: ["actors/noWifi.json", "stills/ThingOS_discovery.json", "ThingCloud_thing.json"],
     screenImg: "screens/04_register.png"
   },
   {
-    caption: "Thing is on -  App logs in to account on Cloud - User enters account credentials in App",
+    caption: "User enters account credentials in app",
     networkAnimations: ["actors/noWifi.json", "stills/ThingOS_discovery.json", "stills/ThingCloud_thing.json", "AppCloud.json"],
     screenImg: "screens/05_login.png"
   },
   {
-    caption: "Thing and App are not in range - App is logged in to account on Cloud - App shows home",
+    caption: "User is logged into VanMoof account on Phone, app shows bike is not connected",
     networkAnimations: ["actors/noWifi.json", "stills/ThingOS_discovery.json", "stills/ThingCloud_thing.json", "stills/AppCloud.json"],
     screenImg: "screens/06_home.png"
   },
   {
-    caption: "Thing and App are in range - Thing and App connect - App shows Thing is connected",
+    caption: "bike and app get in range, app shows bike is connected",
     networkAnimations: ["actors/noWifi.json", "ThingOS_unverified.json", "stills/ThingCloud_thing.json", "stills/AppCloud.json", "ThingApp_verified.json"],
     screenImg: "screens/07_connected.png"
   }

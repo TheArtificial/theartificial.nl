@@ -1,143 +1,143 @@
 ---
 layout: projects/connecting-things/_thing_layout
-title: Philips Sonicare Diamond Clean
+title: Philips Sonicare DiamondClean Smart
 preview: thing/off.png
 date: 2018-03-23
 published: false
 ---
 <p>
-Philips Sonicare DiamondClean is a connected toothbrush working along with the Sonicare app monitoring the user dental health. The electric toothbrush provides great cleaning with minimal effort. Vibrations every 30 seconds indicate to move the brush to a different area in the mouth. The brush, therefore, encourages to brush during the recommended 2 minutes. It can be charged from a rinsing glass or by USB from a travel case. It has five different brushing modes and intensity levels as well as LED with different colors to provide brushing feedback.
+Sonicare DiamondClean Smart is a connected toothbrush working along with the Sonicare app monitoring the user dental health. It was launched by Philips in China, in the US and in Europe in 2017. The electric toothbrush provides great cleaning with minimal effort. Vibrations every 30 seconds indicate to move the brush to a different area in the mouth. The brush, therefore, encourages to brush during the recommended 2 minutes. It can be charged from a rinsing glass or by USB from a travel case. It has five different brushing modes and intensity levels as well as LED with different colors to provide brushing feedback.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The connection process is </span>tedious
 </h2>
 <p>
-The user sets up a new connected toothbrush from the Philips Sonicare app, in which they have to select the model of the toothbrush from a proposed list of Sonicare products. After numerous steps of product tour and authorization providing, the connection flow is interrupted by the app asking the user to log in from a Philips account, a Facebook account, a Google account, or to create a new Philips account. When the user is logged in the Sonicare app, the only action he performs to pair and connect is to take the toothbrush handle out of the base. Thanks to an accelerometer sensor, the toothbrush automatically connect at the OS and at the software layer.
+The user sets up a new connected toothbrush from the Philips Sonicare app, in which they have to select the model of the toothbrush from a proposed list of Sonicare products. After numerous steps of product tour and authorization providing, the connection flow is interrupted by the app asking the user to log in from a Philips account, a Facebook account, a Google account, or to create a new Philips account. When the user is logged in the Sonicare app, the only action required to pair and to connect the DiamondClean Smart is to move the toothbrush handle. Thanks to an accelerometer sensor, the toothbrush automatically connects at the OS and at the software layers.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The security is </span>low
 </h2>
 <p>
-Data collected from the user is protected by the passcode on the smartphone if the user has enabled it and also by the password to log in the user account. The handle is not registered to any user account. It makes any user in the house able to connect to the handle really easily.
+Data collected from the user is only protected by the passcode on the smartphone if the user has enabled it and also by the password to log in the user account. The handle is not registered to any user account. It makes any user in the house able to connect to the handle really easily but leaves the product an easy target for hackers. User's data is secured from the account password.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The resilience is </span>okay
 </h2>
 <p>
-The connection between the app and the toothbrush is stable if the user stays within the Bluetooth range.
+The connection between the app and the toothbrush is stable if the user stays within the Bluetooth range. When the DiamondClean Smart is not connected to the app, the handle can store up to about 28 brushing sessions of data. Data is automatically synced and added to the progress and to the activity reports when the toothbrush and the app are connected.
 </p>
 
 <script>
 var flowSteps = [
   {
-    caption: "Thing is off -  No connection is established - OS alert prompts to allow notification in App",
+    caption: "App prompts user for notifications permission",
     thingImg: "thing/off.png",
     networkAnimations: ["actors/noWifi.json"],
     screenImg: "screens/01.png"
   },
   {
-    caption: "Thing is off - No connection is established - User follows App tour",
+    caption: "App welcomes user",
     screenImg: "screens/02.png"
   },
   {
-    caption: "Thing is off - No connection is established - User selects product model in App",
+    caption: "App prompts user to choose a product model",
     screenImg: "screens/03.png"
   },
   {
-    caption: "Thing is off - No connection is established - User follows App tour",
+    caption: "App provides guidance tour",
     screenImg: "screens/04.png"
   },
   {
-    caption: "Thing is off - No connection is established - User allows acess to Thing in App",
+    caption: "App provides guidance tour",
     screenImg: "screens/05.png"
   },
   {
-    caption: "Thing is off - No connection is established - User follows App tour",
+    caption: "App prompts user for toothbrush access",
     screenImg: "screens/06.png"
   },
   {
-    caption: "Thing is off - No connection is established - User follows App tour",
+    caption: "App provides guidance tour",
     screenImg: "screens/07.png"
   },
   {
-    caption: "Thing is off - No connection is established - User follows App tour",
+    caption: "App provides guidance tour",
     screenImg: "screens/08.png"
   },
   {
-    caption: "Thing is off - No connection is established - User allows acess to data in App",
+    caption: "App prompts user for data access",
     screenImg: "screens/09.png"
   },
   {
-    caption: "Thing is off - No connection is established - User follows App tour",
+    caption: "App provides additional guidance in tour",
     screenImg: "screens/10.png"
   },
   {
-    caption: "Thing is off - No connection is established - User follows App tour",
+    caption: "App provides additional guidance in tour",
     screenImg: "screens/11.png"
   },
   {
-    caption: "Thing is off - No connection is established - User follows App tour",
+    caption: "App provides additional guidance in tour",
     screenImg: "screens/12.png"
   },
   {
-    caption: "Thing is off - No connection is established - User follows App tour",
+    caption: "App provides additional guidance in tour",
     screenImg: "screens/13.png"
   },
   {
-    caption: "Thing is off - App logs in to account on Cloud - User selects login method in App",
-    networkAnimations: ["actors/noWifi.json", "AppCloud.json"],
+    caption: "User selects login method in app",
     screenImg: "screens/14.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User enters account credentials in App",
-    networkAnimations: ["actors/noWifi.json", "stills/AppCloud.json"],
+    caption: "User enters account credentials in app",
+	networkAnimations: ["actors/noWifi.json", "AppCloud.json"],
     screenImg: "screens/15.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User agrees to terms and conditions in App",
+    caption: "User is logged into Philips account, app presents terms for user acceptance",
+	networkAnimations: ["actors/noWifi.json", "stills/AppCloud.json"],
     screenImg: "screens/16.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User taps continue in App",
+    caption: "App welcomes user",
     screenImg: "screens/17.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User tells where they got their Thing from in App",
+    caption: "App prompts user to tell where they got their toothbrush, and tell their age",
     screenImg: "screens/18.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User selects an oral care aspiration in App",
+    caption: "App prompts user to choose an oral care aspiration",
     screenImg: "screens/19.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - User tells their biggest oral care concern in App",
+    caption: "App prompts user to select their biggest oral care concern",
     screenImg: "screens/20.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - App recommends a goal",
+    caption: "App recommends a goal",
     screenImg: "screens/21.png"
   },
   {
-    caption: "Thing is off - App is logged in to account on Cloud - App recommends a goal",
+    caption: "App recommends another goal",
     screenImg: "screens/22.png"
   },
   {
-    caption: "User removes Thing of its charging glass - Thing and OS are in discovery mode - App shows home screen",
+    caption: "User removes toothbrush of the charging glass, toothbrush and OS are pairing, app shows home screen",
     thingImg: "thing/on.png",
     networkAnimations: ["actors/noWifi.json", "ThingOS_pair.json", "stills/AppCloud.json"],
     screenImg: "screens/23.png"
   },
   {
-    caption: "User presses button on Thing - Thing and OS pair - App shows brushing instructions",
+    caption: "User presses button on toothbrush, toothbrush and OS are paired, app instructs user on teeth brushing",
     networkAnimations: ["actors/noWifi.json", "ThingOS_unverified.json", "stills/AppCloud.json"],
     screenImg: "screens/24.png"
   },
   {
-    caption: "Thing is ready for use - Thing and App connect - App shows brushing action screen",
-    networkAnimations: ["actors/noWifi.json", "stills/ThingOS_unverified.json", "stills/AppCloud.json", "ThingApp_verified.json"],
+    caption: "Toothbrush and app are connected, app shows brushing action screen",
+    networkAnimations: ["actors/noWifi.json", "stills/ThingOS_unverified.json", "stills/AppCloud.json", "ThingApp_unverified.json"],
     screenImg: "screens/25.png"
   }
 ]
