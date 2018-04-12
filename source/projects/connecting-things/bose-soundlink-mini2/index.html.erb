@@ -6,46 +6,52 @@ date: 2018-02-27
 published: false
 ---
 <p>
-SoundLink Mini II is a portable wireless speaker developed by Bose. A built-in microphone allows other functionality such as taking calls. It comes in two colors, black and light grey.
+SoundLink Mini II is an 18 cm wide portable wireless speaker developed by Bose. The Mini II was released in 2015, as the evolution of the Mini I. The speaker connects to smartphones, tablets or other devices using either an auxiliary input or Bluetooth. A built-in microphone allows taking calls. It comes in two colors, black and light grey. It charges thanks to a Micro USB cable.
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The connection process is </span>short but not intuitive
 </h2>
 <p>
-This portable speaker does not require an app to function. In facts, it only connects at the OS level. To connect the Bluetooth speaker for the first time, the user should first pair it. Pairing is only necessary on the first use because the device will remember the speaker in the paired accessories. To pair, the user needs to press the Bluetooth button on the speaker. This button will make a light indicator flash blue to indicate it’s broadcasting and that the speaker can be discovered by the device. Then the user has to visit the Setting app and find the Bose Mini Sound Link that appeared in the list of available accessories.
+This portable speaker does not require an app to function. In facts, it only connects at the OS level. Pairing is only necessary on the first use because the device will remember the speaker in the paired accessories. To pair, the user needs to press the Bluetooth button on the speaker. This button will make a light indicator flash blue to indicate it’s broadcasting and that the speaker can be discovered by the device. Then the user has to visit the setting app of the mobile and find the Bose Mini Sound Link that appeared in the list of available accessories. It is simple but as the users have no instructions, they should know by themselves to connect like so.
 </p>
 
 <h2 class="subtitle">
-  <span class="sentence">The security is </span>low
+  <span class="sentence">The security is </span>okay
 </h2>
 <p>
-No password protects the connection at the OS level. Any other user can easily pair to the speaker by pressing the Bluetooth button on the speaker. However, when a user is already paired and about to connect to the speaker, it will list out loud all the devices that it is already paired with. The security is low but keeping the user appraised of other users. A low-security connection process seems appropriate for such a product because it does not store user’s sensitive data.
+Any other user can easily pair to the speaker by pressing the Bluetooth button on the speaker. When connecting from the second time, the speaker keeps the user appraised of other paired devices by enumerating out loud all devices that are already paired. A simple OS verified connection process seems appropriate for a product that does not store user’s sensitive data. The connection is verified at the OS level because a physical button has to be pressed on the speaker and the user has to confirm the connection in the settings of the smartphone. The hacker risk, however, always exists. 
 </p>
 
 <h2 class="subtitle">
   <span class="sentence">The resilience is </span>okay
 </h2>
 <p>
-The speaker is working steadily if the device is located within less than 9 meters. This speaker can be paired with up to 6 devices at the time. But, it can only connect to, and play audio from one device at the time. If the speaker has reached the maximum number of paired devices, the new user can erase all devices in memory by pressing the Bluetooth button on the speaker for 10 seconds until a tone is played. Some users reported issues with the speaker turning off randomly.
+The speaker is working steadily if the device is located within less than 9 meters. This speaker can be paired with up to 6 devices at the time. But, it can only connect to, and play audio from one device at the time. If the speaker has reached the maximum number of paired devices, the new user can erase all devices in memory by pressing the Bluetooth button on the speaker for 10 seconds until a tone is played. Some users reported issues with the speaker turning off randomly. The battery lasts at least 7 hours, depending on the sound level.
 </p>
 
 <script>
 var flowSteps = [
   {
-    caption: "User presses Bluetooth button on Thing - Thing and OS are in discovery mode - OS settings finds Thing",
-    thingImg: "thing/top_blink.gif",
+    caption: "User turns speaker on, OS listens for Bluetooth products",
+    thingImg: "thing/top_on.gif",
+    networkAnimations: ["actors/noCloud_noWifi_noApp.json", "OS_listens.json"],
+    screenImg: "screens/00.png"
+  },
+  {
+    caption: "User presses Bluetooth button on speaker, begins Bluetooth broadcasting, OS settings discovers speaker",
+	thingImg: "thing/top_bluetoothblink.gif",
     networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_dscovery.json"],
     screenImg: "screens/01.gif"
   },
   {
-    caption: "Thing LED turns white - Thing and OS pair - User selects Thing in OS settings list",
-    thingImg: "thing/top_white.png",
+    caption: "Bluetooth button LED turns white, user selects speaker in OS settings list, speaker and OS are pairing",
+    thingImg: "thing/top_bluetoothwhite.png",
     networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_pair.json"],
     screenImg: "screens/02.gif"
   },
   {
-    caption: "Thing LED turns off - Thing and OS connect - OS settings show Thing in connected devices",
+    caption: "Bluetooth button LED turns off, speaker and OS are paired and connected, OS settings show speaker is connected",
     thingImg: "thing/top_off.png",
     networkAnimations: ["actors/noCloud_noWifi_noApp.json", "ThingOS_verified.json"],
     screenImg: "screens/03.png"

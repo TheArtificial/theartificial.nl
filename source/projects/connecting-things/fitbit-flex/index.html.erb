@@ -34,7 +34,7 @@ When a user opens the Fitbit app, if the tracker is paired and in Bluetooth rang
 <script>
 var flowSteps = [
   {
-    caption: "Fitbit Flex broadcasts Bluetooth, user logs in Fitbit account",
+    caption: "Fitbit Flex broadcasts Bluetooth, user logs in Fitbit account, Fitbit has one blue blinking LED",
     thingImg: "thing/blue.gif",
     networkAnimations: ["actors/noWifi.json", "Thing_broadcasts.json"],
     screenImg: "screens/01_join.png"
@@ -70,7 +70,7 @@ var flowSteps = [
     screenImg: "screens/08_meet.png"
   },
   {
-    caption: "App instructs to charge tracker, user puts Fitbit Flex to charge",
+    caption: "App instructs to charge tracker, user puts Fitbit Flex to charge, Fitbit LEDs indicate battery level",
     thingImg: "thing/charge.gif",
     screenImg: "screens/09_power.png"
   },
@@ -89,14 +89,14 @@ var flowSteps = [
     screenImg: "screens/12_searching.png"
   },
   {
-    caption: "App discovers Fitbit tracker and instructs to tap tracker, user taps on tracker, Fitbit Flex and OS are pairing",
+    caption: "App discovers Fitbit tracker and instructs to tap tracker, user taps on tracker, Fitbit Flex and OS are pairing, Fitbit LEDs perform a light dance",
     thingImg: "thing/pair.gif",
     networkAnimations: ["actors/noWifi.json", "ThingOS_pair.json", "stills/AppCloud.json"],
     screenImg: "screens/13_taptracker.png"
   },
   {
     caption: "Fitbit Flex and OS are paired, app provides guidance",
-    thingImg: "thing/blue.gif",
+    thingImg: "thing/off.png",
     networkAnimations: ["actors/noWifi.json", "ThingOS_verified.json", "stills/AppCloud.json"],
     screenImg: "screens/14_howto.png"
   },
@@ -112,7 +112,6 @@ var flowSteps = [
   },
   {
     caption: "App provides additional guidance",
-    thingImg: "thing/off.png",
     screenImg: "screens/17_calls.png"
   },
   {
