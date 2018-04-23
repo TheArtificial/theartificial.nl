@@ -44,6 +44,25 @@
     <h4 class="recipe-section">Method</h4>
     <p>Pour Aperol over a half-full glass of chilled prosecco. Garnish with some slices of fresh orange.</p>
 -
+  slug: atasteofsummer
+  name: A Taste of Summer
+  date: 2018-04-20
+  glass: atasteofsummer
+  contents: atasteofsummer
+  author: ariane
+  rating: 3
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>Summer in Amsterdam comes in small batches, but this week we were very lucky and we got a good taste of summer. Because of this on Friday, we decided to take advantage of our lovely terrace and celebrate the good weather with a traditional <a href="https://theartificial.com/cocktails/aperolspritz.html" target="blank">Aperol Spritz</a> with a twist.</p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>2 parts prosseco</li>
+      <li>1 part Aperol</li>
+      <li>1 part sparkling water</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>Pour all the ingredients in a wine glass with ice, stir and enjoy!</p>
+-
   slug: applebrother
   name: Apple Brother
   date: 2017-06-30
@@ -144,6 +163,25 @@
     </ul>
     <h4 class="recipe-section">Method</h4>
     <p>Add all ingredients to a shaker and fill with ice. Shake, and strain into a chilled cocktail glass. Garnish with a lemon twist.</p>
+-
+  slug: berrydarktonic
+  name: Berry Dark Tonic
+  date: 2018-04-13
+  glass: berrydarktonic
+  contents: berrydarktonic
+  author: natalia
+  rating: 5
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>We always try not to waste things at The Artificial and sometimes this brings inspiration to our cocktails, like <a href="https://theartificial.com/cocktails/theorangegraveyard.html" target="blank"> The Orange Graveyard</a>, this cocktail used berries that were about to get thrown out. Natalia decided to muddle them and create a drink that was good enough to make everyone want a second round.</p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>2 parts tonic water</li>
+      <li>1 part gin</li>
+      <li>1 part dark berry purée </li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>In a mixer, muddle some berries (blueberries, blackberries) add the gin and some ice and shake well. Pour over a glass with ice and top off with tonic water.</p>    
 -
   slug: blossom
   name: "Blossom 开花 (Kāihuā)"
@@ -835,7 +873,7 @@
   rating: 3
   html: |
     <h4 class="recipe-section">Story</h4>
-    <p>All of us have favorite drinks and we also like to try new things, after Shannon tried a Negroni made with mezcal instead of gin she challenged Ariane and Natalia to try to replicate it and since Ariane was in a no-gin spree they decided to give it a go.</p> 
+    <p>All of us have favorite drinks and we also like to try new things, after Shannon tried a Negroni made with mezcal instead of gin she challenged Ariane and Natalia to try to replicate it and since Ariane was in a no-gin spree they decided to give it a go.</p>
     <p>The result was good but we thought the taste of alcohol was too strong and the smokiness of the mezcal was brought down by the bitterness of the Campari, no one messes with Natalia’s love for mezcal.</p>
     <h4 class="recipe-section">Ingredients</h4>
     <ul>
