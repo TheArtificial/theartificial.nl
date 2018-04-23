@@ -139,15 +139,75 @@ body {
 		-webkit-border-radius: 2px;
 		border-radius: 2px
 	}
-	.experiment { height: 320px; }
+	.col-4 {
+		.experiment {
+			height: 320px;
+			.letters {
+				font-size: 120px;
+				line-height: 200px;
+			}
+		}
+	}
+	.col-2 {
+		.experiment {
+			height: 320px;
+			.letters {
+				font-size: 120px;
+				line-height: 200px;
+			}
+		}
+	}
 }
 @media only screen and (min-device-width: 768px) {
-	.case-study { min-height: 400px; height: 400px; }
-	.experiment { height: 240px; }
+	.case-study {
+		min-height: 400px;
+		height: 400px;
+	}
+	.col-4 {
+		.experiment {
+			height: 240px;
+			.letters {
+				font-size: 80px;
+				line-height: 120px;
+			}
+		}
+	}
+	.col-2 {
+		.experiment {
+			height: 160px;
+			.letters {
+				font-size: 60px;
+				line-height: 80px;
+			}
+			.small-subtitle {
+				font-size: 14px;
+				line-height: 20px;
+				padding-bottom: 12px;
+			}
+		}
+	}
 }
 @media only screen and (min-width: 960px) {
 	.case-study { height: 480px; }
-	.experiment { height: 320px; }
+
+	.col-4 {
+		.experiment {
+			height: 320px;
+			.letters {
+				font-size: 120px;
+				line-height: 200px;
+			}
+		}
+	}
+	.col-2 {
+		.experiment {
+			height: 200px;
+			.letters {
+				font-size: 80px;
+				line-height: 120px;
+			}
+		}
+	}
 }
 
 .card-rule {
