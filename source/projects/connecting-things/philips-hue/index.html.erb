@@ -16,7 +16,7 @@ Philips Hue is a light eco-system that includes light bulbs and lamps, a bridge,
 The connection process is complex not particularly because it’s explained poorly but because the user has to understand the role of every player in the system. The bridge is at the heart of the Hue system. It is controlling all the settings of the lights and it is also enabling the bulbs communication with each other and with the portal. The user may start by screwing the light bulbs into their socket and turn the light interrupter on. Then, the Bridge has to connect to a power outlet and to the home Wi-Fi. The ethernet cable should be plugged between the bridge and an ethernet port on the Wi-Fi router. A blue light turns on on the bridge when it is properly connected to the internet. From there, the user should download the Philips Hue app. When launching, the app automatically searches for Hue bridges. If the new Hue bridge is found, the user can tap the ‘set-up’ button that appears. The next screen indicates that the user should push the link button on the Hue bridge. After the Philips Hue connects, the user will have to accept terms and conditions. For iOS users, Homekit and Siri can also be configured. In the last step, all the lights bulbs can be added to the app and organized into rooms.
 </p>
 
-<h2 class="subtitle">
+<!-- <h2 class="subtitle">
   <span class="sentence">The security is </span>weak
 </h2>
 <p>
@@ -28,7 +28,7 @@ The bridge and the device are both connected to the same network respectively wi
 </h2>
 <p>
 The app functions well if it is connected to the same local network as the bridge. Outside of the house, to control their lights, the user should use the portal on the web. Light bulbs use a wireless technology called ZigBee. The network created works perfectly for home automation in a small and personal area like a house.
-</p>
+</p> -->
 
 <script>
 var flowSteps = [
@@ -56,12 +56,12 @@ var flowSteps = [
   },
   {
     caption: "Hue bridge and app are connected, app prompts user for data access",
-    networkAnimations: ["actors/noWifi.json", "stills/OSWifi.json", "stills/ThingWifi_physical.json", "stills/ThingOS_verified.json", "ThingApp_unverified.json"],
+    networkAnimations: ["actors/noWifi.json", "stills/OSWifi.json", "stills/ThingWifi_physical.json", "stills/ThingOS_verified.json", "ThingApp_verified.json"],
     screenImg: "screens/04.png"
   },
   {
     caption: "App shows home screen",
-    networkAnimations: ["actors/noWifi.json", "stills/OSWifi.json", "stills/ThingWifi_physical.json", "stills/ThingOS_verified.json", "stills/ThingApp_unverified.json"],
+    networkAnimations: ["actors/noWifi.json", "stills/OSWifi.json", "stills/ThingWifi_physical.json", "stills/ThingOS_verified.json", "stills/ThingApp_verified.json"],
     screenImg: "screens/05.png"
   }
 ]

@@ -16,11 +16,11 @@ Echo dot is a voice-controlled device using Amazon’s Alexa assistant. The seco
 To start the setup, Echo dot should be plugged into a power outlet. The Alexa app guides the user through the configuration. The setup is fairly long and counterintuitive because it requires navigating back and forth between Alexa's app settings and the phone Wi-Fi settings. After agreeing to the Terms and Conditions, choosing a device to set up, and picking a language in the Alexa app, the user must have the Echo dot to broadcast an ad hoc Wi-Fi network. In some cases, the Echo dot does not turn to broadcasting mode automatically. The user needs to press and hold the Action button on the Echo dot for five seconds until an orange light ring appears. When the Echo is ready, the user should select its ad hoc network from the list of available Wi-Fi networks in the phone settings. This ad hoc connection allows the Echo dot and the Alexa app to connect. Finally, the user can connect their phone back to the infrastructure Wi-Fi.
 </p>
 
-<h2 class="subtitle">
+<!-- <h2 class="subtitle">
   <span class="sentence">The security is </span>poor
 </h2>
 <p>
-The temporary network created by the Echo dot appears as unsecured in the mobile settings, indeed it is not protected by a password. Though, the connection between Echo dot and Alexa app is verified because it is physically confirmed on the product and in the App by the user. The Echo dot receives the home Wi-Fi credentials from the smartphone and is then able to connect to the Wi-Fi network as a standalone product. Registering the Echo dot to the Amazon cloud is a secure practice. Although another concern with the Amazon products is the leakage of the sensitive data they hold. The Echo listens and records voices in the user house. If an ill-intentioned person manages to hack the user's Amazon account or house Wi-Fi, the data could leak and lead to dramatic scenarios. A speakable confirmation code is required for purchases but it can be turned off. Wether the code is activated or not, all the household members are able to view the purchases of the current user’s account. This has lead to some unwanted situations, where children access adult content without their consent for instance. 
+The temporary network created by the Echo dot appears as unsecured in the mobile settings, indeed it is not protected by a password. Though, the connection between Echo dot and Alexa app is verified because it is physically confirmed on the product and in the App by the user. The Echo dot receives the home Wi-Fi credentials from the smartphone and is then able to connect to the Wi-Fi network as a standalone product. Registering the Echo dot to the Amazon cloud is a secure practice. Although another concern with the Amazon products is the leakage of the sensitive data they hold. The Echo listens and records voices in the user house. If an ill-intentioned person manages to hack the user's Amazon account or house Wi-Fi, the data could leak and lead to dramatic scenarios. A speakable confirmation code is required for purchases but it can be turned off. Wether the code is activated or not, all the household members are able to view the purchases of the current user’s account. This has lead to some unwanted situations, where children access adult content without their consent for instance.
 </p>
 
 <h2 class="subtitle">
@@ -28,7 +28,7 @@ The temporary network created by the Echo dot appears as unsecured in the mobile
 </h2>
 <p>
 Without an access to a Wi-Fi network, Echo is pretty dumb. Furthermore, users complaint about app bugs. Sometimes the app tells it is not connected to the Internet when it actually is. Another issue is that when two Alexas are too close to each other, they can both reply to the wake word, instead of the one hearing the user the best just replying (Echo spatial perception feature).
-</p>
+</p> -->
 
 <script>
 var flowSteps = [
@@ -83,7 +83,7 @@ var flowSteps = [
   {
     caption: "App instructs user to press button on Echo dot, Echo dot emits orange light, begins broadcasting ad hoc Wi-Fi for discovery",
 	networkAnimations: ["actors/all.json", "stills/OSWifi.json", "Thing_broadcastsAdHoc.json", "stills/AppCloud.json"],
-	thingImg: "thing/orange.gif",	  
+	thingImg: "thing/orange.gif",
     screenImg: "screens/12.png"
   },
   {
@@ -120,7 +120,7 @@ var flowSteps = [
     screenImg: "screens/18.png"
   },
   {
-    caption: "App shows progress indicator and instructs to re-connect to Wi-Fi, Echo dot is disconnected from OS and App", 
+    caption: "App shows progress indicator and instructs to re-connect to Wi-Fi, Echo dot is disconnected from OS and App",
 	networkAnimations: ["actors/all.json", "ThingOS_unverified_ThingApp_verified_break.json", "stills/AppCloud.json"],
     screenImg: "screens/19.gif"
   },
