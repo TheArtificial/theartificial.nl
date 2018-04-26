@@ -83,13 +83,13 @@ var flowSteps = [
   {
     // Thing asks user to bring an iPhone near - OS listens for Bluetooth - User taps continue in OS overlay
     caption: "iPhone discovers Watch, user confirms",
-    networkAnimations: ["actors/noWifi.json", "ThingOS_dscovery.json", "stills/AppCloud.json"],
+    networkAnimations: ["actors/noWifi.json", "ThingOS_discovery.json", "stills/AppCloud.json"],
     screenImg: "screens/00_home-overlay.png",
   },
   {
     // Thing asks user to bring near a phone - Thing and OS are in discovery mode - User taps start pairing in App
     caption: "iPhone launches Watch app, user initiates pairing process",
-    networkAnimations: ["actors/noWifi.json", "stills/ThingOS_discovery.json", "stills/AppCloud.json"],
+    networkAnimations: ["actors/noWifi.json", "ThingOS_discovery_loop.json", "stills/AppCloud.json"],
     screenImg: "screens/01.png"
   },
   {
