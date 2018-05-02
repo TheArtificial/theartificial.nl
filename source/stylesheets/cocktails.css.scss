@@ -44,6 +44,29 @@
     }
   }
 
+  .legend {
+    border: 30px solid transparent;
+    border-image: url(/cocktails/images/frame.svg) 30 30 30 30 fill stretch;
+
+    td {
+      padding: 8px;
+      color: $darkest-grass;
+    }
+
+    td.clip {
+      width: 35%;
+    }
+  }
+
+  .cocktail-preview {
+    border: 30px solid transparent;
+    border-image: url(/cocktails/images/frame.svg) 30 30 30 30 fill stretch;
+  }
+
+  .cocktail-preview:hover {
+    border-image: url(/cocktails/images/frame-hover.svg) 30 30 30 30 fill stretch;
+  }
+
   #header {
     background-color: $palest-lime;
 
@@ -120,33 +143,7 @@
   }
 }
 
-/*media queries*/
 
-@media only screen and (min-device-width: 768px) {
-
-  .legend {
-    border: 30px solid transparent;
-    border-image: url(/cocktails/images/frame.svg) 30 30 30 30 fill stretch;
-
-    td {
-      padding: 8px;
-      color: $darkest-grass;
-    }
-
-    td.clip {
-      width: 35%;
-    }
-  }
-
-  .cocktail-preview {
-    border: 30px solid transparent;
-    border-image: url(/cocktails/images/frame.svg) 30 30 30 30 fill stretch;
-  }
-
-  .cocktail-preview:hover {
-    border-image: url(/cocktails/images/frame-hover.svg) 30 30 30 30 fill stretch;
-  }
-}
 
 .bleed.kamila { background-image: url(/cocktails/images/bartenders/kamila.png); }
 .bleed.natalia { background-image: url(/cocktails/images/bartenders/natalia.png); }
