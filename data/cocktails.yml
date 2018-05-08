@@ -181,7 +181,7 @@
       <li>1 part dark berry purée </li>
     </ul>
     <h4 class="recipe-section">Method</h4>
-    <p>In a mixer, muddle some berries (blueberries, blackberries) add the gin and some ice and shake well. Pour over a glass with ice and top off with tonic water.</p>    
+    <p>In a mixer, muddle some berries (blueberries, blackberries) add the gin and some ice and shake well. Pour over a glass with ice and top off with tonic water.</p>
 -
   slug: blossom
   name: "Blossom 开花 (Kāihuā)"
@@ -700,6 +700,29 @@
     </ul>
     <h4 class="recipe-section">Method</h4>
     <p>Combine all ingredients into a cocktail shaker. Fill with ice and shake vigorously. Pour over ice and serve.</p>
+-
+  slug: laultimapalabra
+  name: La Última Palabra
+  date: 2018-05-04
+  glass: laultimapalabra
+  contents: laultimapalabra
+  author: shannon
+  rating: 5
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>We were debating on whether to have a boozy drink this Friday or not, after our beloved king’s birthday our livers needed some rest. But then we remembered Shannon and Hans’s friends brought some delicious mezcal from Seattle and we decided to try it out. </p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>1 part mezcal</li>
+      <li>1 part maraschino liquor</li>
+      <li>1 part green Chartreuse</li>
+      <li>1 part lime juice</li>
+      <li>a lavender sprig</li>
+      <li>sugar rim</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>Rub the edge of the glass with a lime then dip it into the sugar and move it slowly in a circle to make sure you are getting good coverage on the rim.</p>
+    <p>Combine all the ingredients in a cocktail shaker with ice and shake well. Strain into the glass and garnish with a lavender sprig. Cheers!</p>
 -
   slug: lemondrop
   name: Lemon Drop
@@ -1544,10 +1567,10 @@
       <li>1 part apricot jam</li>
       <li>a splash of firewater bitters</li>
       <li>worm salt (optional)</li>
-      <li>chilly powder</li>
+      <li>chilly powder rim</li>
     </ul>
     <h4 class="recipe-section">Method</h4>
-    <p>To make the citrus juice, squeeze some oranges, limes, lemons, and mandarins in a pitcher until you have enough to mix the cocktails.</p> <p>Dip the edge of the into the chilly powder and worm salt and move it slowly in a circle to make sure you are getting good coverage on the rim.</p>
+    <p>To make the citrus juice, squeeze some oranges, limes, lemons, and mandarins in a pitcher until you have enough to mix the cocktails.</p> <p>Dip the edge of the glass into the chilly powder and worm salt and move it slowly in a circle to make sure you are getting good coverage on the rim.</p>
     <p>In a cocktail shaker with ice, mix the citrus juice, mezcal, apricot jam, and bitters. Pour over the glass with chilly rim and enjoy!</p>
 -
   slug: thekatinka
