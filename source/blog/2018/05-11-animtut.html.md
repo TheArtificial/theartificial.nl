@@ -7,46 +7,35 @@ masthead: introduction.png
 published: false
 ---
 
-Animations on the web can be beautiful and useful. They can entertain, set a focus, or engage users to improve user experiences. They are also powerful to increase usability when providing visual feedback, for instance when communicating progress in an interface, a status change, or navigation marks. If you are looking to create an animation for the web, aside from the style, the transitions, and the effects, you should consider performances like loading time, quality at different scales, and browsers and devices compatibility. Which method of animation would be the most appropriate to produce and display your artwork on the web? **Flash** is deprecated. We love **GIFs** but they can be quite tedious to create and heavy to load because they use sequences of raster images. **WebGL**, a Javascript API, is a nice solution for interactive 3D graphics. **Javascript** allows making large and complex animations, plus they allow plenty of interactions.
+Animation on the web is hardly new. First there were GIFs, then there was Flash, now there's HTML5 and JavaScript and GIFs are retro cool. These techniques are great if you want to create dynamic web pages or small raster graphics. But what if you want to create a vector animation that's lightweight, scales well, and has [broad compatibility](https://caniuse.com/#search=css%20animation)? These circumstances are ideal for animating SVGs with CSS.
 
-This post will focus on animating **SVG** with **CSS animations**. HTML5 and CSS3 make it easy to create simple animations with a small number of steps. This technique is mainly used to animate logos, illustrations and icons. It is also popular to animate a vectorial image on hover. CSS gives an easy way to control and tweak some time features like keyframes, duration, iteration, easing or delay. CSS animation easily allows to create 2D transform animations like rotations, translations, scaling, and skewing. Changing color and opacity styles as well as animating a stroke are easy. CSS animations are not made for photo-realistic organic effects, or for designing a complex sequence of interactions.
-
-The main advantages of CSS animation is that they are light so they run smoothly on most computer and mobile modern browsers. They are legible, and future proof because they belong to W3C standard. They don't require Javascript but they are compatible with it. Some libraries can help you set-up your own animations such as [Animate CSS](http://.html), [Magic Animations](http://.html), and [Hover CSS](http://.html). Be warned that multiple animations on a single page can slow down the loading time, that options for animations are limited, and that IE and Android browsers below 2.3 does not support all properties.
-
-This tutorial is an introduction to the basics of SVG animation with HTML and CSS. You may want to reproduce the small examples for reference before trying to build something more interesting.
-
-By the end of this tutorial, you should:
-1. have a better idea on what CSS animations are capable of
-2. be able to create simple CSS animations
-3. be able to edit keyframes to adjust your animation
-
-Kind note to the reader, all the code blocks in this tutorial are CSS.
+This tutorial is an introduction to the basics of SVG animation with CSS. We'll start with the basics before moving on to some samples that utilize multiple techniques. By the end of this tutorial, you will have the foundation to create complex animations.
 
 ## Getting started
 
 ### SVG
 
-SVG stand for Scalable Vector Graphics. It is a 2D vector image format that looks sharp at any resolution. The vectorial shapes and paths, and their attributes like color or stroke weight, are defined in XML text files. That is why, they are easy to modify and to manipulate with code. SVG are constructed within the browsers, reducing the network response time.
+Scalable Vector Graphics or SVG is a 2D vector image format that scales to look sharp at any resolution. SVG and HTML are compatible with each other, and this means that SVGs, just like HTML, are easy to modify and manipulate with CSS.
 
-To create and export an artwork in SVG format, you can use the two most popular tools [Illustrator](https://www.adobe.com/fr/products/illustrator.html) or [Sketch](https://www.sketchapp.com/), or you can opt for the free and open source one [InkScape](https://inkscape.org/en/).
+To create an SVG, you can use design tools like [Illustrator](https://www.adobe.com/fr/products/illustrator.html), [Sketch](https://www.sketchapp.com/), or [InkScape](https://inkscape.org/en/), or you can write SVG directly using the text editor of your choice.
 
-While making the drawing in the software :
+If you're using a design tool, make sure you:
 
-*  Pixel align elements when possible (avoid decimal numbers for size or position)
-*  Keep a minimum number of anchor points
-*  Remove unneeded overlap (the Pathfinder is your friend)
-*  Fit your artboard to artwork bound
-*  Organize layers and groups
-*  Name elements
-*  Export in SVG 1.1
+*  Pixel align elements when possible (avoid decimals for size or position)
+*  Avoid unnecessary anchor points
+*  Avoid overlapping elements
+*  Create your image completely within the artboard
+*  Export SVG 1.1
 
+If you follow these pro tips, your artwork is almost animation-ready, but you'll still need to clean up your SVG using a text editor.
+In your text editor:
 
-If you follow these pro tips, your artwork is almost animation-ready. Now you should open the SVG in a code editor like [Atom](https://www.sketchapp.com/).
+*  Give shapes, paths, and groups you want to animate unique **class** names
+*  Make sure your styles are defined within the **style** tags (and not on elements themselves)
 
-*  Make sure your artwork is wrapped in a `<svg>` tag
-*  Create Graphic Styles
-*  Give to the shapes `<circle>`, paths `<path>`, or groups `<g>` you want to animate `<class>` names. Therefore, you will
-be able to target these elements in the CSS. `<id>` are not the best idea, because if an element is used more than once in the page, this invalidates the HTML.
+To keep things simple in this tutorial, all CSS styles will be contained within our SVG. These styles could also live independently in their own CSS file.
+
+--
 
 Now your SVG is animation-ready. Here is how my SVG looks like in code and visually. You may notice that my graphic styles names are stored in `<class>` names as well as the names I have given to the two `<path>` I'd like to animate.
 
