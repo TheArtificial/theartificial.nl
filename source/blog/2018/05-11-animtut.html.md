@@ -825,6 +825,7 @@ Aside from transform properties, CSS animation also include color, fill, stroke,
 The `color` attribute speaks for itself as it defines the color fill of an element.
 
 Possible values:
+
 * keywords like `pink`
 * color code like RGB `rgb(204, 41, 84)`, RGBA `rgba(204, 41, 84, 0.5)`, or Hex like `#CC2954`
 
@@ -1184,6 +1185,7 @@ The initial value is `none`.
 The `stroke` defines the color attributes of an element outline.
 
 Possible values:
+
 * keywords like `pink`
 * color code like RGB `rgb(204, 41, 84)`, RGBA `rgba(204, 41, 84, 0.5)`, or Hex like `#CC2954`
 
