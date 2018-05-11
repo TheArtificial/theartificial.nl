@@ -293,7 +293,8 @@ The expression can use one, two, or three values if you want to scale your objec
 The `skew` animation transforms an object along an oblique angle. It distorts each point by a certain angle in the horizontal and vertical directions. The greater the value is, the most distorted will be the object.
 
 The expression can use one or two values. Each value represents the amount of skewing in one direction. It can be written `skew(ax)`, `skew(ax, ay)`, `skewX(a)`, or `skewY(a)`, where `a` is an `<angle>`.
-<!--specifying the amount of rotation in degree like `90deg`, in turn from `0` to `1` like `0.25 turn`, or with the radius like `1.64rad`. VERIFY VALUES-->
+
+ To specify the amount of skewing, the values indicates an `<angle>`. The angle value can expressed in degree like `90deg`, in turn from `0` to `1` like `0.25 turn`, or in radius like `1.64rad`.
 
         .diamond{
           animation-name: diamondSkewed;
@@ -313,14 +314,31 @@ The expression can use one or two values. Each value represents the amount of sk
 
 ## Other CSS animations
 
-Aside from transform properties, CSS animation also include fill, stroke, opacity, color, and direction animations. We will see in this part, for each of these animation, one example, a definition of the animation, and its possible values.
+Aside from transform properties, CSS animation also include color, fill, stroke, opacity, and direction animations. We will see in this part, for each of these animation, one example, a definition of the animation, and its possible values.
+
+### Color
+
+The `color` attribute speaks for itself as it defines the color fill of an element.
+
+Possible values:
+* keywords like `pink`
+* color code like RGB `rgb(204, 41, 84)`, RGBA `rgba(204, 41, 84, 0.5)`, or Hex like `#CC2954`
+
+        .yourTargetElement {
+          animation-name: yourAnimationName;
+          animation-duration: 6s;
+          animation-iteration-count: 1;
+          animation-time-function: linear;
+          transform-origin: 50% 50%;
+        }
+
+![Placeholder](05-11-animtut/placeholder.svg)
 
 ### Fill
 
-The `fill-mode` property specifies styles before and after the animation execution.
+The `fill-mode` property remembers the first state at the beginning of the animation and the last state at the end of the animation. It is useful in case you would like your animation to start or end with a specific state.
 
-The `fill-mode` animation can have four different values: `none`, `forwards`, `backwards`, and `both`. With `forwards`, the target remembers
-the last keyframe played in the execution. `Forwards` can be influenced by `animation-direction` and `animation-iteration-count`. `Backwards` applies the value of the first keyframe when it is applied to the target. It is influenced by `animation-delay` and `animation-direction`.
+The `fill-mode` animation can have four different values: `none`, `forwards`, `backwards`, and `both`. With `forwards`, the target will be like the last keyframe played. `forwards` can be influenced by `animation-direction` and `animation-iteration-count`. `Backwards` applies the value of the first keyframe at the end of the animation. It is influenced by `animation-delay` and `animation-direction`.
 
 The initial value is `none`.
 
@@ -340,17 +358,14 @@ The initial value is `none`.
 The `stroke` defines the color attributes of an element outline.
 
 Possible values:
-* for the stroke color - keywords like `red`, color code like RGB like `example`, RGBA `example` or Hex like `example`.
-* for the stroke style - <!--write here-->
-* for the stroke weight - <!--write here-->
+* keywords like `pink`
+* color code like RGB `rgb(204, 41, 84)`, RGBA `rgba(204, 41, 84, 0.5)`, or Hex like `#CC2954`
 
-The default value for the `stroke` attribute is `none`.
+The default value for color of the `stroke` attribute is `none`.
 
-The `stroke-dasharray` <!--write about other expressions With added keywords, the expression can also affect other attributes of the stroke like its style, or its width.-->
-The `stroke-dashoffset` <!--write about other expressions-->
+The `stroke-dasharray` attribute specifies on a dashed strokes the length of the dashes and of the gaps. The values of a dash and a gap are separated with a white space or a comma. The length values can be a
 
-* for the stroke dash array - <!--write here-->
-* for the stroke dash offset - <!--write here-->
+The `stroke-dashoffset` attribute indicates the length before the first dash of the series starts.
 
         .diamond{
           stroke-dasharray: 1000;
@@ -365,7 +380,7 @@ The `stroke-dashoffset` <!--write about other expressions-->
 
 ### Opacity
 
-The `opacity`attribute defines the transparency of an element.
+The `opacity` attribute defines the transparency of an element.
 
 The possible values for the amount of transparency are written by a whole number (integer) or decimal number from `0` to `1`, or with a percentage like `50%`.`
 
@@ -375,26 +390,9 @@ The possible values for the amount of transparency are written by a whole number
 
 ![Placeholder](05-11-animtut/placeholder.svg)
 
-### Color
-
-The `color` speaks for itself as it defines the color fill of an element.
-
-The Possible values for the colors fill are keywords like `red`, color code like RGB like `example`, RGBA `example` or Hex like `example`.
-
-        .yourTargetElement {
-          animation-name: yourAnimationName;
-          animation-duration: 6s;
-          animation-iteration-count: 1;
-          animation-time-function: linear;
-          transform-origin: 50% 50%;
-        }
-
-![Placeholder](05-11-animtut/placeholder.svg)
-
 ### Direction
 
-The `animation-direction` property specifies whether an animation should play forwards, backwards, or alternating back and
-forth.
+The `animation-direction` property specifies whether an animation should play forwards, backwards, or alternating back and forth.
 
 The `animation-direction` has has four different values: `normal`, `reverse`, `alternate`, and `alternate-reverse`.
 
