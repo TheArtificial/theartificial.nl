@@ -1,0 +1,28 @@
+@import "../../../stylesheets/_artificial-colors.scss";
+
+.daysoftype {
+  background-color: $palest-lime;
+
+  #header, #footer {
+    background-color: $darkest-sapphire;
+  }
+
+  .introduction {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  h1, p {
+    color: $dark-sapphire;
+  }
+
+  #content {
+		color: white;
+		margin-bottom: 40px;
+	}
+}
+
+.introduction {
+	padding-bottom: 40px;
+  color: $white;
+}
