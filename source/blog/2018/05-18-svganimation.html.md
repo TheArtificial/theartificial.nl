@@ -1,5 +1,5 @@
 ---
-title: "CSS animations on SVG Tutorial"
+title: "SVG Animation Tutorial"
 category: process
 tags: tutorial, animation, code, CSS, SVG
 author: [ariane]
