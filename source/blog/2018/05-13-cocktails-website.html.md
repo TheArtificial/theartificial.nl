@@ -24,7 +24,7 @@ So this user is:
 - thirsty
 - possibly curious
 
-![structure](05-07-cocktails-website/structure.png)
+![structure](05-13-cocktails-website/structure.png)
 
 Establishing this helped us to decide the contents of the website. Before it was just a cocktail catalogue that could be accessed from a section of our site, but because our new users where unfamiliar with The Artificial, it was necessary to add an about page with a brief history of why the catalogue exists, and a tools section to accommodate our legend.  This last section was also aimed to inexperienced users that want to know what they would need to start making their own experiments.
 
@@ -45,7 +45,7 @@ To tie it closer together with the studio’s culture, we incorporated the masks
 
 We also added frames to the cocktails to make the hoover state more obvious, and to provide the user with an even more celebratory experience.
 
-![garnish](05-07-cocktails-website/garnish.png)
+![garnish](05-13-cocktails-website/garnish.png)
 
 #### Mobile Experience
 To solve the boring mobile experience issue, we brought to life the previously flat garnishes by adding some color to them and separating them from the glass. This also helped the website feel a bit less monotonous.
@@ -53,15 +53,15 @@ To solve the boring mobile experience issue, we brought to life the previously f
 #### Visualizations
 The biggest challenge was to come with a solution for the last issue, the animations. Kamila and I are not exactly pros with After Effects, but we both love moving images and we wanted to improve our skills by making more challenging looping GIFs. For this, we first made did research on techniques and best practices and we found this [great tutorial by Jake Bartlett](https://www.skillshare.com/classes/Repeating-Patterns-in-After-Effects/46687130/classroom/discussions?via=user-profile&enrolledRedirect=1) that inspired us to create much more playful patterns and animations that were not limited to horizontal movement.
 
-![patterns](05-07-cocktails-website/patterns.gif)
+![patterns](05-13-cocktails-website/patterns.gif)
 
 The new animation style brought up a new question: on the previous design we were stacking patterns to show multiple types of alcohol on a single drink, but with the new design this felt forced and not organic at all. So at the end we decided to break the animations in single rows and to interlace them when the drink had more than one type of alcohol.
 
-![sweater](05-07-cocktails-website/artificial-sweater.jpg)
+![sweater](05-13-cocktails-website/artificial-sweater.jpg)
 
 Usually we don’t have drinks with more than 2 types of alcohol but we checked for the worst case scenario and found out that we have a boozy [ugly Christmas sweater](https://theartificial.com/cocktails/anythingbuttea.html) in our catalogue – very appropriate for the company.
 
-![logo](05-07-cocktails-website/logo.gif)
+![logo](05-13-cocktails-website/logo.gif)
 
 #### Logo
 Last but not least, we needed a logo that matched the contents of the website, so we took the organic shapes of the patterns as inspiration to create it, and decided that it had to be animated like the patterns. Only in this case we thought it was a good opportunity to go beyond a single animation technique and to learn how to do it using CSS and SVG animation. To my surprise it isn’t as hard as it seems; once you have the basic knowledge it is fairly intuitive.
