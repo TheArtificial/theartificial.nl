@@ -35,13 +35,12 @@ In your text editor:
 
 To keep things simple in this tutorial, all CSS styles will be contained within our SVG. These styles could also live independently in their own CSS file.
 
---
-Now your SVG is animation-ready. Here is how my SVG looks like in code and visually. You may notice that graphic styles names are stored in `<class>` names as well as the names I have given to the two `<path>` I'd like to animate.
+Here is a sample of what your SVG should look like:
 
         <svg version="1.1" id="artwork" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
-        <path class="bg warmgrey10" d="M0,0h800v300H0V0z"/>
-        <path class="diamond tulip" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+            <path class="bg warmgrey10" d="M0,0h800v300H0V0z"/>
+            <path class="diamond tulip" d="M400,280l-90-130l90-130l90,130L400,280z"/>
         </svg>
 
 ![Placeholder](05-11-animtut/placeholder.svg)
@@ -203,26 +202,26 @@ Possible values are:
         </div>
 
 <div id="origin" class="anim">
-	<?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
-		<path class="diamond" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
-		<style>
-			.anim {
-			  background-color:#E5E4E3;
-			}
-			.diamond {
-				  animation-name: diamondOrigin;
-				  animation-duration: 6s;
-				  animation-iteration-count: infinite;
-				}
+  <?xml version="1.0" encoding="utf-8"?>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
+  <path class="diamond" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+  <style>
+  .anim {
+    background-color:#E5E4E3;
+  }
+  .diamond {
+    animation-name: diamondOrigin;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
 
-				@keyframes diamondOrigin {
-				  from {transform: rotate(0deg);}
-				  to {transform: rotate(360deg);}
-				}
-		</style>
-	</svg>
+  @keyframes diamondOrigin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  </style>
+  </svg>
 </div>
 
 
@@ -255,27 +254,27 @@ In this example, the diamond rotates from its default origin point, in the top l
 
 
 <div id="originChanged" class="anim">
-	<?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
-		<path class="diamondOriginChanged tulip" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
-		<style>
-			.anim {
-				background-color:#E5E4E3;
-			}
-			.diamondOriginChanged {
-			  animation-name: diamondOrigin;
-			  animation-duration: 6s;
-			  animation-iteration-count: infinite;
-			  transform-origin: 50% 50%;
-			}
+  <?xml version="1.0" encoding="utf-8"?>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
+  <path class="diamondOriginChanged tulip" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+  <style>
+  .anim {
+  background-color:#E5E4E3;
+  }
+  .diamondOriginChanged {
+    animation-name: diamondOrigin;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+  }
 
-			@keyframes diamondOrigin {
-			  from {transform: rotate(0deg);}
-			  to {transform: rotate(360deg);}
-			}
-		</style>
-	</svg>
+  @keyframes diamondOrigin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  </style>
+  </svg>
 </div>
 
 
@@ -349,58 +348,58 @@ Possible values are:
         </div>
 
 <div id="turned" class="anim">
-	<?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
-		<path class="turn-01" fill="#7C0826" d="M400,280l-90-130l90-130l90,130L400,280z"/>
-		<path class="turn-02" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
-		<path class="turn-03" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
-		<path class="turn-04" fill="#F27990" d="M400,280l-90-130l90-130l90,130L400,280z"/>
-		<path class="turn-05" fill="#F2AABD" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+  <?xml version="1.0" encoding="utf-8"?>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
+  <path class="turn-01" fill="#7C0826" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+  <path class="turn-02" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+  <path class="turn-03" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+  <path class="turn-04" fill="#F27990" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+  <path class="turn-05" fill="#F2AABD" d="M400,280l-90-130l90-130l90,130L400,280z"/>
 
-		<style>
-			.anim {
-				background-color:#E5E4E3;
-			}
-			.turn-01, .turn-02, .turn-03, .turn-04, .turn-05, .turn-06{
-			  animation-duration: 10s;
-			  animation-iteration-count: infinite;
-			  animation-timing-function: ease-in-out;
-			  transform-origin: 50% 50%;
-			}
+  <style>
+  .anim {
+  background-color:#E5E4E3;
+  }
+  .turn-01, .turn-02, .turn-03, .turn-04, .turn-05, .turn-06{
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: 50% 50%;
+  }
 
-			.turn-01 { animation-name: turnOne;}
-			.turn-02 { animation-name: turnTwo;}
-			.turn-03 { animation-name: turnThree;}
-			.turn-04 { animation-name: turnFour;}
-			.turn-05 { animation-name: turnFive;}
+  .turn-01 { animation-name: turnOne;}
+  .turn-02 { animation-name: turnTwo;}
+  .turn-03 { animation-name: turnThree;}
+  .turn-04 { animation-name: turnFour;}
+  .turn-05 { animation-name: turnFive;}
 
-			@keyframes turnOne {
-			  0% {transform: rotate(0deg);}
-			  100% {transform: rotate(180deg);}
-			}
+  @keyframes turnOne {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(180deg);}
+  }
 
-			@keyframes turnTwo {
-			  0% {transform: rotate(0deg);}
-			  100% {transform: rotate(360deg);}
-			}
+  @keyframes turnTwo {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
 
-			@keyframes turnThree {
-			  0% {transform: rotate(0deg);}
-			  100% {transform: rotate(540deg);}
-			}
+  @keyframes turnThree {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(540deg);}
+  }
 
-			@keyframes turnFour{
-			  0% {transform: rotate(0deg);}
-			  100% {transform: rotate(720deg);}
-			}
+  @keyframes turnFour{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(720deg);}
+  }
 
-			@keyframes turnFive {
-			  0% {transform: rotate(0deg);}
-			  100% {transform: rotate(900deg);}
-			}
-		</style>
-	</svg>
+  @keyframes turnFive {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(900deg);}
+  }
+  </style>
+  </svg>
 </div>
 
 ### Translate
@@ -488,68 +487,68 @@ Values are specified in lengths in `px` or in `%`. If `t` is unspecified, its de
         </div>
 
 <div id="trans" class="anim">
-	<?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
-		 <path class="trans-01" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
-		 <path class="trans-02" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
-		 <path class="trans-03" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
-		 <path class="trans-04" fill="#A51138" d="M400,280l-90-130l90-130l90,130L400,280z"/>
-		 <path class="trans-05" fill="#A51138" d="M400,280l-90-130l90-130l90,130L400,280z"/>
-		 <path class="trans-06" fill="#A51138" d="M400,280l-90-130l90-130l90,130L400,280z"/>
-		 <path class="trans-07" fill="#A51138" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+  <?xml version="1.0" encoding="utf-8"?>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
+   <path class="trans-01" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+   <path class="trans-02" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+   <path class="trans-03" fill="#CC2954" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+   <path class="trans-04" fill="#A51138" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+   <path class="trans-05" fill="#A51138" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+   <path class="trans-06" fill="#A51138" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+   <path class="trans-07" fill="#A51138" d="M400,280l-90-130l90-130l90,130L400,280z"/>
 
-		 <style>
-			 .anim {
-				 background-color:#E5E4E3;
-			 }
-			 .trans-01, .trans-02, .trans-03, .trans-04, .trans-05, .trans-06, .trans-07 {
-			   animation-duration: 2s;
-			   animation-iteration-count: infinite;
-			   animation-timing-function: linear;
-			   transform-origin: 50% 50%;
-			 }
+   <style>
+   .anim {
+   background-color:#E5E4E3;
+   }
+   .trans-01, .trans-02, .trans-03, .trans-04, .trans-05, .trans-06, .trans-07 {
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     transform-origin: 50% 50%;
+   }
 
-			 .trans-01 { animation-name: transOne;}
-			 .trans-02 { animation-name: transTwo;}
-			 .trans-03 { animation-name: transThree;}
-			 .trans-04 { animation-name: transFour;}
-			 .trans-05 { animation-name: transFive;}
-			 .trans-06 { animation-name: transSix;}
-			 .trans-07 { animation-name: transSeven;}
+   .trans-01 { animation-name: transOne;}
+   .trans-02 { animation-name: transTwo;}
+   .trans-03 { animation-name: transThree;}
+   .trans-04 { animation-name: transFour;}
+   .trans-05 { animation-name: transFive;}
+   .trans-06 { animation-name: transSix;}
+   .trans-07 { animation-name: transSeven;}
 
 
-			 @keyframes transTwo {
-			   0% {transform: translate(0, 0);}
-			   100% {transform: translate(200px, 0);}
-			 }
+   @keyframes transTwo {
+     0% {transform: translate(0, 0);}
+     100% {transform: translate(200px, 0);}
+   }
 
-			 @keyframes transThree {
-			   0% {transform: translate(0, 0);}
-			   100% {transform: translate(-200px, 0);}
-			 }
+   @keyframes transThree {
+     0% {transform: translate(0, 0);}
+     100% {transform: translate(-200px, 0);}
+   }
 
-			 @keyframes transFour{
-			   0% {transform: translate(0, 0);}
-			   100% {transform: translate(100px, 180px);}
-			 }
+   @keyframes transFour{
+     0% {transform: translate(0, 0);}
+     100% {transform: translate(100px, 180px);}
+   }
 
-			 @keyframes transFive {
-			   0% {transform: translateX(0);}
-			   100% {transform: translate(-100px, 180px);}
-			 }
+   @keyframes transFive {
+     0% {transform: translateX(0);}
+     100% {transform: translate(-100px, 180px);}
+   }
 
-			 @keyframes transSix {
-			   0% {transform: translateX(0);}
-			   100% {transform: translate(-100px, -180px);}
-			 }
+   @keyframes transSix {
+     0% {transform: translateX(0);}
+     100% {transform: translate(-100px, -180px);}
+   }
 
-			 @keyframes transSeven {
-			   0% {transform: translate(0, 0);}
-			   100% {transform: translate(100px, -180px);}
-			 }
-		 </style>
-	</svg>
+   @keyframes transSeven {
+     0% {transform: translate(0, 0);}
+     100% {transform: translate(100px, -180px);}
+   }
+   </style>
+  </svg>
 </div>
 
 ### Scale
@@ -595,11 +594,11 @@ The expression can use one, two, or three values if you want to scale your objec
         				 100% {transform: scale(1);}
         			 }
 
-        			 @keyframes scaTwo {
-        			   0% {transform: scale(1);}
-        			   60% {transform: scale(2.5) translate(-55px, 115px);}
-        				 100% {transform: scale(1);}
-        			 }
+                    @keyframes scaTwo {
+                        0% {transform: scale(1);}
+                        60% {transform: scale(2.5) translate(-55px, 115px);}
+                        100% {transform: scale(1);}
+                    }
 
         			 @keyframes scaThree {
         				 0% {transform: scale(1);}
@@ -636,80 +635,80 @@ The expression can use one, two, or three values if you want to scale your objec
         </div>
 
 <div id="scaled" class="anim">
-	<?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
-		 <path class="sca-01" fill="#CC2954" d="M500,395l-45-65l45-65l45,65L500,395z"/>
-		 <path class="sca-02" fill="#CC2954" d="M500,35l-45-65l45-65l45,65L500,35z"/>
-		 <path class="sca-03" fill="#CC2954" d="M300,395l-45-65l45-65l45,65L300,395z"/>
-		 <path class="sca-04" fill="#CC2954" d="M300,35l-45-65l45-65l45,65L300,35z"/>
-		 <path class="sca-05" fill="#CC2954" d="M600,215l-45-65l45-65l45,65L600,215z"/>
-		 <path class="sca-06" fill="#CC2954" d="M200,215l-45-65l45-65l45,65L200,215z"/>
-		 <path class="sca-07" fill="#F27990" d="M400,215l-45-65l45-65l45,65L400,215z"/>
+  <?xml version="1.0" encoding="utf-8"?>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
+   <path class="sca-01" fill="#CC2954" d="M500,395l-45-65l45-65l45,65L500,395z"/>
+   <path class="sca-02" fill="#CC2954" d="M500,35l-45-65l45-65l45,65L500,35z"/>
+   <path class="sca-03" fill="#CC2954" d="M300,395l-45-65l45-65l45,65L300,395z"/>
+   <path class="sca-04" fill="#CC2954" d="M300,35l-45-65l45-65l45,65L300,35z"/>
+   <path class="sca-05" fill="#CC2954" d="M600,215l-45-65l45-65l45,65L600,215z"/>
+   <path class="sca-06" fill="#CC2954" d="M200,215l-45-65l45-65l45,65L200,215z"/>
+   <path class="sca-07" fill="#F27990" d="M400,215l-45-65l45-65l45,65L400,215z"/>
 
-		 <style>
-			 .anim {
-				 background-color:#E5E4E3;
-			 }
-			 .sca-01, .sca-02, .sca-03, .sca-04, .sca-05, .sca-06, .sca-07 {
-			   animation-duration: 6s;
-			   animation-iteration-count: infinite;
-			   animation-timing-function: ease-in-out;
-			   transform-origin: 50% 50%;
-			 }
+   <style>
+   .anim {
+   background-color:#E5E4E3;
+   }
+   .sca-01, .sca-02, .sca-03, .sca-04, .sca-05, .sca-06, .sca-07 {
+     animation-duration: 6s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+     transform-origin: 50% 50%;
+   }
 
-			 .sca-01 { animation-name: scaOne;}
-			 .sca-02 { animation-name: scaTwo;}
-			 .sca-03 { animation-name: scaThree;}
-			 .sca-04 { animation-name: scaFour;}
-			 .sca-05 { animation-name: scaFive;}
-			 .sca-06 { animation-name: scaSix;}
-			 .sca-07 { animation-name: scaSeven;}
+   .sca-01 { animation-name: scaOne;}
+   .sca-02 { animation-name: scaTwo;}
+   .sca-03 { animation-name: scaThree;}
+   .sca-04 { animation-name: scaFour;}
+   .sca-05 { animation-name: scaFive;}
+   .sca-06 { animation-name: scaSix;}
+   .sca-07 { animation-name: scaSeven;}
 
-			 @keyframes scaOne {
-			   0% {transform: scale(1);}
-			   60% {transform: scale(2.5) translate(-55px, -115px);}
-				 100% {transform: scale(1);}
-			 }
+   @keyframes scaOne {
+     0% {transform: scale(1);}
+     60% {transform: scale(2.5) translate(-55px, -115px);}
+   100% {transform: scale(1);}
+   }
 
-			 @keyframes scaTwo {
-			   0% {transform: scale(1);}
-			   60% {transform: scale(2.5) translate(-55px, 115px);}
-				 100% {transform: scale(1);}
-			 }
+   @keyframes scaTwo {
+     0% {transform: scale(1);}
+     60% {transform: scale(2.5) translate(-55px, 115px);}
+   100% {transform: scale(1);}
+   }
 
-			 @keyframes scaThree {
-				 0% {transform: scale(1);}
-			   60% {transform: scale(2.5) translate(55px, -115px);}
-				 100% {transform: scale(1);}
-			 }
+   @keyframes scaThree {
+   0% {transform: scale(1);}
+     60% {transform: scale(2.5) translate(55px, -115px);}
+   100% {transform: scale(1);}
+   }
 
-			 @keyframes scaFour {
-			   0% {transform: scale(1);}
-			   60% {transform: scale(2.5) translate(55px, 115px);}
-				 100% {transform: scale(1);}
-			 }
+   @keyframes scaFour {
+     0% {transform: scale(1);}
+     60% {transform: scale(2.5) translate(55px, 115px);}
+   100% {transform: scale(1);}
+   }
 
-			 @keyframes scaFive {
-			   0% {transform: scale(1);}
-			   60% {transform: scale(2.5) translateX(-110px);}
-				 100% {transform: scale(1);}
-			 }
+   @keyframes scaFive {
+     0% {transform: scale(1);}
+     60% {transform: scale(2.5) translateX(-110px);}
+   100% {transform: scale(1);}
+   }
 
-			 @keyframes scaSix {
-				 0% {transform: scale(1);}
-			   60% {transform: scale(2.5) translateX(110px);}
-				 100% {transform: scale(1);}
-			 }
+   @keyframes scaSix {
+   0% {transform: scale(1);}
+     60% {transform: scale(2.5) translateX(110px);}
+   100% {transform: scale(1);}
+   }
 
-			 @keyframes scaSeven {
-			   0% {transform: scale(1);}
-			   60% {transform: scale(2.5);}
-				 90% {transform: scale(1.5);}
-				 100% {transform: scale(1);}
-			 }
-		 </style>
-	</svg>
+   @keyframes scaSeven {
+     0% {transform: scale(1);}
+     60% {transform: scale(2.5);}
+   90% {transform: scale(1.5);}
+   100% {transform: scale(1);}
+   }
+   </style>
+  </svg>
 </div>
 
 ### Skew
@@ -769,50 +768,50 @@ The expression can use one or two values. Each value represents the amount of sk
 
 
 <div id="skewed" class="anim">
-	<?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
-		 <path class="ske-01" fill="#A51138" d="M100,280L10,150l90-130l90,130L100,280z"/>
-		 <path class="ske-02" fill="#CC2954" d="M300,280l-90-130l90-130l90,130L300,280z"/>
-		 <path class="ske-03" fill="#F27990" d="M500,280l-90-130l90-130l90,130L500,280z"/>
-		 <path class="ske-04" fill="#F2AABD" d="M700,280l-90-130l90-130l90,130L700,280z"/>
-		 <style>
-			 .anim {
-				 background-color:#E5E4E3;
-			 }
-			 .ske-01, .ske-02, .ske-03, .ske-04 {
-				 animation-duration: 2s;
-				 animation-iteration-count: infinite;
-				 animation-timing-function: ease-in-out;
-				 transform-origin: 50% 50%;
-			 }
+  <?xml version="1.0" encoding="utf-8"?>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
+   <path class="ske-01" fill="#A51138" d="M100,280L10,150l90-130l90,130L100,280z"/>
+   <path class="ske-02" fill="#CC2954" d="M300,280l-90-130l90-130l90,130L300,280z"/>
+   <path class="ske-03" fill="#F27990" d="M500,280l-90-130l90-130l90,130L500,280z"/>
+   <path class="ske-04" fill="#F2AABD" d="M700,280l-90-130l90-130l90,130L700,280z"/>
+   <style>
+   .anim {
+   background-color:#E5E4E3;
+   }
+   .ske-01, .ske-02, .ske-03, .ske-04 {
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   transform-origin: 50% 50%;
+   }
 
-			 .ske-01 { animation-name: skeOne;}
-			 .ske-02 { animation-name: skeTwo;}
-			 .ske-03 { animation-name: skeThree;}
-			 .ske-04 { animation-name: skeFour;}
+   .ske-01 { animation-name: skeOne;}
+   .ske-02 { animation-name: skeTwo;}
+   .ske-03 { animation-name: skeThree;}
+   .ske-04 { animation-name: skeFour;}
 
-			 @keyframes skeOne {
-				 0% {transform: skew(0);}
-				 100% {transform: skewX(35deg);}
-			 }
+   @keyframes skeOne {
+   0% {transform: skew(0);}
+   100% {transform: skewX(35deg);}
+   }
 
-			 @keyframes skeTwo {
-				 0% {transform: skew(0turn);}
-				 100% {transform: skew(-35deg);}
-			 }
+   @keyframes skeTwo {
+   0% {transform: skew(0turn);}
+   100% {transform: skew(-35deg);}
+   }
 
-			 @keyframes skeThree{
-				 0% {transform: skew(0deg);}
-				 100% {transform: skew(35deg);}
-			 }
+   @keyframes skeThree{
+   0% {transform: skew(0deg);}
+   100% {transform: skew(35deg);}
+   }
 
-			 @keyframes skeFour{
-				 0% {transform: skew(0);}
-				 100% {transform: skewX(-35deg);}
-			 }
-		 </style>
-	</svg>
+   @keyframes skeFour{
+   0% {transform: skew(0);}
+   100% {transform: skewX(-35deg);}
+   }
+   </style>
+  </svg>
 </div>
 
 
@@ -962,134 +961,134 @@ Possible values:
 
 
 <div id="colored" class="anim">
-	<?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
-		<path class="pum-01" fill="#FFD5C0" d="M85,200l-35-50l35-50l35,50L85,200z"/>
-		<path class="dan-01" fill="#FFE6B3" d="M175,200l-35-50l35-50l35,50L175,200z"/>
-		<path class="tuli-01" fill="#F2AABD" d="M265,200l-35-50l35-50l35,50L265,200z"/>
-		<path class="lim-01" fill="#FFFFB3" d="M355,200l-35-50l35-50l35,50L355,200z"/>
-		<path class="gras-01" fill="#C3F2AA" d="M445,200l-35-50l35-50l35,50L445,200z"/>
-		<path class="tur-01" fill="#B7E5DD" d="M535,200l-35-50l35-50l35,50L535,200z"/>
-		<path class="sap-01" fill="#C1C7E0" d="M625,200l-35-50l35-50l35,50L625,200z"/>
-		<path class="grap-01" fill="#78288C" d="M715,200l-35-50l35-50l35,50L715,200z"/>
+  <?xml version="1.0" encoding="utf-8"?>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
+  <path class="pum-01" fill="#FFD5C0" d="M85,200l-35-50l35-50l35,50L85,200z"/>
+  <path class="dan-01" fill="#FFE6B3" d="M175,200l-35-50l35-50l35,50L175,200z"/>
+  <path class="tuli-01" fill="#F2AABD" d="M265,200l-35-50l35-50l35,50L265,200z"/>
+  <path class="lim-01" fill="#FFFFB3" d="M355,200l-35-50l35-50l35,50L355,200z"/>
+  <path class="gras-01" fill="#C3F2AA" d="M445,200l-35-50l35-50l35,50L445,200z"/>
+  <path class="tur-01" fill="#B7E5DD" d="M535,200l-35-50l35-50l35,50L535,200z"/>
+  <path class="sap-01" fill="#C1C7E0" d="M625,200l-35-50l35-50l35,50L625,200z"/>
+  <path class="grap-01" fill="#78288C" d="M715,200l-35-50l35-50l35,50L715,200z"/>
 
-		<style>
-			.anim {
-				background-color:#E5E4E3;
-			}
-			.tuli-01, .dan-01, .pum-01, .lim-01, .gras-01, .tur-01, .sap-01, .grap-01 {
-				animation-duration: 10s;
-				animation-iteration-count: infinite;
-				animation-timing-function: linear;
-			}
+  <style>
+  .anim {
+  background-color:#E5E4E3;
+  }
+  .tuli-01, .dan-01, .pum-01, .lim-01, .gras-01, .tur-01, .sap-01, .grap-01 {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
 
-			.tuli-01 { animation-name: colTul;}
-			.dan-01 { animation-name: colDan;}
-			.pum-01 { animation-name: colPum;}
-			.lim-01 { animation-name: colLim;}
-			.gras-01 { animation-name: colGras;}
-			.tur-01 { animation-name: colTur;}
-			.sap-01 { animation-name: colSap;}
-			.grap01 { animation-name: colGrap;}
+  .tuli-01 { animation-name: colTul;}
+  .dan-01 { animation-name: colDan;}
+  .pum-01 { animation-name: colPum;}
+  .lim-01 { animation-name: colLim;}
+  .gras-01 { animation-name: colGras;}
+  .tur-01 { animation-name: colTur;}
+  .sap-01 { animation-name: colSap;}
+  .grap01 { animation-name: colGrap;}
 
-			@keyframes colPum {
-				0% {fill: #FFD5C0;}
-				10% {fill: #FFD4BF;}
-				20% {fill: #FF7733;}
-				30% {fill: #CC5215;}
-				40% {fill: #A43C07;}
-				50% {fill: #CC5215;}
-				60% {fill: #FF7733;}
-				70% {fill: #FFD4BF;}
-				80% {fill: #FFD5C0;}
-			}
+  @keyframes colPum {
+  0% {fill: #FFD5C0;}
+  10% {fill: #FFD4BF;}
+  20% {fill: #FF7733;}
+  30% {fill: #CC5215;}
+  40% {fill: #A43C07;}
+  50% {fill: #CC5215;}
+  60% {fill: #FF7733;}
+  70% {fill: #FFD4BF;}
+  80% {fill: #FFD5C0;}
+  }
 
-			@keyframes colDan {
-				0% {fill: #FFE6B3;}
-				10% {fill: #FFE5B2;}
-				20% {fill: #FFB727;}
-				30% {fill: #D7920A;}
-				40% {fill: #B17100;}
-				50% {fill: #D7920A;}
-				60% {fill: #FFB727;}
-				70% {fill: #FFE5B2;}
-				80% {fill: #FFE6B3;}
-			}
+  @keyframes colDan {
+  0% {fill: #FFE6B3;}
+  10% {fill: #FFE5B2;}
+  20% {fill: #FFB727;}
+  30% {fill: #D7920A;}
+  40% {fill: #B17100;}
+  50% {fill: #D7920A;}
+  60% {fill: #FFB727;}
+  70% {fill: #FFE5B2;}
+  80% {fill: #FFE6B3;}
+  }
 
-			@keyframes colTul {
-				0% {fill: #F2AABD;}
-				10% {fill: #F27990;}
-				20% {fill: #CC2954;}
-				30% {fill: #A51138;}
-				40% {fill: #7C0826;}
-				50% {fill: #A51138;}
-				60% {fill: #CC2954;}
-				70% {fill: #F27990;}
-				80% {fill: #F2AABD;}
-			}
+  @keyframes colTul {
+  0% {fill: #F2AABD;}
+  10% {fill: #F27990;}
+  20% {fill: #CC2954;}
+  30% {fill: #A51138;}
+  40% {fill: #7C0826;}
+  50% {fill: #A51138;}
+  60% {fill: #CC2954;}
+  70% {fill: #F27990;}
+  80% {fill: #F2AABD;}
+  }
 
-			@keyframes colLim{
-				0% {fill: #FFFFB3;}
-				10% {fill: #FFFFB2;}
-				20% {fill: #F2F230;}
-				30% {fill: #F1F12F;}
-				40% {fill: #AEAE0B;}
-				50% {fill: #F1F12F;}
-				60% {fill: #F2F230;}
-				70% {fill: #FFFFB2;}
-				80% {fill: #FFFFB3;}
-			}
+  @keyframes colLim{
+  0% {fill: #FFFFB3;}
+  10% {fill: #FFFFB2;}
+  20% {fill: #F2F230;}
+  30% {fill: #F1F12F;}
+  40% {fill: #AEAE0B;}
+  50% {fill: #F1F12F;}
+  60% {fill: #F2F230;}
+  70% {fill: #FFFFB2;}
+  80% {fill: #FFFFB3;}
+  }
 
-			@keyframes colGras {
-				0% {fill: #C3F2AA;}
-				10% {fill: #C2F1A9;}
-				20% {fill: #76CC4A;}
-				30% {fill: #75CB49;}
-				40% {fill: #3E7E18;}
-				50% {fill: #75CB49;}
-				60% {fill: #76CC4A;}
-				70% {fill: #C2F1A9;}
-				80% {fill: #C3F2AA;}
-			}
+  @keyframes colGras {
+  0% {fill: #C3F2AA;}
+  10% {fill: #C2F1A9;}
+  20% {fill: #76CC4A;}
+  30% {fill: #75CB49;}
+  40% {fill: #3E7E18;}
+  50% {fill: #75CB49;}
+  60% {fill: #76CC4A;}
+  70% {fill: #C2F1A9;}
+  80% {fill: #C3F2AA;}
+  }
 
-			@keyframes colTur {
-				0% {fill: #B7E5DD;}
-				10% {fill: #B6E4DC;}
-				20% {fill: #36B29A;}
-				30% {fill: #187E6D;}
-				40% {fill: #096555;}
-				50% {fill: #187E6D;}
-				60% {fill: #36B29A;}
-				70% {fill: #B6E4DC;}
-				80% {fill: #B7E5DD;}
-			}
+  @keyframes colTur {
+  0% {fill: #B7E5DD;}
+  10% {fill: #B6E4DC;}
+  20% {fill: #36B29A;}
+  30% {fill: #187E6D;}
+  40% {fill: #096555;}
+  50% {fill: #187E6D;}
+  60% {fill: #36B29A;}
+  70% {fill: #B6E4DC;}
+  80% {fill: #B7E5DD;}
+  }
 
-			@keyframes colSap {
-				0% {fill: #C1C7E0;}
-				10% {fill: #C0C6DF;}
-				20% {fill: #2B4099;}
-				30% {fill: #162771;}
-				40% {fill: #081758;}
-				50% {fill: #162771;}
-				60% {fill: #2B4099;}
-				70% {fill: #C0C6DF;}
-				80% {fill: #C1C7E0;}
-			}
+  @keyframes colSap {
+  0% {fill: #C1C7E0;}
+  10% {fill: #C0C6DF;}
+  20% {fill: #2B4099;}
+  30% {fill: #162771;}
+  40% {fill: #081758;}
+  50% {fill: #162771;}
+  60% {fill: #2B4099;}
+  70% {fill: #C0C6DF;}
+  80% {fill: #C1C7E0;}
+  }
 
-			@keyframes colGrap {
-				0% {fill: #DDB7E5;}
-				10% {fill: #DCB6E4;}
-				20% {fill: #78288C;}
-				30% {fill: #571365;}
-				40% {fill: #3E074B;}
-				50% {fill: #571365;}
-				60% {fill: #78288C;}
-				70% {fill: #DCB6E4;}
-				80% {fill: #DDB7E5;}
-			}
-		</style>
-	</svg>
+  @keyframes colGrap {
+  0% {fill: #DDB7E5;}
+  10% {fill: #DCB6E4;}
+  20% {fill: #78288C;}
+  30% {fill: #571365;}
+  40% {fill: #3E074B;}
+  50% {fill: #571365;}
+  60% {fill: #78288C;}
+  70% {fill: #DCB6E4;}
+  80% {fill: #DDB7E5;}
+  }
+  </style>
+  </svg>
 </div>
 
 ### Fill
@@ -1141,43 +1140,43 @@ The initial value is `none`.
         </div>
 
 <div id="fillMode" class="anim">
-	<?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
-		<path class="colForwards" fill="#CC2954" d="M500,280l-90-130l90-130l90,130L500,280z"/>
-		<path class="colBackwards" fill="#CC2954" d="M300,280l-90-130l90-130l90,130L300,280z"/>
-		<style>
-			.anim {
-				background-color:#E5E4E3;
-			}
-			.colBackwards, .colForwards {
-				animation-duration: 4s;
-				animation-iteration-count: 1;
-				animation-delay: 2s;
-			}
+  <?xml version="1.0" encoding="utf-8"?>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
+  <path class="colForwards" fill="#CC2954" d="M500,280l-90-130l90-130l90,130L500,280z"/>
+  <path class="colBackwards" fill="#CC2954" d="M300,280l-90-130l90-130l90,130L300,280z"/>
+  <style>
+  .anim {
+  background-color:#E5E4E3;
+  }
+  .colBackwards, .colForwards {
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  }
 
-			.colBackwards {
-				animation-name: modeForw;
-				animation-fill-mode: backwards;
-			}
-			.colForwards {
-				animation-name: modeBack;
-				animation-fill-mode: forwards;
-			}
+  .colBackwards {
+  animation-name: modeForw;
+  animation-fill-mode: backwards;
+  }
+  .colForwards {
+  animation-name: modeBack;
+  animation-fill-mode: forwards;
+  }
 
-			@keyframes modeForw {
-				0% { fill: #CC2954;}
-				50% { fill: #FFB727;}
-				100% { fill: #FF7733;}
-			}
+  @keyframes modeForw {
+  0% { fill: #CC2954;}
+  50% { fill: #FFB727;}
+  100% { fill: #FF7733;}
+  }
 
-			@keyframes modeBack{
-				0% { fill: #CC2954;}
-				50% { fill: #FFB727;}
-				100% { fill: #FF7733;}
-			}
-		</style>
-	</svg>
+  @keyframes modeBack{
+  0% { fill: #CC2954;}
+  50% { fill: #FFB727;}
+  100% { fill: #FF7733;}
+  }
+  </style>
+  </svg>
 </div>
 
 ### Stroke
@@ -1257,64 +1256,64 @@ The `stroke-dashoffset` attribute indicates the length before the first dash of 
         </div>
 
 <div id="stroked" class="anim">
-	<?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
-		<path class="path-01" fill="#E5E4E3" d="M400,280l-90-130l90-130l90,130L400,280z"/>
+  <?xml version="1.0" encoding="utf-8"?>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
+  <path class="path-01" fill="#E5E4E3" d="M400,280l-90-130l90-130l90,130L400,280z"/>
  		<path class="path-02" fill="#E5E4E3" d="M400,250l-70-100l70-100l70,100L400,250z"/>
  		<path class="path-03" fill="#E5E4E3"d="M400,220l-50-70l50-70l50,70L400,220z"/>
  		<path class="path-04" fill="#E5E4E3" d="M400,190l-30-40l30-40l30,40L400,190z"/>
-		<style>
-			.anim {
-				background-color:#E5E4E3;
-			}
-			.path-01, .path-02, .path-03, .path-04 {
-				animation-iteration-count: infinite;
-				animation-duration: 6s;
-				stroke-width: 6px;
-				stroke-linejoin: round;
-				stroke-linecap: round;
-				stroke-dasharray: 1000;
-				stroke-dashoffset: 1000;
-			}
-			.path-01 {
-				stroke: #F2F230;
-				animation-name: pathOne;
-			}
-			.path-02 {
-				stroke: #FFB727;
-				animation-name: pathTwo;
-			}
-			.path-03 {
-				stroke: #FF7733;
-				animation-name: pathThree;
-			}
-			.path-04 {
-				stroke: #CC2954;
-				animation-name: pathFour;
-			}
+  <style>
+  .anim {
+  background-color:#E5E4E3;
+  }
+  .path-01, .path-02, .path-03, .path-04 {
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  stroke-width: 6px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  }
+  .path-01 {
+  stroke: #F2F230;
+  animation-name: pathOne;
+  }
+  .path-02 {
+  stroke: #FFB727;
+  animation-name: pathTwo;
+  }
+  .path-03 {
+  stroke: #FF7733;
+  animation-name: pathThree;
+  }
+  .path-04 {
+  stroke: #CC2954;
+  animation-name: pathFour;
+  }
 
-			@keyframes pathOne {
-			  from { stroke-dashoffset: 1000;}
-			  to {stroke-dashoffset: 0;}
-			}
+  @keyframes pathOne {
+    from { stroke-dashoffset: 1000;}
+    to {stroke-dashoffset: 0;}
+  }
 
-			@keyframes pathTwo {
-				from { stroke-dashoffset: 1000;}
-				to {stroke-dashoffset: 0;}
-			}
+  @keyframes pathTwo {
+  from { stroke-dashoffset: 1000;}
+  to {stroke-dashoffset: 0;}
+  }
 
-			@keyframes pathThree {
-				from { stroke-dashoffset: 1000;}
-				to {stroke-dashoffset: 0;}
-			}
+  @keyframes pathThree {
+  from { stroke-dashoffset: 1000;}
+  to {stroke-dashoffset: 0;}
+  }
 
-			@keyframes pathFour {
-				from { stroke-dashoffset: 1000;}
-				to {stroke-dashoffset: 0;}
-			}
-		</style>
-	</svg>
+  @keyframes pathFour {
+  from { stroke-dashoffset: 1000;}
+  to {stroke-dashoffset: 0;}
+  }
+  </style>
+  </svg>
 </div>
 
 ### Opacity
@@ -1421,99 +1420,99 @@ The possible values for the amount of transparency are written by a whole number
 
 
 <div id="opacified" class="anim">
-	<?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
-		 <g class="star">
-			 <path class="opa-01" fill="#FF7733" d="M400,190l-60-85l60-85l60,85L400,190z"/>
-			 <path class="opa-02" fill="#FFB727" d="M371.7,178.3l17.7-102.5l102.5-17.7l-17.7,102.5L371.7,178.3z"/>
-			 <path class="opa-03" fill="#F2F230" d="M360,150l85-60l85,60l-85,60L360,150z"/>
-			 <path class="opa-04" fill="#76CC4A" d="M371.7,121.7l102.5,17.7l17.7,102.5l-102.5-17.7L371.7,121.7z"/>
-			 <path class="opa-05" fill="#36B29A" d="M400,280l-60-85l60-85l60,85L400,280z"/>
-			 <path class="opa-06" fill="#2B4099" d="M308.1,241.9l17.7-102.5l102.5-17.7l-17.7,102.5L308.1,241.9z"/>
-			 <path class="opa-07" fill="#78288C" d="M270,150l85-60l85,60l-85,60L270,150z"/>
-			 <path class="opa-08" fill="#CC2954" d="M308.1,58.1l102.5,17.7l17.7,102.5l-102.5-17.7L308.1,58.1z"/>
-	 	</g>
-		<style>
-			.anim {
-				background-color:#E5E4E3;
-			}
-			.star {
-				animation-name: star;
-				animation-duration: 20s;
-				animation-iteration-count: infinite;
-				animation-timing-function: linear;
-				transform-origin: 50% 50%;
-			}
+  <?xml version="1.0" encoding="utf-8"?>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
+   <g class="star">
+   <path class="opa-01" fill="#FF7733" d="M400,190l-60-85l60-85l60,85L400,190z"/>
+   <path class="opa-02" fill="#FFB727" d="M371.7,178.3l17.7-102.5l102.5-17.7l-17.7,102.5L371.7,178.3z"/>
+   <path class="opa-03" fill="#F2F230" d="M360,150l85-60l85,60l-85,60L360,150z"/>
+   <path class="opa-04" fill="#76CC4A" d="M371.7,121.7l102.5,17.7l17.7,102.5l-102.5-17.7L371.7,121.7z"/>
+   <path class="opa-05" fill="#36B29A" d="M400,280l-60-85l60-85l60,85L400,280z"/>
+   <path class="opa-06" fill="#2B4099" d="M308.1,241.9l17.7-102.5l102.5-17.7l-17.7,102.5L308.1,241.9z"/>
+   <path class="opa-07" fill="#78288C" d="M270,150l85-60l85,60l-85,60L270,150z"/>
+   <path class="opa-08" fill="#CC2954" d="M308.1,58.1l102.5,17.7l17.7,102.5l-102.5-17.7L308.1,58.1z"/>
+   	</g>
+  <style>
+  .anim {
+  background-color:#E5E4E3;
+  }
+  .star {
+  animation-name: star;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 50% 50%;
+  }
 
-			@keyframes star {
-				0% { transform: rotate(0deg);}
-				100% { transform: rotate(360deg);}
-			}
+  @keyframes star {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+  }
 
-			.opa-01, .opa-02, .opa-03, .opa-04, .opa-05, .opa-06, .opa-07, .opa-08 {
-				animation-duration: 5s;
-				animation-iteration-count: infinite;
-				animation-timing-function: linear;
-			}
-			.opa-01 { animation-name: opaOne;}
-			.opa-02 { animation-name: opaTwo;}
-			.opa-03 { animation-name: opaThree;}
-			.opa-04 { animation-name: opaFour;}
-			.opa-05 { animation-name: opaFive;}
-			.opa-06 { animation-name: opaSix;}
-			.opa-07 { animation-name: opaSeven;}
-			.opa-08 { animation-name: opaEight;}
+  .opa-01, .opa-02, .opa-03, .opa-04, .opa-05, .opa-06, .opa-07, .opa-08 {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+  .opa-01 { animation-name: opaOne;}
+  .opa-02 { animation-name: opaTwo;}
+  .opa-03 { animation-name: opaThree;}
+  .opa-04 { animation-name: opaFour;}
+  .opa-05 { animation-name: opaFive;}
+  .opa-06 { animation-name: opaSix;}
+  .opa-07 { animation-name: opaSeven;}
+  .opa-08 { animation-name: opaEight;}
 
-			@keyframes opaOne {
-				0% { opacity: 0.1; }
-				50% { opacity: 0.5; }
-				100% {opacity: 0.1; }
-			}
+  @keyframes opaOne {
+  0% { opacity: 0.1; }
+  50% { opacity: 0.5; }
+  100% {opacity: 0.1; }
+  }
 
-			@keyframes opaTwo {
-				0% { opacity: 0.1; }
-				50% { opacity: 0.5; }
-				100% {opacity: 0.1; }
-			}
+  @keyframes opaTwo {
+  0% { opacity: 0.1; }
+  50% { opacity: 0.5; }
+  100% {opacity: 0.1; }
+  }
 
-			@keyframes opaThree {
-				0% { opacity: 0.1; }
-				50% { opacity: 0.5; }
-				100% {opacity: 0.1; }
-			}
+  @keyframes opaThree {
+  0% { opacity: 0.1; }
+  50% { opacity: 0.5; }
+  100% {opacity: 0.1; }
+  }
 
-			@keyframes opaFour {
-				0% { opacity: 0.1; }
-				50% { opacity: 0.5; }
-				100% {opacity: 0.1; }
-			}
+  @keyframes opaFour {
+  0% { opacity: 0.1; }
+  50% { opacity: 0.5; }
+  100% {opacity: 0.1; }
+  }
 
-			@keyframes opaFive {
-				0% { opacity: 0.1; }
-				50% { opacity: 0.5; }
-				100% {opacity: 0.1; }
-			}
+  @keyframes opaFive {
+  0% { opacity: 0.1; }
+  50% { opacity: 0.5; }
+  100% {opacity: 0.1; }
+  }
 
-			@keyframes opaSix {
-				0% { opacity: 0.1; }
-				50% { opacity: 0.5; }
-				100% {opacity: 0.1; }
-			}
+  @keyframes opaSix {
+  0% { opacity: 0.1; }
+  50% { opacity: 0.5; }
+  100% {opacity: 0.1; }
+  }
 
-			@keyframes opaSeven {
-				0% { opacity: 0.1; }
-				50% { opacity: 0.5; }
-				100% {opacity: 0.1; }
-			}
+  @keyframes opaSeven {
+  0% { opacity: 0.1; }
+  50% { opacity: 0.5; }
+  100% {opacity: 0.1; }
+  }
 
-			@keyframes opaEight {
-				0% { opacity: 0.1; }
-				50% { opacity: 0.5; }
-				100% {opacity: 0.1; }
-			}
-		</style>
-	</svg>
+  @keyframes opaEight {
+  0% { opacity: 0.1; }
+  50% { opacity: 0.5; }
+  100% {opacity: 0.1; }
+  }
+  </style>
+  </svg>
 </div>
 
 ### Direction
@@ -1572,50 +1571,50 @@ The initial value is `normal`.
         </div>
 
 <div id="direction" class="anim">
-	<?xml version="1.0" encoding="utf-8"?>
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
-		 <path class="rev-01" fill="#2B4099" d="M200,220l-50-70l50-70l50,70L200,220z"/>
-		 <path class="rev-02" fill="#78288C" d="M300,220l-50-70l50-70l50,70L300,220z"/>
-		 <path class="rev-03" fill="#CC2954" d="M400,220l-50-70l50-70l50,70L400,220z"/>
-		 <path class="rev-04" fill="#FF7733" d="M500,220l-50-70l50-70l50,70L500,220z"/>
-		 <path class="rev-05" fill="#FFB727" d="M600,220l-50-70l50-70l50,70L600,220z"/>
+  <?xml version="1.0" encoding="utf-8"?>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 800 300" style="enable-background:new 0 0 800 300;" xml:space="preserve">
+   <path class="rev-01" fill="#2B4099" d="M200,220l-50-70l50-70l50,70L200,220z"/>
+   <path class="rev-02" fill="#78288C" d="M300,220l-50-70l50-70l50,70L300,220z"/>
+   <path class="rev-03" fill="#CC2954" d="M400,220l-50-70l50-70l50,70L400,220z"/>
+   <path class="rev-04" fill="#FF7733" d="M500,220l-50-70l50-70l50,70L500,220z"/>
+   <path class="rev-05" fill="#FFB727" d="M600,220l-50-70l50-70l50,70L600,220z"/>
 
-		<style>
-			.anim {
-				background-color:#E5E4E3;
-			}
-			.rev-01, .rev-02, .rev-04, .rev-05 {
-				animation-iteration-count: infinite;
-				animation-duration: 2s;
-				animation-direction: alternate-reverse;
-			}
-			.rev-01 {animation-name: revOne;}
-			.rev-02 {animation-name: revTwo;}
-			.rev-04 {animation-name: revFour;}
-			.rev-05 {animation-name: revFive;}
+  <style>
+  .anim {
+  background-color:#E5E4E3;
+  }
+  .rev-01, .rev-02, .rev-04, .rev-05 {
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  }
+  .rev-01 {animation-name: revOne;}
+  .rev-02 {animation-name: revTwo;}
+  .rev-04 {animation-name: revFour;}
+  .rev-05 {animation-name: revFive;}
 
-			@keyframes revOne {
-			  from { transform: translate(0);}
-			  to { transform: translate(-80px);}
-			}
+  @keyframes revOne {
+    from { transform: translate(0);}
+    to { transform: translate(-80px);}
+  }
 
-			@keyframes revTwo {
+  @keyframes revTwo {
         from { transform: translate(0);}
         to { transform: translate(-40px);}
-			}
+  }
 
-			@keyframes revFour {
+  @keyframes revFour {
         from { transform: translate(0);}
         to { transform: translate(40px);}
-			}
+  }
 
-			@keyframes revFive {
+  @keyframes revFive {
         from { transform: translate(0);}
         to { transform: translate(80px);}
-			}
-		</style>
-	</svg>
+  }
+  </style>
+  </svg>
 </div>
 
 ## CSS animations common use
