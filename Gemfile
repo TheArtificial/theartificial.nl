@@ -8,6 +8,7 @@ gem "middleman", "~>4.1"
 gem 'middleman-blog'
 
 gem 'redcarpet'
+gem 'middleman-syntax'
 gem 'nokogiri'
 gem 'builder'
 
