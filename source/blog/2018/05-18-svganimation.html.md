@@ -28,7 +28,10 @@ If you're using a design tool, make sure you:
 *  Create your image completely within the artboard
 *  Export SVG 1.1
 
-If you follow these pro tips, your artwork is almost animation-ready, but you'll still need to clean up your SVG using a text editor.
+
+![SVG in Illustrator](05-18-svganimation/illustrator.gif)
+Here is a sample of what your SVG should look like. If you follow these pro tips, your artwork is almost animation-ready, but you'll still need to clean up your SVG using a text editor.
+
 In your text editor:
 
 *  Give shapes, paths, and groups you want to animate unique **class** names
@@ -36,26 +39,25 @@ In your text editor:
 
 To keep things simple in this tutorial, all CSS styles will be contained within our SVG. These styles could also live independently in their own CSS file.
 
-Here is a sample of what your SVG should look like:
-
-
-![SVG in Illustrator](05-18-svganimation/illustrator.gif)
 
 
 ### HTML + CSS
 
 To use a metaphor, HTML and CSS are like Russian dolls. HTML describes the number of dolls as well as the order in which they contain each others. CSS defines all the styles attributes like each doll size and their decorative paintings.
-HTML is the acronym of HyperText Markup Language. It is a plaintext that specifies the structure of a webpage. Most elements are wrapped in opening and closing tags made of brackets like `<div> </div>`.
 
-CSS stand for Cascading Style Sheets. It is used to control how web pages look in the browser. CSS allow styling HTML elements or other languages like SVG or XML. Regarding the syntax, CSS rules consist of a selector to target an element to style and a property with its associated value to define the element’s style.
+HTML is the acronym of HyperText Markup Language. It is written with plain text that specifies the structure of a webpage. Most elements are wrapped between an opening tag and a closing tag made of brackets like `<div> </div>`.
+
+CSS stand for Cascading Style Sheets. It is used to control how web pages look in the browser. CSS let you style HTML elements or other languages like SVG or XML. Regarding the syntax, CSS rules consist of a selector to target an element to style and a property with its associated value to define the element’s style.
 
 In order to style SVG elements, you have two choices. Either placing the styling tags inline in your SVG code, or using classes to apply to targeted SVG elements. If you use classes, their style attributes can be either between `<style>` tags within your `<svg>` tags, or, in an external stylesheet that is exclusively CSS and that is linked to your file. In these code examples, you will find `<style>` tags within the SVG code, so the styles remain grouped and you can copy and paste the examples blocks without losing the styles of your SVG. These two methods of insertion permit manipulation with CSS (and JS).
 
+```svg
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <style> .mouse{fill:#E5E4E3;} .tulip{fill:#CC2954;} </style>
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
             <polygon class="tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
         </svg>
+```
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <style> .mouse{fill:#E5E4E3;} .tulip{fill:#CC2954;} </style>
@@ -73,18 +75,20 @@ The two first following concepts are essential to animate with CSS.
 
 ### 1. Referencing
 
+```css
     .diamond{
         animation-name: diamondMoves;
     }
 
     @keyframes diamondMoves {
     }
+```
 
 In your CSS, after your class name selector, and within `{}` write the property `animation-name:` and add a name for your animation. You can use letters, numbers, underscores and dashes.
 
 ### 2. Keyframes
 
-
+```css
     @keyframes diamondMoves {
         from {transform: translateX(0);}
         to {transform: translateX(400px);}
@@ -95,6 +99,7 @@ In your CSS, after your class name selector, and within `{}` write the property 
         50% {transform: translateX(100px);}
         100% {transform: translateX(400px);}
     }
+```
 
 The `@Keyframes` function contains a list of all the steps along the whole animation sequence. The individual list item controls the aspect of the target element at a given time. Each, element of the list, or keyframe rule, contains a time stamp followed by a property to apply.
 
@@ -104,10 +109,12 @@ These steps actions play at different times depending on the total duration of a
 
 ### 3. Duration
 
+```css
     .diamond{
         animation-name: diamondMoves;
         animation-duration: 6s;
     }
+```
 
 The `animation-duration` property specifies the length of time that an animation takes to complete one cycle.
 
@@ -117,11 +124,13 @@ The initial value is `0s`.
 
 ### 4. Iteration
 
+```css
     .diamond{
         animation-name: diamondMoves;
         animation-duration: 6s;
         animation-iteration-count: 1;
     }
+```
 
 The `animation-iteration-count` property specifies the number of times an animation cycle should be played before stopping.
 
@@ -135,12 +144,14 @@ The initial value is `1`.
 
 ### 5. Easing
 
+```css
     .diamond{
         animation-name: diamondMoves;
         animation-duration: 6s;
         animation-iteration-count: 1;
         animation-time-function: linear;
     }
+```
 
 The `animation-easing` property specifies how the animation progresses over the duration of each cycle. It can be specified on individual keyframes.
 
@@ -153,6 +164,7 @@ The initial value is `ease`.
 
 ### 6. Delay
 
+```css
     .diamond{
         animation-name: diamondMoves;
         animation-duration: 6s;
@@ -160,6 +172,7 @@ The initial value is `ease`.
         animation-time-function: linear;
         animation-delay: 4s;
     }
+```
 
 The `animation-delay` property specifies when an animation should start.
 
@@ -180,7 +193,7 @@ Possible values are:
 * a length expressed in `px` or in `cm` like `2px`
 * keywords or their corresponding percentages written : `left` or `0%` , `right` or `100%`, `top` or `0%`, `bottom` or `100%`, and `center` or `50%`. If a Z offset is specified, it can only accept a length.
 
-
+```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
             <polygon class="diamondOr tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
@@ -198,6 +211,7 @@ Possible values are:
             }
             </style>
         </svg>
+```
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
@@ -218,7 +232,7 @@ Possible values are:
 </svg>
 In this example, the diamond rotates from its default origin point, in the top left corner.
 
-
+```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
             <polygon class="diamondOrCh tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
@@ -237,6 +251,7 @@ In this example, the diamond rotates from its default origin point, in the top l
                 }
             </style>
         </svg>
+```
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
@@ -270,8 +285,8 @@ Possible values are:
 * `x`, `y`, or `z` to name the axis you want to rotate the element around.
 * `<angle>` to specify the amount of rotation. The angle value can expressed in degree like `90deg`, in turn from `0` to `1` like `0.25 turn`, or in radius like `1.64rad`.
 
-<b></b>
 
+```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
             <polygon class="diamondTu tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
@@ -291,6 +306,7 @@ Possible values are:
                 }
             </style>
         </svg>
+```
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
@@ -319,7 +335,7 @@ The `translate` animation moves an object in space from a point to another based
 The syntax can use one, two, or three values if you want to move your object along the Z axis. It can be written `translate(tx)` or `translate(tx, ty)`, `translate(tz)`.
 Values are specified in lengths in `px` or in `%`. If `t` is unspecified, its default value is `0`.
 
-
+```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
             <polygon class="diamondMo tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
@@ -345,6 +361,7 @@ Values are specified in lengths in `px` or in `%`. If `t` is unspecified, its de
                 }
             </style>
         </svg>
+```
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
@@ -379,7 +396,7 @@ The `scale` animation resizes an object. Scaling can keep the ration intact, or 
 
 The expression can use one, two, or three values if you want to scale your object along the Z axis. It can be written `scale(sx)`, `scale(sx, sy)`, or `scale(sx, sy, sz)`, where `s` is your own a whole number (integer) or decimal number ranging from 0 to 1.
 
-
+```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
             <polygon class="diamondSc tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
@@ -399,6 +416,7 @@ The expression can use one, two, or three values if you want to scale your objec
                 }
             </style>
         </svg>
+```
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
@@ -429,7 +447,7 @@ The expression can use one or two values. Each value represents the amount of sk
 
 The amount of skewing is defined by the values of an `<angle>`. The angle value can expressed in degree like `90deg`, in turn from `-1` to `1` where 0 is neutral, like `0.25 turn`, or in radius like `1.64rad`. If you are using degrees, a positive skew angle lies between 0 and 90 degrees, and a negative skew angle lies between -90 degrees and 0 degree.
 
-
+```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
             <polygon class="diamondSk tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
@@ -451,6 +469,7 @@ The amount of skewing is defined by the values of an `<angle>`. The angle value 
                 }
             </style>
         </svg>
+```
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
@@ -488,8 +507,8 @@ Possible values:
 * keywords like `pink`
 * color code like RGB `rgb(204, 41, 84)`, RGBA `rgba(204, 41, 84, 0.5)`, or Hex like `#CC2954`
 
-<b></b>
 
+```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
             <polygon class="diamondCo tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
@@ -507,6 +526,7 @@ Possible values:
                     }
             </style>
         </svg>
+```
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
@@ -535,7 +555,7 @@ The `fill-mode` animation can have four different values: `none`, `forwards`, `b
 
 The initial value is `none`.
 
-
+```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
             <polygon class="diamondFi tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
@@ -554,6 +574,7 @@ The initial value is `none`.
                 }
             </style>
         </svg>
+```
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
@@ -590,7 +611,7 @@ The `stroke-dasharray` attribute specifies on a dashed strokes the length of the
 
 The `stroke-dashoffset` attribute indicates the length before the first dash of the series starts.
 
-
+```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
             <path class="diamondSt pathTulip" d="M400,280l-90-130l90-130l90,130L400,280z"/>
@@ -616,6 +637,7 @@ The `stroke-dashoffset` attribute indicates the length before the first dash of 
                 }
             </style>
         </svg>
+```
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
@@ -650,7 +672,7 @@ The `opacity` attribute defines the transparency of an element.
 
 The possible values for the amount of transparency are written by a whole number (integer) or decimal number from `0` to `1`, or with a percentage like `50%`.`
 
-
+```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
             <polygon class="diamondOp tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
@@ -669,6 +691,7 @@ The possible values for the amount of transparency are written by a whole number
                 }
             </style>
         </svg>
+```
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
@@ -698,7 +721,7 @@ The `animation-direction` has has four different values: `normal`, `reverse`, `a
 
 The initial value is `normal`.
 
-
+```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
             <polygon class="diamondMoBa tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
@@ -718,6 +741,7 @@ The initial value is `normal`.
                 }
             </style>
         </svg>
+```
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
@@ -769,6 +793,10 @@ You may want to use CSS animation on line drawings like [Polygon did with a ps4]
 
 ## Conclusion
 
-Theses resources cover the basics of CSS animations on SVG. CSS animations are not made for photo-realistic organic effects, or for designing a complex sequence of interactions but they provide an easy solution for scalable vectorial animation on the web. It is a lightweight technology, broadly supported on the web that is also future-proof. CSS provides an easy way to control time features like keyframes, duration, iteration, easing, and delay. They easily allow transformations such as rotations, translations, scaling, and skewing. Changing styles, and animating a stroke are also easy with straightforward expressions.
+CSS animations are not ideal to animate photo-realistic and organic effects, or for designing a complex sequence of interactions but they provide an easy solution for scalable vectorial animation on the web. It is a lightweight technology, broadly supported on the web that is also future-proof. CSS provides an easy way to control time features like keyframes, duration, iteration, easing, and delay. The language easily allows transformations such as rotations, translations, scaling, and skewing. Changing styles, and animating a stroke are also easy with straightforward expressions.
+
+<p data-height="265" data-theme-id="dark" data-slug-hash="BxPgRB" data-default-tab="css,result" data-user="agaroff" data-embed-version="2" data-pen-title="CSS Direction Animation" class="codepen">See the Pen <a href="https://codepen.io/agaroff/pen/BxPgRB/">CSS Direction Animation</a> by Ariane (<a href="https://codepen.io/agaroff">@agaroff</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+You can see more examples based on the basic concepts of this tutorial on our [CodePen collection](https://codepen.io/collection/DbqLwL/)
 
 We wish you a very good luck to create your own CSS animation on SVG. Don't hesitate to send us your feedback on this tutorial, or to share your CSS animation creations!
