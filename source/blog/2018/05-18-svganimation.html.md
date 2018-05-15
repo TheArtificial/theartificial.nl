@@ -188,7 +188,7 @@ The initial value is `0s`.
 
 ## CSS transform animations
 
-CSS transform animations include rotation, translation, scaling, and skewing. We will see in this part, for each of these transform animations, one example, a definition of the animation, and its possible values.
+CSS transform animations include rotation, translation, scaling, and skewing. We will see in this part, for each of these transform properties, an example, a definition, and the possible syntaxes and values.
 
 To start animating, you should understand that the origin point of an SVG element is located at 0, 0 of the artwork. It means that, by default, the reference point around which the transformation is applied is the top left corner and not the center of the artwork. However, CSS `transform-origin` property lets you change the position of this origin point.
 
@@ -198,7 +198,6 @@ Possible values and units are:
 
 * a length in `px` or in `cm`, like `2px`. If a `z-offset` is specified, it only accepts a length.
 * a keyword or its corresponding percentages `left` or `0%` , `right` or `100%`, `top` or `0%`, `bottom` or `100%`, and `center` or `50%`.
-
 
 ```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
@@ -280,7 +279,6 @@ In this example, the diamond rotates from its default origin point, in the top l
 </svg>
 In this example, `transform-origin: 50% 50%;` is added. The origin point is set to the center so the diamond rotates from its center.
 
-
 ### Rotate
 
 The `rotate` animation moves an object circularly around an origin point.
@@ -347,7 +345,6 @@ Possible length units are:
 
 * pixels, like `200px`
 * percentages, like `50%`
-
 
 ```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
@@ -515,19 +512,19 @@ Possible `<angle>` units are:
 </svg>
 In this example, the diamond starts and ends undistorted. In the middle of the animation, the diamond points are skewed from a negative 35-degrees angle based on the X axis. Then, the diamond comes back to its original shape before skewing from a positive 35-degrees angle based on the X axis.
 
+
 ## Other CSS animations
 
 Aside from transform properties, CSS animation also include color, fill mode, stroke, opacity, and direction. We will see in this part, for each of this animation, one example, a definition of the animation, and its possible values.
 
 ### Color
 
-The `color` attribute speaks for itself as it defines the fill color of an element.
+The `fill` attribute defines the color of an element.
 
 Possible values:
 
-* keywords like `pink`
-* color code like RGB `rgb(204, 41, 84)`, RGBA `rgba(204, 41, 84, 0.5)`, or Hex like `#CC2954`
-
+* a keyword, like `pink`
+* a color code, like RGB `rgb(204, 41, 84)`, RGBA `rgba(204, 41, 84, 0.5)`, or Hex like `#CC2954`
 
 ```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
@@ -566,20 +563,25 @@ Possible values:
             }
     </style>
 </svg>
-In this four second animation played only once, the color of the diamond changes from tulip to lime. When the animation finishes, he first keyframe is shown with the diamond in tulip color.
+In this animation played once, the color of the diamond changes from tulip to lime. When the animation ends, the diamond fill goes back to the tulip color of the begining.
 
 ### Fill Mode
 
 The `fill-mode` property remembers the first state at the beginning of the animation and the last state at the end of the animation. It is useful in case you would like your animation to start or end with a specific state.
 
-The `fill-mode` animation can have four different values: `none`, `forwards`, `backwards`, and `both`. With `forwards`, the target will be like the last keyframe played. `forwards` can be influenced by `animation-direction` and `animation-iteration-count`. `Backwards` applies the value of the first keyframe at the end of the animation. It is influenced by `animation-delay` and `animation-direction`.
+Possible values:
+
+* `none`, no extra style is applied at the beginning and and at the end of the animation.
+* `forwards`, applies the value of the last keyframe at the end of the animation. It can be influenced by `animation-direction` and `animation-iteration-count`.
+* `backwards`, applies the value of the first keyframe at the beginning of the animation. If an `animation-delay` is set, the target will keep the value of the first keyframes until the animation starts. It can be influenced by `animation-direction` as well.
+* `both`, applies the value of the first keyframe at the beginning and the value of the last keyframe at the end of the animation.
 
 The initial value is `none`.
 
 ```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
             <rect class="mouse" x="0" y="0" width="800" height="300"/>
-            <polygon class="diamondFi tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
+            <polygon class="diamondFi mouse" points="400, 280, 310, 150, 400, 20, 490, 150"/>
             <style>
                 .mouse{fill:#E5E4E3;}
                 .tulip{fill:#CC2954;}
@@ -599,7 +601,7 @@ The initial value is `none`.
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
-    <polygon class="diamondFi tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
+    <polygon class="diamondFi mouse" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
         .mouse{fill:#E5E4E3;}
         .tulip{fill:#CC2954;}
@@ -615,22 +617,22 @@ The initial value is `none`.
         }
     </style>
 </svg>
-In this four second animation played only once, the color of the diamond changes from tulip to lime. When the animation finishes, the last keyframe is shown with the diamond in yellow color. The animation remembers the last keyframe because of the property `animation-fill-mode: forwards;`.
+In this animation played once, the color of the diamond changes from tulip to lime. When the animation finishes, the diamond has the lime color. The animation remembers the last keyframe because of the property `animation-fill-mode: forwards;`.
 
 ### Stroke
 
-The `stroke` defines the color attributes of an element outline.
+The `stroke` attributes defines the color of an element outline.
 
 Possible values:
 
-* keywords like `pink`
-* color code like RGB `rgb(204, 41, 84)`, RGBA `rgba(204, 41, 84, 0.5)`, or Hex like `#CC2954`
+* a keyword, like `pink`
+* a color code, like RGB `rgb(204, 41, 84)`, RGBA `rgba(204, 41, 84, 0.5)`, or Hex like `#CC2954`
 
 The default value for the color of the `stroke` attribute is `none`.
 
-The `stroke-dasharray` attribute specifies on a dashed strokes the length of the dashes and of the gaps. The values of a dash and a gap are separated with a white space or a comma. The length values can be a
+The `stroke-dasharray` attribute defines on a dashed stroke the length of the dashes and the length of the gaps.
 
-The `stroke-dashoffset` attribute indicates the length before the first dash of the series starts.
+The `stroke-dashoffset` attribute defines the length before the first dash of the series starts.
 
 ```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
@@ -689,9 +691,11 @@ In this animation, the diamond stroke has very long dashes and gaps. You can onl
 
 ### Opacity
 
-The `opacity` attribute defines the transparency of an element.
+The `opacity` attribute defines the amount of transparency of an object.
 
-The possible values for the amount of transparency are written by a whole number (integer) or decimal number from `0` to `1`, or with a percentage like `50%`.`
+The possible values are :
+* a whole or a decimal number from `0` to `1`, like `0.2`.
+* a percentage, like `20%`.
 
 ```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
@@ -732,13 +736,18 @@ The possible values for the amount of transparency are written by a whole number
         }
     </style>
 </svg>
-In this example, the shape starts and ends with a 100% percent opacity. In the middle of the animation, the diamond reaches a transparency of 10%.
+In this example, the shape starts and ends with a transparency of a 100%. In the middle of the animation, the diamond reaches a transparency of 10%.
 
 ### Direction
 
-The `animation-direction` property specifies whether an animation should play forwards, backwards, or alternating back and forth. This property is very useful to create looping animations without too many efforts.
+The `animation-direction` property defines the reading direction of an animation. This property is useful to easily create loops.
 
-The `animation-direction` has has four different values: `normal`, `reverse`, `alternate`, and `alternate-reverse`.
+Possible values are the keywords:
+
+* `normal`
+* `reverse`
+* `alternate`
+* `alternate-reverse`
 
 The initial value is `normal`.
 
@@ -783,6 +792,7 @@ The initial value is `normal`.
         }
     </style>
 </svg>
+
 This animation iteration is set to `infinite`, and the animation direction is set to `alternate-reverse`. That is why the animation is looping even if the start and the end keyframes are not similar.
 
 ## CSS animations common use
