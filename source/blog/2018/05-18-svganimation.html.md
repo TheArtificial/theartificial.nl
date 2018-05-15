@@ -16,7 +16,7 @@ This tutorial is an introduction to the basics of SVG animation with CSS. We'll 
 
 ### SVG
 
-Scalable Vector Graphics or SVG is a 2D vector image format that scales to look sharp at any resolution. SVG and HTML are compatible with each other, and this means that SVGs, just like HTML, are easy to modify and manipulate with CSS.
+Scalable Vector Graphics or SVG is a 2D vector image format that scales to look sharp at any resolution. SVG and HTML are compatible with each other, and this means that SVG, just like HTML, are easy to modify and manipulate with CSS.
 
 To create an SVG, you can use design tools like [Illustrator](https://www.adobe.com/fr/products/illustrator.html), [Sketch](https://www.sketchapp.com/), or [InkScape](https://inkscape.org/en/), or you can write SVG directly using the text editor of your choice.
 
@@ -37,29 +37,28 @@ In your text editor:
 *  Give shapes, paths, and groups you want to animate unique **class** names
 *  Make sure your styles are defined within the **style** tags (and not on elements themselves)
 
-To keep things simple in this tutorial, all CSS styles will be contained within our SVG. These styles could also live independently in their own CSS file.
-
+To keep things simple in this tutorial, all CSS styles will be contained within the SVG.
 
 
 ### HTML + CSS
 
-To use a metaphor, HTML and CSS are like Russian dolls. HTML describes the number of dolls as well as the order in which they contain each others. CSS defines all the styles attributes like each doll size and their decorative paintings.
+HTML and CSS are like Russian dolls. HTML describes the number and the order of dolls. CSS defines a doll style like the color of its decorative paintings.
 
-HTML is the acronym of HyperText Markup Language. It is written with plain text that specifies the structure of a webpage. Most elements are wrapped between an opening tag and a closing tag made of brackets like `<div> </div>`.
+HyperText Markup Language or HTML specifies the structure of a web page. Most elements are wrapped between an opening tag and a closing tag made of brackets.
 
-CSS stand for Cascading Style Sheets. It is used to control how web pages look in the browser. CSS let you style HTML elements or other languages like SVG or XML. Regarding the syntax, CSS rules consist of a selector to target an element to style and a property with its associated value to define the element’s style.
+Cascading Style Sheets or CSS control the look of a web page in a browser. CSS let you style HTML and XML, which is the language used for SVG. CSS syntax consists of a selector to target the element to style and a property with its value to define the element’s style.
 
-In order to style SVG elements, you have two choices. Either placing the styling tags inline in your SVG code, or using classes to apply to targeted SVG elements. If you use classes, their style attributes can be either between `<style>` tags within your `<svg>` tags, or, in an external stylesheet that is exclusively CSS and that is linked to your file. In these code examples, you will find `<style>` tags within the SVG code, so the styles remain grouped and you can copy and paste the examples blocks without losing the styles of your SVG. These two methods of insertion permit manipulation with CSS (and JS).
+You can insert CSS code at two different places to style an SVG, either inside the SVG tags, either in an external file. When inside the SVG tags, styles can be on the SVG element or within **style** tags. In the following snippet, CSS styles are contained within the SVG, and within **style** tags.
 
 ```svg
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
-            <style> .mouse{fill:#E5E4E3;} .tulip{fill:#CC2954;} </style>
-            <rect class="mouse" x="0" y="0" width="800" height="300"/>
-            <polygon class="tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
-        </svg>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+        <style> .mouse{fill:#E5E4E3;} .tulip{fill:#CC2954;} </style>
+        <rect class="mouse" x="0" y="0" width="800" height="300"/>
+        <polygon class="tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
+    </svg>
 ```
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <style> .mouse{fill:#E5E4E3;} .tulip{fill:#CC2954;} </style>
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
@@ -68,10 +67,7 @@ In order to style SVG elements, you have two choices. Either placing the styling
 
 ## Getting started with animations
 
-The two first following concepts are essential to animate with CSS.
-
-1.  Referencing the animation to an HTML or SVG element(s)
-2.  Defining at what moment each action should be performed
+Understanding referencing and keyframes concepts are essential to animate with CSS. Duration, iteration, easing and delay are also simple yet useful properties. Definitions are inspired from [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations)
 
 ### 1. Referencing
 
@@ -84,7 +80,16 @@ The two first following concepts are essential to animate with CSS.
     }
 ```
 
-In your CSS, after your class name selector, and within `{}` write the property `animation-name:` and add a name for your animation. You can use letters, numbers, underscores and dashes.
+The `animation-name` links the animation target to the animations actions.
+
+The `animation-name` is a key concept, used twice for different references. First, the animation name is associated with the target element. Here the target is the diamond **class**. Then, the animation name is placed after **@keyframes**. The name role here is to hold the list of your animation actions.
+
+The possible values are:
+
+* letters
+* numbers
+* underscores
+* dashes
 
 ### 2. Keyframes
 
@@ -93,7 +98,8 @@ In your CSS, after your class name selector, and within `{}` write the property 
         from {transform: translateX(0);}
         to {transform: translateX(400px);}
     }
-
+```
+```css
     @keyframes diamondMoves {
         0% {transform: translateX(0);}
         50% {transform: translateX(100px);}
@@ -101,11 +107,11 @@ In your CSS, after your class name selector, and within `{}` write the property 
     }
 ```
 
-The `@Keyframes` function contains a list of all the steps along the whole animation sequence. The individual list item controls the aspect of the target element at a given time. Each, element of the list, or keyframe rule, contains a time stamp followed by a property to apply.
+The `@Keyframes` function indicates what should happen at what moment in the animation cycle. It carries a list of all the steps your target will go through along the whole animation sequence. An individual list item controls the aspect of the target element at a given time. Each, element of the list or keyframe rule, contains a time stamp followed by a property and a value.
 
-As shown in the example, to indicate the state of the target at the beginning and at the end of an animation, you can use the keywords `from` and `to`. They are equivalent to `0%` and `100%`. As the second snippet shows, you can add as many keyframes as you need in between the start and the end steps.
+As shown in the example, to specify the state of the target at the beginning and at the end of an animation, you can use the keywords `from` and `to`. They are equivalent to `0%` and `100%`. As the second snippet shows, you can add as many keyframes as you need in between the start and the end.
 
-These steps actions play at different times depending on the total duration of an animation that is described by another property.
+These steps play at different times depending on the total duration of an animation that is described by another property.
 
 ### 3. Duration
 
@@ -116,9 +122,9 @@ These steps actions play at different times depending on the total duration of a
     }
 ```
 
-The `animation-duration` property specifies the length of time that an animation takes to complete one cycle.
+The `animation-duration` property indicates how long the animation takes to run from start to end.
 
-The duration cycle can be specified in seconds `s` or in milliseconds `ms`.
+The duration cycle is specified in seconds `s` or in milliseconds `ms`. The value should be equal or superior to 0.
 
 The initial value is `0s`.
 
@@ -132,13 +138,12 @@ The initial value is `0s`.
     }
 ```
 
-The `animation-iteration-count` property specifies the number of times an animation cycle should be played before stopping.
+The `animation-iteration-count` property indicates how many times the animation cycle repeats before stopping.
 
 The possible values are:
 
 * a whole number (integer) or a decimal number like `0,5` or `1`
 * the keyword `infinite` to have the animation repeats forever.
-
 
 The initial value is `1`.
 
@@ -149,11 +154,11 @@ The initial value is `1`.
         animation-name: diamondMoves;
         animation-duration: 6s;
         animation-iteration-count: 1;
-        animation-time-function: linear;
+        animation-timing-function: linear;
     }
 ```
 
-The `animation-easing` property specifies how the animation progresses over the duration of each cycle. It can be specified on individual keyframes.
+The `animation-easing` property indicates how speed is distributed over the animation. Easing helps to make animations feel more natural and smoother. You can apply easing on individual keyframes.
 
 The possible values are:
 
@@ -169,29 +174,31 @@ The initial value is `ease`.
         animation-name: diamondMoves;
         animation-duration: 6s;
         animation-iteration-count: 1;
-        animation-time-function: linear;
+        animation-timing-function: linear;
         animation-delay: 4s;
     }
 ```
 
-The `animation-delay` property specifies when an animation should start.
+The `animation-delay` property indicates when the animation starts.
 
-The time offset can be specified in seconds `s` or in milliseconds `ms`.
+The duration of the delay is specified in seconds `s` or in milliseconds `ms`. A positive value delays the start of the animation. 0 makes the animation start directly. A negative value makes the animation start directly as well but it skips the states of the target that were played before 0.
 
 The initial value is `0s`.
 
 
 ## CSS transform animations
 
-CSS transform animations include rotation, translation, scaling, and skewing. We will see in this part, for each of these transform animations, one example, a definition of the animation, and its possible values. Several translations can be chained one after the other. When translations and rotations are chained, they are additive but skewing is not.
+CSS transform animations include rotation, translation, scaling, and skewing. We will see in this part, for each of these transform animations, one example, a definition of the animation, and its possible values.
 
-The origin point of an SVG element is located at 0, 0 of the artwork. It means that, by default, the reference point around which the transformation is applied is the top left corner and not in the center of the artwork. However, CSS `transform-origin` property lets you change the position of this origin point.
+To start animating, you should understand that the origin point of an SVG element is located at 0, 0 of the artwork. It means that, by default, the reference point around which the transformation is applied is the top left corner and not the center of the artwork. However, CSS `transform-origin` property lets you change the position of this origin point.
 
-The `transform-origin` property can be defined by one, two, or three values. The first value is by default to the `x-offset`, the second value is for the `y-offset`, and if there is a third value, it always represents the Z offset.
+The syntax uses one, two, or three values. The first value is by default for the `x-offset`, the second value is for the `y-offset`, and if there is a third value, it represents the `z-offset`.
 
-Possible values are:
-* a length expressed in `px` or in `cm` like `2px`
-* keywords or their corresponding percentages written : `left` or `0%` , `right` or `100%`, `top` or `0%`, `bottom` or `100%`, and `center` or `50%`. If a Z offset is specified, it can only accept a length.
+Possible values and units are:
+
+* a length in `px` or in `cm`, like `2px`. If a `z-offset` is specified, it only accepts a length.
+* a keyword or its corresponding percentages `left` or `0%` , `right` or `100%`, `top` or `0%`, `bottom` or `100%`, and `center` or `50%`.
+
 
 ```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
@@ -278,12 +285,13 @@ In this example, `transform-origin: 50% 50%;` is added. The origin point is set 
 
 The `rotate` animation moves an object circularly around an origin point.
 
-The property can use either one, two, or three values if you want to rotate along the Z axis.
+The rotate animation is written `rotate(a)`, in which `a` is an `<angle>`. The `<angle>` defines the amount of rotation. It is composed of a value followed by a unit. A positive value makes the rotation go clockwise and a negative value makes the rotation go counterclockwise.
 
-Possible values are:
+Possible `<angle>` units are:
 
-* `x`, `y`, or `z` to name the axis you want to rotate the element around.
-* `<angle>` to specify the amount of rotation. The angle value can expressed in degree like `90deg`, in turn from `0` to `1` like `0.25 turn`, or in radius like `1.64rad`.
+* degrees, like `90deg`
+* turns, like `1.5turn`
+* radians, like `1.64rad`
 
 
 ```svg
@@ -331,9 +339,15 @@ In this example, the diamond starts and ends standing straight, but in the middl
 
 ### Translate
 
-The `translate` animation moves an object in space from a point to another based on the coordinate given along the abscissa and the ordinate axis.
-The syntax can use one, two, or three values if you want to move your object along the Z axis. It can be written `translate(tx)` or `translate(tx, ty)`, `translate(tz)`.
-Values are specified in lengths in `px` or in `%`. If `t` is unspecified, its default value is `0`.
+The `translate` animation moves an object from a point to another based on the coordinate given along the abscissa and the ordinate axis.
+
+The syntax uses one, two, or three values if you want to move your object along the Z axis. It can be written `translate(tx)`, `translate(tx, ty)`, or `translate(tz)`. Along the X axis, a positive value makes the object move right, and a negative value makes the object move left. Along the Y axis, a positive value makes the object move down, and a negative value makes the object move up.
+
+Possible length units are:
+
+* pixels, like `200px`
+* percentages, like `50%`
+
 
 ```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
@@ -392,9 +406,9 @@ In this example, the diamond starts from the center of the canvas, then, the dia
 
 ### Scale
 
-The `scale` animation resizes an object. Scaling can keep the ration intact, or it can distort the object ratio if the the horizontal and vertical scaling are different.
+The `scale` animation resizes an object. Scaling can either keep the object ratio intact, or it can distort it if the the horizontal and vertical scaling are different.
 
-The expression can use one, two, or three values if you want to scale your object along the Z axis. It can be written `scale(sx)`, `scale(sx, sy)`, or `scale(sx, sy, sz)`, where `s` is your own a whole number (integer) or decimal number ranging from 0 to 1.
+The syntax uses one, two, or three values if you want to scale your object along the Z axis. It can be written `scale(sx)`, `scale(sx, sy)`, or `scale(sx, sy, sz)`, where `s` is your value. Your value can be a whole number (integer) or a decimal number.
 
 ```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
@@ -437,15 +451,22 @@ The expression can use one, two, or three values if you want to scale your objec
         }
     </style>
 </svg>
-In this example, the diamond starts and ends with half its defined size. In the middle of the animation, it grows to reach 1,5 times its defined size.
+In this example, the diamond starts and ends at half its defined size. In the middle of the animation, it grows to reach 1,5 times its original size.
 
 ### Skew
 
-The `skew` animation transforms an object along an oblique angle. It distorts each point of the SVG element that is not directly located on the X and Y axises by a certain angle in the horizontal and vertical directions. The greater the value is, the most distorted the object will be.
+The `skew` animation transforms an object along an oblique angle. It distorts each point of the SVG element that is not directly located on the X and Y axises by a certain angle in the horizontal and vertical directions.
 
-The expression can use one or two values. Each value represents the amount of skewing in one direction. It can be written `skew(ax)`, `skew(ax, ay)`, `skewX(a)`, or `skewY(a)`, where `a` is an `<angle>`.
+The syntax uses one or two values. The skew animation is written `skew(ax)`, `skew(ax, ay)`, `skewX(a)`, or `skewY(a)`, where `a` is an `<angle>`. The amount of skewing is defined by the values of an `<angle>`. The greater your value is, the most distorted the object is.
 
-The amount of skewing is defined by the values of an `<angle>`. The angle value can expressed in degree like `90deg`, in turn from `-1` to `1` where 0 is neutral, like `0.25 turn`, or in radius like `1.64rad`. If you are using degrees, a positive skew angle lies between 0 and 90 degrees, and a negative skew angle lies between -90 degrees and 0 degree.
+The value is followed by a unit.
+
+Possible `<angle>` units are:
+
+* degrees, like `90deg`
+* turns, like `1.5turn`
+* radians, like `1.64rad`
+
 
 ```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
@@ -492,7 +513,7 @@ The amount of skewing is defined by the values of an `<angle>`. The angle value 
         }
     </style>
 </svg>
-In this example, the diamond starts and ends undistorted. In the middle of the animation, the diamond points are equally skewed from a negative 35-degrees angle based on the X axis and the Y axis. Then, the diamond comes back to its original shape before skewing from a positive 35-degrees angle based on the X and Y axises.
+In this example, the diamond starts and ends undistorted. In the middle of the animation, the diamond points are skewed from a negative 35-degrees angle based on the X axis. Then, the diamond comes back to its original shape before skewing from a positive 35-degrees angle based on the X axis.
 
 ## Other CSS animations
 
@@ -772,7 +793,7 @@ Hover states usually indicate to a web page visitor using a pointing device that
 
 In [to icon](https://www.toicon.com/) project for instance, hover states use the CSS scaling property on SVG. To [icon] is a site where you can download high quality icons series for free.
 
-?Place here the live example?
+<!-- ?Place here the live example? -->
 ![to-icon placeholder](05-18-svganimation/toicon.png)
 
 ### Logo animations
