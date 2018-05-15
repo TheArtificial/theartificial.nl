@@ -158,12 +158,12 @@ The initial value is `1`.
     }
 ```
 
-The `animation-easing` property indicates how speed is distributed over the animation. Easing helps to make animations feel more natural and smoother. You can apply easing on individual keyframes.
+The `animation-easing` property indicates how speed is divided along the animation. Easing helps to make animations feel more natural and smoother. You can apply easing on individual keyframes.
 
 The possible values are:
 
-* keywords : `ease`, `ease-in`, `ease-out`, `ease-in-out`, `linear`, `step-start`, `step-end`
-* Functions like : `frames(10)`.
+* keywords : `ease`, `ease-in`, `ease-out`, `ease-in-out`, `linear`, `step-start`, `step-end`.
+* Functions like : `frames(5)`.
 
 The initial value is `ease`.
 
@@ -405,7 +405,7 @@ In this example, the diamond starts from the center of the canvas, then, the dia
 
 The `scale` animation resizes an object. Scaling can either keep the object ratio intact, or it can distort it if the the horizontal and vertical scaling are different.
 
-The syntax uses one, two, or three values if you want to scale your object along the Z axis. It can be written `scale(sx)`, `scale(sx, sy)`, or `scale(sx, sy, sz)`, where `s` is your value. Your value can be a whole number (integer) or a decimal number.
+The syntax uses one, two, or three values if you want to scale your object along the Z axis. It can be written `scale(sx)`, `scale(sx, sy)`, or `scale(sx, sy, sz)`, where `s` is your value. Your value can be a whole number (integer) or a decimal number. A value bigger than 0 and smaller than 1 shrinks the element, and a value over 1 enlarges the element.
 
 ```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
@@ -454,7 +454,7 @@ In this example, the diamond starts and ends at half its defined size. In the mi
 
 The `skew` animation transforms an object along an oblique angle. It distorts each point of the SVG element that is not directly located on the X and Y axises by a certain angle in the horizontal and vertical directions.
 
-The syntax uses one or two values. The skew animation is written `skew(ax)`, `skew(ax, ay)`, `skewX(a)`, or `skewY(a)`, where `a` is an `<angle>`. The amount of skewing is defined by the values of an `<angle>`. The greater your value is, the most distorted the object is.
+The syntax uses one or two values. The skew animation is written `skew(ax)`, `skew(ax, ay)`, `skewX(a)`, or `skewY(a)`, where `a` is an `<angle>`. The amount of skewing is defined by the values of an `<angle>`. The greater your value is, the most distorted your object is.
 
 The value is followed by a unit.
 
@@ -519,7 +519,7 @@ Aside from transform properties, CSS animation also include color, fill mode, st
 
 ### Color
 
-The `fill` attribute defines the color of an element.
+The color of an object is defined by the `fill` property.
 
 Possible values:
 
@@ -563,15 +563,15 @@ Possible values:
             }
     </style>
 </svg>
-In this animation played once, the color of the diamond changes from tulip to lime. When the animation ends, the diamond fill goes back to the tulip color of the begining.
+In this animation played once, the color of the diamond changes from tulip to lime. When the animation ends, the diamond fill goes back to the tulip color of the beginning.
 
 ### Fill Mode
 
-The `fill-mode` property remembers the first state at the beginning of the animation and the last state at the end of the animation. It is useful in case you would like your animation to start or end with a specific state.
+The `animation-fill-mode` property defines the first state at the beginning of the animation and the last state at the end of the animation.
 
 Possible values:
 
-* `none`, no extra style is applied at the beginning and and at the end of the animation.
+* `none`
 * `forwards`, applies the value of the last keyframe at the end of the animation. It can be influenced by `animation-direction` and `animation-iteration-count`.
 * `backwards`, applies the value of the first keyframe at the beginning of the animation. If an `animation-delay` is set, the target will keep the value of the first keyframes until the animation starts. It can be influenced by `animation-direction` as well.
 * `both`, applies the value of the first keyframe at the beginning and the value of the last keyframe at the end of the animation.
@@ -617,11 +617,11 @@ The initial value is `none`.
         }
     </style>
 </svg>
-In this animation played once, the color of the diamond changes from tulip to lime. When the animation finishes, the diamond has the lime color. The animation remembers the last keyframe because of the property `animation-fill-mode: forwards;`.
+In this animation played once, the color of the diamond changes from tulip to lime. When the animation ends, the diamond has the lime color. The animation remembers and extends the last keyframe because of the property `animation-fill-mode: forwards;`.
 
 ### Stroke
 
-The `stroke` attributes defines the color of an element outline.
+The `stroke` attributes defines the color of an object line.
 
 Possible values:
 
@@ -630,9 +630,16 @@ Possible values:
 
 The default value for the color of the `stroke` attribute is `none`.
 
-The `stroke-dasharray` attribute defines on a dashed stroke the length of the dashes and the length of the gaps.
+Stroke has several linked properties such as `stroke-width` for the thickness of the line, `stroke-linecap` for the appearance of the edge of the line, and `stroke-linejoin` for the appearance of the angles of the line.
 
-The `stroke-dashoffset` attribute defines the length before the first dash of the series starts.
+The `stroke-dasharray` attribute defines dashes pattern in a stroke by defining the length of the gaps in between the dashes. The `stroke-dashoffset` attribute defines the space before the first dash location. The values of these two properties should be lengths.
+
+Possible units are:
+* no specified units, like `2`
+* em, like `2em`
+* a pixel, like `2px`
+* a percentage, like `20%`
+
 
 ```svg
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
@@ -691,10 +698,10 @@ In this animation, the diamond stroke has very long dashes and gaps. You can onl
 
 ### Opacity
 
-The `opacity` attribute defines the amount of transparency of an object.
+The `opacity` attribute defines the amount of translucence for an object.
 
 The possible values are :
-* a whole or a decimal number from `0` to `1`, like `0.2`.
+* a whole or a decimal number from `0` transparent to `1` opaque, like `0.2`.
 * a percentage, like `20%`.
 
 ```svg
@@ -824,10 +831,6 @@ You may want to use CSS animation on line drawings like [Polygon did with a ps4]
 
 ## Conclusion
 
-CSS animations are not ideal to animate photo-realistic and organic effects, or for designing a complex sequence of interactions but they provide an easy solution for scalable vectorial animation on the web. It is a lightweight technology, broadly supported on the web that is also future-proof. CSS provides an easy way to control time features like keyframes, duration, iteration, easing, and delay. The language easily allows transformations such as rotations, translations, scaling, and skewing. Changing styles, and animating a stroke are also easy with straightforward expressions.
-
-<p data-height="265" data-theme-id="dark" data-slug-hash="BxPgRB" data-default-tab="css,result" data-user="agaroff" data-embed-version="2" data-pen-title="CSS Direction Animation" class="codepen">See the Pen <a href="https://codepen.io/agaroff/pen/BxPgRB/">CSS Direction Animation</a> by Ariane (<a href="https://codepen.io/agaroff">@agaroff</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-You can see more examples based on the basic concepts of this tutorial on our [CodePen collection](https://codepen.io/collection/DbqLwL/)
+CSS animations are not ideal to animate photo-realistic and organic effects, or for designing a complex sequence of interactions but they provide an easy solution for scalable vectorial animation on the web. It is a lightweight technology, broadly supported on the web that is also future-proof. CSS provides an easy way to control time features like keyframes, duration, iteration, easing, and delay. The language easily allows transformations such as rotations, translations, scaling, and skewing. Changing styles, and animating a stroke are also easy with straightforward expressions. You can see more examples based on the basic concepts of this tutorial on our [CodePen collection](https://codepen.io/collection/DbqLwL/)
 
 We wish you a very good luck to create your own CSS animation on SVG. Don't hesitate to send us your feedback on this tutorial, or to share your CSS animation creations!
