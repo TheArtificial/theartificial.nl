@@ -102,6 +102,8 @@ set :markdown,  fenced_code_blocks: true,
                 smartypants: true,
                 footnotes: true
 
+activate :syntax
+
 activate :search do |search|
 
   require 'padrino-helpers'

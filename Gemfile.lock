@@ -98,6 +98,9 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
+    middleman-syntax (3.0.0)
+      middleman-core (>= 3.2)
+      rouge (~> 2.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     mustache (1.0.5)
@@ -117,6 +120,7 @@ GEM
       ffi (>= 0.5.0, < 2)
     redcarpet (3.4.0)
     ref (2.0.0)
+    rouge (2.2.1)
     s3_website (3.4.0)
       colored (= 1.2)
       configure-s3-website (= 2.3.0)
@@ -147,6 +151,7 @@ DEPENDENCIES
   middleman (~> 4.1)
   middleman-blog
   middleman-search!
+  middleman-syntax
   nokogiri
   redcarpet
   s3_website
