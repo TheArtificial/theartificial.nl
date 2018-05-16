@@ -833,13 +833,15 @@ In [to icon](https://www.toicon.com/) project for instance, hover states use the
 ### Logo animations
 
 You may want to add animations to your logo to make it unique and personal.
-![Cocktail animated logo](05-18-svganimation/cocktails.svg)
+![Cocktails animated logo](05-18-svganimation/cocktails.svg)
 
 
 ### Illustrated animations
 
 You may want to use CSS animation on line drawings like [Polygon did with a ps4](https://www.polygon.com/a/ps4-review/ps4-review/), or for looping sceneries wether they are abstract or figurative sequences.
-<!-- Place here the live example -->
+
+Find our P animated illustration for the 36 Days of type challenge.
+![P animated logo](05-18-svganimation/popcorn.svg)
 
 
 ## Conclusion

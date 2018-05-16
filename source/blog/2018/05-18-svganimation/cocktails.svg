@@ -1,112 +1,105 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 66">
 	<style>
-		    .green {
-		      fill: #3F7F19;
-		      stroke: none;
-		      stroke-miterlimit: 10;
-		    }
+	  .green {
+	    fill: #3F7F19;
+	    stroke: none;
+	    stroke-miterlimit: 10;
+	  }
 
-		    .fade-01, .fade-02, .fade-03, .fade-04, .fade-05, .fade-06, .fade-07, .fade-08 {
-		      animation-duration: 3s;
-		      animation-iteration-count: infinite;
-		      transform-origin: 50% 50%;
-		      animation-timing-function: linear;
-					transition-timing-function: ease;
-					transition-duration: 1ms;
-		    }
+	  .fade-01, .fade-02, .fade-03, .fade-04, .fade-05, .fade-06, .fade-07, .fade-08 {
+	    animation-duration: 3s;
+	    animation-iteration-count: infinite;
+	    transform-origin: 50% 50%;
+	    animation-timing-function: linear;
+			transition-timing-function: ease;
+			transition-duration: 1ms;
+	  }
 
-		    .fade-01 { animation-name: fade-01; }
-		    .fade-02 { animation-name: fade-02; }
-		    .fade-03 { animation-name: fade-03; }
-		    .fade-04 { animation-name: fade-04; }
-		    .fade-05 { animation-name: fade-05; }
-		    .fade-06 { animation-name: fade-06; }
-		    .fade-07 { animation-name: fade-07; }
-		    .fade-08 { animation-name: fade-08; }
-
-		    @keyframes fade-01 {
-				0% { opacity: 1.0; }
-				8% { opacity: 0.5; }
-				16% { opacity: 0.0; }
-				80% { opacity: 0.0; }
-				88% { opacity: 0.5; }
-			  100% { opacity: 1.0; }
-		    }
-
-		    @keyframes fade-02 {
-				0% { opacity: 1.0; }
-				8% { opacity: 1.0; }
-				16% { opacity: 0.5; }
-				24% { opacity: 0.0; }
-				72% { opacity: 0.0; }
-				80% { opacity: 0.5; }
-				88% { opacity: 1.0; }
-			  100% { opacity: 1.0; }
-		    }
-
-				@keyframes fade-03 {
-				0% { opacity: 1.0; }
-				8% { opacity: 1.0; }
-				16% { opacity: 1.0; }
-				24% { opacity: 0.5; }
-				32% { opacity: 0.0; }
-				72% { opacity: 0.0; }
-				80% { opacity: 0.5; }
-				88% { opacity: 1.0; }
-			  100% { opacity: 1.0; }
-		    }
-
-				@keyframes fade-04 {
-				0% { opacity: 1.0; }
-				24% { opacity: 1.0; }
-				32% { opacity: 0.5; }
-				48% { opacity: 0.0; }
-				64% { opacity: 0.0; }
-				72% { opacity: 0.5; }
-				80% { opacity: 1.0; }
-				100% { opacity: 1.0; }
-				}
-
-				@keyframes fade-05 {
-				0% { opacity: 1.0; }
-				24% { opacity: 1.0; }
-				32% { opacity: 0.5; }
-				48% { opacity: 0.0; }
-				64% { opacity: 0.0; }
-				72% { opacity: 0.5; }
-				80% { opacity: 1.0; }
-			  100% { opacity: 1.0; }
-		    }
-
-				@keyframes fade-06 {
-				0% { opacity: 1.0; }
-				32% { opacity: 1.0; }
-				48% { opacity: 0.5; }
-				56% { opacity: 0.0; }
-				64% { opacity: 0.5; }
-				72% { opacity: 1.0; }
-				80% { opacity: 1.0; }
-				100% { opacity: 1.0; }
-				}
-
-				@keyframes fade-07 {
-				0% { opacity: 1.0; }
-				32% { opacity: 1.0; }
-				48% { opacity: 0.5; }
-				56% { opacity: 0.0; }
-				64% { opacity: 0.5; }
-				72% { opacity: 1.0; }
-			  100% { opacity: 1.0; }
-		    }
-
-				@keyframes fade-08 {
-				0% { opacity: 1.0; }
-				48% { opacity: 1.0; }
-				56% { opacity: 0.5; }
-				64% { opacity: 0.5; }
-				72% { opacity: 1.0; }
-				100% { opacity: 1.0; }
-				}
+	  .fade-01 { animation-name: fade-01; }
+	  .fade-02 { animation-name: fade-02; }
+	  .fade-03 { animation-name: fade-03; }
+	  .fade-04 { animation-name: fade-04; }
+	  .fade-05 { animation-name: fade-05; }
+	  .fade-06 { animation-name: fade-06; }
+	  .fade-07 { animation-name: fade-07; }
+	  .fade-08 { animation-name: fade-08; }
+		
+	  @keyframes fade-01 {
+		0% { opacity: 1.0; }
+		8% { opacity: 0.5; }
+		16% { opacity: 0.0; }
+		80% { opacity: 0.0; }
+		88% { opacity: 0.5; }
+	  100% { opacity: 1.0; }
+	  }
+	  @keyframes fade-02 {
+		0% { opacity: 1.0; }
+		8% { opacity: 1.0; }
+		16% { opacity: 0.5; }
+		24% { opacity: 0.0; }
+		72% { opacity: 0.0; }
+		80% { opacity: 0.5; }
+		88% { opacity: 1.0; }
+	  100% { opacity: 1.0; }
+	  }
+		@keyframes fade-03 {
+		0% { opacity: 1.0; }
+		8% { opacity: 1.0; }
+		16% { opacity: 1.0; }
+		24% { opacity: 0.5; }
+		32% { opacity: 0.0; }
+		72% { opacity: 0.0; }
+		80% { opacity: 0.5; }
+		88% { opacity: 1.0; }
+	  100% { opacity: 1.0; }
+	  }
+		@keyframes fade-04 {
+		0% { opacity: 1.0; }
+		24% { opacity: 1.0; }
+		32% { opacity: 0.5; }
+		48% { opacity: 0.0; }
+		64% { opacity: 0.0; }
+		72% { opacity: 0.5; }
+		80% { opacity: 1.0; }
+		100% { opacity: 1.0; }
+		}
+		@keyframes fade-05 {
+		0% { opacity: 1.0; }
+		24% { opacity: 1.0; }
+		32% { opacity: 0.5; }
+		48% { opacity: 0.0; }
+		64% { opacity: 0.0; }
+		72% { opacity: 0.5; }
+		80% { opacity: 1.0; }
+	  100% { opacity: 1.0; }
+	  }
+		@keyframes fade-06 {
+		0% { opacity: 1.0; }
+		32% { opacity: 1.0; }
+		48% { opacity: 0.5; }
+		56% { opacity: 0.0; }
+		64% { opacity: 0.5; }
+		72% { opacity: 1.0; }
+		80% { opacity: 1.0; }
+		100% { opacity: 1.0; }
+		}
+		@keyframes fade-07 {
+		0% { opacity: 1.0; }
+		32% { opacity: 1.0; }
+		48% { opacity: 0.5; }
+		56% { opacity: 0.0; }
+		64% { opacity: 0.5; }
+		72% { opacity: 1.0; }
+	  100% { opacity: 1.0; }
+	  }
+		@keyframes fade-08 {
+		0% { opacity: 1.0; }
+		48% { opacity: 1.0; }
+		56% { opacity: 0.5; }
+		64% { opacity: 0.5; }
+		72% { opacity: 1.0; }
+		100% { opacity: 1.0; }
+		}
 	</style>
 
   <g class="cocktails-bold">
@@ -250,4 +243,5 @@
       <path class="green" d="M202.368 33.028c.661-.329 1.478-.476 1.986-.653.491-.171 1.341-.208 1.854-.292.506-.082 1.205-.181 1.708-.125.375.042 1.209.006 1.438.187.313.249.613.285.943.882v.417c-.33.597-.695.652-1.089.722-.708.125-1.5.125-2.375.125-.267 0-1.968-.017-2.458-.188-.508-.177-1.346-.33-2.007-.659v-.416zM201.901 33.028c-.661-.329-1.478-.476-1.986-.653-.491-.171-1.277-.208-1.79-.292-.506-.082-1.293-.213-1.792-.125-.288.051-1.114.244-1.375.375-.583.292-.769.098-1.099.695v.417c.33.597.874.596 1.266.68.583.125 1.441.148 1.958.125.267-.012 2.32.025 2.811-.146.508-.177 1.346-.33 2.007-.659v-.417zM192.058 25.093c.479-.749 1.291-2.062 1.291-2.062s.965-1.577 1.094-1.906c.134-.324.746-1.11 1.062-1.25.317-.14 1.389-.462 2.04-.269l.295.295c.194.651-.139 1.165-.303 1.568-.281.688-.349.721-.781 1.031-.287.205-1.211.797-1.5.969-.395.235-1.562.969-1.562.969-.638.277-.75.594-1.34.95l-.296-.295zM205.979 21.949c-.786.207-1.38.364-1.911.551-.469.166-2 .406-2 .406-.315.089-1.373.093-1.688-.031-.315-.125-1.645-.329-1.96-.926v-.417c.315-.597 1.364-.939 1.679-1.063.315-.124 1.394-.007 1.719.031.531.062 1.513.46 2 .562.594.125 1.188.281 2.161.469v.418zM193.107 32.734c-.258-.859-.384-1.421-.539-1.953-.1-.342-.289-.998-.375-1.375-.068-.3-.143-.437-.156-.875-.031-1-.034-1.219.281-1.781.202-.361.192-.791.789-1.086h.417c.481.524.531.787.731 1.149.327.59.353 1.611.219 1.906-.141.295-.344 1.438-.344 1.438s-.277 1.99-.606 2.579l-.417-.002zM212.032 25.388c-.714-.419-1.326-.706-1.964-.982l-1.531-.938c-.291-.166-1.266-.902-1.406-1.219-.14-.317-.778-1.698-.585-2.349l.295-.295c.651-.194 1.661.316 1.978.456.317.141 1.201 1.369 1.375 1.656.269.445.719 1.125 1.125 1.75.379.583.562.906 1.009 1.624l-.296.297zM212.355 40.855c-.479.749-1.291 2.062-1.291 2.062s-.965 1.577-1.094 1.906c-.134.324-.745 1.11-1.062 1.25-.317.14-1.388.462-2.039.269l-.295-.295c-.194-.651.139-1.165.303-1.568.281-.688.349-.721.781-1.031.287-.205 1.211-.797 1.5-.969.395-.235 1.562-.969 1.562-.969.638-.277.75-.594 1.34-.95l.295.295zM198.434 43.999c.786-.207 1.38-.363 1.911-.551.469-.166 2-.406 2-.406.315-.089 1.373-.093 1.688.031.315.125 1.646.329 1.961.926v.417c-.315.597-1.364.939-1.679 1.063-.315.124-1.394.007-1.719-.031-.531-.062-1.513-.46-2-.562-.594-.125-1.188-.281-2.161-.47v-.417zM211.306 33.214c.258.859.384 1.421.539 1.953.1.342.289.998.375 1.375.068.3.143.437.156.875.031 1 .034 1.219-.281 1.781-.202.361-.192.791-.789 1.086h-.417c-.482-.524-.531-.787-.732-1.149-.327-.59-.353-1.611-.219-1.906.141-.295.344-1.438.344-1.438s.277-1.99.607-2.579l.417.002zM192.381 40.56c.714.419 1.326.706 1.964.982l1.531.938c.291.166 1.266.902 1.406 1.219.14.317.779 1.698.586 2.349l-.295.295c-.651.194-1.661-.316-1.978-.456-.317-.141-1.201-1.369-1.375-1.656-.269-.445-.719-1.125-1.125-1.75-.379-.583-.562-.906-1.009-1.624l.295-.297z"/>
     </g>
   </g>
+
 </svg>
