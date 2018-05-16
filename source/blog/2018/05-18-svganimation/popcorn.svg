@@ -22,37 +22,37 @@
 		.corn-04 { animation-name: pop-04; }
 		.corn-05 { animation-name: pop-05; }
 
-		@keyframes pop-00 {
+		@keyframes pop-00 {
 			0% { opacity: 1; }
 			90% { opacity: 1; }
 			95% { opacity: 0; }
 			100% { opacity: 0; }
 		}
-		@keyframes pop-01 {
+		@keyframes pop-01 {
 			0% { opacity: 1; }
 			70% { opacity: 1; }
 			75% { opacity: 0; }
 			100% { opacity: 0; }
 		}
-		@keyframes pop-02 {
+		@keyframes pop-02 {
 			0% { opacity: 1; }
 			74% { opacity: 1; }
 			89% { opacity: 0; }
 			100% { opacity: 0; }
 		}
-		@keyframes pop-03 {
+		@keyframes pop-03 {
 			0% { opacity: 1; }
 			63% { opacity: 1; }
 			68% { opacity: 0; }
 			100% { opacity: 0; }
 		}
-		@keyframes pop-04 {
+		@keyframes pop-04 {
 			0% { opacity: 1; }
 			65% { opacity: 1; }
 			70% { opacity: 0; }
 			100% { opacity: 0; }
 		}
-		@keyframes pop-05 {
+		@keyframes pop-05 {
 			0% { opacity: 1; }
 			80% { opacity: 1; }
 			85% { opacity: 0; }
