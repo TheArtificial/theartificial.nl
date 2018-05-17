@@ -837,21 +837,21 @@ Hover states usually indicate to a website visitor using a pointing device that 
 
 In [to icon](https://www.toicon.com/) project for instance, hover states use the CSS scaling property on SVG. To [icon] is a site where you can download high-quality icons series for free.
 
-<!-- Place here the live example -->
-![to-icon placeholder](05-18-svganimation/toicon.png)
+In this example you can hover on the icons see them change color.
+![animated icons](05-18-svganimation/icons.svg)
 
 ### Logo animations
 
-You may want to add animations to your logo to make it unique and personal. Find below an example of the animated logo for our [upcoming cocktails site](https://theartificial.com/blog/2018/05/13/cocktails-website.html).
+You may want to add animations to a logo to make it unique and dynamic. Find below an example of the animated logo for our [connecting things project](https://theartificial.com/connecting-things/).
 
-![Cocktails animated logo](05-18-svganimation/cocktails.svg)
+![animated logo](05-18-svganimation/logo.svg)
 
 
 ### Illustrated animations
 
-You may want to use CSS animation on line drawings, or for looping sceneries whether they are abstract or figurative sequences. Find below an animation for our P letter originally designed for the [36 Days of type challenge](https://www.instagram.com/veryartificial/).
+You may want to use CSS animations on line drawings, or for looping sceneries whether they are abstract or figurative. Find below an animation for our 3 originally designed for the [36 Days of type challenge](https://www.instagram.com/veryartificial/).
 
-![P animated logo](05-18-svganimation/popcorn.svg)
+![animated illustration](05-18-svganimation/illustration.svg)
 
 
 ## Conclusion
