@@ -840,19 +840,19 @@ In this example you can hover on the icons to see them change color.
       100% { stroke-dashoffset: 2000; }
     }
     .ic-01: hover {
-      stroke: #cc2954;
+      stroke: #CC2954;
       stroke-width: 12px;
     }
     .ic-02: hover {
-      stroke: #ff7733;
+      stroke: #FF7733;
       stroke-width: 12px;
     }
     .ic-03: hover {
-      stroke: #ffb727;
+      stroke: #FFB727;
       stroke-width: 12px;
     }
     .ic-04: hover {
-      stroke: #f2f230;
+      stroke: #F2F230;
       stroke-width: 12px;
     }
   </style>
