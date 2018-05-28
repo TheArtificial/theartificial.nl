@@ -27,7 +27,7 @@ If you're using a design tool, make sure you:
 *  Create your image completely within the artboard
 *  Export SVG 1.1
 
-![SVG in Illustrator](05-18-svganimation/illustrator.gif)
+![SVG in Illustrator](05-23-svg-animation/illustrator.gif)
 Here is a sample of what your SVG should look like. If you follow these tips, your artwork is almost animation-ready, but you'll probably still want to clean up your SVG code using a text editor or tool like [SVGOMG](https://jakearchibald.github.io/svgomg/).
 
 In particular, made sure to:
@@ -879,13 +879,13 @@ In this example you can hover on the icons to see them change color.
 
 Making a logo dynamic can make it feel more memorable, playful and unique. Find below an example of the animated logo for our [connecting things project](https://theartificial.com/connecting-things/).
 
-![animated logo](05-18-svganimation/logo.svg)
+![animated logo](05-23-svg-animation/logo.svg)
 
 ### Illustrated Animations
 
 CSS animations can give life to your vectorial illustrations. You may think about animating line drawings, or looping sceneries whether they are abstract or figurative. Find below an animation for our 3 number, originally designed for the [36 Days of type challenge](https://www.instagram.com/veryartificial/).
 
-![animated illustration](05-18-svganimation/illustration.svg)
+![animated illustration](05-23-svg-animation/illustration.svg)
 
 ## Conclusion
 
