@@ -47,8 +47,8 @@ While styles can be on the SVG element itself, in our snippets CSS styles are de
 ```html
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <style>
-      .mouse {fill:#E5E4E3;}
-      .tulip {fill:#CC2954;}
+      .mouse { fill: #E5E4E3; }
+      .tulip { fill: #CC2954; }
     </style>
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
@@ -57,13 +57,12 @@ While styles can be on the SVG element itself, in our snippets CSS styles are de
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
     </style>
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
 </svg>
-
 
 ## Getting started with animations
 
@@ -86,15 +85,14 @@ The `animation-name` is a key concept, appearing twice. First, the animation nam
 ### 2. Keyframes
 
 ```css
-@keyframes diamondMoves {
+@keyframes diamondMoves { 
     from { transform: translateX(0); }
     to   { transform: translateX(400px); }
 }
 ```
 
-
 ```css
-@keyframes diamondMoves {
+@keyframes diamondMoves { 
     0%   { transform: translateX(0); }
     50%  { transform: translateX(100px); }
     100% { transform: translateX(400px); }
@@ -109,7 +107,6 @@ Possible keyframes units are:
 
 * keywords `from` and `to`
 * percentages, like `0%`
-
 
 ### 3. Duration
 
@@ -133,9 +130,9 @@ The initial value is `0s`.
 
 ```css
 .diamond {
-    animation-name:diamondMoves;
-    animation-duration:6s;
-    animation-iteration-count:1;
+    animation-name: diamondMoves;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
 }
 ```
 
@@ -152,10 +149,10 @@ The initial value is `1`.
 
 ```css
 .diamond {
-    animation-name:diamondMoves;
-    animation-duration:6s;
-    animation-iteration-count:1;
-    animation-timing-function:linear;
+    animation-name: diamondMoves;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
 }
 ```
 
@@ -172,11 +169,11 @@ The initial value is `ease`.
 
 ```css
 .diamond {
-    animation-name:diamondMoves;
-    animation-duration:6s;
-    animation-iteration-count:1;
-    animation-timing-function:linear;
-    animation-delay:4s;
+    animation-name: diamondMoves;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 4s;
 }
 ```
 
@@ -209,16 +206,16 @@ Possible values and units are:
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondOr tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-    .mouse {fill:#E5E4E3;}
-    .tulip {fill:#CC2954;}
+    .mouse { fill: #E5E4E3; }
+    .tulip { fill: #CC2954; }
     .diamondOr {
-        animation-name:diamondOrigin;
-        animation-duration:4s;
-        animation-iteration-count:infinite;
+        animation-name: diamondOrigin;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
     }
     @keyframes diamondOrigin {
-        from {transform:rotate(0deg);}
-        to {transform:rotate(360deg);}
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
     }
     </style>
 </svg>
@@ -228,16 +225,16 @@ Possible values and units are:
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondOr tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-    .mouse {fill:#E5E4E3;}
-    .tulip {fill:#CC2954;}
+    .mouse { fill: #E5E4E3; }
+    .tulip { fill: #CC2954; }
     .diamondOr {
-        animation-name:diamondOrigin;
-        animation-duration:4s;
-        animation-iteration-count:infinite;
+        animation-name: diamondOrigin;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
     }
     @keyframes diamondOrigin {
-        from {transform:rotate(0deg);}
-        to {transform:rotate(360deg);}
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
     }
     </style>
 </svg>
@@ -248,17 +245,17 @@ In this example the diamond rotates from the default origin point, in the top le
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondOrCh tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondOrCh {
-            animation-name:diamondOriginChanged;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
-            transform-origin:50% 50%;
+            animation-name: diamondOriginChanged;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
         }
         @keyframes diamondOriginChanged {
-            from {transform:rotate(0deg);}
-            to {transform:rotate(360deg);}
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
         }
     </style>
 </svg>
@@ -268,21 +265,21 @@ In this example the diamond rotates from the default origin point, in the top le
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondOrCh tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondOrCh {
-            animation-name:diamondOriginChanged;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
-            transform-origin:50% 50%;
+            animation-name: diamondOriginChanged;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
         }
         @keyframes diamondOriginChanged {
-            from {transform:rotate(0deg);}
-            to {transform:rotate(360deg);}
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
         }
     </style>
 </svg>
-In this example `transform-origin:50% 50%;` is added. The origin point is set to the center so the diamond rotates from its center.
+In this example `transform-origin: 50% 50%;` is added. The origin point is set to the center so the diamond rotates from its center.
 
 ### Rotate
 
@@ -296,24 +293,23 @@ Possible _angle_ units are:
 * turns, like `1.5turn`
 * radians, like `1.64rad`
 
-
 ```html
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondTu tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondTu {
-            animation-name:diamondTurns;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
-            transform-origin:50% 50%;
+            animation-name: diamondTurns;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
         }
         @keyframes diamondTurns {
-            0% {transform:rotate(0deg);}
-            50% {transform:rotate(-90deg);}
-            100% {transform:rotate(0deg);}
+            0%   { transform: rotate(0deg); }
+            50%  { transform: rotate(-90deg); }
+            100% { transform: rotate(0deg); }
         }
     </style>
 </svg>
@@ -323,18 +319,18 @@ Possible _angle_ units are:
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondTu tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondTu {
-            animation-name:diamondTurns;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
-            transform-origin:50% 50%;
+            animation-name: diamondTurns;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
         }
         @keyframes diamondTurns {
-            0% {transform:rotate(0deg);}
-            50% {transform:rotate(-90deg);}
-            100% {transform:rotate(0deg);}
+            0%   { transform: rotate(0deg); }
+            50%  { transform: rotate(-90deg); }
+            100% { transform: rotate(0deg); }
         }
     </style>
 </svg>
@@ -356,24 +352,24 @@ Possible length units are:
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondMo tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondMo {
-            animation-name:diamondMoves;
-            animation-duration:8s;
-            animation-iteration-count:infinite;
-            transform-origin:50% 50%;
+            animation-name: diamondMoves;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
         }
         @keyframes diamondMoves {
-            0% {transform:translate(0, 0);}
-            20% {transform:translate(0, -200px);}
-            30% {transform:translate(0, 0);}
-            40% {transform:translate(0, 200px);}
-            50% {transform:translate(0, 0);}
-            60% {transform:translate(-200px, 0);}
-            70% {transform:translate(0, 0);}
-            80% {transform:translate(200px, 0);}
-            100% {transform:translate(0, 0);}
+            0%   { transform: translate(0, 0); }
+            20%  { transform: translate(0, -200px); }
+            30%  { transform: translate(0, 0); }
+            40%  { transform: translate(0, 200px); }
+            50%  { transform: translate(0, 0); }
+            60%  { transform: translate(-200px, 0); }
+            70%  { transform: translate(0, 0); }
+            80%  { transform: translate(200px, 0); }
+            100% { transform: translate(0, 0); }
         }
     </style>
 </svg>
@@ -383,24 +379,24 @@ Possible length units are:
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondMo tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondMo {
-            animation-name:diamondMoves;
-            animation-duration:8s;
-            animation-iteration-count:infinite;
-            transform-origin:50% 50%;
+            animation-name: diamondMoves;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
         }
         @keyframes diamondMoves {
-            0% {transform:translate(0, 0);}
-            20% {transform:translate(0, -200px);}
-            30% {transform:translate(0, 0);}
-            40% {transform:translate(0, 200px);}
-            50% {transform:translate(0, 0);}
-            60% {transform:translate(-200px, 0);}
-            70% {transform:translate(0, 0);}
-            80% {transform:translate(200px, 0);}
-            100% {transform:translate(0, 0);}
+            0%   { transform: translate(0, 0); }
+            20%  { transform: translate(0, -200px); }
+            30%  { transform: translate(0, 0); }
+            40%  { transform: translate(0, 200px); }
+            50%  { transform: translate(0, 0); }
+            60%  { transform: translate(-200px, 0); }
+            70%  { transform: translate(0, 0); }
+            80%  { transform: translate(200px, 0); }
+            100% { transform: translate(0, 0); }
         }
     </style>
 </svg>
@@ -412,24 +408,23 @@ The `scale` animation resizes an object.
 
 Scaling can either keep the object ratio intact, or it can distort it if the horizontal and vertical scaling amounts are different. The syntax can use one or two values, written `scale(sx)` or `scale(sx, sy)`, in which `s` is your amount of scaling. Your value can be a whole number (integer) or a decimal number. A value bigger than 0 and smaller than 1 shrinks the element, and a value over 1 enlarges the element.
 
-
 ```html
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondSc tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondSc {
-            animation-name:diamondScale;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
-            transform-origin:50% 50%;
+            animation-name: diamondScale;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
         }
         @keyframes diamondScale {
-            0% {transform:scale(0.5);}
-            50% {transform:scale(1.5);}
-            100% {transform:scale(0.5);}
+            0%   { transform: scale(0.5); }
+            50%  { transform: scale(1.5); }
+            100% { transform: scale(0.5); }
         }
     </style>
 </svg>
@@ -439,18 +434,18 @@ Scaling can either keep the object ratio intact, or it can distort it if the hor
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondSc tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse{fill:#E5E4E3;}
-        .tulip{fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondSc {
-            animation-name:diamondScale;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
-            transform-origin:50% 50%;
+            animation-name: diamondScale;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
         }
         @keyframes diamondScale {
-            0% {transform:scale(0.5);}
-            50% {transform:scale(1.5);}
-            100% {transform:scale(0.5);}
+            0%   { transform: scale(0.5); }
+            50%  { transform: scale(1.5); }
+            100% { transform: scale(0.5); }
         }
     </style>
 </svg>
@@ -470,26 +465,25 @@ Possible _angle_ units are:
 * turns, like `1.5turn`
 * radians, like `1.64rad`
 
-
 ```html
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondSk tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondSk {
-            animation-name:diamondSkew;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
-            transform-origin:50% 50%;
+            animation-name: diamondSkew;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
         }
         @keyframes diamondSkew {
-            0% {transform:skew(0);}
-            25% {transform:skew(-35deg);}
-            50% {transform:skew(0);}
-            75% {transform:skew(35deg);}
-            100% {transform:skew(0);}
+            0%   { transform: skew(0); }
+            25%  { transform: skew(-35deg); }
+            50%  { transform: skew(0); }
+            75%  { transform: skew(35deg); }
+            100% { transform: skew(0); }
         }
     </style>
 </svg>
@@ -499,25 +493,24 @@ Possible _angle_ units are:
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondSk tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondSk {
-            animation-name:diamondSkew;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
-            transform-origin:50% 50%;
+            animation-name: diamondSkew;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
         }
         @keyframes diamondSkew {
-            0% {transform:skew(0);}
-            25% {transform:skew(-35deg);}
-            50% {transform:skew(0);}
-            75% {transform:skew(35deg);}
-            100% {transform:skew(0);}
+            0%   { transform: skew(0); }
+            25%  { transform: skew(-35deg); }
+            50%  { transform: skew(0); }
+            75%  { transform: skew(35deg); }
+            100% { transform: skew(0); }
         }
     </style>
 </svg>
 In this example the diamond starts and ends undistorted. In the middle of the animation, the diamond points are skewed from a negative 35-degrees angle. Then, the diamond comes back to its original shape before skewing from a positive 35-degrees angle.
-
 
 ## Other CSS animations
 
@@ -537,16 +530,16 @@ Possible values:
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondCo tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondCo {
-            animation-name:diamondColor;
-            animation-duration:4s;
-            animation-iteration-count:1;
+            animation-name: diamondColor;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
         }
         @keyframes diamondColor {
-            0% {fill:#CC2954;}
-            100% {fill:#F2F230;}
+            0%   { fill: #CC2954; }
+            100% { fill: #F2F230; }
         }
     </style>
 </svg>
@@ -556,16 +549,16 @@ Possible values:
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondCo tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondCo {
-            animation-name:diamondColor;
-            animation-duration:4s;
-            animation-iteration-count:1;
+            animation-name: diamondColor;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
         }
         @keyframes diamondColor {
-            0% {fill:#CC2954;}
-            100% {fill:#F2F230;}
+            0%   { fill: #CC2954; }
+            100% { fill: #F2F230; }
         }
     </style>
 </svg>
@@ -589,17 +582,17 @@ The initial value is `none`.
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondFi mouse" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondFi {
-            animation-name:diamondFillMode;
-            animation-duration:4s;
-            animation-iteration-count:1;
-            animation-fill-mode:forwards;
+            animation-name: diamondFillMode;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
         }
         @keyframes diamondFillMode {
-            0% {fill:#CC2954;}
-            100% {fill:#F2F230;}
+            0%   { fill: #CC2954; }
+            100% { fill: #F2F230; }
         }
     </style>
 </svg>
@@ -609,21 +602,21 @@ The initial value is `none`.
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondFi mouse" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondFi {
-            animation-name:diamondFillMode;
-            animation-duration:4s;
-            animation-iteration-count:1;
-            animation-fill-mode:forwards;
+            animation-name: diamondFillMode;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
         }
         @keyframes diamondFillMode {
-            0% {fill:#CC2954;}
-            100% {fill:#F2F230;}
+            0%   { fill: #CC2954; }
+            100% { fill: #F2F230; }
         }
     </style>
 </svg>
-In this animation (played once) the color of the diamond changes from tulip to lime. When the animation ends, the diamond has the lime color. The animation remembers and extends the last keyframe because of the property `animation-fill-mode:forwards;`. If you refresh the page in your browser, you can see the animation from the start.
+In this animation (played once) the color of the diamond changes from tulip to lime. When the animation ends, the diamond has the lime color. The animation remembers and extends the last keyframe because of the property `animation-fill-mode: forwards;`. If you refresh the page in your browser, you can see the animation from the start.
 
 ### Stroke
 
@@ -647,31 +640,30 @@ Possible length units are:
 * pixels, like `2px`
 * percentages, like `20%`
 
-
 ```html
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <path class="diamondSt pathTulip" d="M400,280l-90-130l90-130l90,130L400,280z"/>
     <style>
-        .mouse {fill:#E5E4E3;}
+        .mouse { fill: #E5E4E3; }
         .pathTulip {
-            fill:#E5E4E3;
-            stroke:#CC2954;
-            stroke-width:10px;
-            stroke-linejoin:round;
-            stroke-linecap:round;
-            stroke-dasharray:1000;
-            stroke-dashoffset:1000;
+            fill: #E5E4E3;
+            stroke: #CC2954;
+            stroke-width: 10px;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
         }
         .diamondSt {
-            animation-name:diamondStroke;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
+            animation-name: diamondStroke;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
         @keyframes diamondStroke {
-            0% {stroke-dashoffset:1000;}
-            50% {stroke-dashoffset:0;}
-            100% {stroke-dashoffset:1000;}
+            0%   { stroke-dashoffset: 1000; }
+            50%   { stroke-dashoffset: 0; }
+            100% { stroke-dashoffset: 1000; }
         }
     </style>
 </svg>
@@ -681,25 +673,25 @@ Possible length units are:
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <path class="diamondSt pathTulip" d="M400,280l-90-130l90-130l90,130L400,280z"/>
     <style>
-        .mouse {fill:#E5E4E3;}
+        .mouse { fill: #E5E4E3; }
         .pathTulip {
-            fill:#E5E4E3;
-            stroke:#CC2954;
-            stroke-width:10px;
-            stroke-linejoin:round;
-            stroke-linecap:round;
-            stroke-dasharray:1000;
-            stroke-dashoffset:1000;
+            fill: #E5E4E3;
+            stroke: #CC2954;
+            stroke-width: 10px;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
         }
         .diamondSt {
-            animation-name:diamondStroke;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
+            animation-name: diamondStroke;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
         @keyframes diamondStroke {
-            0% {stroke-dashoffset:1000;}
-            50% {stroke-dashoffset:0;}
-            100% {stroke-dashoffset:1000;}
+            0%   { stroke-dashoffset: 1000; }
+            50%  { stroke-dashoffset: 0; }
+            100% { stroke-dashoffset: 1000; }
         }
     </style>
 </svg>
@@ -719,17 +711,17 @@ The possible values are :
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondOp tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondOp {
-            animation-name:diamondOpacity;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
+            animation-name: diamondOpacity;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
         @keyframes diamondOpacity {
-            0% {opacity:1;}
-            50% {opacity:0.1;}
-            100% {opacity:1;}
+            0%   { opacity: 1; }
+            50%  { opacity: 0.1; }
+            100% { opacity: 1; }
         }
     </style>
 </svg>
@@ -739,17 +731,17 @@ The possible values are :
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondOp tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondOp {
-            animation-name:diamondOpacity;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
+            animation-name: diamondOpacity;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
         @keyframes diamondOpacity {
-            0% {opacity:1;}
-            50% {opacity:0.1;}
-            100% {opacity:1;}
+            0%   { opacity: 1; }
+            50%  { opacity: 0.1; }
+            100% { opacity: 1; }
         }
     </style>
 </svg>
@@ -773,18 +765,18 @@ The initial value is `normal`.
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondMoBa tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondMoBa {
-            animation-name:diamondMovesBack;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
-            transform-origin:50% 50%;
-            animation-direction:alternate-reverse;
+            animation-name: diamondMovesBack;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+            animation-direction: alternate-reverse;
         }
         @keyframes diamondMovesBack {
-            0% {transform:translate(0, 0);}
-            100% {transform:translate(200px, 0);}
+            0%   { transform: translate(0, 0); }
+            100% { transform: translate(200px, 0); }
         }
     </style>
 </svg>
@@ -794,24 +786,23 @@ The initial value is `normal`.
     <rect class="mouse" x="0" y="0" width="800" height="300"/>
     <polygon class="diamondMoBa tulip" points="400, 280, 310, 150, 400, 20, 490, 150"/>
     <style>
-        .mouse {fill:#E5E4E3;}
-        .tulip {fill:#CC2954;}
+        .mouse { fill: #E5E4E3; }
+        .tulip { fill: #CC2954; }
         .diamondMoBa {
-            animation-name:diamondMovesBack;
-            animation-duration:4s;
-            animation-iteration-count:infinite;
-            transform-origin:50% 50%;
-            animation-direction:alternate-reverse;
+            animation-name: diamondMovesBack;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+            animation-direction: alternate-reverse;
         }
         @keyframes diamondMovesBack {
-            0% {transform:translate(0, 0);}
-            100% {transform:translate(200px, 0);}
+            0%   { transform: translate(0, 0); }
+            100% { transform: translate(200px, 0); }
         }
     </style>
 </svg>
 
 This animation iteration is set to `infinite`, and the animation direction is set to `alternate-reverse`. That is why the animation is looping even if the start and end keyframes are not similar.
-
 
 ## CSS animations common use
 
@@ -825,44 +816,44 @@ In this example you can hover on the icons to see them change color.
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 1280">
   <style>
-    .sapphire{fill:#2B4099;}
+    .sapphire{ fill: #2B4099; }
     .myStroke{
-      fill:none;
-      stroke-linecap:round;
-      stroke-linejoin:round;
-      stroke-miterlimit:10;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10;
     }
     .ic {
-      animation-name:draw;
-      animation-iteration-count:infinite;
-      animation-duration:3s;
-      stroke-dasharray:2000;
-      stroke-dashoffset:2000;
-      animation-direction:alternate-reverse;
-      animation-fill-mode:both;
-      animation-timing-function:ease-in;
+      animation-name: draw;
+      animation-iteration-count: infinite;
+      animation-duration: 3s;
+      stroke-dasharray: 2000;
+      stroke-dashoffset: 2000;
+      animation-direction: alternate-reverse;
+      animation-fill-mode: both;
+      animation-timing-function: ease-in;
     }
     @keyframes draw {
-      0% {stroke-dashoffset:0;}
-      25% {stroke-dashoffset:0;}
-      85% {stroke-dashoffset:2000;}
-      100% {stroke-dashoffset:2000;}
+      0%   { stroke-dashoffset: 0; }
+      25%  { stroke-dashoffset: 0; }
+      85%  { stroke-dashoffset: 2000; }
+      100% { stroke-dashoffset: 2000; }
     }
-    .ic-01:hover {
-      stroke:#cc2954;
-      stroke-width:12px;
+    .ic-01: hover {
+      stroke: #cc2954;
+      stroke-width: 12px;
     }
-    .ic-02:hover {
-      stroke:#ff7733;
-      stroke-width:12px;
+    .ic-02: hover {
+      stroke: #ff7733;
+      stroke-width: 12px;
     }
-    .ic-03:hover {
-      stroke:#ffb727;
-      stroke-width:12px;
+    .ic-03: hover {
+      stroke: #ffb727;
+      stroke-width: 12px;
     }
-    .ic-04:hover {
-      stroke:#f2f230;
-      stroke-width:12px;
+    .ic-04: hover {
+      stroke: #f2f230;
+      stroke-width: 12px;
     }
   </style>
   <path class="sapphire" d="M0 0h3000v1280H0z"/>
@@ -885,20 +876,17 @@ In this example you can hover on the icons to see them change color.
   </g>
 </svg>
 
-
 ### Logo animations
 
 Making a logo dynamic can make it feel more memorable, playful and unique. Find below an example of the animated logo for our [connecting things project](https://theartificial.com/connecting-things/).
 
 ![animated logo](05-18-svganimation/logo.svg)
 
-
 ### Illustrated animations
 
 CSS animations can give life to your vectorial illustrations. You may think about animating line drawings, or looping sceneries whether they are abstract or figurative. Find below an animation for our 3 number, originally designed for the [36 Days of type challenge](https://www.instagram.com/veryartificial/).
 
 ![animated illustration](05-18-svganimation/illustration.svg)
-
 
 ## Conclusion
 
