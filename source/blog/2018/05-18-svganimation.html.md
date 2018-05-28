@@ -240,7 +240,7 @@ Possible values and units are:
     }
     </style>
 </svg>
-In this example, the diamond rotates from the default origin point, in the top left corner.
+In this example the diamond rotates from the default origin point, in the top left corner.
 
 ```html
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
@@ -281,7 +281,7 @@ In this example, the diamond rotates from the default origin point, in the top l
         }
     </style>
 </svg>
-In this example, `transform-origin:50% 50%;` is added. The origin point is set to the center so the diamond rotates from its center.
+In this example `transform-origin:50% 50%;` is added. The origin point is set to the center so the diamond rotates from its center.
 
 ### Rotate
 
@@ -337,7 +337,7 @@ Possible _angle_ units are:
         }
     </style>
 </svg>
-In this example, the diamond starts and ends standing straight, but in the middle keyframe it rotates counterclockwise from a 90-degree angle.
+In this example the diamond starts and ends standing straight, but in the middle keyframe it rotates counterclockwise from a 90-degree angle.
 
 ### Translate
 
@@ -403,7 +403,7 @@ Possible length units are:
         }
     </style>
 </svg>
-In this example, the diamond starts from the center of the canvas, then it moves 200 pixels to the top, comes back to the center, moves 200 pixels to the bottom, comes back to the center, moves 200 pixels to the left, and comes back to the center. Finally, it moves 200 pixels to the right and comes back to the center.
+In this example the diamond starts from the center of the canvas, then it moves 200 pixels to the top, comes back to the center, moves 200 pixels to the bottom, comes back to the center, moves 200 pixels to the left, and comes back to the center. Finally, it moves 200 pixels to the right and comes back to the center.
 
 ### Scale
 
@@ -453,7 +453,7 @@ Scaling can either keep the object ratio intact, or it can distort it if the hor
         }
     </style>
 </svg>
-In this example, the diamond starts and ends at half its defined size. In the middle of the animation, it grows to reach 1.5 times its original size.
+In this example the diamond starts and ends at half its defined size. In the middle of the animation, it grows to reach 1.5 times its original size.
 
 ### Skew
 
@@ -515,7 +515,7 @@ Possible _angle_ units are:
         }
     </style>
 </svg>
-In this example, the diamond starts and ends undistorted. In the middle of the animation, the diamond points are skewed from a negative 35-degrees angle. Then, the diamond comes back to its original shape before skewing from a positive 35-degrees angle.
+In this example the diamond starts and ends undistorted. In the middle of the animation, the diamond points are skewed from a negative 35-degrees angle. Then, the diamond comes back to its original shape before skewing from a positive 35-degrees angle.
 
 
 ## Other CSS animations
@@ -568,7 +568,7 @@ Possible values:
         }
     </style>
 </svg>
-In this animation played once, the color of the diamond changes from tulip to lime. When the animation ends, the diamond fill goes back to the tulip color of the beginning.
+In this animation (played once) the color of the diamond changes from tulip to lime. When the animation ends, the diamond fill goes back to the tulip color of the beginning.
 
 ### Fill Mode
 
@@ -622,7 +622,7 @@ The initial value is `none`.
         }
     </style>
 </svg>
-In this animation played once, the color of the diamond changes from tulip to lime. When the animation ends, the diamond has the lime color. The animation remembers and extends the last keyframe because of the property `animation-fill-mode:forwards;`.
+In this animation (played once) the color of the diamond changes from tulip to lime. When the animation ends, the diamond has the lime color. The animation remembers and extends the last keyframe because of the property `animation-fill-mode:forwards;`.
 
 ### Stroke
 
