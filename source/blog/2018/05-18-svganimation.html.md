@@ -2,7 +2,7 @@
 title: "SVG Animation Tutorial"
 category: process
 tags: tutorial, animation, code, CSS, SVG
-author: [ariane]
+author: ariane
 preview: preview.png
 masthead: masthead.png
 published: false
