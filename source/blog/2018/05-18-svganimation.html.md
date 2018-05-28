@@ -91,7 +91,8 @@ The `animation-name` is a key concept, appearing twice. First, the animation nam
     to   { transform: translateX(400px); }
 }
 ```
-or
+
+
 ```css
 @keyframes diamondMoves {
     0%   { transform: translateX(0); }
@@ -568,7 +569,7 @@ Possible values:
         }
     </style>
 </svg>
-In this animation (played once) the color of the diamond changes from tulip to lime. When the animation ends, the diamond fill goes back to the tulip color of the beginning.
+In this animation (played once) the color of the diamond changes from tulip to lime. When the animation ends, the diamond fill goes back to the tulip color of the beginning. If you refresh the page in your browser, you can see the animation from the start.
 
 ### Fill Mode
 
@@ -622,7 +623,7 @@ The initial value is `none`.
         }
     </style>
 </svg>
-In this animation (played once) the color of the diamond changes from tulip to lime. When the animation ends, the diamond has the lime color. The animation remembers and extends the last keyframe because of the property `animation-fill-mode:forwards;`.
+In this animation (played once) the color of the diamond changes from tulip to lime. When the animation ends, the diamond has the lime color. The animation remembers and extends the last keyframe because of the property `animation-fill-mode:forwards;`. If you refresh the page in your browser, you can see the animation from the start.
 
 ### Stroke
 
@@ -820,19 +821,81 @@ Hover states usually indicate to a website visitor using a pointing device that 
 
 At [to \[icon\]](https://www.toicon.com/), for instance, hover states use the CSS scaling property on SVG. (To [icon] is our site for high-quality icon series.)
 
-In this example you can hover on the icons see them change color.
-![animated icons](05-18-svganimation/icons.svg)
+In this example you can hover on the icons to see them change color.
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 1280">
+  <style>
+    .sapphire{fill:#2B4099;}
+    .myStroke{
+      fill:none;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+      stroke-miterlimit:10;
+    }
+    .ic {
+      animation-name:draw;
+      animation-iteration-count:infinite;
+      animation-duration:3s;
+      stroke-dasharray:2000;
+      stroke-dashoffset:2000;
+      animation-direction:alternate-reverse;
+      animation-fill-mode:both;
+      animation-timing-function:ease-in;
+    }
+    @keyframes draw {
+      0% {stroke-dashoffset:0;}
+      25% {stroke-dashoffset:0;}
+      85% {stroke-dashoffset:2000;}
+      100% {stroke-dashoffset:2000;}
+    }
+    .ic-01:hover {
+      stroke:#cc2954;
+      stroke-width:12px;
+    }
+    .ic-02:hover {
+      stroke:#ff7733;
+      stroke-width:12px;
+    }
+    .ic-03:hover {
+      stroke:#ffb727;
+      stroke-width:12px;
+    }
+    .ic-04:hover {
+      stroke:#f2f230;
+      stroke-width:12px;
+    }
+  </style>
+  <path class="sapphire" d="M0 0h3000v1280H0z"/>
+  <g class="ic" stroke="#FFFFFF" stroke-width="12px">
+    <g class="ic-01">
+      <path class="myStroke" d="M675 530c0-8.28 15-25 15-25s15 16.72 15 25c0 8.28-6.72 15-15 15s-15-6.72-15-15zM615 745h-45c-8.28 0-15 6.72-15 15 0 8.28 6.72 15 15 15h240c8.28 0 15-6.72 15-15 0-8.28-6.72-15-15-15H655c-5.52 0-10-4.48-10-10V575c0-5.52 4.48-10 10-10h70c5.52 0 10 4.48 10 10v125c0 8.28-6.72 15-15 15-8.28 0-15-6.72-15-15v-87.5c0-6.9-5.6-12.5-12.5-12.5s-12.5 5.6-12.5 12.5v2.5c0 8.28-6.72 15-15 15"/>
+    </g>
+    <g class="ic-02">
+      <path class="myStroke" d="M1312.39 678.95c5.27 5.27 14.11 3.09 16.6-3.93 3.89-10.95 6.01-22.73 6.01-35.02 0-48.46-32.86-89.14-77.49-101.23-6.31-1.71-12.51 3.18-12.51 9.71v63.07l67.39 67.4zM1163.41 721.14c11.29 9.26 24.56 16.18 39.07 20.09 6.31 1.7 12.52-3.16 12.52-9.7v-77.55l-52.29 52.29c-4.18 4.19-3.88 11.12.7 14.87zM1190 543.02c-38.14 15.71-65 53.17-65 96.98 0 12.28 2.13 24.07 6.01 35.02 2.49 7.02 11.33 9.19 16.6 3.93l67.39-67.39v-75.37M1257.52 741.23c14.51-3.92 27.77-10.83 39.07-20.09 4.58-3.75 4.89-10.68.7-14.86L1245 653.99v77.55c0 6.53 6.21 11.39 12.52 9.69z"/>
+      <path class="myStroke" d="M1215 611.56v-96.44c0-5.48 4.41-9.82 9.89-10.03 8.79-.33 17.79.18 26.92 1.61 58.36 9.13 104.67 57.09 112.08 115.69 11.16 88.33-63.11 162.62-151.44 151.49-60.28-7.6-108.91-56.35-116.38-116.64-8.42-67.98 33.75-127.58 93.93-146.23"/>
+    </g>
+      <g class="ic-03">
+      <path class="myStroke" d="M1700.67 549.99c30.6 18.31 51.1 51.74 51.1 90.01 0 47.88-32.08 88.19-75.91 100.78-8.66 2.49-10.5 14.11-2.56 18.36 18.92 10.11 40.52 15.86 63.47 15.86 79.59 0 143.09-68.87 134.16-150.26-6.66-60.68-55.02-110.36-115.52-118.48-29.87-4.01-58.15 1.79-82.12 14.61-3.73 1.99-5.29 5.61-5.01 9.14.32 4 2.99 7.89 7.59 9.21"/>
+    </g>
+    <g class="ic-04">
+      <path class="myStroke" d="M2205 555.14c24.75-30.59 62.59-50.14 105-50.14 74.56 0 135 60.44 135 135 0 37.28-30.22 67.5-67.5 67.5S2310 677.28 2310 640s-30.22-67.5-67.5-67.5-67.5 30.22-67.5 67.5c0 74.56 60.44 135 135 135 42.41 0 80.26-19.56 105-50.15"/>
+      <circle class="myStroke" cx="2235" cy="635" r="15"/>
+      <circle class="myStroke" cx="2385" cy="635" r="15"/>
+    </g>
+  </g>
+</svg>
+
 
 ### Logo animations
 
-You may want to add animations to a logo to make it unique and dynamic. Find below an example of the animated logo for our [connecting things project](https://theartificial.com/connecting-things/).
+Making a logo dynamic can make it feel more memorable, playful and unique. Find below an example of the animated logo for our [connecting things project](https://theartificial.com/connecting-things/).
 
 ![animated logo](05-18-svganimation/logo.svg)
 
 
 ### Illustrated animations
 
-You may want to use CSS animations on line drawings, or for looping sceneries whether they are abstract or figurative. Find below an animation for our 3 originally designed for the [36 Days of type challenge](https://www.instagram.com/veryartificial/).
+CSS animations can give life to your vectorial illustrations. You may think about animating line drawings, or looping sceneries whether they are abstract or figurative. Find below an animation for our 3 number, originally designed for the [36 Days of type challenge](https://www.instagram.com/veryartificial/).
 
 ![animated illustration](05-18-svganimation/illustration.svg)
 

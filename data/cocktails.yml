@@ -1487,6 +1487,27 @@
     <h4 class="recipe-section">Method</h4>
     <p>Blend fresh or frozen mango with water to create a thin purée. Pour into a shaker with ice, dark rum, and slices of chili peppers. Shake, strain, and serve with a squeeze of lime and extra peppers.</p>
 -
+  slug: thekamila
+  name: The Kamila
+  date: 2018-05-18
+  glass: thekamila
+  contents: thekamila
+  author: kamila
+  rating: 5
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>I like calm, dark colors and I noticed cocktails are often mixed in all colors and shades except for my favorite - black. My goal was to create a dark, possibly black cocktail and give it a balanced taste of bitterness and sweetness. It looks both stylish and a bit rebellious. It’s quite strong, but who cares on a Friday afternoon?</p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>1 part bourbon</li>
+      <li>1 part Irish dry stout beer</li>
+      <li>0.5 parts simple syrup</li>
+      <li>a splash of lime juice</li>
+      <li>blackberries</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>Muddle blackberries in a shaker, add bourbon, simple syrup, and lime juice. Fill the shaker with ice and shake well. Pour into a glass filled with ice and stir in the Guinness. Add blackberries threaded on a toothpick for garnish.</p>    
+-
   slug: lavenderpearlemonade
   name: Lavender Pear Lemonade
   date: 2016-06-03
