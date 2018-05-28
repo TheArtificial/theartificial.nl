@@ -5,7 +5,6 @@ tags: tutorial, animation, code, CSS, SVG
 author: ariane
 preview: preview.png
 masthead: masthead.png
-published: false
 ---
 
 Animation on the web is hardly new. First there were GIFs, then there was Flash, now there's HTML5 and JavaScript and GIFs are retro cool. These techniques are great if you want to create dynamic web pages or small raster graphics. But what if you want to create a vector animation that's lightweight, scales well, and has [broad compatibility](https://caniuse.com/#search=css%20animation)? These circumstances are ideal for animating SVGs with CSS.
