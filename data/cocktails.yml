@@ -892,7 +892,7 @@
   date: 2018-04-06
   glass: mezcaloni
   contents: mezcaloni
-  author: natalia,ariane
+  author: [natalia, ariane]
   rating: 3
   html: |
     <h4 class="recipe-section">Story</h4>
