@@ -56,8 +56,14 @@
   number: "019"
   name: rattata
 -
+  number: "019"
+  name: rattata-alola
+-
   number: "020"
   name: raticate
+-
+  number: "020"
+  name: raticate-alola
 -
   number: "021"
   name: spearow
@@ -77,11 +83,20 @@
   number: "026"
   name: raichu
 -
+  number: "026"
+  name: raichu-alola
+-
   number: "027"
   name: sandshrew
 -
+  number: "027"
+  name: sandshrew-alola
+-
   number: "028"
   name: sandslash
+-
+  number: "028"
+  name: sandslash-alola
 -
   number: "029"
   name: nidoran-f
@@ -110,8 +125,14 @@
   number: "037"
   name: vulpix
 -
+  number: "037"
+  name: vulpix-alola
+-
   number: "038"
   name: ninetales
+-
+  number: "038"
+  name: ninetales-alola
 -
   number: "039"
   name: jigglypuff
@@ -149,14 +170,26 @@
   number: "050"
   name: diglett
 -
+  number: "050"
+  name: diglett-alola
+-
   number: "051"
   name: dugtrio
+-
+  number: "051"
+  name: dugtrio-alola
 -
   number: "052"
   name: meowth
 -
+  number: "052"
+  name: meowth-alola
+-
   number: "053"
   name: persian
+-
+  number: "053"
+  name: persian-alola
 -
   number: "054"
   name: psyduck
@@ -221,11 +254,20 @@
   number: "074"
   name: geodude
 -
+  number: "074"
+  name: geodude-alola
+-
   number: "075"
   name: graveler
 -
+  number: "075"
+  name: graveler-alola
+-
   number: "076"
   name: golem
+-
+  number: "076"
+  name: golem-alola
 -
   number: "077"
   name: ponyta
@@ -263,8 +305,14 @@
   number: "088"
   name: grimer
 -
+  number: "088"
+  name: grimer-alola
+-
   number: "089"
   name: muk
+-
+  number: "089"
+  name: muk-alola
 -
   number: "090"
   name: shellder
@@ -308,11 +356,17 @@
   number: "103"
   name: exeggutor
 -
+  number: "103"
+  name: exeggutor-alola
+-
   number: "104"
   name: cubone
 -
   number: "105"
   name: marowak
+-
+  number: "105"
+  name: marowak-alola
 -
   number: "106"
   name: hitmonlee
