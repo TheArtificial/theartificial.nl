@@ -285,6 +285,28 @@
     <h4 class="recipe-section">Method</h4>
     <p>Pour all ingredients into a shaker with ice and serve immediately.</p>
 -
+  slug: copypaste
+  name: Copy Paste
+  date: 2018-05-25
+  glass: copypaste
+  contents: copypaste
+  author: natalia
+  rating: 5
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>Natalia was ready to give <a href="https://theartificial.com/cocktails/thenatalia.html" target="blank">her signature cocktail</a> a second chance, the first time she added sparkling water because our muddler was missing and she couldn’t squeeze the juice out of the pineapples. The outcome was delicious, a bit of spice, a bit of sweet and some herbs, and the smokiness of the mezcal with the grilled pineapple worked like a match made in heaven.</p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>2 parts mezcal</li>
+      <li>1 part lime juice</li>
+      <li>0.5 parts agave syrup </li>
+      <li>jalapeño</li>
+      <li>pineapple</li>
+      <li>cilantro</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>In a pan grill the pineapple until charred on both sides, remove from the pan and let it cool completely. Place the grilled pineapple, the cilantro, and the jalapeño in the glasses and muddle. Fill the glasses with ice, and then add mezcal, lime juice, and syrup stir well and enjoy!</p>
+-
   slug: dtginger
   name: DT Ginger
   date: 2017-04-07
@@ -1506,7 +1528,7 @@
       <li>blackberries</li>
     </ul>
     <h4 class="recipe-section">Method</h4>
-    <p>Muddle blackberries in a shaker, add bourbon, simple syrup, and lime juice. Fill the shaker with ice and shake well. Pour into a glass filled with ice and stir in the Guinness. Add blackberries threaded on a toothpick for garnish.</p>    
+    <p>Muddle blackberries in a shaker, add bourbon, simple syrup, and lime juice. Fill the shaker with ice and shake well. Pour into a glass filled with ice and stir in the Guinness. Add blackberries threaded on a toothpick for garnish.</p>
 -
   slug: lavenderpearlemonade
   name: Lavender Pear Lemonade
@@ -1622,7 +1644,7 @@
   glass: thenatalia
   contents: thenatalia
   author: natalia
-  rating: 5
+  rating: 3
   html: |
     <h4 class="recipe-section">Story</h4>
     <p>Every opportunity I have I try to convince people to try mezcal. Many have the idea that it tastes like tequila, and that's why they are not interested. Who does not have a bad memory (or lack of) with tequila? The big difference is that mezcal has a smoky taste and you drink it slow. Some hate it but some really fall in love with the taste.</p>
