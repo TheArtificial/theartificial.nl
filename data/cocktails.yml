@@ -1552,6 +1552,28 @@
     <h4 class="recipe-section">Method</h4>
     <p>To make lavender simple syrup, boil equal parts water and sugar with fresh stalks of lavender for 10 minutes. Strain and let cool. Mix other ingredients in a shaker with ice and add simple syrup to taste. Garnish with a lemon wedge or lavender.</p>
 -
+  slug: thedutchpainkiller
+  name: The Dutch Pain Killer
+  date: 2018-06-01
+  glass: thedutchpainkiller
+  contents: thedutchpainkiller
+  author: natalia
+  rating: 2
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>Like the oh-so-loved-by-dutch doctors paracetamol, this drink was not strong enough to kill pain, nor to get us drunk. We did conclude after drinking this that everything with pineapple juice is amazing and drinkable. Next time we will try to make a variant with US, Polish, or Mexican pain killer standards, maybe then it will make for a good substitute for flu medication. </p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>2 parts rum</li>
+      <li>1 part pineapple juice</li>
+      <li>0.5 parts orange juice</li>
+      <li>0.5 parts coconut cream</li>
+      <li>nutmeg</li>
+      <li>lemon slice</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>In a mixer with ice, pour all the ingredients except the nutmeg and lemon slice and shake well. Pour over ice in a glass, sprinkle with nutmeg, and garnish with a lemon slice.</p>
+-
   slug: thehans
   name: The Hans
   date: 2016-07-01
