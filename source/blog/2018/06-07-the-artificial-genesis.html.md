@@ -5,8 +5,6 @@ tags: agency, history, design, brand
 author: hans
 ---
 
-# The Artificial Genesis
-
 The story of why we created The Artificial is oft-told but hasn't been written. Let's correct that!
 
 ## We'd Moved Our Cat
