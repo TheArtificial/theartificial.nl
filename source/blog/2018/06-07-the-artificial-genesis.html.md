@@ -6,7 +6,7 @@ author: hans
 ---
 
 The story of why we created The Artificial is oft-told but hasn't been written. Let's correct that!
-
+READMORE
 ## We'd Moved Our Cat
 
 Shannon and I didn't plan to start our own studio yet, but when our big-agency employer unexpectedly asked us to return from Amsterdam to Seattle, we instead went out on our own. We had already moved our cat, so it just made sense to stay.
@@ -63,7 +63,7 @@ We have signs that this undertaking is productive. As we became established, we 
 
 ## The Name
 
-It took us weeks to find an agency name that felt right. Considering our goal of bringing holistic craftsmanship to a design practice, Bauhaus references were tempting but had too much hubris. Seeding our exploration with terminology around craft it was notable that contemporary English lacks for vocabulary with positive connotations for the work of humans. “Artisanal” is common, but these days evokes hipster coffee cafes before great works of architecture.
+It took us weeks to find an agency name that felt right. Considering our goal of bringing holistic craftsmanship to a design practice, Bauhaus references were tempting but had too much hubris. Seeding our exploration with terminology around craft it was notable that contemporary English lacks for vocabulary with positive connotations for the work of humans. “Artisanal” is common, but these days evokes hipster coffee cafés before great works of architecture.
 
 So we dug back into history, and found the allegory of King Charles II telling Christopher Wren his Cathedral of St. Paul was “awful and artificial” as a compliment.[^wren]
 
