@@ -1,9 +1,10 @@
 ---
 title: 'The Artificial Genesis'
-category: news
+category: inspiration
 tags: agency, history, design, brand
 author: hans
-preview: preview.jpg
+preview: garage.jpg
+masthead: stpauls.jpg
 ---
 
 The story of why we created The Artificial is oft-told but hasn't been written. Let's correct that!
