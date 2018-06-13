@@ -1928,3 +1928,25 @@
     </ul>
     <h4 class="recipe-section">Method</h4>
     <p>Pour ingredients in a glass with ice and stir. A couple drops of honey chamomile bitters gives the drink a slightly herby taste.</p>
+-
+  slug: wheretheressmoke
+  name: Where There's Smoke
+  date: 2018-06-08
+  glass: wheretheressmoke
+  contents: wheretheressmoke
+  author: shannon
+  rating: 4
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>After several weeks of sickness and reduced alcohol tolerance, we decided to make a recipe that was a little lighter on the booze, but still full of flavor. For this recipe we lightly burned our limes, lemons, and mandarins before juicing them, giving the cocktail a subtle smoky flavor. For those of us who wanted more smoke, we used mezcal instead of tequila.</p>
+    <h4 class="recipe-section">Ingredients</h4>
+      <ul>
+      <li>2 parts tequila</li>
+      <li>1 part smoked citrus juice (orange, lime, lemon)</li>
+      <li>0.5 parts agave syrup</li>
+      <li>club soda</li>
+      <li>a sprig of rosemary</li>
+      <li>cinnamon stick</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>Cut citrus in half, dip in sugar, and cook on high heat until slightly burnt. Let cool before juicing. Mix tequila (or mezcal), smoked citrus juice, and agave together in a shaker. Add ice and shake. Pour over ice and top off with club soda. Add a sprig of rosemary and a cinnamon stick for garnish.</p>
