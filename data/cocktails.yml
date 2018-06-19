@@ -1574,6 +1574,27 @@
     <h4 class="recipe-section">Method</h4>
     <p>In a mixer with ice, pour all the ingredients except the nutmeg and lemon slice and shake well. Pour over ice in a glass, sprinkle with nutmeg, and garnish with a lemon slice.</p>
 -
+  slug: thegingerstorm
+  name: The Ginger Storm
+  date: 2018-06-15
+  glass: thegingerstorm
+  contents: thegingerstorm
+  author: natalia
+  rating: 3
+  html: |
+    <h4 class="recipe-section">Story</h4>
+    <p>Sometimes when a craving surpasses our mixing curiosity, a classic is much needed. Shannon and Natalia love Dark and Stormies so Natalia decided to mix it and give it a fun twist by caramelizing the limes and adding some extra ginger to it. The result was what was expected and we found out that ginger works really well as a garnish. </p>
+    <h4 class="recipe-section">Ingredients</h4>
+    <ul>
+      <li>2 parts ginger beer</li>
+      <li>1 part dark rum</li>
+      <li>0.5 lime juice</li>
+      <li>caramelized limes</li>
+      <li>ginger</li>
+    </ul>
+    <h4 class="recipe-section">Method</h4>
+    <p>To caramelize the limes, chop them in thick slices and dip them in sugar. In a pan cook both sides until they are slightly burnt and let them cool down. In a glass filled with ice, pour the ginger beer, add the lime so that is floating, and top off with dark rum to create a layer effect. Garnish with a slice of ginger.</p>    
+-
   slug: thehans
   name: The Hans
   date: 2016-07-01
