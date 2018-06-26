@@ -15,7 +15,7 @@ noindex: true
 		</div>
 
 	<!-- cards -->
-		<div class="container packery padded-bottom">
+		<div class="flex container padded-bottom">
 
 			<%
 	      work_folder = current_page.path
@@ -25,17 +25,16 @@ noindex: true
 	      # but then remove anything without a date (like this index.html)
 	      work_resources.delete_if{ |r| !r.data.date }
 	      work_resources.sort_by!{ |r| r.data.order }
-%>
-<h1>[<%= current_page.path %>|<%= work_folder %>]</h1>
-<%
+			%>
+			<%
 	      work_resources.each_with_index do |work, i|
-	        title = work.data.title
-	        snippet = work.data.snippet
-					color = work.data.color
-	        thumbnail = "images/#{work.data.thumbnail}"
+        title = work.data.title
+        snippet = work.data.snippet
+				color = work.data.color
+        thumbnail = "images/#{work.data.thumbnail}"
 	    %>
 
-			<div class="col-4 packed">
+			<div class="col-4">
 	      <% link_to work do %>
 					<div class="card case-study center <%= color %>">
 	          <div class="padded">
