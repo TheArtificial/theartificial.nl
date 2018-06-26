@@ -571,6 +571,12 @@ svg *.content{ fill: $cool-grey-40; }
 	.statement, .statement:hover, .label, .description {	color: $white; }
 }
 
+.sunset-day {
+	background-color: $pale-pumpkin;
+	background: linear-gradient(to bottom, $palest-dandelion, $pale-pumpkin);
+	.statement, .statement:hover, .label, .description {	color: $darkest-sapphire; }
+}
+
 // text colors
 .turquoise-text {	color: $turquoise; }
 .dark-turquoise-text { color: $dark-turquoise; }
