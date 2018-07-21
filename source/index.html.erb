@@ -21,8 +21,8 @@ nofeed: true
 <script>
   $( document ).ready(function() {
     scrollspy('#nav-panels', $(window).height()/2, tweenGradient);
-    tweenGradient($('#systems'),0);
-    updatePagination($('#nav-panels a'), 'systems');
+    tweenGradient($('#day'),0);
+    updatePagination($('#nav-panels a'), 'day');
     $('.slide-panel').css('background','none');
   });
 
@@ -43,9 +43,6 @@ nofeed: true
     // $('body').css('background-color',currentElement.data('glitch'));
     $('#header').css('background-color',overlayColor.alpha(0.25).toRgbaString());
     $('#nav-panels li svg *').css('fill',overlayColor.toHexString());
-
-    // $('#logo').text(offset);
-    // $('#logo').text(currentElement.attr('id') + ': ' + currentElement.data('gradient-top') + '-' + currentElement.data('gradient-bottom') + ': ' + $('#background').css('background-image'));
   }
 
 </script>
@@ -57,15 +54,13 @@ nofeed: true
           <ul>
             <li class="disabled"><a class="prev"><svg class="arrow" version="1.1"
             	 width="24px" height="24px" viewBox="0 0 24 24"><polygon class="arrows" points="12,1.586 1.293,12.293 2.707,13.707 11,5.414 11,23 13,23 13,5.414 21.293,13.707 22.707,12.293 "/></svg></a></li>
-            <li class="active"><a href="#systems"><svg class="dot" version="1.1"
+            <li class="active"><a href="#day"><svg class="dot" version="1.1"
             	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#integrated"><svg class="dot" version="1.1"
+            <li><a href="#dusk"><svg class="dot" version="1.1"
             	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#global"><svg class="dot" version="1.1"
+            <li><a href="#twilight"><svg class="dot" version="1.1"
             	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#details"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#possible"><svg class="dot" version="1.1"
+            <li><a href="#night"><svg class="dot" version="1.1"
             	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
             <li><a class="next"><svg class="arrow" version="1.1"
             	 width="24px" height="24px" viewBox="0 0 24 24"><polygon points="21.293,10.293 13,18.586 13,1 11,1 11,18.586 2.707,10.293 1.293,11.707 12,22.414 22.707,11.707"/></svg></a></li>
@@ -79,7 +74,7 @@ nofeed: true
 
 <div class="bleed slide-container">
 
-  <div class="slide-panel bleed sunset-day" data-gradient-bottom="#FF9966" data-gradient-top="#FFE6B3" data-overlay="#FF9966" id="systems">
+  <div class="slide-panel bleed sunset-day" data-gradient-bottom="#FF9966" data-gradient-top="#FFE6B3" data-overlay="#FF9966" id="day">
     <div class="col-8 right-2 left-2 slide-panel-caption">
       <div class="padded center">
         <p>The Artificial has refocused and is now <a href="http://artificial.design">Artificial Design</a>.</p>
@@ -87,68 +82,50 @@ nofeed: true
     </div>
   </div>
 
-  <div class="slide-panel bleed sunset-dusk" data-gradient-bottom="#CC2954" data-gradient-top="#FF9966" data-overlay="#CC2954" id="integrated">
+  <div class="slide-panel bleed sunset-dusk" data-gradient-bottom="#CC2954" data-gradient-top="#FF9966" data-overlay="#CC2954" id="dusk">
     <div class="flex container">
+
+    <%
+      events = data.events.sort_by{|e| e.date}
+      last_year = 0
+      events.each_with_index do |e, i|
+        if i == 0
+    %>
       <div class="col-10 right-1 left-1 slide-panel-caption">
         <div class="padded center">
-          <p>The Artificial was an agency that existed for 5 years. We did a lot of work and had a lot of fun. Here’s a brief timeline of our adventures.</p>
+          <p>The Artificial was a boutique UX agency from 2013 to 2018. We did a lot of work and had a lot of fun. Here’s a brief timeline of our adventures.</p>
         </div>
       </div>
-      <div class="col-5 left-7">
-        <div class="padded">
-          <p class="date">4 April 2013</p>
-          <p class="event">The company registers as Shannon E. Thomas VOF. Immediately, we begin collaborating with our friends at <a href="">Zigzag</a>.</p>
-        </div>
-      </div>
+    <%
+        end
+        if (i % 2) == 0
+    %>
       <div class="col-5 right-7">
-        <div class="padded">
-          <p class="date">16 June 2013</p>
-          <p class="event">The Artificial starts her first official project, an app with a <a href="">knowledge sharing startup</a>.</p>
-        </div>
-      </div>
+    <%
+        else
+    %>
       <div class="col-5 left-7">
+    <%
+        end
+        date = e.date
+        year = date.year
+        date_human = "#{date.day} #{Date::MONTHNAMES[date.month]} #{year}"
+    %>
         <div class="padded">
-          <p class="date">1 August 2013</p>
-          <p class="event"><a href="">Jo Szczepanska</a> joins the team. The next day, we move the garage on Houtmankade.</p>
+          <p class="date"><%= date_human %></p>
+          <p class="event"><%= e.content %></p>
         </div>
       </div>
-      <div class="col-5 right-7">
-        <div class="padded">
-          <p class="date">12 August 2013</p>
-          <p class="event">The Artificial starts work on <a href="">3D Systems Consumer Tools</a>.</p>
-        </div>
-      </div>
-      <div class="col-5 left-7">
-        <div class="padded">
-          <p class="date">5 September 2013</p>
-          <p class="event">The Artificial starts work on <a href="">3D Systems Professional Tools</a>.</p>
-        </div>
-      </div>
-      <div class="col-5 right-7">
-        <div class="padded">
-          <p class="date">14 October 2013</p>
-          <p class="event"><a href="">Hans Gerwitz</a> joins the team.</p>
-        </div>
-      </div>
-      <div class="col-5 left-7">
-        <div class="padded">
-          <p class="date">25 November 2013</p>
-          <p class="event">The Artificial starts work on the uGrow <a href="">Smart Baby Monitor</a>.</p>
-        </div>
-      </div>
-      <div class="col-5 right-7">
-        <div class="padded">
-          <p class="date">3 March 2014</p>
-          <p class="event"><a href="">Carol Liao</a> joins the team.</p>
-        </div>
-      </div>
+    <%
+      end
+    %>
     </div>
   </div>
 
-  <div class="slide-panel bleed sunset-twilight" data-gradient-bottom="#78288C" data-gradient-top="#CC2954" data-overlay="#581466" id="global">
+  <div class="slide-panel bleed sunset-twilight" data-gradient-bottom="#78288C" data-gradient-top="#CC2954" data-overlay="#581466" id="twilight">
   </div>
 
-  <div class="slide-panel bleed sunset-night" data-gradient-bottom="#172872" data-gradient-top="#78288C" data-overlay="#172872" id="details">
+  <div class="slide-panel bleed sunset-night" data-gradient-bottom="#172872" data-gradient-top="#78288C" data-overlay="#172872" id="night">
   </div>
 
 </div>
