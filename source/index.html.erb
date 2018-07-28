@@ -20,7 +20,7 @@ nofeed: true
 
 <script>
   $( document ).ready(function() {
-    scrollspy('.slide-panel', $(window).height()/2, tweenGradient);
+    scrollspy('.slide-panel', 0, tweenGradient);
     tweenGradient($('#day'),0);
     $('.slide-panel').css('background','none');
   });
@@ -39,9 +39,7 @@ nofeed: true
       overlayColor = overlayColor.transition(nextOverlayColor, offset);
     }
     $('#background').css('background-image','linear-gradient('+topColor.toRgbaString()+', '+bottomColor.toRgbaString()+')');
-    // $('body').css('background-color',currentElement.data('glitch'));
     $('#header').css('background-color',overlayColor.alpha(0.25).toRgbaString());
-    $('#nav-panels li svg *').css('fill',overlayColor.toHexString());
   }
 
 </script>
@@ -54,53 +52,61 @@ nofeed: true
     <div class="col-8 right-2 left-2 slide-panel-caption">
       <div class="padded center">
         <p>The Artificial has refocused and is now <a href="https://artificial.design/">Artificial Design</a>.</p>
+        <p>The Artificial was a boutique UX agency from 2013 to 2018. We did a lot of work and had a lot of fun. Here’s a brief timeline of our adventures.</p>
       </div>
     </div>
   </div>
 
+  <%
+    events = data.events.sort_by{|e| e.date}
+    last_year = 0
+    events.each_with_index do |e, i|
+      date = e.date
+      year = date.year
+      date_human = "#{date.day} #{Date::MONTHNAMES[date.month]} #{year}"
+      if year != last_year
+        last_year = year
+        case year
+        when 2013
+  %>
   <div class="slide-panel bleed sunset-dusk" data-gradient-bottom="#CC2954" data-gradient-top="#FF9966" data-overlay="#CC2954" id="dusk">
     <div class="flex container">
-    <%
-      events = data.events.sort_by{|e| e.date}
-      last_year = 0
-      events.each_with_index do |e, i|
-        if i == 0
-    %>
-      <div class="col-10 right-1 left-1 slide-panel-caption">
-        <div class="padded center">
-          <p>The Artificial was a boutique UX agency from 2013 to 2018. We did a lot of work and had a lot of fun. Here’s a brief timeline of our adventures.</p>
-        </div>
-      </div>
-    <%
+  <%
+        when 2015
+  %>
+    </div>
+  </div>
+  <div class="slide-panel bleed sunset-twilight" data-gradient-bottom="#78288C" data-gradient-top="#CC2954" data-overlay="#581466" id="twilight">
+    <div class="flex container">
+  <%
+        when 2017
+  %>
+    </div>
+  </div>
+  <div class="slide-panel bleed sunset-night" data-gradient-bottom="#172872" data-gradient-top="#78288C" data-overlay="#172872" id="night">
+    <div class="flex container">
+  <%
         end
-        if (i % 2) == 0
-    %>
+      end
+      if (i % 2) == 0
+  %>
       <div class="col-5 right-7">
-    <%
-        else
-    %>
+  <%
+      else
+  %>
       <div class="col-5 left-7">
-    <%
-        end
-        date = e.date
-        year = date.year
-        date_human = "#{date.day} #{Date::MONTHNAMES[date.month]} #{year}"
-    %>
+  <%
+      end
+  %>
         <div class="padded">
           <p class="date"><%= date_human %></p>
           <p class="event"><%= e.content %></p>
         </div>
       </div>
-    <%
-      end
-    %>
+  <%
+    end
+  %>
     </div>
-  </div>
-
-  <div class="slide-panel bleed sunset-twilight" data-gradient-bottom="#78288C" data-gradient-top="#CC2954" data-overlay="#581466" id="twilight">
-  </div>
-
-  <div class="slide-panel bleed sunset-night" data-gradient-bottom="#172872" data-gradient-top="#78288C" data-overlay="#172872" id="night">
   </div>
 
 </div>

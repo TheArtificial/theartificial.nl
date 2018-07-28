@@ -18,7 +18,7 @@ body.index #header .flex.container {
 	min-width: 100%;
 	min-height: 100%;
 
-	background-color: $turquoise;
+	background-color: $palest-dandelion;
 	// background: linear-gradient(to bottom, $pale-grass, $turquoise);
 	-webkit-transition: background-image 0.5s linear;
 	transition: background-image 0.5s linear;
@@ -28,4 +28,8 @@ body.index #header .flex.container {
 // homepage panels
 .slide-panel {
 	*, *:hover { color: inherit; }
+}
+
+#day {
+	margin-top: 70px;
 }
