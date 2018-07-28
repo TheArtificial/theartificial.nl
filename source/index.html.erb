@@ -20,9 +20,8 @@ nofeed: true
 
 <script>
   $( document ).ready(function() {
-    scrollspy('#nav-panels', $(window).height()/2, tweenGradient);
+    scrollspy('.slide-panel', $(window).height()/2, tweenGradient);
     tweenGradient($('#day'),0);
-    updatePagination($('#nav-panels a'), 'day');
     $('.slide-panel').css('background','none');
   });
 
@@ -47,29 +46,6 @@ nofeed: true
 
 </script>
 
-<section id="side-nav">
-  <div class="flex container">
-    <div class="col-1 left-11">
-      <nav id="nav-panels" class="iconlist">
-          <ul>
-            <li class="disabled"><a class="prev"><svg class="arrow" version="1.1"
-            	 width="24px" height="24px" viewBox="0 0 24 24"><polygon class="arrows" points="12,1.586 1.293,12.293 2.707,13.707 11,5.414 11,23 13,23 13,5.414 21.293,13.707 22.707,12.293 "/></svg></a></li>
-            <li class="active"><a href="#day"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#dusk"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#twilight"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#night"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a class="next"><svg class="arrow" version="1.1"
-            	 width="24px" height="24px" viewBox="0 0 24 24"><polygon points="21.293,10.293 13,18.586 13,1 11,1 11,18.586 2.707,10.293 1.293,11.707 12,22.414 22.707,11.707"/></svg></a></li>
-          </ul>
-      </nav>
-    </div>
-  </div>
-</section>
-
 <div id="background"> </div>
 
 <div class="bleed slide-container">
@@ -77,14 +53,13 @@ nofeed: true
   <div class="slide-panel bleed sunset-day" data-gradient-bottom="#FF9966" data-gradient-top="#FFE6B3" data-overlay="#FF9966" id="day">
     <div class="col-8 right-2 left-2 slide-panel-caption">
       <div class="padded center">
-        <p>The Artificial has refocused and is now <a href="http://artificial.design">Artificial Design</a>.</p>
+        <p>The Artificial has refocused and is now <a href="https://artificial.design/">Artificial Design</a>.</p>
       </div>
     </div>
   </div>
 
   <div class="slide-panel bleed sunset-dusk" data-gradient-bottom="#CC2954" data-gradient-top="#FF9966" data-overlay="#CC2954" id="dusk">
     <div class="flex container">
-
     <%
       events = data.events.sort_by{|e| e.date}
       last_year = 0
