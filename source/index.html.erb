@@ -19,7 +19,7 @@ nofeed: true
 <% end %>
 
 <script>
-  $( document ).ready(function() {
+  $( window ).on('load', function() {
     scrollspy('.slide-panel', 0, tweenGradient);
     tweenGradient($('#day'),0);
     $('.slide-panel').css('background','none');
