@@ -33,27 +33,42 @@ body.index, body.test {
 
 // homepage panels
 .slide-panel {
-	*, *:hover { color: inherit; }
+  *, *:hover { color: inherit; }
+  
+  a {
+    text-decoration: underline;
+  }
 }
 
 #day {
-  height: 90vh;
+  height: 100vh;
   padding-top: 70px;
   
   color: #081959; // footer, too
 
   .container {
-    height: 75%;
+    height: 60%;
   }
 
   h2 {
-    font-size: 56px;
-    font-weight: 100; 
+    font-size: 36px;
+    font-weight: 100;
+
+    margin-top: 20vh;
   }
   .teaser {
-    height: 25%;
-
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #day {
+    h2 {
+      font-size: 56px;
+    }
+    .container {
+      height: 80%;
+    }  
   }
 }
 
@@ -64,7 +79,7 @@ body.index, body.test {
 }
 
 
-// inspired by codyhouse.co
+// inspired by https://github.com/CodyHouse/vertical-timeline
 
 .timeline {
   overflow: hidden;
