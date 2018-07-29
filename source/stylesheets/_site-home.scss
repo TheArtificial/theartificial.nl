@@ -1,14 +1,18 @@
 
-body.index {
+body.index, body.test {
 	height: 100%;
+  color: $white;
 
-	scroll-snap-type: mandatory;
+  #footer {
+    background-color: #081959;
+    margin-top: 62px;
+  }
 }
 
 // the comp lacks this line!
-body.index #header .flex.container {
-	border-bottom: none;
-}
+// body.index #header .flex.container {
+// 	border-bottom: none;
+// }
 
 #background {
 	position: fixed;
@@ -25,11 +29,163 @@ body.index #header .flex.container {
 	z-index: -1;
 }
 
+
+
 // homepage panels
 .slide-panel {
 	*, *:hover { color: inherit; }
 }
 
 #day {
-	margin-top: 70px;
+  height: 90vh;
+  padding-top: 70px;
+  
+  color: #081959; // footer, too
+
+  .container {
+    height: 75%;
+  }
+
+  h2 {
+    font-size: 56px;
+    font-weight: 100; 
+  }
+  .teaser {
+    height: 25%;
+
+    text-align: center;
+  }
+}
+
+.heading {
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: 100; 
+}
+
+
+// inspired by codyhouse.co
+
+.timeline {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.timeline-year {
+  font-size: 12px;
+  margin: 12px;
+}
+
+.timeline-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.timeline-container::before {
+  // vertical line
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 16px;
+  height: 100%;
+  width: 1px;
+  background: $white;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .timeline-year {
+    text-align: center;
+  }  
+  .timeline-container::before {
+    left: 50%;
+    margin-left: -1px;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin: 2em 0;
+}
+
+.timeline-item:after {
+  // clearfix
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.timeline-item:first-child {
+  margin-top: 0;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline-item {
+    margin: 4em 0;
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 6px;
+  left: 13px;
+
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: $white;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline-dot {
+    left: 50%;
+    margin-left: -4px;
+  }
+}
+
+.timeline-content {
+  position: relative;
+  margin-left: 32px;
+
+  .date {
+    font-size: 12px;
+  }
+  .event {
+    font-size: 16px;
+    font-weight: 100;
+  }
+}
+
+.timeline-content:after {
+  /* clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline-content {
+    margin: 0;
+    width: 45%;
+    text-align: right;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    float: right;
+    text-align: left;
+  }
+  .timeline-item:nth-child(even) .timeline-content::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: $white;
+  }
 }

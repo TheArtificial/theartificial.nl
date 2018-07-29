@@ -20,9 +20,12 @@ nofeed: true
 
 <script>
   $( window ).on('load', function() {
-    scrollspy('.slide-panel', 0, tweenGradient);
+    scrollspy('.slide-panel', 100, tweenGradient);
     tweenGradient($('#day'),0);
     $('.slide-panel').css('background','none');
+    $( document ).one('scroll', function() {
+      $('.teaser').fadeOut(250);
+    });
   });
 
   function tweenGradient(currentElement, offset) {
@@ -49,13 +52,20 @@ nofeed: true
 <div class="bleed slide-container">
 
   <div class="slide-panel bleed sunset-day" data-gradient-bottom="#FF9966" data-gradient-top="#FFE6B3" data-overlay="#FF9966" id="day">
-    <div class="col-8 right-2 left-2 slide-panel-caption">
-      <div class="padded center">
-        <p>The Artificial has refocused and is now <a href="https://artificial.design/">Artificial Design</a>.</p>
-        <p>The Artificial was a boutique UX agency from 2013 to 2018. We did a lot of work and had a lot of fun. Here’s a brief timeline of our adventures.</p>
+    <div class="flex container">
+      <div class="left-1 col-10 right-1">
+        <div class="padded center">
+          <h2>The Artificial has refocused and is now <a href="https://artificial.design/">Artificial Design</a>.</h2>
+        </div>
       </div>
     </div>
+    <div class="teaser">
+      scroll
+      <br>
+      <svg class="arrow" version="1.1" width="24px" height="24px" viewBox="0 0 24 24"><polygon points="21.293,10.293 13,18.586 13,1 11,1 11,18.586 2.707,10.293 1.293,11.707 12,22.414 22.707,11.707"/></svg>
+    </div>
   </div>
+</div>
 
   <%
     events = data.events.sort_by{|e| e.date}
@@ -63,42 +73,65 @@ nofeed: true
     events.each_with_index do |e, i|
       date = e.date
       year = date.year
-      date_human = "#{date.day} #{Date::MONTHNAMES[date.month]} #{year}"
+      date_human = "#{date.day} #{Date::MONTHNAMES[date.month]}"
       if year != last_year
         last_year = year
         case year
         when 2013
   %>
-  <div class="slide-panel bleed sunset-dusk" data-gradient-bottom="#CC2954" data-gradient-top="#FF9966" data-overlay="#CC2954" id="dusk">
+  <div class="slide-panel bleed sunset-dusk timeline" data-gradient-bottom="#CC2954" data-gradient-top="#FF9966" data-overlay="#CC2954" id="dusk">
     <div class="flex container">
+      <div class="left-2 col-8 right-2 slide-panel-caption">
+        <div class="padded center">
+          <p class="heading">The Artificial was a boutique UX agency from 2013 to 2018. We did a lot of work and had a lot of fun. Here’s a brief timeline of our adventures.</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-year">2013</div>
+    <div class="timeline-container container">
+  <%
+        when 2014
+  %>
+    </div>
+    <div class="timeline-year">2014</div>
+    <div class="timeline-container container">
   <%
         when 2015
   %>
     </div>
   </div>
-  <div class="slide-panel bleed sunset-twilight" data-gradient-bottom="#78288C" data-gradient-top="#CC2954" data-overlay="#581466" id="twilight">
-    <div class="flex container">
+  <div class="slide-panel bleed sunset-twilight timeline" data-gradient-bottom="#78288C" data-gradient-top="#CC2954" data-overlay="#581466" id="twilight">
+    <div class="timeline-year">2015</div>
+    <div class="timeline-container container">
+  <%
+        when 2016
+  %>
+    </div>
+    <div class="timeline-year">2016</div>
+    <div class="timeline-container container">
   <%
         when 2017
   %>
     </div>
   </div>
-  <div class="slide-panel bleed sunset-night" data-gradient-bottom="#172872" data-gradient-top="#78288C" data-overlay="#172872" id="night">
-    <div class="flex container">
+  <div class="slide-panel bleed sunset-night timeline" data-gradient-bottom="#172872" data-gradient-top="#78288C" data-overlay="#172872" id="night">
+    <div class="timeline-year">2017</div>
+    <div class="timeline-container container">
+  <%
+        when 2016
+  %>
+    </div>
+    <div class="timeline-year">2018</div>
+    <div class="timeline-container container">
   <%
         end
       end
-      if (i % 2) == 0
   %>
-      <div class="col-5 right-7">
-  <%
-      else
-  %>
-      <div class="col-5 left-7">
-  <%
-      end
-  %>
-        <div class="padded">
+      <div class="timeline-item">
+        <div class="timeline-dot">
+        </div>
+
+        <div class="timeline-content">
           <p class="date"><%= date_human %></p>
           <p class="event"><%= e.content %></p>
         </div>
