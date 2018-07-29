@@ -1,14 +1,18 @@
 
-body.index {
+body.index, body.test {
 	height: 100%;
+  color: $white;
 
-	scroll-snap-type: mandatory;
+  #footer {
+    background-color: #081959;
+    margin-top: 62px;
+  }
 }
 
 // the comp lacks this line!
-body.index #header .flex.container {
-	border-bottom: none;
-}
+// body.index #header .flex.container {
+// 	border-bottom: none;
+// }
 
 #background {
 	position: fixed;
@@ -18,107 +22,185 @@ body.index #header .flex.container {
 	min-width: 100%;
 	min-height: 100%;
 
-	background-color: $turquoise;
+	background-color: $palest-dandelion;
 	// background: linear-gradient(to bottom, $pale-grass, $turquoise);
 	-webkit-transition: background-image 0.5s linear;
 	transition: background-image 0.5s linear;
 	z-index: -1;
 }
 
+
+
 // homepage panels
 .slide-panel {
-	*, *:hover { color: inherit; }
-
-	scroll-snap-align: center;
-
-	height: 100vh;
-
-	&>.container {
-		padding-top: 68px;
-		height: calc(100vh - 68px);
-
-		.slide-panel-image {
-			height: 75%;
-			// margin-top: 68px;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-
-		.slide-panel-caption {
-			height: 25%;
-		}
-	}
+  *, *:hover { color: inherit; }
+  
+  a {
+    text-decoration: underline;
+  }
 }
 
-#side-nav {
-	display: none;
+#day {
+  height: 100vh;
+  padding-top: 70px;
+  
+  color: #081959; // footer, too
 
-	top: 0;
-	// left: 0;
-	// width: 100%;
-	// height: 100%;
-	ul {
-		padding: 0px;
-	}
+  .container {
+    height: 60%;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 100;
+
+    margin-top: 20vh;
+  }
+  .teaser {
+    text-align: center;
+  }
 }
 
-@media only screen and (min-device-width: 768px) {
-	#side-nav {
-		display: block;
-	}
+@media only screen and (min-width: 768px) {
+  #day {
+    h2 {
+      font-size: 56px;
+    }
+    .container {
+      height: 80%;
+    }  
+  }
 }
 
-#nav-panels {
-	height: 100%;
-	position: fixed;
-	// TODO: right-align this within the column (immediate parent)
+.heading {
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: 100; 
+}
 
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: column;
-	align-items: right;
-	justify-content: center;
 
-	li {
-		width: 32px;
-		text-align: center;
+// inspired by https://github.com/CodyHouse/vertical-timeline
 
-		a {
-			display: block;
-			height: 24px;
-			width: 32px;
-			margin: 0px;
-      // padding: 12px 0px;
-      position: relative;
-		}
+.timeline {
+  overflow: hidden;
+  margin: 0 auto;
+}
 
-		svg.dot {
-			height: 2px;
-			width: 2px;
-      position: absolute;
-      top: 11px;
-      left: 15px;
-		}
+.timeline-year {
+  font-size: 12px;
+  margin: 12px;
+}
 
-		&.active {
-			opacity: 1.0;
-			svg.dot {
-				height: 4px;
-				width: 4px;
-        top: 10px;
-        left: 14px;
-				* {
-					fill: $white !important;
-				}
-			}
-		}
+.timeline-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 2em 0;
+}
 
-		opacity: 0.5;
-		transition: opacity 0.3s linear;
+.timeline-container::before {
+  // vertical line
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 16px;
+  height: 100%;
+  width: 1px;
+  background: $white;
+}
 
-		&.disabled {
-			opacity: 0;
-		}
-	}
+@media only screen and (min-width: 768px) {
+  .timeline {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .timeline-year {
+    text-align: center;
+  }  
+  .timeline-container::before {
+    left: 50%;
+    margin-left: -1px;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin: 2em 0;
+}
+
+.timeline-item:after {
+  // clearfix
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.timeline-item:first-child {
+  margin-top: 0;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline-item {
+    margin: 4em 0;
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 6px;
+  left: 13px;
+
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: $white;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline-dot {
+    left: 50%;
+    margin-left: -4px;
+  }
+}
+
+.timeline-content {
+  position: relative;
+  margin-left: 32px;
+
+  .date {
+    font-size: 12px;
+  }
+  .event {
+    font-size: 16px;
+    font-weight: 100;
+  }
+}
+
+.timeline-content:after {
+  /* clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline-content {
+    margin: 0;
+    width: 45%;
+    text-align: right;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    float: right;
+    text-align: left;
+  }
+  .timeline-item:nth-child(even) .timeline-content::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: $white;
+  }
 }

@@ -58,10 +58,10 @@
   <body class="<%= extra_page_classes %>">
 
 		<script type="text/javascript">
-			// when the DOM is ready...
-      $('document').ready(function(){
-				// load the footer's logo
-        $('#artificial').artificialLogo();
+		// when everything is loaded...
+		$( window ).on('load', function() {
+			// load the footer's logo
+        	$('#artificial').artificialLogo();
 
 				// apply packery
 				var $packeryContainer = $('.packery').packery({

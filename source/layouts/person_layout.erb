@@ -15,13 +15,17 @@ wrap_layout 'site_layout' do
           <h1 class="title"><%= current_page.data.title %></h1>
 <%
     social_links = []
+    if current_page.data.personal
+      host = URI.parse(current_page.data.personal).host.downcase
+      host = host.start_with?('www.') ? host[4..-1] : host
+      social_links << link_to(host, current_page.data.personal)
+    end
     if current_page.data.linkedin
       social_links << link_to("linkedin", "https://linkedin.com/in/#{current_page.data.linkedin}")
     end
     if current_page.data.twitter
       social_links << link_to("twitter", "https://twitter.com/#{current_page.data.twitter}")
     end
-    # social_html = social_links.join(" | ").html_safe
     if social_links.count > 0
 %>
           <ul class="metadata"><% social_links.each {|link| concat content_tag(:li, link).html_safe } %></ul>

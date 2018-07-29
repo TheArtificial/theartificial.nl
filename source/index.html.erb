@@ -19,11 +19,13 @@ nofeed: true
 <% end %>
 
 <script>
-  $( document ).ready(function() {
-    scrollspy('#nav-panels', $(window).height()/2, tweenGradient);
-    tweenGradient($('#systems'),0);
-    updatePagination($('#nav-panels a'), 'systems');
+  $( window ).on('load', function() {
+    scrollspy('.slide-panel', 100, tweenGradient);
+    tweenGradient($('#day'),0);
     $('.slide-panel').css('background','none');
+    $( document ).one('scroll', function() {
+      $('.teaser').fadeOut(250);
+    });
   });
 
   function tweenGradient(currentElement, offset) {
@@ -40,108 +42,104 @@ nofeed: true
       overlayColor = overlayColor.transition(nextOverlayColor, offset);
     }
     $('#background').css('background-image','linear-gradient('+topColor.toRgbaString()+', '+bottomColor.toRgbaString()+')');
-    // $('body').css('background-color',currentElement.data('glitch'));
     $('#header').css('background-color',overlayColor.alpha(0.25).toRgbaString());
-    $('#nav-panels li svg *').css('fill',overlayColor.toHexString());
-
-    // $('#logo').text(offset);
-    // $('#logo').text(currentElement.attr('id') + ': ' + currentElement.data('gradient-top') + '-' + currentElement.data('gradient-bottom') + ': ' + $('#background').css('background-image'));
   }
 
 </script>
-
-<section id="side-nav">
-  <div class="flex container">
-    <div class="col-1 left-11">
-      <nav id="nav-panels" class="iconlist">
-          <ul>
-            <li class="disabled"><a class="prev"><svg class="arrow" version="1.1"
-            	 width="24px" height="24px" viewBox="0 0 24 24"><polygon class="arrows" points="12,1.586 1.293,12.293 2.707,13.707 11,5.414 11,23 13,23 13,5.414 21.293,13.707 22.707,12.293 "/></svg></a></li>
-            <li class="active"><a href="#systems"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#integrated"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#global"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#details"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a href="#possible"><svg class="dot" version="1.1"
-            	 width="2px" height="2px" viewBox="0 0 2 2"><rect x="0" y="0" width="2" height="2"/></svg></a></li>
-            <li><a class="next"><svg class="arrow" version="1.1"
-            	 width="24px" height="24px" viewBox="0 0 24 24"><polygon points="21.293,10.293 13,18.586 13,1 11,1 11,18.586 2.707,10.293 1.293,11.707 12,22.414 22.707,11.707"/></svg></a></li>
-          </ul>
-      </nav>
-    </div>
-  </div>
-</section>
 
 <div id="background"> </div>
 
 <div class="bleed slide-container">
 
-  <div class="slide-panel bleed turquoise-palegrass" data-gradient-bottom="#35B199" data-gradient-top="#9AE573" data-overlay="#0A6656" id="systems">
-    <a href="/work/avent-ugrow.html" class="flex container">
-      <div class="col-10 slide-panel-image" style="background-image: url('work/images/avent-ugrow_cover.png');">
-        &nbsp;
-      </div>
-      <div class="col-10 right-1 left-1 slide-panel-caption">
+  <div class="slide-panel bleed sunset-day" data-gradient-bottom="#FF9966" data-gradient-top="#FFE6B3" data-overlay="#FF9966" id="day">
+    <div class="flex container">
+      <div class="left-1 col-10 right-1">
         <div class="padded center">
-          <p class="statement">We design beautiful and rational experiences.</p>
+          <h2>The Artificial has refocused and is now <a href="https://artificial.design/">Artificial Design</a>.</h2>
         </div>
       </div>
-    </a>
+    </div>
+    <div class="teaser">
+      scroll
+      <br>
+      <svg class="arrow" version="1.1" width="24px" height="24px" viewBox="0 0 24 24"><polygon points="21.293,10.293 13,18.586 13,1 11,1 11,18.586 2.707,10.293 1.293,11.707 12,22.414 22.707,11.707"/></svg>
+    </div>
   </div>
+</div>
 
-  <div class="slide-panel bleed sapphire-palegrape" data-gradient-bottom="#2A3F98" data-gradient-top="#9A6BB2" data-overlay="#172872" id="integrated">
-    <a href="/work/vanmoof-app.html" class="flex container">
-      <div class="col-10 slide-panel-image" style="background-image: url('work/images/VanMoof-AppRedesign_cover.png');">
-        &nbsp;
-      </div>
-      <div class="col-10 right-1 left-1 slide-panel-caption">
+  <%
+    events = data.events.sort_by{|e| e.date}
+    last_year = 0
+    events.each_with_index do |e, i|
+      date = e.date
+      year = date.year
+      date_human = "#{date.day} #{Date::MONTHNAMES[date.month]}"
+      if year != last_year
+        last_year = year
+        case year
+        when 2013
+  %>
+  <div class="slide-panel bleed sunset-dusk timeline" data-gradient-bottom="#CC2954" data-gradient-top="#FF9966" data-overlay="#CC2954" id="dusk">
+    <div class="flex container">
+      <div class="left-2 col-8 right-2 slide-panel-caption">
         <div class="padded center">
-          <p class="statement">We work with clients of all sizes to create solutions that scale.</p>
+          <p class="heading">The Artificial was a boutique UX agency from 2013 to 2018. We did a lot of work and had a lot of fun. Here’s a brief timeline of our adventures.</p>
         </div>
       </div>
-    </a>
+    </div>
+    <div class="timeline-year">2013</div>
+    <div class="timeline-container container">
+  <%
+        when 2014
+  %>
+    </div>
+    <div class="timeline-year">2014</div>
+    <div class="timeline-container container">
+  <%
+        when 2015
+  %>
+    </div>
   </div>
-
-  <div class="slide-panel bleed grape-paletulip" data-gradient-bottom="#77278B" data-gradient-top="#F27990" data-overlay="#78288C" id="global">
-    <a href="/work/3DSystems-consumer.html" class="flex container">
-      <div class="col-10 slide-panel-image" style="background-image: url('work/images/3DS-consumer_cover.png');">
-        &nbsp;
-      </div>
-      <div class="col-10 right-1 left-1 slide-panel-caption">
-        <div class="padded center">
-          <p class="statement">We have experience in all stages of business and software development.</p>
-        </div>
-      </div>
-    </a>
+  <div class="slide-panel bleed sunset-twilight timeline" data-gradient-bottom="#78288C" data-gradient-top="#CC2954" data-overlay="#581466" id="twilight">
+    <div class="timeline-year">2015</div>
+    <div class="timeline-container container">
+  <%
+        when 2016
+  %>
+    </div>
+    <div class="timeline-year">2016</div>
+    <div class="timeline-container container">
+  <%
+        when 2017
+  %>
+    </div>
   </div>
+  <div class="slide-panel bleed sunset-night timeline" data-gradient-bottom="#172872" data-gradient-top="#78288C" data-overlay="#172872" id="night">
+    <div class="timeline-year">2017</div>
+    <div class="timeline-container container">
+  <%
+        when 2018
+  %>
+    </div>
+    <div class="timeline-year">2018</div>
+    <div class="timeline-container container">
+  <%
+        end
+      end
+  %>
+      <div class="timeline-item">
+        <div class="timeline-dot">
+        </div>
 
-  <div class="slide-panel bleed tulip-palepumpkin" data-gradient-bottom="#CB2853" data-gradient-top="#FF9966" data-overlay="#A51138" id="details">
-    <a href="/work/sonicare-breath.html" class="flex container">
-      <div class="col-10 slide-panel-image" style="background-image: url('work/images/sonicare-breath_cover.png');">
-        &nbsp;
-      </div>
-      <div class="col-10 right-1 left-1 slide-panel-caption">
-        <div class="padded center">
-          <p class="statement">We design integrated product and service ecosystems.</p>
+        <div class="timeline-content">
+          <p class="date"><%= date_human %></p>
+          <p class="event"><%= e.content %></p>
         </div>
       </div>
-    </a>
-  </div>
-
-  <div class="slide-panel bleed pumpkin-paledandelion" data-gradient-bottom="#FF7632" data-gradient-top="#FFCA6C" data-overlay="#CC5215" id="possible">
-    <a href="/work/toicon.html" class="flex container">
-      <div class="col-10 slide-panel-image" style="background-image: url('work/images/toicon_cover.png');">
-        &nbsp;
-      </div>
-      <div class="col-10 right-1 left-1 slide-panel-caption">
-        <div class="padded center">
-          <p class="statement">We believe in getting the details absolutely perfect.</p>
-        </div>
-      </div>
-    </a>
+  <%
+    end
+  %>
+    </div>
   </div>
 
 </div>
