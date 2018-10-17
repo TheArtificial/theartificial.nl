@@ -2,29 +2,56 @@
   number: "001"
   name: bulbasaur
 -
+  number: "001"
+  name: bulbasaur-shiny
+-
   number: "002"
   name: ivysaur
+-
+  number: "002"
+  name: ivysaur-shiny
 -
   number: "003"
   name: venusaur
 -
+  number: "003"
+  name: venusaur-shiny
+-
   number: "004"
   name: charmander
+-
+  number: "004"
+  name: charmander-shiny
 -
   number: "005"
   name: charmeleon
 -
+  number: "005"
+  name: charmeleon-shiny
+-
   number: "006"
   name: charizard
+-
+  number: "006"
+  name: charizard-shiny
 -
   number: "007"
   name: squirtle
 -
+  number: "007"
+  name: squirtle-shiny
+-
   number: "008"
   name: wartortle
 -
+  number: "008"
+  name: wartortle-shiny
+-
   number: "009"
   name: blastoise
+-
+  number: "009"
+  name: blastoise-shiny
 -
   number: "010"
   name: caterpie
@@ -80,8 +107,14 @@
   number: "025"
   name: pikachu
 -
+  number: "025"
+  name: pikachu-shiny
+-
   number: "026"
   name: raichu
+-
+  number: "026"
+  name: raichu-shiny
 -
   number: "026"
   name: raichu-alola
@@ -206,8 +239,14 @@
   number: "058"
   name: growlithe
 -
+  number: "058"
+  name: growlithe-shiny
+-
   number: "059"
   name: arcanine
+-
+  number: "059"
+  name: arcanine-shiny
 -
   number: "060"
   name: poliwag
@@ -255,16 +294,25 @@
   name: geodude
 -
   number: "074"
+  name: geodude-shiny
+-
+  number: "074"
   name: geodude-alola
 -
   number: "075"
   name: graveler
 -
   number: "075"
+  name: graveler-shiny
+-
+  number: "075"
   name: graveler-alola
 -
   number: "076"
   name: golem
+-
+  number: "076"
+  name: golem-shiny
 -
   number: "076"
   name: golem-alola
@@ -306,10 +354,16 @@
   name: grimer
 -
   number: "088"
+  name: grimer-shiny
+-
+  number: "088"
   name: grimer-alola
 -
   number: "089"
   name: muk
+-
+  number: "089"
+  name: muk-shiny
 -
   number: "089"
   name: muk-alola
@@ -317,11 +371,20 @@
   number: "090"
   name: shellder
 -
+  number: "090"
+  name: shellder-shiny
+-
   number: "091"
   name: cloyster
 -
+  number: "091"
+  name: cloyster-shiny
+-
   number: "092"
   name: gastly
+-
+  number: "092"
+  name: gastly-shiny
 -
   number: "093"
   name: haunter
@@ -431,6 +494,9 @@
   number: "126"
   name: magmar
 -
+  number: "126"
+  name: magmar-shiny
+-
   number: "127"
   name: pinsir
 -
@@ -458,14 +524,26 @@
   number: "133"
   name: eevee
 -
+  number: "133"
+  name: eevee-shiny
+-
   number: "134"
   name: vaporeon
+-
+  number: "134"
+  name: vaporeon-shiny
 -
   number: "135"
   name: jolteon
 -
+  number: "135"
+  name: jolteon-shiny
+-
   number: "136"
   name: flareon
+-
+  number: "136"
+  name: flareon-shiny
 -
   number: "137"
   name: porygon
@@ -473,17 +551,32 @@
   number: "138"
   name: omanyte
 -
+  number: "138"
+  name: omanyte-shiny
+-
   number: "139"
   name: omastar
+-
+  number: "139"
+  name: omastar-shiny
 -
   number: "140"
   name: kabuto
 -
+  number: "140"
+  name: kabuto-shiny
+-
   number: "141"
   name: kabutops
 -
+  number: "141"
+  name: kabutops-shiny
+-
   number: "142"
   name: aerodactyl
+-
+  number: "142"
+  name: aerodactyl-shiny
 -
   number: "143"
   name: snorlax
@@ -491,20 +584,38 @@
   number: "144"
   name: articuno
 -
+  number: "144"
+  name: articuno-shiny
+-
   number: "145"
   name: zapdos
+-
+  number: "145"
+  name: zapdos-shiny
 -
   number: "146"
   name: moltres
 -
+  number: "146"
+  name: moltres-shiny
+-
   number: "147"
   name: dratini
+-
+  number: "147"
+  name: dratini-shiny
 -
   number: "148"
   name: dragonair
 -
+  number: "148"
+  name: dragonair-shiny
+-
   number: "149"
   name: dragonite
+-
+  number: "149"
+  name: dragonite-shiny
 -
   number: "150"
   name: mewtwo
@@ -660,7 +771,82 @@
   name: misdreavus
 -
   number: "201"
-  name: unown
+  name: unown-a
+-
+  number: "201"
+  name: unown-b
+-
+  number: "201"
+  name: unown-c
+-
+  number: "201"
+  name: unown-d
+-
+  number: "201"
+  name: unown-e
+-
+  number: "201"
+  name: unown-f
+-
+  number: "201"
+  name: unown-g
+-
+  number: "201"
+  name: unown-h
+-
+  number: "201"
+  name: unown-i
+-
+  number: "201"
+  name: unown-j
+-
+  number: "201"
+  name: unown-k
+-
+  number: "201"
+  name: unown-l
+-
+  number: "201"
+  name: unown-m
+-
+  number: "201"
+  name: unown-n
+-
+  number: "201"
+  name: unown-o
+-
+  number: "201"
+  name: unown-p
+-
+  number: "201"
+  name: unown-q
+-
+  number: "201"
+  name: unown-r
+-
+  number: "201"
+  name: unown-s
+-
+  number: "201"
+  name: unown-t
+-
+  number: "201"
+  name: unown-u
+-
+  number: "201"
+  name: unown-v
+-
+  number: "201"
+  name: unown-w
+-
+  number: "201"
+  name: unown-x
+-
+  number: "201"
+  name: unown-y
+-
+  number: "201"
+  name: unown-z
 -
   number: "202"
   name: wobbuffet
@@ -807,7 +993,7 @@
   name: lugia
 -
   number: "250"
-  name: ho-oh
+  name: hooh
 -
   number: "251"
   name: celebi
@@ -1038,7 +1224,28 @@
   name: grumpig
 -
   number: "327"
-  name: spinda
+  name: spinda-1
+-
+  number: "327"
+  name: spinda-2
+-
+  number: "327"
+  name: spinda-3
+-
+  number: "327"
+  name: spinda-4
+-
+  number: "327"
+  name: spinda-5
+-
+  number: "327"
+  name: spinda-6
+-
+  number: "327"
+  name: spinda-7
+-
+  number: "327"
+  name: spinda-8
 -
   number: "328"
   name: trapinch
@@ -1110,7 +1317,16 @@
   name: milotic
 -
   number: "351"
-  name: castform
+  name: castform-normal
+-
+  number: "351"
+  name: castform-rainy
+-
+  number: "351"
+  name: castform-snowy
+-
+  number: "351"
+  name: castform-sunny
 -
   number: "352"
   name: kecleon
@@ -1216,3 +1432,105 @@
 -
   number: "386"
   name: deoxys
+-
+  number: "387"
+  name: turtwig
+-
+  number: "388"
+  name: grotle
+-
+  number: "389"
+  name: torterra
+-
+  number: "390"
+  name: chimchar
+-
+  number: "391"
+  name: monferno
+-
+  number: "392"
+  name: infernape
+-
+  number: "393"
+  name: piplup
+-
+  number: "394"
+  name: prinplup
+-
+  number: "395"
+  name: empoleon
+-
+  number: "396"
+  name: starly
+-
+  number: "397"
+  name: staravia
+-
+  number: "398"
+  name: staraptor
+-
+  number: "399"
+  name: bidoof
+-
+  number: "400"
+  name: bibarel
+-
+  number: "401"
+  name: kricketot
+-
+  number: "402"
+  name: kricketune
+-
+  number: "403"
+  name: shinx
+-
+  number: "404"
+  name: luxio
+-
+  number: "405"
+  name: luxray
+-
+  number: "406"
+  name: budew
+-
+  number: "407"
+  name: roserade
+-
+  number: "408"
+  name: cranidos
+-
+  number: "409"
+  name: rampardos
+-
+  number: "410"
+  name: shieldon
+-
+  number: "411"
+  name: bastiodon
+-
+  number: "412"
+  name: burmy-plant
+-
+  number: "412"
+  name: burmy-sandy
+-
+  number: "412"
+  name: burmy-trash
+-
+  number: "413"
+  name: wormadam-plant
+-
+  number: "413"
+  name: wormadam-sandy
+-
+  number: "413"
+  name: wormadam-trash
+-
+  number: "414"
+  name: mothim
+-
+  number: "427"
+  name: buneary
+-
+  number: "428"
+  name: lopunny
