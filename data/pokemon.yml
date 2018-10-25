@@ -626,11 +626,20 @@
   number: "152"
   name: chikorita
 -
+  number: "152"
+  name: chikorita-shiny
+-
   number: "153"
   name: bayleef
 -
+  number: "153"
+  name: bayleef-shiny
+-
   number: "154"
   name: meganium
+-
+  number: "154"
+  name: meganium-shiny
 -
   number: "155"
   name: cyndaquil
@@ -695,23 +704,44 @@
   number: "175"
   name: togepi
 -
+  number: "175"
+  name: togepi-shiny
+-
   number: "176"
   name: togetic
+-
+  number: "176"
+  name: togetic-shiny
 -
   number: "177"
   name: natu
 -
+  number: "177"
+  name: natu-shiny
+-
   number: "178"
   name: xatu
+-
+  number: "178"
+  name: xatu-shiny
 -
   number: "179"
   name: mareep
 -
+  number: "179"
+  name: mareep-shiny
+-
   number: "180"
   name: flaaffy
 -
+  number: "180"
+  name: flaaffy-shiny
+-
   number: "181"
   name: ampharos
+-
+  number: "181"
+  name: ampharos-shiny
 -
   number: "182"
   name: bellossom
@@ -743,8 +773,14 @@
   number: "191"
   name: sunkern
 -
+  number: "191"
+  name: sunkern-shiny
+-
   number: "192"
   name: sunflora
+-
+  number: "192"
+  name: sunflora-shiny
 -
   number: "193"
   name: yanma
@@ -758,11 +794,20 @@
   number: "196"
   name: espeon
 -
+  number: "196"
+  name: espeon-shiny
+-
   number: "197"
   name: umbreon
 -
+  number: "197"
+  name: umbreon-shiny
+-
   number: "198"
   name: murkrow
+-
+  number: "198"
+  name: murkrow-shiny
 -
   number: "199"
   name: slowking
@@ -851,14 +896,23 @@
   number: "202"
   name: wobbuffet
 -
+  number: "202"
+  name: wobbuffet-shiny
+-
   number: "203"
   name: girafarig
 -
   number: "204"
   name: pineco
 -
+  number: "204"
+  name: pineco-shiny
+-
   number: "205"
   name: forretress
+-
+  number: "205"
+  name: forretress-shiny
 -
   number: "206"
   name: dunsparce
@@ -872,8 +926,14 @@
   number: "209"
   name: snubbull
 -
+  number: "209"
+  name: snubbull-shiny
+-
   number: "210"
   name: granbull
+-
+  number: "210"
+  name: granbull-shiny
 -
   number: "211"
   name: qwilfish
@@ -929,8 +989,14 @@
   number: "228"
   name: houndour
 -
+  number: "228"
+  name: houndour-shiny
+-
   number: "229"
   name: houndoom
+-
+  number: "229"
+  name: houndoom-shiny
 -
   number: "230"
   name: kingdra
@@ -965,6 +1031,9 @@
   number: "240"
   name: magby
 -
+  number: "240"
+  name: magby-shiny
+-
   number: "241"
   name: miltank
 -
@@ -983,17 +1052,32 @@
   number: "246"
   name: larvitar
 -
+  number: "246"
+  name: larvitar-shiny
+-
   number: "247"
   name: pupitar
+-
+  number: "247"
+  name: pupitar-shiny
 -
   number: "248"
   name: tyranitar
 -
+  number: "248"
+  name: tyranitar-shiny
+-
   number: "249"
   name: lugia
 -
+  number: "249"
+  name: lugia-shiny
+-
   number: "250"
   name: hooh
+-
+  number: "250"
+  name: hooh-shiny
 -
   number: "251"
   name: celebi
@@ -1028,8 +1112,14 @@
   number: "261"
   name: poochyena
 -
+  number: "261"
+  name: poochyena-shiny
+-
   number: "262"
   name: mightyena
+-
+  number: "262"
+  name: mightyena-shiny
 -
   number: "263"
   name: zigzagoon
@@ -1079,8 +1169,14 @@
   number: "278"
   name: wingull
 -
+  number: "278"
+  name: wingull-shiny
+-
   number: "279"
   name: pelipper
+-
+  number: "279"
+  name: pelipper-shiny
 -
   number: "280"
   name: ralts
@@ -1133,8 +1229,14 @@
   number: "296"
   name: makuhita
 -
+  number: "296"
+  name: makuhita-shiny
+-
   number: "297"
   name: hariyama
+-
+  number: "297"
+  name: hariyama-shiny
 -
   number: "298"
   name: azurill
@@ -1151,23 +1253,44 @@
   number: "302"
   name: sableye
 -
+  number: "302"
+  name: sableye-shiny
+-
   number: "303"
   name: mawile
+-
+  number: "303"
+  name: mawile-shiny
 -
   number: "304"
   name: aron
 -
+  number: "304"
+  name: aron-shiny
+-
   number: "305"
   name: lairon
+-
+  number: "305"
+  name: lairon-shiny
 -
   number: "306"
   name: aggron
 -
+  number: "306"
+  name: aggron-shiny
+-
   number: "307"
   name: meditite
 -
+  number: "307"
+  name: meditite-shiny
+-
   number: "308"
   name: medicham
+-
+  number: "308"
+  name: medicham-shiny
 -
   number: "309"
   name: electrike
@@ -1178,8 +1301,14 @@
   number: "311"
   name: plusle
 -
+  number: "311"
+  name: plusle-shiny
+-
   number: "312"
   name: minun
+-
+  number: "312"
+  name: minun-shiny
 -
   number: "313"
   name: volbeat
@@ -1189,6 +1318,9 @@
 -
   number: "315"
   name: roselia
+-
+  number: "315"
+  name: roselia-shiny
 -
   number: "316"
   name: gulpin
@@ -1205,8 +1337,14 @@
   number: "320"
   name: wailmer
 -
+  number: "320"
+  name: wailmer-shiny
+-
   number: "321"
   name: wailord
+-
+  number: "321"
+  name: wailord-shiny
 -
   number: "322"
   name: numel
@@ -1265,8 +1403,14 @@
   number: "333"
   name: swablu
 -
+  number: "333"
+  name: swablu-shiny
+-
   number: "334"
   name: altaria
+-
+  number: "334"
+  name: altaria-shiny
 -
   number: "335"
   name: zangoose
@@ -1334,14 +1478,26 @@
   number: "353"
   name: shuppet
 -
+  number: "353"
+  name: shuppet-shiny
+-
   number: "354"
   name: banette
+-
+  number: "354"
+  name: banette-shiny
 -
   number: "355"
   name: duskull
 -
+  number: "355"
+  name: duskull-shiny
+-
   number: "356"
   name: dusclops
+-
+  number: "356"
+  name: dusclops-shiny
 -
   number: "357"
   name: tropius
@@ -1352,14 +1508,26 @@
   number: "359"
   name: absol
 -
+  number: "359"
+  name: absol-shiny
+-
   number: "360"
   name: wynaut
+-
+  number: "360"
+  name: wynaut-shiny
 -
   number: "361"
   name: snorunt
 -
+  number: "361"
+  name: snorunt-shiny
+-
   number: "362"
   name: glalie
+-
+  number: "362"
+  name: glalie-shiny
 -
   number: "363"
   name: spheal
@@ -1385,6 +1553,9 @@
   number: "370"
   name: luvdisc
 -
+  number: "370"
+  name: luvdisc-shiny
+-
   number: "371"
   name: bagon
 -
@@ -1397,11 +1568,20 @@
   number: "374"
   name: beldum
 -
+  number: "374"
+  name: beldum-shiny
+-
   number: "375"
   name: metang
 -
+  number: "375"
+  name: metang-shiny
+-
   number: "376"
   name: metagross
+-
+  number: "376"
+  name: metagross-shiny
 -
   number: "377"
   name: regirock
@@ -1420,6 +1600,9 @@
 -
   number: "382"
   name: kyogre
+-
+  number: "382"
+  name: kyogre-shiny
 -
   number: "383"
   name: groudon
@@ -1484,11 +1667,20 @@
   number: "403"
   name: shinx
 -
+  number: "403"
+  name: shinx-shiny
+-
   number: "404"
   name: luxio
 -
+  number: "404"
+  name: luxio-shiny
+-
   number: "405"
   name: luxray
+-
+  number: "405"
+  name: luxray-shiny
 -
   number: "406"
   name: budew
@@ -1529,8 +1721,38 @@
   number: "414"
   name: mothim
 -
+  number: "415"
+  name: combee
+-
+  number: "416"
+  name: vespiqueen
+-
+  number: "417"
+  name: pachirisu
+-
+  number: "418"
+  name: buizel
+-
+  number: "419"
+  name: floatzel
+-
+  number: "425"
+  name: drifloon
+-
+  number: "426"
+  name: drifblim
+-
   number: "427"
   name: buneary
 -
   number: "428"
   name: lopunny
+-
+  number: "434"
+  name: stunky
+-
+  number: "435"
+  name: skuntank
+-
+  number: "442"
+  name: spiritomb
