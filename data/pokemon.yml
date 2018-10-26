@@ -1736,6 +1736,30 @@
   number: "419"
   name: floatzel
 -
+  number: "420"
+  name: cherubi
+-
+  number: "421"
+  name: cherim-overcast
+-
+  number: "421"
+  name: cherim-sunshine
+-
+  number: "422"
+  name: shellos-east
+-
+  number: "422"
+  name: shellos-west
+-
+  number: "423"
+  name: gastrodon-east
+-
+  number: "423"
+  name: gastrodon-west
+-
+  number: "424"
+  name: ambipom
+-
   number: "425"
   name: drifloon
 -
