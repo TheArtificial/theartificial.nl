@@ -56,11 +56,20 @@
   number: "010"
   name: caterpie
 -
+  number: "010"
+  name: caterpie-shiny
+-
   number: "011"
   name: metapod
 -
+  number: "011"
+  name: metapod-shiny
+-
   number: "012"
   name: butterfree
+-
+  number: "012"
+  name: butterfree-shiny
 -
   number: "013"
   name: weedle
@@ -389,8 +398,14 @@
   number: "093"
   name: haunter
 -
+  number: "093"
+  name: haunter-shiny
+-
   number: "094"
   name: gengar
+-
+  number: "094"
+  name: gengar-shiny
 -
   number: "095"
   name: onix
@@ -499,6 +514,9 @@
 -
   number: "127"
   name: pinsir
+-
+  number: "127"
+  name: pinsir-shiny
 -
   number: "128"
   name: tauros
@@ -1772,11 +1790,44 @@
   number: "428"
   name: lopunny
 -
+  number: "429"
+  name: mismagius
+-
+  number: "430"
+  name: honchkrow
+-
+  number: "431"
+  name: glameow
+-
+  number: "432"
+  name: purugly
+-
+  number: "433"
+  name: chingling
+-
   number: "434"
   name: stunky
 -
   number: "435"
   name: skuntank
+-
+  number: "436"
+  name: bronzor
+-
+  number: "437"
+  name: bronzong
+-
+  number: "438"
+  name: bonsly
+-
+  number: "439"
+  name: mimejr
+-
+  number: "440"
+  name: happiny
+-
+  number: "441"
+  name: chatot
 -
   number: "442"
   name: spiritomb
