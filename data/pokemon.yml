@@ -329,8 +329,14 @@
   number: "077"
   name: ponyta
 -
+  number: "077"
+  name: ponyta-shiny
+-
   number: "078"
   name: rapidash
+-
+  number: "078"
+  name: rapidash-shiny
 -
   number: "079"
   name: slowpoke
@@ -440,8 +446,14 @@
   number: "104"
   name: cubone
 -
+  number: "104"
+  name: cubone-shiny
+-
   number: "105"
   name: marowak
+-
+  number: "105"
+  name: marowak-shiny
 -
   number: "105"
   name: marowak-alola
@@ -1831,6 +1843,15 @@
 -
   number: "442"
   name: spiritomb
+-
+  number: "446"
+  name: munchlax
+-
+  number: "447"
+  name: riolu
+-
+  number: "448"
+  name: lucario
 -
   number: "487"
   name: giratina-altered
