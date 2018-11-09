@@ -1853,5 +1853,14 @@
   number: "448"
   name: lucario
 -
+  number: "443"
+  name: gible
+-
+  number: "444"
+  name: gabite
+-
+  number: "445"
+  name: garchomp
+-
   number: "487"
   name: giratina-altered
