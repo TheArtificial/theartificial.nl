@@ -674,11 +674,20 @@
   number: "155"
   name: cyndaquil
 -
+  number: "155"
+  name: cyndaquil-shiny
+-
   number: "156"
   name: quilava
 -
+  number: "156"
+  name: quilava-shiny
+-
   number: "157"
   name: typhlosion
+-
+  number: "157"
+  name: typhlosion-shiny
 -
   number: "158"
   name: totodile
@@ -1861,6 +1870,18 @@
 -
   number: "445"
   name: garchomp
+-
+  number: "447"
+  name: riolu
+-
+  number: "448"
+  name: lucario
+-
+  number: "449"
+  name: hippopotas
+-
+  number: "450"
+  name: hippowdon
 -
   number: "487"
   name: giratina-altered
