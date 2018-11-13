@@ -1853,15 +1853,6 @@
   number: "442"
   name: spiritomb
 -
-  number: "446"
-  name: munchlax
--
-  number: "447"
-  name: riolu
--
-  number: "448"
-  name: lucario
--
   number: "443"
   name: gible
 -
@@ -1870,6 +1861,9 @@
 -
   number: "445"
   name: garchomp
+-
+  number: "446"
+  name: munchlax
 -
   number: "447"
   name: riolu
