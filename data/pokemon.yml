@@ -419,8 +419,14 @@
   number: "096"
   name: drowzee
 -
+  number: "096"
+  name: drowzee-shiny
+-
   number: "097"
   name: hypno
+-
+  number: "097"
+  name: hypno-shiny
 -
   number: "098"
   name: krabby
