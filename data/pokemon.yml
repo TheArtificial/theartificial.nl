@@ -1883,8 +1883,110 @@
   number: "452"
   name: drapion
 -
+  number: "453"
+  name: croagunk
+-
+  number: "454"
+  name: toxicroak
+-
   number: "455"
   name: carnivine
+-
+  number: "456"
+  name: finneon
+-
+  number: "457"
+  name: lumineon
+-
+  number: "458"
+  name: mantyke
+-
+  number: "459"
+  name: snover
+-
+  number: "460"
+  name: abomasnow
+-
+  number: "461"
+  name: weavile
+-
+  number: "462"
+  name: magnezone
+-
+  number: "463"
+  name: lickilicki
+-
+  number: "464"
+  name: rhyperior
+-
+  number: "465"
+  name: tangrowth
+-
+  number: "466"
+  name: electivire
+-
+  number: "467"
+  name: magmortar
+-
+  number: "468"
+  name: togekiss
+-
+  number: "469"
+  name: yanmega
+-
+  number: "470"
+  name: leafeon
+-
+  number: "471"
+  name: glaceon
+-
+  number: "472"
+  name: gliscor
+-
+  number: "473"
+  name: mamoswine
+-
+  number: "474"
+  name: porygon-z
+-
+  number: "475"
+  name: gallade
+-
+  number: "476"
+  name: probopass
+-
+  number: "477"
+  name: dusknoir
+-
+  number: "478"
+  name: froslass
+-
+  number: "479"
+  name: rotom
+-
+  number: "479"
+  name: rotom-heat
+-
+  number: "479"
+  name: rotom-wash
+-
+  number: "479"
+  name: rotom-frost
+-
+  number: "479"
+  name: rotom-fan
+-
+  number: "479"
+  name: rotom-mow
+-
+  number: "480"
+  name: uxie
+-
+  number: "481"
+  name: mesprit
+-
+  number: "482"
+  name: azelf
 -
   number: "487"
   name: giratina-altered
