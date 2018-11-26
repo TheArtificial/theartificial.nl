@@ -143,20 +143,38 @@
   number: "029"
   name: nidoran-f
 -
+  number: "029"
+  name: nidoran-f-shiny
+-
   number: "030"
   name: nidorina
+-
+  number: "030"
+  name: nidorina-shiny
 -
   number: "031"
   name: nidoqueen
 -
+  number: "031"
+  name: nidoqueen-shiny
+-
   number: "032"
   name: nidoran-m
+-
+  number: "032"
+  name: nidoran-m-shiny
 -
   number: "033"
   name: nidorino
 -
+  number: "033"
+  name: nidorino-shiny
+-
   number: "034"
   name: nidoking
+-
+  number: "034"
+  name: nidoking-shiny
 -
   number: "035"
   name: clefairy
@@ -347,8 +365,14 @@
   number: "081"
   name: magnemite
 -
+  number: "081"
+  name: magnemite-shiny
+-
   number: "082"
   name: magneton
+-
+  number: "082"
+  name: magneton-shiny
 -
   number: "083"
   name: farfetchd
@@ -431,8 +455,14 @@
   number: "098"
   name: krabby
 -
+  number: "098"
+  name: krabby-shiny
+-
   number: "099"
   name: kingler
+-
+  number: "099"
+  name: kingler-shiny
 -
   number: "100"
   name: voltorb
@@ -463,6 +493,9 @@
 -
   number: "105"
   name: marowak-alola
+-
+  number: "105"
+  name: marowak-alola-shiny
 -
   number: "106"
   name: hitmonlee
@@ -523,6 +556,9 @@
 -
   number: "125"
   name: electabuzz
+-
+  number: "125"
+  name: electabuzz-shiny
 -
   number: "126"
   name: magmar
@@ -739,6 +775,9 @@
 -
   number: "172"
   name: pichu
+-
+  number: "172"
+  name: pichu-shiny
 -
   number: "173"
   name: cleffa
