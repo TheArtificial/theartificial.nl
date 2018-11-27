@@ -1028,6 +1028,9 @@
   number: "213"
   name: shuckle
 -
+  number: "213"
+  name: shuckle-shiny
+-
   number: "214"
   name: heracross
 -
@@ -1111,6 +1114,9 @@
 -
   number: "239"
   name: elekid
+-
+  number: "239"
+  name: elekid-shiny
 -
   number: "240"
   name: magby
@@ -1229,11 +1235,20 @@
   number: "270"
   name: lotad
 -
+  number: "270"
+  name: lotad-shiny
+-
   number: "271"
   name: lombre
 -
+  number: "271"
+  name: lombre-shiny
+-
   number: "272"
   name: ludicolo
+-
+  number: "272"
+  name: ludicolo-shiny
 -
   number: "273"
   name: seedot
@@ -1769,8 +1784,14 @@
   number: "406"
   name: budew
 -
+  number: "406"
+  name: budew-shiny
+-
   number: "407"
   name: roserade
+-
+  number: "407"
+  name: roserade-shiny
 -
   number: "408"
   name: cranidos
@@ -1847,8 +1868,14 @@
   number: "425"
   name: drifloon
 -
+  number: "425"
+  name: drifloon-shiny
+-
   number: "426"
   name: drifblim
+-
+  number: "426"
+  name: drifblim-shiny
 -
   number: "427"
   name: buneary
@@ -1861,6 +1888,9 @@
 -
   number: "430"
   name: honchkrow
+-
+  number: "430"
+  name: honchkrow-shiny
 -
   number: "431"
   name: glameow
@@ -1958,6 +1988,9 @@
   number: "462"
   name: magnezone
 -
+  number: "462"
+  name: magnezone-shiny
+-
   number: "463"
   name: lickilicki
 -
@@ -1970,11 +2003,20 @@
   number: "466"
   name: electivire
 -
+  number: "466"
+  name: electivire-shiny
+-
   number: "467"
   name: magmortar
 -
+  number: "467"
+  name: magmortar-shiny
+-
   number: "468"
   name: togekiss
+-
+  number: "468"
+  name: togekiss-shiny
 -
   number: "469"
   name: yanmega
@@ -1982,8 +2024,14 @@
   number: "470"
   name: leafeon
 -
+  number: "470"
+  name: leafeon-shiny
+-
   number: "471"
   name: glaceon
+-
+  number: "471"
+  name: glaceon-shiny
 -
   number: "472"
   name: gliscor
@@ -2002,6 +2050,9 @@
 -
   number: "477"
   name: dusknoir
+-
+  number: "477"
+  name: dusknoir-shiny
 -
   number: "478"
   name: froslass
@@ -2033,5 +2084,44 @@
   number: "482"
   name: azelf
 -
+  number: "483"
+  name: dialga
+-
+  number: "484"
+  name: palkia
+-
+  number: "485"
+  name: heatran
+-
+  number: "486"
+  name: regigigas
+-
   number: "487"
   name: giratina-altered
+-
+  number: "487"
+  name: giratina-origin
+-
+  number: "488"
+  name: cresselia
+-
+  number: "489"
+  name: phione
+-
+  number: "490"
+  name: manaphy
+-
+  number: "491"
+  name: darkrai
+-
+  number: "492"
+  name: shaymin-land
+-
+  number: "492"
+  name: shaymin-sky
+-
+  number: "493"
+  name: arceus
+-
+  number: "808"
+  name: meltan
