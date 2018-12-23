@@ -1046,6 +1046,12 @@
   number: "201"
   name: unown-z
 -
+  number: "201"
+  name: unown-!
+-
+  number: "201"
+  name: unown-?
+-
   number: "202"
   name: wobbuffet
 -
@@ -1782,7 +1788,16 @@
   name: lirachi
 -
   number: "386"
-  name: deoxys
+  name: deoxys-normal
+-
+  number: "386"
+  name: deoxys-attack
+-
+  number: "386"
+  name: deoxys-defense
+-
+  number: "386"
+  name: deoxys-speed
 -
   number: "387"
   name: turtwig
@@ -2194,3 +2209,6 @@
 -
   number: "808"
   name: meltan
+-
+  number: "809"
+  name: melmetal
