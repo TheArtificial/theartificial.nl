@@ -74,23 +74,44 @@
   number: "013"
   name: weedle
 -
+  number: "013"
+  name: weedle-shiny
+-
   number: "014"
   name: kakuna
+-
+  number: "014"
+  name: kakuna-shiny
 -
   number: "015"
   name: beedrill
 -
+  number: "015"
+  name: beedrill-shiny
+-
   number: "016"
   name: pidgey
+-
+  number: "016"
+  name: pidgey-shiny
 -
   number: "017"
   name: pidgeotto
 -
+  number: "017"
+  name: pidgeotto-shiny
+-
   number: "018"
   name: pidgeot
 -
+  number: "018"
+  name: pidgeot-shiny
+-
   number: "019"
   name: rattata
+-
+  number: "019"
+  name: rattata-shiny
 -
   number: "019"
   name: rattata-alola
@@ -99,19 +120,34 @@
   name: raticate
 -
   number: "020"
+  name: raticate-shiny
+-
+  number: "020"
   name: raticate-alola
 -
   number: "021"
   name: spearow
 -
+  number: "021"
+  name: spearow-shiny
+-
   number: "022"
   name: fearow
+-
+  number: "022"
+  name: fearow-shiny
 -
   number: "023"
   name: ekans
 -
+  number: "023"
+  name: ekans-shiny
+-
   number: "024"
   name: arbok
+-
+  number: "024"
+  name: arbok-shiny
 -
   number: "025"
   name: pikachu
@@ -132,10 +168,16 @@
   name: sandshrew
 -
   number: "027"
+  name: sandshrew-shiny
+-
+  number: "027"
   name: sandshrew-alola
 -
   number: "028"
   name: sandslash
+-
+  number: "028"
+  name: sandslash-shiny
 -
   number: "028"
   name: sandslash-alola
@@ -179,11 +221,20 @@
   number: "035"
   name: clefairy
 -
+  number: "035"
+  name: clefairy-shiny
+-
   number: "036"
   name: clefable
 -
+  number: "036"
+  name: clefable-shiny
+-
   number: "037"
   name: vulpix
+-
+  number: "037"
+  name: vulpix-shiny
 -
   number: "037"
   name: vulpix-alola
@@ -192,13 +243,22 @@
   name: ninetales
 -
   number: "038"
+  name: ninetales-shiny
+-
+  number: "038"
   name: ninetales-alola
 -
   number: "039"
   name: jigglypuff
 -
+  number: "039"
+  name: jigglypuff-shiny
+-
   number: "040"
   name: wigglytuff
+-
+  number: "040"
+  name: wigglytuff-shiny
 -
   number: "041"
   name: zubat
@@ -734,11 +794,20 @@
   number: "158"
   name: totodile
 -
+  number: "158"
+  name: totodile-shiny
+-
   number: "159"
   name: croconaw
 -
+  number: "159"
+  name: croconaw-shiny
+-
   number: "160"
   name: feraligatr
+-
+  number: "160"
+  name: feraligatr-shiny
 -
   number: "161"
   name: sentret
