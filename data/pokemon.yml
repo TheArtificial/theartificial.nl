@@ -2253,7 +2253,55 @@
   name: shaymin-sky
 -
   number: "493"
-  name: arceus
+  name: arceus-normal
+-
+  number: "493"
+  name: arceus-bug
+-
+  number: "493"
+  name: arceus-dark
+-
+  number: "493"
+  name: arceus-dragon
+-
+  number: "493"
+  name: arceus-electr
+-
+  number: "493"
+  name: arceus-fight
+-
+  number: "493"
+  name: arceus-fire
+-
+  number: "493"
+  name: arceus-flying
+-
+  number: "493"
+  name: arceus-ghost
+-
+  number: "493"
+  name: arceus-grass
+-
+  number: "493"
+  name: arceus-ground
+-
+  number: "493"
+  name: arceus-ice
+-
+  number: "493"
+  name: arceus-poison
+-
+  number: "493"
+  name: arceus-psychc
+-
+  number: "493"
+  name: arceus-rock
+-
+  number: "493"
+  name: arceus-steel
+-
+  number: "493"
+  name: arceus-water
 -
   number: "808"
   name: meltan
