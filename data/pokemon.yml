@@ -266,32 +266,62 @@
   number: "041"
   name: zubat
 -
+  number: "041"
+  name: zubat-shiny
+-
   number: "042"
   name: golbat
+-
+  number: "042"
+  name: golbat-shiny
 -
   number: "043"
   name: oddish
 -
+  number: "043"
+  name: oddish-shiny
+-
   number: "044"
   name: gloom
+-
+  number: "044"
+  name: gloom-shiny
 -
   number: "045"
   name: vileplume
 -
+  number: "045"
+  name: vileplume-shiny
+-
   number: "046"
   name: paras
+-
+  number: "046"
+  name: paras-shiny
 -
   number: "047"
   name: parasect
 -
+  number: "047"
+  name: parasect-shiny
+-
   number: "048"
   name: venonat
+-
+  number: "048"
+  name: venonat-shiny
 -
   number: "049"
   name: venomoth
 -
+  number: "049"
+  name: venomoth-shiny
+-
   number: "050"
   name: diglett
+-
+  number: "050"
+  name: diglett-shiny
 -
   number: "050"
   name: diglett-alola
@@ -300,10 +330,16 @@
   name: dugtrio
 -
   number: "051"
+  name: dugtrio-shiny
+-
+  number: "051"
   name: dugtrio-alola
 -
   number: "052"
   name: meowth
+-
+  number: "052"
+  name: meowth-shiny
 -
   number: "052"
   name: meowth-alola
@@ -312,19 +348,34 @@
   name: persian
 -
   number: "053"
+  name: persian-shiny
+-
+  number: "053"
   name: persian-alola
 -
   number: "054"
   name: psyduck
 -
+  number: "054"
+  name: psyduck-shiny
+-
   number: "055"
   name: golduck
+-
+  number: "055"
+  name: golduck-shiny
 -
   number: "056"
   name: mankey
 -
+  number: "056"
+  name: mankey-shiny
+-
   number: "057"
   name: primeape
+-
+  number: "057"
+  name: primeape-shiny
 -
   number: "058"
   name: growlithe
@@ -341,20 +392,38 @@
   number: "060"
   name: poliwag
 -
+  number: "060"
+  name: poliwag-shiny
+-
   number: "061"
   name: poliwhirl
+-
+  number: "061"
+  name: poliwhirl-shiny
 -
   number: "062"
   name: poliwrath
 -
+  number: "062"
+  name: poliwrath-shiny
+-
   number: "063"
   name: abra
+-
+  number: "063"
+  name: abra-shiny
 -
   number: "064"
   name: kadabra
 -
+  number: "064"
+  name: kadabra-shiny
+-
   number: "065"
   name: alakazam
+-
+  number: "065"
+  name: alakazam-shiny
 -
   number: "066"
   name: machop
@@ -2302,6 +2371,9 @@
 -
   number: "493"
   name: arceus-water
+-
+  number: "493"
+  name: arceus-fairy
 -
   number: "808"
   name: meltan
