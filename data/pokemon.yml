@@ -1637,8 +1637,14 @@
   number: "325"
   name: spoink
 -
+  number: "325"
+  name: spoink-shiny
+-
   number: "326"
   name: grumpig
+-
+  number: "326"
+  name: grumpig-shiny
 -
   number: "327"
   name: spinda-1
