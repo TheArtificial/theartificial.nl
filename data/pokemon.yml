@@ -116,6 +116,9 @@
   number: "019"
   name: rattata-alola
 -
+  number: "019"
+  name: rattata-alola-shiny
+-
   number: "020"
   name: raticate
 -
@@ -124,6 +127,9 @@
 -
   number: "020"
   name: raticate-alola
+-
+  number: "020"
+  name: raticate-alola-shiny
 -
   number: "021"
   name: spearow
@@ -428,11 +434,20 @@
   number: "066"
   name: machop
 -
+  number: "066"
+  name: machop-shiny
+-
   number: "067"
   name: machoke
 -
+  number: "067"
+  name: machoke-shiny
+-
   number: "068"
   name: machamp
+-
+  number: "068"
+  name: machamp-shiny
 -
   number: "069"
   name: bellsprout
@@ -440,14 +455,26 @@
   number: "070"
   name: weepinbell
 -
+  number: "070"
+  name: weepinbell-shiny
+-
   number: "071"
   name: victreebel
+-
+  number: "071"
+  name: victreebel-shiny
 -
   number: "072"
   name: tentacool
 -
+  number: "072"
+  name: tentacool-shiny
+-
   number: "073"
   name: tentacruel
+-
+  number: "073"
+  name: tentacruel-shiny
 -
   number: "074"
   name: geodude
@@ -491,8 +518,14 @@
   number: "079"
   name: slowpoke
 -
+  number: "079"
+  name: slowpoke-shiny
+-
   number: "080"
   name: slowbro
+-
+  number: "080"
+  name: slowbro-shiny
 -
   number: "081"
   name: magnemite
@@ -509,17 +542,32 @@
   number: "083"
   name: farfetchd
 -
+  number: "083"
+  name: farfetchd-shiny
+-
   number: "084"
   name: doduo
+-
+  number: "084"
+  name: doduo-shiny
 -
   number: "085"
   name: dodrio
 -
+  number: "085"
+  name: dodrio-shiny
+-
   number: "086"
   name: seel
 -
+  number: "086"
+  name: seel-shiny
+-
   number: "087"
   name: dewgong
+-
+  number: "087"
+  name: dewgong-shiny
 -
   number: "088"
   name: grimer
@@ -572,6 +620,9 @@
   number: "095"
   name: onix
 -
+  number: "095"
+  name: onix-shiny
+-
   number: "096"
   name: drowzee
 -
@@ -599,14 +650,26 @@
   number: "100"
   name: voltorb
 -
+  number: "100"
+  name: voltorb-shiny
+-
   number: "101"
   name: electrode
+-
+  number: "101"
+  name: electrode-shiny
 -
   number: "102"
   name: exeggcute
 -
+  number: "102"
+  name: exeggcute-shiny
+-
   number: "103"
   name: exeggutor
+-
+  number: "103"
+  name: exeggutor-shiny
 -
   number: "103"
   name: exeggutor-alola
@@ -632,59 +695,116 @@
   number: "106"
   name: hitmonlee
 -
+  number: "106"
+  name: hitmonlee-shiny
+-
   number: "107"
   name: hitmonchan
+-
+  number: "107"
+  name: hitmonchan-shiny
 -
   number: "108"
   name: lickitung
 -
+  number: "108"
+  name: lickitung-shiny
+-
   number: "109"
   name: koffing
+-
+  number: "109"
+  name: koffing-shiny
 -
   number: "110"
   name: weezing
 -
+  number: "110"
+  name: weezing-shiny
+-
   number: "111"
   name: rhyhorn
+-
+  number: "111"
+  name: rhyhorn-shiny
 -
   number: "112"
   name: rhydon
 -
+  number: "112"
+  name: rhydon-shiny
+-
   number: "113"
   name: chansey
+-
+  number: "113"
+  name: chansey-shiny
 -
   number: "114"
   name: tangela
 -
+  number: "114"
+  name: tangela-shiny
+-
   number: "115"
   name: kangaskhan
+-
+  number: "115"
+  name: kangaskhan-shiny
 -
   number: "116"
   name: horsea
 -
+  number: "116"
+  name: horsea-shiny
+-
   number: "117"
   name: seadra
+-
+  number: "117"
+  name: seadra-shiny
 -
   number: "118"
   name: goldeen
 -
+  number: "118"
+  name: goldeen-shiny
+-
   number: "119"
   name: seaking
+-
+  number: "119"
+  name: seaking-shiny
 -
   number: "120"
   name: staryu
 -
+  number: "120"
+  name: staryu-shiny
+-
   number: "121"
   name: starmie
+-
+  number: "121"
+  name: starmie-shiny
 -
   number: "122"
   name: mrmime
 -
+  number: "122"
+  name: mrmime-shiny
+-
   number: "123"
   name: scyther
 -
+  number: "123"
+  name: scyther-shiny
+-
   number: "124"
   name: jynx
+-
+  number: "124"
+  name: jynx-shiny
 -
   number: "125"
   name: electabuzz
@@ -707,23 +827,32 @@
   number: "128"
   name: tauros
 -
-  number: "129"
-  name: magikarp-shiny
+  number: "128"
+  name: tauros-shiny
 -
   number: "129"
   name: magikarp
 -
-  number: "130"
-  name: gyarados-shiny
+  number: "129"
+  name: magikarp-shiny
 -
   number: "130"
   name: gyarados
 -
+  number: "130"
+  name: gyarados-shiny
+-
   number: "131"
   name: lapras
 -
+  number: "131"
+  name: lapras-shiny
+-
   number: "132"
   name: ditto
+-
+  number: "132"
+  name: ditto-shiny
 -
   number: "133"
   name: eevee
@@ -751,6 +880,9 @@
 -
   number: "137"
   name: porygon
+-
+  number: "137"
+  name: porygon-shiny
 -
   number: "138"
   name: omanyte
@@ -784,6 +916,9 @@
 -
   number: "143"
   name: snorlax
+-
+  number: "143"
+  name: snorlax-shiny
 -
   number: "144"
   name: articuno
@@ -2384,5 +2519,11 @@
   number: "808"
   name: meltan
 -
+  number: "808"
+  name: meltan-shiny
+-
   number: "809"
   name: melmetal
+-
+  number: "809"
+  name: melmetal-shiny
