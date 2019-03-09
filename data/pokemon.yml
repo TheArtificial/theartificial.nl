@@ -959,8 +959,14 @@
   number: "150"
   name: mewtwo
 -
+  number: "150"
+  name: mewtwo-shiny
+-
   number: "151"
   name: mew
+-
+  number: "151"
+  name: mew-shiny
 -
   number: "152"
   name: chikorita
@@ -1019,35 +1025,68 @@
   number: "161"
   name: sentret
 -
+  number: "161"
+  name: sentret-shiny
+-
   number: "162"
   name: furret
+-
+  number: "162"
+  name: furret-shiny
 -
   number: "163"
   name: hoothoot
 -
+  number: "163"
+  name: hoothoot-shiny
+-
   number: "164"
   name: noctowl
+-
+  number: "164"
+  name: noctowl-shiny
 -
   number: "165"
   name: ledyba
 -
+  number: "165"
+  name: ledyba-shiny
+-
   number: "166"
   name: ledian
+-
+  number: "166"
+  name: ledian-shiny
 -
   number: "167"
   name: spinarak
 -
+  number: "167"
+  name: spinarak-shiny
+-
   number: "168"
   name: ariados
+-
+  number: "168"
+  name: ariados-shiny
 -
   number: "169"
   name: crobat
 -
+  number: "169"
+  name: crobat-shiny
+-
   number: "170"
   name: chinchou
 -
+  number: "170"
+  name: chinchou-shiny
+-
   number: "171"
   name: lanturn
+-
+  number: "171"
+  name: lanturn-shiny
 -
   number: "172"
   name: pichu
@@ -1058,8 +1097,14 @@
   number: "173"
   name: cleffa
 -
+  number: "173"
+  name: cleffa-shiny
+-
   number: "174"
   name: igglybuff
+-
+  number: "174"
+  name: igglybuff-shiny
 -
   number: "175"
   name: togepi
@@ -1106,6 +1151,9 @@
   number: "182"
   name: bellossom
 -
+  number: "182"
+  name: bellossom-shiny
+-
   number: "183"
   name: marill
 -
@@ -1121,20 +1169,38 @@
   number: "185"
   name: sudowoodo
 -
+  number: "185"
+  name: sudowoodo-shiny
+-
   number: "186"
   name: politoed
+-
+  number: "186"
+  name: politoed-shiny
 -
   number: "187"
   name: hoppip
 -
+  number: "187"
+  name: hoppip-shiny
+-
   number: "188"
   name: skiploom
+-
+  number: "188"
+  name: skiploom-shiny
 -
   number: "189"
   name: jumpluff
 -
+  number: "189"
+  name: jumpluff-shiny
+-
   number: "190"
   name: aipom
+-
+  number: "190"
+  name: aipom-shiny
 -
   number: "191"
   name: sunkern
@@ -1151,11 +1217,20 @@
   number: "193"
   name: yanma
 -
+  number: "193"
+  name: yanma-shiny
+-
   number: "194"
   name: wooper
 -
+  number: "194"
+  name: wooper-shiny
+-
   number: "195"
   name: quagsire
+-
+  number: "195"
+  name: quagsire-shiny
 -
   number: "196"
   name: espeon
@@ -1177,6 +1252,9 @@
 -
   number: "199"
   name: slowking
+-
+  number: "199"
+  name: slowking-shiny
 -
   number: "200"
   name: misdreavus
