@@ -5,6 +5,15 @@ redirects:
   designfordeath.html: /laboratory/futureofdeath.html
   travelguide/: /cityguide/
 
+routing_rules:
+  - condition:
+    key_prefix_equals: pokemonicons/
+  redirect:
+    protocol: https
+    host_name: theartificial.github.io
+    eplace_key_with: /pokemon-icons/
+    http_redirect_code: 301
+
 # s3_id: AWS_ACCESS_KEY_ID
 # s3_secret: AWS_SECRET_ACCESS_KEY
 
