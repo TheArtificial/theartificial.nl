@@ -54,7 +54,7 @@ GEM
       concurrent-ruby (~> 1.0)
     hashie (3.6.0)
     i18n (0.7.0)
-    jmespath (1.4.0)
+    jmespath (1.6.1)
     kramdown (1.17.0)
     libv8 (3.16.14.19)
     listen (3.0.8)
